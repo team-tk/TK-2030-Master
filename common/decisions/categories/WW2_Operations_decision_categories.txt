@@ -1,0 +1,10 @@
+WW2_operations_decisions = { 
+	allowed = {
+	}
+
+	available = {
+	}
+
+	visible = {
+	}
+}

@@ -1,0 +1,2050 @@
+focus_tree = {
+	id = iraq
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = IRQ
+		}
+	}
+	default = no
+	focus = {
+		id = IRQ_peoples_strategy
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10,00
+		mutually_exclusive = {
+			focus = IRQ_military_strategy
+		}
+		x = 1
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_stability = 0.05
+			291 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			675 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			676 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = IRQ_military_strategy
+		icon = GFX_focus_generic_military_mission
+		cost = 10,00
+		mutually_exclusive = {
+			focus = IRQ_peoples_strategy
+		}
+		x = 3
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_war_support = 0.05
+			291 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			675 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			676 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = IRQ_modern_bagdath_rail
+		icon = GFX_goal_generic_production
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_peoples_strategy
+		}
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			676 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			291 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = IRQ_industry_build
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_modern_bagdath_rail
+		}
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = industry
+				name = IRQ_industry_build
+			}
+			291 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = IRQ_western_investition
+		icon = GFX_goal_generic_construction
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_industry_build
+		}
+		x = 1
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+			675 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = IRQ_iron_road_army_depatrament
+		icon = GFX_goal_generic_army_artillery
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_military_strategy
+		}
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			291 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = IRQ_military_build
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_iron_road_army_depatrament
+		}
+		x = 3
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+				name = IRQ_military_build
+			}
+			291 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = IRQ_petroleum_extraction
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_industry_build
+			focus = IRQ_military_build
+		}
+		x = 2
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 291
+			}
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 676
+			}
+		}
+	}
+	focus = {
+		id = IRQ_build_oil_refinery_stations
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_petroleum_extraction
+		}
+		x = 3
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = synth_resources
+				name = IRQ_build_oil_refinery_stations
+			}
+			291 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			676 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = IRQ_build_shipyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_military_build
+		}
+		x = 4
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 5
+			291 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = IRQ_research_iron_states
+		icon = GFX_focus_generic_steel
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_petroleum_extraction
+		}
+		x = 5
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 4
+				state = 291
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+				state = 675
+			}
+		}
+	}
+	focus = {
+		id = IRQ_resource_research_complex
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_build_oil_refinery_stations
+		}
+		prerequisite = {
+			focus = IRQ_research_iron_states
+		}
+		x = 4
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = IRQ_military_maneuvers
+		icon = GFX_goal_generic_cavalry
+		cost = 10,00
+		x = 11
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+				name = IRQ_military_maneuvers
+			}
+		}
+	}
+	focus = {
+		id = IRQ_expansion_of_military_reserve
+		icon = GFX_focus_secret_rearmament
+		cost = 10,00
+		x = 9
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = IRQ_expansion_of_military_reserve_idea
+		}
+	}
+	focus = {
+		id = IRQ_army_reform
+		icon = GFX_focus_chi_army_reform
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_expansion_of_military_reserve
+		}
+		prerequisite = {
+			focus = IRQ_military_maneuvers
+		}
+		x = 10
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 25
+			air_experience = 15
+			navy_experience = 15
+		}
+	}
+	focus = {
+		id = IRQ_infantry_plan
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_army_reform
+		}
+		x = 9
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+				name = IRQ_infantry_plan
+			}
+		}
+	}
+	focus = {
+		id = IRQ_infantry_weapon_research
+		icon = GFX_goal_generic_small_arms
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_infantry_plan
+		}
+		x = 8
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+				name = IRQ_infantry_weapon_research
+			}
+		}
+	}
+	focus = {
+		id = IRQ_modern_cavalery_to_mech
+		icon = GFX_goal_generic_army_motorized
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_infantry_plan
+		}
+		x = 10
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+				name = IRQ_modern_cavalery_to_mech
+			}
+		}
+	}
+	focus = {
+		id = IRQ_1st_tank_batalion
+		icon = GFX_goal_generic_army_tanks
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_modern_cavalery_to_mech
+		}
+		x = 10
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = armor
+				name = IRQ_1st_tank_batalion
+			}
+		}
+	}
+	focus = {
+		id = IRQ_tank_academy
+		icon = GFX_focus_CZE_military_research_institute
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_1st_tank_batalion
+		}
+		x = 9
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = IRQ_tank_academy_idea
+		}
+	}
+	focus = {
+		id = IRQ_air_force_plan
+		icon = GFX_goal_generic_build_airforce
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_army_reform
+		}
+		x = 14
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 15
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = air_doctrine
+				name = IRQ_air_force_plan
+			}
+			291 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = IRQ_secure_sky
+		icon = GFX_goal_generic_air_fighter
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_air_force_plan
+		}
+		mutually_exclusive = {
+			focus = IRQ_support_infantry
+		}
+		x = 13
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = light_fighter
+				name = IRQ_secure_sky
+			}
+		}
+	}
+	focus = {
+		id = IRQ_heav_fighter_develop
+		icon = GFX_focus_usa_escort_fighters
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_secure_sky
+		}
+		x = 13
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 10
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_heavy_fighter
+				name = IRQ_heav_fighter_develop
+			}
+		}
+	}
+	focus = {
+		id = IRQ_support_infantry
+		icon = GFX_goal_generic_CAS
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_air_force_plan
+		}
+		mutually_exclusive = {
+			focus = IRQ_secure_sky
+		}
+		x = 15
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+				name = IRQ_support_infantry
+			}
+		}
+	}
+	focus = {
+		id = IRQ_aa_defence
+		icon = GFX_focus_generic_air_defense
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_secure_sky
+			focus = IRQ_support_infantry
+		}
+		x = 14
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				technology = interwar_antiair
+				name = IRQ_aa_defence
+			}
+			291 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = IRQ_tactic_bomb
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_support_infantry
+		}
+		x = 15
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 10
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = strategic_destruction_tree
+				name = IRQ_tactic_bomb
+			}
+		}
+	}
+	focus = {
+		id = IRQ_flight_school
+		icon = GFX_focus_generic_military_academy
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_heav_fighter_develop
+			focus = IRQ_tactic_bomb
+		}
+		prerequisite = {
+			focus = IRQ_aa_defence
+		}
+		x = 14
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = air_doctrine
+				name = IRQ_flight_school
+			}
+		}
+	}
+	focus = {
+		id = IRQ_naval_plan
+		icon = GFX_goal_generic_build_navy
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_army_reform
+		}
+		x = 19
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 15
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = naval_doctrine
+				name = IRQ_naval_plan
+			}
+			291 = {
+				add_building_construction = {
+					type = naval_base
+					province = 2089
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = IRQ_ships_secure_coast
+		icon = GFX_focus_generic_destroyer
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_naval_plan
+		}
+		mutually_exclusive = {
+			focus = IRQ_initiacive_in_pers_gulf
+		}
+		x = 18
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = dd_tech
+				name = IRQ_ships_secure_coast
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cl_tech
+				name = IRQ_ships_secure_coast
+			}
+		}
+	}
+	focus = {
+		id = IRQ_defence_docks_in_basra
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_ships_secure_coast
+		}
+		x = 17
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			291 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = 2089
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = IRQ_submarines_tactic
+		icon = GFX_goal_generic_wolf_pack
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_ships_secure_coast
+		}
+		x = 18
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = trade_interdiction_tree
+				name = IRQ_submarines_tactic
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = ss_tech
+				name = IRQ_submarines_tactic
+			}
+		}
+	}
+	focus = {
+		id = IRQ_initiacive_in_pers_gulf
+		icon = GFX_focus_generic_cruiser2
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_naval_plan
+		}
+		mutually_exclusive = {
+			focus = IRQ_ships_secure_coast
+		}
+		x = 20
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = bb_tech
+				name = IRQ_initiacive_in_pers_gulf
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = ca_tech
+				name = IRQ_initiacive_in_pers_gulf
+			}
+		}
+	}
+	focus = {
+		id = IRQ_battleships_strategy
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_initiacive_in_pers_gulf
+		}
+		mutually_exclusive = {
+			focus = IRQ_carrier_strategy
+		}
+		x = 19
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = fleet_in_being_tree
+				name = IRQ_battleships_strategy
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = bb_tech
+				name = IRQ_battleships_strategy
+			}
+		}
+	}
+	focus = {
+		id = IRQ_carrier_strategy
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_initiacive_in_pers_gulf
+		}
+		mutually_exclusive = {
+			focus = IRQ_battleships_strategy
+		}
+		x = 21
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_base_strike
+				name = IRQ_carrier_strategy
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cv_tech
+				name = IRQ_carrier_strategy
+			}
+		}
+	}
+	focus = {
+		id = IRQ_sea_strategy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_carrier_strategy
+			focus = IRQ_battleships_strategy
+		}
+		x = 20
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				bonus = 1
+				uses = 3
+				category = naval_doctrine
+				name = IRQ_sea_strategy
+			}
+		}
+	}
+	focus = {
+		id = IRQ_marine_corps
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_naval_plan
+		}
+		x = 22
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 15
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = marine_tech
+				name = IRQ_marine_corps
+			}
+		}
+	}
+	focus = {
+		id = IRQ_support_aviation_naval
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_carrier_strategy
+		}
+		x = 22
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = naval_bomber
+				name = IRQ_support_aviation_naval
+			}
+		}
+	}
+	focus = {
+		id = IRQ_heavy_battery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_infantry_weapon_research
+		}
+		x = 8
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = artillery
+				name = IRQ_heavy_battery
+			}
+		}
+	}
+	focus = {
+		id = IRQ_expansion_of_spec_ops
+		icon = GFX_goal_generic_special_forces
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_heavy_battery
+		}
+		prerequisite = {
+			focus = IRQ_1st_tank_batalion
+		}
+		x = 7
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = mountaineers_tech
+				name = IRQ_expansion_of_spec_ops
+			}
+		}
+	}
+	focus = {
+		id = IRQ_airborne_corps
+		icon = GFX_focus_generic_paratrooper
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_flight_school
+		}
+		x = 14
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = para_tech
+				name = IRQ_airborne_corps
+			}
+		}
+	}
+	focus = {
+		id = IRQ_marine_mech_support
+		icon = GFX_goal_generic_build_tank
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_marine_corps
+		}
+		x = 23
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 5
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = tp_tech
+				name = IRQ_marine_mech_support
+			}
+		}
+	}
+	focus = {
+		id = IRQ_save_stability_in_country
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		x = 31
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+		}
+		completion_reward = {
+			add_political_power = 125
+			add_timed_idea = { idea = IRQ_strengthening_of_the_government days = 180 }
+		}
+	}
+	focus = {
+		id = IRQ_workest_revolution
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_save_stability_in_country
+		}
+		mutually_exclusive = {
+			focus = IRQ_annex_kuveit
+		}
+		x = 27
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_idea = IRQ_divided_government has_capitulated = yes is_puppet = yes }
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = IRQ_end_to_panislamic_ideas
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_workest_revolution
+		}
+		x = 24
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+		}
+		completion_reward = {
+			remove_ideas = IRQ_growth_among_the_supporters_of_nationalism
+		}
+	}
+	focus = {
+		id = IRQ_arabican_revolution
+		icon = GFX_goal_support_fourth_int
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_workest_revolution
+		}
+		mutually_exclusive = {
+			focus = IRQ_socialism_in_one_country
+		}
+		x = 26
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+			}
+		}
+		completion_reward = {
+			add_political_power = 200
+			set_politics = {
+				ruling_party = communism
+			}
+			hidden_effect = {
+				AFG = { add_ideas = IRQ_arabican_revolution_idea }
+				PER = { add_ideas = IRQ_arabican_revolution_idea }
+				TUR = { add_ideas = IRQ_arabican_revolution_idea }
+				OMA = { add_ideas = IRQ_arabican_revolution_idea }
+				YEM = { add_ideas = IRQ_arabican_revolution_idea }
+				SAU = { add_ideas = IRQ_arabican_revolution_idea }
+			}
+			custom_effect_tooltip = IRQ_arabican_revolution_tt
+		}
+	}
+	focus = {
+		id = IRQ_arabican_communism_international
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_arabican_revolution
+		}
+		x = 25
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available = { 
+			has_communist_government = yes
+			NOT = {
+				is_in_faction = yes
+				has_capitulated = yes
+				is_puppet = yes
+			}
+		}
+		bypass = { is_in_faction = yes }
+		completion_reward = {
+			create_faction = IRQ_arabican_communism_international_faction
+		}
+	}
+	focus = {
+		id = IRQ_2st_congress_arab_ci
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_arabican_communism_international
+		}
+		x = 25
+		y = 5
+		available = {
+			AND = {
+				AFG = { has_communist_government = yes }
+				PER = { has_communist_government = yes }
+				TUR = { has_communist_government = yes }
+				OMA = { has_communist_government = yes }
+				YEM = { has_communist_government = yes }
+				SAU = { has_communist_government = yes }
+				has_communist_government = yes
+			}
+			NOT = { has_capitulated = yes is_puppet = yes }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			IRQ = {
+				add_to_faction = AFG
+				add_to_faction = PER
+				add_to_faction = TUR
+				add_to_faction = OMA
+				add_to_faction = YEM
+				add_to_faction = SAU
+			}
+		}
+	}
+	focus = {
+		id = IRQ_socialism_in_one_country
+		icon = GFX_goal_support_communism
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_workest_revolution
+		}
+		mutually_exclusive = {
+			focus = IRQ_arabican_revolution
+		}
+		x = 28
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = { 
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+		}
+		completion_reward = {
+			add_political_power = 200
+			set_politics = {
+				ruling_party = communism
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = IRQ
+					modifier = IRQ_socialism_in_one_country_op
+				}
+			}
+			add_ideas = IRQ_socialism_in_one_country_idea
+		}
+	}
+	focus = {
+		id = IRQ_soviet_iraq_pact
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_socialism_in_one_country
+		}
+		x = 28
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_communist_government = yes
+			NOT = { has_capitulated = yes has_war_with = SOV is_puppet = yes }
+		}
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = {
+					target = IRQ
+					modifier = IRQ_soviet_iraq_pact_op
+				}
+			}
+			IRQ = {
+				add_opinion_modifier = {
+					target = SOV
+					modifier = IRQ_soviet_iraq_pact_op
+				}
+			}
+			add_political_power = 45
+		}
+	}
+	focus = {
+		id = IRQ_defence_rights_workers
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_soviet_iraq_pact
+			focus = IRQ_arabican_communism_international
+		}
+		x = 27
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_communist_government = yes
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = IRQ_work_group_progress_arabian_country
+		icon = GFX_focus_generic_socialist_science
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_defence_rights_workers
+		}
+		prerequisite = {
+			focus = IRQ_2st_congress_arab_ci
+		}
+		x = 26
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_communist_government = yes
+			is_in_faction_with = AFG
+			is_in_faction_with = PER
+			is_in_faction_with = TUR
+			is_in_faction_with = OMA
+			is_in_faction_with = YEM
+			is_in_faction_with = SAU
+			NOT = { has_capitulated = yes is_puppet = yes }
+		}
+		completion_reward = {
+			IRQ = { add_to_tech_sharing_group = IRQ_work_group_progress_arabian_country_thgr }
+			AFG = { add_to_tech_sharing_group = IRQ_work_group_progress_arabian_country_thgr }
+			PER = { add_to_tech_sharing_group = IRQ_work_group_progress_arabian_country_thgr }
+			TUR = { add_to_tech_sharing_group = IRQ_work_group_progress_arabian_country_thgr }
+			OMA = { add_to_tech_sharing_group = IRQ_work_group_progress_arabian_country_thgr }
+			YEM = { add_to_tech_sharing_group = IRQ_work_group_progress_arabian_country_thgr }
+			SAU = { add_to_tech_sharing_group = IRQ_work_group_progress_arabian_country_thgr }
+		}
+	}
+	focus = {
+		id = IRQ_join_to_comintern
+		icon = GFX_focus_generic_join_comintern
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_soviet_iraq_pact
+		}
+		x = 28
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_communist_government = yes
+			NOT = {
+				has_war_with = SOV
+				has_capitulated = yes
+				is_puppet = yes
+			}
+		}
+		bypass = { is_in_faction_with = SOV }
+		completion_reward = {
+			SOV = {
+				country_event = {
+					id = iraq.1
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = IRQ_soviet_iraq_economic_theatry
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_soviet_iraq_pact
+		}
+		prerequisite = {
+			focus = IRQ_defence_rights_workers
+		}
+		x = 30
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				has_war_with = SOV
+				is_puppet = yes
+			}
+			has_communist_government = yes
+		}
+		completion_reward = {
+			IRQ = { add_to_tech_sharing_group = IRQ_soviet_iraq_economic_theatry_thgr }
+			SOV = { add_to_tech_sharing_group = IRQ_soviet_iraq_economic_theatry_thgr }
+		}
+	}
+	focus = {
+		id = IRQ_annex_kuveit
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_save_stability_in_country
+		}
+		mutually_exclusive = {
+			focus = IRQ_workest_revolution
+		}
+		x = 35
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_idea = IRQ_divided_government has_capitulated = yes is_puppet = yes }
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_political_power = 75
+			ENG = {
+				add_opinion_modifier = {
+					target = IRQ
+					modifier = IRQ_annex_kuveit_op
+				}
+			}
+			transfer_state = 656
+			add_state_core = 656
+		}
+	}
+	focus = {
+		id = IRQ_propaganda_nationalism
+		icon = GFX_goal_generic_propaganda
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_annex_kuveit
+		}
+		x = 34
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = IRQ_pretension_to_katar_and_UAE
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_propaganda_nationalism
+		}
+		x = 31
+		y = 3
+		ai_will_do = {
+			factor = 10
+
+			
+			modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+			date < 1946.1.1
+			}
+			
+			}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+		}
+		completion_reward = {
+			add_state_claim = 765
+			add_state_claim = 658
+		}
+	}
+	focus = {
+		id = IRQ_pretension_to_horasan
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_propaganda_nationalism
+		}
+		x = 33
+		y = 3
+		ai_will_do = {
+			factor = 10
+
+			
+			modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+			date < 1946.1.1
+			}
+			
+			}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+		}
+		completion_reward = {
+			PER = {
+				add_opinion_modifier = {
+					target = IRQ
+					modifier = IRQ_pretension_to_horasan_op
+				}
+			}
+			add_state_claim = 413
+		}
+	}
+	focus = {
+		id = IRQ_goverment_gold_square
+		icon = GFX_goal_support_fascism
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_annex_kuveit
+		}
+		x = 36
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = IRQ_german_iraq_pact
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_goverment_gold_square
+		}
+		mutually_exclusive = {
+			focus = IRQ_baghdath_pact
+		}
+		x = 35
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				has_war_with = GER
+				is_puppet = yes
+			}
+			has_fascist_government = yes
+		}
+		completion_reward = {
+			add_political_power = 45
+			add_opinion_modifier = {
+				target = GER
+				modifier = IRQ_german_iraq_pact_op
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = IRQ
+					modifier = IRQ_german_iraq_pact_op
+				}
+			}
+		}
+	}
+	focus = {
+		id = IRQ_friendship_with_italy
+		icon = GFX_focus_ger_assassinate_mussolini
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_german_iraq_pact
+		}
+		x = 35
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				has_war_with = ITA
+				is_puppet = yes
+			}
+			has_fascist_government = yes
+		}
+		completion_reward = {
+			add_political_power = 45
+			add_opinion_modifier = {
+				target = ITA
+				modifier = IRQ_friendship_with_italy_op
+			}
+			ITA = {
+				add_opinion_modifier = {
+					target = IRQ
+					modifier = IRQ_friendship_with_italy_op
+				}
+			}
+		}
+	}
+	focus = {
+		id = IRQ_nationalization_occupy_lands
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_goverment_gold_square
+		}
+		x = 36
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			765 = { is_claimed_by = IRQ }
+			658 = { is_claimed_by = IRQ }
+			413 = { is_claimed_by = IRQ }
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+			has_fascist_government = yes
+		}
+		completion_reward = {
+			add_state_core = 765
+			add_state_core = 658
+			add_state_core = 413
+		}
+	}
+	focus = {
+		id = IRQ_pretension_sirya
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_nationalization_occupy_lands
+		}
+		x = 35
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+			has_fascist_government = yes
+		}
+		completion_reward = {
+			add_state_claim = 680
+			add_state_claim = 677
+			add_state_claim = 553
+			add_state_claim = 554
+		}
+	}
+	focus = {
+		id = IRQ_pretension_egypt
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_nationalization_occupy_lands
+		}
+		x = 36
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+			has_fascist_government = yes
+		}
+		completion_reward = {
+			add_state_claim = 447
+			add_state_claim = 452
+			add_state_claim = 453
+			add_state_claim = 446
+			add_state_claim = 457
+			add_state_claim = 456
+			add_state_claim = 552
+		}
+	}
+	focus = {
+		id = IRQ_baghdath_pact
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_goverment_gold_square
+		}
+		mutually_exclusive = {
+			focus = IRQ_german_iraq_pact
+		}
+		x = 37
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+			has_fascist_government = yes
+		}
+		bypass = { is_in_faction = yes }
+		completion_reward = {
+			create_faction = IRQ_baghdath_pact_faction
+		}
+	}
+	focus = {
+		id = IRQ_invite_pact_to_neiberh
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_baghdath_pact
+		}
+		x = 37
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				has_war_with = PER
+				has_war_with = TUR
+				has_war_with = SAU
+				is_puppet = yes
+			}
+			has_fascist_government = yes
+		}
+		completion_reward = {
+			PER = {
+				country_event = {
+					id = iraq.2
+					days = 1
+				}
+			}
+			SAU = {
+				country_event = {
+					id = iraq.2
+					days = 1
+				}
+			}
+			TUR = {
+				country_event = {
+					id = iraq.2
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = IRQ_pretension_holylands
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_nationalization_occupy_lands
+		}
+		x = 37
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+			has_fascist_government = yes
+		}
+		completion_reward = {
+			add_state_claim = 454
+			add_state_claim = 455
+		}
+	}
+	focus = {
+		id = IRQ_decolonization
+		icon = GFX_focus_eng_decolonization
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_annex_kuveit
+		}
+		x = 38
+		y = 2
+		ai_will_do = {
+			factor = 10
+
+			
+			modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+			}
+			
+	}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = IRQ_decolonization_tt
+		}
+	}
+	focus = {
+		id = IRQ_invite_new_countries
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_baghdath_pact
+		}
+		prerequisite = {
+			focus = IRQ_decolonization
+		}
+		x = 39
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = SYR
+			country_exists = PAL
+			country_exists = JOR
+			country_exists = LEB
+			NOT = {
+				has_capitulated = yes
+				has_war_with = SYR
+				has_war_with = LEB
+				has_war_with = JOR
+				has_war_with = PAL
+				is_puppet = yes
+			}
+			has_fascist_government = yes
+		}
+		completion_reward = {
+			add_to_faction = SYR
+			add_to_faction = PAL
+			add_to_faction = LEB
+			add_to_faction = JOR
+		}
+	}
+	focus = {
+		id = IRQ_joint_research_in_field_industry
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_invite_pact_to_neiberh
+			focus = IRQ_invite_new_countries
+		}
+		x = 38
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				is_puppet = yes
+			}
+			has_fascist_government = yes
+			OR = {
+				is_in_faction_with = PER
+				is_in_faction_with = SAU
+				is_in_faction_with = TUR
+				is_in_faction_with = SYR
+				is_in_faction_with = LEB
+				is_in_faction_with = JOR
+				is_in_faction_with = PAL
+			}
+		}
+		completion_reward = {
+			IRQ = { add_to_tech_sharing_group = IRQ_joint_research_in_field_industry_thgr }
+			if = {
+				limit = { PER = { is_in_faction_with = IRQ } }
+				IRQ = { PER = { add_to_tech_sharing_group = IRQ_joint_research_in_field_industry_thgr } }
+			}
+			if = {
+				limit = { TUR = { is_in_faction_with = IRQ } }
+				IRQ = { TUR = { add_to_tech_sharing_group = IRQ_joint_research_in_field_industry_thgr } }
+			}
+			if = {
+				limit = { SAU = { is_in_faction_with = IRQ } }
+				IRQ = { SAU = { add_to_tech_sharing_group = IRQ_joint_research_in_field_industry_thgr } }
+			}
+			if = {
+				limit = { SYR = { is_in_faction_with = IRQ } }
+				IRQ = { SYR = { add_to_tech_sharing_group = IRQ_joint_research_in_field_industry_thgr } }
+			}
+			if = {
+				limit = { LEB = { is_in_faction_with = IRQ } }
+				IRQ = { LEB = { add_to_tech_sharing_group = IRQ_joint_research_in_field_industry_thgr } }
+			}
+			if = {
+				limit = { JOR = { is_in_faction_with = IRQ } }
+				IRQ = { JOR = { add_to_tech_sharing_group = IRQ_joint_research_in_field_industry_thgr } }
+			}
+			if = {
+				limit = { PAL = { is_in_faction_with = IRQ } }
+				IRQ = { PAL = { add_to_tech_sharing_group = IRQ_joint_research_in_field_industry_thgr } }
+			}
+		}
+	}
+	focus = {
+		id = IRQ_german_military_quality
+		icon = GFX_goal_rhineland
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_german_iraq_pact
+		}
+		x = 33
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				has_war_with = GER
+				is_puppet = yes
+			}
+			has_fascist_government = yes
+		}
+		completion_reward = {
+			add_ideas = IRQ_german_military_quality_idea
+		}
+	}
+	focus = {
+		id = IRQ_join_to_axis
+		icon = GFX_focus_ger_oppose_hitler
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_german_military_quality
+		}
+		prerequisite = {
+			focus = IRQ_friendship_with_italy
+		}
+		x = 34
+		y = 5
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+			factor = 0
+			OR = {
+			GER = { has_capitulated = yes }
+			GER = { is_subject = yes }
+			GER = { exists = no }
+			}
+			}
+			
+			modifier = {
+			factor = 0
+			NOT = { has_war_with = ENG }
+			}
+			
+			modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+			date < 1941.1.1
+			}
+			
+		}
+		available = {
+			NOT = {
+				has_capitulated = yes
+				has_war_with = GER
+				is_puppet = yes
+			}
+			has_fascist_government = yes
+		}
+		bypass = { is_in_faction_with = GER }
+		completion_reward = {
+			GER = {
+				country_event = {
+					id = iraq.3
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = IRQ_new_chaliphat
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 10,00
+		prerequisite = {
+			focus = IRQ_pretension_egypt
+		}
+		prerequisite = {
+			focus = IRQ_pretension_sirya
+		}
+		prerequisite = {
+			focus = IRQ_pretension_holylands
+		}
+		x = 36
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			656 = { is_fully_controlled_by = IRQ }
+			680 = { is_fully_controlled_by = IRQ }
+			677 = { is_fully_controlled_by = IRQ }
+			553 = { is_fully_controlled_by = IRQ }
+			554 = { is_fully_controlled_by = IRQ }
+			454 = { is_fully_controlled_by = IRQ }
+			455 = { is_fully_controlled_by = IRQ }
+			453 = { is_fully_controlled_by = IRQ }
+			452 = { is_fully_controlled_by = IRQ }
+			447 = { is_fully_controlled_by = IRQ }
+			446 = { is_fully_controlled_by = IRQ }
+			453 = { is_fully_controlled_by = IRQ }
+			456 = { is_fully_controlled_by = IRQ }
+			457 = { is_fully_controlled_by = IRQ }
+			552 = { is_fully_controlled_by = IRQ }
+			NOT = { has_capitulated = yes is_puppet = yes }
+			has_fascist_government = yes
+		}
+		completion_reward = {
+			set_cosmetic_tag = IRQ_new_chaliphat_tag
+			656 = { add_core_of = IRQ }
+			680 = { add_core_of = IRQ }
+			677 = { add_core_of = IRQ }
+			553 = { add_core_of = IRQ }
+			554 = { add_core_of = IRQ }
+			454 = { add_core_of = IRQ }
+			455 = { add_core_of = IRQ }
+			453 = { add_core_of = IRQ }
+			452 = { add_core_of = IRQ }
+			447 = { add_core_of = IRQ }
+			446 = { add_core_of = IRQ }
+			453 = { add_core_of = IRQ }
+			456 = { add_core_of = IRQ }
+			457 = { add_core_of = IRQ }
+			552 = { add_core_of = IRQ }
+			add_stability = 0.20
+			add_war_support = 0.20
+		}
+	}
+}

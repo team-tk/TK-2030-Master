@@ -1,0 +1,714 @@
+ideologies = {
+	
+	conservatism = {
+	
+		types = {
+			
+			moderate = {
+			}
+			
+			social_conservatism = {
+			}
+			
+			conservatism_ideology = {
+			}
+			
+			national_conservatism = {
+			}
+			
+			gaullism = {
+			}
+			
+			christian_democrat = {
+			}
+			
+			classical_liberalism = {
+			}
+			
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		color = { 255 153 0 }
+		
+		rules = {
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes #
+	}
+	
+	democratic = {
+	
+		types = {
+		
+			liberalism_ideology = {
+			}
+			center_right = {
+			}
+			libertarianism = {
+			}
+			social_liberalism = {
+			}
+			#US style progressivism, not European social democracy
+			progressivism = {
+			}
+			swiss_federalism = {
+			}
+			national_liberalism = {
+			}
+			
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		color = { 252 170 23 }
+		
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {	
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes #
+	}
+	
+	socdem = {
+	
+		types = {
+			
+			social_democracy = {
+			}
+			
+			democratic_socialism = {
+			}
+			
+			
+				
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		color = { 219 112 147 }
+		
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+		
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes #
+	}
+	
+	socialism = {
+	
+		types = {
+			
+			left_populism = {
+			}
+			
+			revolutionary_socialism = {
+			}
+			
+			socialism_ideology = {
+			}
+			
+			bolivarianism = {
+			}
+			
+			
+			
+			
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 220 20 60 }
+		
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = no
+		}
+		
+		can_host_government_in_exile = yes
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.1
+		
+		modifiers = {
+
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes #
+	}
+	
+	nationalism = {
+	
+		types = {
+		
+			nationalism_ideology = {
+
+			}
+			right_populism = {
+			}
+			
+			pan_arabism  = { 
+			}
+			
+			civic_nationalism = {
+			}
+			
+			proto_fascist = {
+			}
+			
+			ethnic_nationalism = {
+			}
+			
+			baathism = {
+			}
+			
+			austrofascism = {
+
+			}
+			
+			metaxism = {
+
+			}
+
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+		
+		color = { 60 59 110 }
+		
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_force_government = yes
+			can_puppet = yes
+			can_send_volunteers = no
+		}
+		
+		modifiers = {
+		
+		}
+		
+		faction_modifiers = {
+		}
+
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes #
+	}
+
+	communism = {
+		
+		types = {
+		
+			marxism = {
+			}
+			leninism = {
+			}
+			trotskyism = {
+			}
+			stalinism = {
+			}
+			titoism = {
+			}	
+			maoism = {
+			}
+			juche = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 127 0 0 }
+		
+		war_impact_on_world_tension = 0.75		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+		
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes #
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		modifiers = {
+
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+	
+	syndicalism = {
+		
+		types = {
+		
+			syndicalism_ideology = {
+			}
+			
+			anarcho_syndicalism = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 255 0 0 }
+		
+		war_impact_on_world_tension = 0.75		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+		
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes #
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		modifiers = {
+	
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	fascism = {
+	
+		types = {
+		
+			fascism_ideology = {
+
+			}
+			legionnairism = {
+
+			}
+			falangism = {
+
+			}
+			french_fascism = {
+
+			}
+			rexism = {
+
+			}
+			taisei_yokusankai  = {
+
+			}
+			british_fascism = {
+
+			}
+			
+			
+			
+
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+		
+		color = { 0 0 0 }
+		
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		modifiers = {
+	
+		}
+
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes #
+	}
+	
+	nazism = {
+	
+		types = {
+		
+			nazism_ideology = {
+
+			}
+			strasserism = {
+
+			}
+			
+
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+		
+		color = { 148 81 0 }
+		
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		modifiers = {		
+		}
+
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes #
+	}
+	
+	
+	monarchism = {
+	
+		types = {
+		
+			absolutism = {
+
+			}
+			emiratism = {
+
+			}
+			imperial = {
+
+			}
+			popular = {
+
+			}
+	
+			constitutional = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_MONARCHIST_1"
+			"FACTION_NAME_MONARCHIST_2"
+			"FACTION_NAME_MONARCHIST_3"
+			"FACTION_NAME_MONARCHIST_4"
+			"FACTION_NAME_MONARCHIST_5"
+		}
+		
+		color = { 97 0 87 }
+		
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.6
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_only_justify_war_on_threat_country = no
+			#can_boost_other_ideologies = yes
+		}
+		
+		modifiers = {
+
+		}
+
+		ai_neutral = yes #
+		can_be_boosted = yes
+		can_collaborate = yes
+	}
+	
+	neutrality = {
+	
+		types = {
+		
+		kemalism = {
+			}
+			
+			centrism = {
+			}
+			
+			military_dictatorship  = {
+
+			}
+			pseudo_fascism = {
+
+			}
+
+			vichy = {
+
+			}
+			
+			despotism  = {
+			}
+			
+			oligarchism  = {
+			}
+			
+			moderatism = {
+			}
+			
+			provisional_government  = {
+			}
+			
+			corporatism = {
+			}
+			
+			reactionism = {
+			}
+			
+			the_peoples_tutelage = {
+			}
+			
+			agrarianism = {
+			}
+			
+			
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+		
+		color = { 192 192 192 }
+		
+		
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_force_government = no
+			can_puppet = yes
+			can_send_volunteers = no
+		}
+		
+		modifiers = {
+		
+		}
+		
+		faction_modifiers = {
+		}
+
+		can_be_boosted = yes
+		can_collaborate = yes
+		ai_neutral = yes # 
+	}
+	
+	
+	theocratic = {
+	
+		types = {
+		
+			confucianism = {
+			}
+	
+			catholicism = {
+			}
+			
+			orthodoxism = {
+			}
+			
+			protestantism = {
+			}
+			
+			lutheranism = {
+			}
+			
+			judaism = {
+			}
+			
+			sunni_islam = {
+			}
+			
+			shia_islam = {
+			}
+			
+			shafi_islam = {
+			}
+			
+			ibadi_islam = {
+			}
+			
+			taoism = {
+			}
+			
+			hinduism = {
+			}
+			
+			buddhism = {
+			}
+			
+			shintoism = {
+			}
+			
+			paganism = {
+			}
+			
+			sikhism = {
+			}
+			
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_THEOCRATIC_1"
+			"FACTION_NAME_THEOCRATIC_2"
+			"FACTION_NAME_THEOCRATIC_3"
+			"FACTION_NAME_THEOCRATIC_4"
+			"FACTION_NAME_THEOCRATIC_5"
+		}
+		
+		color = { 212 175 55 }
+		
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.6
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_only_justify_war_on_threat_country = no
+			#can_boost_other_ideologies = yes
+		}
+		
+		modifiers = {
+		
+		}
+
+		ai_neutral = yes #
+		can_be_boosted = yes
+		can_collaborate = yes
+	}
+	
+}

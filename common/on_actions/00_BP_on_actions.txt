@@ -1,0 +1,64 @@
+on_actions = {
+
+on_capitulation = {
+### American Capitulation		
+			if = { ### American Capitulation to Germany and japan
+				limit = { 
+					ROOT = {
+						original_tag = USA
+					}
+					
+					FROM = {
+						original_tag = GER 
+					}
+
+					OR = {
+					has_global_flag = germany_tripartite
+					GER = { is_in_faction_with = JAP }
+					}
+					JAP = { exists = yes }
+					JAP = { has_war_with = USA }
+				}
+
+				GER = { country_event = { id = ww2germany.6 }}
+			}
+			
+			### Canadian Capitulation	
+			if = { ### Canadian Capitulation to Germany and japan
+				limit = { 
+					ROOT = {
+						original_tag = CAN
+					}
+					
+					FROM = {
+						original_tag = GER 
+					}
+					
+					OR = {
+					has_global_flag = germany_tripartite
+					GER = { is_in_faction_with = JAP }
+					}
+					JAP = { exists = yes }
+					JAP = { has_war_with = CAN }
+					
+					
+
+				}
+
+				GER = { country_event = { id = ww2germany.7 }}
+			}
+}
+
+
+	#ROOT is subject FROM is previous overlord
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = {
+					tag = YAK
+				}
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+}

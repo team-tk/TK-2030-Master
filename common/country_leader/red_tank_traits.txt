@@ -1,0 +1,487 @@
+#		AVAILABLE TANK TRAITS
+#		#Misc Abilities
+#		maximum_speed =
+#		reliability = 
+#
+#		#Defensive Abilities
+#		defense 
+#		breakthrough
+#		hardness =
+#		armor_value =
+#
+#		#Offensive Abilities
+#		soft_attack = 56
+#		hard_attack = 1
+#		ap_attack = 5 #
+#		air_attack = 0	
+#       reliability 
+#		build_cost_ic 
+
+#		TANK TYPES
+#       light_tank_equipment
+#       medium_tank_equipment
+#       heavy_tank_equipment
+#       super_heavy_tank_equipment
+
+#       SPAA
+#       light_tank_aa_equipment
+#       medium_tank_aa_equipment
+#       heavy_tank_aa_equipment
+#       super_heavy_tank_aa_equipment
+#       modern_tank_aa_equipment
+
+#       SP Artillery
+#       light_tank_artillery_equipment
+#       medium_tank_artillery_equipment
+#       heavy_tank_artillery_equipment
+#       super_heavy_tank_artillery_equipment
+#       modern_sp_artillery_brigade
+
+#       SP AT      
+#       light_tank_destroyer_equipment
+#       medium_tank_destroyer_equipment
+#       heavy_tank_destroyer_equipment
+#       super_heavy_tank_destroyer_equipment
+#       modern_tank_destroyer_brigade
+#
+
+# NOTE: bonuses defined here apply to the equipment designed and will persist 
+# bonuses defined in ideas will only apply while the idea is active
+
+leader_traits = {
+	#------------------ Czech Designers --------------------
+	skoda_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			medium_tank_destroyer_equipment = {
+				armor_value = 0.25
+				hard_attack = 0.20
+				build_cost_ic = -0.20
+			}
+			modern_tank_destroyer_equipment = {
+				armor_value = 0.10
+				hard_attack = 0.10
+				ap_attack = 0.10
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}		
+	}	
+	#------------------ French Designers --------------------
+	hotchkiss_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			light_tank_equipment = {
+				armor_value = 0.40
+				hard_attack = 0.20
+				maximum_speed = 0.25
+			}
+			modern_tank_equipment = {
+				armor_value = 0.10
+				hard_attack = 0.10
+				maximum_speed = 0.25
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+	renault_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			medium_tank_equipment = {
+				armor_value = 0.40
+				soft_attack = 0.20
+				maximum_speed = -0.50
+			}
+			modern_tank_equipment = {
+				armor_value = 0.20
+				soft_attack = 0.20
+				maximum_speed = -0.25
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}		
+	}	
+    #------------------ German Designers --------------------
+	daimler_benz_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			medium_tank_equipment = {
+				defense = 0.05
+				soft_attack = 0.10
+				reliability = 0.10
+			}
+			modern_tank_equipment = {
+				defense = 0.05
+				soft_attack = 0.10
+				reliability = 0.10
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	GER_MAN_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			medium_tank_equipment = {
+				defense = 0.10
+				breakthrough = 0.10
+				hardness = 0.20
+				ap_attack = 0.20
+				maximum_speed = 0.25 #fast though
+				reliability = -0.25 #panthers weren't the most reliable
+				build_cost_ic = 0.20
+			}
+			modern_tank_equipment = {
+				defense = 0.10
+				breakthrough = 0.10
+				hardness = 0.10
+				ap_attack = 0.10
+				maximum_speed = 0.10
+				build_cost_ic = 0.10
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		GER_ckd_tank_manufacturer = {
+	
+		random = no 
+
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+
+	GER_nibelungenwerke_tank_manufacturer = {
+		random = no 
+
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	
+	krupp_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			medium_tank_equipment = {
+				defense = 0.05
+				ap_attack = 0.10
+				hard_attack = 0.10
+				reliability = 0.10
+			}
+			modern_tank_equipment = {
+				defense = 0.05
+				ap_attack = 0.10
+				hard_attack = 0.10
+				reliability = 0.10
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}       
+	henschel_tank_manufacturer = {	
+		random = no
+		equipment_bonus = {
+			heavy_tank_equipment = {
+				hardness = 0.10
+				ap_attack = 0.10
+				breakthrough = 0.10
+				hard_attack = 0.20
+				reliability = 0.15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	porsche_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			heavy_tank_equipment = {
+				hard_attack = 0.20
+				ap_attack = 0.10
+				armor_value = 0.33
+				breakthrough = 0.15
+				reliability = -0.25 				
+			}
+			super_heavy_tank_equipment = {
+				hard_attack = 0.15
+				ap_attack = 0.10
+				armor_value = 0.20
+				breakthrough = 0.20
+				reliability = -0.25 				
+			}			
+			heavy_tank_destroyer_equipment = {
+				hard_attack = 0.15
+				ap_attack = 0.10
+				armor_value = 0.20	
+				breakthrough = 0.20
+				reliability = -0.25 				
+			}
+			super_heavy_tank_destroyer_equipment = {
+				hard_attack = 0.15
+				ap_attack = 0.10
+				armor_value = 0.25
+				breakthrough = 0.20				
+				reliability = -0.25 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	vomag_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			medium_tank_destroyer_equipment = {
+				hard_attack = 0.10
+				ap_attack = 0.10
+				armor_value = 0.05
+			}
+			medium_tank_aa_equipment = {
+				soft_attack = 2.50
+				air_attack = 0.40
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    #------------------ Italian Designers --------------------
+	fiat_tank_manufacturer = { 
+		random = no
+		equipment_bonus = {
+			armor = {
+				reliability = 0.10
+			}
+			light_tank_aa_equipment = {
+				soft_attack = 2.00
+				air_attack = 0.25
+			}
+			light_tank_artillery_equipment = {
+				soft_attack = 0.15
+				air_attack = 0.25
+			}			
+			medium_tank_aa_equipment = {
+				soft_attack = 2.00
+				air_attack = 0.25
+			}
+			medium_tank_destroyer_equipment = {
+				armor_value = -0.15
+				ap_attack = 0.33
+			}
+			heavy_tank_destroyer_equipment = {
+				armor_value = -0.15
+				ap_attack = 0.25
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#------------------ Japanese Designers -------------------- 
+	osaka_manufacturer = {
+		equipment_bonus = {
+			armor = {
+				reliability = 0.10
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}		
+	}   
+    #------------------ Russian Designers --------------------
+	#Kharkiv MorozevDB (T-34)
+	kharkiv_manufacturer = { 
+		random = no
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.15 armor_value = 0.10 
+			}
+			#the famous t-34
+			medium_tank_equipment = {
+				ap_attack = 0.25
+				hard_attack = 0.25
+				soft_attack = 0.10
+				armor_value = 0.25
+				reliability = -0.35 #T-34 had truly awful teething issues
+				build_cost_ic = -0.35 
+			}
+			modern_tank_equipment = { 
+				ap_attack = 0.20
+				hard_attack = 0.20			
+				armor_value = 0.25 
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	} 
+	#Kirov LKZ (heavy tanks, they built the IS series)
+	kirov_manufacturer = { 
+		random = no
+		equipment_bonus = {
+			armor = {
+				ap_attack = 0.10
+				armor_value = 0.30
+				build_cost_ic = 0.30
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	} 
+    #------------------ UK Designers --------------------
+    #leyland (comet and cromwell)
+	leyland_tank_manufacturer = { 
+		random = no
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.10
+			}
+			medium_tank_equipment = { 
+				ap_attack = 0.15 
+				hard_attack = 0.05
+				armor_value = 0.08
+				maximum_speed = 0.30 
+				reliability = 0.1 
+			}
+			medium_tank_artillery_equipment = { maximum_speed = 0.30 reliability = 0.1 }
+			medium_tank_destroyer_equipment { ap_attack = 0.15 maximum_speed = 0.30 reliability = 0.1 }
+			medium_tank_aa_equipment { 
+				ap_attack = 0.15 
+				soft_attack = 0.40 
+				maximum_speed = 0.30 
+				reliability = 0.1 
+			}
+
+			modern_tank_equipment = { 
+				ap_attack = 0.15 
+				hard_attack = 0.05
+				armor_value = 0.10
+				maximum_speed = 0.30 
+				reliability = 0.1 
+			}
+			modern_tank_artillery_equipment = { maximum_speed = 0.30 reliability = 0.1 }
+			modern_tank_destroyer_equipment { ap_attack = 0.15 maximum_speed = 0.30 reliability = 0.1 }
+			modern_tank_aa_equipment { maximum_speed = 0.30 reliability = 0.1 }			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    #vauxhaul motors (churchill)
+	vauxhaul_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				soft_attack = 0.1
+			}
+			heavy_tank_equipment = {
+				soft_attack = 0.30
+				hard_attack = -0.10
+				ap_attack = -0.10
+				armor_value = 0.25
+				breakthrough = 0.20
+				maximum_speed = -0.10
+				reliability = -0.10	
+				build_cost_ic = 0.10			
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    #------------------ US Designers --------------------
+    #US Chrysler (fast tanks) and heavy tank builder (detroit tank arsenal)
+	chrysler_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				maximum_speed = 0.10 
+				reliability = 0.1 
+				soft_attack = 0.15 
+				hard_attack = 0.15	
+				ap_attack = 0.15			
+				build_cost_ic = 0.33
+			}
+			heavy_tank_equipment = {
+				soft_attack = 0.10
+				hard_attack = 0.10 # the T-29 was a bruiser (bad day for Tiger IIs) (its T-13 round was particularly effective)
+				ap_attack = 0.10 
+				armor_value = 0.20
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}    	
+    #General Motors (mass production and light vehicles)
+	general_motors_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				reliability = 0.2 
+				soft_attack = 0.2
+			}
+			#GM designed the m24 chaffee and its derivatives 
+			light_tank_equipment = { 
+				maximum_speed = 0.25 
+				reliability = 0.2 
+				soft_attack = 0.15
+			}
+			light_tank_artillery_equipment = { #based on m8 scott (GM cadillac)
+				maximum_speed = 0.25 
+				reliability = 0.2 
+				soft_attack = 0.25
+				hard_attack = 0.20
+				ap_attack = 0.15 
+			}	
+			light_tank_destroyer_equipment = {
+				maximum_speed = 0.25 
+				reliability = 0.2 
+				hard_attack = 0.20				
+			}
+			light_tank_aa_equipment = { #based on m19 duster (GM cadillac)
+				maximum_speed = 0.25 
+				reliability = 0.2 
+				air_attack = 0.35
+			}	
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	} 
+    #Army Ordnance (infantry support tank designer M4 Sherman and stuart)
+	army_ordnance_tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				soft_attack = 0.30
+				reliability = 0.2 
+				build_cost_ic = -0.25
+			}
+			medium_tank_equipment = {
+				ap_attack = -0.15 
+				armor_value = -0.15 
+			}				
+			medium_tank_destroyer_equipment = {
+				ap_attack = 0.10 	
+				armor_value = -0.10 
+							
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	} 
+)

@@ -1,0 +1,1027 @@
+ideas = {
+
+	country = {
+	
+	
+	An_Invasion_of_The_Moon = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = idea_generic_coastal_navy
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				submarine = {
+					naval_range = 0.25 instant = yes
+				}
+				screen_ship = {
+					naval_range = 0.25 instant = yes
+				}
+				carrier = {
+					naval_range = 0.25 instant = yes
+				}
+				capital_ship = {
+					naval_range = 0.25 instant = yes
+				}
+			}
+			
+			modifier = {
+				convoy_escort_efficiency = 0.25
+				amphibious_invasion = 0.35
+				amphibious_invasion_defence = 0.35
+				naval_invasion_capacity = 100
+			}
+			
+		}
+		
+		
+		fresh_blitzkreig = {
+			allowed = {
+				original_tag = GER
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_armor
+			
+			modifier = {
+				army_org_Factor = 0.05
+				army_attack_factor = 0.15
+				army_speed_factor = 0.15
+				planning_speed = 0.15
+				enemy_partisan_effect = -0.10
+			}
+		}
+		
+		bomb_america = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = strategic_bombing_focus
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				heavy_fighter_equipment = {
+					air_range = 0.5 air_agility = 0.5 instant = yes
+				}
+				strat_bomber_equipment = {
+					air_range = 0.5 air_defence = 0.5 instant = yes
+				}
+				jet_fighter_equipment = {
+					air_range = 0.5 air_agility = 0.5 instant = yes
+				}
+			}
+			
+		}
+	
+	
+	GER_Lebensraum_I = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = HUN_treaty_of_triannon	
+			
+			modifier = {
+				stability_factor = -0.15
+				stability_weekly = -0.01
+				
+				political_power_gain = -0.5
+				max_command_power = -25
+				
+				MONTHLY_POPULATION = -0.25
+				
+				min_export = 0.15
+				civilian_factory_use = 30
+			}
+		}
+		
+		ger_space_program = {	
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_research
+
+			removal_cost = -1
+			
+			research_bonus = {
+				rocketry = 0.25
+			}
+		}
+		
+		reparations_to_germany = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_foreign_capital
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				political_power_cost = 0.3
+			}
+		}
+		
+		a_revised_versailles = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				#unity_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		
+		GER_Lebensborn_I = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_army_war_college
+
+			modifier = {
+				political_power_gain = 0.10
+				monthly_population = 0.30
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		GER_Germania_I1 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				monthly_population = 0.15
+				consumer_goods_factor = 0.03
+			}
+		}
+		
+		
+		GER_Germania_I2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				political_power_gain = 0.25
+				monthly_population = 0.15
+				consumer_goods_factor = 0.03
+				send_volunteer_size = 2	
+				non_core_manpower = 0.05
+				conscription = 0.005
+				subjects_autonomy_gain = -0.15
+			}
+		}
+		
+		GER_ss = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+				enemy_partisan_effect = -0.1
+			}
+		}
+		
+		
+	
+	GER_authoritarian_idea = {
+			removal_cost = -1
+			allowed = {always = no}
+			allowed_civil_war = { always = yes }
+			picture = generic_pp_unity_bonus
+			modifier = {
+				neutrality_drift = 0.15
+			}
+		}
+		
+		GER_theocratic_idea = {
+			removal_cost = -1
+			allowed = {always = no}
+			allowed_civil_war = { always = yes }
+			picture = ger_ss
+			modifier = {
+				theocratic_drift = 0.15
+			}
+		}
+	
+			blitzkrieg_1941 = {
+
+			allowed = { always = no }
+			picture = generic_acquire_tanks
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.10
+				army_armor_attack_factor = 0.10
+			    army_armor_defence_factor = 0.10
+			    army_armor_speed_factor = 0.25
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+
+		luftwaffe_1941 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = air_support_focus
+
+			removal_cost = -1
+
+			modifier = {
+				army_bonus_air_superiority_factor = 0.20
+				air_air_superiority_attack_factor = 0.10
+				air_close_air_support_attack_factor = 0.10
+				air_interception_attack_factor = 0.10
+				air_defence_factor = 1.0
+				air_agility_factor = 1.0
+			}
+		}
+		
+		
+		
+		operation_sealion = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = air_support_focus
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.10
+				army_armor_attack_factor = 0.10
+			    army_armor_defence_factor = 0.10
+			    army_armor_speed_factor = 0.25
+				army_bonus_air_superiority_factor = 0.20
+				air_air_superiority_attack_factor = 0.10
+				air_close_air_support_attack_factor = 0.10
+				air_interception_attack_factor = 0.10
+				air_defence_factor = 1.0
+				air_agility_factor = 1.0
+				naval_strike_attack_factor = 0.10
+				naval_strike_targetting_factor = 0.10
+				naval_strike_agility_factor = 0.10
+				convoy_escort_efficiency = 0.50
+				navy_anti_air_attack_factor = 0.1
+				naval_hit_chance = 0.05
+				naval_coordination = 0.01
+				naval_speed_factor = 0.10
+				navy_submarine_detection_factor = 0.10
+				navy_capital_ship_attack_factor = 0.10
+				navy_capital_ship_defence_factor = 0.10
+				navy_submarine_attack_factor = 0.2
+				navy_submarine_defence_factor = 0.2
+				navy_screen_attack_factor = 0.10
+				navy_screen_defence_factor = 0.10
+			}
+		}
+		
+		fall_blau = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_acquire_tanks
+
+			modifier = {
+				army_attack_factor = 0.2
+				army_org_Factor = 0.20
+				army_morale_factor = 0.1
+				army_speed_factor = 0.10
+			}
+		}
+		
+		fall_gelb = {
+
+			allowed = { always = no }
+			picture = generic_morale_bonus
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.10
+				army_armor_attack_factor = 0.10
+			    army_armor_defence_factor = 0.10
+			    army_armor_speed_factor = 0.25
+				army_bonus_air_superiority_factor = 0.20
+				air_air_superiority_attack_factor = 0.10
+				air_close_air_support_attack_factor = 0.10
+				air_interception_attack_factor = 0.10
+				air_defence_factor = 1.0
+				air_agility_factor = 1.0
+			}
+
+			targeted_modifier = {
+				tag = BEL
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = HOL
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = LUX
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		
+		operation_weserubung = {
+
+			allowed = { always = no }
+			picture = generic_morale_bonus
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.10
+				army_armor_attack_factor = 0.10
+			    army_armor_defence_factor = 0.10
+			    army_armor_speed_factor = 0.25
+				army_bonus_air_superiority_factor = 0.20
+				air_air_superiority_attack_factor = 0.10
+				air_close_air_support_attack_factor = 0.10
+				air_interception_attack_factor = 0.10
+				air_defence_factor = 1.0
+				air_agility_factor = 1.0
+				naval_strike_attack_factor = 0.10
+				naval_strike_targetting_factor = 0.10
+				naval_strike_agility_factor = 0.10
+				convoy_escort_efficiency = 0.50
+				navy_anti_air_attack_factor = 0.1
+				naval_hit_chance = 0.05
+				naval_coordination = 0.01
+				naval_speed_factor = 0.10
+				navy_submarine_detection_factor = 0.10
+				navy_capital_ship_attack_factor = 0.10
+				navy_capital_ship_defence_factor = 0.10
+				navy_submarine_attack_factor = 0.2
+				navy_submarine_defence_factor = 0.2
+				navy_screen_attack_factor = 0.10
+				navy_screen_defence_factor = 0.10
+			}
+
+			targeted_modifier = {
+				tag = DEN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = NOR
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+
+		}
+		
+		blitzkrieg_1940 = {
+
+			allowed = { always = no }
+			picture = generic_acquire_tanks
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.10
+				army_armor_attack_factor = 0.10
+			    army_armor_defence_factor = 0.10
+			    army_armor_speed_factor = 0.25
+			}
+
+			targeted_modifier = {
+				tag = DEN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = NOR
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = BEL
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = HOL
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = LUX
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		
+		luftwaffe_1940 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = air_support_focus
+
+			removal_cost = -1
+
+			modifier = {
+				army_bonus_air_superiority_factor = 0.20
+				air_air_superiority_attack_factor = 0.10
+				air_close_air_support_attack_factor = 0.10
+				air_interception_attack_factor = 0.10
+				air_defence_factor = 1.0
+				air_agility_factor = 1.0
+			}
+		}
+
+		operation_citadel = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_acquire_tanks
+
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_Factor = 0.15
+				army_morale_factor = 0.1
+				army_speed_factor = 0.10
+			}
+		}
+		
+		grounded_luftwaffe_1944 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = air_support_focus
+
+			modifier = {
+				air_ace_generation_chance_factor = -1.0
+				air_interception_attack_factor = -0.2
+				air_intercept_efficiency = -0.2
+				air_air_superiority_attack_factor = -0.1
+				air_close_air_support_attack_factor = -0.1
+				air_cas_efficiency = -0.1
+				air_superiority_efficiency = -0.2
+				air_escort_efficiency = -0.25
+				army_speed_factor = -0.5
+			}
+		}
+		
+			ger_soviet_winter = {
+			allowed = {
+				#original_tag = GER
+				has_war_with = SOV
+				has_global_flag = soviet_winter
+			}
+			
+			cancel_if_invalid = yes
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1		
+		
+			modifier = {
+				winter_attrition_factor = 0.5
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = -0.20
+			}			
+		}
+		
+		ww2_operation = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_acquire_tanks
+
+		}
+		
+		battle_of_the_bulge = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_acquire_tanks
+
+			modifier = {
+				cas_damage_reduction = 0.5
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_Factor = 0.15
+				army_morale_factor = 0.1
+				army_speed_factor = 0.10
+			}
+			
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+
+		operation_typhoon = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_acquire_tanks
+
+			modifier = {
+				army_org_Factor = 0.15
+				army_morale_factor = 0.1
+				army_armor_attack_factor = 0.15
+			    army_armor_defence_factor = 0.15
+			    army_armor_speed_factor = 0.20
+			}
+		}
+	
+			GER_Hitlerjugend = {
+			picture = GER_Hitlerjugend
+		
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				OR = {
+			has_fascist_government = yes
+			has_government = theocratic
+			}
+			}
+			
+			available = {
+			OR = {
+			has_fascist_government = yes
+			has_government = theocratic
+			}
+			}
+			
+			cancel_if_invalid = yes
+
+			removal_cost = -1
+			
+			modifier = {
+				#conscription = 0.01
+				#non_core_manpower = 0.01
+				training_time_factor = -0.10
+			}
+		}
+		
+		ger_memories_of_a_two_front_war = {
+			
+			
+			allowed = {
+				always = no
+			}
+			
+			available = {
+			has_war = no
+			}
+			
+			cancel_if_invalid = yes
+			
+			picture = ger_the_great_red_menace
+			
+			removal_cost = -1
+			
+			
+			modifier = {
+				war_support_factor = -0.1
+			}
+			
+			rule = {
+				can_only_justify_war_on_threat_country = yes
+			}
+			
+		}
+		
+		ger_heavy_aircraft_inexperience = {
+			
+			
+			allowed = {
+				always = no
+			}
+			
+			available = {
+				NOT = { has_completed_focus = GER_nationalize_aviation_industry }
+			}
+			
+			cancel_if_invalid = yes
+			
+			picture = generic_air_payment
+			
+			removal_cost = -1
+			
+			research_bonus = {
+				cat_strategic_bomber = -0.4
+			}
+			
+		}
+
+		GER_crystal_night = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+		
+			picture = GER_Crystal_Night
+			
+			modifier = {
+				fascism_drift = 0.01
+				stability_weekly = 0.007
+			}		
+		}
+		
+		GER_barbarossa_challenge = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1		
+		
+			picture = FRA_motorized_focus
+		
+			modifier = {
+				attrition = 0.10
+				supply_consumption_factor = 0.20
+				out_of_supply_factor = 0.20			
+			}		
+		}
+
+		GER_logistic_costs = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+		
+			picture = generic_build_infrastructure
+		
+			modifier = {
+				supply_consumption_factor = 0.20
+				out_of_supply_factor = 0.20	
+			}		
+		}		
+
+		GER_logistic_costs1 = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+		
+			picture = generic_build_infrastructure
+		
+			modifier = {
+				supply_consumption_factor = 0.15
+				out_of_supply_factor = 0.15	
+			}		
+		}
+		
+		GER_logistic_costs2 = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+		
+			picture = generic_build_infrastructure
+		
+			modifier = {
+				supply_consumption_factor = 0.10
+				out_of_supply_factor = 0.10	
+			}		
+		}		
+
+		GER_logistic_costs3 = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+		
+			picture = generic_build_infrastructure
+		
+			modifier = {
+				supply_consumption_factor = 0.05
+				out_of_supply_factor = 0.05	
+			}		
+		}
+
+		GER_grosraumwirtschaft1 = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				out_of_supply_factor = -0.05
+			}
+		}
+
+		GER_grosraumwirtschaft2 = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				out_of_supply_factor = -0.10
+			}
+		}		
+		
+		GER_TUR_pact = {
+
+			available = {
+				NOT = { is_in_faction_with = SOV }
+				NOT = { has_war_together_with = SOV }
+				NOT = { has_communist_government = yes }
+				NOT = { has_war_with = GER }
+			}
+		
+			allowed = {
+				OR = {
+					original_tag = TUR
+					original_tag = GER
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = GER_TUR_coop
+			
+			modifier = {
+				fascism_drift = 0.1
+				fascism_acceptance = 25				
+			}
+			
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.20
+			}				
+		}
+
+		GER_spoils_from_east = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			picture = generic_agrarian_reform
+		
+			modifier = {
+				consumer_goods_factor = -0.1
+			}		
+		}		
+	}
+	political_advisor = {		
+		reinhard_heydrich = {
+
+			
+			allowed = {
+				original_tag = CZE
+			}
+			available = {
+				NOT = { has_global_flag = heydrich_dead }
+				GER = { has_fascist_government = yes }
+				has_fascist_government = yes
+				is_subject_of = GER
+			}
+			
+			cancel_if_invalid = yes
+			
+			traits = { man_with_the_iron_heart }
+		}	
+	}	
+}

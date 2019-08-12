@@ -1,0 +1,21 @@
+ai_historical_focus_list_ARG = {
+	ai_national_focuses = {
+		ARG_renegotiate_treaty
+		ARG_port_madero
+		ARG_breadbasket
+		ARG_migrant_acceptance
+		ARG_migrant_minds
+		ARG_1937_elections
+		ARG_president_ortiz
+		ARG_industrial_development
+		ARG_german_inversions
+		ARG_german_iron
+		ARG_german_tungsten
+		ARG_military_factories
+		ARG_military_factories2
+		ARG_german_engeneering
+		ARG_research_1
+		ARG_diplomacy
+		ARG_neutrality_diplomacy
+	}
+}

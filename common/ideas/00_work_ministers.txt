@@ -1,0 +1,119 @@
+#ideas = {
+
+	political_advisor = {
+
+		SPR_flc = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_idea_with_trait = work_minister }
+				OR = { 
+				has_country_flag = pce_power
+				has_country_flag = psoe_power
+				has_country_flag = ars_power
+				}
+			}
+			
+			traits = {
+			work_minister
+			
+			}
+		}
+		
+		SPR_jose_d = {
+
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_idea_with_trait = work_minister }
+				OR = { 
+				has_country_flag = pce_power
+				}
+			}
+			
+			traits = {
+			work_minister
+			
+			}
+		}
+		
+		SPR_salmon = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_idea_with_trait = work_minister }
+				OR = { 
+				has_country_flag = ceda_power
+				has_country_flag = center_power
+				has_country_flag = monarchy_power
+				}
+			}
+			
+			traits = {
+			work_minister
+			
+			}
+		}
+		
+		SPR_ramos = {
+
+			picture = generic_political_advisor_europe_4
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_idea_with_trait = work_minister }
+				OR = { 
+				has_country_flag = ir_power
+				has_country_flag = center_power
+				}
+			}
+			
+			traits = {
+			work_minister
+			
+			}
+		}
+		
+		SPR_graciaw = {
+
+			picture = generic_political_advisor_europe_5
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_idea_with_trait = work_minister }
+				OR = { 
+				has_country_flag = psoe_power
+				has_country_flag = ars_power
+				}
+			}
+			
+			traits = {
+			work_minister
+			
+			}
+		}
+		
+		SPR_giron = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_idea_with_trait = work_minister }
+				OR = { 
+				has_country_flag = fascist_power
+				}
+			}
+			
+			traits = {
+			work_minister
+			
+			}
+		}
+	}
+#}

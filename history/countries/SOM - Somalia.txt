@@ -1,0 +1,84 @@
+﻿capital = 559
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+religion_sunni_islamism
+}
+
+add_ideas = { 	
+		press_regulated
+		train_low
+		education_budget2 health_budget2  socialsecurity_budget2
+}
+
+set_convoys = 10
+
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 50
+	fascism = 20
+	communism = 5
+	conservatism = 25
+}
+
+create_country_leader = {
+	name = "Olol Dinke"
+	desc = "POLITICS_OLOL_DINKE_DESC"
+	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_land_1.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Omar Samanthar"
+	desc = "POLITICS_OMAR_SAMANTHAR_DESC"
+	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_land_2.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Aden Adde"
+	desc = "POLITICS_ADEN_ADDE_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	ideology = conservatism_ideology
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Siad Barre"
+	desc = "POLITICS_SIAD_BARRE_DESC"
+	picture = "gfx/leaders/DARK/Portrait_DARK_Siad_Barre.tga"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Siad Barre"
+	portrait_path = "gfx/leaders/DARK/Portrait_DARK_Siad_Barre.tga"
+	traits = { brilliant_strategist harsh_leader infantry_officer infantry_leader desert_fox }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+

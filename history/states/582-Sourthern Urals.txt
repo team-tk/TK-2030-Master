@@ -1,0 +1,25 @@
+state={
+	id=582
+	name="STATE_582"
+	resources={
+		steel=40.000
+		oil=6.000
+	}
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = SOV
+		add_core_of = RUS
+	}
+
+	provinces={
+		1406 4261 4265 4311 4383 7300 7373 10185 12117 12200 10142
+	}
+	manpower=1001
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

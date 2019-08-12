@@ -1,0 +1,252 @@
+﻿capital = 48
+
+oob = "BUL_1936"
+
+set_convoys = 25
+
+add_ideas = {
+religion_orthodoxism
+}
+
+add_ideas = {
+	#BUL_bulgarian_tsardom
+	BUL_imro
+	BUL_second_national_catastrophe
+}
+
+add_ideas = { 	
+	export_focus
+	tax_low
+	tariffs_average
+	
+	civilian_economy
+	press_regulated
+	key_industries
+	labor_none
+	fdi_allowed
+	security_minor_restrictions
+	
+	cons_one
+	foreign_volunteers
+	
+	train_none
+	#age_19
+	officer_train_none
+	
+	education_budget2 health_budget2   socialsecurity_budget2 
+	
+	unity6		
+	foreign_isolationism
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "1931.6.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+conservatism = 12
+nazism = 8
+democratic = 5
+socdem = 6
+communism = 8
+neutrality = 11
+monarchism = 50
+}
+
+
+
+create_country_leader = {
+	name = "Georgi Kyoseivanov"
+	desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
+	picture = "Portrait_Bulgaria_Georgi_Kyoseivanov.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Georgi Dimitrov"
+	desc = "POLITICS_GEORGI_DIMITROV_DESC"
+	picture = "Portrait_Bulgaria_Georgi_Dimitrov.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = { }
+}
+### PLACEHOLDER
+create_country_leader = {
+	name = "Georgi Dimitrov"
+	desc = "POLITICS_GEORGI_DIMITROV_DESC"
+	picture = "Portrait_Bulgaria_Georgi_Dimitrov.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Zivko Topalovic"
+	desc = "POLITICS_ZIVCO_TOPALOVIC_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Konstantin Bozveliev"
+	picture = "Konstantin_Bozveliev_Socialist.dds"
+	expire = "1965.1.1"
+	ideology = socialism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Nikola Mushanov"
+	picture = "Portrait_Bulgaria_Nikola_Mushanov.dds"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Mihail Gerdzhikov"
+	picture = "gfx/leaders/BUL/Mihail_Gerdzhikov_Anarcho_Syndicalist.dds"
+	expire = "1965.1.1"
+	ideology = anarcho_syndicalism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Atanas Burov"
+	desc = "POLITICS_ATANAS_BUROV_DESC"
+	picture = "gfx/leaders/BUL/burov.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = { }
+}
+
+
+
+create_country_leader = {
+	name = "Atanas Burov"
+	desc = "POLITICS_ATANAS_BUROV_DESC"
+	picture = "gfx/leaders/BUL/burov.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Bogdan Filov"
+	picture = "gfx/leaders/BUL/Portrait_Bulgaria_Bogdan_Filov.dds"
+	expire = "1965.1.1"
+	ideology = legionnairism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Hristo Lukov"
+	desc = "POLITICS_HRISTO_LUKOV_DESC"
+	picture = "Portrait_bulgaria_hristo_lukov.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Boris III"
+	desc = "POLITICS_BORIS_III_DESC"
+	picture = "Portrait_Bulgaria_Boris_III.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = { }
+}
+
+### PLACEHOLDER
+create_country_leader = {
+	name = "Vladimir Dimitrov Stoychev"
+	desc = ""
+	picture = "Portrait_Bulgaria_Vladimir_Dimitrov_Stoychev.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = { }
+}
+
+create_corps_Commander = {
+	name = "Konstantin Bekyarov"
+	picture = "Portrait_Bulgaria_Konstantin_Bekyarov.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_Commander = {
+	name = "Nikola Nedeva"
+	picture = "Portrait_Bulgaria_Nikola_Dimitrov_Nedeva.dds"
+	traits = { old_guard bearer_of_artillery }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Vladimir Stoychev"
+	picture = "Portrait_Bulgaria_Vladimir_Dimitrov_Stoychev.dds"
+	traits = { cavalry_officer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Dimitr Ayryanov"
+	picture = "Portrait_Bulgaria_Dimitr_Vasilev_Ayryanov.dds"
+	traits = { trait_engineer organizer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_Commander = {
+	name = "Nikola Markov"
+	picture = "Portrait_Bulgaria_Nikola_Markov.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_Commander = {
+	name = "Asen Nikolov"
+	picture = "Portrait_Bulgaria_Asen_Nikolov.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}

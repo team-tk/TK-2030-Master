@@ -1,0 +1,25 @@
+technologies = {
+	
+
+	usa_tech_tsubodai_campaigns = {
+
+		research_cost = 1
+		
+		army_speed_factor = 0.10
+		
+		motorized = {
+			max_organisation = 15
+			
+		}
+		mechanized = {
+			max_organisation = 15
+		}
+		
+		category_tanks = {
+			max_organisation = 10
+		}
+
+		
+	}
+
+}

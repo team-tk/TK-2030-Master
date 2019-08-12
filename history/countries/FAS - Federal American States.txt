@@ -1,0 +1,647 @@
+﻿capital = 360
+
+oob = "FAS_1936"
+
+set_research_slots = 4
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	#infantry_weapons1 = 0.0
+	support_weapons = 1
+	support_weapons2 = 1
+	marines = 1
+	marines2 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 0.9
+	tech_maintenance_company = 0.9
+	tech_field_hospital = 0.9
+	tech_logistics_company = 0.9
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1 
+	early_fighter = 1
+	cv_early_fighter = 1
+	#cv_fighter1 = 0.9
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	tactical_bomber1  = 0.9
+	early_bomber = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
+	air_superiority = 1
+	infrastructure_destruction = 1
+	home_defence = 1
+	naval_strike_tactics = 1
+	superior_firepower = 1
+	base_strike = 1
+	carrier_primacy = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	mechanical_computing = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	#assembly_line_production = 1
+	concentrated_industry = 1
+	concentrated_industry2 = 1
+	concentrated_industry3 = 1
+	#concentrated_industry4 = 1
+	construction1 = 1
+	construction2 = 1
+	construction3 = 1
+	excavation1 = 1
+	excavation2 = 1
+	excavation3 = 1
+	
+
+}
+
+#Monroe Doctrine
+#give_guarantee = CAN
+#give_guarantee = MEX
+#give_guarantee = CUB
+#give_guarantee = HAI
+#give_guarantee = DOM
+#give_guarantee = GUA
+#give_guarantee = HON
+#give_guarantee = ELS
+#give_guarantee = NIC
+#give_guarantee = COS
+#give_guarantee = PAN
+#give_guarantee = VEN
+#give_guarantee = COL
+#give_guarantee = ECU
+#give_guarantee = PRU
+#give_guarantee = BRA
+#give_guarantee = BOL
+#give_guarantee = CHL
+#give_guarantee = PAR
+#give_guarantee = ARG
+#give_guarantee = URG
+
+
+
+
+set_convoys = 200
+set_stability = 0.35
+set_war_support = 0.45
+
+set_politics = {
+
+	parties = {
+		neutrality = { 
+			popularity = 70
+		}
+		
+		democratic = { 
+			popularity = 30
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	elections_allowed = no
+}
+
+add_ideas = {
+	usa_american_constitution
+	usa_bill_of_rights
+	usa_the_united_states_army
+	usa_the_fed
+	usa_american_engineering
+
+	#undisturbed_isolation
+	#great_depression
+	#disarmed_nation
+	free_trade
+	#home_of_the_free
+	
+	volunteer_only
+	#usa_volunteer_only
+	usa_capitalist_economy
+	
+	#great_depression
+	usa_great_crash_of_1929
+	#usa_segregation
+	usa_attachment_to_battleships
+	usa_nation_on_wheels
+	usa_polio_epidemic
+	usa_social_security
+	usa_sec1
+	usa_dust_bowl
+	fas_the_home_of_capitalism
+	USA_government_spending_level_v
+
+
+}
+
+
+# DIPLOMACY
+#set_autonomy = {
+#	target = PHI
+#	autonomous_state =  autonomy_puppet
+#}
+
+#declare_war_on = {
+#		target = CSA
+#		type = annex_everything
+#	}
+
+#declare_war_on = {
+#		target = ACO
+#		type = annex_everything
+#	}
+
+
+create_country_leader = {
+	name = "Douglas MacArthur"
+	desc = "POLITICS_Douglas_MacArthur_DESC"
+	picture = "Portrait_FAS_Douglas_MacArthur.dds"
+	expire = "1947.1.1"
+	ideology = despotism
+	traits = {
+		despotic_reformer
+	}
+	id = 83
+}
+
+create_country_leader = {
+	name = "William Dudley Pelley"
+	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+	picture = "Portrait_USA_William_Dudley_Pelley.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Earl Browder"
+	desc = "POLITICS_EARL_BROWDER_DESC"
+	picture = "Portrait_USA_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Mark Clark"
+		picture = "Portrait_FAS_Mark_W_Clark.dds"
+	traits = {  }
+	skill = 4
+	
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+
+create_field_marshal = {
+	name = "Douglas MacArthur"
+	id = 57
+		picture = "Portrait_FAS_Douglas_MacArthur.dds"
+	traits = { defensive_doctrine offensive_doctrine old_guard }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Walter Krueger"
+		picture = "Portrait_FAS_Walter_Krueger.dds"
+	traits = {  }
+	skill = 3
+	
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+
+create_corps_commander = {
+	name = "Leslie McNair"
+		picture = "Portrait_FAS_Lesley_McNair.dds"
+	traits = {  old_guard }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+create_corps_commander = {
+	name = "Russell Hartle"
+		picture = "Portrait_FAS_Russell_P_Hartle.dds"
+	traits = {  }
+	skill = 1
+	rank = 1
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+
+create_corps_commander = {
+	name = "Edward Brooks"
+		picture = "Portrait_FAS_Edward_Brooks.dds"
+	traits = { panzer_leader }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+create_corps_commander = {
+	name = "Clarence Huebner"
+		picture = "Portrait_FAS_Clarence_Huebner.dds"
+	traits = {  }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Joseph Stilwell"
+		picture = "Portrait_FAS_Joseph_Stilwell.dds"
+	traits = {  }
+	skill = 1 
+	
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Maurice Rose"
+		picture = "Portrait_FAS_Maurice_Rose.dds"
+	traits = { panzer_leader  }
+	skill = 3
+	
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+
+
+
+create_navy_leader = {
+	name = "Ernest King"
+		picture = "Portrait_FAS_Earnest_King.dds"
+	traits = { blockade_runner superior_tactician }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "Harold Rainsford Stark"
+		picture = "Portrait_FAS_Harold_Rainsford_Stark.dds"
+	traits = { blockade_runner spotter }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Arleigh Burke"
+		picture = "Portrait_FAS_Arleigh_Burke.dds"
+	traits = { superior_tactician }
+	skill = 1
+}
+
+### Variants ###
+
+create_equipment_variant = {
+	name = "F2F"
+	type = cv_fighter_equipment_0 
+	upgrades = {
+		cv_plane_range_upgrade = 1
+		plane_engine_upgrade = 1
+		plane_reliability_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "Barracuda Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Wickes Class"
+	type = destroyer_1
+	upgrades = {
+		destroyer_engine_upgrade = 2
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Clemson Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 2
+		destroyer_engine_upgrade = 3
+		ship_ASW_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Farragut Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 3
+		destroyer_engine_upgrade = 5
+		ship_ASW_upgrade = 3
+		ship_anti_air_upgrade = 3
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Porter Class"
+	type = destroyer_2
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 2
+		ship_ASW_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Mahan Class"
+	type = destroyer_2
+	upgrades = {
+		ship_torpedo_upgrade = 2
+		destroyer_engine_upgrade = 2
+		ship_ASW_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "Brooklyn Class"
+	type = light_cruiser_2
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 1
+		ship_gun_upgrade = 3
+	}
+}
+
+create_equipment_variant = {
+	name = "Omaha Class"
+	type = light_cruiser_2
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_gun_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "Portland Class"
+	type = heavy_cruiser_2
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 2
+		ship_gun_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "Northampton Class"
+	type = heavy_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 3
+		ship_armor_upgrade = 2
+		ship_gun_upgrade = 4
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Pensacola Class"
+	type = heavy_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_reliability_upgrade = 3
+		ship_engine_upgrade = 4
+		ship_armor_upgrade = 4
+		ship_gun_upgrade = 4
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Wyoming Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "New York Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_gun_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Nevada Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_armor_upgrade = 1
+		ship_gun_upgrade = 2
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Pennsylvania Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 1
+		ship_gun_upgrade = 2
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "New Mexico Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 2
+		ship_gun_upgrade = 2
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Tennessee Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 2
+		ship_gun_upgrade = 2
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Colorado Class"
+	type = battleship_1
+	upgrades = {
+		ship_reliability_upgrade = 3
+		ship_engine_upgrade = 3
+		ship_armor_upgrade = 3
+		ship_gun_upgrade = 4
+	}
+}
+
+create_equipment_variant = {
+	name = "Langley Class"
+	type = carrier_1
+	upgrades = {
+		carrier_armor_upgrade = 5
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Yorktown Class"
+	type = carrier_2
+	upgrades = {
+		ship_deckspace_upgrade = 1
+		carrier_armor_upgrade = 1
+		ship_engine_upgrade = 1
+		ship_reliability_upgrade = 1
+	}
+
+}
+
+1939.1.1 = {
+	
+	create_equipment_variant = {
+		name = "Salmon Class"
+		type = submarine_2
+		upgrades = {
+			ship_reliability_upgrade = 1
+			sub_engine_upgrade = 1
+			sub_stealth_upgrade = 1
+			sub_torpedo_upgrade = 1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Benson & Gleaves Class"
+		type = destroyer_2
+		upgrades = {
+			ship_torpedo_upgrade = 3
+			destroyer_engine_upgrade = 3
+			ship_ASW_upgrade = 3
+			ship_anti_air_upgrade = 3
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Wasp Class"
+		type = carrier_2
+		upgrades = {
+			ship_deckspace_upgrade = 2
+			carrier_armor_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_reliability_upgrade = 2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "F2A Buffalo"
+		type = cv_fighter_equipment_1
+		upgrades = {
+			cv_plane_gun_upgrade = 5
+			cv_plane_range_upgrade = 0
+			plane_engine_upgrade = 2
+			plane_reliability_upgrade = 5
+		}
+	}
+
+
+	# 1941
+	#create_equipment_variant = {
+	#	name = "South Dakota Class"
+	#	type = battleship_2
+	#	upgrades = {
+	#		ship_reliability_upgrade = 3
+	#		ship_engine_upgrade = 3
+	#		ship_armor_upgrade = 3
+	#		ship_gun_upgrade = 3
+	#	}
+	#}
+}

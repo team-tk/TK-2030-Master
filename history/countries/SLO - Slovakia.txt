@@ -1,0 +1,120 @@
+﻿capital = 70
+
+oob = "SLO_1939"
+
+add_ideas = {
+religion_catholicism
+}
+
+set_technology = {
+	gw_artillery = 1
+	interwar_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	support_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	tech_engineers = 1
+	early_fighter = 1
+	early_bomber = 1
+	CAS1 = 1
+}
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+conservatism = 5
+fascism = 90
+communism = 5
+}
+
+create_country_leader = {
+	name = "Jozef Tiso"
+	desc = "POLITICS_JOZEF_TISO_DESC"
+	picture = "Portrait_Slovakia_Jozef_Tiso.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+### placeholder
+
+create_country_leader = {
+	name = "Jozef Tiso"
+	desc = "POLITICS_JOZEF_TISO_DESC"
+	picture = "Portrait_Slovakia_Jozef_Tiso.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Milan Hodža"
+	desc = "POLITICS_MILAN_HODZA_DESC"
+	picture = "gfx/leaders/SLO/Milan.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rudolf Viest"
+	desc = "POLITICS_RUDOLF_VIEST_DESC"
+	picture = "gfx/leaders/SLO/Viest.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Antonín Janoušek"
+	desc = "POLITICS_ANTONIN_JANOUSEK_DESC"
+	picture = "gfx/leaders/SLO/Antonin.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+
+### placeholder
+
+create_country_leader = {
+	name = "Antonín Janoušek"
+	desc = "POLITICS_ANTONIN_JANOUSEK_DESC"
+	picture = "gfx/leaders/SLO/Antonin.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = {
+		#
+	}
+}
+
+				create_country_leader = {
+				name = "Maximilian Eugen Habsburg"
+				desc = "POLITICS_MAXIMILIAN_EUGEN_HABSBURG_DESC"
+				picture = "gfx/leaders/EYE/Portrait_EYE_Austria_Otto_I.dds" #Let's just pretend this is Maximilian
+				expire = "1965.1.1"
+				ideology = absolutism
+				traits = { }
+			}

@@ -1,0 +1,51 @@
+﻿capital = 330
+
+oob = "MON_1936"
+
+# Starting tech
+set_technology = {
+	tech_communist_paramilitary = 1
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	cons_two
+}
+
+add_ideas = {
+fog_dictatorship_lw
+religion_atheism
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+communism = 100
+}
+
+create_country_leader = {
+	name = "Anandyn Amar"
+	desc = "POLITICS_ANANDYN_AMAR_DESC"
+	picture = GFX_portrait_mon_anandyn_amar
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Prince Demchugdongrub"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "gfx/leaders/MEN/portrait_men_demchugdongrub.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+		spirit_of_genghis
+	}
+}

@@ -1,0 +1,343 @@
+scripted_gui = {
+
+	remove_buildings = {
+		context_type = selected_state_context
+		window_name = "remove_buildings_container"
+		parent_window_token = selected_state_view
+		
+		visible = {
+			FROM.FROM = {
+				is_controlled_by = ROOT
+			}
+		}
+			
+		
+		effects = {
+			remove_infra_click = {
+				set_variable = { ROOT.remove_menu = 1 }
+				set_variable = { ROOT.remove_target = FROM.FROM }
+			}
+			remove_anti_air_click = {
+				set_variable = { ROOT.remove_menu = 2 }
+				set_variable = { ROOT.remove_target = FROM.FROM }
+			}
+			remove_air_base_click = {
+				set_variable = { ROOT.remove_menu = 3 }
+				set_variable = { ROOT.remove_target = FROM.FROM }
+			}
+			remove_radar_click = {
+				set_variable = { ROOT.remove_menu = 4 }
+				set_variable = { ROOT.remove_target = FROM.FROM }
+			}
+		}
+		
+		triggers = {
+			remove_infra_click_enabled = {
+				FROM.FROM = {
+					if = {
+						limit = {
+							has_state_category = megalopolis
+						}
+						infrastructure > 5
+					}
+					if = {
+						limit = {
+							has_state_category = metropolis
+						}
+						infrastructure > 4
+					}
+					if = {
+						limit = {
+							has_state_category = large_city
+						}
+						infrastructure > 3
+					}
+					if = {
+						limit = {
+							OR = {
+								has_state_category = city
+								has_state_category = large_town
+							}
+						}
+						infrastructure > 2
+					}
+					if = {
+						limit = {
+							OR = {
+								has_state_category = town
+								has_state_category = rural
+							}
+						}
+						infrastructure > 1
+					}
+					if = {
+						limit = {
+							OR = {
+								has_state_category = pastoral
+								has_state_category = small_island
+								has_state_category = enclave
+								has_state_category = tiny_island
+								has_state_category = wasteland
+							}
+						}
+						infrastructure > 0
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { has_war = yes }
+					}
+					ROOT = {
+						NOT = { has_country_flag = removed_building }
+					}
+				}
+			}
+			remove_anti_air_click_enabled = {
+				FROM.FROM = {
+					anti_air_building > 0
+				}
+				if = {
+					limit = {
+						ROOT = { has_war = yes }
+					}
+					ROOT = {
+						NOT = { has_country_flag = removed_building }
+					}
+				}
+			}
+			remove_air_base_click_enabled = {
+				FROM.FROM = {
+					air_base > 1
+				}
+				if = {
+					limit = {
+						ROOT = { has_war = yes }
+					}
+					ROOT = {
+						NOT = { has_country_flag = removed_building }
+					}
+				}
+			}
+			remove_radar_click_enabled = {
+				FROM.FROM = {
+					radar_station > 0
+				}
+				if = {
+					limit = {
+						ROOT = { has_war = yes }
+					}
+					ROOT = {
+						NOT = { has_country_flag = removed_building }
+					}
+				}
+			}
+			remove_radar_visible = {
+				OR = {
+					ROOT = { has_tech = radio_detection }
+					FROM.FROM = { radar_station > 0 }
+				}
+				if = {
+					limit = {
+						ROOT = { has_war = yes }
+					}
+					ROOT = {
+						NOT = { has_country_flag = removed_building }
+					}
+				}
+			}
+		}
+		
+		ai_test_scopes = test_self_owned_states
+		ai_test_interval = 24
+		ai_test_variance = 0
+		
+		ai_enabled = {
+		}
+        
+		ai_check = {
+			always = no
+		}
+		
+		ai_max_weight_taken_per_test = 0
+		ai_weights = {
+		}
+		
+	}
+
+	remove_confirmation = {
+		context_type = player_context
+		window_name = "remove_confirmation_popup"
+		
+		visible = {
+			check_variable = {
+				var = ROOT.remove_menu
+				value = 0
+				compare = not_equals
+			}
+		}
+			
+		
+		effects = {
+			decline_button_click = {
+				set_variable = { ROOT.remove_menu = 0 }
+			}
+			accept_button_click = {
+				if = {
+					limit = {
+						check_variable = { ROOT.remove_menu = 1 }
+					}
+					var:ROOT.remove_target = {
+						set_building_level = {
+							type = infrastructure
+							level = 0
+							instant_build = yes
+						}
+						if = {
+							limit = {
+								has_state_category = megalopolis
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 5
+								instant_build = yes
+							}
+						}
+						if = {
+							limit = {
+								has_state_category = metropolis
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 4
+								instant_build = yes
+							}
+						}
+						if = {
+							limit = {
+								has_state_category = large_city
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 3
+								instant_build = yes
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_state_category = city
+									has_state_category = large_town
+								}
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 2
+								instant_build = yes
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									has_state_category = town
+									has_state_category = rural
+								}
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+#						if = {
+#							limit = {
+#								OR = {
+#									has_state_category = pastoral
+#									has_state_category = small_island
+#									has_state_category = enclave
+#									has_state_category = tiny_island
+#									has_state_category = wasteland
+#								}
+#							}
+#							add_building_construction = {
+#								type = infrastructure
+#								level = 0
+#								instant_build = yes
+#							}
+#						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.remove_menu = 2 }
+					}
+					var:ROOT.remove_target = {
+						set_building_level = {
+							type = anti_air_building
+							level = 0
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.remove_menu = 3 }
+					}
+					var:ROOT.remove_target = {
+						set_building_level = {
+							type = air_base
+							level = 0
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = air_base
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.remove_menu = 4 }
+					}
+					var:ROOT.remove_target = {
+						set_building_level = {
+							type = radar_station
+							level = 0
+							instant_build = yes
+						}
+					}
+				}
+				set_country_flag = { flag = removed_building value = 1 days = 30 }
+				set_variable = { ROOT.remove_menu = 0 }
+			}
+		}
+		
+		triggers = {
+		}
+		
+		ai_test_interval = 168
+		ai_test_variance = 0
+		
+		ai_enabled = {
+		}
+        
+		ai_check = {
+		}
+		
+		ai_max_weight_taken_per_test = 0
+		ai_weights = {
+			decline_button_click = {
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			accept_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+		}
+		
+	}
+	
+}

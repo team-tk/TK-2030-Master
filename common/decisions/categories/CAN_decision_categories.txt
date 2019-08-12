@@ -1,0 +1,26 @@
+CAN_ship_requisition = {
+
+	icon = category_cat_naval_treaty
+
+	picture = GFX_category_generic_political_actions
+	
+	allowed = {
+		tag = CAN
+	}
+
+	priority = {
+		base = 0
+	}
+
+	visible = {
+			country_exists = ENG
+			ENG = { has_completed_focus = uk_navy }
+			NOT = {
+				ENG = { 
+					has_communist_government = yes
+					has_fascist_government = yes
+					has_neutral_government = yes
+				}
+			}
+	}
+}

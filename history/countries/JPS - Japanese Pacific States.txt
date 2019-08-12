@@ -1,0 +1,148 @@
+﻿capital = 378 # California
+
+oob = "empty"
+
+add_ideas = {
+religion_protestantism
+}
+
+set_technology = {
+	improved_light_tank = 1 
+	basic_medium_tank = 1 
+	CAS2 = 1
+	heavy_fighter1 = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	paratroopers = 1
+
+	#doctrines
+	delay = 1
+	elastic_defence = 1
+	armored_spearhead = 1
+	schwerpunk = 1
+	blitzkrieg = 1
+	convoy_interdiction_ti = 1
+	unrestricted_submarine_warfare = 1
+	raider_patrols = 1
+
+	#air
+	formation_flying = 1		
+	dive_bombing = 1
+	direct_ground_support = 1
+
+	#electronics
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	decimetric_radar = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	basic_encryption = 1
+	basic_decryption = 1
+
+	#industry
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	improved_oil_processing = 1
+	construction1 = 1
+	construction2 = 1
+	construction3 = 1
+	construction4 = 1
+	dispersed_industry = 1
+	dispersed_industry2 = 1
+	dispersed_industry3 = 1
+	dispersed_industry4 = 1
+}
+
+set_politics = {
+		ruling_party = fascism
+		elections_allowed = no
+		}
+		
+set_popularities = {
+democratic = 20
+fascism = 60
+communism = 20
+}
+
+add_ideas = {
+	state_shintoism
+	#laws
+	limited_exports
+	cons_two
+	civilian_economy
+
+	mob_limited
+	press_censored
+
+	security_major_restrictions
+
+	tax_high
+	education_budget5 health_budget5 socialsecurity_budget5 
+
+	labor_none
+	foreign_neutral
+
+	foreign_volunteers
+	train_high
+
+	officer_train_high
+
+	tariffs_high
+	fdi_banned
+	key_industries
+	age_18 age_35
+	unity5
+}
+
+create_country_leader = {
+	name = "Admiral Isoroku Yamamoto"
+	desc = ""
+	picture = "gfx/leaders/JAP/Portrait_Japan_Isoroku_Yamamoto.dds"
+	expire = "1965.1.1"
+	ideology = taisei_yokusankai
+	traits = { warrior_code }
+}
+
+create_country_leader = {
+	name = "Admiral Isoroku Yamamoto"
+	desc = ""
+	picture = "gfx/leaders/JAP/Portrait_Japan_Isoroku_Yamamoto.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = { warrior_code }
+}
+
+create_country_leader = {
+	name = "Nobosuke Tagomi"
+	desc = ""
+	picture = "Nobosuke_Tagomi.dds"
+	expire = "1989.1.1"
+	ideology = taisei_yokusankai
+	traits = {
+		warrior_code
+	}
+}
+
+create_country_leader = {
+	name = "Nobosuke Tagomi"
+	desc = ""
+	picture = "Nobosuke_Tagomi.dds"
+	expire = "1989.1.1"
+	ideology = absolutism
+	traits = {
+		warrior_code
+	}
+}
+
+add_namespace = {
+	name = "jap_unit_leader"
+	type = unit_leader
+}

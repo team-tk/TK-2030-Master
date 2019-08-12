@@ -1,0 +1,184 @@
+﻿capital = 8
+
+oob = "LUX_1936"
+
+add_ideas = {
+fog_democratic
+religion_catholicism
+}
+
+add_ideas = { 	
+		export_focus
+		tax_average
+		tariffs_average
+		
+		civilian_economy
+		press_free
+		private_control
+		labor_allowed
+		fdi_allowed
+		
+		cons_volunteer
+		foreign_volunteers
+		
+		train_medium
+		#age_19
+		officer_train_low
+		security_liberty_first
+		education_budget5 health_budget5 socialsecurity_budget5 
+		
+		unity5	
+		foreign_neutral
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_support = 1		
+	tech_engineers = 1
+	early_fighter = 1
+}
+set_war_support = 0.1
+set_stability = 0.8
+
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "1934.6.3"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+monarchism = 92
+fascism = 3
+communism = 5
+neutrality = 0
+}
+
+#Pierre Dupong from 37
+create_country_leader = {
+		name = "Pierre Dupong"
+		desc = "POLITICS_PIERRE_DUPONG_DESC"
+		picture = "gfx/leaders/LUX/Luxembourg_Leader_Dupong.dds"
+		expire = "1965.1.1"
+		ideology = conservatism_ideology
+		traits = {}
+	}
+	
+	create_country_leader = {
+		name = "Eugene Schaus"
+		picture = "gfx/leaders/LUX/Eugene_Schaus_-Liberal_Luxembourg.dds"
+		expire = "1965.1.1"
+		ideology = liberalism_ideology
+		traits = {}
+	}
+	
+		create_country_leader = {
+		name = "Michel Rasquin"
+		picture = "gfx/leaders/LUX/Michel_Rasquin_-Socdem_Luxembourg.dds"
+		expire = "1965.1.1"
+		ideology = social_democracy
+		traits = {}
+	}
+	
+	create_country_leader = {
+		name = "Paul Wilwertz"
+		picture = "gfx/leaders/LUX/Paul_Wilwertz_Socialist.dds"
+		expire = "1965.1.1"
+		ideology = socialism_ideology
+		traits = {}
+	}
+	
+	create_country_leader = {
+		name = "Pierre Dupong"
+		desc = "POLITICS_PIERRE_DUPONG_DESC"
+		picture = "gfx/leaders/LUX/Luxembourg_Leader_Dupong.dds"
+		expire = "1965.1.1"
+		ideology = nationalism_ideology
+		traits = {}
+	}
+
+create_country_leader = {
+	name = "Joseph Bech"
+	desc = "POLITICS_JOSEPH_BECH_DESC"
+	picture = "gfx/leaders/LUX/Luxembourg_Leader_Bech.dds"
+	expire = "1937.1.1"
+	ideology = conservatism_ideology
+	traits = { savvy_politician }
+	}
+	
+		create_country_leader = {
+		name = "Damian Kratzenberg"
+		desc = "POLITICS_DAMIAN_KRATZENBERG_DESC"
+		picture = "gfx/leaders/LUX/Luxembourg_Leader_Kratzenberg.dds"
+		expire = "1965.1.1"
+		ideology = rexism
+		traits = { }
+	}
+	
+	### PLACEHOLDER
+	create_country_leader = {
+		name = "Damian Kratzenberg"
+		desc = "POLITICS_DAMIAN_KRATZENBERG_DESC"
+		picture = "gfx/leaders/LUX/Luxembourg_Leader_Kratzenberg.dds"
+		expire = "1965.1.1"
+		ideology = nazism_ideology
+		traits = { }
+	}
+	
+	
+	create_country_leader = {
+		name = "Charles Marx"
+		desc = "POLITICS_CHARLES_MARX_DESC"
+		picture = "gfx/leaders/LUX/Luxembourg_Leader_Marx.dds"
+		expire = "1965.1.1"
+		ideology = marxism
+		traits = {  }
+	}
+	
+	create_country_leader = {
+		name = "Albert Bousser"
+		picture = "gfx/leaders/LUX/Albert_Bousser_Syndicaism.dds"
+		expire = "1965.1.1"
+		ideology = syndicalism_ideology
+		traits = {  }
+	}
+	
+	create_country_leader = {
+	name = "Grand Duchess Charlotte"
+	picture = "Portrait_Luxembourg_Charlotte.dds"
+	expire = "1964.11.12"
+	ideology = oligarchism
+	traits = { charismatic_monarch }
+}
+
+create_country_leader = {
+	name = "Mathias Krier"
+	picture = "gfx/leaders/LUX/Luxembourg_Army_krier.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = { }
+}
+
+
+create_country_leader = {
+	name = "Grand Duchess Charlotte"
+	picture = "Portrait_Luxembourg_Charlotte.dds"
+	expire = "1964.11.12"
+	ideology = constitutional
+	traits = { charismatic_monarch }
+}
+
+	create_corps_commander = {
+		name = "Mathias Krier"
+		portrait_path = "gfx/leaders/LUX/Luxembourg_Army_krier.dds"
+		traits = { trait_cautious }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}	

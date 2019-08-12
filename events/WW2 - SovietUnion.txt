@@ -1,0 +1,856 @@
+﻿###########################
+# ww2soviet Events
+###########################
+
+add_namespace = ww2soviet
+
+#WIP New Event Finland gets ww2soviet puppet event
+country_event = {
+	id = ww2soviet.105
+	title = ww2soviet.105.t
+	desc = ww2soviet.105.d
+	picture = GFX_news_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	#Accept - become puppet
+	option = {
+		name = ww2soviet.105.a
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 85
+				strength_ratio = {
+					tag = SOV
+					ratio > 0.10
+				}
+				is_historical_focus_on = yes
+			}
+		}
+		SOV = { 
+			country_event = { id = ww2soviet.106 }
+			effect_tooltip = { puppet = FIN }
+		}
+	}
+
+	option = {
+		name = ww2soviet.105.b
+		ai_chance = { factor = 15 }
+		SOV = { 
+			country_event = { id = ww2soviet.107 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_state
+					target = FIN
+					generator = owned_states
+				}
+			}
+		}
+	}
+}
+
+# Finland accepts and is puppeted
+country_event = {
+	id = ww2soviet.106
+	title = ww2soviet.106.t
+	desc = ww2soviet.106.d
+	picture = GFX_report_event_chinese_japanese_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww2soviet.106.a
+		puppet = FIN
+		add_named_threat = { threat = 5 name = finland_puppet_focus }
+		hidden_effect = {
+			news_event = { hours = 6 id = news.255 }
+		}
+	}
+}
+
+# Finland refuses, gain cb
+country_event = {
+	id = ww2soviet.107
+	title = ww2soviet.107.t
+	desc = ww2soviet.107.d
+	picture = GFX_report_event_chinese_soldiers_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww2soviet.107.a
+		create_wargoal = {
+			type = take_state
+			target = FIN
+			generator = owned_states
+		}
+	}
+}
+#WIP Return of the Tzar
+country_event = {
+	id = ww2soviet.168
+	title = ww2soviet.168.t
+	desc = ww2soviet.168.d
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 3 }
+
+	option = {
+		name = ww2soviet.168.a
+	
+			if = {
+				limit = {
+					has_fascist_government = yes
+				}
+				create_country_leader = {
+			name = "Vladimir IV"
+			desc = "POLITICS_Vladimir_DESC"
+			picture = "Portrait_Soviet_Tsar_Kirill.dds"
+			expire = "1992.4.4"
+			ideology = fascism_ideology
+			traits = {
+				inexperienced_imperialist				
+			}
+			}
+			}
+			
+			if = {
+				limit = {
+					has_democratic_government = yes
+				}
+				
+			set_politics = {
+			ruling_party = socdem
+		}	
+				
+				create_country_leader = {
+			name = "Vladimir IV"
+			desc = "POLITICS_Vladimir_DESC"
+			picture = "Portrait_Soviet_Tsar_Kirill.dds"
+			expire = "1992.4.4"
+			ideology = social_democracy
+			traits = {
+				inexperienced_imperialist				
+			}
+			}
+			}
+			
+			if = {
+				limit = {
+					has_neutral_government = yes
+				}
+				create_country_leader = {
+			name = "Vladimir IV"
+			desc = "POLITICS_Vladimir_DESC"
+			picture = "Portrait_Soviet_Tsar_Kirill.dds"
+			expire = "1992.4.4"
+			ideology = despotism
+			traits = {
+				inexperienced_imperialist				
+			}
+			}
+			}
+
+	
+	}
+
+	option = {
+		name = ww2soviet.168.b	
+		add_ideas = SOV_vladimir_kirillovich_tsar
+	}
+	
+	option = {
+		name = ww2soviet.168.c	
+		
+	}
+}
+#Claim Alaska
+country_event = {
+	id = ww2soviet.174
+	title = ww2soviet.174.t
+	desc = ww2soviet.174.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = ww2soviet.174.a
+		ai_chance = { 
+			factor = 25
+		}
+		SOV = {
+			country_event = { days = 1 id = ww2soviet.175 }
+		}
+	}
+	option = { # Refuse
+		name = ww2soviet.174.b		
+		ai_chance = { 
+			factor = 75
+		}
+		SOV = {
+			country_event = { days = 1 id = ww2soviet.176 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_state_focus
+					target = USA
+					generator = { 463 }
+				}
+			}
+		}		
+	}
+}
+country_event = {
+	id = ww2soviet.175
+	title = ww2soviet.175.t
+	desc = ww2soviet.175.d
+	picture = GFX_report_event_vienna_award_hungary
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww2soviet.175.a
+		SOV = { 
+			transfer_state = 463
+		}
+	}
+}
+country_event = {
+	id = ww2soviet.176
+	title = ww2soviet.176.t
+	desc = ww2soviet.176.d
+	picture = GFX_report_event_lithuania_army
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ww2soviet.176.a
+		SOV = {
+			create_wargoal = {
+				type = take_state_focus
+				target = USA
+				generator = { 463 }
+			}
+		}
+	}
+}
+#New Event Option to release Ukraine
+country_event = {
+	id =  ww2soviet.195
+	title = ww2soviet.195.t
+	desc = ww2soviet.195.d
+	picture = gfx_news_event_romania_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2soviet.195.a
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+				target = UKR
+				autonomous_state = autonomy_integrated_puppet
+				}
+				else = {
+				puppet = UKR
+				}
+			}
+			add_ideas = trade_deal
+			hidden_effect = {
+				UKR = {
+					transfer_state = 199
+					transfer_state = 198
+					transfer_state = 192
+					transfer_state = 201
+					transfer_state = 202
+					transfer_state = 197
+					transfer_state = 193
+					transfer_state = 225
+					transfer_state = 259
+					transfer_state = 221
+					transfer_state = 226
+					transfer_state = 200
+					transfer_state = 227
+					transfer_state = 228
+					transfer_state = 203
+					transfer_state = 196
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						SOV = {
+							controls_state = 93
+							controls_state = 91
+							controls_state = 89
+						}
+					}
+					UKR = {
+						transfer_state = 93
+						transfer_state = 91
+						transfer_state = 89
+					}
+				}
+			}
+	}
+	option = {
+		name = ww2soviet.195.b
+		add_political_power = -50
+	}
+}
+
+#New Event Option to Create Turkestan
+country_event = {
+	id =  ww2soviet.196
+	title = ww2soviet.196.t
+	desc = ww2soviet.196.d
+	picture = gfx_news_event_romania_parliament
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2soviet.196.a
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+				target = TRK
+				autonomous_state = autonomy_integrated_puppet
+				}
+				else = {
+				puppet = TRK
+				}
+			}
+			add_ideas = cavalry_bonus
+			hidden_effect = {
+				TRK = {
+					transfer_state = 587
+					transfer_state = 584
+					transfer_state = 585
+					transfer_state = 404
+					transfer_state = 586
+					transfer_state = 405
+					transfer_state = 732
+					transfer_state = 742
+					transfer_state = 589
+					add_state_core = 587
+					add_state_core = 584
+					add_state_core = 585
+					add_state_core = 404
+					add_state_core = 586
+					add_state_core = 405
+					add_state_core = 732
+					add_state_core = 742
+					add_state_core = 589
+					add_state_core = 618
+					add_state_core = 617
+					add_state_core = 619
+					add_state_core = 287
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						SOV = {
+							controls_state = 618
+							controls_state = 617
+							controls_state = 619
+							controls_state = 287
+						}
+					}
+					TRK = {
+						transfer_state = 618
+						transfer_state = 617
+						transfer_state = 287
+						transfer_state = 619
+						add_state_core = 618
+						add_state_core = 617
+						add_state_core = 619
+						add_state_core = 287
+					}
+				}
+			}
+	}
+	option = {
+		name = ww2soviet.196.b
+		add_political_power = -25
+	}
+}
+	#New Event Secure Finland
+	country_event = {
+	id = ww2soviet.197
+	title = ww2soviet.197.t
+	desc = ww2soviet.197.d
+	picture = GFX_news_event_016
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww2soviet.197.a
+		ai_chance = { factor = 95 }
+		effect_tooltip = {
+			add_state_claim = 147
+			add_state_claim = 146
+			add_state_claim = 722
+			custom_effect_tooltip = SOV_offer_poland_protection_tt
+			SOV = {
+				if = {
+					limit = { FIN = { owns_state = 147 controls_state = 147 } }
+					transfer_state = 147
+				}
+				if = {
+					limit = { FIN = { owns_state = 146 controls_state = 146 } }
+					transfer_state = 146
+				}
+				if = {
+					limit = { FIN = { owns_state = 722 controls_state = 722 } }
+					transfer_state = 722
+				}
+			}
+		}
+		SOV = { country_event = { id = ww2soviet.198 } }
+	}
+
+	option = {
+		name = ww2soviet.197.b
+		ai_chance = { factor = 5 }
+		effect_tooltip = {
+			SOV = {
+				create_wargoal = {
+					type = take_state_focus
+					target = FIN
+					generator = { 146 147 722 }
+				}
+			}
+		}
+		SOV = { country_event = { id = ww2soviet.199 } }
+	}
+}
+
+# Finland Accepts
+country_event = {
+	id = ww2soviet.198
+	title = ww2soviet.198.t
+	desc = ww2soviet.198.d
+	picture = GFX_report_event_military_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww2soviet.198.a
+		FIN = {
+			set_politics = { ruling_party = democratic elections_allowed = no }
+			add_popularity = { ideology = democratic popularity = 0.5 }  
+		}
+		SOV = {
+			transfer_state = 146
+			transfer_state = 147
+			transfer_state = 722
+			give_guarantee = FIN
+		}
+	}
+}
+
+# Finland Refuses
+country_event = {
+	id = ww2soviet.199
+	title = ww2soviet.199.t
+	desc = ww2soviet.199.d
+	picture = GFX_report_event_finnish_soldiers_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ww2soviet.199.a
+		create_wargoal = {
+			type = take_state_focus
+			target = FIN
+			generator = { 146 147 722 }
+		}
+	}
+}
+#Rename Stalin cities after democratic
+country_event = {
+	id = ww2soviet.200
+	title = ww2soviet.200.t
+	desc = ww2soviet.200.d
+	picture = GFX_report_event_generic_riot
+
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		SOV = { has_democratic_government = yes }
+		SOV = { has_completed_focus = SOV_glasnost } 
+	}
+
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	option = {
+		name = ww2soviet.200.a
+		hidden_effect = {
+			217 = { set_state_name = "Volgograd" } 
+			227 = { set_state_name = "Donetsk" } 
+			742 = { set_state_name = "Dushanbe" }
+		}
+		set_province_name = { id = 3529 name = "Volgograd" }
+		set_province_name = { id = 6474 name = "Donetsk" }
+	}
+	option = {
+		name = ww2soviet.200.b
+	}
+}
+
+#Rename communist named cities after fascist
+country_event = {
+	id = ww2soviet.201
+	title = ww2soviet.201.t
+	desc = ww2soviet.201.d
+	picture = GFX_report_event_long_march
+
+	is_triggered_only = no
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		SOV = { has_fascist_government = yes }
+	}
+
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	option = {
+		name = ww2soviet.201.a
+		hidden_effect = {
+			217 = { set_state_name = "Tsaritsyn" }
+			195 = { set_state_name = "Saint Petersburg" }
+			570 = { set_state_name = "Novonikolaevsk" } 
+			234 = { set_state_name = "Yekaterinodar" }
+		}
+		set_province_name = { id = 3529 name = "Tsaritsyn" }
+		set_province_name = { id = 3151 name = "Saint Petersburg" }
+		set_province_name = { id = 7274 name = "Novonikolaevsk" }
+		set_province_name = { id = 3734 name = "Yekaterinodar" }
+		SOV = { country_event = { days = 60 id = ww2soviet.210 } }
+	}
+}
+#New event chain- operation krokodil
+country_event = {
+	id = ww2soviet.202
+	title = ww2soviet.202.t
+	desc = ww2soviet.202.d
+	picture = GFX_report_ast_paras
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = ww2soviet.202.a
+		hidden_effect = {
+			SOV = { country_event = { days = 20 id = ww2soviet.203 } }
+			SOV = { country_event = { days = 45 id = ww2soviet.204 } }
+		}
+	}
+	option = {
+		name = ww2soviet.202.b
+	}
+}
+country_event = {
+	id = ww2soviet.203
+	title = ww2soviet.203.t
+	desc = ww2soviet.203.d
+	picture = GFX_report_ast_navy
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ww2soviet.203.a
+		GER = { 
+			transfer_ship = { prefer_name = "Schleswig-Holstein" type = battleship target = SOV } 
+			destroy_ships = { type = light_cruiser count = 1 }
+			destroy_ships = { type = destroyer count = 4 } 
+		}
+		SOV = {
+			add_manpower = -20 
+		}
+	}
+}
+country_event = {
+	id = ww2soviet.204
+	title = ww2soviet.204.t
+	desc = ww2soviet.204.d
+	picture = GFX_report_event_ace_died
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ww2soviet.204.a
+		create_navy_leader = { 
+			name = "Pirate Captain Erwin Rommel" 
+			picture = "Portrait_Germany_Erwin_Rommel.dds" 
+			traits = { ironside } skill = 1 
+		} 
+		SOV = {
+			add_manpower = 20
+			add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 1 producer = GER } 
+		}
+		GER = {
+			remove_unit_leader = 4
+		}
+	}
+}
+#New Event Chain- return of manchuria
+country_event = { #russian empire demands manchuria
+	id = ww2soviet.205
+	title = ww2soviet.205.t
+	desc = ww2soviet.205.d
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #accepts
+		name = ww2soviet.205.a
+		ai_chance = { 
+			factor = 40 
+			modifier = {
+				factor = 75
+					is_in_faction_with = SOV
+			}
+		}
+		effect_tooltip = {
+			JAP = {
+				end_puppet = MAN
+			}
+			SOV = {
+				puppet = MAN
+				transfer_state = 745
+			}
+		}
+		SOV = { country_event = { id = ww2soviet.207 } }
+	}
+	option = { #rejects
+		name = ww2soviet.205.b
+		ai_chance = { factor = 60 }
+		effect_tooltip = {
+			SOV = {
+				create_wargoal = {
+					type = take_state_focus
+					target = MAN
+					generator = { 714 328 717 715 716 610 }
+				}
+			}
+		}
+		SOV = { country_event = { id = ww2soviet.206 } }
+	}
+}
+country_event = { #Japan rejects
+	id = ww2soviet.206
+	title = ww2soviet.206.t
+	desc = ww2soviet.206.d
+	picture = GFX_report_event_chinese_soldiers_01
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #too bad
+		name = ww2soviet.206.a
+	}
+	option = { #to war
+		name = ww2soviet.206.b
+		SOV = {
+			create_wargoal = {
+				type = take_state_focus
+				target = MAN
+				generator = { 714 328 717 715 716 610 }
+			}
+		}
+	}
+}
+country_event = { #Japan accepts
+	id = ww2soviet.207
+	title = ww2soviet.207.t
+	desc = ww2soviet.207.d
+	picture = GFX_report_event_generic_military_parade
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #accepts
+		name = ww2soviet.207.a
+		JAP = {
+			end_puppet = MAN
+		}
+		SOV = {
+			puppet = MAN
+			transfer_state = 745 
+		}
+	}
+}
+
+#Kerensky Returns
+country_event = { 
+	id = ww2soviet.208
+	title = ww2soviet.208.t
+	desc = ww2soviet.208.d
+	picture = GFX_report_event_albanian_partisans
+
+	trigger = {
+		has_completed_focus = SOV_democratic_socialism
+		}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	fire_only_once = yes
+
+	option = { #ok
+		name = ww2soviet.208.a
+	}
+}
+
+#Election when democratic
+country_event = { 
+	id = ww2soviet.209
+	title = ww2soviet.209.t
+	desc = ww2soviet.209.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+		tag = SOV
+		has_democratic_government = yes
+		has_civil_war = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = { #Bukharin
+		name = ww2soviet.209.a
+		
+		set_politics = {
+			ruling_party = socdem
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		
+		create_country_leader = {
+			name = "Nikolai Bukharin"
+			desc = "POLITICS_NIKOLAI_BUKHARIN_DESC"
+			picture = "Portrait_ww2soviet_Nikolai_Bukharin.dds"
+			expire = "1965.1.1"
+			ideology = social_democracy
+			traits = {
+				economic_reformer
+			}
+		}
+	}
+	option = { #Kerensky
+		name = ww2soviet.209.b
+		
+		set_politics = {
+			ruling_party = socdem
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		
+		create_country_leader = {
+			name = "Alexander Kerensky"
+			desc = "POLITICS_LEON_TROTSKY_DESC"
+			picture = "Portrait_ww2soviet_Alexander_Kerensky.dds"
+			expire = "1965.1.1"
+			ideology = social_democracy
+			traits = {
+				international_popularity
+			}
+		}
+		custom_effect_tooltip = SOV_womens_death_battalion_tt
+		hidden_effect = {
+			division_template = {
+				name = "Women's Death Battalion"
+				priority = 2
+				division_names_group = SOV_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+			
+	    	   		infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+			
+	    	   		infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+				}
+				support = {
+						engineer = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 195 }
+				create_unit = {
+					division = "name = \"Women's Death Battalion\" division_template = \"Women's Death Battalion\" start_experience_factor = 1.0" 
+					owner = SOV
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = ww2soviet.210
+	title = ww2soviet.210.t
+	desc = ww2soviet.210.d
+	picture = GFX_report_event_long_march
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2soviet.210.a
+		create_field_marshal = {
+			name = "Grigory Mikhaylovich Semyonov"
+			picture = "Portrait_SOV_Grigory_Mikhaylovich_Semyonov.dds"
+			traits = { old_guard war_hero cavalry_officer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	option = {
+		name = ww2soviet.210.b
+	}
+}

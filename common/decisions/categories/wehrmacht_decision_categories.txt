@@ -1,0 +1,11 @@
+GER_wehrmacht_decisions = { 
+	allowed = {
+		original_tag = GER
+	}
+
+	available = {
+	}
+
+	visible = {
+	}
+}

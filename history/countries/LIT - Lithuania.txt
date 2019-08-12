@@ -1,0 +1,261 @@
+﻿capital = 11
+
+oob = "LIT_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+religion_catholicism
+}
+
+add_ideas = {
+	LIT_spirit_agrarian_society
+	LIT_spirit_lithuanians_vilnius
+}
+
+add_ideas = { 	
+		export_focus
+		tax_low
+		tariffs_average
+		
+		civilian_economy
+		press_regulated
+		key_industries
+		labor_none
+		fdi_allowed
+		
+		cons_volunteer
+		foreign_volunteers
+		
+		train_none
+		#age_19
+		officer_train_none
+		security_minor_restrictions
+		education_budget2 health_budget2  socialsecurity_budget2
+		
+		unity6		
+		foreign_isolationism
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+}
+
+set_convoys = 10
+
+
+set_politics = {
+	ruling_party = nationalism
+	last_election = "1926.5.8"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+conservatism = 20
+fascism = 15
+communism = 15
+nationalism = 50
+}
+
+create_country_leader = {
+	name = "Augustinas Voldemaras"
+	desc = ""
+	picture = "gfx/leaders/LIT/portrait_LIT_augustinas_voldemaras.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = {
+		dictator
+	}
+}
+
+
+create_country_leader = {
+	name = "Antanas Smetona"
+	desc = "POLITICS_ANTANAS_SMETONA_DESC"
+	picture = "GFX_Portrait_lithuania_antanas_smetona"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = {
+		LIT_antidem
+	}
+}
+
+create_country_leader = {
+	name = "Antanas Snieckus"
+	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
+	picture = "gfx/leaders/LIT/portrait_LIT_antanas_snieckus.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		stalins_puppet
+	}
+}
+
+
+
+
+create_country_leader = {
+	name = "Alexander Berkman"
+	picture = "gfx/leaders/LIT/Alexander_Berkman_Syndicalist.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Kazys Boruta"
+	picture = "gfx/leaders/LIT/Kazys_Boruta_Socialist.dds"
+	expire = "1965.1.1"
+	ideology = socialism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Stasys Silingas"
+	picture = "gfx/leaders/LIT/Stasys_Silingas_-Liberal_Lithuania.dds"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Martynas Jankus"
+	picture = "gfx/leaders/LIT/Martynas_Jankus_-Conservative.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}
+
+
+create_country_leader = {
+	name = "Juozas Ambrazevicus"
+	picture = "gfx/leaders/LIT/Juozas_Ambrazevicus_Fascist.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Petras Kubiliunas"
+	picture = "gfx/leaders/LIT/Petras_Kubiliunas_Nazi.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = {
+		dictator
+	}
+}
+
+
+create_country_leader = {
+	name = "Kazys Grinius"
+	desc = ""
+	picture = "gfx/leaders/LIT/portrait_LIT_kazys_grinius.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {
+		staunch_constitutionalist
+	}
+}
+
+create_country_leader = {
+			name = "Mindaugas III"
+			desc = "POLITICS_WILHELM_VON_URACH_DESC"
+			picture = "Portrait_Lithuania_Mindaugas_III.tga"
+			expire = "1965.1.1"
+			ideology = absolutism
+			traits = { staunch_monarchist }
+		}
+
+create_country_leader = {
+	name = "Kazys Skirpa"
+	desc = ""
+	picture = "gfx/leaders/LIT/portrait_LIT_kazys_skirpa.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = { }
+}
+
+#Military Leaders
+create_corps_commander = {
+	name = "Jurgis Kubilius"
+	desc = "Not the politician!"
+	portrait_path = "gfx/leaders/LIT/portrait_LIT_jurgis_kubilius.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Vladas Nagevicius"
+	portrait_path = "gfx/leaders/LIT/portrait_LIT_vladas_nagevicius.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Stasys Nastopka"
+	portrait_path = "gfx/leaders/LIT/portrait_LIT_stasys_nastopka.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Kazys Skirpa"
+	portrait_path = "gfx/leaders/LIT/portrait_LIT_kazys_skirpa.dds"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Mykolas Velykis"
+	portrait_path = "gfx/leaders/LIT/portrait_LIT_mykolas_velykis.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Vincas Grigaliūnas-Glovackis"
+	portrait_path = "gfx/leaders/LIT/portrait_LIT_vincas_grigaliunas.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Jonas Galvydis-Bykauskas"
+	portrait_path = "gfx/leaders/LIT/portrait_LIT_jonas_galvydis.dds"
+	traits = { cavalry_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_navy_leader = {
+	name = "Povilas Julius Labanauskas"
+	portrait_path = "gfx/leaders/LIT/portrait_LIT_povilas_julius.dds"
+	traits = {  }
+	skill = 2
+}
+

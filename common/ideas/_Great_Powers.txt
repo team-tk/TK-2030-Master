@@ -1,0 +1,99 @@
+########### August Storm ##################################
+ideas = {
+	country = {
+	
+	surprised_army = {
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = FRA_national_mobilization_focus
+			
+			modifier = {
+				army_defence_factor = -0.33
+				army_attack_factor = -0.33
+				army_speed_factor = -0.25		
+				air_interception_attack_factor = -0.5
+				air_interception_defence_factor = -0.25
+				air_air_superiority_attack_factor = -0.5
+				air_air_superiority_defence_factor = -0.25
+				sortie_efficiency = -0.5
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		##### Power Status
+		
+		irrelevant_power = {
+			allowed = { 
+				num_of_factories < 50 
+			}
+				
+			modifier = {
+				#political_power_gain = 0.50
+			}
+		}
+		
+		regional_power = {
+			allowed = { 
+				num_of_factories > 49
+				num_of_factories < 100 
+			}
+				
+			modifier = {
+				political_power_gain = 1.00
+			}
+		}
+		
+		emerging_power = {
+			allowed = { 
+				num_of_factories > 99
+				num_of_factories < 500				
+			}
+			modifier = {
+				political_power_gain = 1.50
+			}	
+			
+		}
+		
+		great_power = {
+			allowed = { 
+				num_of_factories > 499
+				num_of_factories < 1000				
+			}
+			modifier = {
+				political_power_gain = 2.0
+			}	
+			
+		}
+		
+		super_power = {
+			allowed = { 
+				num_of_factories > 999
+				num_of_factories < 1500				
+			}
+
+			modifier = {
+				political_power_gain = 2.50
+			}		
+			
+		}
+		
+		hyper_power = {
+			allowed = { 
+				num_of_factories > 1499			
+			}
+
+			modifier = {
+				political_power_gain = 3.0
+			}		
+			
+		}
+			
+		
+	}
+}

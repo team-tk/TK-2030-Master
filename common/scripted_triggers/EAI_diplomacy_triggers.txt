@@ -1,0 +1,83 @@
+######################################################
+#	Expert AI mod - diplomacy triggers
+######################################################
+
+EAI_is_threat = {
+	AND = {
+		has_capitulated = no
+		exists = yes
+		NOT = {
+			is_subject_of = ROOT
+			has_government = ROOT
+			is_in_faction_with = ROOT
+			AND = {
+				is_in_faction = yes
+				any_allied_country = { is_faction_leader = yes has_government = ROOT }
+			}
+			AND = {
+				is_subject = yes
+				any_country = { PREV = { is_subject_of = PREV } has_government = ROOT }
+			}
+		}
+	}
+}
+
+EAI_is_not_independent = {
+	OR = {
+		has_capitulated = yes
+		exists = no
+		is_subject = yes
+	}
+}
+
+### looks at ideology as well as party popularity to determine real alignment
+
+EAI_democratic_nation = {
+	OR = {
+		has_government = democratic
+
+		AND = {
+			has_government = neutrality
+
+			check_variable = { party_popularity@democratic > party_popularity@neutrality }
+			check_variable = { party_popularity@democratic > party_popularity@fascism }
+			check_variable = { party_popularity@democratic > party_popularity@communism }
+		}
+	}
+}
+
+EAI_communist_nation = {
+	OR = {
+		has_government = communism
+		
+		AND = {
+			has_government = neutrality
+			
+			check_variable = { party_popularity@communism > party_popularity@neutrality }
+			check_variable = { party_popularity@communism > party_popularity@fascism }
+			check_variable = { party_popularity@communism > party_popularity@democratic }
+		}
+	}
+}
+
+EAI_fascist_nation = {
+	OR = {
+		has_government = fascism
+		
+		AND = {
+			has_government = neutrality
+
+			check_variable = { party_popularity@fascism > party_popularity@neutrality }
+			check_variable = { party_popularity@fascism > party_popularity@communism }
+			check_variable = { party_popularity@fascism > party_popularity@democratic }
+		}
+	}
+}
+
+EAI_nonaligned_nation = {
+	NOT = {
+		EAI_democratic_nation = yes
+		EAI_communist_nation = yes
+		EAI_fascist_nation = yes
+	}
+}

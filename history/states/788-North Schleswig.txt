@@ -1,0 +1,21 @@
+state={
+	id=788
+	name="STATE_788"
+	provinces={
+		332 11251 
+	}
+	history={
+		owner = DEN
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+			air_base = 2
+
+		}
+		#add_core_of = GER
+
+	}
+	manpower=672235
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,536 @@
+transfer_ships = {
+	
+	transfer_carrier = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+	
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				is_ai = no
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = carrier target = FROM }
+			
+		}
+		
+	}
+	
+	transfer_battleship = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				is_ai = no
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = battleship target = FROM }
+			
+		}
+		
+	}
+	
+	transfer_bcruiser = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				is_ai = no
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = battle_cruiser target = FROM }
+			
+		}
+		
+	}
+	
+	transfer_hcruiser = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				is_ai = no
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = heavy_cruiser target = FROM }
+			
+		}
+		
+	}
+	
+	transfer_lcruiser = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				is_ai = no
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = light_cruiser target = FROM }
+			
+		}
+		
+	}
+	
+	transfer_destroyer = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				is_ai = no
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = destroyer target = FROM }
+			
+		}
+		
+	}
+	
+	transfer_submarine = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				is_ai = no
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = submarine target = FROM }
+
+			
+		}
+		
+	}
+}
+
+transfer_ships_puppets = {
+	
+	transfer_carrier_puppet = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+		
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				and = {
+					is_subject_of = ROOT
+					any_owned_state = {
+						is_coastal = yes
+						naval_base > 1
+					}
+				}
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = carrier target = FROM }
+			
+		}
+		
+	}
+	
+	transfer_battleship_puppet = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				and = {
+					is_subject_of = ROOT
+					any_owned_state = {
+						is_coastal = yes
+						naval_base > 1
+					}
+				}
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = battleship target = FROM }
+			
+		}
+		
+	}
+	
+	transfer_bcruiser_puppet = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				and = {
+					is_subject_of = ROOT
+					any_owned_state = {
+						is_coastal = yes
+						naval_base > 1
+					}
+				}
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = battle_cruiser target = FROM }
+			
+		}
+		
+	}
+	
+	transfer_hcruiser_puppet = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				and = {
+					is_subject_of = ROOT
+					any_owned_state = {
+						is_coastal = yes
+						naval_base > 1
+					}
+				}
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = heavy_cruiser target = FROM }
+			
+		}
+		
+	}
+	
+	transfer_lcruiser_puppet = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				and = {
+					is_subject_of = ROOT
+					any_owned_state = {
+						is_coastal = yes
+						naval_base > 1
+					}
+				}
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = light_cruiser target = FROM }
+			
+		}
+		
+	}
+	
+	transfer_destroyer_puppet = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				and = {
+					is_subject_of = ROOT
+					any_owned_state = {
+						is_coastal = yes
+						naval_base > 1
+					}
+				}
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = destroyer target = FROM }
+			
+		}
+		
+	}
+	
+	transfer_submarine_puppet = {
+
+		icon = generic_form_nation
+		
+		cost = 0
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				and = {
+					is_subject_of = ROOT
+					any_owned_state = {
+						is_coastal = yes
+						naval_base > 1
+					}
+				}
+			}
+		}
+
+		complete_effect  = {
+			
+			transfer_ship = { prefer_name = "Transfer" type = submarine target = FROM }
+
+			
+		}
+		
+	}
+}
+
+transfer_navy_puppets = {
+
+	transfer_navy_to_overlord = {
+
+		icon = generic_form_nation
+		
+		cost = 300
+		
+		available = {
+			 is_ai = no
+		}
+		
+		visible = {
+			FROM = {
+				country_exists = FROM
+				has_navy_size = { size > 1 }
+			}
+		}
+
+		fire_only_once = no
+		
+		target_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+
+		complete_effect  = {
+		
+			FROM = {
+				transfer_navy = { target = ROOT }
+			}
+			
+		}
+		
+	}
+	
+}

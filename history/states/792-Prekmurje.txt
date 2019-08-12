@@ -1,0 +1,19 @@
+state={
+	id=792
+	name="Prekmurje"
+	manpower = 107300
+	
+	state_category = rural
+	
+	history =
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+	}
+	provinces={
+		6672 }
+}

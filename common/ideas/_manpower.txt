@@ -1,0 +1,746 @@
+ideas = {
+
+	mobilization_laws = { 
+		law = yes
+
+		disarmed_nation = {
+						
+			###cost = 150
+			removal_cost = -1
+			level = 8
+			
+			available = {
+				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
+			}
+
+			modifier = {
+				conscription = 0.01
+				industrial_capacity_factory = 0.06
+				industrial_capacity_dockyard = 0.06
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		cons_volunteer = {
+			
+			#cost = 50
+			removal_cost = -1
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
+				if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				NOT = { has_idea = undisturbed_isolation }
+				NOT = { has_idea = isolation }
+				if = {
+					limit = {
+						original_tag = MOR
+					}
+					has_completed_focus = MOR_expand_maroccan_division
+				}
+			}
+			
+			level = 7
+
+			default = yes
+			
+			modifier = {
+				conscription = 0.015
+				industrial_capacity_factory = 0.06
+				industrial_capacity_dockyard = 0.06
+				political_power_factor = 0.05
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100000
+					has_idea  = disarmed_nation 
+				}
+				modifier = {
+					factor = 100000
+					has_manpower < 150000 
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+		#
+		cons_one = {
+			
+			#cost = 100
+			removal_cost = -1
+			
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
+				has_war_support > 0.1
+				NOT = { has_idea = undisturbed_isolation }
+				NOT = { has_idea = isolation }
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+				}
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_commit_to_the_war
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+
+				if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = MOR
+					}
+					has_completed_focus = MOR_retablish_army
+				}
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+			}
+			
+			level = 6
+
+			modifier = {
+				conscription = 0.02
+				industrial_capacity_factory = 0.03
+				industrial_capacity_dockyard = 0.03
+				political_power_factor = 0.025
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100000
+					has_idea = cons_volunteer
+				}
+				modifier = {
+					factor = 100000
+					has_manpower < 150000 
+				}
+			}
+		}
+		#
+		cons_two = {
+			
+			#cost = 125
+			removal_cost = -1
+			
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
+				OR = {
+					has_government = fascism
+					has_government = nazism
+					has_government = communism
+					has_government = socialism
+					has_government = syndicalism
+					has_government = monarchism
+					has_government = theocratic
+					has_government = neutrality
+					has_government = nationalism
+					AND = {
+						has_war = yes
+						enemies_strength_ratio > 0.3
+					}					
+				}
+				NOT = { has_idea = undisturbed_isolation }
+				NOT = { has_idea = isolation }
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+				}
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_commit_to_the_war
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+
+				if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = MOR
+					}
+					has_completed_focus = MOR_retablish_army
+				}
+			}
+			
+			
+			level = 5
+
+			modifier = {
+				conscription = 0.025
+				political_power_factor = 0.01
+				army_org_factor = 0.025
+				army_morale_factor = 0.025
+
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100000
+					has_idea = cons_one
+				}
+				modifier = {
+					factor = 100000
+					has_manpower < 150000 #3500
+				}
+			}
+		}
+		#
+		cons_three = {
+			
+			#cost = 150
+			removal_cost = -1
+			
+			available = {
+				OR = {
+					has_government = fascism
+					has_government = nazism
+					has_government = communism
+					has_government = socialism
+					has_government = syndicalism
+					has_government = monarchism
+					has_government = theocratic
+					has_government = neutrality
+					has_government = nationalism
+					AND = {
+						has_war = yes
+						enemies_strength_ratio > 0.3
+					}					
+				}
+				#Special rules AST in TFV
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+					has_completed_focus = AST_fight_work_or_perish
+				}				
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_commit_to_the_war
+					has_completed_focus = CAN_if_day
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+
+				if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = MOR
+					}
+					has_completed_focus = MOR_retablish_army
+				}
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+			}
+			
+			level = 4
+
+			modifier = {
+				conscription = 0.030
+				industrial_capacity_factory = -0.03
+				industrial_capacity_dockyard = -0.03
+				political_power_factor = -0.01
+				stability_weekly = -0.0004
+				}
+
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100000
+					has_idea = cons_two
+					}
+				modifier = {
+					factor = 100000
+					has_manpower < 150000 
+				}
+			}
+		}
+		#
+		cons_expanded_draft = {
+			
+			#cost = 150
+			removal_cost = -1
+			
+			available = {
+				has_war_support > 0.5
+				OR = {
+					has_idea  = tax_average
+					has_idea  = tax_high
+					has_idea  = tax_extreme
+				}
+				AND = {
+					has_war = yes
+					enemies_strength_ratio > 0.5
+				}
+				#Special rules AST in TFV
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+					has_completed_focus = AST_fight_work_or_perish
+				}				
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_commit_to_the_war
+					has_completed_focus = CAN_if_day
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+
+				if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = MOR
+					}
+					has_completed_focus = MOR_retablish_army
+				}
+				#custom_trigger_tooltip = { tooltip = money_cost_idea check_variable = { dx > 75 } }
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+			}
+			
+			level = 3
+
+			modifier = {
+				conscription = 0.050
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_speed_buildings_factor = -0.1
+				political_power_factor = -0.025
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+
+			}
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100000
+					has_idea = cons_three
+				} 
+				modifier = {
+					factor = 100000
+					has_manpower < 150000					
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+		#
+		cons_extensive_draft = {
+			
+			#cost = 200
+			removal_cost = -1
+			
+			level = 2
+			
+			available = {
+				OR = {
+						has_war_support > 0.6
+						surrender_progress > 0
+					}
+				OR = {
+					has_idea  = tax_average
+					has_idea  = tax_high
+					has_idea  = tax_extreme
+				}
+				AND = {
+					has_war = yes
+					enemies_strength_ratio > 0.8
+				}
+
+				OR = {
+					has_idea  = age_17
+					has_idea  = age_16
+					has_idea  = age_15
+
+					
+					has_idea  = age_40
+					has_idea  = age_45
+					has_idea  = age_50
+				}
+				
+				#Special rules AST in TFV
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+					has_completed_focus = AST_fight_work_or_perish
+				}				
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_commit_to_the_war
+					has_completed_focus = CAN_if_day
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+
+				if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = MOR
+					}
+					has_completed_focus = MOR_retablish_army
+				}
+				#custom_trigger_tooltip = { tooltip = money_cost_idea check_variable = { dx > 75 } }
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+			}
+
+			modifier = {
+				conscription = 0.075
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+				production_speed_buildings_factor = -0.3
+				training_time_army_factor = 0.05
+				political_power_factor = -0.05
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+
+			}
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100000
+					has_idea  = cons_extensive_draft
+				}
+				modifier = {
+					factor = 100000
+					has_manpower < 150000 
+				}
+				modifier = {
+					factor = 0
+					has_war = no
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+		#
+		cons_barrel = {
+			
+			#cost = 300
+			removal_cost = -1
+			
+			level = 1
+
+			available = {
+				OR = {
+					has_war_support > 0.7
+					surrender_progress > 0
+				}
+				OR = {
+					has_idea  = tax_average
+					has_idea  = tax_high
+					has_idea  = tax_extreme
+				}
+				AND = {
+					has_war = yes
+					enemies_strength_ratio > 1
+				}
+
+				OR = {
+				has_idea  = age_15
+				has_idea  = age_16
+					has_idea  = age_45
+					has_idea  = age_50
+	
+				}
+				
+				#Special rules AST in TFV
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+					has_completed_focus = AST_fight_work_or_perish
+				}				
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_commit_to_the_war
+					has_completed_focus = CAN_if_day
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+
+				if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = MOR
+					}
+					has_completed_focus = MOR_retablish_army
+				}
+				#custom_trigger_tooltip = { tooltip = money_cost_idea check_variable = { dx > 75 } }
+			}
+			on_add = {
+				#subtract_from_variable = { dx = idea_cost_money }
+			}
+
+			modifier = {
+				conscription = 0.10
+				industrial_capacity_factory = -0.4
+				industrial_capacity_dockyard = -0.4
+				production_speed_buildings_factor = -0.4
+				training_time_army_factor = 0.1
+				political_power_factor = -0.10
+				army_org_factor = -0.15
+				army_morale_factor = -0.15
+
+			}
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100000
+					has_idea  = cons_extensive_draft 
+				}
+				modifier = {
+					factor = 100000
+					has_manpower < 150000 
+				}
+				modifier = {
+					factor = 0
+					has_war = no
+				}
+			}
+			cancel_if_invalid = no
+		}
+		
+		
+		MEX_agrarian_army = {
+			picture = GFX_idea_generic_agrarian_reform
+			allowed = {
+				always = no
+			}
+			available = {				tag = MEX
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = 0.1875
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				local_resources_factor = -0.25
+			}
+			cancel_if_invalid = no
+		}
+		
+		
+		usa_volunteer_only = {
+						
+			picture = cons_volunteer
+			
+			cost = 150
+			removal_cost = -1
+			level = 6
+			
+			available = {
+				original_tag = USA
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = {
+				conscription = 0.015
+				industrial_capacity_factory = -0.4
+				consumer_goods_factor = -0.03
+				war_support_factor = -0.05
+			}
+			
+			allowed_to_remove = {
+				OR = {
+					has_government = fascism
+					has_government = nazism
+					has_government = communism
+					has_government = socialism
+					has_government = syndicalism
+					has_war = yes
+				}
+			}
+			
+			default = no
+			
+			cancel_if_invalid = no
+		}
+		
+		
+	}
+}

@@ -1,0 +1,16 @@
+﻿SLV = {
+	male = {
+		names = { Edvard Franc Leon Milovan Gregorij Ivan Boris Ernest Josip Karel 
+		Janko Viktor Rupert Sergej Milan Jože }
+		surnames = { }
+		callsigns = { }
+	}
+	female = {
+		names = { }
+		surnames = { }
+		callsigns = { }
+	}
+	surnames = { Kardelj Frakelj Rupnik Djilas Rožman Milutinović Kidrič Peterlin Krenner Križaj Destovnik 
+	Dobnikar Mihelčić Pivec Mašera Spasić Brilej }
+	callsigns = { }
+}

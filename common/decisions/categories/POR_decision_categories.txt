@@ -1,0 +1,51 @@
+#################
+#### PORTUGAL ####
+#################
+
+POR_wolfram_embargo = {
+	icon = generic_prospect_for_resources
+
+	picture = GFX_decision_cat_picture_ger_case_anton
+
+	allowed = {
+		original_tag = POR
+	}
+}
+
+form_iberia_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_generic_iberia
+	
+	allowed = {
+		original_tag = POR
+	}
+
+}
+
+POR_colonial_empire = {
+
+	icon = generic_propaganda
+	
+	allowed = {
+		original_tag = POR
+	}
+	
+	visible = {
+		is_puppet = no
+		has_completed_focus = POR_ukpba
+	}
+
+}
+
+POR_colonial_release = {
+	allowed = {
+		original_tag = POR
+	}
+
+	visible = {
+		is_puppet = no
+		has_completed_focus = POR_colonial_question
+	}
+}

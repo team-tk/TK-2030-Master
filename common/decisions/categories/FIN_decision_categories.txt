@@ -1,0 +1,16 @@
+##############################
+#### BITTER PEACE FINLAND ####
+##############################
+
+FIN_great_finland = {
+
+	icon = decision_category_generic_fascism
+
+	allowed = {
+		tag = FIN		
+	}
+
+	visible = {
+		tag = FIN
+	}
+}

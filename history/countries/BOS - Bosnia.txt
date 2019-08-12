@@ -1,0 +1,84 @@
+﻿capital = 104
+
+set_research_slots = 3
+
+add_ideas = {
+religion_sunni_islamism
+}
+
+# Starting tech
+# clone of Yugoslavia
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	early_fighter = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_submarine = 1
+}
+
+set_popularities = {
+fascism = 33
+neutrality = 33
+communism = 34
+}
+
+create_country_leader = {
+	name = "Jure Francetić"
+	desc = "POLITICS_JURE_FRANCETIC_DESC"
+	picture = "gfx/leaders/BOS/JureFrancetic.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Stjepan Sarkotić"
+	desc = "POLITICS_STJEPAN_SARKOTIC__DESC"
+	picture = "gfx/leaders/BOS/Stjepan.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rodoljub Čolaković"
+	desc = "POLITICS_RODOLJUB_COLAKOVIC_DESC"
+	picture = "gfx/leaders/BOS/Colakovic.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mehmed Spaho"
+	desc = "POLITICS_MEHMED_SPAHO_DESC"
+	picture = "gfx/leaders/BOS/Mehmed.dds"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+					name = "Otto von Habsburg"
+					desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
+					picture = "gfx/leaders/HUN/Portrait_otto_von_hapsburg.dds"
+					expire = "1965.1.1"
+					ideology = absolutism
+					traits = { }
+					
+					id = 21010
+				}

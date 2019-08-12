@@ -1,0 +1,130 @@
+﻿capital = 301
+
+oob = "PAR_1936"
+
+add_ideas = {
+fog_dictatorship_lw
+religion_catholicism
+}
+
+add_ideas = { 	
+		export_focus
+		tax_low
+		tariffs_average
+		
+		civilian_economy
+		press_regulated
+		key_industries
+		labor_none
+		fdi_allowed
+		
+		cons_volunteer
+		foreign_volunteers
+		
+		train_none
+		#age_19
+		officer_train_none
+		security_minor_restrictions
+		education_budget2 health_budget2  socialsecurity_budget2 
+		
+		unity6		
+		foreign_isolationism
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+set_country_flag = monroe_doctrine
+
+set_politics = {	
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communism = 75
+	conservatism = 25
+}
+
+create_country_leader = {
+	name = "Eusebio Ayala"
+	desc = "POLITICS_EUSEBIO_AYALA_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }
+}
+
+
+
+# Rafael Franco technically comes to and loses power slightly after/before the bookmarks, but is the go-to choice for a socialist leader
+create_country_leader = {
+	name = "Rafael Franco"
+	desc = "POLITICS_RAFAEL_FRANCO_DESC"
+	picture = "GFX_Portrait_paraguay_rafael_franco"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = { }
+}
+
+### PLACEHOLDER
+create_country_leader = {
+	name = "Rafael Franco"
+	desc = "POLITICS_RAFAEL_FRANCO_DESC"
+	picture = "GFX_Portrait_paraguay_rafael_franco"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+### PLACEHOLDER
+create_country_leader = {
+	name = "Rafael Franco"
+	desc = "POLITICS_RAFAEL_FRANCO_DESC"
+	picture = "GFX_Portrait_paraguay_rafael_franco"
+	expire = "1965.1.1"
+	ideology = revolutionary_socialism
+	traits = { }
+}
+
+create_country_leader = {
+		name = "Higinio Morinigo"
+		desc = "POLITICS_HIGINIO_MORINIGO_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+		expire = "1965.1.1"
+		ideology = military_dictatorship
+		traits = { }
+}
+### PLACEHOLDER
+create_country_leader = {
+		name = "Higinio Morinigo"
+		desc = "POLITICS_HIGINIO_MORINIGO_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+		expire = "1965.1.1"
+		ideology = nationalism_ideology
+		traits = { }
+}
+
+
+
+1939.1.1 = {
+set_politics = {
+ruling_party = neutrality
+last_election = "1938.1.1"
+election_frequency = 48
+elections_allowed = no
+}
+	
+set_popularities = {
+communism = 25
+conservatism = 25
+neutrality = 50
+}
+
+}
+

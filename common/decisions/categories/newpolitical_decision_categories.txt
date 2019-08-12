@@ -1,0 +1,37 @@
+monarchism_on_the_rise = {
+	icon = generic_fascism
+	
+}
+
+theocratic_on_the_rise = {
+	icon = generic_fascism
+	
+}
+
+neutrality_on_the_rise = {
+	icon = generic_fascism
+}
+
+nationalism_on_the_rise = {
+	icon = generic_fascism
+}
+
+nazism_on_the_rise = {
+	icon = generic_fascism
+}
+
+conservatism_on_the_rise = {
+	icon = generic_democracy
+}
+
+socdem_on_the_rise = {
+	icon = generic_democracy
+}
+
+syndicalism_on_the_rise = {
+	icon = generic_communism
+}
+
+socialism_on_the_rise = {
+	icon = generic_communism
+}

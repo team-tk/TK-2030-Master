@@ -1,0 +1,110 @@
+﻿capital = 6
+
+oob = "BEL_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+religion_catholicism
+}
+
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	early_fighter = 1
+	trench_warfare = 1
+	gwtank = 1
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antitank = 1
+	motorised_infantry = 1
+}
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1932.11.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	fascism = 16
+	communism = 6
+	conservatism = 78
+}
+
+
+add_ideas = {
+	cons_two
+}
+set_convoys = 0
+set_stability = 0.75
+set_war_support = 0.5
+
+create_country_leader = {
+	name = "Fernand Dehousse"
+	desc = "Fernand Dehousse"
+	picture = "DEHOUSSE_Fernand.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Julien Lahaut"
+	desc = "Julien Lahaut"
+	picture = "gfx/leaders/BEL/LAHAUT_Julien.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_communism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Julien Lahaut"
+	desc = "Julien Lahaut"
+	picture = "gfx/leaders/BEL/LAHAUT_Julien.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Léon Degrelle"
+	desc = "POLITICS_LEON_DEGRELLE_DESC"
+	picture = "gfx/leaders/BEL/Portrait_Belgium_LEON_DEGRELLE.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Léon Degrelle"
+	desc = "POLITICS_LEON_DEGRELLE_DESC"
+	picture = "gfx/leaders/BEL/Portrait_Belgium_LEON_DEGRELLE.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+create_corps_commander = {
+	name = "Maurice Keyaerts"
+	portrait_path = "gfx/leaders/BEL/Portrait_Belgium_MCL_Keyaerts.dds"
+	traits = { ranger hill_fighter }
+	skill = 3
+}
+create_corps_commander = {
+	name = "Georges Deffontaine"
+	portrait_path = "gfx/leaders/BEL/portrait_Alexandre_Deffontaine.dds"
+	traits = { }
+	skill = 2
+}
+create_navy_leader = {
+	name = "Lambert Robins"
+	portrait_path = "gfx/leaders/BEL/Portrait_Belgium_Lambert_Robins.dds"
+	traits = { spotter }
+	skill = 1
+}

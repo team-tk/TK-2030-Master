@@ -1,0 +1,185 @@
+﻿capital = 113
+
+oob = "IRE_1936"
+
+add_ideas = {
+fog_democratic
+religion_catholicism
+}
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	fuel_silos = 1
+}
+
+add_ideas = { 	
+		export_focus
+		tax_average
+		tariffs_average
+		
+		civilian_economy
+		press_free
+		private_control
+		labor_allowed
+		fdi_allowed
+		
+		cons_volunteer
+		foreign_volunteers
+		
+		train_medium
+		#age_19
+		officer_train_low
+		security_liberty_first
+		education_budget5 health_budget5 socialsecurity_budget5 
+		
+		unity5	
+		foreign_neutral
+		neutrality_idea
+}
+
+add_ideas = {
+	ENG_trade_war
+	IRE_ira
+}
+
+set_convoys = 100
+
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1933.1.24"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+conservatism =  45
+democratic = 38
+socdem = 10
+fascism = 1
+communism = 1
+neutrality = 5
+}
+
+
+create_country_leader = {
+	name = "Éamon de Valera"
+	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
+	picture = "Portrait_Ireland_Eamon_de_Valera.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Eoin O'Duffy"
+	desc = "POLITICS_EOIN_ODUFFY_DESC"
+	picture = "gfx/leaders/IRE/Portrait_Ireland_Duffman.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "James Larkin"
+	desc = "POLITICS_JAMES_LARKIN_DESC"
+	picture = "gfx/leaders/IRE/Portrait_Ireland_Big_Jim.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = { }
+}
+
+### PLACEHOLDER
+create_country_leader = {
+	name = "William Joyce"
+	picture = "gfx/leaders/IRE/william_joyce_nazism.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Jack White"
+	picture = "gfx/leaders/IRE/Jack_White_Syndicalist.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "William Norton"
+	picture = "William_Norton_-Socdem_Ireland.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "William Thomas Cosgrave"
+	picture = "William_Thomas_Cosgrave_Liberal.dds"
+	expire = "1965.1.1"
+	ideology = center_right
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Peadar O'Donnell"
+	picture = "Peadar_O'Donnell_Socialist.dds"
+	expire = "1965.1.1"
+	ideology = socialism_ideology
+	traits = { }
+}
+
+### PLACEHOLDER
+create_country_leader = {
+	name = "Eoin O'Duffy"
+	desc = "POLITICS_EOIN_ODUFFY_DESC"
+	picture = "gfx/leaders/IRE/Portrait_Ireland_Duffman.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = { }
+}
+
+### PLACEHOLDER
+
+create_country_leader = {
+	name = "Tom Barry"
+	desc = ""
+	picture = "Tom_Barry.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Governor General Éamon de Valera"
+	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
+	picture = "Portrait_Ireland_Eamon_de_Valera.dds"
+	expire = "1965.1.1"
+	ideology = constitutional
+	traits = { }
+}
+
+create_country_leader = {
+	name = "George V"
+	picture = "gfx/leaders/ENG/Portrait_Britain_George_V.dds"
+	expire = "1936.1.20"
+	ideology = constitutional
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Michael Costello"
+	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}

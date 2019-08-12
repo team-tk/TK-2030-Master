@@ -1,0 +1,515 @@
+
+CSA_set_up_the_government = {
+
+	
+	#CSA_load_oobs = {
+	#
+	#	icon = generic_prepare_civil_war
+	#
+	#	allowed = {
+	#		original_tag = CSA
+	#	}
+	#
+	#	available = {
+	#		
+	#	}
+	#
+	#	cost = 0
+	#	fire_only_once = yes
+	#	ai_will_do = {
+	#		factor = 100
+	#	}
+	#
+	#	visible = {
+	#		
+	#	}
+	#
+	#	complete_effect = {
+	#		CSA = {	load_oob = "CSA_1936" } 
+	#	}
+	#}	
+	
+	CSA_john_garand = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = CSA
+		}
+
+		available = {
+			#has_war = yes
+			date < 1937.1.1
+		}
+
+		cost = 0
+		fire_only_once = yes
+		days_remove = 5
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_ideas = john_garand20
+		}
+		
+		remove_effect = {
+			set_technology = { infantry_weapons1 = 1 }
+		}
+	}	
+	
+	CSA_deploy_militia = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = CSA
+		}
+
+		available = {
+			has_war = yes
+			date > 1936.3.1
+			controls_state = 367
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			CSA = {	load_oob = "CSA_militias2" }
+			if = {
+				limit = { is_ai = yes }
+				CSA = {	load_oob = "CSA_militias3" }
+			}
+		}
+	}	
+	
+	CSA_deploy_volunteer_divisions_i = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = CSA
+		}
+
+		available = {
+			controls_state = 819
+		}
+
+		cost = 20
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			CSA = {	load_oob = "CSA_volunteer_divs_i" }
+		}
+	}	
+	
+	
+	
+	CSA_push_arsenals_and_military_industry_i = {
+
+		icon = generic_industry
+
+		allowed = {
+			
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			has_idea = usa_the_second_american_civil_war
+		}
+
+		cost = 15
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		fire_only_once = no
+
+		#modifier = {
+			#civilian_factory_use = 5			
+		#}
+
+		days_remove = 180
+
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 3 }
+		}
+
+		remove_effect = {
+			#add_war_support = 0.05
+			
+			add_offsite_building = { type = arms_factory level = -3 }
+			
+		}
+	}
+	
+	CSA_push_arsenals_and_military_industry_ii = {
+
+		icon = generic_industry
+
+		allowed = {
+			
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			has_idea = usa_the_second_american_civil_war
+		}
+
+		cost = 15
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		fire_only_once = no
+
+		#modifier = {
+			#civilian_factory_use = 5			
+		#}
+
+		days_remove = 180
+
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 3 }
+		}
+
+		remove_effect = {
+			#add_war_support = 0.05
+			
+			add_offsite_building = { type = arms_factory level = -3 }
+			
+		}
+	}
+	
+	CSA_push_arsenals_and_military_industry_iii = {
+
+		icon = generic_industry
+
+		allowed = {
+			
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			has_idea = usa_the_second_american_civil_war
+		}
+
+		cost = 15
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		fire_only_once = no
+
+		#modifier = {
+			#civilian_factory_use = 5			
+		#}
+
+		days_remove = 180
+
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 3 }
+		}
+
+		remove_effect = {
+			#add_war_support = 0.05
+			
+			add_offsite_building = { type = arms_factory level = -3 }
+			
+		}
+	}
+	
+	CSA_push_arsenals_and_military_industry_iv = {
+
+		icon = generic_industry
+
+		allowed = {
+			
+		}
+
+		available = {
+			
+		}
+
+		visible = {
+			has_idea = usa_the_second_american_civil_war
+		}
+
+		cost = 15
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		fire_only_once = no
+
+		#modifier = {
+			#civilian_factory_use = 5			
+		#}
+
+		days_remove = 180
+
+		complete_effect = {
+			add_offsite_building = { type = arms_factory level = 3 }
+		}
+
+		remove_effect = {
+			#add_war_support = 0.05
+			
+			add_offsite_building = { type = arms_factory level = -3 }
+			
+		}
+	}
+	
+	#CSA_victory_over_the_north = {
+	#
+	#	icon = generic_prepare_civil_war
+	#
+	#	allowed = {
+	#		original_tag = CSA
+	#	}
+	#
+	#	available = {
+	#		controls_state = 361
+	#		controls_state = 360
+	#		controls_state = 796
+	#		controls_state = 802
+	#	}
+	#
+	#	cost = 0
+	#	fire_only_once = yes
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#
+	#	visible = {
+	#		has_war_with = FAS
+	#	}
+	#
+	#	complete_effect = {
+	#		FAS = { country_event = csa.4 }
+	#	}
+	#}	
+	
+	#FAS_load_oobs = {
+	#
+	#	icon = generic_prepare_civil_war
+	#
+	#	allowed = {
+	#		original_tag = FAS
+	#	}
+	#
+	#	available = {
+	#		
+	#	}
+	#
+	#	cost = 0
+	#	fire_only_once = yes
+	#	ai_will_do = {
+	#		factor = 100
+	#	}
+	#
+	#	visible = {
+	#		
+	#	}
+	#
+	#	complete_effect = {
+	#		FAS = {	load_oob = "FAS_1936" }
+	#	}
+	#}	
+	
+	FAS_john_garand = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = FAS
+		}
+
+		available = {
+			#has_war = yes
+			date < 1937.1.1
+		}
+
+		cost = 0
+		fire_only_once = yes
+		days_remove = 5
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_ideas = john_garand3
+		}
+		
+		remove_effect = {
+			set_technology = { infantry_weapons1 = 1 }
+		}
+	}	
+	
+	FAS_deploy_militia = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = FAS
+		}
+
+		available = {
+			has_war = yes
+			date > 1936.3.1
+			controls_state = 814
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			FAS = {	load_oob = "FAS_militias2" }
+			if = {
+				limit = { is_ai = yes }
+				FAS = {	load_oob = "FAS_militias3" }
+			}
+		}
+	}	
+	
+	#ACO_load_oobs = {
+	#
+	#	icon = generic_prepare_civil_war
+	#
+	#	allowed = {
+	#		original_tag = ACO
+	#	}
+	#
+	#	available = {
+	#		
+	#	}
+	#
+	#	cost = 0
+	#	fire_only_once = yes
+	#	ai_will_do = {
+	#		factor = 100
+	#	}
+	#
+	#	visible = {
+	#		
+	#	}
+	#	
+	#	complete_effect = {
+	#		ACO = {	load_oob = "ACO_1936" }
+	#	}
+	#}	
+	
+	ACO_john_garand = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ACO
+		}
+
+		available = {
+			#has_war = yes
+			date < 1937.1.1
+		}
+
+		cost = 0
+		fire_only_once = yes
+		days_remove = 5
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			add_ideas = john_garand4
+		}
+		
+		remove_effect = {
+			set_technology = { infantry_weapons1 = 1 }
+		}
+	}	
+	
+	ACO_deploy_militia = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ACO
+		}
+
+		available = {
+			has_war = yes
+			date > 1936.3.1
+			controls_state = 781
+		}
+
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			ACO = {	load_oob = "ACO_militias2" }
+			if = {
+				limit = { is_ai = yes }
+				ACO = {	load_oob = "ACO_militias3" }
+			}
+		}
+	}	
+	
+}
+
+
+
+

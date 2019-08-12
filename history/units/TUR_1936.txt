@@ -1,0 +1,550 @@
+﻿division_template = {
+	name = "Piyade Tümeni"  			# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Topçu Tugayı"  			# Artillery Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Dağcı Tümeni" 				# Mountain Brigade
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Süvari Tümeni" 				# Cavalry Division
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 0 y = 4 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 1 y = 4 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Motorize Tümeni" 				# Motorised Division
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Tank Tugayı" 				# Tank Division
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+        motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "S.A.T Komandoları"			# Marines
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 0 y = 4 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 1 y = 3 }
+		marine = { x = 1 y = 4 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Komando Tugayı"			# Airborne Brigade
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 0 y = 4 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		paratrooper = { x = 1 y = 4 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+units = {
+	######## LAND UNITS ########
+	##### Türk Ordusu #####
+	division = {
+		name = "1.Piyade Tümeni"
+		location = 9941
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "2.Piyade Tümeni"
+		location = 909
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}	
+	division = {
+		name = "3.Piyade Tümeni"
+		location = 11797
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "1.Tank Tugayı"
+		location = 12387
+		division_template = "Tank Tugayı" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "1.Süvari Tümeni"
+		location = 11811
+		division_template = "Süvari Tümeni" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "2.Süvari Tümeni"
+		location = 947
+		division_template = "Süvari Tümeni" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "2.Tank Tugayı"
+		location = 3927
+		division_template = "Tank Tugayı" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "4.Piyade Tümeni"
+		location = 4112
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "5.Piyade Tümeni"
+		location = 3921
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "6.Piyade Tümeni"
+		location = 1005
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "7.Piyade Tümeni"
+		location = 7026
+		division_template = "Piyade Tümeni" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "1.Dağcı Tümeni"
+		location = 9858
+		division_template = "Dağcı Tümeni" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "1.Motorize Tümeni"
+		location = 869
+		division_template = "Motorize Tümeni" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "2.Motorize Tümeni"
+		location = 940
+		division_template = "Motorize Tümeni" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "1.Topçu Tugayı"
+		location = 856
+		division_template = "Topçu Tugayı" 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}				
+}
+
+
+### Air Wings ###
+air_wings = {
+	 ##### Türk 1.Hava Filosu #####
+	 49 = { 
+		# 1. Havacı Alayı
+		fighter_equipment_1 = {
+			owner = "TUR" 
+			amount = 25
+		}
+		# 1.Avcı Alayı
+		CAS_equipment_1 = {
+			owner = "TUR" 
+			amount = 10
+		}
+	}
+	
+	##### Türk 2.Hava Filosu #####
+	346 = { 
+		# 2. Havacı Alayı
+		fighter_equipment_1 = {
+			owner = "TUR" 
+			amount = 15
+		}
+		# 2.Avcı Alayı
+		CAS_equipment_1 = {
+			owner = "TUR" 
+			amount = 5
+		}
+	}
+	
+	##### Türk 3.Hava Filosu #####
+	339 = { 
+		# 3. Havacı Alayı
+		fighter_equipment_1 = {
+			owner = "TUR" 
+			amount = 10
+		}
+		# 3.Avcı Alayı
+		CAS_equipment_1 = {
+			owner = "TUR" 
+			amount = 5
+		}
+	}
+	
+	##### Türk 4.Hava Filosu #####
+	350 = { 
+		# 4. Havacı Alayı
+		fighter_equipment_1 = {
+			owner = "TUR" 
+			amount = 15
+		}
+	}
+}				
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "TUR"
+		}
+		requested_factories = 1
+		progress = 0.43
+		efficiency = 62
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 59
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 58
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 40
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 42
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "TUR"
+		}
+		requested_factories = 1
+		progress = 0.47
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 44
+	}
+	
+	### Ships Under Contruction ###
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "TUR"
+		}
+		requested_factories = 1
+		progress = 0.91
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "TUR"
+		}
+		requested_factories = 1
+		progress = 0.71
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "TUR"
+		}
+		requested_factories = 1
+		progress = 0.54
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battle_cruiser_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.95
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battle_cruiser_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.85
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battle_cruiser_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = heavy_cruiser_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.94
+		amount = 4
+	}
+	add_equipment_production = {
+		equipment = {
+			type = heavy_cruiser_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.74
+		amount = 4
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.98
+		amount = 6
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_cruiser_1
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.88
+		amount = 6
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.74
+		amount = 12
+	}
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.34
+		amount = 12
+	}
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.44
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "TUR" 
+		}
+		requested_factories = 1
+		progress = 0.14
+		amount = 10
+	}
+}

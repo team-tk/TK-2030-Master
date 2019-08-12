@@ -1,0 +1,147 @@
+﻿###########################
+# Italian WW2 Events
+###########################
+
+add_namespace = ww2italy
+
+# Italy Surrenders
+country_event = {
+	id = ww2italy.0
+	title = ww2italy.0.t
+	desc = ww2italy.0.d
+	picture = GFX_report_event_italy_surrenders
+
+	fire_only_once = yes
+
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = italy_surrenders
+	}
+	option = {
+		name = ww2italy.0.a
+		
+		ai_chance = { factor = 4000 }
+		
+			every_country = {
+				limit = {
+					has_war_with = ITA
+					is_in_faction_with = ENG
+				}
+				white_peace = ITA
+			}
+			
+			every_country = {
+				limit = {
+					has_war_with = ITA
+					is_in_faction_with = SOV
+				}
+				white_peace = ITA
+			}
+			
+		GER = { remove_from_faction = ITA }
+		
+		ITA = { declare_war_on = { target = GER type = puppet_wargoal_focus }}
+		
+		GER = {
+			country_event = { hours = 1 id = landgrabevents.2 }
+			#country_event = { days = 8 id = ww2germany.0 }
+			transfer_state = 105
+			transfer_state = 102
+			transfer_state = 44
+			transfer_state = 32
+			transfer_state = 21
+			transfer_state = 735
+			transfer_state = 164
+			transfer_state = 47
+			transfer_state = 185
+			transfer_state = 186
+			transfer_state = 163
+			transfer_state = 103	
+		}
+		
+		if  = { 
+			limit = { 
+			CRO = { 
+			is_subject_of = GER
+			exists = yes
+			}	
+			}		
+			transfer_state = 163
+			transfer_state = 103	
+			}
+			
+			
+				
+		news_event = { hours = 3 id = ww2news.2 }
+		news_event = { days = 7 id = ww2news.0 }
+		
+		ENG = { add_to_faction = ITA }
+	
+	}
+}
+
+
+# Mussolini Arrested
+country_event = {
+	id = ww2italy.1
+	title = ww2italy.1.t
+	desc = ww2italy.1.d
+	picture = GFX_report_event_mussolini_arrested
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ITA
+		has_global_flag = rome_bombed
+		
+		OR = {
+					ENG = { controls_state = 115 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						controls_state = 115
+				}
+				}
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+	immediate = {
+		set_global_flag = mussolini_gone
+	}
+	option = {
+		name = ww2italy.1.a
+		
+		ai_chance = { factor = 4000 }
+		
+		add_political_power = -50
+		
+		news_event = { hours = 3 id = ww2news.3 }
+		
+		GER = {country_event = { hours = 3 id = ww2germany.1 } }
+		ITA = {country_event = { days = 7 id = ww2italy.0 } }
+		
+		set_popularities = {
+		conservatism = 100
+		}
+		
+		set_politics = {
+		ruling_party = conservatism
+		elections_allowed = no
+		}
+		
+	create_country_leader = {
+	name = "Pietro Badoglio"
+	desc = ""
+	picture = "Portrait_Italy_Pietro_Badoglio.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = {
+		
+	}
+}
+		
+			
+	}
+}

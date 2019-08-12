@@ -1,0 +1,342 @@
+scripted_gui = {
+
+	destroy_buildings = {
+		context_type = selected_state_context
+		window_name = "destroy_buildings_container"
+		parent_window_token = selected_state_view
+		
+		visible = {
+			FROM.FROM = {
+				is_controlled_by = ROOT
+			}
+			ROOT = { has_war = yes }
+		}
+			
+		
+		effects = {
+			destroy_infra_click = {
+				if = {
+					limit = {
+						ROOT = { is_ai = yes }
+					}
+					damage_building = {
+						type = infrastructure
+						damage = 10
+					}
+					set_state_flag = { flag = destroyed_infra value = 1 days = 30 }
+				}else = {
+					set_variable = { ROOT.destroy_menu = 1 }
+					set_variable = { ROOT.destroy_target = FROM.FROM }
+				}
+			}
+			destroy_anti_air_click = {
+				if = {
+					limit = {
+						ROOT = { is_ai = yes }
+					}
+					damage_building = {
+						type = anti_air_building
+						damage = 5
+					}
+					set_state_flag = { flag = destroyed_anti_air value = 1 days = 30 }
+				}else = {
+					set_variable = { ROOT.destroy_menu = 2 }
+					set_variable = { ROOT.destroy_target = FROM.FROM }
+				}
+			}
+			destroy_air_base_click = {
+				if = {
+					limit = {
+						ROOT = { is_ai = yes }
+					}
+					damage_building = {
+						type = air_base
+						damage = 10
+					}
+					set_state_flag = { flag = destroyed_air_base value = 1 days = 30 }
+				}else = {
+					set_variable = { ROOT.destroy_menu = 3 }
+					set_variable = { ROOT.destroy_target = FROM.FROM }
+				}
+			}
+			destroy_radar_click = {
+				if = {
+					limit = {
+						ROOT = { is_ai = yes }
+					}
+					damage_building = {
+						type = radar_station
+						damage = 6
+					}
+					set_state_flag = { flag = destroyed_radar value = 1 days = 30 }
+				}else = {
+					set_variable = { ROOT.destroy_menu = 4 }
+					set_variable = { ROOT.destroy_target = FROM.FROM }
+				}
+			}
+			destroy_factory_click = {
+				if = {
+					limit = {
+						ROOT = { is_ai = yes }
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 25
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 25
+					}
+					damage_building = {
+						type = dockyard
+						damage = 25
+					}
+					damage_building = {
+						type = rocket_site
+						damage = 2
+					}
+					damage_building = {
+						type = nuclear_reactor
+						damage = 1
+					}
+					damage_building = {
+						type = synthetic_refinery
+						damage = 3
+					}
+					set_state_flag = { flag = destroyed_factory value = 1 days = 30 }
+				}else = {
+					set_variable = { ROOT.destroy_menu = 5 }
+					set_variable = { ROOT.destroy_target = FROM.FROM }
+				}
+			}
+		}
+		
+		triggers = {
+			destroy_infra_click_enabled = {
+			}
+			destroy_anti_air_click_enabled = {
+			}
+			destroy_air_base_click_enabled = {
+			}
+			destroy_radar_click_enabled = {
+			}
+			destroy_factory_click_enabled = {
+			}
+			destroy_infra_visible = {
+				NOT = { has_state_flag = destroyed_infra }
+				infrastructure > 0
+			}
+			destroy_anti_air_visible = {
+				NOT = { has_state_flag = destroyed_anti_air }
+				anti_air_building > 0
+			}
+			destroy_air_base_visible = {
+				NOT = { has_state_flag = destroyed_air_base }
+				air_base > 0
+			}
+			destroy_radar_visible = {
+				NOT = { has_state_flag = destroyed_radar }
+				radar_station > 0
+			}
+			destroy_factory_visible = {
+				NOT = { has_state_flag = destroyed_factory }
+				OR = {
+					arms_factory > 0
+					industrial_complex > 0
+					dockyard > 0
+					rocket_site > 0
+					nuclear_reactor > 0
+					synthetic_refinery > 0
+				}
+			}
+		}
+		
+		ai_test_scopes = test_contesded_states
+		ai_test_interval = 24
+		ai_test_variance = 0.2
+		
+		ai_enabled = {
+			has_war = yes
+		}
+        
+		ai_check = {
+			OR = {
+				is_major = yes
+				is_in_faction = yes
+			}
+			surrender_progress > 0.1
+			has_capitulated = no
+		}
+		
+		ai_check_scope = {
+			is_island_state = no
+		}
+		
+		ai_max_weight_taken_per_test = 8
+		ai_weights = {
+			destroy_infra_click = {
+				weight = 1
+				ai_will_do = {
+					factor = 2
+				}
+			}
+			destroy_anti_air_click = {
+				weight = 1
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			destroy_air_base_click = {
+				weight = 1
+				ai_will_do = {
+					factor = 2
+				}
+			}
+			destroy_radar_click = {
+				weight = 1
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			destroy_factory_click = {
+				weight = 1
+				ai_will_do = {
+					factor = 0
+				}
+			}
+		}
+		
+	}
+
+	destroy_confirmation = {
+		context_type = player_context
+		window_name = "destroy_confirmation_popup"
+		
+		visible = {
+			check_variable = {
+				var = ROOT.destroy_menu
+				value = 0
+				compare = not_equals
+			}
+		}
+			
+		
+		effects = {
+			decline_button_click = {
+				set_variable = { ROOT.destroy_menu = 0 }
+			}
+			accept_button_click = {
+				if = {
+					limit = {
+						check_variable = { ROOT.destroy_menu = 1 }
+					}
+					var:ROOT.destroy_target = {
+						damage_building = {
+							type = infrastructure
+							damage = 10
+						}
+						set_state_flag = { flag = destroyed_infra value = 1 days = 30 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.destroy_menu = 2 }
+					}
+					var:ROOT.destroy_target = {
+						damage_building = {
+							type = anti_air_building
+							damage = 5
+						}
+						set_state_flag = { flag = destroyed_anti_air value = 1 days = 30 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.destroy_menu = 3 }
+					}
+					var:ROOT.destroy_target = {
+						damage_building = {
+							type = air_base
+							damage = 10
+						}
+						set_state_flag = { flag = destroyed_air_base value = 1 days = 30 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.destroy_menu = 4 }
+					}
+					var:ROOT.destroy_target = {
+						damage_building = {
+							type = radar_station
+							damage = 6
+						}
+						set_state_flag = { flag = destroyed_radar value = 1 days = 30 }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { ROOT.destroy_menu = 5 }
+					}
+					var:ROOT.destroy_target = {
+						damage_building = {
+							type = arms_factory
+							damage = 25
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 25
+						}
+						damage_building = {
+							type = dockyard
+							damage = 25
+						}
+						damage_building = {
+							type = synthetic_refinery
+							damage = 3
+						}
+						damage_building = {
+							type = rocket_site
+							damage = 2
+						}
+						damage_building = {
+							type = nuclear_reactor
+							damage = 1
+						}
+						set_state_flag = { flag = destroyed_factory value = 1 days = 30 }
+					}
+				}
+				sound_effect = building_sabotaged_gui
+				set_variable = { ROOT.destroy_menu = 0 }
+			}
+		}
+		
+		triggers = {
+		}
+		
+		ai_test_interval = 168
+		ai_test_variance = 0
+		
+		ai_enabled = {
+			always = no
+		}
+        
+		ai_check = {
+		}
+		
+		ai_weights = {
+			decline_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+			accept_button_click = {
+				ai_will_do = {
+					factor = 0
+				}
+			}
+		}
+		
+	}
+	
+}

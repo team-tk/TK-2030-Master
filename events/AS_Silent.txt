@@ -1,0 +1,235 @@
+﻿##### August Storm
+##### Silent Events
+
+add_namespace = as_silent
+
+country_event = {				# GER Satellites								
+	id = as_silent.13
+	title = as_silent.13.title
+	desc = as_silent.13.desc
+	picture = GFX_report_event_german_politician_speech
+
+	fire_only_once = yes	
+	
+	trigger = {
+		original_tag = ROM
+		has_war_with = SOV
+		GER = {
+			exists = yes
+			has_fascist_government = yes
+			has_war_with = SOV
+		}
+		#is_subject = no
+		#is_puppet = no
+		has_fascist_government = yes
+		has_dlc = "Together for Victory"
+		has_dlc = "Death or Dishonor"
+		is_ai = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	hidden = yes
+		
+	option = {
+		name = as_silent.6.option_a
+		ai_chance = { factor = 100 }
+		GER = {
+			set_autonomy = { 
+				target = ROOT 
+				autonomy_state = autonomy_integrated_puppet
+				freedom_level = 0.80		
+			}		
+		}
+	}
+}
+
+country_event = {				# GER Satellites								
+	id = as_silent.14
+	title = as_silent.14.title
+	desc = as_silent.14.desc
+	picture = GFX_report_event_german_politician_speech
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+		has_war_with = SOV	
+		GER = {
+			exists = yes
+			has_fascist_government = yes
+			has_war_with = SOV
+		}		
+		#is_subject = no
+		is_puppet = no
+		has_fascist_government = yes
+		has_dlc = "Together for Victory"
+		has_dlc = "Death or Dishonor"
+		is_ai = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	hidden = yes
+		
+	option = {
+		name = as_silent.6.option_a
+		ai_chance = { factor = 100 }
+		GER = {
+			set_autonomy = { 
+				target = HUN 
+				autonomy_state = autonomy_integrated_puppet
+				freedom_level = 0.80		
+			}		
+		}
+	}
+}
+
+country_event = {				# GER Satellites								
+	id = as_silent.16
+	title = as_silent.16.title
+	desc = as_silent.16.desc
+	picture = GFX_report_event_german_politician_speech
+
+	fire_only_once = yes	
+	
+	trigger = {
+		tag = BUL
+		#is_subject = no
+		#is_puppet = no
+		GER = {
+			exists = yes
+			has_fascist_government = yes
+			has_war_with = SOV
+		}		
+		has_fascist_government = yes
+		has_dlc = "Together for Victory"
+		has_dlc = "Death or Dishonor"
+		is_ai = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	hidden = yes
+		
+	option = {
+		name = as_silent.6.option_a
+		ai_chance = { factor = 100 }
+		GER = {
+			set_autonomy = { 
+				target = BUL 
+				autonomy_state = autonomy_satellite
+				freedom_level = 0.80		
+			}		
+		}
+	}
+}
+
+
+
+country_event = {											# Setting Powers					
+	id = as_silent.43
+	title = as_silent.43.title
+	desc = as_silent.43.desc
+	picture = GFX_report_event_german_politician_speech
+	
+	trigger = {	
+		tag = GER
+		date < 1948.1.1
+		GER = { 
+		has_war_with = ENG 
+		has_war_with = USA
+		has_war_with = SOV 
+		}
+		
+
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = germany_ww2
+	}
+
+	hidden = yes
+		
+	option = {
+		name = as_silent.43.option_a
+		ai_chance = { factor = 100 }		
+	}
+}
+
+country_event = {											# Setting Powers					
+	id = as_silent.45
+	title = as_silent.45.title
+	desc = as_silent.45.desc
+	picture = GFX_report_event_german_politician_speech
+	
+	trigger = {	
+		tag = ITA
+		date < 1948.1.1
+		
+		ITA = { 
+		has_war_with = ENG 
+		has_war_with = USA
+		has_war_with = SOV 
+		}
+
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = italy_ww2
+	}
+
+	hidden = yes
+		
+	option = {
+		name = as_silent.45.option_a
+		ai_chance = { factor = 100 }		
+	}
+}
+
+country_event = {							# Setting Powers					
+	id = as_silent.44
+	title = as_silent.44.title
+	desc = as_silent.44.desc
+	picture = GFX_report_event_german_politician_speech
+	
+	trigger = {	
+		tag = JAP
+		date < 1948.1.1
+		JAP = { 
+		has_war_with = ENG 
+		has_war_with = USA
+		has_war_with = SOV 
+		}
+
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = japanese_ww2
+	}
+
+	hidden = yes
+		
+	option = {
+		name = as_silent.44.option_a
+		ai_chance = { factor = 100 }		
+	}
+}

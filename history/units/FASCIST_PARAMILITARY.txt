@@ -1,0 +1,9 @@
+﻿division_template = {
+	name = "Right Wing Death Squad"		
+
+	regiments = {
+		fascist_infantry = { x = 0 y = 0 }
+		fascist_infantry = { x = 0 y = 1 }
+		fascist_infantry = { x = 0 y = 2 }
+	}
+}

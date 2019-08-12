@@ -1,0 +1,76 @@
+﻿ERI = {
+	male = {
+		names = { Woldeab Idris Mohammed "Ibrahim Sultan" "Hamid Idris" Abel Alexander Nat Joel Henok Mebrahtom
+				  Thomas Yonas Oliver Golgol Teklemariam Zersenay Michael Yegizaw Haregot Oqbe "Ali Abdu" 
+				  "Aman Mikael" Tedla Zerai Araya Sebrat Yemane Ghirmai Umar Abdalla Abraha Abdulkadir Tekle Osman 
+				}
+		surnames = { }
+		callsigns = { }
+	}
+	female = {
+		names = { Simret Nebiat }
+		surnames = { }
+		callsigns = { }
+	}
+	surnames =  { Woldemariam Adam Ali Awate Aferworki Isak Berhe Gerezgiher Goitom Habtemariam Keflezighi Kelati Kifle
+				  Kylington Mebrahtu Medhin Tadese Abbai Abreha Ahmed Andom Bairu Deres Desta Ephram Gebreab Gebremariam
+				  Hassan Jabir Kassa Kebire Kiflay Omer Sabbe Sherifo Solomon Tesfagiorgis Woldense
+				}
+	callsigns = { }
+}
+
+SOM = {
+	male = {
+		names = { Mohammed Olol Omar Aden Siad Abdulkadir Elman Abdirizak Aden Abdullahi Abdirahman "Ismaïl Omar" Jama
+				  Abdiqasim Dahir Ahmed Yusuf Haji Abdiweli Osman "Ali Khalif" "Umar Arteh" "Nur Hassan" "Abdi Farah"
+				}
+		surnames = { }
+		callsigns = { }
+	}
+	female = {
+		names = { Dekha Leila Fartuun Halima Hodan Ifrah Nimco }
+		surnames = { }
+		callsigns = { }
+	}
+	surnames =  { Dinke Samanthar Adde Barre Ghalib Issa Hussein "Aw Hirsi" Hashi Farole Daar Abdi Abdulle Hersi Kahin
+                  "Ali Tuur" "Haji Nur" "Ali Shermarke" "Jama Ali" Jibrell Tako Yasin 
+				}
+	callsigns = { }
+}
+
+AOI = {
+	male = {
+		names = { Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Benito Camillo Carlo
+				  Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico Felice Ferdinando
+			   	  Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
+				  Luigi Marco Massimo Matteo Nicola Oreste Paolo Pasquale Pietro Prospero
+				  Raffaele Roberto Ruggiero Silvio Simone Tancredi Ugo Umberto Vincenzo Vittorio
+				  Woldeab Idris Mohammed "Ibrahim Sultan" "Hamid Idris" Abel Alexander Nat Joel Henok Mebrahtom
+				  Thomas Yonas Oliver Golgol Teklemariam Zersenay Michael Yegizaw Haregot Oqbe "Ali Abdu" 
+				  "Aman Mikael" Tedla Zerai Araya Sebrat Yemane Ghirmai Umar Abdalla Abraha Abdulkadir Tekle Osman
+				  Mohammed Olol Omar Aden Siad Abdulkadir Elman Abdirizak Aden Abdullahi Abdirahman "Ismaïl Omar" Jama
+				  Abdiqasim Dahir Ahmed Yusuf Haji Abdiweli Osman "Ali Khalif" "Umar Arteh" "Nur Hassan" "Abdi Farah"
+				  Olol Omar Aden Siad Elman Abdirizak Aden Abdullahi Abdirahman "Ismaïl Omar" Jama "Abdi Farah"
+				  Abdiqasim Yusuf Haji Abdiweli Osman "Ali Khalif" "Umar Arteh" "Nur Hassan" 
+				}
+		surnames = { }
+		callsigns = { }
+	}
+	female = {
+		names = { Maria Anna }
+		surnames = { }
+		callsigns = { }
+	}
+	surnames =  { Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro Capello
+				  Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Savoia"
+				  Emo Fanti Fara Filomarino Garibaldi Giardino Govone "La Màrmora" Mambretti 
+				  Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti Pianelli Porro
+				  Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari Vaccari Zupelli
+				  Woldemariam Adam Ali Awate Aferworki Isak Berhe Gerezgiher Goitom Habtemariam Keflezighi Kelati Kifle
+				  Kylington Mebrahtu Medhin Tadese Abbai Abreha Andom Bairu Deres Desta Ephram Gebreab Gebremariam
+				  Hassan Jabir Kassa Kebire Kiflay Omer Sabbe Sherifo Solomon Tesfagiorgis Woldense
+				  Dinke Samanthar Adde Barre Ghalib Issa Hussein "Aw Hirsi" Hashi Farole Daar Abdi Abdulle Hersi Kahin
+                  "Ali Tuur" "Haji Nur" "Ali Shermarke" "Jama Ali" Jibrell Tako Yasin
+			    }
+	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso }
+}

@@ -1,0 +1,434 @@
+equipments = {
+	
+	strat_bomber_equipment = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment			
+		is_buildable = no
+		type = strategic_bomber
+		group_by = archetype
+		sprite = heavy_plane
+		air_map_icon_frame = 11
+		
+		interface_category = interface_category_air
+		
+		# Strategic bomber
+		interface_overview_category_index = 5
+		
+		upgrades = {
+			plane_bomb_upgrade
+			plane_range_upgrade
+			plane_engine_upgrade
+			plane_reliability_upgrade
+		}
+
+		air_superiority = 0.01
+		reliability = 0.8
+
+		# Air vs Navy - high damage / low hit chance / hard to hurt
+		naval_strike_attack = 1.5
+		naval_strike_targetting = 0.6
+		
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 60
+		resources = {
+			#oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+		
+		manpower = 80
+		fuel_consumption = 0.8
+	}
+	
+	jet_strat_bomber_equipment = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment			
+		is_buildable = no
+		type = strategic_bomber
+		group_by = archetype
+		sprite = heavy_plane
+		air_map_icon_frame = 10
+		
+		interface_category = interface_category_air
+		
+		# Strategic bomber
+		interface_overview_category_index = 5
+				
+		upgrades = {
+			plane_bomb_upgrade
+			plane_range_upgrade
+			plane_engine_upgrade
+			plane_reliability_upgrade
+		}
+
+		air_superiority = 0.01
+		reliability = 0.8
+
+		# Air vs Navy - high damage / low hit chance / hard to hurt
+		naval_strike_attack = 1.5
+		naval_strike_targetting = 0.6
+		
+		build_cost_ic = 80
+		resources = {
+			aluminium = 3
+			tungsten = 3
+			rubber = 1
+		}
+		
+		manpower = 160
+		fuel_consumption = 1.6
+	}
+
+	
+	# Basic strat_bomber
+	strat_bomber_equipment_1 = {
+		year = 1936
+
+		archetype = strat_bomber_equipment
+		priority = 140
+		
+		air_range = 2500
+		maximum_speed = 400
+		air_agility = 5
+		air_attack = 50
+		air_defence = 30
+		air_bombing = 30
+		
+		# build_cost_ic = 36
+	}
+
+	# Improved strat_bomber
+	strat_bomber_equipment_2 = {
+		year = 1940
+
+		archetype = strat_bomber_equipment
+		parent = strat_bomber_equipment_1
+		priority = 140
+
+		air_range = 3500
+		maximum_speed = 450
+		air_agility = 7
+		air_attack = 100
+		air_defence = 45
+		air_bombing = 45
+		
+		build_cost_ic = 62
+		resources = {
+			#oil = 1
+			aluminium = 4
+			rubber = 2
+		}
+	}
+	
+	# Advanced strat_bomber
+	strat_bomber_equipment_3 = {
+		year = 1944
+
+		archetype = strat_bomber_equipment
+		parent = strat_bomber_equipment_2
+		priority = 140
+		
+		air_range = 5000
+		maximum_speed = 500
+		air_agility = 10
+		air_attack = 150
+		air_defence = 60
+		air_bombing = 60
+		
+		build_cost_ic = 64
+		resources = {
+			#oil = 1
+			aluminium = 5
+			rubber = 2
+		}
+	}
+	
+	# Basic Jet strat_bomber
+	jet_strat_bomber_equipment_1 = {
+		year = 1950
+
+		archetype = jet_strat_bomber_equipment
+		priority = 150
+		
+		air_range = 7000
+		maximum_speed = 920
+		air_agility = 14
+		air_attack = 100
+		air_defence = 54
+		air_bombing = 64
+	}
+
+	###------> New Jet Strategic Bombers   <><> <><> <><> <><> <><>
+
+	# 1955
+	jet_strat_bomber_equipment_2 = {
+		year = 1955
+		
+		archetype = jet_strat_bomber_equipment
+		parent = jet_strat_bomber_equipment_1
+		priority = 150
+		
+		air_range = 8500
+		maximum_speed = 1000
+		air_agility = 15
+		air_attack = 110
+		air_defence = 59
+		air_bombing = 72
+		
+		build_cost_ic = 82
+		resources = {
+			aluminium = 3
+			tungsten = 3
+			rubber = 1
+		}
+	}
+	
+	# 1960
+	jet_strat_bomber_equipment_3 = {
+		year = 1960
+		
+		archetype = jet_strat_bomber_equipment
+		parent = jet_strat_bomber_equipment_2
+		priority = 150
+		
+		air_range = 9000
+		maximum_speed = 1000
+		air_agility = 16
+		air_attack = 120
+		air_defence = 64
+		air_bombing = 79
+		
+		build_cost_ic = 84
+		resources = {
+			aluminium = 4
+			tungsten = 4
+			rubber = 2
+		}
+	}
+	
+	# 1965
+	jet_strat_bomber_equipment_4 = {
+		year = 1965
+		
+		archetype = jet_strat_bomber_equipment
+		parent = jet_strat_bomber_equipment_3
+		priority = 150
+		
+		air_range = 9500
+		maximum_speed = 1000
+		air_agility = 17
+		air_attack = 130
+		air_defence = 69
+		air_bombing = 87
+		
+		build_cost_ic = 86
+		resources = {
+			aluminium = 4
+			tungsten = 4
+			rubber = 2
+		}
+	}
+	
+	# 1970
+	jet_strat_bomber_equipment_5 = {
+		year = 1970
+		
+		archetype = jet_strat_bomber_equipment
+		parent = jet_strat_bomber_equipment_4
+		priority = 150
+		
+		air_range = 10500
+		maximum_speed = 1000
+		air_agility = 18
+		air_attack = 140
+		air_defence = 84
+		air_bombing = 94
+		
+		build_cost_ic = 88
+		resources = {
+			aluminium = 5
+			tungsten = 5
+			rubber = 3
+		}
+	}
+	
+		# 1975
+	jet_strat_bomber_equipment_6 = {
+		year = 1975
+		
+		archetype = jet_strat_bomber_equipment
+		parent = jet_strat_bomber_equipment_5
+		priority = 150
+		
+		air_range = 10500
+		maximum_speed = 1000
+		air_agility = 19
+		air_attack = 150
+		air_defence = 79
+		air_bombing = 102
+		
+		build_cost_ic = 90
+		resources = {
+			aluminium = 5
+			tungsten = 5
+			rubber = 3
+		}
+	}
+	
+		# 1995
+	jet_strat_bomber_equipment_7 = {
+		year = 1995
+		
+		archetype = jet_strat_bomber_equipment
+		parent = jet_strat_bomber_equipment_6
+		priority = 150
+		
+		air_range = 11000
+		maximum_speed = 1000
+		air_agility = 20
+		air_attack = 160
+		air_defence = 84
+		air_bombing = 109
+		
+		build_cost_ic = 92
+		resources = {
+			aluminium = 6
+			tungsten = 6
+			rubber = 4
+		}
+	}
+	
+		# 2000
+	jet_strat_bomber_equipment_8 = {
+		year = 2000
+		
+		archetype = jet_strat_bomber_equipment
+		parent = jet_strat_bomber_equipment_7
+		priority = 150
+		
+		air_range = 11500
+		maximum_speed = 1000
+		air_agility = 21
+		air_attack = 170
+		air_defence = 89
+		air_bombing = 117
+		
+		build_cost_ic = 94
+		resources = {
+			aluminium = 6
+			tungsten = 6
+			rubber = 4
+		}
+	}
+	
+		# 2020
+	jet_strat_bomber_equipment_9 = {
+		year = 2020
+		
+		archetype = jet_strat_bomber_equipment
+		parent = jet_strat_bomber_equipment_8
+		priority = 150
+		
+		air_range = 12000
+		maximum_speed = 1000
+		air_agility = 22
+		air_attack = 180
+		air_defence = 94
+		air_bombing = 124
+		
+		build_cost_ic = 96
+		resources = {
+			aluminium = 7
+			tungsten = 7
+			rubber = 5
+		}
+	}
+	
+		# 2030
+	jet_strat_bomber_equipment_10 = {
+		year = 2030
+		
+		archetype = jet_strat_bomber_equipment
+		parent = jet_strat_bomber_equipment_9
+		priority = 150
+		
+		air_range = 12500
+		maximum_speed = 1000
+		air_agility = 23
+		air_attack = 190
+		air_defence = 99
+		air_bombing = 132
+		
+		build_cost_ic = 98
+		resources = {
+			aluminium = 7
+			tungsten = 7
+			rubber = 5
+		}
+	}
+
+	# Transport plane ##########################
+	transport_plane_equipment = {
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_strat_bomber_equipment			
+		type = air_transport
+		group_by = archetype
+		sprite = medium_plane
+		air_map_icon_frame = 12
+
+		upgrades = { #EAI
+			plane_range_upgrade
+			plane_engine_upgrade
+			plane_reliability_upgrade
+		}
+		
+		interface_category = interface_category_air
+		
+		# Transport
+		interface_overview_category_index = 6
+		
+		air_superiority = 0
+		reliability = 0.8
+
+		# Air vs Navy - high damage / low hit chance / hard to hurt
+		naval_strike_attack = 0.0
+		naval_strike_targetting = 0.0
+		
+		build_cost_ic = 180
+		resources = {
+			#oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+		
+		manpower = 80
+		fuel_consumption = 0
+	}
+
+
+	transport_plane_equipment_1 = {
+		year = 1933
+
+		archetype = transport_plane_equipment
+		active = yes
+		priority = 130
+		
+		air_range = 1000
+		maximum_speed = 300
+		air_agility = 10
+		air_defence = 20
+	}
+	
+
+}

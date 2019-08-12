@@ -1,0 +1,27 @@
+#################
+### ARGENTINA ###
+#################
+
+ARG_integrate_territory_category = {
+	allowed = {
+		original_tag = ARG
+	}
+}
+
+form_united_provinces_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_provincias_unidas
+
+	allowed = {
+		#has_dlc = "Waking the Tiger"
+		has_dlc = "Lolololol"
+	}
+}
+
+ARG_foreign_affairs_category = {
+	allowed = {
+		original_tag = ARG
+	}
+}

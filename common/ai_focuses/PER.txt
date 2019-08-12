@@ -1,0 +1,7 @@
+ai_historical_focus_list_per = {
+	ai_national_focuses = {
+	PER_interal_matter
+	PER_path_of_the_khan
+	PER_continue_the_monarchy
+	}
+}

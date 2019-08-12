@@ -1,0 +1,819 @@
+ideas = {  
+
+country = {
+
+        ALB_zog_idea = {
+
+			allowed = {
+				original_tag = ALB
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = king_zog_idea
+
+			modifier = {
+				    stability_factor = 0.1   
+			}
+		}
+
+		ALB_autarky_idea = {
+
+			allowed = {
+				original_tag = ALB
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		
+		ALB_rural_idea = {
+
+			allowed = {
+				original_tag = ALB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+
+			modifier = {
+			    industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				production_speed_arms_factory_factor = -0.10
+				production_speed_dockyard_factor = -0.10
+				production_speed_industrial_complex_factor = -0.10
+				conscription = -0.0025
+			}
+		}
+		
+		ALB_rural_idea2 = {
+
+			allowed = {
+				original_tag = ALB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+
+			modifier = {
+			    industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_arms_factory_factor = -0.05
+				production_speed_dockyard_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				conscription = -0.0015
+			}
+		}
+		
+		ALB_rural_idea3 = {
+
+			allowed = {
+				original_tag = ALB
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_agrarian_society
+
+			modifier = {
+			    industrial_capacity_factory = -0.02
+				industrial_capacity_dockyard = -0.02
+				production_speed_arms_factory_factor = -0.02
+				production_speed_dockyard_factor = -0.02
+				production_speed_industrial_complex_factor = -0.02
+			}
+		}
+		
+		ALB_train = {
+			allowed = {
+				original_tag = ALB
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		
+		ALB_skan = {
+			allowed = {
+				original_tag = ALB
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = chi_war_of_resistance3
+
+			modifier = {
+				army_morale_factor = 0.12
+				attrition = -0.05
+			}
+		}
+		
+		ALB_manpower = {
+				
+			allowed = {
+				original_tag = ALB
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		
+		ALB_manpower_2 = {
+				
+			allowed = {
+				original_tag = ALB
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.05
+			}
+		}
+		
+		ALB_bad_manpower = {
+				
+			allowed = {
+				original_tag = ALB
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+	
+			modifier = {
+				conscription = -0.0025
+				political_power_cost = 0.25
+			}
+		}
+		ALB_muslim_friend = {
+			
+			picture = raj_marginalized_muslim_community
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.05
+			}
+		}
+		ALB_school = {
+			
+			picture = generic_army_war_college
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		ALB_ita = {
+			
+			picture = generic_flexible_foreign_policy2
+
+			allowed = {
+				always = no
+				NOT = { has_war_with = ALB }
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_acceptance = 50
+				}
+			}
+		ALB_ita_invest = {
+			
+			picture = man_five_year_plan_industry
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.1
+				local_resources_factor = -0.05
+				political_power_cost = 0.65
+				
+			}
+		}
+		ALB_parliament = {
+
+			picture = generic_king_handled
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ALB
+			}
+
+			allowed_civil_war = {
+				has_democratic_government = yes
+			}
+			
+			modifier = {
+				democratic_drift = 0.02
+				stability_factor = 0.10
+				political_power_cost = 0.25
+			}
+		}
+		ALB_democ = {
+			
+			picture = generic_flexible_foreign_policy2
+
+			allowed = {
+				always = no
+				NOT = { has_war_with = ALB }
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    democratic_drift = 0.02
+				democratic_acceptance = 85
+				}
+			}
+			
+			ALB_time = {
+			allowed = {
+				original_tag = ALB
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		
+		ALB_musso = {
+			allowed = {
+				original_tag = ALB
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		ALB_interventionism = {
+		
+		allowed = {
+				original_tag = ALB
+				always = no
+			}
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				political_power_factor = -0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		ALB_volun = {
+		
+		allowed = {
+				original_tag = ALB
+				always = no
+			}
+		
+		picture = generic_infantry_bonus
+		
+		modifier = {
+		send_volunteer_divisions_required = -1.0
+				send_volunteers_tension = -1.0
+				send_volunteer_factor = 1.0
+			}
+		}
+		
+		ALB_com = {
+		
+		allowed = {
+				original_tag = ALB
+				always = no
+			}
+		
+		picture = generic_communism_drift_bonus
+		
+		modifier = {
+		    communism_drift = 0.2
+			}
+		}
+
+	}
+
+	political_advisor = {
+
+		ALB_midhat_frasheri = {
+
+			picture = generic_political_advisor_arab_3
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+			available = {
+				NOT = { has_communist_government = yes }
+                                }
+			
+			traits = {  old_figurehead nationalist_symbol }
+		}
+
+        ALB_enver_hoxha = {
+
+			picture = generic_political_advisor_europe_6
+			
+			allowed = {
+				original_tag = ALB
+			}
+                        available = {
+                NOT = { has_war_with = SOV }
+				NOT = { has_fascist_government = yes }
+                                }
+			
+			traits = { fortification_engineer veteran_communist }
+		}
+
+		ALB_jocelyn_percy = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = ALB
+			}
+                        available ={
+                NOT = { has_war_with = ENG }
+				NOT = { has_communist_government = yes }
+                                }
+			
+			traits = { prince_of_terror editor }
+		}
+
+		ALB_fiqri_dine = {
+
+			picture = generic_political_advisor_south_america_1
+			
+			allowed = {
+				original_tag = ALB
+				}
+			available ={
+				NOT = { has_communist_government = yes }
+			}
+			
+			traits = { war_industrialist rearmer }
+		}
+		
+		ALB_rexhep_mitrovica = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+			original_tag = ALB
+			}
+			available ={
+			    has_fascist_government = yes
+				custom_trigger_tooltip = {
+				tooltip = ALB_zog_current_leader_trigger
+				NOT = {
+				has_country_leader = { id = 500 }
+				}
+			}
+			NOT = {
+		         is_in_faction_with = ITA
+		}
+			}
+			
+			traits = { popular_figurehead leider }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ALB_mehdi_frasheri = {
+			
+			picture = generic_navy_south_america_1
+			
+			allowed = {
+			original_tag = ALB
+			}
+			available ={
+			NOT = { has_fascist_government = yes }
+			NOT = {
+		         is_in_faction_with = ITA
+		        }
+			}
+			
+			traits = { silent_mule anti_fascist_agent }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ALB_mehmet_shehu = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = "ALB"
+			}			
+			available = {
+				has_completed_focus = ALB_commie
+			}
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_communist_government = yes
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		
+		ALB_ypi = {
+			
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = "ALB"
+			}			
+			available = {
+				has_completed_focus = ALB_democracy
+			}
+			
+			traits = { democratic_reformer }
+
+			do_effect = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		
+	}
+
+	theorist = {
+
+		ALB_qemal_komani = {
+					
+			picture = generic_air_south_america_1
+
+			allowed = {
+				original_tag = ALB
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+
+		ALB_xhelal_mitrovica = {
+					
+			picture = generic_army_europe_6
+				
+			allowed = {
+				original_tag = ALB
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+		ALB_hajre_fetahu = {
+					
+					
+			allowed = {
+				original_tag = ALB
+			}
+			
+			picture = generic_political_advisor_arab_1
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+	}
+
+	high_command = {
+
+		ALB_selim_moishiou = {
+
+			picture = generic_army_south_america_1
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ALB_alexander_mori = {
+
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = ALB
+			}
+                        available ={
+                                NOT = { has_war_with = ENG }
+				NOT = { ruling_party = communism }
+                                }
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ALB_kristo_cajupi = {
+
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+			traits = { army_concealment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ALB_halil_nergutti = {
+
+			picture = generic_army_south_america_3
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	# MILITARY
+	army_chief = {
+
+		ALB_kol_bibe_mirakaj = {
+			
+			picture = generic_army_south_america_4
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ALB_prenk_pervizi = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+            available ={
+				NOT = { has_communist_government = yes }
+			}
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		ALB_eqrem_libohova = {
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ALB_zuhdi_shabani = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ALB_aziz_sulejmani = {
+			
+			picture = generic_army_south_america_5
+			
+			allowed = {
+				original_tag = ALB
+			}
+		
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+
+		ALB_hasan_begolli = {
+			
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+
+			
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ALB_ismael_ghaxa = {
+			
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = ALB
+			}
+			
+
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

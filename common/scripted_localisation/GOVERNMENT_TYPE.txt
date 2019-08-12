@@ -1,0 +1,48 @@
+﻿defined_text = { # Country
+	name = GetFogDemocraticName
+	text = {
+		trigger = {
+			has_government = monarchism
+		}
+		localization_key = FOG_DEMOCRATIC_NAME_MONARCHISM
+	}
+	text = {
+		localization_key = FOG_DEMOCRATIC_NAME
+	}
+}
+
+defined_text = { # Country
+	name = GetFogAuthoritarianName
+	text = {
+		trigger = {
+			has_government = monarchism
+		}
+		localization_key = FOG_AUTHORITARIAN_NAME_MONARCHISM
+	}
+	text = {
+		trigger = {
+		OR = {
+			has_government = democratic
+			has_government = conservatism
+			has_government = socdem
+		}
+		}
+		localization_key = FOG_AUTHORITARIAN_NAME_DEMOCRATIC
+	}
+	text = {
+		localization_key = FOG_AUTHORITARIAN_NAME
+	}
+}
+
+defined_text = { # Country
+	name = GetFogDictatorshipName
+	text = {
+		trigger = {
+			has_government = neutrality
+		}
+		localization_key = FOG_DICTATORSHIP_NAME_NEUTRAL
+	}	
+	text = {
+		localization_key = FOG_DICTATORSHIP_NAME
+	}
+}

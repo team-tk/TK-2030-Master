@@ -1,0 +1,195 @@
+﻿####NORTH KOREA####
+
+##NATION IS FORMED THROUGH EVENT##
+##REQUIRES NO 1939 INFO!##
+
+add_ideas = {
+religion_atheism
+}
+
+capital = 527 #Pyongyang
+
+oob = "DPR_OOB"
+
+set_stability = 0.70
+set_war_support = 0.80
+
+set_research_slots = 2
+
+set_convoys = 5
+
+
+##Copy of Japan (1936 + 1939 )
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	marines  = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battleship = 1
+	basic_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
+	trench_warfare = 1
+	base_strike = 1
+	synth_oil_experiments = 1
+	#PLACEHOLDERS for vehicles
+	improved_submarine = 1
+	basic_destroyer = 1
+	improved_destroyer = 1
+	improved_heavy_cruiser = 1
+	improved_carrier = 1
+	heavy_battleship = 1
+	cv_fighter1 = 1
+	fighter1 = 1
+	tactical_bomber1 = 1
+
+	#doctrines
+	#air
+	force_rotation = 1
+	fighter_baiting = 1
+	low_echelon_support = 1
+	dispersed_fighting = 1
+
+	grand_battle_plan = 1
+	prepared_defense = 1
+	grand_assault = 1
+	carrier_primacy = 1
+	carrier_task_forces = 1
+
+	#electronics
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	basic_encryption = 1
+	basic_decryption = 1
+
+	#industry
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	improved_oil_processing = 1
+	construction1 = 1
+	construction2 = 1
+	construction3 = 1
+	concentrated_industry = 1
+	concentrated_industry2 = 1
+	concentrated_industry3 = 1
+}
+
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no ##Haha lol
+}
+
+set_popularities = {
+conservatism = 20
+fascism = 0
+communism = 70
+neutrality = 10
+}
+
+create_country_leader = {
+	name = "Syngman Rhee"
+	desc = ""
+	picture = "gfx/leaders/KOR/Portrait_SouthKorea_Syngman_Rhee.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Yi Kang"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Yi Kang"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kim Il-sung"
+	desc = ""
+	picture = "gfx/leaders/DPR/Portrait_NorthKorea_Kim_II_sung.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Yi Un"
+	desc = ""
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Kim Il-Sung"
+	portrait_path = "gfx/leaders/DPR/Portrait_NorthKorea_Kim_II_sung_general.dds"
+	traits = { }
+	skill = 5
+}
+
+create_corps_commander = {
+	name = "Kim Chaek"
+		picture = "Kim-Chaek.dds"
+	traits = { }
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Choi Yong-Kun"
+		picture = "Choi.dds"
+	traits = { }
+	skill = 3
+
+}

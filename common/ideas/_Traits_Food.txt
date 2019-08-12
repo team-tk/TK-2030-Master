@@ -1,0 +1,117 @@
+# Age Laws
+	ideas = {
+	
+	food_traits = {
+		law = yes
+		
+		food1 = {
+
+			removal_cost = -1
+			level = 7
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			food2 = {
+			removal_cost = -1
+			level = 6
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			food3 = {
+			removal_cost = -1
+			level = 5
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			food4 = {
+			removal_cost = -1
+
+			level = 4
+			default = yes			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			food5 = {
+			removal_cost = -1
+			level = 3
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			food6 = {
+			removal_cost = -1
+			level = 2
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			food7 = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			}
+
+	}
+}
+### EOF ###

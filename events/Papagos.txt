@@ -1,0 +1,47 @@
+add_namespace = gre_papagos
+country_event = {
+	id = gre_papagos.0
+	title = gre_papagos.0.t
+	desc = gre_papagos.0.d
+	picture = GFX_gre_event_balkan
+	
+	is_triggered_only = yes
+	
+	option = { 
+		ai_chance = {
+			base = 10
+		}
+		name = gre_papagos.0.a
+		if = {
+			limit = {
+				tag = ROM
+			}
+			GRE = {
+				add_to_faction = ROM
+			}
+		}
+		if = {
+			limit = {
+				tag = YUG
+			}
+			GRE = {
+				add_to_faction = YUG
+			}
+		}
+		if = {
+			limit = {
+				tag = TUR
+			}
+			GRE = {
+				add_to_faction = TUR
+			}
+		}
+	}
+	option = {
+		name = gre_papagos.0.b
+		reverse_add_opinion_modifier = {
+			target = GRE
+			modifier = faction_traitor
+		}
+	}
+}

@@ -1,0 +1,30 @@
+﻿COL = {
+	male = {
+		names = { 
+			Adolfo Agustín Alejandro Andrés Aníbal Antonio Bartolomé Bernardo David Diego
+			Domingo Eduardo Emiliano Emilio Enrique Esteban Eusebio Federico Felipe Francisco
+			Germán Hernando Hilarión Ignacio Isidoro Ismael Jorge José "José Miguel" Juan
+			"Juan Antonio" "Juan Francisco" Justo Ladislao Luis "Luis Felipe" Manuel Mariano Miguel Narciso
+			Nicolás Pablo Patricio Pedro Ramón Rufino Ruperto Santiago Sebastián Severino Tomás
+			"Jose Arcadio" Aureliano "José María" Ambrosio Arcadio Camilo "Héctor Dario" Héctor Julio Roberto
+			Eliecer Prudencio Gerineldo Apolinar Rafael Gabriel Rubén Luis Ernesto "Luis Ernesto" Deogracias "León Maria" "Pablo Emilio"
+			"Pedro Pablo" 			
+		  }
+	}
+	female = {
+		names = { Amaranta Úrsula Rebeca Remedios Sofía }
+	}
+	surnames = { 
+
+		Altamirano Arteaga Acevedo Blanche Blanco Buendía Echandia
+		Cabrera Calvo Campero Castilla Corrico Daza "de la Cruz" "de Santa Cruz" "de Velasco" "de Vidal"
+		Echenique Errázuriz Fernández Figueroa Franco Freire Gamarra Gorostiaga Grau
+		Guilarte Iguarán "La Mar" Latorre Lynch Melgarejo Monje Montero Montes Montt Orbegoso
+		Rebolledo Ruíz-Tagle Salaverry "Santa María" Siles Sotomayor Toro Valencia Zapata		
+		Buendia Melo Pombo Gaitán Gómez López Guerrero Chaparro Torres Rocha Medina Cortés Pérez Padilla Nassar Aguilar
+	 Márquez Moscote Obando París Navas Pardo Gordillo "Navas Pardo" Arango "Piedrahita Arango" Piedrahita
+	  Ordóñez Castillo "Ordóñez Castillo"  Fonseca Espinosa "Fonseca Espinosa" Leyva Lozano Escobar Marín Uribe González "Uribe Uribe"
+	 
+	}
+	callsigns = { }
+}

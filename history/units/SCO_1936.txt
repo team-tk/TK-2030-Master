@@ -1,0 +1,112 @@
+﻿division_template = {
+	name = "Infantry Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions
+	division_names_group = BRENGL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Cavalry Brigade"
+	division_names_group = BRENGL_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Garrison Division"
+	division_names_group = BRENGL_GAR_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+
+units = {
+	division= {	
+		name = "2nd Infantry Division"
+		location = 9392
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "9th (Scottish) Division"
+		location = 11064
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "15th (Scottish) Division"
+		location = 6300
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "51st 'Highland' Infantry Division"
+		location = 3273
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "52st 'Lowland' Infantry Division"
+		location = 6395
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "Gordon Highlanders Regiment"
+		location = 9314
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "Highland Light Regiment"
+		location = 6104
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "Scots Greys Regiment"
+		location = 9350
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "Seaforth Highlanders Regiment"
+		location = 11604
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}		
+}

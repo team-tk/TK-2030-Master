@@ -1,0 +1,11 @@
+USA_US_Army_decisions = { 
+	allowed = {
+		original_tag = USA
+	}
+
+	available = {
+	}
+
+	visible = {
+	}
+}

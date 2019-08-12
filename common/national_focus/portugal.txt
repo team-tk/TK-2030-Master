@@ -1,0 +1,2398 @@
+focus_tree = {
+	id = portuguese_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = POR
+		}
+	}
+	
+	default = no
+	
+	### ARMY ###
+	
+	focus = {
+		id = POR_racionalizacaoexercito
+		icon = GFX_focus_generic_license_production
+		available = {
+		}
+		x = 1
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	
+	focus = {
+		id = POR_viriatos
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = POR_racionalizacaoexercito focus = por_spanish_civilwar}
+		
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_cacadores
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = POR_racionalizacaoexercito }
+		available = {
+		}
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			add_ideas = cacadores_forces 
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.70
+				uses = 3
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_lisboacamp
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = POR_cacadores focus = POR_viriatos }
+		available = {
+		}
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			army_experience = 20
+			112 = {
+				add_building_construction = {
+					type = bunker
+					province = 11805
+					level = 7
+					instant_build = yes
+				}
+			}
+			112 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = 11805
+					level = 7
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_armorino
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = POR_lisboacamp }
+		available = {
+		}
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.70
+				uses = 3
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_overseas
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = POR_lisboacamp}
+		available = {
+		}
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.70
+				uses = 3
+				category = marine_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_fortart
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = POR_armorino focus = POR_overseas }
+		available = {
+		}
+		x = 1
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	
+	### END ###
+	### POLITICS ###
+	
+	focus = {
+		id = POR_estadonovo
+		icon = GFX_goal_generic_forceful_treaty
+		available = {
+		}
+		x = 7
+		y = 0
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 200
+			add_ideas = estado_novo
+		}
+		hidden_effect = {
+			set_politics = { ruling_party = neutrality elections_allowed = no }
+		}
+	}
+	
+	## BENTO GONZALVES & COMMUNISM ##
+	
+	focus = {
+		id = POR_7_congresso
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = POR_estadonovo }
+		mutually_exclusive = { focus = POR_PVDE focus = POR_mil_fa_na focus = POR_liga_28_maio }
+		
+		available = {
+		}
+		
+		x = 6
+		y = 1
+		
+		cost = 15
+		
+		ai_will_do = {
+			factor = 0.55
+		}
+		
+		completion_reward = {
+			add_ideas = FRA_support_the_left_focus
+			add_ideas = POR_alvaro_cunhal
+			remove_idea = POR_bento_goncalves
+			add_ideas = collectivist_ethos_focus
+		}
+	}
+	
+	focus = {
+		id = POR_support_communist_spain
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = POR_7_congresso }
+		available = {
+	 		AND = {
+	 			SPR = {	has_civil_war = yes }
+				has_global_flag = spanish_civil_war
+			}
+		}
+		cancel = {
+			SPR = {
+				has_civil_war = no
+			}
+		}
+		cancel_if_invalid = no
+		
+		x = 6
+		y = 2
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}	
+		
+		completion_reward = {
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = { POR_intervention_spain_focus }
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_communist_government = yes
+				}
+				add_opinion_modifier = { target = POR modifier = por_supported_spain_civil_war }
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_avante_jornal
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = POR_support_communist_spain }
+		available = {
+		}
+		x = 6
+		y = 3
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = {	FRA_support_the_left_focus }
+			add_ideas = idea_political_correctness
+		}
+	}
+	
+	focus = {
+		id = POR_fjc
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = POR_avante_jornal }
+		available = {
+		}
+		x = 6
+		y = 4
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = indoctrination_focus
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_mutiny
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = POR_fjc }
+
+		available = {
+			is_puppet = no
+			has_neutral_government = yes
+		}
+		x = 6
+		y = 5
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = POR_communism_civil_war_tt
+			add_named_threat = { threat = 5 name = POR_oppose_salazar }
+			country_event = { id = news.707 }
+		}
+	}
+	
+	focus = {
+		id = POR_join_comintern
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = POR_mutiny }
+		
+		x = 4
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				SOV = {
+					has_capitulated = yes
+				}
+			}
+		}
+
+		available = {
+			SOV = { is_faction_leader = yes }
+			is_in_faction = no
+			NOT = { has_war_with = SOV }
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = SOV
+					has_war_with = ROM
+				}
+			}
+		}
+
+		bypass = {
+			is_in_faction_with = SOV
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			SOV = { country_event = generic.2 }
+		}
+	}
+	
+	## ROLAO PRETO & FASCISM ##
+	
+	focus = {
+		id = POR_liga_28_maio
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = POR_estadonovo }
+		mutually_exclusive = { focus = POR_PVDE focus = POR_mil_fa_na focus = POR_7_congresso }
+		
+		available = {
+		}
+		
+		x = 8
+		y = 1
+		
+		cost = 15
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+		
+		completion_reward = {
+			add_ideas = FRA_support_the_right_focus
+			add_ideas = POR_david_neto
+			remove_idea = POR_francisco_preto
+			add_ideas = collectivist_ethos_focus
+		}
+	}
+	
+	focus = {
+		id = POR_support_nationalist_spain
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = POR_liga_28_maio }
+		available = {
+	 		AND = {
+	 			SPR = {	has_civil_war = yes }
+				has_global_flag = spanish_civil_war
+			}
+		}
+		cancel = {
+			SPR = {
+				has_civil_war = no
+			}
+		}
+		cancel_if_invalid = no
+		
+		x = 8
+		y = 2
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}	
+		
+		completion_reward = {
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = { POR_intervention_spain_focus }
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_fascist_government = yes
+				}
+				add_opinion_modifier = { target = POR modifier = por_supported_spain_civil_war }
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_revolucao_jornal
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = POR_support_nationalist_spain }
+		available = {
+		}
+		x = 8
+		y = 3
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = FRA_support_the_right_focus
+			add_ideas = militarism_focus
+		}
+	}
+	
+	focus = {
+		id = POR_brigada_negra
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = POR_revolucao_jornal }
+		available = {
+		}
+		x = 8
+		y = 4
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = military_youth_focus
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_mutiny_2
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = POR_brigada_negra }
+
+		available = {
+			is_puppet = no
+			has_neutral_government = yes
+		}
+		x = 8
+		y = 5
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = POR_fascism_civil_war_tt
+			add_named_threat = { threat = 5 name = POR_oppose_salazar }
+			country_event = { id = news.706 }
+		}
+	}
+	
+	focus = {
+		id = POR_join_axis
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = POR_mutiny_2 }
+		
+		x = 8
+		y = 7
+		
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				GER = {
+					has_capitulated = yes
+				}
+			}
+		}
+
+		available = {
+			GER = { 
+				is_faction_leader = yes
+				has_fascist_government = yes
+			}
+			is_in_faction = no
+			NOT = { has_war_with = GER }
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = GER
+					has_war_with = ROM
+				}
+			}
+		}
+
+		bypass = {
+			is_in_faction_with = GER
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			GER = {
+				country_event = generic.2
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_rekindle_feuds
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = POR_mutiny focus = POR_mutiny_2 }
+
+		available = {
+			is_puppet = no
+			SPR = {
+	 			exists = yes
+	 			is_puppet = no
+	 			has_war_with = POR
+	 		}
+		}
+		
+		x = 7
+		y = 6
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = SPR
+			}	
+		}
+	}
+	
+	## AFONSO & DEMOCRACY ##
+	
+	focus = {
+		id = POR_mil_fa_na
+		icon = GFX_goal_support_democracy
+		mutually_exclusive = { focus = POR_liga_28_maio focus = POR_PVDE focus = POR_7_congresso }
+		available = {
+		}
+		x = 4
+		y = 1
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 0.8
+		}
+		
+		completion_reward = {
+			add_ideas = democratic_influence
+			add_ideas = POR_jaime_cortesao
+			remove_idea = POR_afonso_costa
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_depois_adeus
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = POR_mil_fa_na }
+		available = {
+		}
+		x = 4
+		y = 2
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = POR_democratic_civil_war_tt
+			add_named_threat = { threat = 5 name = POR_oppose_salazar }
+			country_event = { id = news.708 }
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Marcelo Caetano"
+				desc = "POLITICS_MARCELO_CAETANO_DESC"
+				picture = GFX_portrait_Europe_Generic_4
+				expire = "1965.1.1"
+				ideology = centrism
+				traits = {
+				political_dander
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_iberian_pact
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = POR_depois_adeus }
+		
+		x = 4
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			is_puppet = no
+			SPR = {
+	 			exists = yes
+	 			is_puppet = no
+	 			has_war_with = POR
+	 		}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			SPR = {
+				country_event = { id = portugal.21 days = 1 }
+				custom_effect_tooltip = POR_iberian_pact_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_colonial_question
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = POR_iberian_pact }
+		x = 4
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = { has_war_with = ANG }
+			NOT = { has_war_with = MZB }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_full_control_of_state = 540
+					has_full_control_of_state = 544
+					MZB = { exists = no }
+					ANG = { exists = no }
+				}
+				unlock_decision_category_tooltip = POR_colonial_release
+				set_country_flag = POR_release_colonies_activate
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_join_allies
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = POR_colonial_question }
+		
+		x = 4
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					ENG = {
+						has_capitulated = yes
+					}
+					FRA = {
+						has_capitulated = yes
+					}
+				}
+			}
+		}
+
+		available = {
+			ENG = { is_faction_leader = yes }
+			is_in_faction = no
+			NOT = { has_war_with = ENG }
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = ENG
+					has_war_with = ROM
+				}
+			}
+		}
+
+		bypass = {
+			is_in_faction_with = ENG
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			ENG = {
+				country_event = generic.2
+			}
+		}
+	}
+	
+	## NETRAULITY & BRAGANZA & SALAZAR ##
+	
+	focus = {
+		id = POR_PVDE
+		icon = GFX_goal_pvde
+		prerequisite = { focus = POR_estadonovo }
+		mutually_exclusive = { focus = POR_liga_28_maio focus = POR_mil_fa_na focus = POR_7_congresso }
+		available = {
+		}
+		x = 11
+		y = 1
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 0.8
+		}
+		
+		completion_reward = {
+			add_ideas = pvde
+		}
+	}
+	
+	focus = {
+		id = POR_anti_fascist
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		prerequisite = { focus = POR_PVDE }
+		x = 10
+		y = 2
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			USA = { 
+				if = {
+					limit = { NOT = { has_government = fascist } }
+					add_opinion_modifier = { target = POR modifier = fascist_purge_focus } 
+				}
+			}
+			ENG = { 
+				if = {
+					limit = { NOT = { has_government = fascist } }
+					add_opinion_modifier = { target = POR modifier = fascist_purge_focus } 
+				}
+			}
+			FRA = { 
+				if = {
+					limit = { NOT = { has_government = fascist } }
+					add_opinion_modifier = { target = POR modifier = fascist_purge_focus } 
+				}
+			}
+			SOV = { 
+				if = {
+					limit = { NOT = { has_government = fascist } }
+					add_opinion_modifier = { target = POR modifier = fascist_purge_focus } 
+				}
+			}
+			every_other_country = {
+				limit = { has_fascist_government = yes }
+				add_opinion_modifier = { target = POR modifier = fascist_purge_fascists }
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_anti_communism
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = POR_PVDE }
+		x = 12
+		y = 2
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			USA = { 
+				if = {
+					limit = { NOT = { has_communist_government = yes } }
+					add_opinion_modifier = { target = POR modifier = communist_suppression_focus } 
+				}
+			}
+			ENG = { 
+				if = {
+					limit = { NOT = { has_communist_government = yes } }
+					add_opinion_modifier = { target = POR modifier = communist_suppression_focus } 
+				}
+			}
+			FRA = { 
+				if = {
+					limit = { NOT = { has_communist_government = yes } }
+					add_opinion_modifier = { target = POR modifier = communist_suppression_focus } 
+				}
+			}
+			GER = { 
+				if = {
+					limit = { NOT = { has_communist_government = yes } }
+					add_opinion_modifier = { target = POR modifier = communist_suppression_focus } 
+				}
+			}
+			every_other_country = {
+				limit = { has_communist_government = yes }
+				add_opinion_modifier = { target = POR modifier = communist_suppression_communists }
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_return_king_heir
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = POR_anti_communism }
+		prerequisite = { focus = POR_anti_fascist }
+		mutually_exclusive = { focus = POR_president_salazar }
+		available = {
+			is_puppet = no
+			OR = {
+			neutrality > 0.4
+			monarchism > 0.4
+			}	
+			has_country_leader = { ruling_only = yes name = "António de Oliveira Salazar" }
+		}		
+		x = 10
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 0.75
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+	set_politics = { ruling_party = monarchism elections_allowed = no }
+		add_popularity = { ideology = monarchism popularity = 0.25 }	
+		
+	create_country_leader = {
+	name = "Duarte II de Bragança"
+	desc = "POLITICS_DUARTE_BRAGANCA_DESC"
+	picture = "Portrait_Portugal_Duarte_Nuno.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = { imperial_connections }
+}
+			#set_party_name = { ideology = neutrality long_name = POR_neutrality_party_king_long name = POR_neutrality_party_king }
+		}	
+	}
+	
+	focus = {
+		id = POR_support_the_braganzas
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = POR_return_king_heir }
+		x = 10
+		y = 4
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = POR_duke_duarte_nuno
+		}
+	}
+	
+	focus = {
+		id = POR_casa_braganza
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = POR_support_the_braganzas }
+		x = 10
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = POR_casa_braganza
+		}
+	}
+	
+	focus = {
+		id = POR_miguelist_constitution
+		icon = GFX_goal_duke
+		prerequisite = { focus = POR_casa_braganza }
+		x = 10
+		y = 6
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_civil_war = no
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = POR_king_duarte_nuno
+				remove_idea = POR_duke_duarte_nuno
+			}
+			set_cosmetic_tag = POR_miguelist_restoration
+		}
+	}
+	
+	focus = {
+		id = POR_president_salazar
+		icon = GFX_goal_salazar
+		prerequisite = { focus = POR_anti_communism }
+		prerequisite = { focus = POR_anti_fascist }
+		mutually_exclusive = { focus = POR_return_king_heir }
+		x = 12
+		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_idea = POR_oscar_carmona
+			is_subject = no
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = POR_salazar
+				remove_idea = POR_oscar_carmona
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_prison_tarrafal
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = POR_president_salazar }
+		x = 12
+		y = 4
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = POR_flexible_foreign_policy
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = POR_prison_tarrafal }
+		x = 12
+		y = 5
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = POR_flexible_foreign_policy
+		}
+	}
+	
+	focus = {
+		id = POR_ukpba
+		icon = GFX_goal_ukpba
+		prerequisite = { focus = POR_flexible_foreign_policy focus = POR_miguelist_constitution }
+		available = {
+		}
+		
+		x = 11
+		y = 7
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 0.1
+		}
+		
+		completion_reward = {
+			unlock_decision_category_tooltip = POR_colonial_empire
+		}
+	}
+	
+	## SPAIN ##
+	### END ###
+	### COLONIAL ###
+	
+	focus = {
+		id = POR_ultramar
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = POR_deuspatriafamilia }
+		available = {
+			controls_state = 697
+			controls_state = 698
+		}
+		x = 18
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			add_ideas = POR_ultramar_focus
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.7
+				uses = 2
+				category = construction_tech
+			}
+			697 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			698 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+	}
+	
+	## UK & AFRICA ##
+	
+	focus = {
+		id = POR_anglo_pt
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = POR_ultramar }
+		x = 16
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			country_exists = ENG
+			NOT = {
+				has_war_with = ENG
+			}
+		}
+
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = { target = POR modifier = por_anglo_pt }
+			}
+			hidden_effect = {
+				news_event = { id = news.701 }
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_eng_favor
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = POR_anglo_pt }
+		
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+			factor = 0
+			is_historical_focus_on = yes
+			}
+			
+		}
+		
+		available = {
+			any_other_country = {
+				original_tag = ENG
+				has_war = no
+				owns_state = 422
+				owns_state = 281
+				owns_state = 545
+			}
+			is_puppet = no
+		}
+		cancel = {
+			any_other_country = {
+				original_tag = ENG
+				has_war_with = ROOT
+				owns_state = 422
+				owns_state = 281
+				owns_state = 545
+			}
+		}
+		x = 16
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 0.9
+		}	
+		completion_reward = {
+			random_other_country = {
+				limit = {
+					owns_state = 422
+					owns_state = 281
+					owns_state = 545
+				}
+				country_event = { id = portugal.13 }
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_pink_map
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = POR_ultramar }
+		available = { has_offensive_war = no }
+		x = 16
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			540 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			545 = {
+				if = {
+					limit = { is_controlled_by = ROOT }	
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}	
+			}
+			544 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_pink_corridor
+		prerequisite = { focus = POR_pink_map }
+		icon = GFX_goal_generic_construct_military
+		x = 16
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		available = {
+			controls_state = 540
+		}
+
+		completion_reward = { 
+			540 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 12985
+					instant_build = yes
+				}
+			}
+			540 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 12958
+					instant_build = yes
+				}
+			}
+			540 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 5158
+					instant_build = yes
+				}
+			}
+			540 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 8248
+					instant_build = yes
+				}
+			}
+			540 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 8219
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_pink_corridor2
+		prerequisite = { focus = POR_pink_corridor }
+		icon = GFX_goal_generic_construct_military
+		x = 16
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		available = {
+			controls_state = 544
+		}
+
+		completion_reward = { 
+			544 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 2202
+					instant_build = yes
+				}
+			}
+			544 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 2123
+					instant_build = yes
+				}
+			}
+			544 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 5164
+					instant_build = yes
+				}
+			}
+			544 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 12971
+					instant_build = yes
+				}
+			}
+			544 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 2120
+					instant_build = yes
+				}
+			}
+			544 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 12935
+					instant_build = yes
+				}
+			}
+			544 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 2193
+					instant_build = yes
+				}
+			}
+			544 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 5212
+					instant_build = yes
+				}
+			}
+			544 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 8245
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	## END ##
+	## TIMOR & INDONESIA ##
+	
+	focus = {
+		id = POR_sapt
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = POR_ultramar }
+		available = {
+			controls_state = 729
+		}
+		x = 14
+		y = 4
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			721 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_timor_coast
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = POR_sapt }
+		available = {
+			controls_state = 729
+		}
+		x = 14
+		y = 5
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = { 
+			721 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 12190
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_timor_fort
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = POR_timor_coast }
+		available = {
+			controls_state = 729
+		}
+		x = 14
+		y = 6
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = { 
+			721 = {
+				add_building_construction = {
+					type = bunker
+					level = 8
+					province = 12190
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_supply_indonesian_nationalists
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = POR_timor_fort }
+		available = {
+			has_equipment = {
+				infantry_equipment > 199
+			}
+		}
+		x = 14
+		y = 7
+		cost = 10
+
+		ai_will_do = {
+			factor = 0.9
+		}
+
+		select_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = -200
+			}
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		completion_reward = {
+			INS = {
+				add_timed_idea = { days = 730 idea = POR_indonesian_nationalists } 
+			}
+			hidden_effect = {
+				INS = { country_event = { id = portugal.16 } }
+				HOL = { country_event = { id = portugal.16 } }
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_support_indonesian_uprising
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = POR_supply_indonesian_nationalists }
+		available = {
+			OR = {
+				is_subject = no
+			}
+		}
+		x = 14
+		y = 8
+		cost = 10
+
+		ai_will_do = {
+			factor = 0.9
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					INS = { has_civil_war = no }
+				}
+				INS = { country_event = { id = portugal.17 } }
+			}
+			add_ideas = POR_support_indonesian_uprising
+		}
+	}
+	
+	focus = {
+		id = POR_a_deal_with_indonesia
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = POR_support_indonesian_uprising }
+		available = {
+			any_other_country = {
+				original_tag = INS
+				has_war = no
+				owns_state = 667
+				owns_state = 668
+			}
+			is_puppet = no
+		}
+		cancel = {
+			any_other_country = {
+				original_tag = INS
+				has_war_with = ROOT
+				owns_state = 667
+				owns_state = 668
+			}
+		}
+		x = 14
+		y = 9
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_other_country = {
+				limit = {
+					owns_state = 667
+					owns_state = 668
+				}
+				country_event = { id = portugal.18 }
+			}
+		}
+		hidden_effect = {
+			668 = { 
+				if = {
+					limit = { is_controlled_by = ROOT }
+				set_state_name = "STATE_1002"
+				}
+			}
+		}
+	}
+	
+	## END ##
+	## MACAU & CHINA ##
+	
+	focus = {
+		id = POR_mercadovermelho
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = POR_ultramar }
+		available = {
+			controls_state = 729
+		}
+		x = 18
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			729 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_macau_coast
+		prerequisite = { focus = POR_mercadovermelho }
+		icon = GFX_goal_generic_fortify_city
+		x = 18
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_state = 729
+		}
+
+		completion_reward = { 
+			729 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 4189
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_macau_fort
+		prerequisite = { focus = POR_macau_coast }
+		icon = GFX_goal_generic_construct_military
+		x = 18
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		available = {
+			controls_state = 729
+		}
+
+		completion_reward = { 
+			729 = {
+				add_building_construction = {
+					type = bunker
+					level = 8
+					province = 4189
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_maucau_air
+		prerequisite = { focus = POR_macau_fort }
+		icon = GFX_goal_generic_construct_civilian
+		x = 18
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		available = {
+			controls_state = 729
+		}
+
+		completion_reward = {
+			729 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	### END ###
+	### INDUSTRIAL ###
+	
+	focus = {
+		id = POR_deuspatriafamilia
+		icon = GFX_goal_anschluss
+		available = {
+		}
+		x = 20
+		y = 0
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}		
+
+		completion_reward = {
+			add_ideas = POR_deuspatriafamilia_focus
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = industry
+			}			
+		}
+	}
+	
+	focus = {
+		id = POR_paisdentrodeumpais
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = POR_deuspatriafamilia }
+		available = {
+			controls_state = 112
+			controls_state = 179
+			controls_state = 180
+		}
+		x = 21
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+
+		completion_reward = {
+			112 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+			179 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+			180 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_estadocorporativo
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = POR_paisdentrodeumpais }
+		available = {
+			controls_state = 112
+			controls_state = 180
+		}
+		x = 20
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+
+		completion_reward = {
+			112 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			180 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_bracodeprata
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = POR_paisdentrodeumpais }
+		available = {
+			controls_state = 179
+			controls_state = 181
+		}
+		x = 22
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+
+		completion_reward = {
+			179 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			181 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = industry
+			}
+			swap_ideas = {
+				remove_idea = bdprata_1
+				add_idea = bdprata_2	
+			}			
+		}
+	}
+	
+	focus = {
+		id = POR_extra_research_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = POR_estadocorporativo focus = POR_bracodeprata }
+		available = {
+		}
+		x = 21
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = POR_outramargem
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = POR_extra_research_slot }
+		available = {
+			controls_state = 179
+		}
+		x = 20
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			179 = {
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+			}
+			179 = {
+				add_resource = {
+					type = chromium
+					amount = 5
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_refinariasangola
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = POR_extra_research_slot }
+		available = {
+			controls_state = 540
+		}
+		x = 22
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			540 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+			540 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}
+	
+	focus = {
+		id = POR_extra_research_slot_2
+		icon = GFX_focus_research
+		prerequisite = { focus = POR_outramargem focus = POR_refinariasangola }
+		available = {
+		}
+		x = 21
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = POR_capital_of_espionage
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = POR_extra_research_slot_2 }
+		available = {
+		}
+		x = 21
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = por_capital_of_espionage
+				bonus = 0.8
+				uses = 6
+				category = electronics
+				category = rocketry
+				category = nuclear
+			}
+		}
+	}
+	
+	### END ###
+	### NAVAL ###
+	
+	focus = {
+		id = POR_alfeite
+		icon = GFX_goal_generic_build_navy
+		available = {
+			controls_state = 112
+		}
+		x = 24
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 3
+				category = naval_doctrine
+			}
+			112 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_rehabnaval
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = POR_alfeite }
+		available = {
+			controls_state = 180
+		}
+		x = 24
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = marine_tech
+			}
+			180 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_cubango
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = POR_rehabnaval }
+		available = {
+		}
+		x = 24
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = tp_tech
+			}
+			add_tech_bonus = {
+				name = cv_bonus
+				bonus = 0.7
+				uses = 2
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_atlantico
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = POR_cubango }
+		available = {
+		}
+		x = 24
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 3
+				technology = improved_submarine
+				technology = advanced_submarine
+				technology = basic_destroyer
+				technology = improved_destroyer
+				technology = advanced_destroyer
+			}
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = cl_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_reforconaval
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = POR_atlantico }
+		available = {
+		}
+		x = 24
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		completion_reward = {
+			navy_experience = 30
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+	
+	### END ###
+	### COASTAL ###
+	
+	focus = {
+		id = POR_azores
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = POR_cubangosupplies }
+		prerequisite = { focus = POR_cubango }
+		available = {
+			controls_state = 698
+		}
+		x = 27
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 0.5
+		}		
+		
+		completion_reward = {
+			698 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = { all_provinces = yes limit_to_coastal = yes }
+					level = 2
+					instant_build = yes
+				}
+			}
+			698 = {
+				add_building_construction = {
+					type = bunker
+					province = { all_provinces = yes }
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_madeira
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = POR_azores }
+		available = {
+			controls_state = 697
+		}
+		x = 27
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 0.5
+		}		
+		
+		completion_reward = {
+			697 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = { all_provinces = yes limit_to_coastal = yes }
+					level = 2
+					instant_build = yes
+				}
+			}
+			697 = {
+				add_building_construction = {
+					type = bunker
+					province = { all_provinces = yes }
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#### END ####
+	#### AIR ####
+	
+	focus = {
+		id = POR_pmareorg
+		icon = GFX_goal_generic_build_airforce
+		available = {
+			controls_state = 112
+		}
+		x = 27
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+
+		completion_reward = {
+			air_experience = 25
+			112 = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_pmamodern
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = POR_pmareorg }
+		available = {
+			controls_state = 112
+		}
+		x = 28
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 1
+				category = jet_technology
+			}
+		}
+	}
+	
+	### END ###
+	## NAV-AIR ##
+	
+	focus = {
+		id = POR_cubangosupplies
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = POR_pmareorg }
+		prerequisite = { focus = POR_cubango }
+		available = {
+		}
+		x = 27
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 0.5
+		}		
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 2
+				category = cas_bomber
+				category = naval_bomber
+			}
+		}
+	}
+	
+	## END ##
+	## SPA-AIR ##
+	
+	focus = {
+		id = POR_nataviation
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = POR_pmareorg }
+		available = {
+	 		AND = {
+	 			SPR = {	has_civil_war = yes }
+				has_global_flag = spanish_civil_war
+			}
+		}
+		x = 26
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 0.5
+		}		
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.7
+				uses = 2
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 0.8
+				uses = 3
+				category = fighter
+				category = tactical_bomber
+				category = strategic_bomber
+			}
+		}
+	}
+	
+	## END ##

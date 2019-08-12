@@ -1,0 +1,546 @@
+﻿capital = 278
+
+oob = "ARG_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "ARG_1936_naval_mtg"
+	else = {
+		set_naval_oob = "ARG_1936_naval_legacy"
+	}
+}
+
+add_ideas = {
+religion_catholicism
+}
+
+set_convoys = 120
+
+add_ideas = { 	
+	export_focus
+	tax_low
+	tariffs_average
+	
+	civilian_economy
+	press_regulated
+	key_industries
+	labor_none
+	fdi_allowed
+	security_minor_restrictions
+	
+	cons_volunteer
+	foreign_volunteers
+	
+	train_none
+	officer_train_none
+	#age_19
+	
+	education_budget2 health_budget2   socialsecurity_budget2 
+	
+	unity6
+	foreign_isolationism
+}
+
+add_ideas = {
+	ARG_concordancia
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	CAS1 = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+}
+
+set_country_flag = monroe_doctrine
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1931.11.8"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_popularities = {
+conservatism  = 13
+fascism = 5
+communism = 12
+neutrality = 70
+}
+
+create_country_leader = {
+	name = "Agustín Pedro Justo"
+	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
+	picture = "gfx/leaders/ARG/Portrait_Argentine_Agustin_Justo.tga"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = { }
+}
+
+
+
+create_country_leader = {
+	name = "Manuel Fresco"
+	desc = "POLITICS_MANUEL_FRESCO_DESC"
+	picture = "gfx/leaders/ARG/Portrait_Argentine_Manuel_Fresco.tga"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Marcelo T. de Alvear"
+	desc = "POLITICS_MARCELO_ALVEAR_DESC"
+	picture = "gfx/leaders/ARG/Portrait_Argentine_Marcelo_Alvear.tga"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+			name = "Enrique Mosca"
+			desc = "POLITICS_ENRIQUEE_MOSCA_DESC"
+			picture = "Portrait_Argentine_Enrique_Mosca.tga"
+			expire = "1965.1.1"
+			ideology = conservatism_ideology
+			traits = {}
+		}
+		
+		create_country_leader = {
+			name = "Alfredo Palacios"
+			desc = "POLITICS_ALFREDO_PALACIOS_DESC"
+			picture = "Portrait_Argentine_Alfredo_Palacios.tga"
+			expire = "1965.1.1"
+			ideology = social_democracy
+			traits = {}
+		}
+		
+		
+		### PLACEHOLDER
+		
+		create_country_leader = {
+			name = "Alfredo Palacios"
+			desc = "POLITICS_ALFREDO_PALACIOS_DESC"
+			picture = "Portrait_Argentine_Alfredo_Palacios.tga"
+			expire = "1965.1.1"
+			ideology = socialism_ideology
+			traits = {}
+		}
+
+create_country_leader = {
+	name = "Rodolfo Ghioldi"
+	desc = "POLITICS_RODOLFO_GHIOLDI_DESC"
+	picture = "Portrait_Argentine_Rodolfo_Ghioldi.tga"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		dictator
+	}
+}
+
+#### PLACEHOLDER
+create_country_leader = {
+	name = "Rodolfo Ghioldi"
+	desc = "POLITICS_RODOLFO_GHIOLDI_DESC"
+	picture = "Portrait_Argentine_Rodolfo_Ghioldi.tga"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Juan Domingo Peron"
+	desc = ""
+	picture = "gfx/leaders/ARG/Portrait_ARG_Peron_General.tga"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		dictator
+	}
+}
+
+
+#### PLACEHOLDER
+
+
+create_country_leader = {
+	name = "Juan Domingo Peron"
+	desc = ""
+	picture = "gfx/leaders/ARG/Portrait_ARG_Peron_General.tga"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = {
+		dictator
+	}
+}
+
+### Field Marshal
+
+create_field_marshal = {
+	name = "Basilio Pertiné"
+	portrait_path = "gfx/leaders/ARG/Portrait_ARG_Basilio_Pertine.tga"
+	traits = {
+	defensive_doctrine
+	thorough_planner
+	}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Pedro Pablo Ramirez"
+	portrait_path = "gfx/leaders/ARG/Portrait_Argentine_Pablo_Ramirez.tga"
+	traits = {
+	politically_connected
+		swamp_fox
+		offensive_doctrine
+		fast_planner
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Luis Dellepiane"
+	portrait_path = "gfx/leaders/ARG/Portrait_ARG_Luis_Dellepiane.tga"
+	traits = {
+		trait_cautious
+		brilliant_strategist
+		old_guard
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+### Corps Commander
+create_corps_commander = {
+	name = "Enrique Mosconi"
+	portrait_path = "gfx/leaders/ARG/Portrait_ARG_Mosconi.tga"
+	traits = {
+	infantry_officer
+	career_officer
+	trait_engineer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Manuel Savio"
+	portrait_path = "gfx/leaders/ARG/Portrait_ARG_Manuel_Savio.tga"
+	traits = {
+	career_officer
+	politically_connected
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Juan Domingo Peron"
+	portrait_path = "gfx/leaders/ARG/Portrait_ARG_Peron_General.tga"
+	traits = {
+	media_personality
+	politically_connected
+		fortress_buster
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Arturo Rawson"
+	portrait_path = "gfx/leaders/ARG/Portrait_ARG_Arturo_Rawson.tga"
+	traits = {
+	cavalry_officer
+	career_officer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Juan Pistarini"
+	portrait_path = "gfx/leaders/ARG/Portrait_Argentine_Juan_Pistarini.tga"
+	traits = {
+	career_officer
+	harsh_leader
+	trait_engineer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Edelmiro Julián Farrell"
+	portrait_path = "gfx/leaders/ARG/Portrait_Argentine_Edelmiro_Farrell.tga"
+	traits = {
+	infantry_officer
+	harsh_leader
+	trickster
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Manuel Domecq Garcia"
+	portrait_path = "gfx/leaders/ARG/Portrait_ARG_Domecq_Garcia.tga"
+	traits = {
+		old_guard
+		superior_tactician
+	}
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Eleazar Videla"
+	picture = "Portrait_Argentine_Eleazar_Videla.tga"
+	traits = { seawolf }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Alberto Teisaire"
+	portrait_path = "gfx/leaders/ARG/Portrait_Argentine_Alberto_Teisaire.tga"
+	traits = { chief_engineer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+	create_equipment_variant = {
+		name = "Cervantes Class"
+		type = destroyer_1
+		upgrades = {
+			ship_torpedo_upgrade = 1
+			destroyer_engine_upgrade = 1
+			ship_ASW_upgrade = 1
+			ship_anti_air_upgrade = 1
+		}
+	}
+	create_equipment_variant = {
+		name = "Veinticinco de Mayo Class"
+		type = heavy_cruiser_1
+		upgrades = {
+			ship_reliability_upgrade = 1
+			ship_engine_upgrade = 1
+			ship_armor_upgrade = 1
+			ship_gun_upgrade = 1
+		}
+	}
+
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Santa Fe Class"				
+		type = ship_hull_submarine_1
+		name_group = ARG_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Catamarca Class"				# represents Catamarca, La Plata Class		
+		type = ship_hull_light_1
+		name_group = ARG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Cervantes Class"	
+		type = ship_hull_light_2
+		name_group = ARG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Mendoza Class"				
+		type = ship_hull_light_2
+		name_group = ARG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Libertad Class"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = ARG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Garibaldi Class"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = ARG_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Veinticinco de Mayo Class"				
+		type = ship_hull_cruiser_1
+		name_group = ARG_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+	}
+	# Battleships #
+	create_equipment_variant = {
+		name = "Rivadavia Class"	
+		type = ship_hull_heavy_1
+		name_group = ARG_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}

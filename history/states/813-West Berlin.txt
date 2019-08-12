@@ -1,0 +1,31 @@
+
+state={
+	id=813
+	name="STATE_813"
+	manpower = 2150000
+	buildings_max_level_factor = 1
+
+	state_category = megalopolis
+
+
+	history={
+		owner = GER
+		victory_points = {
+			13223 20 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 1
+			anti_air_building = 1
+
+		}
+		add_core_of = GER
+		add_core_of = WGR
+
+	}
+
+	provinces={
+		13223
+	}
+}

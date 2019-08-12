@@ -1,0 +1,257 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
+#Search for: (communism)|(fascism)|(democratic)|(neutrality) in Notepad++ to find the base game's ideologies in files
+
+has_democratic_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_democratic_form_of_government
+		OR = {
+		has_government = democratic
+		has_government = conservatism
+		has_government = socdem
+		}
+		}
+}
+
+has_fascist_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_fascist_form_of_government
+	OR = {
+		has_government = fascism
+		has_government = nazism
+	}
+	}
+}
+
+has_communist_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_communist_form_of_government
+	OR = {
+		has_government = communism
+		has_government = syndicalism		
+	}
+	}
+}
+
+has_socialist_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_communist_form_of_government
+	OR = {
+		has_government = communism
+		has_government = syndicalism
+		has_government = socialism
+		has_government = socdem		
+	}
+	}
+}
+
+is_socialist = {
+	custom_trigger_tooltip = {
+	tooltip = TT_socialist_form_of_government
+	OR = {
+		has_government = communism
+		has_government = syndicalism
+		has_government = socialism
+		has_government = socdem
+	}
+	}
+}
+
+has_neutral_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_neutral_form_of_government
+	OR = {
+		has_government = neutrality
+		has_government = monarchism
+		has_government = theocratic
+		has_government = socialism
+		has_government = nationalism
+	}
+	}
+}
+
+has_nationalist_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_neutral_form_of_government
+	OR = {
+		has_government = monarchism
+		has_government = neutrality
+		has_government = theocratic
+		has_government = nationalism
+	}
+	}
+}
+
+has_totalitarian_government = {
+	OR = {
+		has_government = monarchism
+		has_government = theocratic		
+		has_government = fascism
+		has_government = nazism
+		has_government = nationalism
+	}
+}
+
+is_left_wing_democratic = {
+		has_government = socdem
+}
+
+is_left_wing = {
+	OR = {
+		has_government = socdem
+		has_government = socialism
+		has_government = communism
+		has_government = syndicalism
+	}
+}
+
+is_centrist_democratic = {
+		has_government = democratic
+}
+
+is_right_wing_democratic = {
+	OR = {
+		has_government = conservatism
+		has_government = neutrality
+		has_government = nationalism
+	}
+}
+
+is_monarchy = {
+	custom_trigger_tooltip = {
+	tooltip = TT_monarchist_form_of_government
+		has_government = monarchism
+	}
+}
+
+is_authoritarian = {
+	OR = {
+		has_government = neutrality
+		has_government = nationalism
+	}
+}
+
+polish_democracy_idea_trigger = { #for Polish ideas
+		OR = {
+		has_government = democratic
+		has_government = conservatism
+		has_government = socdem
+		}
+}
+
+
+has_same_government_as_ROOT = {
+	OR = {
+		AND = {
+			has_government = communism
+			ROOT = { has_government = communism }
+		}
+		AND = {
+			has_government = syndicalism
+			ROOT = { has_government = syndicalism }
+		}
+		AND = {
+			has_government = socialism
+			ROOT = { has_government = socialism }
+		}
+		AND = {
+			has_government = socdem
+			ROOT = { has_government = socdem }
+		}
+		AND = {
+			has_government = democratic
+			ROOT = { has_government = democratic }
+		}
+		AND = {
+			has_government = conservatism
+			ROOT = { has_government = conservatism }
+		}
+		AND = {
+			has_government = neutrality
+			ROOT = { has_government = neutrality }
+		}
+		AND = {
+			has_government = nationalism
+			ROOT = { has_government = nationalism }
+		}
+		AND = {
+			has_government = theocratic
+			ROOT = { has_government = theocratic }
+		}
+		AND = {
+			has_government = monarchism
+			ROOT = { has_government = monarchism }
+		}
+		AND = {
+			has_government = fascism
+			ROOT = { has_government = fascism }
+		}
+		AND = {
+			has_government = nazism
+			ROOT = { has_government = nazism }
+		}
+	}
+}
+
+has_similar_form_of_government = {
+	OR = {
+		AND = {
+			has_democratic_government = yes }
+			ROOT = { has_democratic_government = yes }
+		}
+		AND = {
+			has_fascist_government = yes
+			ROOT = { has_fascist_government = yes }
+		}
+		AND = {
+			has_neutral_government = yes
+			ROOT = { has_neutral_government = yes }
+		}
+		AND = {
+			has_communist_government = yes
+			ROOT = { has_communist_government = yes }
+		}
+		AND = {
+			is_monarchy = yes
+			ROOT = { is_monarchy = yes }
+		}
+	}
+
+
+has_similar_form_of_government2 = {
+	OR = {
+		AND = {
+			PREV = { has_democratic_government = yes }
+			ROOT = { has_democratic_government = yes }
+		}
+		AND = {
+			PREV = { has_fascist_government = yes }
+			ROOT = { has_fascist_government = yes }
+		}
+		AND = {
+			PREV = { has_neutral_government = yes }
+			ROOT = { has_neutral_government = yes }
+		}
+		AND = {
+			PREV = { has_communist_government = yes }
+			ROOT = { has_communist_government = yes }
+		}
+		AND = {
+			PREV = { is_monarchy = yes }
+			ROOT = { is_monarchy = yes }
+		}
+	}
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=807
+	name="STATE_807"
+	manpower = 427982
+	
+	
+	state_category = rural
+	
+	resources={
+		oil=20
+		aluminium=5
+	}
+
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = USA
+		victory_points = {
+		}
+
+	}
+
+	provinces={
+		1954 10740 10894
+	}
+}

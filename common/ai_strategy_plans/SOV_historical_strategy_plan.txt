@@ -1,0 +1,85 @@
+SOV_historical_plan = {
+	name = "SOV historical plan"
+	desc = ""
+
+	enable = {
+		original_tag = SOV
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = SOV_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_HISTORICAL
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		
+		SOV_Lenin_Cult
+		SOV_Escalate_the_Purge
+		SOV_Stalin_Cult
+		SOV_finish_five_year_plan
+		SOV_French_Soviet_Reapproachment
+		#245
+		
+		SOV_First_Moscow_Trial
+		SOV_stalin_constitution
+		SOV_Second_Moscow_Trial
+		SOV_positive_heroism
+		#490
+		SOV_The_Tukhachevsky_Affair
+		SOV_The_Case_of_The_Trotskyist_Anti_Soviet_Military_Organization
+		SOV_Invest_in_Engineering
+		SOV_extra_tech_slot
+		SOV_Industrial_Development
+		SOV_The_Trial_of_the_Twenty_One
+		SOV_Forced_Urbanization
+		#875
+		SOV_Expand_Red_Army_Prestige
+		SOV_Mass_Immunizations
+		SOV_Education_Initiative
+		SOV_Purge_the_Army
+		#1050
+		#1939ish
+		
+		SOV_Go_With_Molotov
+		SOV_End_the_Great_Purge
+		SOV_claims_on_baltic
+		SOV_vvs_evolution
+		SOV_collectivist_propaganda
+		SOV_Fix_Industry
+		SOV_workers_culture
+		SOV_Western_Claims
+		#1645
+		
+		SOV_progress_cult
+		SOV_militarized_schools		
+		SOV_socialist_science
+		SOV_extra_tech_slot_early
+		SOV_demand_eastern_poland
+		#1925
+		
+		SOV_Develop_Oil_Concern
+		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

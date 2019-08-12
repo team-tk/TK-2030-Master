@@ -1,0 +1,335 @@
+﻿capital = 111
+
+oob = "FIN_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "FIN_1936_naval_mtg"
+	else = {
+		set_naval_oob = "FIN_1936_naval_legacy"
+	}
+}
+
+add_ideas = {
+religion_lutheranism
+}
+
+set_research_slots = 3
+set_convoys = 200
+
+add_ideas = {
+	FIN_lotta_svard
+}
+
+add_ideas = { 	
+	export_focus
+	tax_average
+	tariffs_average
+	
+	civilian_economy
+	press_free
+	private_control
+	labor_allowed
+	fdi_regulated
+	
+	cons_volunteer
+	foreign_volunteers
+	
+	train_medium
+	#age_19
+	officer_train_low
+	security_liberty_first
+	education_budget5 health_budget5 socialsecurity_budget5 
+	
+	unity5	
+	foreign_neutral
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1			
+	interwar_antiair = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_heavy_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		coastal_defense_ships = 1
+	}
+}
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.7.1"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+conservatism = 10
+fascism = 8
+communism = 1
+neutrality = 2
+socdem = 39	
+democratic = 40
+}
+
+create_country_leader = {
+	name = "Väinö Tanner"
+	desc = ""
+	picture = "Väinö_Tanner_-socdem.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {
+		socialist
+		organizer
+	}
+}
+
+create_country_leader = {
+	name = "Niilo Wallari"
+	desc = ""
+	picture = "Niilo_Wallari_Socialist.dds"
+	expire = "1965.1.1"
+	ideology = socialism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Juho Kusti Paasikivi"
+	desc = ""
+	picture = "Juho_Kusti_Paasikivi_-Liberal_Finland.dds"
+	expire = "1965.1.1"
+	ideology = classical_liberalism
+	traits = {
+		conservative
+		staunch_constitutionalist
+	}
+}
+
+create_country_leader = {
+	name = "Kyösti Kallio"
+	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
+	picture = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Risto Heikki Ryti"
+	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
+	picture = "Portrait_Finland_Risto_Heikki_Ryti.dds"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Aimo Aaltonen"
+	desc = "POLITICS_AIMO_AALTONEN_DESC"
+	picture = "gfx/leaders/FIN/Portrait_FIN_Aimo_Aaltonen.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Vilho Annala"
+	desc = "POLITICS_VILHO_ANNALA_DESC"
+	picture = "gfx/leaders/FIN/Portrait_FIN_Vilho_Annala.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Hiski Salomaa"
+	picture = "Hiski_Salomaa_Syndicalist.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Hans Kalm"
+	picture = "Hans_Kalm_Nazism.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Kurt Martti"
+	picture = "Kurt_Martti_Fascist.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { }
+}
+
+
+
+create_country_leader = {
+	name = "Frederik Kaarle I"
+	desc = "POLITICS_FREDERIK_KAARLE_DESC"
+	picture = "Portrait_Finland_Frederik_Kaarle_I.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Aimo Cajander"
+	desc = "POLITICS_AIMO_CAJANDER_DESC"
+	picture = "gfx/leaders/FIN/Portrait_Finland_Aimo_Cajander.dds" 
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }
+}
+
+
+create_country_leader = {
+	name = "Carl Gustaf Mannerheim"
+	desc = "POLITICS_CARL_GUSTAF_MANNERHEIM_DESC"
+	picture = "gfx/leaders/SCA/Portrait_SCA_Mannerheim.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = { }
+}
+
+
+
+add_ideas = {
+	sisu
+}
+
+create_field_marshal = {
+	name = "Carl Gustaf Mannerheim"
+	portrait_path = "gfx/leaders/SCA/Portrait_SCA_Mannerheim.dds"
+	traits = { brilliant_strategist war_hero career_officer unyielding_defender inspirational_leader }
+	skill = 5
+	attack_skill = 4
+    defense_skill = 5
+    planning_skill = 5
+    logistics_skill = 5
+	
+}
+
+create_corps_commander = { # Commander II Corps
+	name = "Harald Öhquist"
+	portrait_path = "gfx/leaders/SCA/Portrait_SCA_Harald_Ohquist.dds"
+	traits = { trait_reckless winter_specialist hill_fighter }
+	skill = 3
+	attack_skill = 5
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = { # Commander III Corps
+	name = "Axel Erik Heinrichs"
+	portrait_path = "gfx/leaders/SCA/Portrait_SCA_Axel_Heinrichs.dds"
+	traits = { infantry_officer winter_specialist ranger }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+create_corps_commander = { # Commander IV Corps
+	name = "Johan Woldemar Hägglund"
+	portrait_path = "gfx/leaders/Europe/Portrait_europe_generic_land_6.dds"
+	traits = { inflexible_strategist winter_specialist trickster }
+	skill = 4
+	attack_skill = 4
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_corps_commander = { # Commander Reserve Corps
+	name = "Wiljo Einar Tuompo"
+	portrait_path = "gfx/leaders/SCA/Portrait_SCA_Wiljo_Tuompo.dds"
+	traits = { career_officer winter_specialist trait_engineer }
+	skill = 3
+	attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Eero Rahola"
+	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_navy_3.dds"
+	traits = { ironside }
+	skill = 3
+}
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Vetehinen Class"								
+		type = ship_hull_submarine_1
+		name_group = FIN_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+	create_equipment_variant = {
+		name = "Vesikko Class"								
+		type = ship_hull_submarine_1
+		name_group = FIN_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Väinämöinen Class"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = FIN_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+}

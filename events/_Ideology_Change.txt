@@ -1,0 +1,492 @@
+﻿###########################
+# Generalgouvernement
+###########################
+# By esmaerla
+###########################
+
+add_namespace = ideologychange
+
+# 1. RIGHT WING IDEOLOGIES
+country_event = {
+	id = ideologychange.0
+	title = ideologychange.0.t
+	desc = ideologychange.0.de
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ideologychange.0.a
+		ai_chance = { factor = 100 }
+		
+	every_country = {
+	if = {
+	limit = {
+	NOT = { has_government = monarchism }
+	}
+	
+	
+	
+	set_politics = {
+	ruling_party = monarchism
+	elections_allowed = no
+	}
+	
+	set_popularities = {
+    democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 0
+	monarchism = 100
+	theocratic = 0	
+	conservatism = 0
+	socialism = 0
+	syndicalism = 0
+	nationalism = 0
+	socdem = 0
+	nazism = 0
+	}
+	
+	}
+	}
+	
+}
+
+	option = {
+		name = ideologychange.0.b
+		ai_chance = { factor = 100 }
+		
+	every_country = {
+	if = {
+	limit = {
+	NOT = { has_fascist_government = yes }
+	}
+	
+	set_politics = {
+	ruling_party = fascism
+	elections_allowed = no
+	}
+	
+	set_popularities = {
+    democratic = 0
+	fascism = 100
+	communism = 0
+	neutrality = 0
+	monarchism = 0
+	theocratic = 0
+	conservatism = 0
+	socialism = 0
+	syndicalism = 0
+	nationalism = 0
+	socdem = 0
+	nazism = 0
+	}
+	
+	}
+	}
+	
+}
+
+	option = {
+		name = ideologychange.0.c
+		ai_chance = { factor = 100 }
+		
+	every_country = {
+	if = {
+	limit = {
+	NOT = { has_government = nazism }
+	}
+	
+	set_politics = {
+	ruling_party = nazism
+	elections_allowed = no
+	}
+	set_popularities = {
+    democratic = 0
+	fascism = 0
+	nazism = 100
+	neutrality = 0
+	monarchism = 0
+	theocratic = 0
+	conservatism = 0
+	socialism = 0
+	syndicalism = 0
+	nationalism = 0
+	socdem = 0
+	communism = 0
+	}
+	
+	}
+	}
+	
+}
+
+	option = {
+		name = ideologychange.0.d
+		ai_chance = { factor = 100 }
+		
+	every_country = {
+	if = {
+	limit = {
+	NOT = { has_government = nationalism }
+	}
+	
+	set_politics = {
+	ruling_party = nationalism
+	elections_allowed = no
+	}
+	
+	set_popularities = {
+    democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 0
+	monarchism = 0
+	theocratic = 0
+	conservatism = 0
+	socialism = 0
+	syndicalism = 0
+	nationalism = 100
+	socdem = 0
+	nazism = 0
+	}
+	
+	}
+	}
+	
+}
+
+option = {
+		name = ideologychange.0.e
+		ai_chance = { factor = 100 }
+		
+country_event = { id = ideologychange.1 }
+	
+}
+
+}
+
+
+
+# 1. DEMOCRATIC IDEOLOGIES
+country_event = {
+	id = ideologychange.1
+	title = ideologychange.1.t
+	desc = ideologychange.1.de
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ideologychange.1.a
+		ai_chance = { factor = 100 }
+		
+	every_country = {
+	if = {
+	limit = {
+	NOT = { has_government = conservatism }
+	}
+	
+	
+	
+	set_politics = {
+	ruling_party = conservatism
+	elections_allowed = no
+	}
+	
+	set_popularities = {
+    democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 0
+	conservatism = 100
+	theocratic = 0	
+	monarchism = 0
+	socialism = 0
+	syndicalism = 0
+	nationalism = 0
+	socdem = 0
+	nazism = 0
+	}
+	
+	}
+	}
+	
+}
+
+	option = {
+		name = ideologychange.1.b
+		ai_chance = { factor = 100 }
+		
+	every_country = {
+	if = {
+	limit = {
+	NOT = { has_government = democratic }
+	}
+	
+	set_politics = {
+	ruling_party = democratic
+	elections_allowed = no
+	}
+	
+	set_popularities = {
+    fascism = 0
+	democratic = 100
+	communism = 0
+	neutrality = 0
+	monarchism = 0
+	theocratic = 0
+	conservatism = 0
+	socialism = 0
+	syndicalism = 0
+	nationalism = 0
+	socdem = 0
+	nazism = 0
+	}
+	
+	}
+	}
+	
+}
+
+	option = {
+		name = ideologychange.1.c
+		ai_chance = { factor = 100 }
+		
+	every_country = {
+	if = {
+	limit = {
+	NOT = { has_government = socdem }
+	}
+	
+	set_politics = {
+	ruling_party = socdem
+	elections_allowed = no
+	}
+	set_popularities = {
+    democratic = 0
+	fascism = 0
+	socdem = 100
+	neutrality = 0
+	monarchism = 0
+	theocratic = 0
+	conservatism = 0
+	socialism = 0
+	syndicalism = 0
+	nationalism = 0
+	nazism = 0
+	communism = 0
+	}
+	
+	}
+	}
+	
+}
+
+	option = {
+		name = ideologychange.1.d
+		ai_chance = { factor = 100 }
+		
+	every_country = {
+	if = {
+	limit = {
+	NOT = { has_government = socialism }
+	}
+	
+	set_politics = {
+	ruling_party = socialism
+	elections_allowed = no
+	}
+	
+	set_popularities = {
+    democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 0
+	monarchism = 0
+	theocratic = 0
+	conservatism = 0
+	nationalism = 0
+	syndicalism = 0
+	socialism = 100
+	socdem = 0
+	nazism = 0
+	}
+	
+	}
+	}
+	
+}
+
+option = {
+		name = ideologychange.1.e
+		ai_chance = { factor = 100 }
+		
+country_event = { id = ideologychange.2 }
+	
+}
+
+}
+
+
+
+# 1. LEFT WING IDEOLOGIES
+country_event = {
+	id = ideologychange.2
+	title = ideologychange.2.t
+	desc = ideologychange.2.de
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ideologychange.2.a
+		ai_chance = { factor = 100 }
+		
+	every_country = {
+	if = {
+	limit = {
+	NOT = { has_communist_government = yes }
+	}
+	
+	
+	
+	set_politics = {
+	ruling_party = communism
+	elections_allowed = no
+	}
+	
+	set_popularities = {
+    democratic = 0
+	fascism = 0
+	conservatism = 0
+	neutrality = 0
+	communism = 100
+	theocratic = 0	
+	monarchism = 0
+	socialism = 0
+	syndicalism = 0
+	nationalism = 0
+	socdem = 0
+	nazism = 0
+	}
+	
+	}
+	}
+	
+}
+
+	option = {
+		name = ideologychange.2.b
+		ai_chance = { factor = 100 }
+		
+	every_country = {
+	if = {
+	limit = {
+	NOT = { has_government = syndicalism }
+	}
+	
+	set_politics = {
+	ruling_party = syndicalism
+	elections_allowed = no
+	}
+	
+	set_popularities = {
+    fascism = 0
+	syndicalism = 100
+	communism = 0
+	neutrality = 0
+	monarchism = 0
+	theocratic = 0
+	conservatism = 0
+	socialism = 0
+	democratic = 0
+	nationalism = 0
+	socdem = 0
+	nazism = 0
+	}
+	
+	}
+	}
+	
+}
+
+	option = {
+		name = ideologychange.2.c
+		ai_chance = { factor = 100 }
+		
+	every_country = {
+	if = {
+	limit = {
+	NOT = { has_government = theocratic }
+	}
+	
+	set_politics = {
+	ruling_party = theocratic
+	elections_allowed = no
+	}
+	set_popularities = {
+    democratic = 0
+	fascism = 0
+	theocratic = 100
+	neutrality = 0
+	monarchism = 0
+	socdem = 0
+	conservatism = 0
+	socialism = 0
+	syndicalism = 0
+	nationalism = 0
+	nazism = 0
+	communism = 0
+	}
+	
+	}
+	}
+	
+}
+
+	option = {
+		name = ideologychange.2.d
+		ai_chance = { factor = 100 }
+		
+	every_country = {
+	if = {
+	limit = {
+	NOT = { has_government = neutrality }
+	}
+	
+	set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+	}
+	
+	set_popularities = {
+    democratic = 0
+	fascism = 0
+	communism = 0
+	socialism = 0
+	monarchism = 0
+	theocratic = 0
+	conservatism = 0
+	nationalism = 0
+	syndicalism = 0
+	neutrality = 100
+	socdem = 0
+	nazism = 0
+	}
+	
+	}
+	}
+	
+}
+
+option = {
+		name = ideologychange.2.e
+		ai_chance = { factor = 100 }
+		
+country_event = { id = ideologychange.0 }
+	
+}
+
+}
+

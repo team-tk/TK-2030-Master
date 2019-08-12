@@ -1,0 +1,10 @@
+ai_historical_focus_list_SPR = {
+	ai_national_focuses = {
+	SPR_election
+	SPR_diplo
+	SPR_neu1
+	SPR_neu2
+	SPR_pol2
+	SPR_pol3
+	}
+}

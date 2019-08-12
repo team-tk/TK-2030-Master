@@ -1,0 +1,94 @@
+﻿division_template = {
+	name = "Infantry Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions
+	division_names_group = BRENGL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Cavalry Brigade"
+	division_names_group = BRENGL_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+        cavalry = { x = 0 y = 3 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Tank Brigade"
+	division_names_group = BRENGL_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Garrison Division"
+	division_names_group = BRENGL_GAR_01
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+
+units = {
+	division= {	
+		name = "53rd (Welsh) Infantry Division"
+		location = 377
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "38th (Welsh) Infantry Division"
+		location = 377
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "80th Infantry (Reserve) Division"
+		location = 377
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "Welsh Guards Regiment"
+		location = 377
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "160th Infantry Brigade and Headquarters Wales"
+		location = 311
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}	

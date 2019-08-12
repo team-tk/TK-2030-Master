@@ -1,0 +1,66 @@
+#reload countrycolors
+
+CSA = {
+	#color = rgb { 194 198 215 }
+	#color_ui = rgb { 255 255 255 }
+	color = rgb { 195 199 216 }
+	color_ui = rgb { 254 254 254 }
+}
+
+FAS = {
+	#color = rgb { 72 73 126 }
+	#color_ui = rgb { 94 95 164 }
+	color = rgb { 73 74 127 }
+	color_ui = rgb { 73 74 127 }
+	#color_ui = rgb { 95 96 165 }
+}
+
+ACO = {
+	#color = rgb { 125 13 24 }
+	#color_ui = rgb { 163 17 31 }
+	#color = rgb { 126 14 25 }
+	#color_ui = rgb { 164 18 32 }
+
+	#color = rgb { 0 128 0 }
+	color = rgb { 46 139 87 }
+	color_ui = rgb { 87 165 82 }
+}
+
+RHO = {
+	color = rgb { 171  190  152 }
+	color_ui = rgb { 171  190  152 }
+}
+
+QUE = {
+	color = rgb { 2  85  250 }
+	color_ui = rgb { 200  10  10 }
+}
+
+#cosmetic
+CAN_north_america_dominion = {
+	color = rgb { 160 0 0 }
+	color_ui = rgb { 235 0 0 }
+}
+
+USA_CSA = {
+	color = rgb { 145 163 176  }
+	color_ui = rgb { 186 205 219 }
+}
+
+ENG_syndicalist = {
+	color = rgb { 201  56  93 }
+	color_ui = rgb { 201  56  93 }
+}
+
+ENG_federation = {
+	color = rgb { 170  10  10 }
+	color_ui = rgb { 200  10  10 }
+}
+
+FAS_IMPERIAL = {
+
+	color = rgb {135 206 235}
+	color_ui = rgb { 87 165 82 }
+}
+
+

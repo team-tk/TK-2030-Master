@@ -1,0 +1,316 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		
+		#Britian
+		
+			if = {
+				limit = {
+					AND = {
+						TAG = AST
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = AST_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = CAN
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = CAN_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = RAJ
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = RAJ_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = NZL
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = NZL_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = SAF
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = SAF_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = USA
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = USA_ENG_monarchism
+			}
+			
+			#Japan
+			
+			if = {
+				limit = {
+					AND = {
+						TAG = MAN
+						is_subject_of = JAP
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = MAN_JAP_monarchism
+			}
+		}
+	}
+
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						TAG = AST
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = AST_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = CAN
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = CAN_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = RAJ
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = RAJ_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = NZL
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = NZL_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = SAF
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = SAF_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = USA
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = USA_ENG_monarchism
+			}
+			
+			#Japan
+			
+			if = {
+				limit = {
+					AND = {
+						TAG = MAN
+						is_subject_of = JAP
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = MAN_JAP_monarchism
+			}
+		}
+	}
+	
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						TAG = AST
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = AST_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = CAN
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = CAN_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = RAJ
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = RAJ_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = NZL
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = NZL_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = SAF
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = SAF_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = USA
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = USA_ENG_monarchism
+			}
+			
+			#Japan
+			
+			if = {
+				limit = {
+					AND = {
+						TAG = MAN
+						is_subject_of = JAP
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = MAN_JAP_monarchism
+			}
+		}
+	}
+
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						TAG = AST
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = AST_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = CAN
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = CAN_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = RAJ
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = RAJ_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = NZL
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = NZL_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = SAF
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = SAF_ENG_monarchism
+			}
+			if = {
+				limit = {
+					AND = {
+						TAG = USA
+						is_subject_of = ENG
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = USA_ENG_monarchism
+			}
+			
+			#Japan
+			
+			if = {
+				limit = {
+					AND = {
+						TAG = MAN
+						is_subject_of = JAP
+						has_government = monarchism
+						}
+					}
+				set_cosmetic_tag = MAN_JAP_monarchism
+			}
+		}
+	}
+}

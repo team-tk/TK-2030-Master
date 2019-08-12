@@ -1,0 +1,1545 @@
+﻿###########################
+# Germany WW2 Events
+###########################
+
+add_namespace = ww2germany
+
+# Set up of Italian Social Republic
+country_event = {
+	id = ww2germany.0
+	title = ww2germany.0.t
+	desc = ww2germany.0.d
+	picture = GFX_report_event_italian_social_republic
+
+	fire_only_once = yes
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2germany.0.a
+		ai_chance = { factor = 4000 }
+		
+		RSI = {
+			declare_war_on = { target = ITA type = annex_everything }
+			transfer_state = 158
+			transfer_state = 159
+			transfer_state = 160
+			transfer_state = 161
+			transfer_state = 162
+hidden_effect = { 
+load_oob = italy_social 
+2 = { add_core_of = RSI }
+156 = { add_core_of = RSI }
+117 = { add_core_of = RSI }
+115 = { add_core_of = RSI }
+114 = { add_core_of = RSI }
+157 = { add_core_of = RSI }
+}
+		}
+		
+if  = { limit = { GER = { controls_state = 2 } } RSI = { transfer_state = 2 } }
+if  = { limit = { GER = { controls_state = 157 } } RSI = { transfer_state = 157 } }
+if  = { limit = { GER = { controls_state = 117 } } RSI = { transfer_state = 117 } }
+if  = { limit = { GER = { controls_state = 156 } } RSI = { transfer_state = 156 } }
+if  = { limit = { GER = { controls_state = 115 } } RSI = { transfer_state = 115 } }
+		
+		ITA = {
+			declare_war_on = { target = RSI type = annex_everything }
+		}
+		
+		GER = { puppet = RSI set_autonomy = { target = RSI autonomy_state = autonomy_satellite } }
+		news_event = { hours = 6 id = ww2news.1 }
+		
+	}
+}
+
+# Italy Surrender Imminent
+country_event = {
+	id = ww2germany.1
+	title = ww2germany.1.t
+	desc = ww2germany.1.d
+	picture = GFX_report_event_italy_surrenders
+
+	fire_only_once = yes
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2germany.1.a
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+
+
+# Operation Valkyrie
+country_event = {
+	id = ww2germany.2
+	title = ww2germany.2.t
+	desc = ww2germany.2.d
+	picture = GFX_report_event_july_20_plot
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		NOT = { date > 1944.12.1 }
+		date > 1944.7.19
+		GER = { has_war_with = SOV }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = ww2germany.2.a
+		news_event = { hours = 6 id = ww2news.13 }
+	}
+}
+
+# Hitler Dead!
+country_event = {
+	id = ww2germany.3
+	title = ww2germany.3.t
+	desc = ww2germany.3.d
+	picture = GFX_report_event_hitler_dead
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { date > 1950.1.1 }
+		has_global_flag = germany_ww2
+		tag = GER
+		
+		OR = { SOV = { controls_state = 64 } any_other_country = { is_in_faction_with = SOV controls_state = 64 } }
+		OR = { SOV = { controls_state = 813 } any_other_country = { is_in_faction_with = SOV controls_state = 813 } }
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_global_flag = deadhitler
+	}
+
+	option = {
+		name = ww2germany.3.a
+		news_event = { hours = 6 id = ww2news.14 }
+		GER = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Karl Donitz"
+				desc = "POLITICS_DONITZ_DESC"
+				picture = "Portrait_Germany_Karl_Donitz.dds"
+				expire = "1956.5.16"
+				ideology = nazism_ideology
+				traits = {
+					stout_defender
+				}
+			}
+		}
+	}
+}
+
+
+
+# Jodel and Keitl Surrender All German Forces
+country_event = {
+	id = ww2germany.4
+	title = ww2germany.4.t
+	desc = ww2germany.4.d
+	picture = GFX_report_event_german_surrender_ww2
+
+	trigger = {
+	NOT = { date > 1950.1.1 }
+		tag = GER
+		has_global_flag = deadhitler
+		NOT = { has_global_flag = alpen_festung }
+		#NOT = { has_global_flag = player_wants_custom_peacedeals }
+		NOT = { SOV = { has_war_with = ENG }}
+		NOT = { SOV = { has_war_with = USA }}
+	}
+
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		name = ww2germany.4.a
+		news_event = { hours = 6 id = ww2news.15 }
+		set_global_flag = german_surrender
+
+		FIN = {
+			if = {
+				limit = { is_in_faction_with = GER }
+				leave_faction = yes
+				every_country = {
+					limit = { has_war_with = FIN }
+					white_peace = FIN
+				}
+			}
+		}
+		
+		
+					every_country = {
+					limit = { 
+					is_in_faction_with = SOV
+					has_war_with = GER
+					}
+					white_peace = GER
+					}
+				
+					every_country = {
+					limit = { 
+					is_in_faction_with = ENG
+					has_war_with = GER
+					}
+					white_peace = GER
+					}
+				
+					every_country = {
+					limit = { 
+					is_in_faction_with = USA
+					has_war_with = GER
+					}
+					white_peace = GER
+					}
+		
+		
+					every_country = {
+					limit = { 
+					is_in_faction_with = GER
+					has_war_with = SOV
+					}
+					white_peace = SOV
+					}
+				
+					every_country = {
+					limit = { 
+					is_in_faction_with = GER
+					has_war_with = ENG
+					}
+					white_peace = ENG
+					}
+				
+					every_country = {
+					limit = { 
+					is_in_faction_with = GER
+					has_war_with = USA
+					}
+					white_peace = USA
+					}
+				
+		#WGR = {
+			#transfer_state = 56
+			#transfer_state = 57
+			#transfer_state = 58
+			#transfer_state = 59
+			#transfer_state = 42
+			#transfer_state = 51
+			#transfer_state = 50
+			#transfer_state = 52
+			#transfer_state = 53
+			#transfer_state = 55
+			#transfer_state = 54
+			
+			#set_politics = {
+				#ruling_party = democratic
+				#elections_allowed = yes
+			#}
+			#}
+			
+			AUS = {
+			transfer_state = 153
+			transfer_state = 4
+			transfer_state = 152
+			#set_cosmetic_tag = aus_occupied
+			
+			set_politics = {
+				ruling_party = socdem
+				elections_allowed = yes
+			}
+			
+			set_popularities = {
+			nazism = 10
+			communism = 10
+			socdem = 80
+			}
+			
+#create_country_leader = {
+	#name = "Mark Clark"
+	#desc = ""
+	#picture = "gfx/leaders/USA/Portrait_USA_Mark_W_Clark.dds"
+	#expire = "1955.7.27"
+	#ideology = liberalism_ideology
+	#traits = { }
+#}
+			
+			}
+		
+		#USA = {
+			#transfer_state = 52
+			#transfer_state = 53
+			#transfer_state = 55
+			#transfer_state = 152
+			#transfer_state = 54
+
+		#}
+		DEN = {
+			transfer_state = 788 ### Northern Schleswig
+			transfer_state = 37
+			transfer_state = 99
+		}
+		LUX = {
+			transfer_state = 8
+			add_state_core = 8
+		}
+		BEL = {
+			transfer_state = 6
+			transfer_state = 34
+			transfer_state = 789
+			transfer_state = 794
+		}
+		HOL = {
+			transfer_state = 7
+			transfer_state = 35
+			transfer_state = 36
+			transfer_state = 795 ### OSTFRIESLAND
+		}
+		#ENG = {
+			#transfer_state = 4
+			#transfer_state = 56
+			#transfer_state = 57
+			#transfer_state = 58
+			#transfer_state = 59
+
+		#}
+		
+		SAR = {
+		transfer_state = 797 ### SAARLAND
+		set_cosmetic_tag = sar_protectorate
+		}
+		
+		FRA = {
+
+			#transfer_state = 797 ### SAARLAND
+			transfer_state = 29
+			#transfer_state = 42
+			#transfer_state = 51
+			#transfer_state = 50
+
+
+			transfer_state = 461
+			transfer_state = 513
+			transfer_state = 514
+			transfer_state = 462
+			transfer_state = 458
+			transfer_state = 665
+			transfer_state = 459
+			transfer_state = 460
+			transfer_state = 14
+			transfer_state = 23
+
+			transfer_state = 26
+			transfer_state = 20
+			transfer_state = 33
+
+			transfer_state = 25
+			transfer_state = 735
+			transfer_state = 27
+			transfer_state = 28
+			transfer_state = 30
+			transfer_state = 19
+			transfer_state = 31
+			transfer_state = 32
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 22
+			transfer_state = 21
+
+			transfer_state = 29
+			transfer_state = 16
+			transfer_state = 15
+
+			transfer_state = 24
+			transfer_state = 1
+			
+			transfer_state = 793
+			transfer_state = 785
+		set_autonomy = {
+		target = SAR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+		}
+					
+		}
+		
+			
+		
+		CZE = {
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 69
+			transfer_state = 74
+			transfer_state = 75
+			transfer_state = 9
+			transfer_state = 664
+			transfer_state = 72
+		}
+		POL = {
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 86
+			transfer_state = 63
+			transfer_state = 85
+			transfer_state = 87
+			transfer_state = 98
+			transfer_state = 10
+			transfer_state = 90
+			transfer_state = 92
+			transfer_state = 97
+			transfer_state = 5
+			transfer_state = 88
+			transfer_state = 68
+			transfer_state = 762 ### SILESIA
+		}
+		ITA = {
+			transfer_state = 39
+			transfer_state = 160
+			transfer_state = 159
+			transfer_state = 161
+			transfer_state = 158
+			transfer_state = 162
+			transfer_state = 2
+			transfer_state = 157
+			transfer_state = 736
+			transfer_state = 117
+			transfer_state = 156
+			transfer_state = 115
+			transfer_state = 114
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+		BUL = {
+			transfer_state = 77
+			transfer_state = 211
+			transfer_state = 212
+			transfer_state = 48
+		}
+		YUG = {
+			transfer_state = 108
+			transfer_state = 106
+			transfer_state = 105
+			transfer_state = 104
+			transfer_state = 109
+			transfer_state = 103
+			transfer_state = 45
+			transfer_state = 102
+			transfer_state = 163
+			transfer_state = 107
+			transfer_state = 736
+			transfer_state = 764
+			transfer_state = 791
+			transfer_state = 792
+			transfer_state = 796
+			
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			
+		}
+		ALB = {
+			transfer_state = 44
+			add_state_core = 44
+		}
+		GRE = {
+			transfer_state = 731
+			transfer_state = 47
+			transfer_state = 185
+			transfer_state = 186
+			transfer_state = 182
+			transfer_state = 187
+			transfer_state = 184
+			transfer_state = 743
+			transfer_state = 164
+		}
+		HUN = {
+			transfer_state = 43
+			transfer_state = 154
+			transfer_state = 155
+			add_state_core = 43
+			add_state_core = 154
+			add_state_core = 155
+		}
+		NOR = {
+			transfer_state = 110
+			transfer_state = 142
+			transfer_state = 143
+			transfer_state = 144
+		}
+		"ROM" = {
+			transfer_state = 76
+			transfer_state = 77
+			transfer_state = 81
+			transfer_state = 82
+			transfer_state = 83
+			transfer_state = 84
+			transfer_state = 46
+			transfer_state = 79
+		}
+		DDR = {
+			transfer_state = 60
+			transfer_state = 64
+			transfer_state = 65
+			transfer_state = 62
+			transfer_state = 61
+			#set_cosmetic_tag = ddr_occupied
+			
+			#create_country_leader = {
+	#name = "Georgy Zhukov"
+	#desc = ""
+	#picture = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
+	#expire = "1949.10.7"
+	#ideology = stalinism
+	#traits = {
+		
+	#}
+#}
+			
+			}
+		SOV = {
+		#transfer_state = 4 ## AUSTRIA
+			transfer_state = 73
+			transfer_state = 80
+			transfer_state = 146
+			transfer_state = 147
+			transfer_state = 215
+			transfer_state = 216
+			transfer_state = 192
+			transfer_state = 198
+			transfer_state = 78
+			transfer_state = 763
+			
+			transfer_state = 89
+			transfer_state = 91
+			transfer_state = 93
+			transfer_state = 94
+			transfer_state = 95
+			transfer_state = 96
+			transfer_state = 784
+			
+			transfer_state = 11
+			transfer_state = 189
+			transfer_state = 188
+			
+			transfer_state = 12
+			transfer_state = 190
+			
+			transfer_state = 13
+			transfer_state = 191
+			
+			
+			
+			add_to_faction = DDR
+			add_to_faction = BUL
+			add_to_faction = ALB
+			add_to_faction = POL
+			add_to_faction = HUN
+			add_to_faction = ROM
+			#add_to_faction = YUG
+			add_to_faction = CZE
+			puppet = DDR
+			puppet = BUL
+			puppet = ALB
+			puppet = POL
+			puppet = HUN
+			puppet = ROM
+			#puppet = YUG
+			puppet = CZE
+			annex_country = { target = GER transfer_troops = no }
+		}
+		
+		every_state = {
+				limit = { NOT = { is_core_of = WGR } }
+				remove_core_of = GER
+			}
+			
+			GER = {
+			transfer_state = 56
+			transfer_state = 57
+			transfer_state = 58
+			transfer_state = 59
+			transfer_state = 42
+			transfer_state = 51
+			transfer_state = 50
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 55
+			transfer_state = 54
+			transfer_state = 813
+			set_capital = 51
+			
+			set_politics = {
+				ruling_party = conservatism
+				elections_allowed = yes
+			}
+			
+			set_popularities = {
+			nazism = 10
+			communism = 10
+			democratic = 80
+			}
+			
+			}
+			
+
+		
+	}
+}
+
+country_event = {								#### Barbarossa
+	id = ww2germany.5
+	title = ww2germany.5.t
+	desc = ww2germany.5.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes				# on action trigger
+	
+	option = {
+		name = ww2germany.5.a
+				
+
+	}
+}
+
+
+# American Capitulation
+country_event = {
+	id = ww2germany.6
+	title = ww2germany.6.t
+	desc = ww2germany.6.d
+	picture = GFX_report_event_usa_capitulation
+
+	is_triggered_only = yes	
+	
+	## Annex your Half
+	option = {
+		name = ww2germany.6.a
+		ai_chance = { factor = 10 }
+		
+	every_country = { limit = { is_in_faction_with = USA has_war_with = GER } white_peace = GER }	
+	every_country = { limit = { is_in_faction_with = USA has_war_with = JAP } white_peace = JAP }			
+	every_country = { limit = { is_in_faction_with = USA has_war_with = ITA } white_peace = ITA }
+		
+	NEU = {
+	387 = { add_core_of = PREV }
+	388 = { add_core_of = PREV }
+	381 = { add_core_of = PREV }
+	380 = { add_core_of = PREV }
+	382 = { add_core_of = PREV }
+	376 = { add_core_of = PREV }
+	377 = { add_core_of = PREV }
+	807 = { add_core_of = PREV }
+	
+	transfer_state = 387
+	transfer_state = 388
+	transfer_state = 381
+	transfer_state = 380
+	transfer_state = 382
+	transfer_state = 376
+	transfer_state = 377
+	transfer_state = 807
+	}
+	
+	GER = {
+	give_guarantee = NEU		
+	diplomatic_relation = {
+    country = NEU
+    relation = non_aggression_pact
+    active = yes
+	}
+	}
+	
+	if = { limit = { PHI = { is_subject_of = USA } } JAP = { annex_country = { target = PHI transfer_troops = no } } }
+	
+	JAP = {
+	country_event = { id = ww2japan.1 hours = 12 }
+	give_guarantee = NEU		
+	diplomatic_relation = {
+    country = NEU
+    relation = non_aggression_pact
+    active = yes
+	}
+	}
+	
+	
+			GER = {
+			annex_country = { target = USA transfer_troops = no }
+			transfer_state = 375
+			transfer_state = 371
+			transfer_state = 372
+			transfer_state = 367
+			transfer_state = 368
+			transfer_state = 372
+			transfer_state = 366
+			transfer_state = 365
+			transfer_state = 364
+			transfer_state = 363
+			transfer_state = 362
+			transfer_state = 370
+			transfer_state = 803
+			transfer_state = 804
+			transfer_state = 805
+			transfer_state = 806
+			
+			transfer_state = 374
+			transfer_state = 383
+			transfer_state = 384
+			transfer_state = 390
+			transfer_state = 389
+			transfer_state = 391
+			transfer_state = 392
+			transfer_state = 373
+			transfer_state = 394
+			transfer_state = 395
+			transfer_state = 393
+			transfer_state = 396
+			transfer_state = 369
+			transfer_state = 261
+			transfer_state = 357
+			transfer_state = 358
+			transfer_state = 359
+			transfer_state = 360
+			transfer_state = 361
+			
+			transfer_state = 686
+			}
+			
+	JAP = {
+	transfer_state = 463
+	transfer_state = 386
+	transfer_state = 385
+	transfer_state = 378
+	transfer_state = 379
+	
+	transfer_state = 685
+	transfer_state = 632
+	transfer_state = 638
+	transfer_state = 631
+	transfer_state = 629
+	transfer_state = 630
+	transfer_state = 727
+	transfer_state = 642
+	transfer_state = 808
+	}
+	
+		
+			
+	}
+	
+	### Friendly Government
+	option = {
+		name = ww2germany.6.b
+		ai_chance = { factor = 10 }
+		
+every_country = { limit = { is_in_faction_with = USA has_war_with = GER } white_peace = GER }	
+every_country = { limit = { is_in_faction_with = USA has_war_with = JAP } white_peace = JAP }			
+every_country = { limit = { is_in_faction_with = USA has_war_with = ITA } white_peace = ITA }
+		
+	NEU = {
+	387 = { add_core_of = PREV }
+	388 = { add_core_of = PREV }
+	381 = { add_core_of = PREV }
+	380 = { add_core_of = PREV }
+	382 = { add_core_of = PREV }
+	376 = { add_core_of = PREV }
+	377 = { add_core_of = PREV }
+	807 = { add_core_of = PREV }
+	
+	transfer_state = 387
+	transfer_state = 388
+	transfer_state = 381
+	transfer_state = 380
+	transfer_state = 382
+	transfer_state = 376
+	transfer_state = 377
+	transfer_state = 807
+	}
+	
+	GER = {
+	give_guarantee = NEU		
+	diplomatic_relation = {
+    country = NEU
+    relation = non_aggression_pact
+    active = yes
+	}
+	}
+	
+	if = { limit = { PHI = { is_subject_of = USA } } JAP = { annex_country = { target = PHI transfer_troops = no } } }
+	
+	JAP = {
+	country_event = { id = ww2japan.1 hours = 12 }
+	give_guarantee = NEU		
+	diplomatic_relation = {
+    country = NEU
+    relation = non_aggression_pact
+    active = yes
+	}
+	}
+			
+	JAP = {
+	transfer_state = 463
+	transfer_state = 386
+	transfer_state = 385
+	transfer_state = 378
+	transfer_state = 379
+	
+	transfer_state = 685
+	transfer_state = 632
+	transfer_state = 638
+	transfer_state = 631
+	transfer_state = 629
+	transfer_state = 630
+	transfer_state = 727
+	transfer_state = 642
+	transfer_state = 808
+	}
+	
+ GNM = { 
+ 375 = { add_core_of = PREV }
+ 371 = { add_core_of = PREV }
+ 372 = { add_core_of = PREV }
+ 367 = { add_core_of = PREV }
+ 368 = { add_core_of = PREV }
+ 372 = { add_core_of = PREV }
+ 366 = { add_core_of = PREV }
+ 365 = { add_core_of = PREV }
+ 364 = { add_core_of = PREV }
+ 363 = { add_core_of = PREV }
+ 362 = { add_core_of = PREV }
+ 370 = { add_core_of = PREV }
+ 			803 = { add_core_of = PREV }
+			804 = { add_core_of = PREV }
+			805 = { add_core_of = PREV }
+			806 = { add_core_of = PREV }
+			
+ 374 = { add_core_of = PREV }
+ 383 = { add_core_of = PREV }
+ 384 = { add_core_of = PREV }
+ 390 = { add_core_of = PREV }
+ 389 = { add_core_of = PREV }
+ 391 = { add_core_of = PREV }
+ 392 = { add_core_of = PREV }
+ 373 = { add_core_of = PREV }
+ 394 = { add_core_of = PREV }
+ 395 = { add_core_of = PREV }
+ 393 = { add_core_of = PREV }
+ 396 = { add_core_of = PREV }
+ 369 = { add_core_of = PREV }
+ 261 = { add_core_of = PREV }
+ 357 = { add_core_of = PREV }
+ 358 = { add_core_of = PREV }
+ 359 = { add_core_of = PREV }
+ 360 = { add_core_of = PREV }
+ 361 = { add_core_of = PREV }
+ annex_country = { target = USA transfer_troops = no }
+	}
+	
+GER = { 
+add_to_faction = GNM transfer_state = 686 }		
+	}
+	
+	### Satellite
+	option = {
+		name = ww2germany.6.c
+		ai_chance = { factor = 10 }
+		
+		every_country = { limit = { is_in_faction_with = USA has_war_with = GER } white_peace = GER }	
+every_country = { limit = { is_in_faction_with = USA has_war_with = JAP } white_peace = JAP }			
+every_country = { limit = { is_in_faction_with = USA has_war_with = ITA } white_peace = ITA }
+		
+	NEU = {
+	387 = { add_core_of = PREV }
+	388 = { add_core_of = PREV }
+	381 = { add_core_of = PREV }
+	380 = { add_core_of = PREV }
+	382 = { add_core_of = PREV }
+	376 = { add_core_of = PREV }
+	377 = { add_core_of = PREV }
+	807 = { add_core_of = PREV }
+	
+	transfer_state = 387
+	transfer_state = 388
+	transfer_state = 381
+	transfer_state = 380
+	transfer_state = 382
+	transfer_state = 376
+	transfer_state = 377
+	transfer_state = 807
+	
+	}
+	
+	GER = {
+	give_guarantee = NEU		
+	diplomatic_relation = {
+    country = NEU
+    relation = non_aggression_pact
+    active = yes
+	}
+	}
+	
+	if = { limit = { PHI = { is_subject_of = USA } } JAP = { annex_country = { target = PHI transfer_troops = no } } }
+	
+	JAP = {
+	country_event = { id = ww2japan.1 hours = 12 }
+	give_guarantee = NEU		
+	diplomatic_relation = {
+    country = NEU
+    relation = non_aggression_pact
+    active = yes
+	}
+	}
+			
+	JAP = {
+	transfer_state = 463
+	transfer_state = 386
+	transfer_state = 385
+	transfer_state = 378
+	transfer_state = 379
+	
+	transfer_state = 685
+	transfer_state = 632
+	transfer_state = 638
+	transfer_state = 631
+	transfer_state = 629
+	transfer_state = 630
+	transfer_state = 727
+	transfer_state = 642
+	transfer_state = 808
+	}
+	
+	GER {
+	 annex_country = { target = USA transfer_troops = no }
+	 }
+	
+ 			GNM = { 
+ 			375 = { add_core_of = PREV }
+ 			371 = { add_core_of = PREV }
+ 			372 = { add_core_of = PREV }
+ 			367 = { add_core_of = PREV }
+ 			368 = { add_core_of = PREV }
+ 			372 = { add_core_of = PREV }
+ 			366 = { add_core_of = PREV }
+ 			365 = { add_core_of = PREV }
+ 			364 = { add_core_of = PREV }
+ 			363 = { add_core_of = PREV }
+ 			362 = { add_core_of = PREV }
+ 			370 = { add_core_of = PREV }
+			
+ 			374 = { add_core_of = PREV }
+ 			383 = { add_core_of = PREV }
+ 			384 = { add_core_of = PREV }
+ 			390 = { add_core_of = PREV }
+ 			389 = { add_core_of = PREV }
+ 			391 = { add_core_of = PREV }
+ 			392 = { add_core_of = PREV }
+ 			373 = { add_core_of = PREV }
+ 			394 = { add_core_of = PREV }
+ 			395 = { add_core_of = PREV }
+ 			393 = { add_core_of = PREV }
+ 			396 = { add_core_of = PREV }
+ 			369 = { add_core_of = PREV }
+ 			261 = { add_core_of = PREV }
+ 			357 = { add_core_of = PREV }
+ 			358 = { add_core_of = PREV }
+ 			359 = { add_core_of = PREV }
+ 			360 = { add_core_of = PREV }
+ 			361 = { add_core_of = PREV }
+			803 = { add_core_of = PREV }
+			804 = { add_core_of = PREV }
+			805 = { add_core_of = PREV }
+			806 = { add_core_of = PREV }
+			transfer_state = 803
+			transfer_state = 804
+			transfer_state = 805
+			transfer_state = 806
+			transfer_state = 375
+			transfer_state = 371
+			transfer_state = 372
+			transfer_state = 367
+			transfer_state = 368
+			transfer_state = 372
+			transfer_state = 366
+			transfer_state = 365
+			transfer_state = 364
+			transfer_state = 363
+			transfer_state = 362
+			transfer_state = 370
+			
+			transfer_state = 374
+			transfer_state = 383
+			transfer_state = 384
+			transfer_state = 390
+			transfer_state = 389
+			transfer_state = 391
+			transfer_state = 392
+			transfer_state = 373
+			transfer_state = 394
+			transfer_state = 395
+			transfer_state = 393
+			transfer_state = 396
+			transfer_state = 369
+			transfer_state = 261
+			transfer_state = 357
+			transfer_state = 358
+			transfer_state = 359
+			transfer_state = 360
+			transfer_state = 361
+	}
+	
+GER = { puppet = GNM set_autonomy = { target = GNM autonomy_state = autonomy_satellite }add_to_faction = GNM transfer_state = 686 }
+			
+	}
+	
+	option = {
+		name = ww2germany.6.e
+		ai_chance = { factor = 4000 }
+		
+		every_country = { limit = { is_in_faction_with = USA has_war_with = GER } white_peace = GER }	
+every_country = { limit = { is_in_faction_with = USA has_war_with = JAP } white_peace = JAP }			
+every_country = { limit = { is_in_faction_with = USA has_war_with = ITA } white_peace = ITA }
+		
+	NEU = {
+	387 = { add_core_of = PREV }
+	388 = { add_core_of = PREV }
+	381 = { add_core_of = PREV }
+	380 = { add_core_of = PREV }
+	382 = { add_core_of = PREV }
+	376 = { add_core_of = PREV }
+	377 = { add_core_of = PREV }
+	807 = { add_core_of = PREV }
+	
+	transfer_state = 387
+	transfer_state = 388
+	transfer_state = 381
+	transfer_state = 380
+	transfer_state = 382
+	transfer_state = 376
+	transfer_state = 377
+	transfer_state = 807
+	}
+	
+	GER = {
+	give_guarantee = NEU		
+	diplomatic_relation = {
+    country = NEU
+    relation = non_aggression_pact
+    active = yes
+	}
+	}
+	
+	if = { limit = { PHI = { is_subject_of = USA } } JAP = { annex_country = { target = PHI transfer_troops = no } } }
+	
+	JAP = {
+	country_event = { id = ww2japan.1 hours = 12 }
+	give_guarantee = NEU		
+	diplomatic_relation = {
+    country = NEU
+    relation = non_aggression_pact
+    active = yes
+	}
+	}
+			
+	JAP = {
+	transfer_state = 463
+	transfer_state = 386
+	transfer_state = 385
+	transfer_state = 378
+	transfer_state = 379
+	
+	transfer_state = 685
+	transfer_state = 632
+	transfer_state = 638
+	transfer_state = 631
+	transfer_state = 629
+	transfer_state = 630
+	transfer_state = 727
+	transfer_state = 642
+	transfer_state = 808
+	}
+	
+	GER {
+	 annex_country = { target = USA transfer_troops = no }
+	 }
+	
+ 			GNM = {
+			set_cosmetic_tag = german_north_america
+ 			375 = { add_core_of = PREV }
+ 			371 = { add_core_of = PREV }
+ 			372 = { add_core_of = PREV }
+ 			367 = { add_core_of = PREV }
+ 			368 = { add_core_of = PREV }
+ 			372 = { add_core_of = PREV }
+ 			366 = { add_core_of = PREV }
+ 			365 = { add_core_of = PREV }
+ 			364 = { add_core_of = PREV }
+ 			363 = { add_core_of = PREV }
+ 			362 = { add_core_of = PREV }
+ 			370 = { add_core_of = PREV }
+			803 = { add_core_of = PREV }
+			804 = { add_core_of = PREV }
+			805 = { add_core_of = PREV }
+			806 = { add_core_of = PREV }
+			transfer_state = 803
+			transfer_state = 804
+			transfer_state = 805
+			transfer_state = 806
+			
+ 			374 = { add_core_of = PREV }
+ 			383 = { add_core_of = PREV }
+ 			384 = { add_core_of = PREV }
+ 			390 = { add_core_of = PREV }
+ 			389 = { add_core_of = PREV }
+ 			391 = { add_core_of = PREV }
+ 			392 = { add_core_of = PREV }
+ 			373 = { add_core_of = PREV }
+ 			394 = { add_core_of = PREV }
+ 			395 = { add_core_of = PREV }
+ 			393 = { add_core_of = PREV }
+ 			396 = { add_core_of = PREV }
+ 			369 = { add_core_of = PREV }
+ 			261 = { add_core_of = PREV }
+ 			357 = { add_core_of = PREV }
+ 			358 = { add_core_of = PREV }
+ 			359 = { add_core_of = PREV }
+ 			360 = { add_core_of = PREV }
+ 			361 = { add_core_of = PREV }
+			transfer_state = 375
+			transfer_state = 371
+			transfer_state = 372
+			transfer_state = 367
+			transfer_state = 368
+			transfer_state = 372
+			transfer_state = 366
+			transfer_state = 365
+			transfer_state = 364
+			transfer_state = 363
+			transfer_state = 362
+			transfer_state = 370
+			
+			transfer_state = 374
+			transfer_state = 383
+			transfer_state = 384
+			transfer_state = 390
+			transfer_state = 389
+			transfer_state = 391
+			transfer_state = 392
+			transfer_state = 373
+			transfer_state = 394
+			transfer_state = 395
+			transfer_state = 393
+			transfer_state = 396
+			transfer_state = 369
+			transfer_state = 261
+			transfer_state = 357
+			transfer_state = 358
+			transfer_state = 359
+			transfer_state = 360
+			transfer_state = 361
+	}
+	
+GER = { puppet = GNM set_autonomy = { target = GNM autonomy_state = autonomy_integrated_puppet } add_to_faction = GNM transfer_state = 686 }			
+	}
+}
+
+# Canada Capitulation
+country_event = {
+	id = ww2germany.7
+	title = ww2germany.7.t
+	desc = ww2germany.7.d
+	picture = GFX_report_event_canada_capitulation
+
+	is_triggered_only = yes	
+
+	option = {
+		name = ww2germany.7.a
+		ai_chance = { factor = 10 }
+		
+		NEU = {
+			transfer_state = 470
+			transfer_state = 472
+			470 = { add_core_of = PREV }
+			472 = { add_core_of = PREV }
+		}
+
+		JAP = {
+			country_event = { id = ww2japan.2 hours = 12 }
+			transfer_state = 471
+			transfer_state = 473
+			transfer_state = 739
+			transfer_state = 740
+
+		}
+		
+		GER = {
+			annex_country = { target = CAN transfer_troops = no }
+			transfer_state = 331
+			transfer_state = 332
+			transfer_state = 682
+			transfer_state = 683
+			transfer_state = 464
+			transfer_state = 465
+			transfer_state = 466
+			transfer_state = 468
+			transfer_state = 469
+		}	
+			
+	}
+	### Friendly Government
+	option = {
+		name = ww2germany.7.b
+		ai_chance = { factor = 10 }
+		
+	NEU = {
+			transfer_state = 470
+			transfer_state = 472
+			470 = { add_core_of = PREV }
+			472 = { add_core_of = PREV }
+		}
+
+		JAP = {
+			country_event = { id = ww2japan.2 hours = 12 }
+			transfer_state = 471
+			transfer_state = 473
+			transfer_state = 739
+			transfer_state = 740
+
+		}
+		
+		GNM = {
+			annex_country = { target = CAN transfer_troops = no }
+			transfer_state = 331
+			transfer_state = 332
+			transfer_state = 682
+			transfer_state = 683
+			transfer_state = 464
+			transfer_state = 465
+			transfer_state = 466
+			transfer_state = 467
+			transfer_state = 276
+			transfer_state = 468
+			transfer_state = 469
+467 = { add_core_of = PREV }
+276 = { add_core_of = PREV }
+331 = { add_core_of = PREV }
+332 = { add_core_of = PREV }
+682 = { add_core_of = PREV }
+683 = { add_core_of = PREV }
+464 = { add_core_of = PREV }
+465 = { add_core_of = PREV }
+466 = { add_core_of = PREV }
+468 = { add_core_of = PREV }
+469 = { add_core_of = PREV }			
+		}	
+		
+		GER = {
+		add_to_faction = GNM
+		}
+			
+	}
+	
+	option = {
+		name = ww2germany.7.c
+		ai_chance = { factor = 10 }
+		
+	NEU = {
+			transfer_state = 470
+			transfer_state = 472
+			470 = { add_core_of = PREV }
+			472 = { add_core_of = PREV }
+		}
+		
+		GER = {
+					annex_country = { target = CAN transfer_troops = no } }
+
+		JAP = {
+			country_event = { id = ww2japan.2 hours = 12 }
+			transfer_state = 471
+			transfer_state = 473
+			transfer_state = 739
+			transfer_state = 740
+
+		}
+		
+		GNM = {
+			transfer_state = 331
+			transfer_state = 332
+			transfer_state = 682
+			transfer_state = 683
+			transfer_state = 464
+			transfer_state = 465
+			transfer_state = 466
+			transfer_state = 467
+			transfer_state = 276
+			transfer_state = 468
+			transfer_state = 469
+467 = { add_core_of = PREV }
+276 = { add_core_of = PREV }
+331 = { add_core_of = PREV }
+332 = { add_core_of = PREV }
+682 = { add_core_of = PREV }
+683 = { add_core_of = PREV }
+464 = { add_core_of = PREV }
+465 = { add_core_of = PREV }
+466 = { add_core_of = PREV }
+468 = { add_core_of = PREV }
+469 = { add_core_of = PREV }	
+		}	
+		
+		GER = {
+		puppet = GNM set_autonomy = { target = GNM autonomy_state = autonomy_satellite }
+		add_to_faction = GNM
+		}	
+		
+			
+	}
+	
+	option = {
+		name = ww2germany.7.e
+		ai_chance = { factor = 4000 }
+		
+		NEU = {
+			transfer_state = 470
+			transfer_state = 472
+			470 = { add_core_of = PREV }
+			472 = { add_core_of = PREV }
+		}
+		
+		GER = {
+					annex_country = { target = CAN transfer_troops = no } }
+
+		JAP = {
+			country_event = { id = ww2japan.2 hours = 12 }
+			transfer_state = 471
+			transfer_state = 473
+			transfer_state = 739
+			transfer_state = 740
+
+		}
+		
+		GNM = {
+		set_cosmetic_tag = german_north_america
+			transfer_state = 331
+			transfer_state = 332
+			transfer_state = 682
+			transfer_state = 683
+			transfer_state = 464
+			transfer_state = 465
+			transfer_state = 466
+			transfer_state = 467
+			transfer_state = 276
+			transfer_state = 468
+			transfer_state = 469
+
+467 = { add_core_of = PREV }
+276 = { add_core_of = PREV }
+331 = { add_core_of = PREV }
+332 = { add_core_of = PREV }
+682 = { add_core_of = PREV }
+683 = { add_core_of = PREV }
+464 = { add_core_of = PREV }
+465 = { add_core_of = PREV }
+466 = { add_core_of = PREV }
+468 = { add_core_of = PREV }
+469 = { add_core_of = PREV }		
+		}	
+		
+		GER = {
+		puppet = GNM set_autonomy = { target = GNM autonomy_state = autonomy_integrated_puppet }
+		add_to_faction = GNM
+		}	
+			
+	}
+}
+
+
+
+
+country_event = { 	### SUPERPOWER - for GER
+	id = ww2germany.400
+	title = ww2germany.400.t
+	desc = ww2germany.400.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = { ### JOIN and PUPPET
+		name = ww2germany.400.a
+		ai_chance = { base = 100 }
+		
+		add_political_power = -350
+		
+		every_other_country = {
+			limit = {
+				any_owned_state = { is_on_continent = europe }
+			}
+			
+			country_event = { id = ww2germany.401 }
+		}
+	}
+	
+	option = { ### JOIN
+		name = ww2germany.400.b
+		ai_chance = { base = 0 }
+		
+		add_political_power = -150
+		
+		every_other_country = {
+			limit = {
+				any_owned_state = { is_on_continent = europe }
+			}
+			
+			country_event = { id = ww2germany.402 }
+		}
+	}
+	
+	option = { ### WAAARRRR
+		name = ww2germany.400.c
+		ai_chance = { base = 0 }
+		
+		every_other_country = {
+			limit = {
+				any_owned_state = { is_on_continent = europe }
+			}
+			
+			country_event = { id = ww2germany.403 }
+		}
+	}
+}
+
+country_event = { 	### to ALL they GER wants puppets
+	id = ww2germany.401
+	title = ww2germany.401.t
+	desc = ww2germany.401.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = { ### 
+		name = ww2germany.401.a
+		ai_chance = { base = 50 }
+		
+		GER = {
+			set_autonomy = { target = ROOT autonomy_state = autonomy_dominion }
+		}
+	}
+	
+	option = { ### 
+		name = ww2germany.401.b
+		ai_chance = { base = 50	}
+		
+		add_political_power = 150
+		add_war_support = 0.15
+		
+		GER = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+		}
+	}
+}
+
+country_event = { 	### to ALL they GER wants them to join
+	id = ww2germany.402
+	title = ww2germany.402.t
+	desc = ww2germany.402.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = { ### 
+		name = ww2germany.402.a
+		ai_chance = { base = 80 }
+		
+		GER = {
+			add_to_faction = ROOT
+		}
+	}
+	
+	option = { ### 
+		name = ww2germany.402.b
+		ai_chance = { base = 20	}
+		
+		add_political_power = 150
+		add_war_support = 0.15
+		
+		GER = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+		}
+	}
+}
+
+country_event = { 	### to ALL they GER wants WAR
+	id = ww2germany.403
+	title = ww2germany.403.t
+	desc = ww2germany.403.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = { ### 
+		name = ww2germany.403.a
+		ai_chance = { base = 80 }
+		
+		add_political_power = 150
+		add_war_support = 0.15
+		
+		GER = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROOT
+			}
+		}
+	}
+}
+
+
+
+country_event = { 	### Germany demands navy!
+	id = ww2germany.410
+	title = ww2germany.410.t
+	desc = ww2germany.410.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	option = { ### Well ofc
+		name = ww2germany.410.a
+		ai_chance = { base = 100 }
+		
+		ROOT = {		
+			every_navy_leader = {
+				set_nationality = GER
+			}
+			
+			transfer_navy = { target = GER }
+		}
+	}
+	
+	option = { ### No (For real players only)
+		name = ww2germany.410.b
+		ai_chance = { base = 0 }
+		
+		
+	}
+	
+}
+

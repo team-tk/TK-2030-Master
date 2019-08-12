@@ -1,0 +1,190 @@
+﻿capital = 302
+
+oob = "BOL_1936"
+
+add_ideas = {
+religion_catholicism
+}
+
+add_ideas = { 	
+	export_focus
+	tax_low
+	tariffs_average
+	
+	civilian_economy
+	press_regulated
+	key_industries
+	labor_none
+	fdi_allowed
+	
+	cons_volunteer
+	foreign_volunteers
+	
+	train_none
+	#age_19
+	officer_train_none
+	security_minor_restrictions
+	education_budget2 health_budget2   socialsecurity_budget2 
+	
+	unity6		
+	foreign_isolationism
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+}
+set_country_flag = monroe_doctrine
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.11.11"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_popularities = {
+neutrality = 100
+}
+
+create_country_leader = {
+	name = "José Luis Tejada Sorzano"
+	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
+	picture = "Sorzan.dds"
+	expire = "1965.1.1"
+	ideology = despotism # liberalism, personally, but puppet for military
+	traits = { political_prisoner }
+}
+
+create_country_leader = {
+	name = "José Luis Tejada Sorzano"
+	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
+	picture = "Sorzan.dds"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Óscar Únzaga de la Vega"
+	desc = "POLITICS_OSCAR_UNZAGA_DESC"
+	picture = "Unzaga.dds"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		#
+	}
+}
+
+### PLACEHOLDER
+
+create_country_leader = {
+	name = "Óscar Únzaga de la Vega"
+	desc = "POLITICS_OSCAR_UNZAGA_DESC"
+	picture = "Unzaga.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+### PLACEHOLDER
+
+create_country_leader = {
+	name = "Óscar Únzaga de la Vega"
+	desc = "POLITICS_OSCAR_UNZAGA_DESC"
+	picture = "Unzaga.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+    name = "Germán Busch"
+    desc = "POLITICS_GERMAN_BUSCH_DESC"
+    picture = "Busch.dds"
+    expire = "1965.1.1"
+    ideology = oligarchism
+    traits = {
+        fascist_sympathies
+	}
+}
+
+create_country_leader = {
+    name = "Germán Busch"
+    desc = "POLITICS_GERMAN_BUSCH_DESC"
+    picture = "Busch.dds"
+    expire = "1965.1.1"
+    ideology = conservatism_ideology
+    traits = {
+        fascist_sympathies
+	}
+}
+	
+create_country_leader = {
+    name = "Carlos Quintanilla"
+    desc = "POLITICS_CARLOS_QUINTANILLA_DESC"
+    picture = "Quintanilla.dds"
+    expire = "1965.1.1"
+    ideology = oligarchism
+    traits = { }
+}
+
+create_country_leader = {
+	name = "José Antonio Arze"
+	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
+	picture = "Arze.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = { }
+}
+
+
+### PLACEHOLDER
+
+create_country_leader = {
+	name = "José Antonio Arze"
+	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
+	picture = "Arze.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "José Antonio Arze"
+	desc = "POLITICS_JOSE_LUIS_TEJADA_SORZANO_DESC"
+	picture = "Arze.dds"
+	expire = "1965.1.1"
+	ideology = revolutionary_socialism
+	traits = { }
+}
+
+
+	
+create_corps_commander = {
+    name = "Germán Busch"
+    picture = "Busch.dds"
+    traits = { trait_reckless harsh_leader commando }
+    skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+	
+create_corps_commander = {
+    name = "Enrique Peñaranda"
+    picture = "Penaranda.dds"
+    traits = { infantry_officer career_officer }
+    skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}

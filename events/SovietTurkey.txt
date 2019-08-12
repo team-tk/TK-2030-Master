@@ -1,0 +1,152 @@
+﻿
+add_namespace = sovietturkeywar
+
+###Russia Lost the War for Turan Path###
+country_event = {
+	id = sovietturkeywar.1
+	title = sovietturkeywar.1.t
+	desc = sovietturkeywar.1.d
+	picture = GFX_report_event_chinese_army_training
+
+	fire_only_once = yes
+		
+trigger = {
+		tag = SOV
+		has_war_with = TUR
+		has_war_with = GER
+		OR = {
+			TUR = {
+				surrender_progress > 0.90
+			}
+			
+			TUR = {
+				controls_state = 229
+				controls_state = 230
+				controls_state = 231
+				controls_state = 232
+				controls_state = 341
+				controls_state = 49
+			}
+		}
+		has_civil_war = no
+	}
+	
+	mean_time_to_happen = { days = 5 }
+	
+	option = {
+		name = sovietturkeywar.1.a
+		ai_chance = { factor = 100 }
+		TUR = {
+			country_event = { days = 1 id = sovietturkeywar.2 }
+		}
+    }
+}	
+
+###Turkey accepts Soviet Union's reddition###
+country_event = {    
+	id = sovietturkeywar.2
+	title = sovietturkeywar.2.t
+	desc = sovietturkeywar.2.d
+	picture = GFX_report_event_molotov_ribbentrop_stalin_pact
+	
+	is_triggered_only = yes
+
+	#Accept surrender
+	option = {
+		name = sovietturkeywar.2.a
+		ai_chance = {
+			factor = 75
+		}
+		
+		TUR = {
+		    white_peace = SOV
+		    transfer_state=230
+			transfer_state=229
+			transfer_state=233
+			transfer_state=232
+			transfer_state=235
+			transfer_state=234
+			transfer_state=231
+			transfer_state=137}
+			
+		230 = { add_core_of = TUR }
+		229 = { add_core_of = TUR }
+		233 = { add_core_of = TUR }
+		232 = { add_core_of = TUR }
+		235 = { add_core_of = TUR }
+		234 = { add_core_of = TUR }
+		231 = { add_core_of = TUR }
+		137 = { add_core_of = TUR }
+	}
+	#Deny Surrender
+	option = {
+		name = "No,we are coming for more!"
+		ai_chance = {
+			factor = 25
+		}
+		 
+		hidden_effect = {
+		
+			news_event = { days = 1 id = sovietturkeywar.4 }
+		}
+	}
+}
+news_event = {
+	id = sovietturkeywar.3
+	title = "Turkey Won the Soviet-Turkish War"
+	desc = "Turkish forces has captured the Armenia,Baku,Georgia and Caucasus mountains.So yesterday,Soviet Union and Turkey signed a treaty in Moscow.Soviets already has a war with Germany so they couldn't continue fighting against two countries. They surrendered to Turkey "
+	picture = GFX_report_event_molotov_ribbentrop_stalin_pact
+	
+	major = no
+	is_triggered_only = yes
+		
+	option = {
+		name = "How the Turks won this war? Shame upon the Russia."
+		trigger = { 
+			NOT = { TAG = SOV }
+			NOT = { TAG = TUR }
+		}
+	}
+	option = {
+		name = "A Great Victory!"
+		trigger = { 
+			TAG = TUR
+		}
+	}
+	option = {
+		name = "Let's go home..."
+		trigger = { 
+			TAG = SOV
+		}
+	}
+}	
+	
+news_event = {
+	id = sovietturkeywar.4
+	title = "Turkey rejected offer of Soviets in War"
+	desc = "Turkish forces has captured the Armenia,Baku,Georgia and Caucasus mountains.And yesterday,they rejected peace offer of Soviets! Let's see how will this war ends."
+	picture = GFX_report_event_japanese_soldiers_01
+	
+	major = no
+	is_triggered_only = yes
+		
+	option = {
+		name = "Interesting. I guess Turks demands more..."
+		trigger = { 
+			NOT = { TAG = SOV }
+			NOT = { TAG = TUR }
+		}
+	}
+	option = {
+		name = "These terms is not suitable for us!"
+		trigger = { 
+			TAG = TUR
+		}
+	}
+	option = {
+		name = "How dare they?!"
+		trigger = { 
+			TAG = SOV
+		}
+	}	
+}

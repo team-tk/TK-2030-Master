@@ -1,0 +1,1117 @@
+focus_tree = {
+	id = colony_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = MAL	
+				tag = RHO
+				tag = BRM
+			}
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+
+	focus = {
+		id = colonial_loyalty
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		mutually_exclusive = { focus = colonial_independence }
+		x = 16
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = colonial_police
+		icon = GFX_focus_bo_police
+		prerequisite = { focus = colonial_loyalty }
+		x = 14
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05	
+			add_ideas = colonial_policeforce
+			add_autonomy_ratio = {
+				value = 0.05
+				localization = colonial_police
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_elites
+		icon = GFX_focus_bo_kenyan_settlers
+		prerequisite = { focus = colonial_loyalty }
+		x = 18
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = colonial_bribes
+		}
+	}
+
+	focus = {
+		id = colonial_settlement
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = colonial_loyalty }
+		x = 16
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = colonial_settlers
+		}
+	}
+
+	focus = {
+		id = colonial_apartheid
+		icon = GFX_focus_bo_apartheid
+		prerequisite = { focus = colonial_settlement focus = colonial_elites focus = colonial_police }
+		mutually_exclusive = { focus = colonial_citizenship focus = colonial_divide }
+		x = 16
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}	
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = colonial_segregation
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = colonial_citizenship
+		icon = GFX_focus_bo_vote
+		prerequisite = { focus = colonial_settlement focus = colonial_elites focus = colonial_police }
+		mutually_exclusive = { focus = colonial_apartheid focus = colonial_divide }
+		x = 14
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}	
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = colonial_franchise
+			add_stability = 0.1
+			add_war_support = -0.1
+			hold_election = ROOT
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = colonial_votes
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_divide
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = colonial_settlement focus = colonial_elites focus = colonial_police }
+		mutually_exclusive = { focus = colonial_apartheid focus = colonial_citizenship }
+		x = 18
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}	
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = colonial_divisions
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = colonial_model
+		icon = GFX_focus_bo_colony
+		prerequisite = { focus = colonial_apartheid focus = colonial_citizenship focus = colonial_divide }
+		x = 16
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = colonial_perfection
+			}
+			remove_ideas = colonial_oppression
+		}
+	}
+
+	focus = {
+		id = colonial_independence
+		icon = GFX_focus_bo_rally
+		mutually_exclusive = { focus = colonial_loyalty }
+		x = 22
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_political_power = 100
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = colonial_autonomy
+			}
+		}
+	}
+	
+	focus = {
+		id = colonial_democracy
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = colonial_independence }
+		mutually_exclusive = { focus = colonial_communism focus = colonial_fascism }
+		x = 22
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+
+		completion_reward = {
+			add_ideas = colonial_democratic_drift_1
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = democratic_autonomy_1
+			}
+		}
+	}
+	
+	focus = {
+		id = colonial_protests
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = colonial_democracy }
+		x = 22
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+
+		completion_reward = {
+			add_ideas = colonial_democratic_drift_2
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = democratic_autonomy_2
+			}
+		}
+	}
+	
+	focus = {
+		id = colonial_nice_nationalism
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = colonial_protests }
+		available = { has_democratic_government = yes }
+		x = 22
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+
+		completion_reward = {
+			add_ideas = colonial_democratic_drift_3
+			add_autonomy_ratio = {
+				value = 0.2
+				localization = democratic_autonomy_3
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_communism
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = colonial_independence }
+		mutually_exclusive = { focus = colonial_democracy focus = colonial_fascism }
+		x = 20
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_ideas = colonial_communism_drift_1
+		}
+	}
+
+	focus = {
+		id = colonial_direct_action
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { focus = colonial_communism }
+		x = 20
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_ideas = colonial_communism_drift_2
+		}
+	}
+
+	focus = {
+		id = colonial_civil_war
+		icon = GFX_focus_generic_provoke_border_clashes
+		prerequisite = { focus = colonial_direct_action }
+		x = 20
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = neutrality
+				size = 0.5
+			}
+			add_ideas = colonial_communism_drift_3
+			remove_ideas = colonial_oppression	
+		}
+	}
+
+	focus = {
+		id = colonial_fascism
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = colonial_independence }
+		mutually_exclusive = { focus = colonial_democracy focus = colonial_communism }
+		x = 24
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_ideas = colonial_fascism_drift_1
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = fascism_autonomy_1
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_gangs
+		icon = GFX_focus_bo_blackshirts
+		prerequisite = { focus = colonial_fascism }
+		x = 24
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_ideas = colonial_fascism_drift_2
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = fascism_autonomy_2
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_fashy_state
+		icon = GFX_focus_bo_nationalism
+		prerequisite = { focus = colonial_gangs }
+		available = { has_fascist_government = yes }
+		x = 24
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_ideas = colonial_fascism_drift_3
+			add_autonomy_ratio = {
+				value = 0.2
+				localization = fascism_autonomy_3
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_postcolonial
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = colonial_fashy_state focus = colonial_nice_nationalism }
+		available = { 
+		is_subject = no
+		}
+		x = 23
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_political_power = 100
+			remove_ideas = colonial_oppression
+		}
+	}
+
+	focus = {
+		id = colonial_conquest
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = colonial_fashy_state focus = colonial_nice_nationalism focus = colonial_civil_war }
+		available = { 
+		has_war = no
+		}
+		x = 22
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_war_support = 0.2
+			add_ideas = colonial_conquest_idea
+		}
+	}
+
+	focus = {
+		id = colonial_fleet
+		icon = GFX_focus_bo_fleet
+		mutually_exclusive = { focus = colonial_army }
+		available = { 
+			any_owned_state = { is_coastal = yes }	
+		}
+		x = 1
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				name = colonial_fleet
+				bonus = 0.3
+				uses = 2
+				category = naval_doctrine
+			}
+			add_ideas = colonial_carrier_building
+		}
+	}
+
+	focus = {
+		id = colonial_coastal_defence
+		icon = GFX_focus_bo_small_navy
+		prerequisite = { focus = colonial_fleet }
+		mutually_exclusive = { focus = colonial_big_navy}
+		available = { 
+		}
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				name = colonial_interdiction
+				bonus = 0.5
+				uses = 2
+				category = cat_trade_interdiction
+			}
+			add_tech_bonus = {
+				name = colonial_destroyers
+				bonus = 0.3
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_submarines
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = colonial_coastal_defence }
+		available = { 
+		}
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				name = colonial_submarines
+				bonus = 0.3
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_big_navy
+		icon = GFX_focus_bo_big_navy
+		prerequisite = { focus = colonial_fleet }
+		mutually_exclusive = { focus = colonial_coastal_defence}
+		available = { 
+		}
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				name = colonial_fib
+				bonus = 0.5
+				uses = 2
+				category = cat_fleet_in_being
+			}
+			add_tech_bonus = {
+				name = colonial_cruisers
+				bonus = 0.3
+				uses = 2
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_flagship
+		icon = GFX_focus_generic_navy_battleship2
+		prerequisite = { focus = colonial_big_navy }
+		available = { 
+		}
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				name = colonial_carriers
+				bonus = 0.3
+				uses = 2
+				category = cv_tech
+				category = bb_tech
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = colonial_flagship focus = colonial_submarines }
+		available = { 
+		}
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+	}
+
+	focus = {
+		id = colonial_naval_academy
+		icon = GFX_focus_bo_navy
+		prerequisite = { focus = colonial_flagship focus = colonial_submarines }
+		available = { 
+		}
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			navy_experience = 50
+			add_ideas = colonial_academy
+			add_tech_bonus = {
+				name = colonial_fleet
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		mutually_exclusive = { focus = colonial_fleet }
+		available = { 
+		}
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = colonial_army
+				bonus = 0.3
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_army_equipment
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = colonial_army }
+		available = { 
+		}
+		x = 4
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			army_experience = 10
+			add_ideas = colonial_gunsmiths
+			add_tech_bonus = {
+				name = colonial_equipment
+				bonus = 0.3
+				uses = 2
+				category = infantry_weapons	
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_army_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = colonial_army_equipment }
+		available = { 
+		}
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = colonial_artillery
+				bonus = 0.3
+				uses = 2
+				category = artillery	
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_army_motorization
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = colonial_army }
+		available = { 
+		}
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			army_experience = 10
+			add_ideas = colonial_motorisation
+			add_tech_bonus = {
+				name = colonial_cars
+				bonus = 0.3
+				uses = 2
+				category = motorized_equipment	
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_army_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = colonial_army_motorization }
+		available = { 
+		}
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = colonial_tanks
+				bonus = 0.3
+				uses = 2
+				category = armor	
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_army_support
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = colonial_army_tanks focus = colonial_army_artillery }
+		available = { 
+		}
+		x = 5
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = colonial_companies
+				bonus = 0.5
+				uses = 3
+				category = support_tech		
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_airforce
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = colonial_army_support focus = colonial_naval_academy focus = colonial_dockyards }
+		available = { 
+		}
+		x = 3
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = colonial_air
+				bonus = 0.5
+				uses = 2
+				category = light_air		
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_modernisation
+		icon = GFX_goal_generic_production
+		available = { 
+		}
+		x = 10
+		y = 0
+		cost = 10	
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = colonial_industry
+				bonus = 0.3
+				uses = 4
+				category = industry		
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_resources
+		icon = GFX_focus_bo_mining
+		prerequisite = { focus = colonial_modernisation }
+		available = { 
+		}
+		x = 10
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_ideas = colonial_extraction
+		}
+	}
+
+	focus = {
+		id = colonial_railways_1
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = colonial_modernisation }
+		available = { 
+		}
+		x = 8
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_railways_2
+		icon = GFX_focus_bo_companies
+		prerequisite = { focus = colonial_railways_1 }
+		available = { 
+		}
+		x = 8
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_ideas = colonial_capitalists
+		}
+	}
+
+	focus = {
+		id = colonial_factories_1
+		icon = GFX_focus_bo_factories
+		prerequisite = { focus = colonial_modernisation }
+		available = { 
+		}
+		x = 12
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_factories_2
+		icon = GFX_focus_bo_work
+		prerequisite = { focus = colonial_factories_1 }
+		available = { 
+		}
+		x = 12
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_ideas = colonial_builders
+		}
+	}
+
+	focus = {
+		id = colonial_research
+		icon = GFX_focus_research
+		prerequisite = { focus = colonial_factories_2 focus = colonial_railways_2 }
+		available = {  
+		}
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_research_slot = 1	
+		}
+	}
+
+	focus = {
+		id = colonial_research_civilian
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = colonial_research }
+		available = {  
+		}
+		x = 11
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_research_slot = 1	
+			add_tech_bonus = {
+				name = colonial_civ_research
+				bonus = 0.4
+				uses = 3
+				category = electronics
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = colonial_research_military
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = colonial_research }
+		available = {  
+		}
+		x = 9
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = colonial_mil_research
+				bonus = 0.4
+				uses = 3
+				category = rocketry
+				category = nuclear
+			}
+		}
+	}
+
+}

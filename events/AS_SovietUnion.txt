@@ -1,0 +1,351 @@
+﻿##### August Storm
+##### SOV Events
+
+add_namespace = as_sov
+
+country_event = {     
+	id = as_sov.9
+	title = as_sov.9.t
+	desc = as_sov.9.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+
+	option = {
+		name = as_sov.9.a 							# UK accepts partition of Iran
+		set_global_flag = sov_countenance_flag
+		add_stability = 0.10
+		#add_opinion_modifier = { target = ENG modifier = offered_support }
+		add_political_power = 50
+		news_event = { id = as_news.5 hours = 4 }
+		SOV = {
+			transfer_state = 414
+			transfer_state = 416
+			transfer_state = 418
+			transfer_state = 419
+			transfer_state = 420
+			transfer_state = 266			
+		}
+		ENG = {
+			transfer_state = 413
+			transfer_state = 412
+			transfer_state = 411
+			transfer_state = 410
+			transfer_state = 417			
+			transfer_state = 421
+			transfer_state = 413			
+		}		
+	}
+}
+
+country_event = {     					# Propose Bitter Peace
+	id = as_sov.14
+	title = as_sov.14.t
+	desc = as_sov.14.d
+	picture = GFX_report_event_generic_communist_congress
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 0
+	}	
+	
+	trigger = {
+		tag = SOV
+		has_communist_government = yes
+		NOT = { has_country_flag = SOV_PEACE }
+		OR = {		
+			AND = {	
+				NOT = { 219 = { is_controlled_by = SOV } }   # Moscow
+				NOT = { 195 = { is_controlled_by = SOV } }	 # Leningrad
+				NOT = { 217 = { is_controlled_by = SOV } }	 # Stalingrad
+			}
+			surrender_progress > 0.70			
+		}
+
+		has_war_with = GER
+        NOT = {
+            has_civil_war = yes
+        }		
+	}   
+		
+	option = {
+		name = as_sov.14.a  # At least it would save the Politburo...
+		ai_chance = { factor = 10 }
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Lavrentiy Beria"
+			id = 498	
+			desc = "POLITICS_LAVRENTIY_BERIA_DESC"
+			picture = "Portrait_SOV_Lavrentiy_P_Beria.dds"
+			expire = "1953.12.23"
+			ideology = stalinism
+			traits = {
+				backroom_backstabber # was none
+				democratic_reformer
+			}
+		}		
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+		set_country_flag = SOV_PEACE
+		GER = { country_event = { id = BP_USSR.9 } }
+	}
+	
+	option = {
+		name = as_sov.14.b    # We will never surrender !
+		ai_chance = { factor = 0 }
+		add_stability = 0.15
+	}	
+}
+
+country_event = {     					# Germany accept proposal
+	id = as_sov.15
+	title = as_sov.15.t
+	desc = as_sov.15.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		GER = { white_peace = SOV }
+	}
+
+	option = {
+		name = as_sov.15.a  # At least it would save the Politburo...
+		ai_chance = { factor = 10 }
+		#add_stability = 0.50
+		if = {
+			limit = { 
+				SOV = { has_war_with = JAP } 
+				JAP = { has_fascist_government = yes }
+			}
+			SOV = { 
+				white_peace = JAP 				
+				diplomatic_relation = {
+					country = JAP
+					relation = non_aggression_pact
+					active = yes
+				}			
+			}			
+		}
+		diplomatic_relation = {
+				country = GER
+				relation = non_aggression_pact
+				active = yes
+		}
+		every_owned_state = {
+			limit = {	
+				OR = {	
+					is_on_continent = europe
+					is_on_continent = middle_east
+				}
+			}
+			GER = {
+				transfer_state = PREV				
+			}
+		}
+		GER = { 
+			transfer_state = 351
+			transfer_state = 252
+			transfer_state = 255
+			transfer_state = 239
+			transfer_state = 236
+		}
+		random_other_country = {
+			limit = {
+				original_tag = ROM
+				has_fascist_government = yes
+			}
+                if = {
+                    limit = { 78 = { owner = { original_tag = SOV } } }
+                    transfer_state = 78
+                }
+                if = {
+                    limit = { 80 = { owner = { original_tag = SOV } } }
+                    transfer_state = 80
+                }
+                if = {
+                    limit = { 192 = { owner = { original_tag = SOV } } }
+                    transfer_state = 192
+                }
+                if = {
+                    limit = { 198 = { owner = { original_tag = SOV } } }
+                    transfer_state = 198
+                }
+                diplomatic_relation = { country = SOV relation = non_aggression_pact active = yes }
+		}
+    #if Romania was annexed by USSR
+        if = {
+            limit = {
+                AND = {
+                    ROM = { exists = no }
+                    82 = { owner = { original_tag = SOV }}
+                }
+            }
+            ROM = { transfer_state = 82 }
+        }
+        if = {
+            limit = {
+                AND = {
+                    ROM = { exists = no }
+                    83 = { owner = { original_tag = SOV }}
+                }
+            }
+            ROM = { transfer_state = 83 }
+        }
+        if = {
+            limit = {
+                AND = {
+                    ROM = { exists = no }
+                    76 = { owner = { original_tag = SOV }}
+                }
+            }
+            ROM = { transfer_state = 76 }
+        }
+        if = {
+            limit = {
+                AND = {
+                    ROM = { exists = no }
+                    84 = { owner = { original_tag = SOV }}
+                }
+            }
+            ROM = { transfer_state = 84 }
+        }
+        if = {
+            limit = {
+                AND = {
+                    ROM = { exists = no }
+                    81 = { owner = { original_tag = SOV }}
+                }
+            }
+            ROM = { transfer_state = 81 }
+        }
+        if = {
+            limit = {
+                AND = {
+                    ROM = { exists = no }
+                    46 = { owner = { original_tag = SOV }}
+                }
+            }
+            ROM = { transfer_state = 46 }
+        }
+        if = {
+            limit = {
+                AND = {
+                    ROM = { exists = no }
+                    77 = { owner = { original_tag = SOV }}
+                }
+            }
+            ROM = { transfer_state = 77 }
+        }
+        if = {
+            limit = {
+                AND = {
+                    ROM = { exists = no }
+                    79 = { owner = { original_tag = SOV }}
+                }
+            }
+            ROM = { transfer_state = 79 }
+        }
+        if = {
+            limit = {
+                AND = {
+                    ROM = { exists = no }
+                    80 = { owner = { original_tag = SOV }}
+                }
+            }
+            ROM = { transfer_state = 80 }
+        }
+        if = {
+            limit = {
+                AND = {
+                    ROM = { exists = no }
+                    78 = { owner = { original_tag = SOV }}
+                }
+            }
+            ROM = { transfer_state = 78 }
+        }		
+		random_other_country = {
+			limit = {
+				original_tag = FIN
+				NOT = { has_war_with = GER }
+				NOT = { is_in_faction_with = ENG }
+
+				147 = { NOT = { is_controlled_by = FIN } }
+				722 = { NOT = { is_controlled_by = FIN } }				
+			}
+            if = {
+                    limit = { 146 = { owner = { original_tag = SOV } } }
+                    transfer_state = 146
+                }
+                if = {
+                    limit = { 147 = { owner = { original_tag = SOV } } }
+                    transfer_state = 147
+                }
+                if = {
+                    limit = { 722 = { owner = { original_tag = SOV } } }
+                    transfer_state = 722
+                }
+                if = {
+                    limit = { 213 = { owner = { original_tag = SOV } } }
+                    transfer_state = 213
+                }
+                if = {
+                    limit = { 215 = { owner = { original_tag = SOV } } }
+                    transfer_state = 215
+                }
+                if = {
+                    limit = { 216 = { owner = { original_tag = SOV } } }
+                    transfer_state = 216
+                }
+                white_peace = SOV
+                diplomatic_relation = { country = SOV relation = non_aggression_pact active = yes }		
+		}					
+		every_state = {
+				limit = {	
+					is_core_of = SOV
+					NOT = { is_claimed_by = GER }
+					is_controlled_by = JAP
+					is_on_continent = asia
+				}
+				JAP = {
+					transfer_state = PREV				
+				}
+		}		
+		if = {
+			limit = { 
+				OR = {
+					JAP = { is_in_faction_with = GER }
+					JAP = { has_fascist_government = yes } 
+				}
+			}
+				JAP = {
+					transfer_state = 408  # Vladivostok
+					transfer_state = 409
+					transfer_state = 560
+					transfer_state = 655 # Sakhalin
+					add_state_claim = 655
+					add_state_core = 655
+					transfer_state = 637
+					transfer_state = 657
+				}			
+		}		
+		news_event = { id = as_news.1 hours = 4 }
+	}		
+}
+
+country_event = {     					# Germany refuse
+	id = as_sov.16
+	title = as_sov.16.t
+	desc = as_sov.16.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+		
+	option = {
+		name = as_sov.16.a  
+		ai_chance = { factor = 10 }	
+		SOV = { add_ideas = soviet_partisans }		
+	}	
+}

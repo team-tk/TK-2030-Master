@@ -1,0 +1,48 @@
+defined_text = {
+	name = building_type
+
+	text = {
+		trigger = {
+			check_variable = { ROOT.destroy_menu = 1 }
+		}
+		localization_key = infrastructure
+	}
+	text = {
+		trigger = {
+			check_variable = { ROOT.destroy_menu = 2 }
+		}
+		localization_key = anti_air_building
+	}
+	text = {
+		trigger = {
+			check_variable = { ROOT.destroy_menu = 3 }
+		}
+		localization_key = air_base
+	}
+	text = {
+		trigger = {
+			check_variable = { ROOT.destroy_menu = 4 }
+		}
+		localization_key = radar_station
+	}
+	text = {
+		localization_key = STATE_BUILDINGS
+	}
+}
+
+defined_text = {
+	name = building_remove_button
+
+	text = {
+		trigger = {
+			ROOT = {
+				has_war = yes
+				has_country_flag = removed_building
+			}
+		}
+		localization_key = BUILDINGS_REMOVE_COOLDOWN
+	}
+	text = {
+		localization_key = BUILDING_SLOT_REMOVE_BUILDING_LEVEL
+	}
+}

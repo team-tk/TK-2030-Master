@@ -1,0 +1,333 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+	}
+}
+division_template = {
+	name = "National Guard Division"  	# Standard formation for NG divisions through late 1940
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
+	}
+}
+division_template = {
+	name = "Cavalry Division"  		# 1st Cavalry Division only
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
+		engineer = { x = 0 y = 1 }   # US Eng Bn
+	}
+}
+division_template = {
+	name = "Garrison Brigade"  		# used for island defense (older equipment, lower experience)
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   
+	}
+	priority = 0
+}
+
+###### OOB ######
+units = {
+	####### CONUS Theater #######
+			
+	### 4th Army -- note: Armies only paper organizations in 1936 ###
+	# VII Army Corps (CO: Bishop) #
+	division= {			
+		name = "34th 'Red Bull' Division"		
+		location = 7315
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		name = "35th 'Santa Fe' Division"		
+		location = 7315
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	# IX Army Corps (CO: DeWitt) #
+	division= {			
+		name = "3rd 'Rock of the Marne' Division"		
+		location = 7315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}	
+	division= {			
+		name = "4th 'Ivy' Division"		
+		location = 7315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}			
+	division= {			
+		name = "5th 'Red Diamond' Division"		
+		location = 7315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}	
+	division= {			
+		name = "6th 'Red Star' Division"		
+		location = 7315
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}	
+	
+	
+	division = {			
+		name = "40th 'Sunshine' Division"		
+		location = 7315
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	division= {			
+		name = "41st 'Sunset' Division"		
+		location = 7315
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+	
+
+	##### NAVAL UNITS #####
+	### PACIFIC FLEET -- San Diego
+	navy = {					
+		name = "Battleship Division 1"				
+		base = 1562
+		location = 1562 # San Diego
+		ship = { name = "ARS Nevada" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Nevada Class" } } }				
+		ship = { name = "ARS Arizona" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
+						
+	}					
+	navy = {					
+		name = "Battleship Division 2"				
+		base = 1562
+		location = 1562 # San Diego
+		ship = { name = "ARS Oklahoma" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Nevada Class" } } }				
+		ship = { name = "ARS Tennessee" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Tennessee Class" } } }				
+		ship = { name = "ARS California" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Tennessee Class" } } }				
+	}								
+	navy = {					
+		name = "Carrier Division"				
+		base = 1562
+		location = 1562 # San Diego
+		ship = { name = "ARS Lexington" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } } 
+			air_wings = {
+				cv_fighter_equipment_0 =  { owner = "USA" amount = 13 } # historical: 16
+				cv_CAS_equipment_1 =  { owner = "USA" amount = 24 } # historical: 30
+				cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
+			}
+		}
+	}					
+	navy = {					
+		name = "Cruiser Division 3"				
+		base = 1562
+		location = 1562 # San Diego
+		ship = { name = "ARS Richmond" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+		ship = { name = "ARS Trenton" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+		ship = { name = "ARS Concord" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+	}
+	navy = {					
+		name = "Cruiser Division 4"				
+		base = 1562
+		location = 1562 # San Diego
+		ship = { name = "USS Pensacola" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Pensacola class" } } }				
+		ship = { name = "USS Salt Lake City" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Pensacola class" } } }				
+		ship = { name = "USS Portland" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = USA version_name = "Portland Class" } } }
+	}									
+	navy = {					
+		name = "Cruiser Division 6"				
+		base = 1562
+		location = 1562 # San Diego
+		ship = { name = "ARS New Orleans" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
+		ship = { name = "ARS Astoria" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
+		ship = { name = "ARS Minneapolis" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
+		ship = { name = "ARS San Francisco" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
+	}					
+	navy = {					
+		name = "Destroyer Flotilla  1"				
+		base = 1562
+		location = 1562 # San Diego
+		ship = { name = "ARS Raleigh" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+		# 1st Destroyer Division				
+		ship = { name = "ARS Dewey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "ARS Hull" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "ARS MacDonough" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "ARS Worden" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		# 2nd Destroyer Division				
+		ship = { name = "ARS Farragut" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "ARS Dale" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "ARS Monaghan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "ARS Aylwin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		# 34th Destroyer Division			
+		ship = { name = "ARS Rathburne" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS Talbot" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS Waters" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS Dent" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		# 35th Destroyer Division			
+		ship = { name = "ARS Ballard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS Thornton" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS Litchfield" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS Zane" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS Wasmuth" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+	}				
+	navy = {					
+		name = "Destroyer Flotilla  5"				
+		base = 1562
+		location = 1562 # San Diego
+		# 32nd Destroyer Division				
+		ship = { name = "ARS Humphreys" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS King" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS Sands" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS Lawrence" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		# 33rd Destroyer Division				
+		ship = { name = "ARS Crane" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS Kilty" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS Kennison" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "ARS Crosby" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+	}					
+	navy = {					
+		name = "4th Submarine Squadron"				
+		base = 1562
+		location = 1562 # San Diego
+		# 41st Submarine Division				
+		ship = { name = "ARS S-18" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "ARS S-23" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "ARS S-27" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "ARS S-28" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "ARS S-34" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "ARS S-35" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		# 42nd Submarine Division				
+		ship = { name = "ARS Argonaut" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
+		ship = { name = "ARS Narwhal" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
+		ship = { name = "ARS Nautilus" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
+		ship = { name = "ARS Dolphin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
+		ship = { name = "ARS Cachalot" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
+		ship = { name = "ARS Cuttlefish" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
+		# 43rd Submarine Division				
+		ship = { name = "ARS Porpoise" definition = submarine equipment = { submarine_2 = { amount = 1 owner = USA } } }
+		ship = { name = "ARS Pike" definition = submarine equipment = { submarine_2 = { amount = 1 owner = USA } } }
+		ship = { name = "ARS Shark" definition = submarine equipment = { submarine_2 = { amount = 1 owner = USA } } }
+	}					
+			
+
+	
+}
+		
+air_wings = {
+	### 1 FAAF Wing -- Los Angeles
+	378 = {
+		# 7th Bombardment Group 
+		# 19th Bombardment Group 
+		tac_bomber_equipment_0 = {
+			owner = "USA" 
+			amount = 60
+		}
+		# 17th Attack Group 
+		CAS_equipment_1 = {
+			owner = "USA" 
+			amount = 48
+		}
+	}
+
+	
+	### FSN Pacific Naval Patrol Division -- San Diego
+	378 = { 
+		# Naval Patrol Wing 1 
+		# Naval Patrol Wing 2 
+		nav_bomber_equipment_1 =  {
+			owner = "USA" 
+			amount = 72
+		}
+	}
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "USA"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 90
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 90
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 90
+	}
+
+
+}
+#####################

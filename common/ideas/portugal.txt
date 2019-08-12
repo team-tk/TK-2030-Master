@@ -1,0 +1,952 @@
+ideas = {
+
+	country = {
+		
+		POR_oscar_carmona = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = idea_president_oscarmona	
+						
+			modifier = {
+				drift_defence_factor = 0.2
+				army_org_Factor = 0.05
+			}
+		}
+		
+		POR_salazar = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = idea_president_salazar	
+						
+			modifier = {
+				opinion_gain_monthly_factor = 0.30
+				political_power_factor = 0.15
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		
+		POR_duke_duarte_nuno = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = idea_duke_duarte_nuno	
+						
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.2
+			}
+		}
+		
+		POR_casa_braganza = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = idea_casa_braganza
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.10
+			}
+		}
+		
+		POR_king_duarte_nuno = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = idea_duke_duarte_nuno	
+						
+			modifier = {
+				stability_factor = 0.1
+				drift_defence_factor = 0.5
+			}
+		}
+		
+		POR_deuspatriafamilia_focus = {
+			allowed = {
+				original_tag = POR
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				unity_factor = 0.05
+				political_power_factor = 0.15
+			}
+		}
+		
+		estado_novo = {
+			allowed = {
+				original_tag = POR
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_estado_novo
+
+			rule = {
+				can_join_opposite_factions = yes
+				can_create_factions = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				unity_factor = -0.05
+				conscription_factor = 0.15
+			}
+		}
+		
+		pvde = {
+			allowed = {
+				original_tag = POR
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = idea_pvde
+			
+			modifier = {   
+				enemy_partisan_effect = -0.25
+				foreign_subversive_activites = -0.3
+				drift_defence_factor = 0.1
+			}
+		}
+		
+		POR_ultramar_focus = {
+			allowed = {
+				original_tag = POR
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				unity_factor = 0.05
+			}
+		}
+		
+		POR_indonesian_nationalists = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			modifier = {
+				autonomy_gain = 1
+				neutrality_drift = 0.2
+				nationalism_drift = 0.2
+				democratic_drift = -0.1
+				conservatism_drift = -0.1
+				socdem_drift = -0.1
+			}
+		}
+		
+		POR_support_indonesian_uprising = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+
+			rule = {
+				can_send_volunteers = yes
+			}
+
+			modifier = {
+				send_volunteer_size = 3
+				send_volunteers_tension = -0.5
+				send_volunteer_divisions_required = -1
+			}
+		}
+
+		liberalism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_democratic_government = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				justify_war_goal_time = 0.25
+				democratic_drift = 0.1
+			}
+		}
+	
+		conservatism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_neutral_government = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				research_time_factor = -0.1
+				neutrality_drift = 0.1
+				conservatism_drift = 0.1
+				fascism_drift = -0.2
+				nazism_drift = -0.2
+			}
+		}
+		
+		bdprata_1 = {
+			
+			picture = idea_bdprata_1
+			
+			allowed = {
+				original_tag = POR
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		bdprata_2  = {
+			
+			picture = idea_bdprata_2
+			
+			allowed = {
+				original_tag = POR
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		POR_intervention_spain_focus = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.5
+				send_volunteers_tension = -0.5
+			}
+		}
+		
+		POR_flexible_foreign_policy = {
+
+			picture = generic_flexible_foreign_policy
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = POR
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			rule = {
+				can_join_opposite_factions = yes
+			}
+			
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.75
+			}
+		}
+		
+		cacadores_forces = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				special_forces_cap = 0.35
+			}
+			
+			enable_subunits = {
+			PSP
+			GNR
+			FEC
+			BCP
+		}
+	}
+		}
+
+
+	political_advisor = {
+	
+		alvaro_cunhal = {
+												
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { communist_revolutionary }
+	
+			do_effect = {
+				NOT = {
+					has_communist_government = yes
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		alberto_monsaraz = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { fascist_demagogue }
+	
+			do_effect = {
+				NOT = {
+					has_fascist_government = yes
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		antonio_sergio = {
+
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { democratic_reformer }
+
+			do_effect = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}		
+
+		POR_augusto_de_vasconcelos = {
+
+			picture = generic_political_advisor_europe_1
+
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		POR_pais_sousa = {
+				
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		POR_jaime_cortesao = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}
+
+	theorist = {
+
+		POR_jose_norton_de_matos = {
+
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		POR_jose_manuel_sarmento_de_beires = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+		POR_ortins_manuel_bettencourt = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+
+	}
+
+
+
+	army_chief = {
+		
+
+		POR_rolao_pretea = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		POR_silva_bastos = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		POR_lobato_guerra = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+		POR_manuel_gouveia = {
+			
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		POR_humberto_delgado = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+		
+
+		POR_jaime_afreixo = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		POR_americo_tomas = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+	high_command = {
+
+		POR_manuel_quintao_meireles = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		POR_jose_adriano_rebelo_pequito = {
+		
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		POR_francisco_craveiro_lopes = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		POR_jose_filipe_rodrigues_de_barros = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+
+	aircraft_manufacturer = { 
+		
+		designer = yes
+		
+		ogma = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				light_air = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# military production didn't really start until 1950
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		forca_aerea = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# military production didn't really start until 1950
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+		
+		##designer = yes
+		
+		arsenal_alfeite = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		arsenal_marinha = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		lisnave = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+				arsenalp = {
+			
+			picture = idea_arsenalp
+			
+			allowed = {
+				original_TAG = POR
+			}
+						
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		fabrica_material_guerra = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			equipment_bonus = {
+				# rifles (mauser 98k) and light artillery
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		fabrica_polvoras_artificios = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		edfor = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	industrial_concern = {
+	
+			bdprata2 = {
+			
+			picture = idea_bdprata2
+			
+			allowed = {
+				original_TAG = POR
+			}
+						
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		cuf = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+	
+		instituto_superior = {
+			
+			allowed = {
+				original_tag = POR 
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+			
+			research_bonus = {
+				electronics = 0.1
+			}
+		}
+		
+		
+		sonap = {
+			
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = { refinery_concern }
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.15
+			}
+		}
+		
+		soares_costa = {
+		
+			allowed = {
+				original_tag = POR
+			}
+			
+			research_bonus = {
+			}
+		
+			traits = { construction_company }
+		
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+			}
+		
+		}
+	}
+}

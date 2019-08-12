@@ -1,0 +1,125 @@
+﻿capital = 298
+
+oob = "LIB_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+religion_protestantism
+}
+
+add_ideas = { 	
+		export_focus
+		tax_low
+		tariffs_average
+		
+		civilian_economy
+		press_regulated
+		key_industries
+		labor_none
+		fdi_allowed
+		
+		cons_volunteer
+		foreign_volunteers
+		
+		train_none
+		#age_19
+		officer_train_none
+		security_minor_restrictions
+		education_budget2 health_budget2  socialsecurity_budget2
+		
+		unity6		
+		foreign_isolationism
+}
+
+LIB = { 
+	set_variable = {
+		var = LIB_USA_influence
+		value = 5
+	}
+}
+
+add_ideas = { 	
+	LIB_home_of_the_free
+	LIB_hinterland_problems_1
+	LIB_corrupt_army1
+}
+
+set_convoys = 10
+
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1931.1.1"
+	election_frequency = 96
+	elections_allowed = yes
+}
+
+set_popularities = {
+conservatism = 100
+}
+
+create_country_leader = {
+	name = "Charles King"
+	desc = "POLITICS_CHARLES_KING_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = { resurgent_politician }
+}
+create_country_leader = {
+	name = "Edwin Barclay"
+	desc = "POLITICS_EDWIN_BARCLAY_DESC"
+	picture = "gfx/leaders/DARK/Portrait_DARK_Edwin_Barclay.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}
+create_country_leader = {
+	name = "Didwho Welleh Twe"
+	desc = "POLITICS_CHARLES_KING_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = anti_revisionism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Jeh"
+	desc = "POLITICS_JEH_DESC"
+	picture = "gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Alford Russ"
+	portrait_path = "gfx/leaders/DARK/Portrait_DARK_Alford_Russ.dds"
+	traits = { trait_cautious infantry_officer urban_assault_specialist }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+	
+	id = 30011
+}
+create_corps_commander = {
+	name = "Moses Grant"
+	portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+	traits = { infantry_officer jungle_rat ranger }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+	
+	id = 30010
+}

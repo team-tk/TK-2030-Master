@@ -1,0 +1,9 @@
+ai_historical_focus_list_IRE = {
+	ai_national_focuses = {
+	IRE_pol
+	IRE_1stamend
+	IRE_demo
+	IRE_iraban
+	IRE_neut
+	}
+}

@@ -1,0 +1,1121 @@
+﻿###########################
+# GGIP Events
+###########################
+
+add_namespace = ggip
+add_namespace = ggipnews
+
+# Greece demands Rhodes
+country_event = {
+	id = ggip.1
+	title = ggip.1.t
+	desc = ggip.1.d
+	picture = GFX_report_event_greek_troops
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_war_with = GRE }
+	}
+	
+	option = {
+		name = ggip.1.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		GRE = { country_event = { id = ggip.2 days = 1 } }
+		effect_tooltip = {
+			GRE = {
+				transfer_state = 164
+			}
+		}
+		country_event = { id = ggip.3 days = 7 }
+		hidden_effect = {
+			news_event = { id = ggipnews.1 hours = 6 }
+		}
+	}
+	
+	option = {
+		name = ggip.1.b
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 3
+				strength_ratio = {
+					tag = GRE
+					ratio > 0.7
+				}
+			}
+
+			modifier = {
+				factor = 0.1
+				any_country = {
+					is_major = yes
+					is_in_faction_with = ITA
+				}
+			}
+		}
+
+		GRE = { country_event = { id = ggip.4 days = 1 } 
+			if = {
+				limit = {
+					is_in_faction_with = ITA
+					is_faction_leader = yes
+				}
+				remove_from_faction = ITA
+			}
+			if = {
+				limit = { 
+					is_in_faction_with = ITA
+					is_faction_leader = no
+				}
+				random_country = {
+					limit = { 
+						is_in_faction_with = GRE
+						is_faction_leader = yes
+					}
+					remove_from_faction = GRE
+				}
+			}			
+		}		
+		hidden_effect = {
+			news_event = { hours = 1 id = ggipnews.2 }
+		}
+		effect_tooltip = {
+			GRE = {
+				declare_war_on = {
+					target = ITA
+					type = take_state
+					generator = { 164 }
+				}
+			}
+		}
+	}
+}
+
+# Italy cedes Dodecanese
+country_event = {
+	id = ggip.2
+	title = ggip.2.t
+	desc = ggip.2.d
+	picture = GFX_report_event_german_polish_border
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.2.a
+		transfer_state = 164
+	}
+}
+
+# Effect on Italy
+country_event = {
+	id = ggip.3
+	title = ggip.3.t
+	desc = ggip.3.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.3.a
+		ai_chance = { factor = 10 }
+		add_opinion_modifier = { target = GER modifier = medium_decrease }
+	}
+
+	option = {
+		name = ggip.3.b
+		ai_chance = { factor = 10 }
+		add_opinion_modifier = { target = GRE modifier = medium_increase }
+		GRE = {
+			add_ideas = fascist_influence
+		}
+	}
+}
+
+# Dodecanese Ceded Event
+news_event = {
+	id = ggipnews.1
+	title = ggipnews.1.t
+	desc = ggipnews.1.d
+	picture = GFX_news_events_generic_sign_treaty2
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = ggipnews.1.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = GRE
+			}
+		}
+	}
+
+	option = {
+		name = ggipnews.1.b
+		trigger = {
+			is_in_faction_with = GRE
+		}
+	}
+}
+
+#Italy doesn't cede Rhodes
+country_event = {
+	id = ggip.4
+	title = ggip.4.t
+	desc = ggip.4.d
+	picture = GFX_report_event_polish_tanks_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.4.a
+		declare_war_on = {
+			target = ITA
+			type = take_state
+			generator = { 164 }
+		}
+	}
+}
+
+#Italy doesn't cede Rhodes news.
+news_event = {
+	id = ggipnews.2
+	title = ggipnews.2.t
+	desc = ggipnews.2.d
+	picture = GFX_news_event_polish_tanks
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = ggipnews.2.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = GRE
+			}
+		}
+	}
+
+	option = {
+		name = ggipnews.2.b
+		trigger = {
+			is_in_faction_with = GRE
+		}
+	}
+}
+
+#Greece befriends Italy
+news_event = {
+	id = ggipnews.3
+	title = ggipnews.3.t
+	desc = ggipnews.3.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = ggipnews.3.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = GRE
+			}
+		}
+	}
+
+	option = {
+		name = ggipnews.3.b
+		trigger = {
+			is_in_faction_with = GRE
+		}
+	}
+}
+
+#Greece befriends the UK
+news_event = {
+	id = ggipnews.4
+	title = ggipnews.4.t
+	desc = ggipnews.4.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = ggipnews.4.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = GRE
+			}
+		}
+	}
+
+	option = {
+		name = ggipnews.4.b
+		trigger = {
+			is_in_faction_with = GRE
+		}
+	}
+}
+
+# Greece gives up on Rhodes
+country_event = {
+	id = ggip.5
+	title = ggip.5.t
+	desc = ggip.5.d
+	picture = GFX_report_event_german_polish_border
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.5.a
+		remove_state_claim = 164
+		diplomatic_relation = { country = ITA relation = non_aggression_pact }
+	}
+}
+
+# Greece gives up on Cyprus
+country_event = {
+	id = ggip.6
+	title = ggip.6.t
+	desc = ggip.6.d
+	picture = GFX_report_event_german_polish_border
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.6.a
+		remove_state_claim = 183
+		diplomatic_relation = { country = ENG relation = non_aggression_pact }
+	}
+}
+
+# Greece demands Cyprus
+country_event = {
+	id = ggip.7
+	title = ggip.7.t
+	desc = ggip.7.d
+	picture = GFX_report_event_greek_troops
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_war_with = GRE }
+	}
+	
+	option = {
+		name = ggip.7.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		GRE = { country_event = { id = ggip.8 days = 1 } }
+		effect_tooltip = {
+			GRE = {
+				transfer_state = 183
+			}
+		}
+		country_event = { id = ggip.9 days = 7 }
+		hidden_effect = {
+			news_event = { id = ggipnews.5 hours = 6 }
+		}
+	}
+	
+	option = {
+		name = ggip.7.b
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 3
+				strength_ratio = {
+					tag = GRE
+					ratio > 0.7
+				}
+			}
+
+			modifier = {
+				factor = 0.1
+				any_country = {
+					is_major = yes
+					is_in_faction_with = ENG
+				}
+			}
+		}
+
+		GRE = { country_event = { id = ggip.10 days = 1 } 
+			if = {
+				limit = {
+					is_in_faction_with = ENG
+					is_faction_leader = yes
+				}
+				remove_from_faction = ENG
+			}
+			if = {
+				limit = { 
+					is_in_faction_with = ENG
+					is_faction_leader = no
+				}
+				random_country = {
+					limit = { 
+						is_in_faction_with = GRE
+						is_faction_leader = yes
+					}
+					remove_from_faction = GRE
+				}
+			}			
+		}		
+		hidden_effect = {
+			news_event = { hours = 1 id = ggipnews.6 }
+		}
+		effect_tooltip = {
+			GRE = {
+				declare_war_on = {
+					target = ENG
+					type = take_state
+					generator = { 183 }
+				}
+			}
+		}
+	}
+}
+
+# The UK cedes Cyprus
+country_event = {
+	id = ggip.8
+	title = ggip.8.t
+	desc = ggip.8.d
+	picture = GFX_report_event_german_polish_border
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.8.a
+		transfer_state = 183
+	}
+}
+
+# Effect on the UK
+country_event = {
+	id = ggip.9
+	title = ggip.9.t
+	desc = ggip.9.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.9.a
+		add_opinion_modifier = { target = GRE modifier = medium_increase }
+		GRE = {
+			add_ideas = democratic_influence
+		}
+	}
+}
+
+# Cyprus Ceded Event
+news_event = {
+	id = ggipnews.5
+	title = ggipnews.5.t
+	desc = ggipnews.5.d
+	picture = GFX_news_events_generic_sign_treaty2
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = ggipnews.5.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = GRE
+			}
+		}
+	}
+
+	option = {
+		name = ggipnews.5.b
+		trigger = {
+			is_in_faction_with = GRE
+		}
+	}
+}
+
+#The UK doesn't cede Cyprus
+country_event = {
+	id = ggip.10
+	title = ggip.10.t
+	desc = ggip.10.d
+	picture = GFX_report_event_polish_tanks_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.10.a
+		declare_war_on = {
+			target = ENG
+			type = take_state
+			generator = { 183 }
+		}
+	}
+}
+
+#The UK doesn't cede Cyprus news.
+news_event = {
+	id = ggipnews.6
+	title = ggipnews.6.t
+	desc = ggipnews.6.d
+	picture = GFX_news_event_polish_tanks
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = ggipnews.6.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = GRE
+			}
+		}
+	}
+
+	option = {
+		name = ggipnews.6.b
+		trigger = {
+			is_in_faction_with = GRE
+		}
+	}
+}
+
+# Greece gives up on Eastern Thrace
+country_event = {
+	id = ggip.11
+	title = ggip.11.t
+	desc = ggip.11.d
+	picture = GFX_report_event_german_polish_border
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.11.a
+		remove_state_claim = 341
+		diplomatic_relation = { country = TUR relation = non_aggression_pact }
+	}
+}
+
+#Greece befriends Turkey
+news_event = {
+	id = ggipnews.7
+	title = ggipnews.7.t
+	desc = ggipnews.7.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = ggipnews.7.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = GRE
+			}
+		}
+	}
+
+	option = {
+		name = ggipnews.7.b
+		trigger = {
+			is_in_faction_with = GRE
+		}
+	}
+}
+
+# Greece demands Eastern Thrace
+country_event = {
+	id = ggip.12
+	title = ggip.12.t
+	desc = ggip.12.d
+	picture = GFX_report_event_greek_troops
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_war_with = GRE }
+	}
+	
+	option = {
+		name = ggip.12.a
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		GRE = { country_event = { id = ggip.13 days = 1 } }
+		effect_tooltip = {
+			GRE = {
+				transfer_state = 341
+			}
+		}
+		country_event = { id = ggip.14 days = 7 }
+		hidden_effect = {
+			news_event = { id = ggipnews.8 hours = 6 }
+		}
+	}
+	
+	option = {
+		name = ggip.12.b
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 3
+				strength_ratio = {
+					tag = GRE
+					ratio > 0.7
+				}
+			}
+
+			modifier = {
+				factor = 0.1
+				any_country = {
+					is_major = yes
+					is_in_faction_with = TUR
+				}
+			}
+		}
+
+		GRE = { country_event = { id = ggip.15 days = 1 } 
+			if = {
+				limit = {
+					is_in_faction_with = TUR
+					is_faction_leader = yes
+				}
+				remove_from_faction = TUR
+			}
+			if = {
+				limit = { 
+					is_in_faction_with = TUR
+					is_faction_leader = no
+				}
+				random_country = {
+					limit = { 
+						is_in_faction_with = GRE
+						is_faction_leader = yes
+					}
+					remove_from_faction = GRE
+				}
+			}			
+		}		
+		hidden_effect = {
+			news_event = { hours = 1 id = ggipnews.9 }
+		}
+		effect_tooltip = {
+			GRE = {
+				declare_war_on = {
+					target = TUR
+					type = take_state
+					generator = { 341 }
+				}
+			}
+		}
+	}
+}
+
+# Turkey cedes Eastern Thrace
+country_event = {
+	id = ggip.13
+	title = ggip.13.t
+	desc = ggip.13.d
+	picture = GFX_report_event_german_polish_border
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.13.a
+		transfer_state = 341
+	}
+}
+
+# Effect on Turkey
+country_event = {
+	id = ggip.14
+	title = ggip.14.t
+	desc = ggip.14.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.14.a
+		add_opinion_modifier = { target = GRE modifier = medium_decrease }
+	}
+}
+
+# Eastern Thrace Ceded Event
+news_event = {
+	id = ggipnews.8
+	title = ggipnews.8.t
+	desc = ggipnews.8.d
+	picture = GFX_news_events_generic_sign_treaty2
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = ggipnews.8.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = GRE
+			}
+		}
+	}
+
+	option = {
+		name = ggipnews.8.b
+		trigger = {
+			is_in_faction_with = GRE
+		}
+	}
+}
+
+#Turkey doesn't cede Eastern Thrace
+country_event = {
+	id = ggip.15
+	title = ggip.15.t
+	desc = ggip.15.d
+	picture = GFX_report_event_polish_tanks_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.15.a
+		declare_war_on = {
+			target = TUR
+			type = take_state
+			generator = { 341 }
+		}
+	}
+}
+
+#Turkey doesn't cede Eastern Thrace news.
+news_event = {
+	id = ggipnews.9
+	title = ggipnews.9.t
+	desc = ggipnews.9.d
+	picture = GFX_news_event_polish_tanks
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = ggipnews.9.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = GRE
+			}
+		}
+	}
+
+	option = {
+		name = ggipnews.9.b
+		trigger = {
+			is_in_faction_with = GRE
+		}
+	}
+}
+
+#Greece gains imperial ambitions
+country_event = {
+	id = ggip.16
+	title = ggip.16.t
+	desc = ggip.16.d
+	picture = GFX_report_event_polish_tanks_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.16.a
+		add_state_claim = 342
+		add_state_claim = 343
+		add_state_claim = 49
+		add_state_claim = 346
+		add_state_claim = 345
+		add_state_claim = 356
+		add_state_claim = 348
+		add_state_claim = 349
+		add_state_claim = 355
+		339 = {
+			if = {
+				limit = { is_owned_by = TUR }
+				add_core_of = GRE
+			}
+		}
+		340 = {
+			if = {
+				limit = { is_owned_by = TUR }
+				add_core_of = GRE
+			}
+		}
+		347 = {
+			if = {
+				limit = { is_owned_by = TUR }
+				add_core_of = GRE
+			}
+		}
+		354 = {
+			if = {
+				limit = { is_owned_by = TUR }
+				add_core_of = GRE
+			}
+		}
+	}
+}
+
+# Greece gives up on Northern Epirus
+country_event = {
+	id = ggip.17
+	title = ggip.17.t
+	desc = ggip.17.d
+	picture = GFX_report_event_german_polish_border
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.17.a
+		remove_state_claim = 790
+		diplomatic_relation = { country = ALB relation = non_aggression_pact }
+	}
+}
+
+#Greece befriends Albania
+news_event = {
+	id = ggipnews.10
+	title = ggipnews.10.t
+	desc = ggipnews.10.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = ggipnews.10.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = GRE
+			}
+		}
+	}
+
+	option = {
+		name = ggipnews.10.b
+		trigger = {
+			is_in_faction_with = GRE
+		}
+	}
+}
+
+# Greece demands Northern Epirus
+country_event = {
+	id = ggip.18
+	title = ggip.18.t
+	desc = ggip.18.d
+	picture = GFX_report_event_greek_troops
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_war_with = GRE }
+	}
+	
+	option = {
+		name = ggip.18.a
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		GRE = { country_event = { id = ggip.19 days = 1 } }
+		effect_tooltip = {
+			GRE = {
+				transfer_state = 790
+			}
+		}
+		country_event = { id = ggip.20 days = 7 }
+		hidden_effect = {
+			news_event = { id = ggipnews.11 hours = 6 }
+		}
+	}
+	
+	option = {
+		name = ggip.18.b
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 3
+				strength_ratio = {
+					tag = GRE
+					ratio > 0.7
+				}
+			}
+
+			modifier = {
+				factor = 0.1
+				any_country = {
+					is_major = yes
+					is_in_faction_with = ALB
+				}
+			}
+		}
+
+		GRE = { country_event = { id = ggip.21 days = 1 } 
+			if = {
+				limit = {
+					is_in_faction_with = ALB
+					is_faction_leader = yes
+				}
+				remove_from_faction = ALB
+			}
+			if = {
+				limit = { 
+					is_in_faction_with = ALB
+					is_faction_leader = no
+				}
+				random_country = {
+					limit = { 
+						is_in_faction_with = GRE
+						is_faction_leader = yes
+					}
+					remove_from_faction = GRE
+				}
+			}			
+		}		
+		hidden_effect = {
+			news_event = { hours = 1 id = ggipnews.12 }
+		}
+		effect_tooltip = {
+			GRE = {
+				declare_war_on = {
+					target = TUR
+					type = take_state
+					generator = { 790 }
+				}
+			}
+		}
+	}
+}
+
+# Albania cedes Northern Epirus
+country_event = {
+	id = ggip.19
+	title = ggip.19.t
+	desc = ggip.19.d
+	picture = GFX_report_event_german_polish_border
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.19.a
+		transfer_state = 790
+	}
+}
+
+# Effect on Albania
+country_event = {
+	id = ggip.20
+	title = ggip.20.t
+	desc = ggip.20.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.20.a
+		add_opinion_modifier = { target = GRE modifier = large_decrease }
+	}
+}
+
+# Northern Epirus Ceded Event
+news_event = {
+	id = ggipnews.11
+	title = ggipnews.11.t
+	desc = ggipnews.11.d
+	picture = GFX_news_events_generic_sign_treaty2
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = ggipnews.11.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = GRE
+			}
+		}
+	}
+
+	option = {
+		name = ggipnews.11.b
+		trigger = {
+			is_in_faction_with = GRE
+		}
+	}
+}
+
+#Albania doesn't cede Northern Epirus
+country_event = {
+	id = ggip.21
+	title = ggip.21.t
+	desc = ggip.21.d
+	picture = GFX_report_event_polish_tanks_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.21.a
+		declare_war_on = {
+			target = ALB
+			type = take_state
+			generator = { 790 }
+		}
+	}
+}
+
+#Albania doesn't cede Northern Epirus news.
+news_event = {
+	id = ggipnews.12
+	title = ggipnews.12.t
+	desc = ggipnews.12.d
+	picture = GFX_news_event_polish_tanks
+
+	major = yes
+
+	is_triggered_only = yes
+
+	fire_for_sender = no
+
+	option = {
+		name = ggipnews.12.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = GRE
+			}
+		}
+	}
+
+	option = {
+		name = ggipnews.12.b
+		trigger = {
+			is_in_faction_with = GRE
+		}
+	}
+}
+
+#Greece Albania Faction
+country_event = {
+	id = ggip.22
+	title = ggip.22.t
+	desc = ggip.22.d
+	picture = GFX_report_event_molotov_ribbentrop_stalin_pact
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.22.a
+		add_war_support = 0.1
+		ai_chance = { factor = 90 }
+		GRE = {
+			if = {
+					limit = {
+						is_faction_leader = yes
+					}
+					dismantle_faction = yes
+			}
+			if = {
+					limit = {
+						is_in_faction  = yes
+					}
+					remove_from_faction = GRE
+			}
+			add_stability = -0.2
+			create_faction = "the_athens_tirane_axis"
+			add_to_faction = ALB
+		}
+	}
+	
+	option = {
+		name = ggip.22.b
+		ai_chance = { factor = 10 }
+		GRE = {
+			country_event = ggip.23
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_state_focus
+					target = ALB
+					generator = { 790 } # Northern Epirus / Toskeria
+				}
+			}
+		}
+	}
+}
+
+#Albania rejects
+country_event = {
+	id = ggip.23
+	title = ggip.23.t
+	desc = ggip.23.d
+	picture = GFX_report_event_stalin_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ggip.23.a
+		create_wargoal = {
+			type = take_state_focus
+			target = ALB
+			generator = { 790 } # Toskeria
+		}
+	}
+}

@@ -1,0 +1,32 @@
+DEN_reintegrate_schleswig_category = {
+	DEN_reintegrate_schleswig_decision = {
+	
+		icon = generic_operation
+		
+		allowed = {
+			tag = DEN
+		}
+		
+		cost = 25
+		fire_only_once = yes
+		
+		available = {
+			58 = { 
+				CONTROLLER = { tag = DEN }				
+			}
+		}
+		
+		visible = {
+			58 = { 
+				CONTROLLER = { tag = DEN }	
+				NOT = { is_core_of = DEN }
+			}
+		}
+		
+		complete_effect = {
+			DEN = { add_state_core = 58 }
+		}
+	}
+}
+		
+		

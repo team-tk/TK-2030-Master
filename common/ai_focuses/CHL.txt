@@ -1,0 +1,9 @@
+ai_historical_focus_list_CHL = {
+	ai_national_focuses = {
+	CHL_consolidate_the_government
+	CHL_the_popular_front
+	CHL_liberalism_over_socialism
+	CHL_isi_idea
+	CHL_establish_corfo
+	}
+}

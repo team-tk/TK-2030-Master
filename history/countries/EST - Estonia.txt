@@ -1,0 +1,216 @@
+﻿capital = 13
+
+oob = "EST_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+	kaitseliit
+	economic_crises
+	outdated_military
+}
+
+add_ideas = {
+religion_lutheranism
+}
+
+set_convoys = 5
+
+add_ideas = { 	
+		export_focus
+		tax_average
+		tariffs_average
+		
+		civilian_economy
+		press_free
+		private_control
+		labor_allowed
+		fdi_regulated
+		
+		cons_volunteer
+		foreign_volunteers
+		
+		train_medium
+		#age_19
+		officer_train_none
+		security_minor_restrictions
+		education_budget5 health_budget5 socialsecurity_budget5 
+		
+		unity5	
+		foreign_neutral
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.5.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+conservatism = 20
+nazism = 15
+communism = 15
+neutrality = 50
+}
+
+
+create_country_leader = {
+	name = "Konstantin Päts"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "GFX_Portrait_estonia_konstantin_pats"
+	expire = "1965.1.1"
+	ideology = agrarianism
+	traits = {
+		exiled
+	}
+}
+
+create_country_leader = {
+	name = "Konstantin Päts"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "GFX_Portrait_estonia_konstantin_pats"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }
+}
+
+### PLACEHOLDER
+create_country_leader = {
+	name = "Artur_Sirk"
+	picture = "Artur_Sirk_-Conservative.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Jaan Tõnisson"
+	picture = "Portrait_Estonia_Jaan_Tonisson.dds"
+	expire = "1967.1.1"
+	ideology = social_democracy
+	traits = {
+		triumphant_revolutionary
+	}
+}
+
+create_country_leader = {
+	name = "Johannes_Semper"
+	picture = "Johannes_Semper_Socialist.dds"
+	expire = "1967.1.1"
+	ideology = socialism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Johannes Vares-Barbarus"
+	picture = "Portrait_Estonia_Johannes_Vares.dds"
+	expire = "1967.1.1"
+	ideology = stalinism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "August Rei"
+	picture = "August_Rei_Syndicalist.dds"
+	expire = "1967.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Hjalmar Mäe"
+	picture = "Portrait_Estonia_Hjalmar_Mae.dds"
+	expire = "1959.1.1"
+	ideology = fascism_ideology
+	traits = { }
+}
+
+
+create_country_leader = {
+	name = "Alexander Laak"
+	picture = "Alexander_Laak_Nazi.dds"
+	expire = "1959.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+
+create_country_leader = {
+	name = "Karl Linnas"
+	picture = "Karl_Linnas_Ethnic_Nationalist.dds"
+	expire = "1959.1.1"
+	ideology = ethnic_nationalism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Duke Adolf Friedrich of Mecklenburg"
+	desc = "POLITICS_ADOLF_FRIEDRICH_DESC"
+	picture = "Portrait_Baltic_Adolf_Friedrich.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = {
+
+	}
+}
+
+			create_country_leader = {
+			name = "Friedrich Karl I"
+			desc = "KARL_DESC"
+			picture = "gfx/leaders/EST/frederik_karl.dds"
+			expire = "1965.1.1"
+			ideology = absolutism
+			traits = {
+			    political_dancer
+			}
+		}
+
+create_field_marshal = {
+	name = "Johan Laidoner"
+	picture = "laidoner.dds"
+	traits = { fast_planner defensive_doctrine }
+	skill = 3
+	id = 1
+}
+
+create_corps_commander = {
+	name = "Aleksander Eiseln"
+	picture = "aleksander.dds"
+	traits = { ranger }
+	skill = 1
+	id = 2
+}
+
+create_navy_leader = {
+	name = "Johan Pitka"
+	picture = "Portrait_Europe_More_Generic_navy_2.dds"
+	traits = { old_guard_navy }
+	skill = 3
+	id = 28
+}

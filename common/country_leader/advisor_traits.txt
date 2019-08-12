@@ -1,0 +1,205 @@
+leader_traits={
+
+	### TK NEW IDEOLOGY
+	
+syndicalism_revolutionary = {
+		random = no
+		# Boosts Communism
+		sprite = 13
+		syndicalism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { factor = 0 EAI_major_country = yes }
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = syndicalism
+					has_country_flag = EAI_syndicalism_focus
+				} 
+			}
+		}
+	}
+	
+	socialism_revolutionary = {
+		random = no
+		# Boosts Communism
+		sprite = 13
+		socialism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { factor = 0 EAI_major_country = yes }
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = socialism
+					has_country_flag = EAI_socialism_focus
+				} 
+			}
+		}
+	}
+	
+	conservatism_reformer = {
+		random = no
+		# Boosts Democracy
+		sprite = 13
+		conservatism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = conservatism
+					has_country_flag = EAI_conservatism_focus
+				} 
+			}
+		}
+	}
+	
+	socdem_reformer = {
+		random = no
+		# Boosts Democracy
+		sprite = 13
+		socdem_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = socdem
+					has_country_flag = EAI_socdem_focus
+				} 
+			}
+		}
+	}
+	
+	nazism_demagogue = {
+		random = no
+		# Boosts Fascism
+		sprite = 13
+		nazism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = nazism
+					has_country_flag = EAI_nazism_focus
+				} 
+			}
+		}
+	}	
+	
+	
+		nationalism_demagogue = {
+		random = no
+		# Boosts Fascism
+		sprite = 13
+		nationalism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = nationalism
+					has_country_flag = EAI_nationalism_focus
+				} 
+			}
+		}
+	}
+
+
+	royal_supporter = {
+		random = no
+		
+		sprite = 13
+		monarchism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	theocratic_supporter = {
+		random = no
+		
+		sprite = 13
+		theocratic_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = theocratic
+					has_country_flag = EAI_theocratic_focus
+				} 
+			}
+		}
+	}
+	
+	thule_society = {
+		random = no
+		
+		sprite = 13
+		theocratic_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = theocratic
+					has_country_flag = EAI_theocratic_focus
+				} 
+			}
+		}
+	}
+	
+	authoritarian_supporter = {
+		random = no
+		
+		sprite = 13
+		neutrality_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = neutrality
+					has_country_flag = EAI_neutrality_focus
+				} 
+			}
+		}
+	}
+	
+		guns_over_butter_advocate = {
+		sprite = 10
+		random = yes
+		consumer_goods_factor = 0.03
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		production_speed_industrial_complex_factor = -0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+
+}
+

@@ -1,0 +1,229 @@
+﻿capital = 151
+
+oob = "SWI_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+fog_democratic
+religion_catholicism
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	early_fighter = 1
+	CAS1 = 1
+	fuel_silos = 1
+}
+
+add_ideas = { 	
+		export_focus
+		tax_average
+		tariffs_average
+		
+		civilian_economy
+		press_free
+		private_control
+		labor_allowed
+		fdi_allowed
+		
+		cons_volunteer
+		foreign_volunteers
+		
+		train_medium
+		officer_train_low
+		#age_19
+		security_liberty_first
+		education_budget5 health_budget5 socialsecurity_budget5 
+		
+		unity5	
+		foreign_neutral
+}
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.10.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+conservatism  = 21
+democratic = 31
+socdem = 29
+nazism = 2
+communism = 3
+neutrality = 14
+}
+
+
+add_ideas = {
+	SWI_swiss_neutral
+	SWI_special_conscription
+	SWI_special_conscription_1
+}
+
+set_stability = 0.85
+give_guarantee = LIE
+
+# Put in the leader of the party, have the president as HOS
+#create_country_leader = {
+#	name = "Federal Council"
+#	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
+#	picture = "Portrait_Switzerland_Federal_council.dds" # does this exist?
+#	expire = "1965.1.1"
+#	ideology = swiss_federalism #social_conservatism
+#	traits = {		
+#	}
+#}
+
+create_country_leader = {
+	name = "Hans Oprecht"
+	desc = ""
+	picture = "Hans_Oprecht_-Swiss_socdem.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Edgar Woog"
+	desc = ""
+	picture = "Edgar_Woog_Socialism.dds"
+	expire = "1965.1.1"
+	ideology = socialism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Ernest Béuin"
+	desc = "POLITICS_ERNST_BEGUIN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = swiss_federalism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Oskar Leimbruber"
+	picture = "gfx/leaders/SWI/Portrait_SWI_Oskar_Leimgruber.tga"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "George Bovet"
+	picture = "gfx/leaders/SWI/Portrait_SWI_George_Bovet.tga"
+	expire = "1965.1.1"
+	ideology = swiss_federalism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Jakob Schaffner"
+	picture = "Jakob_Schaffner_Ethnic_Nationalist.dds"
+	expire = "1965.1.1"
+	ideology = ethnic_nationalism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Henri Guisan"
+	desc = ""
+	picture = "gfx/leaders/EYE/Portrait_EYE_Henri_Guisan.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = { }
+}
+
+
+create_country_leader = {
+	name = "Rolf Henne"
+	picture = "Rolf_Henne_Nazism.dds" 
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+
+create_country_leader = {
+	name = "Georges Oltramare"
+	picture = "Georges_Oltramare_Fascist.dds" 
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Fritz Platten"
+	desc = "POLITICS_FRITZ_PLATTEN_DESC"
+	picture = "Fritz_Platten_Switzerland_Communist.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Margarethe Faas-Hardegger"
+	picture = "Margarethe_Faas-Hardegger_Syndicalist.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Royal Council"
+	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
+	picture = "Portrait_Switzerland_Federal_council.dds" # does this exist?
+	expire = "1965.1.1"
+	ideology = constitutional
+	traits = { }
+}
+
+create_corps_commander = {
+	name = "Renzo Lardelli"
+	portrait_path = "gfx/leaders/FRA/portrait_france_charles_huntziger.dds"
+	traits = { EYE_swiss_commander infantry_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Friedrich Prisi"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Maurice_Gamelin.dds"
+	traits = { EYE_swiss_commander old_guard }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Rudolf Miescher"
+	portrait_path = "gfx/leaders/FRA/Portrait_France_Alphonse_Juin.dds"
+	traits = { EYE_swiss_commander trait_mountaineer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Jakob Labhardt"
+	portrait_path = "gfx/leaders/EYE/Portrait_EYE_Jakob_Labhardt.dds"
+	traits = { EYE_swiss_commander armor_officer career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

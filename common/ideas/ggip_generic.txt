@@ -1,0 +1,414 @@
+ideas = {
+
+	country = {
+	
+		gre_eon_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_neutral_government = yes
+					has_fascist_government = yes
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.01
+			}
+		}
+
+		gre_wtf_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				fascism_drift = 0.5
+				democratic_drift = -0.1
+			}
+		}
+
+		gre_thc_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_speed_anti_air_building_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+
+		gre_militarism_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_neutral_government = yes
+					has_fascist_government = yes
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.025
+				enemy_partisan_effect = -0.1
+			}
+		}
+
+		gre_mc_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_neutral_government = yes
+					has_fascist_government = yes
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+	
+			modifier = {
+				training_time_army_factor = -0.1
+			}
+		}
+
+		gre_yo_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			rule = {
+				can_create_factions = yes
+			}
+	
+			modifier = {
+				stability_factor = 0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+
+		gre_fkac_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			rule = {
+				can_create_factions = yes
+			}
+	
+			modifier = {
+				stability_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		gre_metline_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		gre_deffoc_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+			}
+		}
+
+		gre_nd_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+	
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+
+		gre_pro_ally_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					AND = {
+						tag = GRE
+						has_democratic_government = yes
+						ENG = {
+							has_democratic_government = yes
+						}
+					}
+					AND = {
+						tag = GRE
+						has_neutral_government = yes
+						ENG = {
+							has_democratic_government = yes
+						}
+					}
+					AND = {
+						tag = ENG
+						has_democratic_government = yes
+						GRE = {
+							has_democratic_government = yes
+						}
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_acceptance = 150
+				fascism_acceptance = -80
+				communism_acceptance = -80
+			}
+		}
+
+		gre_pro_axis_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_acceptance = -80
+				communism_acceptance = -80
+				fascism_acceptance = 150
+			}
+		}
+
+		gre_deminf_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				communism_drift = -0.2
+				fascism_drift = -0.2
+				democratic_drift = 0.9
+			}
+		}
+
+		gre_fasinf_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				communism_drift = -0.2
+				fascism_drift = 0.9
+				democratic_drift = -0.2
+			}
+		}
+
+		gre_pro_com_focus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_acceptance = -80
+				fascism_acceptance = -80
+				communism_acceptance = 150
+			}
+		}
+
+		papagos_ideas_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_dockyard_factor = 0.2
+			}
+		}
+
+		gre_cominf_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				communism_drift = 0.9
+				fascism_drift = -0.2
+				democratic_drift = -0.2
+			}
+		}
+		papagos_ideas_2 = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+#reload countrycolors
+SLV = {
+  color = rgb { 0 93 164 }
+  color_ui = rgb { 0 30 100 }
+}

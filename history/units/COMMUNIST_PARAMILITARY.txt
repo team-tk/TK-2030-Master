@@ -1,0 +1,9 @@
+﻿division_template = {
+	name = "Left Wing Guerrilla"		
+
+	regiments = {
+		communist_infantry = { x = 0 y = 0 }
+		communist_infantry = { x = 0 y = 1 }
+		communist_infantry = { x = 0 y = 2 }
+	}
+}

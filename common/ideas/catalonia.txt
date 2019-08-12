@@ -1,0 +1,257 @@
+ideas = {
+     
+	political_advisor = {
+
+		CAT_ventosa = {
+
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = CAT
+				NOT = { has_communist_government = yes }
+			}
+			
+			traits = { moderate_politician }
+		}
+		
+
+		CAT_lluhi = {
+
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = CAT
+				NOT = { has_communist_government = yes }
+			}
+			
+			traits = { democratic_reformer }
+		}
+
+		CAT_marcelino = {
+
+			picture = generic_political_advisor_europe_3
+				
+			allowed = {
+				original_tag = CAT
+				NOT = { has_fascist_government = yes }
+			}
+			
+			traits = { captain_of_industry }
+		}
+        
+		
+		
+		CAT_oliver = {
+
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = CAT
+			}
+			
+			traits = { prince_of_terror }
+		}
+		
+		CAT_maurin = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = CAT				
+				NOT = { has_fascist_government = yes }
+			}
+			
+			traits = { communist_revolutionary }
+		}
+
+		CAT_tarradellas = {
+
+			picture = generic_navy_europe_1
+
+			allowed = {
+				original_tag = CAT
+				NOT = { has_fascist_government = yes }
+			}
+			
+			traits = { silent_workhorse }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	theorist = {
+	
+	    CAT_carles = {
+					
+					
+			allowed = {
+				original_tag = CAT
+				NOT = { has_fascist_government = yes }
+			}
+			
+			picture = generic_army_europe_3
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+
+		CAR_andreu = {
+					
+					
+			allowed = {
+				original_tag = CAT
+				NOT = { has_fascist_government = yes }
+			}
+			
+			picture = generic_navy_europe_1
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+		}
+	}
+	
+	army_chief = {
+
+		CAT_escofet = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = CAT
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { army_chief_defensive_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		
+		CAT_batet = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = CAT
+				NOT = { has_fascist_government = yes }
+			}
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	air_chief = {
+
+		CAT_falco = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = CAT
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = {
+			
+		CAT_soto = {
+			
+			picture = generic_navy_europe_1
+
+			allowed = {
+				original_tag = CAT
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	high_command = {
+		
+		CAT_jose = {
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = CAT
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		CAT_bayo = {
+			
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = CAT
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { army_concealment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		CAT_vicente = {
+			
+			picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = CAT
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}
+			
+		

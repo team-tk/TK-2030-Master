@@ -1,0 +1,7 @@
+ai_historical_focus_list_COL = {
+	ai_national_focuses = {
+	COL_political_effort
+	COL_liberty_ethos
+	COL_interventionism_focus
+	}
+}

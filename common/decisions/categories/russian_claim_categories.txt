@@ -1,0 +1,23 @@
+russia_claim_category = {
+	icon = generic_formable_nations
+	
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+			OR = { 
+			has_fascist_government = yes
+			has_neutral_government = yes
+			#has_government = monarchism			
+			}
+	}
+	
+}
+SOV_FSB = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		has_democratic_government = yes
+	}
+}

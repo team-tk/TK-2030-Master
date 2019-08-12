@@ -1,0 +1,974 @@
+#Army Reform
+AUS_army_reform_category = {
+	
+	AUS_army_reform_1 = {
+	
+		icon = generic_prepare_civil_war
+		
+		available = {
+			has_army_experience > 10
+			has_completed_focus = AUS_reform_army
+		}
+		
+		cost = 0
+		
+		days_remove = 30
+		
+		visible = {
+			has_idea = AUS_pro_german_sentiment_1
+		}
+		
+		complete_effect = {
+			army_experience = -10
+			custom_effect_tooltip = AUS_30_days_tt
+		}
+		
+		remove_effect = {
+			add_war_support = 0.05
+			swap_ideas = {
+				remove_idea = AUS_pro_german_sentiment_1
+				add_idea = AUS_pro_german_sentiment_2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	AUS_army_reform_2 = {
+	
+		icon = generic_prepare_civil_war
+		
+		available = {
+			has_army_experience > 20
+			has_completed_focus = AUS_reform_army
+		}
+		
+		cost = 0
+		
+		days_remove = 30
+		
+		visible = {
+			has_idea = AUS_pro_german_sentiment_2
+		}
+		
+		complete_effect = {
+			army_experience = -20
+			custom_effect_tooltip = AUS_30_days_tt
+		}
+		
+		remove_effect = {
+			add_war_support = 0.1
+			swap_ideas = {
+				remove_idea = AUS_pro_german_sentiment_2
+				add_idea = AUS_pro_german_sentiment_3
+			}
+		}
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	AUS_army_reform_3 = {
+	
+		icon = generic_prepare_civil_war
+		
+		available = {
+			has_army_experience > 30
+			has_completed_focus = AUS_reform_army
+		}
+		
+		cost = 0
+		
+		days_remove = 60
+		
+		visible = {
+			has_idea = AUS_pro_german_sentiment_3
+		}
+		
+		complete_effect = {
+			add_war_support = 0.1
+			army_experience = -30
+			custom_effect_tooltip = AUS_60_days_tt
+		}
+		
+		remove_effect = {
+			remove_ideas = AUS_pro_german_sentiment_3
+		}
+		
+		ai_will_do = {
+			factor = 500
+		}
+	}
+}
+		
+
+#Demand Horthy Step Down
+AUS_demand_horthy_category = {
+	
+	AUS_demand_horthy_decision = {
+
+		icon = civil_support
+		
+		available = {
+			has_neutral_government = yes
+			custom_trigger_tooltip = {
+				tooltip = AUS_stable_nation_tt
+				NOT = {
+					has_idea = AUS_low_support_1
+					has_idea = AUS_low_support_2
+					has_idea = AUS_low_support_3
+				}
+			}
+			country_exists = HUN
+			HUN = {
+				NOT = {
+					has_completed_focus = HUN_invite_the_habsburg_prince
+					has_completed_focus = HUN_elect_a_democratic_king
+					has_completed_focus = HUN_elect_a_fascist_king
+					has_war_with = AUS
+				}
+			}
+		}
+		
+		cost = 0
+		
+		days_remove = 70
+		
+		fire_only_once = yes
+		
+		modifier = {
+			political_power_gain = -1
+		}
+		
+		visible = {
+			NOT = {
+				has_idea = AUS_low_support_1
+				has_idea = AUS_low_support_2
+				has_idea = AUS_low_support_3
+			}
+			NOT = { has_completed_focus = AUS_demand_hun }
+			OR = {
+				has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+				has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+				has_idea = AUS_otto_von_figurehead
+			}
+		}
+		
+		remove_effect = {
+			complete_national_focus = AUS_demand_hun
+			if = {
+				limit = { HUN = { has_completed_focus = HUN_invite_the_habsburg_prince } }
+				HUN = { country_event = EYE_aus.2 }
+				
+				hidden_effect = {
+					set_country_flag = AUS_demanded_stepdown
+				}
+			}
+			else_if = {
+				limit = { HUN = { 
+					OR = {
+						has_completed_focus = HUN_elect_a_democratic_king
+						has_completed_focus = HUN_elect_a_fascist_king
+					} 
+				} }
+				HUN = { country_event = EYE_aus.6 }
+				hidden_effect = {
+					set_country_flag = AUS_demanded_stepdown
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	AUS_skip_horthy_decision = {
+		
+		icon = civil_support
+		
+		available = {
+			has_neutral_government = yes
+			NOT = { country_exists = HUN }
+			custom_trigger_tooltip = {
+				tooltip = AUS_stable_nation_tt
+				NOT = {
+					has_idea = AUS_low_support_1
+					has_idea = AUS_low_support_2
+					has_idea = AUS_low_support_3
+				}
+			}
+		}
+		
+		cost = 0
+		
+		fire_only_once = yes
+		
+		visible = {
+			NOT = {
+				has_idea = AUS_low_support_1
+				has_idea = AUS_low_support_2
+				has_idea = AUS_low_support_3
+			}
+			NOT = { has_completed_focus = AUS_demand_hun }
+			OR = {
+				has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+				has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+				has_idea = AUS_otto_von_figurehead
+			}
+		}
+		
+		complete_effect = {
+			unlock_national_focus = AUS_protect_cze
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+		
+#Instilling Habsburgs
+AUS_instill_habsburg_category = {
+
+	AUS_enthrone_austria = {
+		
+		icon = generic_nationalism
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = AUS_stable_nation_tt
+				NOT = {
+					has_idea = AUS_low_support_1
+					has_idea = AUS_low_support_2
+					has_idea = AUS_low_support_3
+				}
+			}
+		}
+		
+		cost = 0
+		
+		days_remove = 70
+		
+		fire_only_once = yes
+		
+		modifier = {
+			political_power_gain = -1
+		}
+		
+		visible = {
+			OR = {
+				has_idea = AUS_low_support_2
+				has_idea = AUS_low_support_3
+				AND = {
+					NOT = { has_idea = AUS_low_support_1 }
+					NOT = { has_idea = AUS_low_support_2 }
+					NOT = { has_idea = AUS_low_support_3 }
+				}
+			}
+			NOT = {
+				has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+				has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+				has_idea = AUS_otto_von_figurehead
+			}
+		}
+		
+		remove_effect = {
+		
+set_politics = { 
+ruling_party = monarchism
+elections_allowed = no
+}
+		
+			create_country_leader = {
+				name = "Otto von Habsburg"
+				desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
+				picture = "gfx/leaders/HUN/Portrait_otto_von_hapsburg.dds"
+				expire = "1965.1.1"
+				ideology = absolutism
+				traits = { }
+				
+				id = 21010
+			}
+			if = {
+				limit = { HUN = { has_completed_focus = HUN_invite_the_habsburg_prince } }
+				HUN = { country_event = EYE_aus.2 }
+				
+				hidden_effect = {
+					set_country_flag = AUS_demanded_stepdown
+				}
+			}
+			else_if = {
+				limit = { HUN = { 
+					OR = {
+						has_completed_focus = HUN_elect_a_democratic_king
+						has_completed_focus = HUN_elect_a_fascist_king
+					} 
+				} }
+				HUN = { country_event = EYE_aus.6 }
+				hidden_effect = {
+					set_country_flag = AUS_demanded_stepdown
+				}
+			}
+			else = {
+				country_event = EYE_aus.9
+				
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}	
+	AUS_enthrone_poland = {
+		
+		icon = generic_nationalism
+		
+		available = {
+			NOT = { country_exists = POL }
+			any_state = {
+				is_controlled_by = AUS
+				is_core_of = POL
+			}
+		}
+		
+		cost = 25
+		
+		fire_only_once = yes
+		
+		visible = {
+			NOT = { country_exists = POL }
+			POL = {
+				NOT = { has_country_leader = { id = 21014 ruling_only = no name = "Karol Olbracht Habsburg" } }
+			}
+			OR = {
+				has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+				has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+				has_idea = AUS_otto_von_figurehead
+			}
+		}
+		
+		complete_effect = {
+			release = POL
+			if = {
+				limit = { 10 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 10 }
+			}
+			if = {
+				limit = { 85 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 85 }
+			}
+			if = {
+				limit = { 86 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 86 }
+			}
+			if = {
+				limit = { 87 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 87 }
+			}
+			if = {
+				limit = { 88 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 88 }
+			}
+			if = {
+				limit = { 89 = { CONTROLLER = { 
+					NOT = { tag = UKR }
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 89 }
+			}
+			if = {
+				limit = { 90 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 90 }
+			}
+			if = {
+				limit = { 91 = { CONTROLLER = { 
+					NOT = { tag = UKR }
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 91 }
+			}
+			if = {
+				limit = { 92 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 92 }
+			}
+			if = {
+				limit = { 93 = { CONTROLLER = { 
+					NOT = { tag = UKR }
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 93 }
+			}
+			if = {
+				limit = { 94 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 94 }
+			}
+			if = {
+				limit = { 95 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 96 }
+			}
+			if = {
+				limit = { 97 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 97 }
+			}
+			if = {
+				limit = { 98 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				POL = { transfer_state = 98 }
+			}
+			POL = {
+				if = { 
+					limit = { has_cosmetic_tag = PLC_UNIFIED }
+					set_cosmetic_tag = PLC_UNIFIED_HABSBURG
+				}
+				else = {
+					set_cosmetic_tag = EYE_POL_habsburg
+				}
+				create_country_leader = {
+					name = "Karol Olbracht Habsburg"
+					desc = "POLITICS_KAROL_OLBRACHT_HABSBURG_DESC"
+					picture = "gfx/leaders/EYE/Portrait_EYE_Olbracht_von_Habsburg.dds"
+					expire = "1965.1.1"
+					ideology = absolutism
+					traits = { EYE_pole_lover }
+					
+					id = 21014
+				}
+				if = {
+					limit = { NOT = { has_government = monarchism } }
+					set_politics = {
+						ruling_party = monarchism
+					}
+				}
+				#set_party_name = { ideology = neutrality long_name = "Royalists" name = "Royalists" }
+				add_ideas = monarchism_influence
+				hidden_effect = {
+					add_popularity = { ideology = monarchism popularity = 20 }
+					add_ai_strategy = {
+						type = alliance
+						id = "AUS"
+						value = 200
+					}
+					load_oob = AUS_pol_troops
+				}
+			}
+			if = {
+				limit = { is_faction_leader = yes }
+				add_to_faction = POL
+			}
+			else = {
+				AUS = {
+					puppet = POL
+					set_autonomy = { target = POL autonomy_state = autonomy_dominion }
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}	
+	AUS_enthrone_ukraine = {
+		
+		icon = generic_nationalism
+		
+		available = {
+			NOT = { country_exists = UKR }
+			any_state = {
+				is_controlled_by = AUS
+				is_core_of = UKR
+			}
+		}
+		
+		cost = 25
+		
+		fire_only_once = yes
+		
+		visible = {
+			NOT = { country_exists = UKR }
+			UKR = {
+				NOT = { has_country_leader = { id = 21015 ruling_only = no name = "Vasyl Vyshyvani Habsburg" } }
+			}
+			OR = {
+				has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+				has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+				has_idea = AUS_otto_von_figurehead
+			}
+		}
+		
+		complete_effect = {
+			release = UKR
+			if = {
+				limit = { 89 = { CONTROLLER = { 
+					NOT = { tag = POL }
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 89 }
+			}
+			if = {
+				limit = { 91 = { CONTROLLER = { 
+					NOT = { tag = POL }
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 91 }
+			}
+			if = {
+				limit = { 94 = { CONTROLLER = { 
+					NOT = { tag = POL }
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 94 }
+			}
+			if = {
+				limit = { 192 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 192 }
+			}
+			if = {
+				limit = { 193 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 193 }
+			}
+			if = {
+				limit = { 196 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 196 }
+			}
+			if = {
+				limit = { 197 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 197 }
+			}
+			if = {
+				limit = { 198 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 198 }
+			}
+			if = {
+				limit = { 199 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 199 }
+			}
+			if = {
+				limit = { 200 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 200 }
+			}
+			if = {
+				limit = { 201 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 201 }
+			}
+			if = {
+				limit = { 202 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 202 }
+			}
+			if = {
+				limit = { 203 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 203 }
+			}
+			if = {
+				limit = { 221 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 221 }
+			}
+			if = {
+				limit = { 225 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 225 }
+			}
+			if = {
+				limit = { 226 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 226 }
+			}
+			if = {
+				limit = { 227 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 227 }
+			}
+			if = {
+				limit = { 228 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 228 }
+			}
+			if = {
+				limit = { 259 = { CONTROLLER = { 
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				UKR = { transfer_state = 259 }
+			}
+			UKR = {
+				set_cosmetic_tag = EYE_UKR_habsburg
+			
+				create_country_leader = {
+					name = "Vasyl Vyshyvani Habsburg"
+					desc = "POLITICS_VASYL_VYSHYVANI_HABSBURG_DESC"
+					picture = "gfx/leaders/EYE/Portrait_EYE_Vasyl_Habsburg.dds"
+					expire = "1965.1.1"
+					ideology = absolutism
+					traits = { EYE_red_prince }
+					
+					id = 21015
+				}
+				if = {
+					limit = { NOT = { has_government = monarchism } }
+					set_politics = {
+						ruling_party = monarchism
+					}
+				}
+				#set_party_name = { ideology = neutrality long_name = "Royalists" name = Royalists }
+				hidden_effect = {
+					add_popularity = { ideology = monarchism popularity = 66 }
+					add_ai_strategy = {
+						type = alliance
+						id = "AUS"
+						value = 200
+					}
+					load_oob = AUS_ukr_troops
+				}
+			}
+			if = {
+				limit = { is_faction_leader = yes }
+				add_to_faction = UKR
+			}
+			else = {
+				AUS = {
+					puppet = UKR
+					set_autonomy = { target = UKR autonomy_state = autonomy_dominion }
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	AUS_enthrone_slovenia = {
+		
+		icon = generic_nationalism
+		
+		available = {
+			NOT = { country_exists = SLV }
+			any_state = {
+				is_controlled_by = AUS
+				is_core_of = SLV
+			}
+		}
+		
+		cost = 25
+		
+		fire_only_once = yes
+		
+		visible = {
+			NOT = { country_exists = SLV }
+			SLV = {
+				NOT = { has_country_leader = { id = 21016 ruling_only = no name = "Johann Graf von Meran" } }
+				NOT = { has_country_leader = { id = 21017 ruling_only = no name = "Johann Graf von Habsburg" } }
+			}
+			OR = {
+				has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+				has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+				has_idea = AUS_otto_von_figurehead
+			}
+		}
+		
+		complete_effect = {
+			release = SLV
+			if = {
+				limit = { 102 = { CONTROLLER = {
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				SLV = { transfer_state = 102 }
+			}
+			if = {
+				limit = { 736 = { CONTROLLER = {
+					OR  = {
+						tag = AUS
+						is_in_faction_with = AUS
+					} 
+				} } }
+				SLV = { transfer_state = 736 }
+			}
+			SLV = {
+				set_cosmetic_tag = EYE_SLV_habsburg
+			
+				create_country_leader = {
+					name = "Johann Graf von Meran"
+					desc = "POLITICS_JOHANN_GRAF_VON_MERAN_DESC"
+					picture = "gfx/leaders/MAL/portrait_mal_shenton_thomas.dds"
+					expire = "1965.1.1"
+					ideology = absolutism
+					traits = { }
+					
+					id = 21016
+				}
+				if = {
+					limit = { NOT = { has_government = monarchism } }
+					set_politics = {
+						ruling_party = monarchism
+					}
+				}
+				#set_party_name = { ideology = neutrality long_name = "Royalists" name = Royalists }
+				hidden_effect = {
+					add_popularity = { ideology = monarchism popularity = 66 }
+					add_ai_strategy = {
+						type = alliance
+						id = "AUS"
+						value = 200
+					}
+					if = {
+						limit = { num_of_civilian_factories < 1 }
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					if = {
+						limit = { num_of_military_factories < 1 }
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					if = {
+						limit = { air_base < 1 }
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = air_base
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					load_oob = AUS_slv_troops
+				}
+			}
+			if = {
+				limit = { is_faction_leader = yes }
+				add_to_faction = SLV
+			}
+			else = {
+				AUS = {
+					puppet = SLV
+					set_autonomy = { target = SLV autonomy_state = autonomy_dominion }
+				}
+			}
+		}		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				controls_state = 102
+				NOT = { owns_state = 102 }
+			}
+		}
+	}
+		AUS_adopt_johann = {
+			
+			icon = generic_political_discourse
+			
+			available = {
+				OR = {
+					is_in_faction_with = SLV
+					SLV = { is_subject_of = ROOT }
+				}
+			}
+			
+			cost = 10
+			
+			fire_only_once = yes
+			
+			visible = {
+				country_exists = SLV
+				SLV = {
+					has_country_leader = { id = 21016 ruling_only = yes name = "Johann Graf von Meran" }
+					NOT = { has_country_leader = { id = 21017 ruling_only = no name = "Johann Graf von Habsburg" } }
+				}
+				OR = {
+					has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+					has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+					has_idea = AUS_otto_von_figurehead
+				}
+			}
+			
+			complete_effect = {
+				SLV = {
+				
+				if = {
+					limit = { NOT = { has_government = monarchism } }
+					set_politics = {
+						ruling_party = monarchism
+					}
+				}
+				
+					create_country_leader = {
+						name = "Johann Graf von Habsburg"
+						desc = "POLITICS_JOHANN_GRAF_VON_HABSBURG_DESC"
+						picture = "gfx/leaders/MAL/portrait_mal_shenton_thomas.dds"
+						expire = "1965.1.1"
+						ideology = absolutism
+						traits = { likes_austria }
+						
+						id = 21017
+					}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+}
+
+
+			

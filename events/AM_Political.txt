@@ -1,0 +1,730 @@
+﻿add_namespace = AM_political
+
+########Neutrality on the Rise############
+
+country_event = {
+	id = AM_political.1
+	title = AM_political.1.t
+	desc = AM_political.1.desc
+	picture = GFX_report_event_fascist_gathering
+
+	trigger = {
+		NOT = { has_neutral_government = yes }
+		neutrality > 0.5
+		NOT = { neutrality > 0.7 }
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+	
+}
+
+Authoritarian Coup d'état
+country_event = {
+	id = AM_political.2
+	title = AM_political.2.t
+	desc = AM_political.2.desc
+	picture = GFX_report_event_fascist_gathering
+	
+	trigger = {
+		#has_idea_with_trait = authoritarian_supporter
+		NOT = { has_neutral_government = yes }
+		#has_country_flag = fascism_government_support
+		neutrality > 0.7
+		is_major = no
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	#immediate = {
+		#hidden_effect = { remove_ideas = authoritarian_revolutionaries }
+	#}
+	
+	option = {
+		name = political.9.a
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+	}
+}
+
+########Monarchism on the Rise############
+
+country_event = {
+	id = AM_political.4
+	title = AM_political.4.t
+	desc = AM_political.4.desc
+	picture = GFX_report_event_fascist_gathering
+
+	trigger = {
+		NOT = { has_government = monarchism }
+		monarchism > 0.5
+		NOT = { monarchism > 0.7 }
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = monarchism
+			elections_allowed = no
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+	
+}
+
+Monarchism Coup d'état
+country_event = {
+	id = AM_political.5
+	title = AM_political.5.t
+	desc = AM_political.5.desc
+	picture = GFX_report_event_fascist_gathering
+	
+	trigger = {
+		#has_idea_with_trait = royal_supporter
+		NOT = { has_government = monarchism }
+		#has_country_flag = fascism_government_support
+		monarchism > 0.7
+		is_major = no
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	#immediate = {
+		#hidden_effect = { remove_ideas = monarchist_revolutionaries }
+	#}
+	
+	option = {
+		name = political.9.a
+		set_politics = {
+			ruling_party = monarchism
+			elections_allowed = no
+		}
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+	}
+}
+
+# Fascist Assault Divisions Form
+country_event = {
+	id = AM_political.6
+	title = AM_political.6.t
+	desc = AM_political.6.desc
+	picture = GFX_report_event_fascist_militia
+	
+	trigger = {
+		has_fascist_government = yes
+		NOT = { has_tech = tech_fascist_paramilitary }
+
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = political.11.a
+		hidden_effect = { set_technology = { tech_fascist_paramilitary = 1 } load_oob = FASCIST_PARAMILITARY }
+	}
+}
+
+# Communist Divisions Form
+country_event = {
+	id = AM_political.7
+	title = AM_political.7.t
+	desc = AM_political.7.desc
+	picture = GFX_report_event_desertion_poster
+	
+	trigger = {
+		has_communist_government = yes
+		NOT = { has_tech = tech_communist_paramilitary }
+
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = political.5.a
+		hidden_effect = { set_technology = { tech_communist_paramilitary = 1 } load_oob = COMMUNIST_PARAMILITARY }
+	}
+}
+
+########theocratic on the Rise############
+
+country_event = {
+	id = AM_political.8
+	title = AM_political.8.t
+	desc = AM_political.8.desc
+	picture = GFX_report_event_fascist_gathering
+
+	trigger = {
+		NOT = { has_government = theocratic }
+		theocratic > 0.5
+		NOT = { theocratic > 0.7 }
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = theocratic
+			elections_allowed = no
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+	
+}
+
+theocratic Coup d'état
+country_event = {
+	id = AM_political.9
+	title = AM_political.9.t
+	desc = AM_political.9.desc
+	picture = GFX_report_event_fascist_gathering
+	
+	trigger = {
+		#has_idea_with_trait = royal_supporter
+		NOT = { has_government = theocratic }
+		#has_country_flag = fascism_government_support
+		theocratic > 0.7
+		is_major = no
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	#immediate = {
+		#hidden_effect = { remove_ideas = monarchist_revolutionaries }
+	#}
+	
+	option = {
+		name = political.9.a
+		set_politics = {
+			ruling_party = theocratic
+			elections_allowed = no
+		}
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+	}
+}
+
+########nazism on the Rise############
+
+country_event = {
+	id = AM_political.10
+	title = AM_political.10.t
+	desc = AM_political.10.desc
+	picture = GFX_report_event_fascist_gathering
+
+	trigger = {
+		NOT = { has_government = nazism }
+		nazism > 0.5
+		NOT = { nazism > 0.7 }
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = nazism
+			elections_allowed = no
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+	
+}
+
+nazism Coup d'état
+country_event = {
+	id = AM_political.11
+	title = AM_political.11.t
+	desc = AM_political.11.desc
+	picture = GFX_report_event_fascist_gathering
+	
+	trigger = {
+		#has_idea_with_trait = royal_supporter
+		NOT = { has_government = nazism }
+		#has_country_flag = fascism_government_support
+		nazism > 0.7
+		is_major = no
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	#immediate = {
+		#hidden_effect = { remove_ideas = monarchist_revolutionaries }
+	#}
+	
+	option = {
+		name = political.9.a
+		set_politics = {
+			ruling_party = nazism
+			elections_allowed = no
+		}
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+	}
+}
+
+########nationalism on the Rise############
+
+country_event = {
+	id = AM_political.12
+	title = AM_political.12.t
+	desc = AM_political.12.desc
+	picture = GFX_report_event_fascist_gathering
+
+	trigger = {
+		NOT = { has_government = nationalism }
+		nationalism > 0.5
+		NOT = { nationalism > 0.7 }
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = nationalism
+			elections_allowed = no
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+	
+}
+
+nationalism Coup d'état
+country_event = {
+	id = AM_political.13
+	title = AM_political.13.t
+	desc = AM_political.13.desc
+	picture = GFX_report_event_fascist_gathering
+	
+	trigger = {
+		#has_idea_with_trait = royal_supporter
+		NOT = { has_government = nationalism }
+		#has_country_flag = fascism_government_support
+		nationalism > 0.7
+		is_major = no
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	#immediate = {
+		#hidden_effect = { remove_ideas = monarchist_revolutionaries }
+	#}
+	
+	option = {
+		name = political.9.a
+		set_politics = {
+			ruling_party = nationalism
+			elections_allowed = no
+		}
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+	}
+}
+
+########syndicalism on the Rise############
+
+country_event = {
+	id = AM_political.14
+	title = AM_political.14.t
+	desc = AM_political.14.desc
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+		NOT = { has_government = syndicalism }
+		syndicalism > 0.5
+		NOT = { syndicalism > 0.7 }
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = syndicalism
+			elections_allowed = no
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+	
+}
+
+syndicalism Coup d'état
+country_event = {
+	id = AM_political.15
+	title = AM_political.15.t
+	desc = AM_political.15.desc
+	picture = GFX_report_event_worker_protests
+	
+	trigger = {
+		#has_idea_with_trait = royal_supporter
+		NOT = { has_government = syndicalism }
+		#has_country_flag = fascism_government_support
+		syndicalism > 0.7
+		is_major = no
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	#immediate = {
+		#hidden_effect = { remove_ideas = monarchist_revolutionaries }
+	#}
+	
+	option = {
+		name = political.9.a
+		set_politics = {
+			ruling_party = syndicalism
+			elections_allowed = no
+		}
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+	}
+}
+
+########socialism on the Rise############
+
+country_event = {
+	id = AM_political.16
+	title = AM_political.16.t
+	desc = AM_political.16.desc
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+		NOT = { has_government = socialism }
+		socialism > 0.5
+		NOT = { socialism > 0.7 }
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+	
+}
+
+socialism Coup d'état
+country_event = {
+	id = AM_political.17
+	title = AM_political.17.t
+	desc = AM_political.17.desc
+	picture = GFX_report_event_worker_protests
+	
+	trigger = {
+		#has_idea_with_trait = royal_supporter
+		NOT = { has_government = socialism }
+		#has_country_flag = fascism_government_support
+		socialism > 0.7
+		is_major = no
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	#immediate = {
+		#hidden_effect = { remove_ideas = monarchist_revolutionaries }
+	#}
+	
+	option = {
+		name = political.9.a
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+		}
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+	}
+}
+
+# [Ruling Party] Debates Democracy
+country_event = {
+	id = AM_political.18
+	title = AM_political.18.t
+	desc = AM_political.18.d
+	picture = GFX_report_event_journalists_speech
+	
+	trigger = {
+		NOT = { has_democratic_government = yes }
+		conservatism > 0.5
+		NOT = { conservatism > 0.7 }
+		#check_has_focus_tree_to_switch_to_democratic = yes
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
+#	option = {
+#		name = political.14.a
+#		custom_effect_tooltip = political.14.a.tt
+#		clr_country_flag = democracy_political_movement
+#		set_country_flag = democracy_government_support
+#	}
+
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = conservatism
+			elections_allowed = yes
+			election_frequency = 48
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+}
+
+# Public Call for Elections
+country_event = {
+	id = AM_political.19
+	title = AM_political.19.t
+	desc = AM_political.19.d
+	picture = GFX_report_event_election_vote
+	
+	trigger = {
+		#has_idea_with_trait = democratic_reformer
+		NOT = { has_democratic_government = yes }
+		#has_country_flag = democracy_opposition_formed
+		NOT = { has_idea = democratic_opposition_voicing_protests }
+		conservatism > 0.7
+	}
+	
+	mean_time_to_happen = {
+		days = 150
+	}
+	
+	option = {
+		name = political.16.a
+	}
+
+	option = {
+		name = political.16.b
+		add_political_power = -20
+		add_ideas = democratic_opposition_voicing_protests
+	}
+}
+
+# [Ruling Party] Debates Democracy
+country_event = {
+	id = AM_political.20
+	title = AM_political.20.t
+	desc = AM_political.20.d
+	picture = GFX_report_event_journalists_speech
+	
+	trigger = {
+		NOT = { has_democratic_government = yes }
+		socdem > 0.5
+		NOT = { socdem > 0.7 }
+		#check_has_focus_tree_to_switch_to_democratic = yes
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
+#	option = {
+#		name = political.14.a
+#		custom_effect_tooltip = political.14.a.tt
+#		clr_country_flag = democracy_political_movement
+#		set_country_flag = democracy_government_support
+#	}
+
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = socdem
+			elections_allowed = yes
+			election_frequency = 48
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+}
+
+# Public Call for Elections
+country_event = {
+	id = AM_political.21
+	title = AM_political.21.t
+	desc = AM_political.21.d
+	picture = GFX_report_event_election_vote
+	
+	trigger = {
+		#has_idea_with_trait = democratic_reformer
+		NOT = { has_democratic_government = yes }
+		#has_country_flag = democracy_opposition_formed
+		NOT = { has_idea = democratic_opposition_voicing_protests }
+		socdem > 0.7
+	}
+	
+	mean_time_to_happen = {
+		days = 150
+	}
+	
+	option = {
+		name = political.16.a
+	}
+
+	option = {
+		name = political.16.b
+		add_political_power = -20
+		add_ideas = democratic_opposition_voicing_protests
+	}
+}
+
+### EOF ###

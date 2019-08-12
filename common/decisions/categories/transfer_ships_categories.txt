@@ -1,0 +1,23 @@
+transfer_ships = {
+
+	visible = {
+
+	}
+
+}
+
+transfer_ships_puppets = {
+	
+	visible = {
+
+	}
+	
+}
+
+transfer_navy_puppets = {
+	
+	visible = {
+	
+	}
+	
+}

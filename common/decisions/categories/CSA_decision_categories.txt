@@ -1,0 +1,13 @@
+################
+##### USA ######
+################
+
+
+CSA_set_up_the_government = {
+
+	allowed = {
+		#original_tag = CSA
+		#original_tag = FAS
+		#original_tag = ACO
+	}
+}

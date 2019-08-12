@@ -1,0 +1,233 @@
+ideas = {
+	## Labor
+	labor_laws = { 
+		law = yes
+		
+		labor_none = {
+			
+			#cost = 50
+			removal_cost = -1
+			level = 4
+			available = {
+				OR = {
+					has_government = monarchism
+					has_government = theocratic
+					has_government = conservatism
+					has_government = neutrality
+					has_government = nationalism
+				}
+			}
+			
+			modifier = {
+				conscription = -0.02
+				consumer_goods_factor = 0.02
+				political_power_factor = 0.05
+			}
+			
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					OR = {
+					has_government = neutrality
+					has_government = nationalism
+					}
+					OR = {
+						any_owned_state = {
+							is_on_continent = africa
+						}
+						any_owned_state = {
+							is_on_continent = asia
+						}
+						any_owned_state = {
+							is_on_continent = middle_east
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					NOT = {
+						has_government = nationalism
+						has_government = neutrality
+						OR = {
+							any_owned_state = {
+							is_on_continent = africa
+							}
+							any_owned_state = {
+								is_on_continent = asia
+							}
+							any_owned_state = {
+								is_on_continent = middle_east
+							}
+						}
+					}
+				}
+			}
+		}
+		labor_allowed = {
+			
+			#cost = 100
+			removal_cost = -1
+			level = 3
+			available = {
+			}
+			
+			default = yes
+			
+			modifier = {
+				conscription = -0.01
+				consumer_goods_factor = 0.01
+				political_power_factor = 0.025
+			}
+			
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 5
+			
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+		}
+		labor_encouraged = {
+			
+			#cost = 125
+			removal_cost = -1
+			level = 2
+			available = {
+			}
+			
+			modifier = {
+				conscription = 0.015
+				consumer_goods_factor = -0.01
+				production_factory_max_efficiency_factor = -0.02
+				production_factory_efficiency_gain_factor = -0.02
+				line_change_production_efficiency_factor = -0.02
+				production_speed_industrial_complex_factor = -0.02
+				production_speed_dockyard_factor = -0.02
+				political_power_factor = -0.05
+				#stability_weekly = -0.001
+			}
+			
+			on_add = {
+				hidden_effect = {
+					country_event = law.6
+				}
+				if = {
+					limit = {
+						OR = {
+							has_idea = labor_none
+							has_idea = labor_allowed
+						}
+					}
+					custom_effect_tooltip = labor_transition_TT
+				}
+				if = {
+					limit = {
+						has_idea = labor_pressed
+					}
+				}
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 10
+
+				modifier = {
+					factor = 10
+					has_manpower < 1000000
+					is_major = yes
+				}
+				modifier = {
+					factor = 10
+					has_manpower < 500000
+					is_major = no
+				}
+			}
+		}
+		labor_pressed = {
+			
+			#cost = 150
+			removal_cost = -1
+			level = 1
+			available = {
+				AND = {
+					has_war = yes
+					OR = { 
+						has_government = fascism
+						has_government = nazism
+						has_government = communism
+						has_government = socialism
+						has_government = syndicalism
+						has_government = neutrality
+						has_government = nationalism
+						has_government = monarchism
+						has_government = theocratic
+					}
+					OR = {
+						has_idea = war_economy
+						has_idea = tot_economic_mobilisation
+					}
+				}
+			}
+			
+			modifier = {
+				conscription = 0.02
+				consumer_goods_factor = -0.02
+				production_factory_max_efficiency_factor = -0.04
+				production_factory_efficiency_gain_factor = -0.04
+				line_change_production_efficiency_factor = -0.04
+				production_speed_industrial_complex_factor = -0.04
+				production_speed_dockyard_factor = -0.04
+				political_power_factor = -0.10
+				army_morale_factor = -0.10
+				#stability_weekly = -0.002
+			}
+
+			on_add = {
+				hidden_effect = {
+					country_event = law.6
+				}
+				if = {
+					limit = {
+						OR = {
+							has_idea = labor_none
+							has_idea = labor_allowed
+							has_idea = labor_encouraged
+						}
+					}
+					custom_effect_tooltip = labor_transition_TT
+				}
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+				
+				modifier = {
+					factor = 100
+					has_manpower < 500000
+					is_major = yes
+				}
+				modifier = {
+					factor = 100
+					has_manpower < 250000
+					is_major = no
+				}
+   			}
+		}	
+	}
+}
+### EOF ###	

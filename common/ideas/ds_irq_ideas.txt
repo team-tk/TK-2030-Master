@@ -1,0 +1,81 @@
+ideas = {
+	country = {
+		IRQ_expansion_of_military_reserve_idea = {
+			allowed = { original_tag = IRQ always = no }
+			picture = HUN_secret_rearmament
+			modifier = {
+				conscription = 0.0075
+				war_support_factor = 0.05
+			}
+		}
+		IRQ_tank_academy_idea = {
+			allowed = { original_tag = IRQ always = no }
+			picture = generic_acquire_tanks
+			research_bonus = {
+				armor = 0.07
+			}
+			modifier = {
+				research_speed_factor = 0.02
+			}
+		}
+		IRQ_growth_among_the_supporters_of_nationalism = {
+			allowed = { original_tag = IRQ always = no }
+			allowed_civil_war = { has_fascist_government = yes }
+			picture = raj_marginalized_muslim_community_angry
+			modifier = {
+				fascism_drift = 0.02
+				generate_wargoal_tension = -0.2
+				justify_war_goal_time = -0.2
+				war_support_factor = 0.05
+			}
+		}
+		IRQ_arabican_revolution_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { has_communist_government = yes }
+			picture = generic_communism_drift_bonus
+			modifier = {
+				communism_drift = 0.25
+			}
+		}
+		IRQ_socialism_in_one_country_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { has_communist_government = yes }
+			picture = generic_communism_drift_bonus
+			modifier = {
+				drift_defence_factor = 0.25
+			}
+		}
+		IRQ_german_military_quality_idea = {
+			allowed = { always = no }
+			allowed_civil_war = { has_fascist_government = yes }
+			picture = german_advisors
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			modifier = {
+				planning_speed = 0.25
+				army_org_factor = 0.05
+			}
+		}
+		IRQ_divided_government = {
+			allowed = { original_tag = IRQ always = no }
+			cancel = { 
+				has_completed_focus = IRQ_save_stability_in_country 
+				NOT = { has_idea = IRQ_strengthening_of_the_government }
+			}
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_gain = -0.35
+				stability_factor = -0.25
+				drift_defence_factor = 0.40
+			}
+		}
+		IRQ_strengthening_of_the_government = {
+			allowed = { original_tag = IRQ always = no }
+			picture = generic_pp_unity_bonus
+			modifier = {
+				stability_weekly = 0.002
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+#NOTE: empty entries are necessary for HoI IV to display a hint localization
+
+leader_traits = {
+    #------------------ Czech Designers --------------------
+    tatra_transport_manufacturer = {}
+    #------------------ French Designers --------------------
+    citroen_transport_manufacturer = {}
+    #------------------ German Designers --------------------
+    buessing_transport_manufacturer = {
+		random = no
+		equipment_bonus = {
+            # puma armored car in mind here
+            light_tank_destroyer_equipment = {
+                maximum_speed = 0.05
+                soft_attack = 0.05
+                hard_attack = 0.05
+                ap_attack = 1.00
+            }
+        }    
+    }
+    hanomag_transport_manufacturer = {}
+    junkers_transport_manufacturer = {}
+    opel_transport_manufacturer = {}
+    #------------------ Italian Designers -------------------
+    fiat_transport_manufacturer = {
+		random = no
+		equipment_bonus = {
+            #italy's later armored cars like the AB-41 to AB-43 were very competitve 
+            light_tank_equipment = {
+                maximum_speed = 0.25 
+                soft_attack = 0.25
+                hard_attack = 4.50
+                ap_attack = 25.00
+            }
+        }    
+    }
+    #------------------ Japanese Designers ------------------
+    isuzu_transport_manufacturer = {} 
+    nissan_transport_manufacturer = {}
+    #------------------ Russian Designers ------------------
+    gaz_transport_manufacturer = {}
+    astrov_transport_manufacturer = {}
+    voronzeh_transport_manufacturer = {
+		random = no
+		equipment_bonus = {
+            motorized_rocket_equipment = {
+                maximum_speed = 0.10 
+                soft_attack = 0.15
+                reliability = -0.20
+            }
+        }          
+    }
+    #------------------ UK Designers ------------------------
+    airspeed_transport_manufacturer = {}
+    leyland_transport_manufacturer = {}
+    vickers_transport_manufacturer = {}
+    #------------------ US Designers ------------------------
+    douglas_transport_manufacturer = {}
+    fmc_transport_manufacturer = {}
+    general_motors_transport_manufacturer = {}
+    #international_harvester_manufacturer = {}   
+}

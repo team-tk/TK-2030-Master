@@ -1,0 +1,2139 @@
+ideas = {
+
+	country = {
+	
+		fas_the_home_of_capitalism = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			
+			modifier = {
+			 	production_factory_max_efficiency_factor = 0.1 
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1 
+				industrial_capacity_factory = 0.1 
+				industrial_capacity_dockyard = 0.1
+				stability_factor = -0.1
+				political_power_cost = 0.35
+			}		
+		}
+		
+		
+		fas_rebellions = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = jap_militarism_shogun
+			
+			
+			modifier = {
+				autonomy_gain = 1 
+			}		
+		}
+		
+		
+		fas_carrier_dominance = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_navy_carrier_bonus
+			
+			
+			modifier = {
+				sortie_efficiency = 0.1  
+			}	
+			
+			equipment_bonus = {
+				carrier = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			
+			}
+
+			research_bonus = {
+				cv_tech = 0.15
+			
+			}
+			
+		}
+		
+		
+		fas_Emergency_Industrial_Effort_focus = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			#picture = generic_navy_carrier_bonus
+			
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.75
+			}	
+			
+		}
+		
+		fas_industry_mobilized_for_war_effort = {
+			
+			allowed = {
+				always = no
+			}
+			
+			available = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = MAN_five_year_plan_tank
+			
+			
+			modifier = {
+				consumer_goods_factor = -0.3
+			}	
+			
+		}
+		
+		
+		fas_prod_the_giant = {
+			
+			allowed = {
+				always = no
+			}
+			
+			available = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = yug_federal_defense_council
+			
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.5
+			}	
+			
+		}
+		
+		
+		FAS_30_Days = {
+			
+			allowed = {
+				always = no
+			}
+			
+			available = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+			
+			#picture = generic_navy_carrier_bonus
+			
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.15
+			}	
+			
+		}
+		
+	
+	}
+	
+	
+	
+	
+	political_advisor = {
+		
+		#douglas_macarthur = {
+		#	
+		#	
+		#	allowed = {
+		#		original_tag = FAS
+		#	}
+		#	
+		#	#leader man
+		#	
+		#	traits = {despotic_reformer }
+		#
+		#	available = {
+		#		has_neutral_government = yes
+		#	}
+		#	
+		#	ai_will_do = {
+		#		factor = 0
+		#	}
+		#}
+		
+		marriner_stoddard_eccles = {
+			
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#chair of the FED, somewhat of a New Dealer
+			
+			traits = { FED_chairman }
+		
+			available = {
+				has_neutral_government = yes
+			}
+		
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		robert_r_mccormick = {
+			
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#owner of the Chicago Tribune, anti New Deal on the basis of Federal power and non interventionist
+			
+			traits = { USA_newspaper_mogul }
+		
+			available = {
+				has_neutral_government = yes
+			}
+		
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		
+		henry_ford = {
+			
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#huge industrialist, nazi sympathizer, anti semite
+			
+			traits = { USA_mighty_industrialist }
+		
+			available = {
+				has_neutral_government = yes
+			}
+		
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		william_boeing = {
+			
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#founder of boeing, creator of United Aircraft Corporation
+			
+			traits = {USA_industrialist }
+		
+		
+			available = {
+				has_neutral_government = yes
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		owen_d_young = {
+			
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#chairman of GE, man with possible political future in 30s
+			
+			traits = { USA_industrialist }
+		
+			available = {
+				has_neutral_government = yes
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		henry_sturgis_morgan = {
+			
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#co-founder of Morgan Stanley, partner at JP Morgan
+			
+			traits = { USA_banker }
+		
+			available = {
+				has_neutral_government = yes
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		walter_c_teagle = {
+			
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#chairman of the board at Standard Oil of New Jersey, former executive
+			
+			traits = { USA_oilman }
+		
+			available = {
+				has_neutral_government = yes
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		thomas_j_watson = {
+			
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#long serving IBM CEO
+			
+			traits = { USA_computing_company_executive }
+		
+			available = {
+				has_neutral_government = yes
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		
+		
+		
+		
+	}
+	
+
+	army_chief = {
+	
+	
+		douglas_macarthur30 = {
+			
+			picture = douglas_macarthur
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			available = {
+				has_neutral_government = yes
+			}
+			
+			allowed_to_remove = {
+				NOT = {
+					#has_country_leader = { id = 83 ruling_only = yes name = "Franklin Delano Roosevelt" } 
+				}
+			}
+			
+			traits = { army_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		
+	}
+	
+	air_chief = {
+		
+		
+		henry_arnold30 = {
+			
+			picture = henry_arnold
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Penn
+			
+			available = {
+				
+			}
+			
+			traits = { air_chief_reform_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	
+	navy_chief = {
+	
+		harold_rainsford_stark30 = {
+			
+			picture = harold_rainsford_stark
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			available = {
+				has_neutral_government = yes
+			}
+			
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		ernest_king30 = {
+			
+			picture = ernest_king
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#NY
+			
+			available = {
+				
+			}
+
+			
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	
+	
+	high_command = {
+		
+		joseph_stilwell3 = {
+			
+			picture = joseph_stilwell
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Controls NY
+			
+			available = {
+				
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		
+		mark_clark3 = {
+			
+			picture = mark_clark
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			available = {
+				OR = {
+					has_neutral_government = yes
+					has_fascist_government = yes
+				}
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		
+		james_gavin3 = {
+			
+			picture = james_gavin
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Maryland
+			
+			available = {
+				
+			}
+			
+			traits = { usa_army_airborne }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		curtis_lemay3 = {
+			
+			picture = curtis_lemay
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			available = {
+				OR = {
+					has_neutral_government = yes
+					has_fascist_government = yes
+				}
+			}
+			
+			traits = { air_strategic_bombing_3 }
+		}
+		
+		
+		thomas_kinkaid3 = {
+			
+			picture = thomas_kinkaid
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#New Hampshire
+			
+			available = {
+				
+			}
+
+			
+			traits = { navy_capital_ship_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+		
+	tank_manufacturer = { 
+	
+		designer = yes
+	
+		marmon_herrington3 = {
+			
+			picture = marmon_herrington
+			
+			allowed = {
+				original_tag = FAS
+			}			
+
+			#Indianapolis
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { USA_tankette_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		cadillac3 = {
+		
+			picture = cadillac
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Detroit
+			#light tanks
+			
+			research_bonus = {
+				cat_light_armor = 0.3
+			}
+			
+			traits = { USA_light_tank_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		buick3 = {
+			
+			picture = buick
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Detroit
+			#hellcats and more general production
+			
+			research_bonus = {
+				armor = 0.10
+				
+			}
+			
+			traits = { USA_mobile_tank_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		chrysler3 = {
+			
+			picture = chrysler
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#SE Michigan
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { USA_general_armor_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		army_ordnance_department30 = {
+			
+			picture = army_ordnance_department
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { USA_heavy_tank_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}	
+		
+		
+		pressed_steel_car_company3 = {
+		
+			picture = pressed_steel_car_company
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#N? New Jersey
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { USA_super_tank_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		lima3 = {
+		
+			picture = lima
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#N Ohio
+			research_bonus = {
+				#electronics = 0.10
+			}
+			
+			traits = { USA_armor_prod_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+		}
+		
+		
+		
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+		
+		
+		electric_boat_company3 = {
+			
+			picture = electric_boat_company
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Connecticut
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { USA_submarine_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		bath_iron_works3 = {
+		
+			picture = bath_iron_works
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Maine
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { USA_destroyer_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		william_cramp_and_sons3 = {
+		
+			picture = william_cramp_and_sons
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Philadelphia
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { USA_escort_ship_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		philadelphia_naval_shipyard3 = {
+		
+			picture = philadelphia_naval_shipyard
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { USA_heavy_ship_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		new_york_shipbuilding3 = {
+		
+			picture = new_york_shipbuilding
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Southern NJ
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { USA_heavy_cruiser_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		
+		
+		bethlehem_steel3 = {
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Eastern Penn
+			
+			picture = bethlehem_steel
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { USA_two_ocean_fleet_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		brooklyn_naval_yard3 = {
+			
+			picture = brooklyn_naval_yard
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#long island obviously
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { USA_atlantic_fleet_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		
+	}
+	
+	aircraft_manufacturer = { 
+		
+		designer = yes
+		
+		
+		brewster3 = {
+			
+			picture = brewster
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			cost = 50
+			
+			#long island
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { usa_light_fighter_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		bell3 = {
+			
+			picture = bell
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			cost = 100
+			
+			#buffalo NY
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { usa_air_interceptor_manufacturer }	#TODO, make different from north american
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}	
+		
+		
+		mcdonnell_aircraft_corporation3 = {
+			
+			picture = mcdonnell_aircraft_corporation
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#St. Louis Missouri
+			
+			available = {
+				#has_completed_focus = USA_Lessons_of_War
+			}
+			
+			picture = generic_air_manufacturer_1
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { usa_jet_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		grumman3 = {
+			
+			picture = grumman
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Bristol, Penn
+			
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			
+			traits = { usa_carrier_aircraft_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}	
+		
+		martin_aircraft3 = {
+			
+			picture = martin_aircraft
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Baltimore
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { usa_naval_aircraft_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		consolidated_aircraft3 = {
+			
+			picture = consolidated_aircraft
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#San Diego
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { usa_heavy_aircraft_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		boeing3 = {
+			
+			picture = boeing
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Seattle
+			
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			
+			traits = { usa_flying_fortress_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+		}
+		
+		republic_aviation3 = {
+			
+			picture = republic_aviation
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			available = {
+				has_completed_focus = USA_P47
+			}
+			
+			research_bonus = {
+				#air_equipment = 0.10
+			}
+			
+			traits = { usa_p47_designer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		fisher_body30 = {
+			
+			picture = fisher_body
+			
+			#car producer -> general manufacturer
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			picture = fisher_body
+			
+			available = {
+				has_completed_focus = USA_New_High_Performance_Fighters
+			}
+			
+			research_bonus = {
+				#air_equipment = 0.10
+			}
+			
+			traits = { usa_p75_designer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		#fairchild_aircraft = {
+		#
+		#	allowed = {
+		#		original_tag = FAS
+		#	}
+		#	
+		#	research_bonus = {
+		#		air_equipment = 0.10
+		#	}
+		#	
+		#	traits = { CAS_manufacturer }
+		#	
+		#	modifier = {
+		#	}
+		#}
+		
+		
+	}
+	
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		springfield_armory3 = {
+			
+			picture = springfield_armory
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Massachusetts
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { USA_rifle_manufacturer }
+			
+			modifier = {
+				#consumer_goods_factor = 0.02
+			}
+		}
+		
+		savage_arms3 = {
+		
+			picture = savage_arms
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Massachusetts
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { USA_smg_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		winchester_arms3 = {
+		
+			picture = winchester_arms
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Connecticut
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { USA_carbine_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		remington_arms3 = {
+		
+			picture = remington_arms
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Connecticut
+			research_bonus = {
+				#infantry_weapons = 0.10
+			}
+			
+			traits = { USA_infantry_weapons_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		
+		willys_knight3 = {
+		
+			picture = willys_knight
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Toledo
+			research_bonus = {
+				support_tech = 0.10
+			}
+			
+			traits = { USA_Jeep_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		
+		motorola3 = {
+		
+			picture = motorola
+		
+			allowed = {
+				original_tag = FAS
+			}
+				
+			#Chicago
+				
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { USA_radio_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		
+		dodge3 = {
+		
+			picture = dodge
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#SE Michigan
+			research_bonus = {
+				support_tech = 0.30
+			}
+			
+			traits = { USA_specialized_vehicle_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		ford_motor_company30 = {
+			
+			picture = ford_motor_company
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Detroit
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { USA_motorized_equipment_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		chevrolet3 = {
+		
+			picture = chevrolet
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Detroit
+			research_bonus = {
+				#electronics = 0.10
+			}
+			
+			traits = { USA_Americas_Car }
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		
+		
+		studebaker3 = {
+		
+			picture = studebaker
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#N Indiana
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { USA_reliable_truck_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		gmc3 = {
+		
+			picture = gmc
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Detroit
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { USA_fast_truck_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		white_motor_company3 = {
+		
+			picture = white_motor_company
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Cleveland
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { USA_reliable_mechanized_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		autocar3 = {
+		
+			picture = autocar
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Practically Philly
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { USA_armored_mechanized_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		international_harvestor_company3 = {
+		
+			picture = international_harvestor_company
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#N Illinois
+			available = {
+				date > 1945.1.1
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			#traits = { USA_tractor_manufacturer }
+			traits = { USA_modern_mechanized_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		
+		detroit_electric3 = {
+		
+			picture = detroit_electric
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				#electronics = 0.10
+			}
+			
+			traits = { USA_electric_car_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = -0.04
+			}
+		}
+	
+		army_ordnance_department31 = {
+			
+			picture = army_ordnance_department
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { US_general_artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+		
+		rock_island_arsenal3 = {
+			
+			picture = rock_island_arsenal
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { US_artillery_designer }
+			
+			modifier = {
+			}
+		}
+		
+		picatinny_arsenal3 = {
+		
+			picture = picatinny_arsenal
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#m8 rocket was developed at picatinny
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+				artillery = 0.15
+			}
+			
+			traits = { US_Army_Research_Facility }
+			
+			modifier = {
+			}
+		}
+		
+	}
+	
+
+	
+	industrial_concern = {
+					
+		standard_oil_new_jersey3 = {
+			
+			picture = standard_oil_california
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#all oil companies to have events to expand oil opportunities?
+			#also rubber because relationship with IG Farben
+			#road to 1600 rubber - roughly what is produced in Singapore + East Indies = US synthetic rubber production 1945
+			#will need roughly 2/3 this ammount -> 1050 
+			
+			research_bonus = {
+				#industry = 0.10
+			}
+			
+			traits = { USA_refining_concern }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		us_rubber3 = {
+		
+			picture = us_rubber
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Connecticut
+			#infinite events for construction of synthetic rubber (rubber resource, not refineries)
+			
+			research_bonus = {
+				#synth_resources = 0.10
+			}
+			
+			traits = { US_rubber_concern }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		us_steel3 = {
+		
+			picture = us_steel
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Pittsburgh, Pennsylvania
+			#infinite events for construction of steel mills
+			#also built destroyers and light cruisers for the navy
+			
+			research_bonus = {
+				#electronics = 0.10
+			}
+			
+			traits = { US_steel_concern }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		bethlehem_steel31 = {
+		
+			picture = bethlehem_steel
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#East PA
+			#infinite events for construction of steel mills and aluminum processing centers
+			
+			research_bonus = {
+				#electronics = 0.10
+			}
+			
+			traits = { US_steel_aluminum_concern }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		alcoa3 = {
+		
+			picture = alcoa
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			# Pittsburgh, Pennsylvania
+			#infinite events for construction of aluminum processing centers
+			
+			research_bonus = {
+				#electronics = 0.10
+			}
+			
+			traits = { US_aluminum_concern }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		
+		att3 = {
+		
+			picture = att
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#NYC
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		ibm3 = {
+			
+			picture = ibm
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Practically NYC
+			
+			research_bonus = {
+				computing_tech = 0.25
+			}
+			
+			traits = { USA_computing_concern }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		bell_labs3 = {
+		
+			picture = bell_labs
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#N New Jersey
+			
+			research_bonus = {
+				radar_tech = 0.25
+				encryption_tech = 0.25
+			}
+			
+			traits = { USA_radar_encryption_concern }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		
+		westinghouse_electric3 = {
+		
+			picture = westinghouse_electric
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Pittsburgh, Pennsylvania
+			
+			research_bonus = {
+				radar_tech = 0.1
+				nuclear = 0.1
+			}
+			
+			traits = { USA_dynamic_electronics_company }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		
+		raytheon3 = {
+		
+			picture = raytheon
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#MA
+			
+			research_bonus = {
+				radar_tech = 0.3
+			}
+			
+			traits = { USA_radar_company }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		ford_instrument_co3 = {
+		
+			picture = ford_instrument_co
+			
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#NY
+			
+			picture = generic_electronics_concern_1
+			
+			research_bonus = {
+				radar_tech = 0.05
+			}
+			
+			traits = { USA_naval_computing_concern }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		#dupont = {
+		#
+		#	allowed = {
+		#		original_tag = FAS
+		#	}
+		#	
+		#	research_bonus = {
+		#		electronics = 0.10
+		#	}
+		#
+		#	#Imperial Chemical Industries similar Nuclear work
+		#	
+		#	traits = { electronics_concern }
+		#	
+		#	modifier = {
+		#	}
+		#}
+		
+		#rolls_royce_fas = {
+		#	
+		#	
+		#	allowed = {
+		#		original_tag = FAS
+		#	}
+		#	
+		#	available = {
+		#		#has_completed_focus = USA_Mustangs
+		#	}
+		#	
+		#	cost = 50
+		#	
+		#	research_bonus = {
+		#		air_equipment = 0.05
+		#	}
+		#	
+		#	traits = { usa_rolls_royce_manufacturer }
+		#	
+		#	modifier = {
+		#		consumer_goods_factor = 0.01
+		#	}
+		#}
+		
+		
+		pratt_and_whitney3 = {
+		
+			picture = pratt_and_whitney
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			cost = 50
+			
+			# East Hartford, Connecticut
+			
+			research_bonus = {
+				air_equipment = 0.05
+			}
+			
+			traits = { usa_pratt_and_whitney_engines }
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		general_electric3 = {
+		
+			picture = general_electric
+			
+			#jet engines also 
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			# Cincinnati
+			
+			research_bonus = {
+				jet_technology = 0.10
+			}
+			
+			traits = { ge_jet_engines }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		fisher_body31 = {
+		
+			picture = fisher_body
+			
+			#car producer -> general manufacturer
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Detroit
+			#for the war, prod tanks, tac and strat bombers, and 'modern fighters'
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { USA_land_air_industrial_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		#general_motors = {
+		#
+		#	allowed = {
+		#		original_tag = USA
+		#	}
+		#	
+		#	research_bonus = {
+		#		electronics = 0.10
+		#	}
+		#	
+		#	traits = { electronics_concern }
+		#	
+		#	modifier = {
+		#	}
+		#}
+		
+		hudson3 = {
+		
+			picture = hudson
+			
+			#car producer -> general manufacturer
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#detroit
+			#during the war produced fighter, fighter-bomber, cas, tac and strat bomber parts and naval engines, anti-aircraft guns, and small arms
+			#prod boost tempered by dockyard boost
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { USA_dockyard_and_general_production_boost }
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+		}
+		
+		american_car_and_foundry3 = {
+		
+			picture = american_car_and_foundry
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#artillery and tank boost
+			#N. Missouri
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { USA_armor_industrial_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		american_locomotive_company3 = {
+		
+			picture = american_locomotive_company
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#general prod. boost
+			#North/Central NY
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { USA_general_production_boost }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		
+		
+		
+		#baldwin_group = {
+		#
+		#	allowed = {
+		#		original_tag = USA
+		#	}
+		#	
+		#	research_bonus = {
+		#		#electronics = 0.10
+		#	}
+		#	
+		#	traits = {  }
+		#	
+		#	modifier = {
+		#	}
+		#}
+		
+		
+		
+		#pullman = {
+		#
+		#	allowed = {
+		#		original_tag = USA
+		#	}
+		#	
+		#	#produced locomotives, not much else
+		#	
+		#	research_bonus = {
+		#		#electronics = 0.10
+		#	}
+		#	
+		#	traits = {  }
+		#	
+		#	modifier = {
+		#	}
+		#}
+		
+		
+		
+		
+		
+		
+		caterpillar3 = {
+		
+			picture = caterpillar
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#Northern Illinois
+			
+			research_bonus = {
+				construction_tech = 0.2
+			}
+			
+			traits = { US_construction_concern }
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		
+		american_can_company3 = {
+		
+			picture = american_can_company
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#NYC
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { US_supply_concern }
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+				supply_consumption_factor = -0.1
+			}
+		}
+		
+		
+		
+		western_union3 = {
+		
+			picture = western_union
+		
+			allowed = {
+				original_tag = FAS
+			}
+			
+			#joke?
+			
+			research_bonus = {
+				#electronics = 0.10
+			}
+			
+			traits = { US_telegraph_concern }
+			
+			modifier = {
+				unity_factor = -0.1
+				consumer_goods_factor = 0.01
+			}
+		}
+		
+		#End
+	}
+	
+	
+	theorist = {
+	
+		lesley_mcnair3 = {
+			
+			picture = lesley_mcnair
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_superior_firepower = 0.15
+				armor = 0.1
+			}
+			
+			
+			traits = { usa_superior_firepower_expert }
+		}
+		
+		
+		curtis_lemay31 = {
+			
+			picture = curtis_lemay
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_strategic_destruction = 0.10
+			}
+			
+			traits = { victory_through_airpower }
+		}
+		
+		
+		john_garand3 = {
+			
+			picture = john_garand
+			
+			allowed = {
+				original_tag = FAS
+			}
+			
+			available = {
+				date < 1937.1.1
+			}
+			
+			cost = 10
+
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { usa_weapons_genius }
+			
+			cancel_if_invalid = yes
+		}
+	}
+	
+}

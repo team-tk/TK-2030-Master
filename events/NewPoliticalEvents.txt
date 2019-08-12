@@ -1,0 +1,181 @@
+﻿###########################
+# New Political Events
+###########################
+
+add_namespace = newpolitical
+
+### > 50% support
+# political.1 Monarchism
+
+country_event = {
+	id = newpolitical.1
+	title = newpolitical.1.t
+	desc = newpolitical.1.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.1.c
+		set_politics = {
+			ruling_party = monarchism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.2
+	title = newpolitical.2.t
+	desc = newpolitical.2.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.2.c
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.3
+	title = newpolitical.3.t
+	desc = newpolitical.3.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.3.c
+		set_politics = {
+			ruling_party = theocratic
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.4
+	title = newpolitical.4.t
+	desc = newpolitical.4.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.4.c
+		set_politics = {
+			ruling_party = conservatism
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.5
+	title = newpolitical.5.t
+	desc = newpolitical.5.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.5.c
+		set_politics = {
+			ruling_party = socdem
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.6
+	title = newpolitical.6.t
+	desc = newpolitical.6.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.6.c
+		set_politics = {
+			ruling_party = nazism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.7
+	title = newpolitical.7.t
+	desc = newpolitical.7.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.7.c
+		set_politics = {
+			ruling_party = nationalism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.8
+	title = newpolitical.8.t
+	desc = newpolitical.8.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.8.c
+		set_politics = {
+			ruling_party = syndicalism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.9
+	title = newpolitical.9.t
+	desc = newpolitical.9.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.9.c
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}

@@ -1,0 +1,33 @@
+technologies = {
+	
+
+	basic_carrier_escort = {
+
+		research_cost = 1
+
+		
+		
+		enable_equipments = {
+			carrier_escort_1
+		}
+
+		
+	}
+
+
+	improved_carrier_escort = {
+
+		research_cost = 1
+
+		
+		
+		enable_equipments = {
+			carrier_escort_2
+		}
+
+		
+	}
+
+	
+
+}

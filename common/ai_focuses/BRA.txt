@@ -1,0 +1,23 @@
+ai_historical_focus_list_BRA = {
+	ai_national_focuses = {
+	bra_national_security_law
+	bra_polaca
+	bra_a_voz_do_brasil
+	bra_populism
+	bra_quereismo	
+	bra_estado_novo
+	bra_technical_schools
+	bra_politechnical_colleges
+	bra_national_institutes
+	bra_federal_universities
+	bra_CTEF_CLT
+	bra_lobato
+	bra_salvador
+	bra_petrobras
+	bra_itabira
+	bra_cosipa
+	bra_acominas
+	bra_csn
+	bra_vale
+	}
+}

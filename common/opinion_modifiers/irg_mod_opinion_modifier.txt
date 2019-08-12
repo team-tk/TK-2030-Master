@@ -1,0 +1,11 @@
+opinion_modifiers = {
+	IRQ_socialism_in_one_country_op = { value = 25 }
+	IRQ_soviet_iraq_pact_op = { value = 50 }
+	IRQ_annex_kuveit_op = { value = -75 }
+	IRQ_german_iraq_pact_op = { value = 50 }
+	IRQ_pretension_to_horasan_op = { value = -25 }
+	IRQ_friendship_with_italy_op = { value = 50 }
+	IRQ_event_dont_accept_to_comintern_op = { value = -25 }
+	IRQ_event_dont_accept_to_bagdath_op = { value = -25 }
+	IRQ_event_dont_accept_to_axis = { value = -25 }
+}

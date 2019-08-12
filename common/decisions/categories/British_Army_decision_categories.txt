@@ -1,0 +1,11 @@
+ENG_British_Army_decisions = { 
+	allowed = {
+		original_tag = ENG
+	}
+
+	available = {
+	}
+
+	visible = {
+	}
+}

@@ -1,0 +1,198 @@
+﻿capital = 219
+
+oob = "SOV_1936"
+
+add_ideas = {
+religion_orthodoxism
+}
+
+set_technology = {
+	improved_light_tank = 1 
+	basic_medium_tank = 1 
+	CAS2 = 1
+	heavy_fighter1 = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	paratroopers = 1
+
+	#doctrines
+	delay = 1
+	elastic_defence = 1
+	armored_spearhead = 1
+	schwerpunk = 1
+	blitzkrieg = 1
+	convoy_interdiction_ti = 1
+	unrestricted_submarine_warfare = 1
+	raider_patrols = 1
+
+	#air
+	formation_flying = 1		
+	dive_bombing = 1
+	direct_ground_support = 1
+
+	#electronics
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	decimetric_radar = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	basic_encryption = 1
+	basic_decryption = 1
+
+	#industry
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	improved_oil_processing = 1
+	construction1 = 1
+	construction2 = 1
+	construction3 = 1
+	construction4 = 1
+	dispersed_industry = 1
+	dispersed_industry2 = 1
+	dispersed_industry3 = 1
+	dispersed_industry4 = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+democratic = 10
+fascism = 10
+communism = 20
+neutrality = 60	
+}
+
+add_ideas = {
+	home_of_revolution
+}
+
+create_country_leader = {
+	name = "Joseph Stalin"
+	desc = "POLITICS_JOSEPH_STALIN_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Joseph_Stalin.dds"
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = { man_of_steel }
+}
+
+create_country_leader = {
+				name = "Leon Trotsky"
+				desc = "POLITICS_LEON_TROTSKY_DESC"
+				picture = "Portrait_Leon_Trotsky.dds"
+				expire = "1951.1.1"
+				ideology = trotskyism
+				traits = {
+					bolshevik_militarist
+				}
+			}
+
+create_country_leader = {
+	name = "Konstantin Rodzaevsky"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rodzaevsky.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = { dictator }
+}
+
+
+create_country_leader = {
+	name = "Sergius I of Moscow"
+	desc = ""
+	picture = "gfx/leaders/SOV/Portrait_SOV_Patriarch_Sergey.dds"
+	expire = "1953.3.1"
+	ideology = orthodoxism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Alexander Fyodorovich Kerensky"
+	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+	expire = "1953.3.1"
+	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Kirill"
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Tsar_Kirill.dds"
+	expire = "1938.10.12"
+	ideology = absolutism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Andrey Vlasov"
+	desc = "POLITICS_ANDREY_VLASOV_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Andrey_Vlasov.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = { dictator }
+}
+
+create_country_leader = {
+	name = "Anastasy Vonsyatsky"
+	picture = "gfx/leaders/SOV/Anastasy_Vonsyatsky.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { dictator }
+}
+
+create_country_leader = {
+	name = "Sergei Trufanov"
+	picture = "gfx/leaders/SOV/Sergei_Trufanov.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Pavel Nikolayevich Milyukov"
+	picture = "gfx/leaders/SOV/Pavel_Nikolayevich_Milyukov.dds"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Nikolai Markov"
+	picture = "gfx/leaders/SOV/Nikolai_Markov.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Viktor Chernov"
+	picture = "gfx/leaders/SOV/Viktor_Chernov.dds"
+	expire = "1965.1.1"
+	ideology = revolutionary_socialism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Stepan Petrichenko"
+	picture = "gfx/leaders/SOV/Stepan_Petrichenko.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+add_namespace = {
+	name = "unit_leader_sov"
+	type = unit_leader
+}

@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		
+		neutral_leanings = {
+			
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+				neutrality_acceptance = 85
+				nationalism_acceptance = 85
+				monarchism_acceptance = 85
+			}
+		}
+	}
+}

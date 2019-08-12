@@ -1,0 +1,35 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+greece_ally_1 = {
+	enable = {
+		tag = ROM
+		has_global_flag = set_global_flag = balkan_pact
+		country_exists = GRE
+	}
+	abort = {
+		NOT = { country_exists = GRE }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "GRE"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GRE"			
+		value = 100
+	}	
+}
+
+

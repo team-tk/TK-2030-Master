@@ -1,0 +1,17 @@
+ai_historical_focus_list_POR = {
+	ai_national_focuses = {
+		POR_estadonovo #jan 1 - march 11 (1936)
+		POR_PVDE #march 11 - july 29
+		POR_anti_communism #july 29 - oct 7
+		POR_president_salazar
+		POR_deuspatriafamilia
+		POR_paisdentrodeumpais
+		POR_estadocorporativo
+		POR_bracodeprata
+		POR_extra_research_slot
+		POR_outramargem
+		POR_refinariasangola
+		POR_extra_research_slot_2
+		POR_capital_of_espionage
+	}
+}

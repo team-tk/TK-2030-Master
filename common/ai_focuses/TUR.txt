@@ -1,0 +1,11 @@
+ai_historical_focus_list_TUR = {
+	ai_national_focuses = {
+	TUR_diplomatic_effort
+	TUR_the_montreux_convention
+	TUR_sun_language_theory
+	TUR_internationalism
+	TUR_authoritarianism
+	TUR_stay_on_middle
+	TUR_strengh_our_republic
+	}
+}

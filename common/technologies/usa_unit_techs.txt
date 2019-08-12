@@ -1,0 +1,50 @@
+technologies = {
+	
+
+	usa_tech_motorized_artillery_units = {
+
+		research_cost = 1
+		
+		enable_subunits = {
+			usa_motorized_artillery
+			usa_motorized_anti_air
+			usa_motorized_anti_tank
+			usa_motorized_rocket
+		}
+		
+
+		
+	}
+	
+	usa_tech_support_artillery_units = {
+
+		research_cost = 1
+
+		
+		enable_subunits = {
+			support_usa_divisional_artillery
+		}
+		
+
+		
+	}
+	
+	
+	usa_tech_support_tank_destroyer_units = {
+
+		research_cost = 1
+		
+		enable_subunits = {
+			support_usa_medium_tank_destroyer
+			support_usa_heavy_tank_destroyer
+			support_usa_modern_tank_destroyer
+		}
+		
+
+		
+	}
+
+
+	
+
+}

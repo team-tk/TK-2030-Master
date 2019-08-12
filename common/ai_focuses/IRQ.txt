@@ -1,0 +1,41 @@
+ai_historical_focus_list_IRQ = {
+	ai_national_focuses = {
+	IRQ_save_stability_in_country
+	IRQ_military_strategy
+	IRQ_iron_road_army_depatrament
+	IRQ_military_build
+	IRQ_petroleum_extraction
+	
+	IRQ_build_oil_refinery_stations
+	IRQ_build_shipyard
+	IRQ_research_iron_states
+	IRQ_resource_research_complex
+	IRQ_expansion_of_military_reserve
+	
+	IRQ_military_maneuvers
+	IRQ_army_reform
+	IRQ_infantry_plan
+	IRQ_infantry_weapon_research
+	IRQ_modern_cavalery_to_mech
+	
+	IRQ_1st_tank_batalion
+	IRQ_tank_academy
+	IRQ_air_force_plan
+	IRQ_secure_sky
+	IRQ_heav_fighter_develop
+	
+	IRQ_aa_defence
+	IRQ_flight_school
+	IRQ_naval_plan
+	IRQ_annex_kuveit
+	IRQ_propaganda_nationalism
+	
+	IRQ_goverment_gold_square
+	IRQ_german_iraq_pact
+	IRQ_friendship_with_italy
+	IRQ_german_military_quality
+	IRQ_join_to_axis
+	
+	
+	}
+}

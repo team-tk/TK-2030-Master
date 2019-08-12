@@ -1,0 +1,220 @@
+leader_traits = {
+
+### IDEA TRAITS ###
+	
+	# drift is a percent applied weekly
+
+	ultranationalist_demagogue = {
+		random = no
+		# Boosts ultranationalism
+		sprite = 13
+		fascism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ambitious_officer = {
+		random = no
+		# Boosts authoritarianism
+		sprite = 13
+		neutrality_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	royalist_sympathizer = {
+		random = no
+		# Boosts monarchism
+		sprite = 13
+		monarchism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	conservative_politician = {
+		random = no
+		# Boosts conservative
+		sprite = 13
+		democratic_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	liberal_reformer = {
+		random = no
+		# Boosts soclib
+		sprite = 13
+		democratic_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	social_democrat = {
+		random = no
+		# Boosts socdem
+		sprite = 13
+		democratic_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	labor_unionist = {
+		random = no
+		# Boosts socialism
+		sprite = 13
+		communism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	communist_agitator = {
+		random = no
+		# Boosts authsoc
+		sprite = 13
+		communism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#AI Attitudes
+	likes_austria = {
+		random = no
+		ai_strategy = {
+			type = befriend
+			id = "AUS"			
+			value = 100
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#Leader Traits
+	strongman = {
+		random = no
+		political_power_factor = -0.25
+		stability_factor = -0.05
+		political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		high_command_cost_factor = -0.25
+		air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
+		
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	
+	great_council = {
+		random = no
+		
+		mobilization_speed = 0.2
+		war_support_factor = 0.05
+		drift_defence_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hapsburg_emperor = {
+		random = no
+		
+		stability_factor = 0.1
+		political_power_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	EYE_pole_lover = {
+		random = no
+		
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		monarchism_drift = 0.02
+	}
+	
+	EYE_red_prince = {
+		random = no
+		
+		monarchism_drift = 0.02
+		army_core_attack_factor = 0.1
+		army_core_defence_factor = 0.1
+	}
+
+	#Cabinet Traits	
+	resilient_nationalist = {
+		random = no
+		sprite = 13
+		
+		stability_factor = 0.1
+		war_support_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	merchant_mariner = {
+		random = no
+		sprite = 14
+		
+		experience_gain_navy = 0.025
+		
+		equipment_bonus = {
+			convoy = {
+				build_cost_ic = -0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	#Manufacturers
+	rubber_manufacturer = {
+		random = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	convoy_escort_naval_manufacturer2 = {
+		random = no
+		
+		equipment_bonus = {
+			screen_ship = {
+				naval_range = 0.3 sub_detection = 0.1 naval_speed = 0.1 
+				#build_cost_ic = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

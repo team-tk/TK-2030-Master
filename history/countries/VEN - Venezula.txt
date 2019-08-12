@@ -1,0 +1,130 @@
+﻿capital = 307
+
+oob = "VEN_1936"
+
+set_convoys = 10
+
+add_ideas = {
+fog_dictatorship
+religion_catholicism
+}
+
+add_ideas = {
+		export_focus
+		tax_low
+		tariffs_average
+		
+		civilian_economy
+		press_regulated
+		key_industries
+		labor_none
+		fdi_allowed
+		
+		cons_volunteer
+		foreign_volunteers
+		
+		train_none
+		officer_train_none
+		#age_19
+		security_minor_restrictions
+		education_budget2 health_budget2  socialsecurity_budget2 
+		
+		unity6		
+		foreign_isolationism
+}
+
+add_ideas = {
+	VEN_foreign_oil_companies
+	VEN_communist_strikes
+}
+
+# Starting tech
+set_technology = {
+	tech_fascist_paramilitary = 1
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+set_country_flag = monroe_doctrine
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 5
+		}
+
+		fascism = {
+			popularity = 80
+		}
+		
+		communism = {
+			popularity = 15
+			#banned = no #default is no
+		}
+	}
+	
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 80
+	communism = 15
+	conservatism = 5
+}
+
+create_country_leader = {
+	name = "Eleazar López Contreras"
+	desc = "POLITICS_ELEAZAR_LOPEZ_CONTRERAS_DESC"
+	picture = "Portrait_Venezuela_Elezar_Lopez_Contreras.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { }
+}
+
+#### PLACEHOLDER
+
+create_country_leader = {
+	name = "Eleazar López Contreras"
+	desc = "POLITICS_ELEAZAR_LOPEZ_CONTRERAS_DESC"
+	picture = "Portrait_Venezuela_Elezar_Lopez_Contreras.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+
+create_country_leader = {
+	name = "Juan Bautista Fuenmayor"
+	desc = "POLITICS_JUAN_BAUTISTA_FUENMAYOR_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = { }
+}
+
+#### PLACEHOLDER
+
+create_country_leader = {
+	name = "Juan Bautista Fuenmayor"
+	desc = "POLITICS_JUAN_BAUTISTA_FUENMAYOR_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+#### PLACEHOLDER
+create_country_leader = {
+	name = "Juan Bautista Fuenmayor"
+	desc = "POLITICS_JUAN_BAUTISTA_FUENMAYOR_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = revolutionary_socialism
+	traits = { }
+}

@@ -1,0 +1,4086 @@
+#######################################################################################################################################################################################################################################
+# Bitter Peace German Decisions #######################################################################################################################################################################################################
+#######################################################################################################################################################################################################################################
+
+###############################################################################################################################################################################
+# Operations ##################################################################################################################################################################
+###############################################################################################################################################################################
+
+operations = {
+	#### Operation Bluetooth ####
+	GER_operation_bluetooth = { 
+
+		icon = generic_operation
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+
+		}
+		
+		visible = {
+			tag = GER
+			has_fascist_government = yes
+			SWE = { 
+				exists = yes 
+				NOT = { is_subject_of = GER }	
+			}
+			GER = { has_country_flag = operation_bluetooth }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		complete_effect = {
+			create_wargoal = {
+  				type = annex_everything
+  				target = SWE
+  			}
+		}		
+	}
+	#### Operation Gertrude ####
+	GER_operation_gertrude = { 
+
+		icon = generic_operation
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+			NOT = { has_non_aggression_pact_with = TUR }
+			has_war_with = SOV
+			date > 1942.1.1 
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_not_controls_Caucasus_tt
+				NOT = {
+					233 = { is_controlled_by_ROOT_or_ally = yes } #Caucasus Mountains
+					231 = { is_controlled_by_ROOT_or_ally = yes } #Georgia
+					230 = { is_controlled_by_ROOT_or_ally = yes } #Armenia				
+					229 = { is_controlled_by_ROOT_or_ally = yes } #Azerbaijan
+				}
+			}
+		}
+		
+		visible = {
+			tag = GER
+			date > 1941.1.1
+			TUR = {
+				exists = yes			
+				is_puppet = no
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		complete_effect = {
+			GER = { 
+				country_event = { id = BP_germany.403 }
+			}
+		}		
+	}	
+	#### Operation Charlemagne ####
+	GER_operation_charlemagne = { 
+
+		icon = generic_operation
+		
+		fire_only_once = yes
+		cost = 25		
+
+		available = {
+
+		}
+
+		visible = {
+			tag = GER
+			has_country_flag = operation_charlemagne
+			SOV = { 
+				exists = yes 
+				NOT = { is_subject_of = GER }	
+			}
+		}		
+
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		complete_effect = {
+			create_wargoal = {
+  				type = annex_everything
+  				target = SOV
+  			}
+		}		
+	}
+	#### Operation Tannenbaum ####
+	GER_operation_tannenbaum = { 
+
+		icon = generic_operation
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+
+		}
+		
+		visible = {
+			tag = GER
+			SWI = { 
+				exists = yes 
+				NOT = { is_subject_of = GER }	
+			}
+			GER = { has_country_flag = operation_tannenbaum }
+		}		
+
+		ai_will_do = {
+			factor = 1
+		}		
+		
+		complete_effect = {
+			create_wargoal = {
+  				type = annex_everything
+  				target = SWI
+  			}
+		}		
+	}
+}
+
+###############################################################################################################################################################################
+# RK's ########################################################################################################################################################################
+###############################################################################################################################################################################
+
+GER_reichskommissariats = {
+	#### Reichskommissariat Norway
+	GER_reichskommissariat_norwegen = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = no
+		cost = 0
+		
+		available = {	
+			controls_state = 110
+			controls_state = 142
+			controls_state = 143
+			controls_state = 144
+		}
+		
+		visible = {
+			tag = GER		
+			has_completed_focus = GER_form_the_reichskommissariats
+			NOT = { RKN = { is_puppet_of = GER } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}		
+		
+		complete_effect = {
+			country_event = { id = BP_germany.1 }
+		}
+	}
+	#### Reichskommissariat Netherlands #####
+	GER_reichskommissariat_niederlande = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = no
+		cost = 0
+		
+		available = {
+			controls_state = 7
+			controls_state = 35
+			controls_state = 36
+			controls_state = 795
+		}
+
+		visible = {
+			tag = GER		
+			has_completed_focus = GER_form_the_reichskommissariats
+			NOT = { RKH = { is_puppet_of = GER } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}	
+		
+		complete_effect = { 
+			country_event = { id = BP_germany.10 }
+		}
+	}
+	#### Reichskommissariat Belgium - North France ####
+	GER_reichskommissariat_belgien_nordfrankreich = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = no
+		cost = 0
+		
+		available = {
+			controls_state = 6
+			controls_state = 29
+			controls_state = 34
+			controls_state = 794
+		}
+
+		visible = {
+			tag = GER		
+			has_completed_focus = GER_form_the_reichskommissariats
+			NOT = { RKB = { is_puppet_of = GER } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}		
+		
+		complete_effect = {
+				country_event = { id = BP_germany.20 }
+		}
+	}
+	#### Reichskommissariat Ukraine ####
+	GER_reichskommissariat_ukraine = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = no
+		cost = 0
+		
+		available = {
+			controls_state = 93
+			controls_state = 94				
+			controls_state = 194			
+			controls_state = 197
+			controls_state = 199
+			controls_state = 201
+			controls_state = 202
+			controls_state = 203	
+			
+			OR = {
+				controls_state = 192
+				192 = { CONTROLLER = { tag = ROM } }			
+			}	
+			OR = { 
+				controls_state = 198
+				198 = { CONTROLLER = { tag = ROM } }			
+			}			
+		}
+
+		visible = {
+			tag = GER
+			has_completed_focus = GER_form_the_reichskommissariats
+			NOT = { RKU = { is_puppet_of = GER } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}		
+		
+		complete_effect = { 
+			country_event = { id = BP_germany.30 }
+		}
+	}
+	#### Reichskommissariat Ukraine: Central Areas Expansion ####
+	GER_expand_reichskommissariat_ukraine_west = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 10
+		
+		available = {
+			controls_state = 194
+			controls_state = 202	
+			controls_state = 203
+			controls_state = 197				
+			controls_state = 259
+			controls_state = 193
+			controls_state = 226
+			controls_state = 196
+			controls_state = 200
+			controls_state = 224
+			controls_state = 225
+			controls_state = 221
+			controls_state = 227
+		}
+		
+		visible = {			
+			tag = GER
+			RKU = { is_puppet_of = GER }			
+		}		
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			RKU = {		
+				transfer_state = 194
+				transfer_state = 202
+				transfer_state = 203
+				transfer_state = 197
+				transfer_state = 259
+				transfer_state = 193
+				transfer_state = 226
+				transfer_state = 196
+				transfer_state = 200										
+			}
+		}
+	}
+	#### Reichskommissariat Ukraine: East Expansion ####
+	GER_expand_reichskommissariat_ukraine_east = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 10
+		
+		available = {	
+			controls_state = 227
+			controls_state = 228				
+			controls_state = 221
+			controls_state = 225
+			controls_state = 218
+			controls_state = 245
+			controls_state = 260
+			controls_state = 240
+			controls_state = 220
+		}
+		
+		visible = {			
+			tag = GER
+			RKU = { is_puppet_of = GER }			
+		}		
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			RKU = {			
+				transfer_state = 227
+				transfer_state = 228						
+				transfer_state = 221
+				transfer_state = 225											
+			}
+			set_country_flag = rku1
+		}
+	}
+	#### Destiny of South-East Russia ####
+	GER_don_wolga = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 10
+		
+		available = {
+			controls_state = 224			
+			controls_state = 258
+			controls_state = 222 	
+			controls_state = 220			
+			controls_state = 218
+			controls_state = 240			
+			controls_state = 245	
+			controls_state = 265
+			controls_state = 217				
+			controls_state = 260
+			controls_state = 239
+			controls_state = 257				
+		}
+		
+		visible = {
+			tag = GER		
+			has_country_flag = rku1		
+			RKU = { is_puppet_of = GER }	
+		}		
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.31 }		
+		}
+	}
+	#### Reichskommissariat Ostland ####
+	GER_reichskommissariat_ostland = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = no
+		cost = 0
+		
+		available = {			
+			controls_state = 97
+			controls_state = 95
+			controls_state = 96
+			controls_state = 204
+			controls_state = 206
+			controls_state = 207
+		}
+
+		visible = {
+			tag = GER
+			has_completed_focus = GER_form_the_reichskommissariats		
+			NOT = { RKO = { is_puppet_of = GER } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}		
+		
+		complete_effect = {
+			country_event = { id = BP_germany.40 }
+		}
+	}
+	#### Reichskommissariat Ostland: Baltic Expansion ####
+	GER_reichskommissariat_ostland_baltic = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 10
+		
+		available = {
+			controls_state = 11
+			controls_state = 784
+			controls_state = 189
+			controls_state = 12
+			controls_state = 190
+			controls_state = 13
+			controls_state = 191
+		}
+		
+		visible = {
+			tag = GER		
+			RKO = { is_puppet_of = GER }						
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	
+		complete_effect = {
+			RKO = {
+				transfer_state = 11
+				transfer_state = 784
+				transfer_state = 189
+				transfer_state = 12
+				transfer_state = 190
+				transfer_state = 13
+				transfer_state = 191
+				
+				set_capital = 12
+			}
+		}
+	}	
+	#### Destiny of North-West Russia ####
+	GER_destiny_of_north_west_russia = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 10
+		
+		available = {
+			controls_state = 195			
+			controls_state = 209			
+			controls_state = 210
+			controls_state = 208	
+			controls_state = 244			
+			controls_state = 263				
+		}
+		
+		visible = {	
+			tag = GER			
+			RKO = { is_puppet_of = GER }	
+		}		
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.41 }
+		}
+	}	
+	#### Reichskommissariat Moscow ####
+	GER_reichskommissariat_moskau = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = no
+		cost = 0
+		
+		available = {
+			has_full_control_of_state = 219		
+			controls_state = 246			
+			controls_state = 242			
+			controls_state = 243
+			controls_state = 205	
+			controls_state = 264			
+			controls_state = 247
+			controls_state = 223				
+		}
+
+		visible = {
+			tag = GER	
+			has_completed_focus = GER_form_the_reichskommissariats
+			NOT = { RKM = { is_puppet_of = GER } }
+		}		
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = { 
+			country_event = { id = BP_germany.50 }	
+		}
+	}
+	#### Reichskommissariat Moscow: East Expansion" ####
+	GER_expand_reichskommissariat_moskau = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 10
+		
+		available = {
+			controls_state = 351		
+			controls_state = 248			
+			controls_state = 253
+			controls_state = 254						
+		}
+		
+		visible = {
+			tag = GER		
+			RKM = { is_puppet_of = GER }	
+			OR = {
+				GER = { has_country_flag = forward_to_ural }
+				GER = { has_country_flag = no_any_negotiation }				
+			}						
+		}		
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			RKM = {
+				transfer_state = 351
+				transfer_state = 248
+				transfer_state = 253	
+				transfer_state = 254								
+			}
+		}
+	}
+	#### Destiny of North-East Russia ####	
+	GER_destiny_of_north_east_russia = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 10
+		
+		available = {
+			controls_state = 214			
+			controls_state = 262			
+			controls_state = 397				
+		}
+		
+		visible = {	
+			tag = GER			
+			RKM = { is_puppet_of = GER }
+			OR = {
+				GER = { has_country_flag = forward_to_ural }
+				GER = { has_country_flag = no_any_negotiation }				
+			}
+		}		
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.51 }
+		}
+	}
+	#### Destiny of East Russia ####
+	GER_destiny_of_east_russia = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 10
+
+		available = {
+			controls_state = 400			
+			controls_state = 398			
+			controls_state = 399	
+			controls_state = 256			
+			controls_state = 252			
+			controls_state = 255
+			controls_state = 250			
+			controls_state = 249			
+			controls_state = 651
+			controls_state = 251		
+			controls_state = 652						
+		}
+		
+		visible = {
+			tag = GER			
+			RKM = { is_puppet_of = GER }	
+			OR = {
+				has_country_flag = forward_to_ural
+				has_country_flag = no_any_negotiation				
+			}						
+		}		
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = { 
+			country_event = { id = BP_germany.52 }
+		}
+	}	
+	#### Reichskommissariat Caucasus ####
+	GER_reichskommissariat_kaukasus = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = no
+		cost = 0
+		
+		available = {
+			controls_state = 238
+			controls_state = 234
+			controls_state = 235
+			controls_state = 233
+			controls_state = 232
+			controls_state = 237
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			tag = GER			
+			has_completed_focus = GER_form_the_reichskommissariats
+			NOT = { RKK = { is_puppet_of = GER } }
+		}
+
+		complete_effect = { 
+			country_event = { id = BP_germany.60 }			
+		}
+	}
+	#### Reichskommissariat Caucasus: East Expansion ####
+	GER_east_expansion_reichskommissariat_kaukasus = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 5
+		
+		available = {
+			controls_state = 236
+			controls_state = 237
+		}
+
+		visible = {
+			tag = GER	
+			has_completed_focus = GER_form_the_reichskommissariats
+			RKK = { is_puppet_of = GER }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}	
+		
+		complete_effect = {
+			RKK = {
+				transfer_state = 236
+				transfer_state = 237	
+			}
+		}
+	}	
+	#### Reichskommissariat Caucasus: South Expansion ####
+	GER_south_expansion_reichskommissariat_kaukasus = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 5
+		
+		available = {
+			controls_state = 233
+			controls_state = 232
+		}
+
+		visible = {
+			tag = GER			
+			has_completed_focus = GER_form_the_reichskommissariats
+			RKK = { is_puppet_of = GER }		
+		}
+
+		ai_will_do = {
+			factor = 0
+		}		
+		
+		complete_effect = {		
+			RKK = {
+				transfer_state = 233
+				transfer_state = 232			
+			}
+		}
+	}
+	#### Reichskommissariat Caucasus: Mountain Republics Expansion ####
+	GER_south_rep_expansion_reichskommissariat_kaukasus = {
+
+		icon = ger_reichskommissariats		
+		
+		fire_only_once = yes
+		cost = 5
+		
+		available = {
+			controls_state = 229
+			controls_state = 230
+			controls_state = 231
+		}
+
+		visible = {
+			tag = GER			
+			has_completed_focus = GER_form_the_reichskommissariats
+			RKK = { is_puppet_of = GER }		
+		}
+
+		ai_will_do = {
+			factor = 0
+		}	
+		
+		complete_effect = {	
+			#Reichskommissariat Caucasus will get Mountain Republics if Germany don't propose them to Turkey or if Turkey reject proposal 
+			if = { 
+				limit = {
+					OR =  {
+						AND = {
+							OR = {
+								GER = { has_country_flag = Tur_Armenia }  
+								GER = { has_country_flag = Tur_Armenia_Georgia }
+								GER = { has_country_flag = Tur_Kaukasus }									
+							}
+							GER = { NOT = { has_country_flag = Tur_Axis_agree } }
+						}
+						AND  = {
+							GER = { NOT = { has_country_flag = Tur_Armenia } }  
+							GER = { NOT = { has_country_flag = Tur_Armenia_Georgia } }
+							GER = { NOT = { has_country_flag = Tur_Kaukasus } }
+						}
+					}		
+				}
+				RKK = {
+					transfer_state = 229
+					transfer_state = 230
+					transfer_state = 231
+
+					set_capital = 231			
+				}
+			}
+			#Reichskommissariat Caucasus will get Georgia and Azerbaijan, Turkey will get Armenia
+			if = { 
+				limit = {
+					GER = { 
+						has_country_flag = Tur_Armenia  
+						has_country_flag = Tur_Axis_agree
+					}
+				}
+				RKK = {
+					transfer_state = 229				
+					transfer_state = 231
+
+					set_capital = 231			
+				}
+				TUR = { country_event = { id = BP_turkey.3 } }
+			}
+			#Reichskommissariat Caucasus will get Azerbaijan, Turkey will get Armenia and Georgia
+			if = { 
+				limit = {
+					GER = {  
+						has_country_flag = Tur_Armenia_Georgia 
+						has_country_flag = Tur_Axis_agree
+					}
+				}
+				RKK = {
+					transfer_state = 229		
+				}
+				TUR = { country_event = { id = BP_turkey.3 } }
+			}
+			#Turkey will get whole Caucasus
+			if = { 
+				limit = { 
+					GER = { 
+						has_country_flag = Tur_Kaukasus
+						has_country_flag = Tur_Axis_agree
+					}						
+				}
+				TUR = { country_event = { id = BP_turkey.3 } }
+			}						
+		}
+	}	
+	#### Reichskommissariat Turkestan ####
+	GER_reichskommissariat_turkestan = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = no
+		cost = 0
+		
+		available = {			
+			controls_state = 584
+			controls_state = 587
+			controls_state = 402				
+			controls_state = 583				
+			controls_state = 590
+			controls_state = 588				
+			controls_state = 589
+			controls_state = 404
+			controls_state = 585
+			controls_state = 405
+			controls_state = 586				
+			controls_state = 732				
+			controls_state = 742
+			controls_state = 406				
+			controls_state = 407			
+		}
+
+		visible = {
+			tag = GER
+			has_completed_focus = GER_form_the_reichskommissariats	
+			has_country_flag = europe_under_contorol
+			NOT = { RKT = { is_puppet_of = GER } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}	
+		
+		complete_effect = { 
+			country_event = { id = BP_germany.70 }
+		}
+	}
+	#### Reichskommissariat West Siberia ####
+	GER_reichskommissariat_west_siberia = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = no
+		cost = 0
+		
+		available = {			
+			controls_state = 579
+			controls_state = 580
+			controls_state = 577				
+			controls_state = 653				
+			controls_state = 572
+			controls_state = 403				
+			controls_state = 571
+			controls_state = 578
+			controls_state = 570
+			controls_state = 40
+			controls_state = 654				
+			controls_state = 569			
+		}
+
+		visible = {
+			tag = GER
+			has_completed_focus = GER_form_the_reichskommissariats	
+			has_country_flag = europe_under_contorol
+			NOT = { RKV = { is_puppet_of = GER } }
+		}
+
+		aai_will_do = {
+			factor = 0
+		}	
+		
+		complete_effect = {
+			country_event = { id = BP_germany.80 }
+		}
+	}	
+}
+
+###############################################################################################################################################################################
+# Greater German Reich - Satellites ###########################################################################################################################################
+###############################################################################################################################################################################
+
+GER_greater_german_reich = {
+
+
+form_greater_germanic_reich = {
+
+cost = 1000
+
+		icon = generic_form_nation
+
+		allowed = {
+			tag = GER
+		}
+
+		available = {
+			is_subject = no
+			has_war = no
+			
+			controls_state = 151
+			controls_state = 800
+			
+			9 = { is_controlled_by_ROOT_or_ally = yes }
+			75 = { is_controlled_by_ROOT_or_ally = yes }
+			
+			37 = { is_controlled_by_ROOT_or_ally = yes }
+			110 = { is_controlled_by_ROOT_or_ally = yes }
+			6 = { is_controlled_by_ROOT_or_ally = yes }
+			7 = { is_controlled_by_ROOT_or_ally = yes }
+			8 = { is_controlled_by_ROOT_or_ally = yes }
+			10 = { is_controlled_by_ROOT_or_ally = yes }
+			141 = { is_controlled_by_ROOT_or_ally = yes }
+			
+			195 = { is_controlled_by_ROOT_or_ally = yes }
+			217 = { is_controlled_by_ROOT_or_ally = yes }
+			219 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		visible = {
+			AND = {
+				tag = GER
+				has_fascist_government = yes
+				has_country_leader = { ruling_only = yes name = "Adolf Hitler" }
+			}
+			has_global_flag = form_GER_greater_german_reich_flag
+			NOT = { has_global_flag = form_GER_greater_germanic_reich_flag }
+		}
+
+		complete_effect = {
+			country_event = { id = newformevents.1 }
+			hidden_effect = {
+				set_global_flag = form_GER_greater_germanic_reich_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
+	#### General Government Poland ####
+	GER_generalgouvernement_polen = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 25
+		
+		available = {
+			controls_state = 88
+			controls_state = 90		
+			controls_state = 92
+			controls_state = 10		
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			tag = GER
+			NOT = { has_country_flag = PGG_1 } 			
+			OR = {
+				AND = {				
+					POL = {
+						has_war = yes
+						has_capitulated = yes 
+					}
+				}
+				POL = { exists = no }
+			}
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.100 }					
+		}
+	}
+	#### Create District Galicia ####
+	GER_distrikt_galizien = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+			tag = GER
+			PGG = { is_subject_of = GER }
+			controls_state = 91	
+			controls_state = 89			
+		}
+		
+		visible = {
+			tag = GER
+			has_country_flag = PGG_1			
+			PGG = { is_subject_of = GER }			
+			OR = {
+				SOV = { NOT = { has_idea = SOV_molotov_ribbentrop_pact } }	
+				SOV = { exists = no }
+				has_war_with = SOV
+			}
+		}		
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			PGG = { #Galizia to GG Polen after this
+				transfer_state = 91
+				transfer_state = 89			
+			}			
+		}			
+	}	
+	#### Reichsprotektorat Bohemia and Moravia ####
+	GER_reichsprotektorat_bohemia = {
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+			tag = GER
+			controls_state = 9
+			controls_state = 75	
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			tag = GER		
+			NOT = { country_exists = CZE }
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.90 }					
+		}
+	}
+	GER_heydrich_deputy_reichsprotektor_bohemia = {
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 10		
+		
+		available = {
+			tag = GER
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			tag = GER
+			date > 1941.9.20
+			has_country_flag = CZE_revolts
+			CZE = { is_subject_of = GER }
+		}
+
+		complete_effect = {
+			CZE = {
+				add_stability = 0.05
+				add_war_support = 0.05			
+				create_country_leader = {
+						name = "Reinhard Heydrich"
+						desc = ""
+						picture = "gfx/leaders/GER/Portrait_Germany_Reinhard_Heydrich.dds"
+						expire = "1965.1.1"
+						ideology = nazism_ideology				
+						traits = {
+							hangman
+						}
+				}			
+			}
+		}
+	}
+	
+	#### Reichsprotektorat Denmark
+	GER_create_new_denmark_goverment = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 10
+		
+		available = {
+			tag = GER
+			controls_state = 37
+			controls_state = 99				
+		}
+
+		visible = {
+			tag = GER
+			OR = {
+				has_war_with = DEN			
+				DEN = { has_capitulated = yes }
+				DEN = { exists = no }
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}		
+		
+		complete_effect = {
+			country_event = { id = BP_germany.110 }
+		}
+	}
+	#### Independent State of Croatia ####
+	GER_satellite_croatia = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 10
+		
+		available = {
+			tag = GER
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Yugoslavia_tt
+				102 = { is_controlled_by_ROOT_or_ally = yes } #Slovenia
+				103 = { is_controlled_by_ROOT_or_ally = yes } #Dalmatia
+				109 = { is_controlled_by_ROOT_or_ally = yes } #Croatia			
+				104 = { is_controlled_by_ROOT_or_ally = yes } #Bosnia
+				45 = { is_controlled_by_ROOT_or_ally = yes } #Vojvodina
+				107 = { is_controlled_by_ROOT_or_ally = yes } #Serbia
+				105 = { is_controlled_by_ROOT_or_ally = yes } #Montenegro		
+				108 = { is_controlled_by_ROOT_or_ally = yes } #Morava
+				106 = { is_controlled_by_ROOT_or_ally = yes } #Macedonia
+			}	
+		}
+		
+		visible = {
+			tag = GER		
+			has_country_flag = YUG_1
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Yugoslavia_tt
+				102 = { is_controlled_by_ROOT_or_ally = yes } #Slovenia
+				103 = { is_controlled_by_ROOT_or_ally = yes } #Dalmatia
+				109 = { is_controlled_by_ROOT_or_ally = yes } #Croatia			
+				104 = { is_controlled_by_ROOT_or_ally = yes } #Bosnia
+				45 = { is_controlled_by_ROOT_or_ally = yes } #Vojvodina
+				107 = { is_controlled_by_ROOT_or_ally = yes } #Serbia
+				105 = { is_controlled_by_ROOT_or_ally = yes } #Montenegro		
+				108 = { is_controlled_by_ROOT_or_ally = yes } #Morava
+				106 = { is_controlled_by_ROOT_or_ally = yes } #Macedonia
+			}			
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}		
+		
+		complete_effect = {
+			country_event = { id = BP_germany.120 }		
+		}
+	}
+	#### Territory of the Military Commander in Serbia ####
+	GER_satellite_serbia = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 10
+		
+		available = {
+			tag = GER
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Yugoslavia_tt
+				102 = { is_controlled_by_ROOT_or_ally = yes } #Slovenia
+				103 = { is_controlled_by_ROOT_or_ally = yes } #Dalmatia
+				109 = { is_controlled_by_ROOT_or_ally = yes } #Croatia			
+				104 = { is_controlled_by_ROOT_or_ally = yes } #Bosnia
+				45 = { is_controlled_by_ROOT_or_ally = yes } #Vojvodina
+				107 = { is_controlled_by_ROOT_or_ally = yes } #Serbia
+				105 = { is_controlled_by_ROOT_or_ally = yes } #Montenegro		
+				108 = { is_controlled_by_ROOT_or_ally = yes } #Morava
+				106 = { is_controlled_by_ROOT_or_ally = yes } #Macedonia
+			}				
+		}
+
+		visible = {
+			tag = GER		
+			has_country_flag = YUG_1
+			NOT = { SER = { is_puppet_of = GER } }
+			NOT = { YUG = { is_in_faction_with = GER } }
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Yugoslavia_tt
+				102 = { is_controlled_by_ROOT_or_ally = yes } #Slovenia
+				103 = { is_controlled_by_ROOT_or_ally = yes } #Dalmatia
+				109 = { is_controlled_by_ROOT_or_ally = yes } #Croatia			
+				104 = { is_controlled_by_ROOT_or_ally = yes } #Bosnia
+				45 = { is_controlled_by_ROOT_or_ally = yes } #Vojvodina
+				107 = { is_controlled_by_ROOT_or_ally = yes } #Serbia
+				105 = { is_controlled_by_ROOT_or_ally = yes } #Montenegro		
+				108 = { is_controlled_by_ROOT_or_ally = yes } #Morava
+				106 = { is_controlled_by_ROOT_or_ally = yes } #Macedonia
+			}			
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+		
+		complete_effect = {
+			country_event = { id = BP_germany.130 }					
+		}
+	}	
+	#### Destiny of England ####
+	GER_destiny_of_england = { 
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 50		
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BP_Germany_controls_England_tt
+				123 = { is_controlled_by_ROOT_or_ally = yes } #Cornwall
+				338 = { is_controlled_by_ROOT_or_ally = yes } #Gloucestershire
+				127 = { is_controlled_by_ROOT_or_ally = yes } #Sussex
+				126 = { is_controlled_by_ROOT_or_ally = yes } #London
+				125 = { is_controlled_by_ROOT_or_ally = yes } #East Anglia
+				122 = { is_controlled_by_ROOT_or_ally = yes } #Wales
+				128 = { is_controlled_by_ROOT_or_ally = yes } #West Midlands
+				129 = { is_controlled_by_ROOT_or_ally = yes } #East Midlands
+				132 = { is_controlled_by_ROOT_or_ally = yes } #Lancashire
+				130 = { is_controlled_by_ROOT_or_ally = yes } #Yorkshire
+				131 = { is_controlled_by_ROOT_or_ally = yes } #Northern England		
+			}
+			custom_trigger_tooltip = {
+				tooltip = BP_Germany_controls_Scotland_tt
+				133 = { is_controlled_by_ROOT_or_ally = yes } #Lanark
+				121 = { is_controlled_by_ROOT_or_ally = yes } #Lothian
+				136 = { is_controlled_by_ROOT_or_ally = yes } #Aberdeenshire
+				120 = { is_controlled_by_ROOT_or_ally = yes } #Scottish Highlands	
+			}			
+		}
+
+		visible = {
+			tag = GER
+			has_fascist_government = yes
+			OR = {
+				AND = {
+					has_war_with = ENG		
+					ENG = { has_capitulated = yes }
+				}
+				ENG = { exists = no }
+			}
+			has_full_control_of_state = 126
+		}
+
+		highlight_states = {
+			#England
+			state = 123 #Cornwall
+			state = 338 #Gloucestershire
+			state = 127 #Sussex
+			state = 126 #London
+			state = 125 #East Anglia
+			state = 122 #Wales
+			state = 128 #West Midlands
+			state = 129 #East Midlands
+			state = 132 #Lancashire
+			state = 130 #Yorkshire
+			state = 131 #Northern England	
+			#Scotland	
+			state = 133 #Lanark
+			state = 121 #Lothian
+			state = 136 #Aberdeenshire
+			state = 120 #Scottish Highlands
+		}		
+		
+		ai_will_do = {
+			factor = 200
+		}		
+		
+		complete_effect = {
+			country_event = { id = BP_germany.140 }
+		}
+	}
+	
+		#### Destiny of England ####
+	GER_destiny_of_america = { 
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 50		
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BP_Germany_controls_USA_tt
+				378 = { is_controlled_by_ROOT_or_ally = yes } #Cornwall
+				375 = { is_controlled_by_ROOT_or_ally = yes } #Cornwall
+				389 = { is_controlled_by_ROOT_or_ally = yes } #Cornwall
+				361 = { is_controlled_by_ROOT_or_ally = yes } #Cornwall
+			}
+			
+		}
+
+		visible = {
+			NOT = { has_war_with = JAP }
+			JAP = { has_fascist_government = yes }
+			tag = GER
+			has_fascist_government = yes
+			OR = {
+				AND = {
+					has_war_with = USA		
+					USA = { has_capitulated = yes }
+				}
+				USA = { exists = no }
+			}
+			has_full_control_of_state = 361
+		}
+		
+		
+		ai_will_do = {
+			factor = 200
+		}		
+		
+		complete_effect = {
+			country_event = { id = ww2germany.6 }
+		}
+	}
+	
+		#### Destiny of England ####
+	GER_destiny_of_canada = { 
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 50		
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BP_Germany_controls_CAN_tt
+				683 = { is_controlled_by_ROOT_or_ally = yes } #Cornwall
+				469 = { is_controlled_by_ROOT_or_ally = yes } #Cornwall
+				471 = { is_controlled_by_ROOT_or_ally = yes } #Cornwall
+				464 = { is_controlled_by_ROOT_or_ally = yes } #Cornwall
+				276 = { is_controlled_by_ROOT_or_ally = yes } #Cornwall
+			}
+			
+		}
+
+		visible = {
+			tag = GER
+			NOT = { has_war_with = JAP }
+			JAP = { has_fascist_government = yes }
+			has_fascist_government = yes
+			OR = {
+				AND = {
+					has_war_with = CAN		
+					CAN = { has_capitulated = yes }
+				}
+				CAN = { exists = no }
+			}
+			has_full_control_of_state = 276
+		}
+		
+		
+		ai_will_do = {
+			factor = 200
+		}		
+		
+		complete_effect = {
+			country_event = { id = ww2germany.7 }
+		}
+	}
+	
+	
+	#### Destiny of Turkey ####
+	GER_destiny_of_turkey = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 50
+		
+		available = {		
+			OR =  {
+				AND = {
+					has_war_with = TUR
+					TUR = { has_capitulated = yes }	
+				}
+				TUR = { exists = no }
+				TUR = { is_subject_of = GER }
+			}
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Anatolia_tt
+				341 = { is_controlled_by_ROOT_or_ally = yes } #Istanbul	
+				340 = { is_controlled_by_ROOT_or_ally = yes } #Bursa
+				339 = { is_controlled_by_ROOT_or_ally = yes } #Izmir				
+				347 = { is_controlled_by_ROOT_or_ally = yes } #Izmit
+				343 = { is_controlled_by_ROOT_or_ally = yes } #Afyon 
+				342 = { is_controlled_by_ROOT_or_ally = yes } #Antalya
+				49 = { is_controlled_by_ROOT_or_ally = yes }  #Ankara
+				346 = { is_controlled_by_ROOT_or_ally = yes } #Konya 
+				345 = { is_controlled_by_ROOT_or_ally = yes } #Mersin
+				356 = { is_controlled_by_ROOT_or_ally = yes } #Kastamonu 
+				348 = { is_controlled_by_ROOT_or_ally = yes } #Kayseri
+				344 = { is_controlled_by_ROOT_or_ally = yes } #Adana
+				355 = { is_controlled_by_ROOT_or_ally = yes } #Samsun
+				349 = { is_controlled_by_ROOT_or_ally = yes } #Sivas
+				350 = { is_controlled_by_ROOT_or_ally = yes } #Malatya
+				354 = { is_controlled_by_ROOT_or_ally = yes } #Trabzon
+				353 = { is_controlled_by_ROOT_or_ally = yes } #Erzurum
+				352 = { is_controlled_by_ROOT_or_ally = yes } #Van				
+			}
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Cyprus_tt
+				183 = { is_controlled_by_ROOT_or_ally = yes } #Cyprus
+			}
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Syria_tt
+				677 = { is_controlled_by_ROOT_or_ally = yes } #Aleppo
+				680 = { is_controlled_by_ROOT_or_ally = yes } #Deir-Az-Zur
+				553 = { is_controlled_by_ROOT_or_ally = yes } #Lebanon
+				554 = { is_controlled_by_ROOT_or_ally = yes } #Damascus				
+			}
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Iraq_tt
+				676 = { is_controlled_by_ROOT_or_ally = yes } #Mosul
+				291 = { is_controlled_by_ROOT_or_ally = yes } #Baghdad
+				675 = { is_controlled_by_ROOT_or_ally = yes } #Al_Hajara				
+			}
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Iran_tt
+				419 = { is_controlled_by_ROOT_or_ally = yes } #Tibriz	
+				420 = { is_controlled_by_ROOT_or_ally = yes } #Gilah
+				421 = { is_controlled_by_ROOT_or_ally = yes } #Kurdistan				
+				417 = { is_controlled_by_ROOT_or_ally = yes } #Hamadan
+				413 = { is_controlled_by_ROOT_or_ally = yes } #Khuzestan
+				266 = { is_controlled_by_ROOT_or_ally = yes } #Tehran
+				416 = { is_controlled_by_ROOT_or_ally = yes } #Khorasan
+				418 = { is_controlled_by_ROOT_or_ally = yes } #Semnan 
+				411 = { is_controlled_by_ROOT_or_ally = yes } #Isfahan
+				412 = { is_controlled_by_ROOT_or_ally = yes } #Fars
+				414 = { is_controlled_by_ROOT_or_ally = yes } #Kerman
+				410 = { is_controlled_by_ROOT_or_ally = yes } #Sistan
+			}			
+		}		
+
+		visible = {
+			tag = GER	
+			OR =  {
+				AND = {
+					has_war_with = TUR
+					TUR = { has_capitulated = yes }	
+				}
+				TUR = { exists = no }
+			}			
+		}		
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 200
+				date > 1943.1.1
+				NOT = { has_war_with = SOV }
+			}
+			modifier = {
+				factor = 0
+				date < 1943.1.1
+			}
+			modifier = {
+				factor = 0
+				has_war_with = SOV
+			}
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.405 }
+		}
+	}
+	#### Destiny of Scandinavia ####
+	GER_destiny_of_scandinavia = {
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 50		
+		
+		available = {		
+			110 = { is_controlled_by = GER } #Oslo
+			custom_trigger_tooltip = {
+				tooltip = BP_Germany_controls_Norway_tt
+				110 = { is_controlled_by_ROOT_or_ally = yes } #Oslo
+				142 = { is_controlled_by_ROOT_or_ally = yes } #Vestlandet
+				143 = { is_controlled_by_ROOT_or_ally = yes } #Trondelag
+				144 = { is_controlled_by_ROOT_or_ally = yes } #Nord-Norge	
+			}
+			37 = { is_controlled_by = GER } #Sjaelland
+			custom_trigger_tooltip = {
+				tooltip = BP_Germany_controls_Denmark_tt
+				99 = { is_controlled_by_ROOT_or_ally = yes } #Jutland
+				37 = { is_controlled_by_ROOT_or_ally = yes } #Sjaelland
+			}
+			141 = { is_controlled_by = GER } #Svealand
+			custom_trigger_tooltip = {
+				tooltip = BP_Germany_controls_Sweden_tt
+				138 = { is_controlled_by_ROOT_or_ally = yes } #Scania
+				139 = { is_controlled_by_ROOT_or_ally = yes } #Smaland
+				124 = { is_controlled_by_ROOT_or_ally = yes } #Gotland
+				140 = { is_controlled_by_ROOT_or_ally = yes } #Vastergotland	
+				141 = { is_controlled_by_ROOT_or_ally = yes } #Svealand
+				38 = { is_controlled_by_ROOT_or_ally = yes } #Norrland
+				666 = { is_controlled_by_ROOT_or_ally = yes } #Lappland
+			}
+		}
+
+		visible = {
+			tag = GER	
+			37 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = GER 
+						is_in_faction_with = GER 
+					} 
+				} 
+			}
+			110 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = GER 
+						is_in_faction_with = GER 
+					} 
+				} 
+			}
+			141 = { 
+				CONTROLLER = { 
+					OR = { 
+						tag = GER 
+						is_in_faction_with = GER
+					} 
+				} 
+			}			
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}		
+
+		complete_effect = {
+			country_event = { id = BP_germany.301 }
+		}
+	}	
+	
+	GER_italian_social_republic = {
+icon = ger_reichskommissariats
+
+			available = {
+			
+			has_global_flag = mussolini_recued
+			
+			controls_state = 158
+			controls_state = 159
+			controls_state = 160
+			controls_state = 161
+			controls_state = 162
+	
+			}
+
+		cost = 25
+		
+		fire_only_once = yes # Will not re-enable after being removed
+
+		ai_will_do = {
+			factor = 200 #EAI: crashes?
+		}
+
+		visible = {
+			has_war_with = ITA	
+			NOT = { country_exists = RSI }	
+		}
+		
+		complete_effect = {
+				
+country_event = { id = ww2germany.0 }
+}
+}
+	
+	
+GER_annex_polish_corridor = {
+icon = ger_reichskommissariats
+			
+			available = {
+			POL = { has_capitulated = yes }
+			controls_state = 85
+			controls_state = 86
+			controls_state = 87
+			controls_state = 98
+			controls_state = 762
+			}
+		
+
+		cost = 25
+		
+		fire_only_once = yes # Will not re-enable after being removed
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_war_with = POL
+			NOT = { has_country_flag = germany_annexed_pol }
+		}
+		
+				complete_effect = {
+				
+				country_event = { id = landgrabevents.0 }					
+				}
+				}
+				
+				
+				
+GER_annex_biyalistok = {
+			icon = ger_reichskommissariats
+			
+			available = {
+			controls_state = 97
+			}
+		
+
+		cost = 25
+		
+		fire_only_once = yes # Will not re-enable after being removed
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_war_with = SOV
+			NOT = { has_country_flag = germany_annexed_biyalistok }
+		}
+		
+				complete_effect = {
+				
+				country_event = { id = landgrabevents.3 }					
+				}
+				}
+
+
+GER_annex_alsace = {
+icon = ger_reichskommissariats
+
+		available = {
+			FRA = { has_capitulated = yes }
+			controls_state = 28		
+			}
+	
+
+		cost = 25
+		
+		fire_only_once = yes # Will not re-enable after being removed
+
+		ai_will_do = {
+			factor = 200 #EAI: crashes?
+		}
+
+		visible = {
+			has_war_with = FRA
+			NOT = { has_country_flag = germany_annexed_fra }	
+		}
+		
+				complete_effect = {
+				
+				country_event = { id = landgrabevents.1 }			
+}
+}
+
+GER_annex_luxemburg = {
+icon = ger_reichskommissariats
+
+		available = {
+			LUX = { has_capitulated = yes }
+			controls_state = 8		
+			}
+	
+
+		cost = 25
+		
+		fire_only_once = yes # Will not re-enable after being removed
+
+		ai_will_do = {
+			factor = 200 #EAI: crashes?
+		}
+
+		visible = {
+			has_war_with = LUX
+			NOT = { has_country_flag = germany_annexed_lux }
+		}
+		
+				complete_effect = {
+				
+				country_event = { id = landgrabevents.6 }			
+}
+}
+
+GER_annex_italian_territories = {
+icon = ger_reichskommissariats
+
+			available = {
+			
+			controls_state = 102
+			controls_state = 4
+			controls_state = 152
+			controls_state = 153
+			controls_state = 39
+			controls_state = 736
+	
+			}
+
+		cost = 25
+		
+		fire_only_once = yes # Will not re-enable after being removed
+
+		ai_will_do = {
+			factor = 200 #EAI: crashes?
+		}
+
+		visible = {
+			has_war_with = ITA	
+			NOT = { has_country_flag = germany_annexed_ita }	
+		}
+		
+		complete_effect = {
+				
+country_event = { id = landgrabevents.2 }
+}
+}
+
+GER_annex_eupen_malmedy = {
+			icon = ger_reichskommissariats
+			
+			available = {
+			OR = { BEL = { has_capitulated = yes } country_exists = RKB }
+			controls_state = 789
+			}	
+			
+			
+		
+
+		cost = 25
+		
+		fire_only_once = yes # Will not re-enable after being removed
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			OR = { has_war_with = BEL country_exists = RKB }
+			NOT = { has_country_flag = germany_annexed_eupen }
+		}
+		
+				complete_effect = {
+				
+				country_event = { id = landgrabevents.4 }					
+				}
+				}
+				
+
+GER_annex_north_schleswig = {
+			icon = ger_reichskommissariats
+			
+			available = {
+			DEN = { has_capitulated = yes }
+			controls_state = 788
+			}	
+
+		cost = 25
+		
+		fire_only_once = yes # Will not re-enable after being removed
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_war_with = DEN
+			NOT = { has_country_flag = germany_annexed_schleswig }
+		}
+		
+				complete_effect = {
+				
+				country_event = { id = landgrabevents.5 }					
+				}
+				}
+				
+				
+GER_annex_belgium = {
+			icon = ger_reichskommissariats
+			
+			available = {
+			date > 1944.12.1 
+			OR = { BEL = { has_capitulated = yes } country_exists = RKB }
+			
+			OR = { GER = { controls_state = 789 } any_other_country = { is_subject_of = GER controls_state = 789 } }
+			OR = { GER = { controls_state = 6 } any_other_country = { is_subject_of = GER controls_state = 6 } }
+			OR = { GER = { controls_state = 34 } any_other_country = { is_subject_of = GER controls_state = 34 } }
+			OR = { GER = { controls_state = 794 } any_other_country = { is_subject_of = GER controls_state = 794 } }	
+			
+			}
+		
+
+		cost = 25
+		
+		fire_only_once = yes # Will not re-enable after being removed
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			OR = { has_war_with = BEL country_exists = RKB }
+			NOT = { has_country_flag = germany_annexed_belgium }
+		}
+		
+				complete_effect = {
+				
+				country_event = { id = landgrabevents.7 }					
+				}
+				}	
+				
+				
+		#### SS State Brittany ####
+	GER_brittany = {
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+			tag = GER
+			OR = { GER = { controls_state = 14 } any_other_country = { is_subject_of = GER controls_state = 14 } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		
+		OR = {
+				AND = {				
+					FRA = {
+						has_war = yes
+						has_capitulated = yes 
+					}
+				}
+				FRA = { exists = no }
+			}
+		
+			tag = GER		
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.800 }					
+		}
+	}
+
+		#### SS State Burgundy ####
+	GER_burgundy = {
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+			tag = GER
+			OR = { GER = { controls_state = 17 } any_other_country = { is_subject_of = GER controls_state = 17 } }
+			OR = { GER = { controls_state = 18 } any_other_country = { is_subject_of = GER controls_state = 18 } }
+			OR = { GER = { controls_state = 785 } any_other_country = { is_subject_of = GER controls_state = 785 } }
+			OR = { GER = { controls_state = 27 } any_other_country = { is_subject_of = GER controls_state = 27 } }
+			OR = { GER = { controls_state = 20 } any_other_country = { is_subject_of = GER controls_state = 20 } }
+			OR = { GER = { controls_state = 21 } any_other_country = { is_subject_of = GER controls_state = 21 } }
+			OR = { GER = { controls_state = 32 } any_other_country = { is_subject_of = GER controls_state = 32 } }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		
+		OR = {
+				AND = {				
+					FRA = {
+						has_war = yes
+						has_capitulated = yes 
+					}
+				}
+				FRA = { exists = no }
+			}
+		
+			tag = GER		
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.801 }					
+		}
+	}	
+	
+	
+	
+	#### SS State Madagaskar ####
+	GER_madagaskar = {
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+			tag = GER
+			OR = { GER = { controls_state = 543 } any_other_country = { is_subject_of = GER controls_state = 543 } }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+		
+		OR = {
+				AND = {				
+					FRA = {
+						has_war = yes
+						has_capitulated = yes 
+					}
+				}
+				FRA = { exists = no }
+			}
+		
+			tag = GER		
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.803 }					
+		}
+	}	
+				
+		#### Mittelafrika ####
+	GER_mittelafrika = {
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+			tag = GER
+			OR = {
+				OR = { has_full_control_of_state = 295 any_country = { is_subject_of = GER has_full_control_of_state = 295 }}
+				OR = { has_full_control_of_state = 538 any_country = { is_subject_of = GER has_full_control_of_state = 538 }}
+				OR = { has_full_control_of_state = 718 any_country = { is_subject_of = GER has_full_control_of_state = 718 }}
+				OR = { has_full_control_of_state = 539 any_country = { is_subject_of = GER has_full_control_of_state = 539 }}
+				OR = { has_full_control_of_state = 297 any_country = { is_subject_of = GER has_full_control_of_state = 297 }}
+				OR = { has_full_control_of_state = 660 any_country = { is_subject_of = GER has_full_control_of_state = 660 }}
+				OR = { has_full_control_of_state = 558 any_country = { is_subject_of = GER has_full_control_of_state = 558 }}
+				OR = { has_full_control_of_state = 556 any_country = { is_subject_of = GER has_full_control_of_state = 556 }}
+				OR = { has_full_control_of_state = 274 any_country = { is_subject_of = GER has_full_control_of_state = 274 }}
+				OR = { has_full_control_of_state = 298 any_country = { is_subject_of = GER has_full_control_of_state = 298 }}
+				OR = { has_full_control_of_state = 700 any_country = { is_subject_of = GER has_full_control_of_state = 700 }}
+				OR = { has_full_control_of_state = 296 any_country = { is_subject_of = GER has_full_control_of_state = 296 }}
+				OR = { has_full_control_of_state = 701 any_country = { is_subject_of = GER has_full_control_of_state = 701 }}
+				OR = { has_full_control_of_state = 272 any_country = { is_subject_of = GER has_full_control_of_state = 272 }}
+				OR = { has_full_control_of_state = 546 any_country = { is_subject_of = GER has_full_control_of_state = 546 }}
+				OR = { has_full_control_of_state = 545 any_country = { is_subject_of = GER has_full_control_of_state = 545 }}
+				OR = { has_full_control_of_state = 540 any_country = { is_subject_of = GER has_full_control_of_state = 540 }}
+				OR = { has_full_control_of_state = 541 any_country = { is_subject_of = GER has_full_control_of_state = 541 }}
+				OR = { has_full_control_of_state = 544 any_country = { is_subject_of = GER has_full_control_of_state = 544 }}
+				OR = { has_full_control_of_state = 771 any_country = { is_subject_of = GER has_full_control_of_state = 771 }}
+				OR = { has_full_control_of_state = 770 any_country = { is_subject_of = GER has_full_control_of_state = 770 }}
+				OR = { has_full_control_of_state = 769 any_country = { is_subject_of = GER has_full_control_of_state = 769 }}
+				OR = { has_full_control_of_state = 548 any_country = { is_subject_of = GER has_full_control_of_state = 548 }}
+				OR = { has_full_control_of_state = 772 any_country = { is_subject_of = GER has_full_control_of_state = 772 }}
+				OR = { has_full_control_of_state = 773 any_country = { is_subject_of = GER has_full_control_of_state = 773 }}
+				OR = { has_full_control_of_state = 776 any_country = { is_subject_of = GER has_full_control_of_state = 776 }}
+				OR = { has_full_control_of_state = 777 any_country = { is_subject_of = GER has_full_control_of_state = 777 }}
+				OR = { has_full_control_of_state = 781 any_country = { is_subject_of = GER has_full_control_of_state = 781 }}
+				OR = { has_full_control_of_state = 778 any_country = { is_subject_of = GER has_full_control_of_state = 778 }}
+				OR = { has_full_control_of_state = 779 any_country = { is_subject_of = GER has_full_control_of_state = 779 }}
+				OR = { has_full_control_of_state = 780 any_country = { is_subject_of = GER has_full_control_of_state = 780 }}
+				OR = { has_full_control_of_state = 557 any_country = { is_subject_of = GER has_full_control_of_state = 557 }}
+				OR = { has_full_control_of_state = 774 any_country = { is_subject_of = GER has_full_control_of_state = 774 }}
+				OR = { has_full_control_of_state = 768 any_country = { is_subject_of = GER has_full_control_of_state = 768 }}
+				OR = { has_full_control_of_state = 548 any_country = { is_subject_of = GER has_full_control_of_state = 548 }}
+				OR = { has_full_control_of_state = 547 any_country = { is_subject_of = GER has_full_control_of_state = 547 }}
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			tag = GER		
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.802 }					
+		}
+	}
+
+
+
+
+	
+	
+	
+	#### Sudafrika ####
+	GER_sudafrika = {
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+			tag = GER
+			BSS = { exists = no }
+
+			OR = { has_full_control_of_state = 275 any_country = { is_subject_of = GER has_full_control_of_state = 275 }}
+			OR = { has_full_control_of_state = 542 any_country = { is_subject_of = GER has_full_control_of_state = 542 }}
+			OR = { has_full_control_of_state = 681 any_country = { is_subject_of = GER has_full_control_of_state = 681 }}
+			OR = { has_full_control_of_state = 719 any_country = { is_subject_of = GER has_full_control_of_state = 719 }}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		
+		OR = {
+				AND = {				
+					SAF = {
+						has_war = yes
+						has_capitulated = yes 
+					}
+				}
+				SAF = { exists = no }
+			}
+		
+			tag = GER		
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.804 }					
+		}
+	}
+				
+	#### Brazil ####
+	GER_brazil = {
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+			tag = GER
+			DND = { exists = no }
+
+			OR = { has_full_control_of_state = 495 any_country = { is_subject_of = GER has_full_control_of_state = 495 }}
+			OR = { has_full_control_of_state = 496 any_country = { is_subject_of = GER has_full_control_of_state = 496 }}
+			OR = { has_full_control_of_state = 497 any_country = { is_subject_of = GER has_full_control_of_state = 497 }}
+			OR = { has_full_control_of_state = 498 any_country = { is_subject_of = GER has_full_control_of_state = 498 }}
+			OR = { has_full_control_of_state = 499 any_country = { is_subject_of = GER has_full_control_of_state = 499 }}
+			OR = { has_full_control_of_state = 500 any_country = { is_subject_of = GER has_full_control_of_state = 500 }}
+			OR = { has_full_control_of_state = 280 any_country = { is_subject_of = GER has_full_control_of_state = 280 }}
+			OR = { has_full_control_of_state = 501 any_country = { is_subject_of = GER has_full_control_of_state = 501 }}
+			OR = { has_full_control_of_state = 502 any_country = { is_subject_of = GER has_full_control_of_state = 502 }}
+			OR = { has_full_control_of_state = 503 any_country = { is_subject_of = GER has_full_control_of_state = 503 }}
+			OR = { has_full_control_of_state = 504 any_country = { is_subject_of = GER has_full_control_of_state = 504 }}
+			OR = { has_full_control_of_state = 505 any_country = { is_subject_of = GER has_full_control_of_state = 505 }}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		
+		OR = {
+				AND = {				
+					BRA = {
+						has_war = yes
+						has_capitulated = yes 
+					}
+				}
+				BRA = { exists = no }
+			}
+		
+			tag = GER		
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.805 }					
+		}
+	}		
+
+
+	#### Argentina ####
+	GER_argentina = {
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+			tag = GER
+			VSS = { exists = no }
+
+			OR = { has_full_control_of_state = 508 any_country = { is_subject_of = GER has_full_control_of_state = 508 }}
+			OR = { has_full_control_of_state = 509 any_country = { is_subject_of = GER has_full_control_of_state = 509 }}
+			OR = { has_full_control_of_state = 510 any_country = { is_subject_of = GER has_full_control_of_state = 510 }}
+			OR = { has_full_control_of_state = 511 any_country = { is_subject_of = GER has_full_control_of_state = 511 }}
+			OR = { has_full_control_of_state = 512 any_country = { is_subject_of = GER has_full_control_of_state = 512 }}
+			OR = { has_full_control_of_state = 278 any_country = { is_subject_of = GER has_full_control_of_state = 278 }}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		
+		OR = {
+				AND = {				
+					ARG = {
+						has_war = yes
+						has_capitulated = yes 
+					}
+				}
+				ARG = { exists = no }
+			}
+		
+			tag = GER		
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.806 }					
+		}
+	}	
+	
+	
+	#### Venezuela ####
+	GER_venezuela = {
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+			tag = GER
+			DNS = { exists = no }
+
+			OR = { has_full_control_of_state = 488 any_country = { is_subject_of = GER has_full_control_of_state = 488 }}
+			OR = { has_full_control_of_state = 489 any_country = { is_subject_of = GER has_full_control_of_state = 489 }}
+			OR = { has_full_control_of_state = 307 any_country = { is_subject_of = GER has_full_control_of_state = 307 }}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		
+		OR = {
+				AND = {				
+					VEN = {
+						has_war = yes
+						has_capitulated = yes 
+					}
+				}
+				VEN = { exists = no }
+			}
+		
+			tag = GER		
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.807 }					
+		}
+	}	
+	
+	
+	#### Mexico ####
+	GER_mexico = {
+
+		icon = ger_reichskommissariats
+
+		fire_only_once = yes
+		cost = 25		
+		
+		available = {
+			tag = GER
+			DCA = { exists = no }
+
+			OR = { has_full_control_of_state = 277 any_country = { is_subject_of = GER has_full_control_of_state = 277 }}
+			OR = { has_full_control_of_state = 474 any_country = { is_subject_of = GER has_full_control_of_state = 474 }}
+			OR = { has_full_control_of_state = 475 any_country = { is_subject_of = GER has_full_control_of_state = 475 }}
+			OR = { has_full_control_of_state = 476 any_country = { is_subject_of = GER has_full_control_of_state = 476 }}
+			OR = { has_full_control_of_state = 477 any_country = { is_subject_of = GER has_full_control_of_state = 477 }}
+			OR = { has_full_control_of_state = 478 any_country = { is_subject_of = GER has_full_control_of_state = 478 }}
+			OR = { has_full_control_of_state = 479 any_country = { is_subject_of = GER has_full_control_of_state = 479 }}
+			OR = { has_full_control_of_state = 480 any_country = { is_subject_of = GER has_full_control_of_state = 480 }}
+			OR = { has_full_control_of_state = 481 any_country = { is_subject_of = GER has_full_control_of_state = 481 }}
+			OR = { has_full_control_of_state = 482 any_country = { is_subject_of = GER has_full_control_of_state = 482 }}
+			OR = { has_full_control_of_state = 483 any_country = { is_subject_of = GER has_full_control_of_state = 483 }}
+			OR = { has_full_control_of_state = 484 any_country = { is_subject_of = GER has_full_control_of_state = 484 }}
+			OR = { has_full_control_of_state = 485 any_country = { is_subject_of = GER has_full_control_of_state = 485 }}
+
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+		
+		OR = {
+				AND = {				
+					MEX = {
+						has_war = yes
+						has_capitulated = yes 
+					}
+				}
+				MEX = { exists = no }
+			}
+		
+			tag = GER		
+		}
+
+		complete_effect = {
+			country_event = { id = BP_germany.808 }					
+		}
+	}
+	
+	
+}
+
+###############################################################################################################################################################################
+# Germanization ###############################################################################################################################################################
+###############################################################################################################################################################################
+
+GER_germanization = {
+	#### German Renaming in Western Poland ####
+	GER_german_renaming_west_poland = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes		
+		is_good = yes		
+		
+		available = {
+			
+		}
+	
+		visible = {
+			tag = GER
+			has_country_flag = PGG_2		
+		}	
+	
+		highlight_states = {
+			state = 85
+			state = 98
+			state = 86
+			state = 87
+			state = 72
+			state = 762
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			85 = { set_state_name = "Westpreußen" } 
+			86 = { set_state_name = "Posen" } 
+			set_province_name = { id = 6558 name = "Posen"}
+			98 = { set_state_name = "Zichenau" }
+			87 = { set_state_name = "Wartheland" } 
+			set_province_name = { id = 9508 name = "Litzmannstadt"}
+			72 = { set_state_name = "Olsagebiet" } 
+			762 = { set_state_name = "Kattowitz" } 			
+		}
+	}
+	#### Germanization of Western Poland: Phase One ####
+	GER_germanization_west_poland_step1_start = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes						
+		cost = 50
+	
+		available = {
+			divisions_in_state = { state = 85 size > 2 }
+			divisions_in_state = { state = 98 size > 2 }
+			divisions_in_state = { state = 86 size > 2 }
+			divisions_in_state = { state = 87 size > 2 }			
+		}
+	
+		visible = {
+			has_country_flag = PGG_2
+			NOT = { has_country_flag = PGG_3 }			
+			NOT = { has_active_mission = GER_germanization_west_poland_step1_mission }				
+		}	
+	
+		highlight_states = {
+			state = 85
+			state = 98
+			state = 86
+			state = 87		
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			activate_mission = GER_germanization_west_poland_step1_mission
+		}
+	}	
+	#### Germanization of Western Poland: Phase One [ Mission ] ####
+	GER_germanization_west_poland_step1_mission = {
+	
+		icon = ger_reichskommissariats
+		days_mission_timeout = 180
+		
+		fire_only_once = no		
+
+		available = {			
+			always = no
+		}	
+
+		visible = {
+
+		}		
+
+		activation = {
+			always = no #Triggered from effect
+		}	
+		
+		cancel_trigger = {
+			divisions_in_state = { state = 85 size < 3 }
+			divisions_in_state = { state = 98 size < 3 }
+			divisions_in_state = { state = 86 size < 3 }
+			divisions_in_state = { state = 87 size < 3 }
+		}		
+		
+		highlight_states = {
+			state = 85
+			state = 98
+			state = 86
+			state = 87		
+		}		
+
+		complete_effect = {
+			
+		}	
+		
+		timeout_effect = {
+			
+			set_country_flag = PGG_3
+			
+			85 = { #Danzing 
+				add_manpower = -25567
+			}
+			86 = { #Poznan
+				add_manpower = -125734
+			}
+			87 = { #Lodz
+				add_manpower = -151278
+			}
+			98 = { #Plock
+				add_manpower = -74528
+			}
+			
+			10 = { #Warsaw
+				add_manpower = 69674
+			}		
+			92 = { #Lublin
+				add_manpower = 119257
+			}
+			90 = { #Kielce
+				add_manpower = 141327
+			}
+			88 = { #Krakov
+				add_manpower = 22157
+			}
+		}		
+	}
+	#### Germanization of Western Poland: Phase Two ####
+	GER_germanization_west_poland_step2_start = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = no						
+		cost = 100
+	
+		available = {
+		
+		}
+	
+		visible = {
+			has_country_flag = PGG_3
+			NOT = { has_country_flag = PGG_4 }
+			NOT = { has_active_mission = GER_germanization_west_poland_step2_mission }			
+		}	
+	
+		highlight_states = {
+			state = 85
+			state = 98
+			state = 86
+			state = 87		
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			activate_mission = GER_germanization_west_poland_step2_mission
+		}
+	}	
+	#### Germanization of Western Poland: Phase Two [ Mission ] ####
+	GER_germanization_west_poland_step2_mission = {
+	
+		icon = ger_reichskommissariats
+		days_mission_timeout = 360
+		
+		fire_only_once = yes		
+
+		available = {			
+			always = no
+		}	
+
+		visible = {
+		
+		}		
+
+		activation = {
+			always = no #Triggered from effect
+		}	
+		
+		cancel_trigger = {
+
+		}		
+		
+		highlight_states = {
+			state = 85
+			state = 98
+			state = 86
+			state = 87		
+		}		
+
+		complete_effect = {
+			
+		}	
+		
+		timeout_effect = {
+			add_manpower = -100000
+			set_country_flag = PGG_4		
+			85 = { add_core_of = GER }
+			86 = { add_core_of = GER }
+			87 = { add_core_of = GER }
+			98 = { add_core_of = GER }
+		}		
+
+	}
+	#### Germanization of Southwest Poland: Phase one ####
+	GER_germanization_zaolzie_katowice_step1_start = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = no					
+		cost = 50		
+		
+		available = {
+			divisions_in_state = { state = 72 size > 2 }
+			divisions_in_state = { state = 762 size > 2 }						
+		}
+	
+		visible = {
+			has_country_flag = PGG_2 
+			NOT = { has_country_flag = PGG_5 } 
+			NOT = { has_active_mission = GER_germanization_zaolzie_katowice_step1_mission }
+		}	
+	
+	
+		highlight_states = {
+			state = 72	
+			state = 762
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		complete_effect = {
+			activate_mission = GER_germanization_zaolzie_katowice_step1_mission
+		}
+	}
+	#### Germanization of Southwest Poland: Phase one [ Mission ] ####
+	GER_germanization_zaolzie_katowice_step1_mission = {
+	
+		icon = ger_reichskommissariats
+		days_mission_timeout = 180
+		
+		fire_only_once = yes				
+		
+		available = {			
+			always = no
+		}	
+
+		visible = {
+		
+		}		
+
+		activation = {
+			always = no #Triggered from effect
+		}	
+		
+		cancel_trigger = {
+			divisions_in_state = { state = 72 size < 2 }
+			divisions_in_state = { state = 762 size < 2 }			
+		}		
+		
+		highlight_states = {
+			state = 72
+			state = 762			
+		}		
+
+		complete_effect = {
+
+		}
+		
+		timeout_effect = {
+			set_country_flag = PGG_5			
+			762 = { # Katowize
+				add_manpower = -14785
+			}
+			72 = { # Zaolzie
+				add_manpower = -23576
+			}		
+			10 = { #Warsaw
+				add_manpower = 27368
+			}		
+		}			
+	}
+	#### Germanization of Southwestern Poland: Phase Two ####
+	GER_germanization_zaolzie_katowice_step2_start = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = no			
+		cost = 100	
+		
+		available = {						
+		}
+	
+		visible = {
+			has_country_flag = PGG_5	
+			NOT = { has_country_flag = PGG_6 }
+			NOT = { has_active_mission = GER_germanization_zaolzie_katowice_step2_mission }
+		}	
+	
+	
+		highlight_states = {
+			state = 72	
+			state = 762
+		}
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		complete_effect = {
+			activate_mission = GER_germanization_zaolzie_katowice_step2_mission
+		}
+	}
+	#### Germanization of Southwestern Poland: Phase Two [ Mission ] ####
+	GER_germanization_zaolzie_katowice_step2_mission = {
+	
+		icon = ger_reichskommissariats
+		days_mission_timeout = 360
+		
+		fire_only_once = yes			
+		
+		available = {			
+			always = no
+		}	
+
+		visible = {
+		
+		}		
+
+		activation = {
+			always = no #Triggered from effect
+		}	
+		
+		cancel_trigger = {
+		
+		}		
+		
+		highlight_states = {
+			state = 72
+			state = 762			
+		}		
+
+		complete_effect = {
+			add_manpower = -10000			
+		}
+		
+		timeout_effect = {
+			add_manpower = -10000			
+			72 = { add_core_of = GER }					
+			762 = { add_core_of = GER }			
+		}				
+	}	
+}	
+
+###############################################################################################################################################################################
+# Foreign Politic #############################################################################################################################################################
+###############################################################################################################################################################################
+
+foreign_politics = {
+	#### Force Troops Transit Through Sweden ####
+	GER_troops_transit_sweden = {	
+
+		icon = ger_reichskommissariats	
+		
+		fire_only_once = yes		
+		cost = 10	
+	
+		available = { 
+			NOT = {
+				has_war_with = SWE
+			}		
+			SWE = { 
+				NOT = { 
+					is_subject_of = GER 
+					is_in_faction = yes
+				}	
+			}
+			custom_trigger_tooltip = {
+				tooltip = BP_Germany_controls_Norway_tt
+				110 = { is_controlled_by_ROOT_or_ally = yes } #Oslo
+				142 = { is_controlled_by_ROOT_or_ally = yes } #Vestlandet
+				143 = { is_controlled_by_ROOT_or_ally = yes } #Trondelag
+				144 = { is_controlled_by_ROOT_or_ally = yes } #Nord-Norge	
+			}
+		}
+
+		visible = {
+			tag = GER
+			SWE = { exists = yes }
+			110	= { is_controlled_by_ROOT_or_ally = yes }		
+		}
+
+		ai_will_do = {
+			factor = 10
+		}		
+		
+		complete_effect = { 
+			country_event = { id = BP_germany.302 }
+		}		
+	}
+	#### Partition of Yugoslavia ####
+	GER_patrition_of_yugoslavia = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Yugoslavia_tt
+				102 = { is_controlled_by_ROOT_or_ally = yes } #Slovenia
+				103 = { is_controlled_by_ROOT_or_ally = yes } #Dalmatia
+				109 = { is_controlled_by_ROOT_or_ally = yes } #Croatia			
+				104 = { is_controlled_by_ROOT_or_ally = yes } #Bosnia
+				45 = { is_controlled_by_ROOT_or_ally = yes } #Vojvodina
+				107 = { is_controlled_by_ROOT_or_ally = yes } #Serbia
+				105 = { is_controlled_by_ROOT_or_ally = yes } #Montenegro		
+				108 = { is_controlled_by_ROOT_or_ally = yes } #Morava
+				106 = { is_controlled_by_ROOT_or_ally = yes } #Macedonia
+			}
+			ITA = { exists = yes }
+			HUN = { exists = yes }
+			BUL = { exists = yes }
+			ITA = { is_in_faction_with = GER }
+			HUN = { is_in_faction_with = GER }
+			BUL = { is_in_faction_with = GER }
+		}
+
+		visible = {
+			tag = GER
+			NOT = { YUG = { is_in_faction_with = GER } }
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Yugoslavia_tt
+				102 = { is_controlled_by_ROOT_or_ally = yes } #Slovenia
+				103 = { is_controlled_by_ROOT_or_ally = yes } #Dalmatia
+				109 = { is_controlled_by_ROOT_or_ally = yes } #Croatia			
+				104 = { is_controlled_by_ROOT_or_ally = yes } #Bosnia
+				45 = { is_controlled_by_ROOT_or_ally = yes } #Vojvodina
+				107 = { is_controlled_by_ROOT_or_ally = yes } #Serbia
+				105 = { is_controlled_by_ROOT_or_ally = yes } #Montenegro		
+				108 = { is_controlled_by_ROOT_or_ally = yes } #Morava
+				106 = { is_controlled_by_ROOT_or_ally = yes } #Macedonia
+			}			
+		}
+
+		ai_will_do = {
+			factor = 200
+		}		
+		
+		complete_effect = {
+			country_event = { id = BP_germany.200 }
+			set_country_flag = YUG_1
+		}
+	}	
+	
+		#### Partition of Switzerland ####
+	GER_patrition_of_switzerland = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		
+		available = {
+		ITA = { exists = yes }
+		ITA = { is_in_faction_with = GER }
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Swizterland_tt
+				3 = { is_controlled_by_ROOT_or_ally = yes }
+				151 = { is_controlled_by_ROOT_or_ally = yes }
+				790 = { is_controlled_by_ROOT_or_ally = yes }
+				NOT = { owns_state = 151 }
+			}
+		}
+
+		visible = {
+			tag = GER
+			NOT = { SWI = { is_in_faction_with = GER } }
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Swizterland_tt
+				3 = { is_controlled_by_ROOT_or_ally = yes }
+				151 = { is_controlled_by_ROOT_or_ally = yes }
+				790 = { is_controlled_by_ROOT_or_ally = yes }		
+			}			
+		}
+
+		ai_will_do = {
+			factor = 200
+		}		
+		
+		complete_effect = {
+			country_event = { id = BP_Switzerland.4 }
+		}
+	}	
+	
+	#### Partition of Greece ####
+	GER_patrition_of_greece = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		
+		available = {
+			
+			custom_trigger_tooltip = {
+				tooltip = BP_Axis_controls_Greece_tt 
+				184 = { is_controlled_by_ROOT_or_ally = yes } #Thrace
+				731 = { is_controlled_by_ROOT_or_ally = yes } #Central Macedonia
+				185 = { is_controlled_by_ROOT_or_ally = yes } #Epirus			
+				47 = { is_controlled_by_ROOT_or_ally = yes } #Bosnia
+				45 = { is_controlled_by_ROOT_or_ally = yes } #Thessaly
+				186 = { is_controlled_by_ROOT_or_ally = yes } #Peloponnese
+			}
+			
+			ITA = { exists = yes }
+			BUL = { exists = yes }
+			ITA = { is_in_faction_with = GER }
+			BUL = { is_in_faction_with = GER }
+			
+		}
+
+		visible = {
+			tag = GER
+			NOT = { GRE = { is_in_faction_with = GER } }
+			47 = { is_controlled_by_ROOT_or_ally = yes } #Bosnia
+							
+		}
+
+		ai_will_do = {
+			factor = 200
+		}		
+		
+		complete_effect = {
+			country_event = { id = BP_germany.201 }
+		}
+	}
+	#### The Irish Question ####
+	GER_the_irish_question = { 
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 25
+		
+		available = {		
+			has_full_control_of_state = 119		
+		}
+
+		visible = {
+			has_global_flag = fall_of_london_ger
+			tag = GER
+			OR =  {
+				has_war_with = ENG		
+				ENG = { has_capitulated = yes }		
+			}
+			has_full_control_of_state = 119				
+		}
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 10
+				ENG = { has_capitulated = yes }
+			}
+		}		
+		
+		complete_effect = {
+			country_event = { id = BP_germany.600 }
+		}
+	}
+	#### The Swedish Question ####
+	GER_the_swedish_question = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 50
+		
+		available = {		
+			NOT = { has_war_with = SOV }		
+		}
+
+		visible = {
+			tag = GER	
+			has_global_flag = fall_of_moscow
+		}
+
+		ai_will_do = {
+			factor = 10
+		}		
+		
+		complete_effect = {
+			country_event = { id = BP_germany.300 }
+		}
+	}	
+	#### Continuation War ####
+	FIN_continuation_war = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes	
+		cost = 15	
+	
+		available = { 
+			has_war_with = SOV
+			NOT = {
+				FIN = { is_in_faction = yes }
+				GER = { has_war_with = FIN }
+			}	
+		}
+
+		visible = {
+			tag = GER
+			has_war_with = SOV 
+			FIN = { NOT = { controls_state = 146 } }		
+			NOT = {
+				FIN = { is_in_faction = yes }
+				GER = { has_war_with = FIN }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+		
+		complete_effect = {
+			country_event = { id = BP_finland.1 }
+		}		
+	}
+	#### Negotiations with Japan ####
+	GER_negotiations_with_japan = { 	
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 50
+	
+		available = {
+			has_war_with = SOV
+			NOT = { has_war_with = JAP }		 	
+			JAP = {
+				exists = yes
+				NOT = { 
+					has_war_with = SOV  
+					has_war_with = CHI 
+				} 
+			}
+			217 = { is_controlled_by_ROOT_or_ally = yes }		
+			OR = {
+				219 = { is_controlled_by_ROOT_or_ally = yes }
+				195 = { is_controlled_by_ROOT_or_ally = yes }
+			}
+		}	
+	
+		visible = {
+			tag = GER
+			has_war_with = SOV 
+			NOT = { has_war_with = JAP } 			
+			JAP = { 
+				exists = yes 
+				NOT = { has_war_with = SOV }
+			}				
+			64 = { is_controlled_by_ROOT_or_ally = yes } # Berlin
+			16 = { is_controlled_by_ROOT_or_ally = yes } # Paris 
+			202 = { is_controlled_by_ROOT_or_ally = yes } # Kiev 
+			206 = { is_controlled_by_ROOT_or_ally = yes } # Minsk 		
+		}
+
+		ai_will_do = {
+			factor = 10
+		}	
+		
+		complete_effect = { 
+			country_event = { id = BP_germany.504 }
+		}			
+	}
+	#### Negotiations with Turkey ####
+	GER_negotiations_with_turkey = { 	
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 50
+		
+		available = {
+			has_war_with = SOV
+			NOT = { has_war_with = TUR }
+			TUR = { 
+				is_in_faction = no
+				NOT = { has_war_with = SOV } 
+			}
+			NOT = {
+				controls_state = 233 
+				controls_state = 231 
+				controls_state = 230 
+				controls_state = 229 
+			}				
+			217 = { is_controlled_by_ROOT_or_ally = yes } # Stalingrad 			
+			OR = {
+				219 = { is_controlled_by_ROOT_or_ally = yes } # Moscow
+				195 = { is_controlled_by_ROOT_or_ally = yes } # Leningrad
+			}	
+		}	
+	
+		visible = {
+			tag = GER
+			has_war_with = SOV 
+			NOT = { has_war_with = TUR } 			
+			TUR = { 
+				exists = yes 
+				NOT = { has_war_with = SOV } 
+			}	
+			
+			64 = { is_controlled_by_ROOT_or_ally = yes } # Berlin
+			16 = { is_controlled_by_ROOT_or_ally = yes } # Paris 
+			202 = { is_controlled_by_ROOT_or_ally = yes } # Kiev 
+			206 = { is_controlled_by_ROOT_or_ally = yes } # Minsk 
+			137 = { is_controlled_by_ROOT_or_ally = yes } # Sevastopol
+			48 = { is_controlled_by_ROOT_or_ally = yes } # Sofia 
+			47 = { is_controlled_by_ROOT_or_ally = yes } # Athene's
+			46 = { is_controlled_by_ROOT_or_ally = yes } # Bucharest		
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}	
+		
+		complete_effect = { 
+			country_event = { id = BP_germany.400 }
+		}			
+	}
+	#### The Turkish Question ####
+	GER_the_turkish_question = { 	
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 50
+		
+		available = {		
+			NOT = { has_war_with = SOV }
+			NOT = { has_war_with = TUR }
+			NOT = { is_in_faction_with = TUR }
+			TUR = { NOT = { is_in_faction_with = ENG } }
+			divisions_in_state = { state = 211 size > 3 } #Burgas
+			divisions_in_state = { state = 184 size > 3 } #Thrace
+			divisions_in_state = { state = 231 size > 3 } #Georgia
+			divisions_in_state = { state = 230 size > 3 } #Armenia		
+		}
+
+		visible = {
+			tag = GER	
+			has_global_flag = fall_of_moscow
+		}		
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 10
+				NOT = { has_war_with = SOV }
+			}
+		}
+		
+		complete_effect = {
+			country_event = { id = BP_germany.404 }
+		}
+	}			
+	#### Negotiations with Iran ####
+	GER_negotiations_with_iran = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes		
+		cost = 50	
+	
+		available = { 
+			has_war_with = ENG
+			NOT = { has_war_with = PER }
+			PER = { is_in_faction = no } 
+			OR = {
+				AND = {
+					447 = { is_controlled_by_ROOT_or_ally = yes }	
+					446 = { is_controlled_by_ROOT_or_ally = yes }
+				}
+				AND = {
+					454 = { is_controlled_by_ROOT_or_ally = yes }	
+					291 = { is_controlled_by_ROOT_or_ally = yes }
+					656 = { is_controlled_by_ROOT_or_ally = yes }
+				}
+				AND = {
+					126 = { is_controlled_by_ROOT_or_ally = yes }		
+					122 = { is_controlled_by_ROOT_or_ally = yes }
+					121 = { is_controlled_by_ROOT_or_ally = yes }
+				}				
+			}
+		}
+
+		visible = {
+			tag = GER		 
+			is_faction_leader = yes	
+			has_war_with = ENG			
+			PER = {
+				is_puppet = no
+				is_in_faction = no	
+				NOT = { has_war_with = GER }
+			}	
+			FRA = { has_capitulated = yes }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}		
+		
+		complete_effect = {
+			PER = { 
+				country_event = { id = BP_persia.1 }
+			}
+		}		
+	}		
+	#### Peace with Soviets at Ural ####
+	GER_peace_with_soviets = {	
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 10
+		
+		available = {		
+			#controls_state = 581			
+			#controls_state = 573			
+			#controls_state = 582
+			581 = { is_controlled_by_ROOT_or_ally = yes }
+			573 = { is_controlled_by_ROOT_or_ally = yes }
+			582 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+		
+		visible = {
+			tag = GER
+			has_war_with = SOV		
+			has_country_flag = forward_to_ural						
+		}		
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			SOV = { 
+				country_event = { id = BP_USSR.11 }
+			}
+		}
+	}	
+	#### Force Switzerland to a trade agreement ####
+	GER_force_swiss_trade_agreement = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes
+		cost = 15
+	
+		available = {
+			divisions_in_state = { state = 17 size > 4 }
+			divisions_in_state = { state = 28 size > 4 }
+			divisions_in_state = { state = 50 size > 4 }
+			divisions_in_state = { state = 153 size > 4 }	
+			divisions_in_state = { state = 39 size > 4 }
+			divisions_in_state = { state = 159 size > 4 }
+			divisions_in_state = { state = 158 size > 4 }
+			divisions_in_state = { state = 735 size > 4 }	
+			divisions_in_state = { state = 20 size > 4 }
+		}
+	
+		highlight_states = {
+			state = 17
+			state = 28
+			state = 500
+			state = 153
+			state = 39
+			state = 159
+			state = 158
+			state = 735
+			state = 20			
+		}	
+	
+		visible = {
+			tag = GER
+			SWI = { 
+				exists = yes 
+				NOT = { is_subject_of = GER }	
+			}
+			GER = { has_country_flag = swiss_trade_agreement }			
+		}	
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			SWI = { 
+				country_event = { id = BP_Switzerland.5 }
+			}		
+		}
+	}	
+}
+
+###############################################################################################################################################################################
+# Special Projects ############################################################################################################################################################
+###############################################################################################################################################################################
+
+special_projects = {
+	#### Airport in Aalborg ####
+	GER_aalborg_airport = {
+
+		icon = generic_air
+
+		fire_only_once = yes							
+		cost = 0
+	
+		available = {
+			99 = { is_controlled_by_ROOT_or_ally = yes } # Jutland
+		}
+	
+		visible = {
+			tag  = GER
+			99 = { is_controlled_by_ROOT_or_ally = yes } # Jutland						
+		}	
+	
+		highlight_states = {
+			state = 99	
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		complete_effect = {
+			country_event = { id = BP_germany.601 }
+		}		
+	}
+	#### Airport in Aalborg [ Mission ] ####
+	GER_expand_aalborg_airport = {
+
+		icon = generic_construction
+
+		fire_only_once = yes
+		cost = 10
+	
+		available = {
+			99 = { is_controlled_by_ROOT_or_ally = yes } # Jutland
+		}
+	
+		visible = {
+			always = no
+		}	
+	
+		highlight_states = {
+			state = 99	
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		remove_effect = {
+			99 = {
+				add_building_construction = {
+					type = air_base
+					level = 6
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3341
+					instant_build = yes
+				}		
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 3341
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 3206
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 399
+					instant_build = yes
+				}
+			}			
+		}		
+	}
+
+	###### General Moroz ######
+	
+	#### Winter Attrition ####
+	GER_general_moroz = {
+	
+		icon = ger_reichskommissariats
+
+		fire_only_once =  yes
+
+		available = {			
+			always = no #Triggered from event
+		}	
+
+		visible = {
+			tag = GER
+			has_country_flag = general_winter
+		}
+	
+		cancel_trigger = {
+
+		}		
+	
+		days_remove = 90
+
+		modifier = {
+			winter_attrition_factor = 1	
+			army_org = -10
+		}				
+	}
+	#### Provide Winter Equipment ####
+	GER_provide_winter_equipment = {
+
+		icon = generic_industry
+
+		fire_only_once = yes				
+		cost = 20	
+		
+		available = {
+			has_equipment = {
+				support_equipment > 4000
+			}
+		}
+
+		visible = {
+			tag = GER
+			has_country_flag = general_winter
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 90
+		
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = -4000
+			}
+		}	
+		
+		modifier = {
+			winter_attrition_factor = -0.50	
+			army_org = 5
+		}		
+	}
+	
+	###### Motorization ######
+
+	#### Constructing the Berlin - Silesia Autobahn ####
+	GER_motorization_berlin_silesia = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes						
+		cost = 50
+	
+		available = {
+			has_completed_focus = GER_autobahn
+			custom_trigger_tooltip = {
+				tooltip = trigger_berlin_silesia_tt
+				68 = { is_controlled_by_ROOT_or_ally = yes } #	
+				66 = { is_controlled_by_ROOT_or_ally = yes } #
+				67 = { is_controlled_by_ROOT_or_ally = yes } #				
+				762 = { is_controlled_by_ROOT_or_ally = yes } #				
+			}			
+		}
+	
+		visible = {
+			GER = { has_country_flag = GER_motorization1 }							
+		}	
+	
+		highlight_states = {
+			state = 68
+			state = 66
+			state = 67
+			state = 762		
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 60
+		
+		modifier = {
+			civilian_factory_use = 5
+		}
+		
+		remove_effect = {
+			country_event = { id = BP_germany.521 }
+			custom_effect_tooltip = GER_motorization_berlin_silesia_tt
+			hidden_effect = {					
+				68 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				66 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				67 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				762 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	#### Constructing the Silesia - Poland Autobahn ####
+	GER_motorization_silesia_poland = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes					
+		cost = 50
+	
+		available = {
+			has_completed_focus = GER_autobahn
+			custom_trigger_tooltip = {
+				tooltip = trigger_silesia_poland_tt
+				87 = { is_controlled_by_ROOT_or_ally = yes } #	
+				10 = { is_controlled_by_ROOT_or_ally = yes } #
+				88 = { is_controlled_by_ROOT_or_ally = yes } #				
+				89 = { is_controlled_by_ROOT_or_ally = yes } #
+				90 = { is_controlled_by_ROOT_or_ally = yes } #
+				91 = { is_controlled_by_ROOT_or_ally = yes } #
+				92 = { is_controlled_by_ROOT_or_ally = yes } #				
+			}			
+		}
+	
+		visible = {
+			GER = { has_country_flag = GER_motorization2 }						
+		}	
+	
+		highlight_states = {
+			state = 87
+			state = 10
+			state = 88
+			state = 89
+			state = 90
+			state = 91
+			state = 92	
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 90
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		
+		remove_effect = {
+			country_event = { id = BP_germany.522 }
+			custom_effect_tooltip = GER_motorization_silesia_poland_tt
+			hidden_effect = {					
+				87 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				10 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				88 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				89 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				90 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}				
+				91 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				92 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}				
+			}
+		}
+	}
+	#### Constructing the Poland - Russia Autobahn ####
+	GER_motorization_poland_russia = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes					
+		cost = 50
+	
+		available = {
+			has_completed_focus = GER_autobahn
+			custom_trigger_tooltip = {
+				tooltip = trigger_poland_russia_tt
+				97 = { is_controlled_by_ROOT_or_ally = yes } #	
+				95 = { is_controlled_by_ROOT_or_ally = yes } #
+				206 = { is_controlled_by_ROOT_or_ally = yes } #				
+				207 = { is_controlled_by_ROOT_or_ally = yes } #
+				210 = { is_controlled_by_ROOT_or_ally = yes } #
+				263 = { is_controlled_by_ROOT_or_ally = yes } # 
+				244 = { is_controlled_by_ROOT_or_ally = yes } #
+				195 = { is_controlled_by_ROOT_or_ally = yes } #
+				242 = { is_controlled_by_ROOT_or_ally = yes } #
+				219 = { is_controlled_by_ROOT_or_ally = yes } #				
+			}				
+		}
+	
+		visible = {
+			GER = { has_country_flag = GER_motorization3 }							
+		}	
+	
+		highlight_states = {
+			state = 97
+			state = 95
+			state = 206
+			state = 207
+			state = 210
+			state = 263
+			state = 244
+			state = 195
+			state = 242
+			state = 219
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 260
+		
+		modifier = {
+			civilian_factory_use = 40
+		}
+		
+		remove_effect = {
+			country_event = { id = BP_germany.523 }
+			custom_effect_tooltip = GER_motorization_poland_russia_tt
+			hidden_effect = {					
+				97 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				95 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				206 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				207 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				210 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				263 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				244 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				195 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				242 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}				
+				219 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}								
+			}
+		}
+	}
+	#### Constructing the Poland - Ukraine Autobahn ####
+	GER_motorization_poland_ukraine = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes						
+		cost = 50
+	
+		available = {
+			has_completed_focus = GER_autobahn
+			custom_trigger_tooltip = {
+				tooltip = trigger_poland_ukraine_tt
+				93 = { is_controlled_by_ROOT_or_ally = yes } #	
+				201 = { is_controlled_by_ROOT_or_ally = yes } #
+				202 = { is_controlled_by_ROOT_or_ally = yes } #				
+				203 = { is_controlled_by_ROOT_or_ally = yes } #
+				226 = { is_controlled_by_ROOT_or_ally = yes } #
+				196 = { is_controlled_by_ROOT_or_ally = yes } #
+				137 = { is_controlled_by_ROOT_or_ally = yes } #
+				227 = { is_controlled_by_ROOT_or_ally = yes } #
+				218 = { is_controlled_by_ROOT_or_ally = yes } #
+				193 = { is_controlled_by_ROOT_or_ally = yes } #
+				225 = { is_controlled_by_ROOT_or_ally = yes } #
+				220 = { is_controlled_by_ROOT_or_ally = yes } #
+				260 = { is_controlled_by_ROOT_or_ally = yes } #
+				265 = { is_controlled_by_ROOT_or_ally = yes } #
+				217 = { is_controlled_by_ROOT_or_ally = yes } #				
+			}						
+		}
+	
+		visible = {
+			GER = { has_country_flag = GER_motorization4 }							
+		}	
+	
+		highlight_states = {
+			state = 93
+			state = 201
+			state = 202
+			state = 203
+			state = 226
+			state = 137
+			state = 196
+			state = 227
+			state = 218
+			state = 193
+			state = 225
+			state = 220
+			state = 260
+			state = 265
+			state = 217			
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 260
+		
+		modifier = {
+			civilian_factory_use = 40
+		}
+		
+		remove_effect = {
+			country_event = { id = BP_germany.524 }
+			custom_effect_tooltip = GER_motorization_poland_ukraine_tt
+			hidden_effect = {					
+				93 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				201 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				202 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				203 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				226 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				137 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}				
+				196 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				227 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				218 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				193 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}				
+				225 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				220 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				260 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				265 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				217 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}				
+			}
+		}
+	}
+	
+	GER_motorization_ukraine_caucasus = {
+
+		icon = ger_reichskommissariats
+		
+		fire_only_once = yes					
+		cost = 50
+	
+		available = {
+			has_completed_focus = GER_autobahn
+			custom_trigger_tooltip = {
+				tooltip = trigger_ukraine_caucasus_tt
+				238 = { is_controlled_by_ROOT_or_ally = yes } #	
+				235 = { is_controlled_by_ROOT_or_ally = yes } #
+				232 = { is_controlled_by_ROOT_or_ally = yes } #				
+				229 = { is_controlled_by_ROOT_or_ally = yes } #				
+			}			
+		}
+	
+		visible = {
+			GER = { has_country_flag = GER_motorization5 }							
+		}	
+	
+		highlight_states = {
+			state = 238
+			state = 235
+			state = 232
+			state = 229		
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 180
+		
+		modifier = {
+			civilian_factory_use = 20
+		}
+		
+		remove_effect = {
+			country_event = { id = BP_germany.525 }
+			custom_effect_tooltip = GER_motorization_ukraine_caucasus_tt
+			hidden_effect = {					
+				238 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				235 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				232 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				229 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}	
+}

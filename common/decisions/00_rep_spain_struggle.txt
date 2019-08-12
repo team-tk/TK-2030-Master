@@ -1,0 +1,673 @@
+
+SPR_republican_struggle = {
+    	
+	pce_mission = {
+	    icon = generic_political_discourse
+        fire_only_once = yes
+		available = {
+			OR = {
+                check_variable = { com_inf < 75 }
+                has_country_flag = pce_power
+            }
+		}
+        is_good = no
+		days_mission_timeout = 45
+		fire_only_once = yes
+
+		activation = {
+			original_tag = SPR
+			has_country_flag = pce_mission_start
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			create_country_leader = {
+	            name = "José Díaz"
+	            desc = "POLITICS_JOSE_DIAZ_DESC"
+	            picture = "Portrait_Spain_Jose_Diaz.dds"
+	            expire = "1965.1.1"
+	            ideology = stalinism
+	            traits = {
+		        #
+	            }
+			}
+            set_party_name = {
+		        ideology = communism 
+		        long_name = SPR_pce_long 
+		        name = SPR_pce 
+            }
+            set_politics = {
+			    ruling_party = communism
+			    elections_allowed = no
+		        last_election = "1936.2.16"
+	            election_frequency = 48
+		    }
+            set_country_flag = pce_power
+			set_cosmetic_tag = SPC
+			clr_country_flag = cnt_in_power
+            set_country_flag = struggle_over			
+            add_political_power = -300
+            add_stability = -0.2			
+		}
+	}
+
+	
+	give_pce_power = {
+	    icon = generic_civil_support
+        allowed = { 
+	        tag = SPR
+		}
+        available = {
+            has_country_flag = pce_mission_start
+			NOT = { has_country_flag = pce_power }
+        }
+		cost = 0
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+			has_country_flag = pce_mission_start
+        }
+        fire_only_once = yes
+        complete_effect = {
+		    create_country_leader = {
+	            name = "José Díaz"
+	            desc = "POLITICS_JOSE_DIAZ_DESC"
+	            picture = "Portrait_Spain_Jose_Diaz.dds"
+	            expire = "1965.1.1"
+	            ideology = stalinism
+	            traits = {
+		        #
+	            }
+			}
+            set_party_name = {
+		        ideology = communism 
+		        long_name = SPR_pce_long 
+		        name = SPR_pce 
+            }
+            set_politics = {
+			    ruling_party = communism
+			    elections_allowed = no
+		        last_election = "1936.2.16"
+	            election_frequency = 48
+		    }
+            set_country_flag = pce_power
+			set_cosmetic_tag = SPC
+            set_country_flag = struggle_over
+            clr_country_flag = cnt_in_power			
+            add_political_power = -75
+        }
+
+    }
+	
+	cnt_mission = {
+	    icon = generic_political_discourse
+        fire_only_once = yes
+		available = {
+			OR = {
+                check_variable = { ana_inf < 75 }
+                has_country_flag = cnt_in_power
+            }
+		}
+        is_good = no
+		days_mission_timeout = 45
+		fire_only_once = yes
+
+		activation = {
+			original_tag = SPR
+			has_country_flag = cnt_mission_start
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			complete_effect = {
+		    set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+			}
+		}
+		create_country_leader = {
+	        name = "Manuel Azana"
+	        desc = "POLITICS_MANUEL_AZANA_DESC"
+	        picture = "Portrait_Spain_Manuel_Azana.dds"
+	        expire = "1965.1.1"
+	        ideology = social_democracy
+	        traits = {
+			    ambitious_reformer
+	        }
+        }
+		set_party_name = 
+		{ideology = communism
+		long_name = SPR_cnt_long 
+		name = SPR_cnt }
+		
+		add_popularity = {
+		    ideology = communism
+			popularity = 0.2
+		}
+		create_country_leader = {
+	        name = "Comité Central de la FAI"
+	        desc = "POLITICS_FAI_DESC"
+	        picture = "Portrait_Spain_CNT.dds"
+	        expire = "1965.1.1"
+	        ideology = anarchist_communism
+	        traits = {
+			comitee
+	        }
+        }
+		set_cosmetic_tag = CNT
+		clr_country_flag = pce_power
+		set_country_flag = cnt_in_power
+            set_country_flag = struggle_over			
+            add_political_power = -300
+            add_stability = -0.2			
+		}
+	}
+
+	
+	give_cnt_power = {
+	    icon = generic_civil_support
+        allowed = { 
+	        tag = SPR
+		}
+        available = {
+            has_country_flag = cnt_mission_start
+			NOT = { has_country_flag = cnt_in_power }
+        }
+		cost = 0
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+			has_country_flag = cnt_mission_start
+        }
+        fire_only_once = yes
+        complete_effect = {
+		    set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		create_country_leader = {
+	        name = "Manuel Azana"
+	        desc = "POLITICS_MANUEL_AZANA_DESC"
+	        picture = "Portrait_Spain_Manuel_Azana.dds"
+	        expire = "1965.1.1"
+	        ideology = social_democracy
+	        traits = {
+			    ambitious_reformer
+	        }
+        }
+		set_party_name = 
+		{ideology = communism
+		long_name = SPR_cnt_long 
+		name = SPR_cnt }
+		
+		add_popularity = {
+		    ideology = communism
+			popularity = 0.2
+		}
+		create_country_leader = {
+	        name = "Comité Central de la FAI"
+	        desc = "POLITICS_FAI_DESC"
+	        picture = "Portrait_Spain_CNT.dds"
+	        expire = "1965.1.1"
+	        ideology = anarchist_communism
+	        traits = {
+			comitee
+	        }
+        }
+		set_cosmetic_tag = CNT
+		set_country_flag = cnt_in_power
+		clr_country_flag = pce_power
+		set_country_flag = struggle_over
+        }
+
+    }
+	
+	dem_mission = {
+	    icon = generic_political_discourse
+        fire_only_once = yes
+		available = {
+			OR = {
+                check_variable = { lib_inf < 75 }
+                has_democratic_government = yes
+            }
+		}
+        is_good = no
+		days_mission_timeout = 45
+		fire_only_once = yes
+
+		activation = {
+			original_tag = SPR
+			has_country_flag = dem_mission_start
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+		    set_politics = {
+			    ruling_party = socdem
+			    elections_allowed = yes
+		        last_election = "1936.2.16"
+	            election_frequency = 48
+		    }
+		    create_country_leader = {
+	            name = "Manuel Azana"
+	            desc = "POLITICS_MANUEL_AZANA_DESC"
+	            picture = "Portrait_Spain_Manuel_Azana.dds"
+	            expire = "1965.1.1"
+	            ideology = social_democracy
+	            traits = {
+			        ambitious_reformer
+	            }
+            }
+		
+		    add_popularity = {
+		       ideology = socdem
+			    popularity = 0.2
+		    }
+            set_country_flag = struggle_over			
+            add_political_power = -300
+            add_stability = -0.2
+            clr_country_flag = pce_power
+            clr_country_flag = cnt_in_power			
+		}
+	}
+
+	
+	give_dems_power = {
+	    icon = generic_civil_support
+        allowed = { 
+	        tag = SPR
+		}
+        available = {
+            has_country_flag = dem_mission_start
+			NOT = { has_democratic_government = yes }
+        }
+		cost = 0
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+			has_country_flag = dem_mission_start
+        }
+        fire_only_once = yes
+        complete_effect = {
+		    set_politics = {
+			    ruling_party = socdem
+			    elections_allowed = yes
+		        last_election = "1936.2.16"
+	            election_frequency = 48
+		    }
+		    create_country_leader = {
+	            name = "Manuel Azana"
+	            desc = "POLITICS_MANUEL_AZANA_DESC"
+	            picture = "Portrait_Spain_Manuel_Azana.dds"
+	            expire = "1965.1.1"
+	            ideology = social_democracy
+	            traits = {
+			        ambitious_reformer
+	            }
+            }
+		
+		    add_popularity = {
+		       ideology = socdem
+			    popularity = 0.2
+		    }
+            set_country_flag = struggle_over			
+            add_political_power = -100
+			clr_country_flag = pce_power
+            clr_country_flag = cnt_in_power
+        }
+
+    }
+	
+	enforce_authority = {
+	    icon = generic_civil_support
+        allowed = { 
+	        tag = SPR
+		}
+        available = {
+        }
+		cost = 100
+        visible = {
+		    NOT = { has_country_flag = struggle_over }
+		    OR = { 
+			    has_country_flag = pce_power
+				has_country_flag = cnt_in_power
+				has_democratic_government = yes
+			}
+			if = {
+			    limit = {
+			        has_country_flag = pce_power
+				}
+			    check_variable = { com_inf > 74 }
+			}
+			if = {
+			    limit = {
+			        has_country_flag = cnt_in_power
+				}
+			    check_variable = { ana_inf > 74 }
+			}
+			if = {
+			    limit = {
+			        has_democratic_government = yes
+				}
+			    check_variable = { lib_inf > 74 }
+			}
+        }
+        fire_only_once = yes
+        complete_effect = {
+		    custom_effect_tooltip = end_struggle_now
+			set_country_flag = struggle_over
+			add_stability = 0.15
+			add_political_power = 300
+        }
+    }
+	
+    expand_quinto = {
+	    icon = generic_army_support
+        allowed = { 
+	        original_tag = SPR
+			NOT = { has_fascist_government = yes }
+		}
+        available = {
+            NOT = { has_completed_focus = CIV_popular }
+            has_civil_war = yes
+        }
+		cost = 40
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+        }
+        fire_only_once = yes
+        complete_effect = {
+		    add_to_variable = { var = com_inf value = 15 }
+			add_to_variable = { var = ana_inf value = -10 }
+			add_to_variable = { var = lib_inf value = -5 }
+            hidden_effect = {
+			    load_oob = "SPR_quinto"
+			}
+            custom_effect_tooltip = get_quinto				
+
+        }
+
+    }
+	
+	redistribute_sov = {
+	    icon = generic_prepare_civil_war
+        allowed = { 
+	        original_tag = SPR
+			NOT = { has_fascist_government = yes }
+		}
+        available = {
+            has_completed_focus = CIV_moscow
+            has_civil_war = yes
+        }
+		cost = 35
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+        }
+        fire_only_once = yes
+        complete_effect = {
+		    add_to_variable = { var = com_inf value = -20 }
+			add_to_variable = { var = ana_inf value = 10 }
+			add_to_variable = { var = lib_inf value = 10 }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 2000
+                producer = SOV
+            }				
+
+        }
+
+    }
+	
+	stop_colective = {
+	    icon = generic_civil_support
+        allowed = { 
+	        original_tag = SPR
+					NOT = { has_fascist_government = yes }
+		}
+        available = {
+            has_civil_war = yes
+        }
+		cost = 60
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+        }
+        fire_only_once = yes
+        complete_effect = {
+		    add_to_variable = { var = com_inf value = 5 }
+			add_to_variable = { var = ana_inf value = -25 }
+			add_to_variable = { var = lib_inf value = 20 }
+            add_stability = 0.1				
+        }
+
+    }
+	
+	train_militias = {
+	    icon = generic_prepare_civil_war
+        allowed = { 
+	        original_tag = SPR
+					NOT = { has_fascist_government = yes }
+		}
+        available = {
+            has_civil_war = yes
+        }
+		cost = 45
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+        }
+		modifier = { army_org_Factor = 0.15  }
+		days_remove = 90
+        fire_only_once = yes
+        complete_effect = {
+		    add_to_variable = { var = com_inf value = -10 }
+			add_to_variable = { var = ana_inf value = 20 }
+			add_to_variable = { var = lib_inf value = -10 }				
+        }
+
+    }
+	
+	cnt_min = {
+	    icon = generic_political_discourse
+        allowed = { 
+	        original_tag = SPR
+					NOT = { has_fascist_government = yes }
+		}
+        available = {
+            has_civil_war = yes
+        }
+		cost = 30
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+        }
+        fire_only_once = yes
+        complete_effect = {
+		    add_to_variable = { var = com_inf value = -10 }
+			add_to_variable = { var = ana_inf value = 10 }
+			add_to_variable = { var = lib_inf value = 0 }
+            add_war_support = 0.1
+            add_stability = 0.05			
+        }
+
+    }
+	
+	pce_min = {
+	    icon = generic_political_discourse
+        allowed = { 
+	        original_tag = SPR
+					NOT = { has_fascist_government = yes }
+		}
+        available = {
+            has_civil_war = yes
+        }
+		cost = 30
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+        }
+        fire_only_once = yes
+        complete_effect = {
+		    add_to_variable = { var = com_inf value = 10 }
+			add_to_variable = { var = ana_inf value = -10 }
+			add_to_variable = { var = lib_inf value = 0 }
+            add_war_support = 0.05
+            add_stability = 0.1				
+
+        }
+
+    }
+	
+	professional_officers = {
+	    icon = generic_army_support
+        allowed = { 
+	        original_tag = SPR
+					NOT = { has_fascist_government = yes }
+		}
+        available = {
+            has_civil_war = yes
+        }
+		cost = 55
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+        }
+		modifier = { 
+            recon_factor = 0.1  
+			supply_consumption_factor = -0.1 
+		}
+		days_remove = 90
+        fire_only_once = yes
+        complete_effect = {
+		    add_to_variable = { var = com_inf value = 0 }
+			add_to_variable = { var = ana_inf value = -15 }
+			add_to_variable = { var = lib_inf value = 15 }           				
+        }
+
+    }
+	
+	expand_police = {
+	    icon = generic_civil_support
+        allowed = { 
+	        original_tag = SPR
+					NOT = { has_fascist_government = yes }
+		}
+        available = {
+            has_civil_war = yes
+        }
+		cost = 40
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+        }
+        fire_only_once = yes
+        complete_effect = {
+		    add_to_variable = { var = com_inf value = 5 }
+			add_to_variable = { var = ana_inf value = -20 }
+			add_to_variable = { var = lib_inf value = 15 }
+            add_political_power = 10
+            add_stability = 0.1			
+
+        }
+
+    }
+	
+	
+	quinto_officers = {
+	    icon = generic_army_support
+        allowed = { 
+	        original_tag = SPR
+					NOT = { has_fascist_government = yes }
+		}
+        available = {
+            has_civil_war = yes
+			has_completed_focus = CIV_popular
+        }
+		cost = 80
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+        }
+		modifier = { army_core_defence_factor = 0.1 }
+		days_remove = 90
+        fire_only_once = yes
+        complete_effect = {
+		    add_to_variable = { var = com_inf value = 20 }
+			add_to_variable = { var = ana_inf value = -10 }
+			add_to_variable = { var = lib_inf value = -10 }        				
+        }
+
+    }
+	
+	guerrillas_retaguardia = {
+	    icon = generic_prepare_civil_war
+        allowed = { 
+	        original_tag = SPR
+					NOT = { has_fascist_government = yes }
+		}
+        available = {
+            has_civil_war = yes
+        }
+		cost = 85
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+        }
+        fire_only_once = yes
+		modifier = { army_core_attack_factor = 0.1 recon_factor = 0.2 }
+		days_remove = 100
+        complete_effect = {
+		    add_to_variable = { var = com_inf value = -15 }
+			add_to_variable = { var = ana_inf value = 20 }
+			add_to_variable = { var = lib_inf value = -5 }
+            				
+
+        }
+
+    }
+	
+	reserva_milicia = {
+        allowed = { 
+	        original_tag = SPR
+					NOT = { has_fascist_government = yes }
+		}
+        available = {
+            has_civil_war = yes
+        }
+		cost = 75
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+        }
+        fire_only_once = yes
+        complete_effect = {
+		    add_to_variable = { var = com_inf value = -5 }
+			add_to_variable = { var = ana_inf value = 10 }
+			add_to_variable = { var = lib_inf value = -5 }
+            add_manpower = 25000			
+
+        }
+
+    }
+	
+	quinta_biberon = {
+        allowed = { 
+	        original_tag = SPR
+					NOT = { has_fascist_government = yes }
+		}
+        available = {
+            has_civil_war = yes
+        }
+		cost = 90
+        visible = {
+			NOT = { has_country_flag = struggle_over }
+        }
+        fire_only_once = yes
+        complete_effect = {
+		    add_to_variable = { var = com_inf value = 5 }
+			add_to_variable = { var = ana_inf value = -10 }
+			add_to_variable = { var = lib_inf value = 5 }
+            add_manpower = 15000				
+
+        }
+
+    }
+	
+    
+	
+	
+}

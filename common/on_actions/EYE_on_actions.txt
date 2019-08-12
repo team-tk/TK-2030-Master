@@ -1,0 +1,402 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			SLO = {
+				create_country_leader = {
+					name = "Jozef Lettrich"
+					desc = "POLITICS_JOZEF_LETTRICH_DESC"
+					picture = "gfx/leaders/USA/Portrait_USA_Harry_Truman.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Jozef Tiso"
+					desc = "POLITICS_JOZEF_TISO_DESC"
+					picture = "Portrait_Slovakia_Jozef_Tiso.dds"
+					expire = "1965.1.1"
+					ideology = corporatism
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Karol Šmidke"
+					desc = "POLITICS_KAROL_ŠMIDKE_DESC"
+					picture = "gfx/leaders/ITA/Portrait_Italy_Ubaldo_Soddu.dds"
+					expire = "1965.1.1"
+					ideology = stalinism
+					traits = {
+						#
+					}
+				}
+			}
+			CRO = {
+				create_country_leader = {
+					name = "Vladko Maček"
+					desc = "POLITICS_VLADKO_MAČEK_DESC"
+					picture = "gfx/leaders/Europe/portrait_europe_generic_land_18.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Pavle Gregorić"
+					desc = "POLITICS_PAVLE_GREGORIĆ_DESC"
+					picture = "gfx/leaders/SOV/Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
+					expire = "1965.1.1"
+					ideology = stalinism
+					traits = {
+						#
+					}
+				}
+				create_country_leader = {
+					name = "Nikola Mandić"
+					desc = "POLITICS_NIKOLA_MANDIĆ_DESC"
+					picture = "gfx/leaders/ENG/Portrait_Britain_Generic_land_2.dds"
+					expire = "1965.1.1"
+					ideology = centrism
+					traits = {
+						#
+					}
+				}
+			}
+		}
+	}
+	
+	on_unit_leader_created = {
+		effect = {
+			if = { 
+				limit = {
+					FROM = { 
+						TAG = SWI
+						OR = {
+							has_idea = SWI_special_conscription_1
+							has_idea = SWI_special_conscription_2
+							has_idea = SWI_special_conscription_3
+							has_idea = SWI_special_conscription_4
+						}
+					}
+				}
+				if = {
+					limit = { is_field_marshal = no }
+					add_unit_leader_trait = EYE_swiss_commander
+				}
+				if = {
+					limit = { is_field_marshal = yes }
+					add_unit_leader_trait = EYE_swiss_general
+				}
+			}
+		}
+	}
+	
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = SWI
+					NOT = { tag = SWI }
+				}
+				every_unit_leader = {
+					remove_unit_leader_trait = EYE_swiss_commander
+					remove_unit_leader_trait = EYE_swiss_general
+				}
+			}
+		}
+	}
+	
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					original_tag = POL 
+					NOT = { has_country_leader = { id = 21014 ruling_only = no name = "Karol Olbracht Habsburg" } }
+					FROM = { 
+						tag = AUS
+						OR = {
+							has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+							has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+							has_idea = AUS_otto_von_figurehead
+						}
+					}
+				}
+				if = { 
+					limit = { has_cosmetic_tag = PLC_UNIFIED }
+					set_cosmetic_tag = PLC_UNIFIED_HABSBURG
+					
+					else = {
+						set_cosmetic_tag = EYE_POL_habsburg
+					}
+				}	
+				create_country_leader = {
+					name = "Karol Olbracht Habsburg"
+					desc = "POLITICS_KAROL_OLBRACHT_HABSBURG_DESC"
+					picture = "gfx/leaders/EYE/Portrait_EYE_Olbracht_von_Habsburg.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { EYE_pole_lover }
+					
+					id = 21014
+				}
+				if = {
+					limit = { NOT = { has_neutral_government = yes } }
+					set_politics = {
+						ruling_party = neutrality
+					}
+				}
+				set_party_name = { ideology = neutrality long_name = "Royalists" name = "Royalists" }
+			}
+			if = {
+				limit = { 
+					original_tag = UKR 
+					NOT = { has_country_leader = { id = 21015 ruling_only = no name = "Vasyl Vyshyvani Habsburg" } }
+					FROM = { 
+						tag = AUS
+						OR = {
+							has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+							has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+							has_idea = AUS_otto_von_figurehead
+						}
+					}
+				}
+				set_cosmetic_tag = EYE_UKR_habsburg
+			
+				create_country_leader = {
+					name = "Vasyl Vyshyvani Habsburg"
+					desc = "POLITICS_VASYL_VYSHYVANI_HABSBURG_DESC"
+					picture = "gfx/leaders/EYE/Portrait_EYE_Vasyl_Habsburg.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { EYE_red_prince }
+					
+					id = 21015
+				}
+				if = {
+					limit = { NOT = { has_neutral_government = yes } }
+					set_politics = {
+						ruling_party = neutrality
+					}
+				}
+				set_party_name = { ideology = neutrality long_name = "Royalists" name = Royalists }
+			}
+			if = {
+				limit = { 
+					original_tag = SLV
+					NOT = { has_country_leader = { id = 21016 ruling_only = no name = "Johann Graf von Meran" } }
+					NOT = { has_country_leader = { id = 21017 ruling_only = no name = "Johann Graf von Habsburg" } }
+					FROM = { 
+						tag = AUS
+						OR = {
+							has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+							has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+							has_idea = AUS_otto_von_figurehead
+						}
+					}
+				}
+				set_cosmetic_tag = EYE_SLV_habsburg
+			
+				create_country_leader = {
+					name = "Johann Graf von Meran"
+					desc = "POLITICS_JOHANN_GRAF_VON_MERAN_DESC"
+					picture = "gfx/leaders/MAL/portrait_mal_shenton_thomas.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { }
+					
+					id = 21016
+				}
+				if = {
+					limit = { NOT = { has_neutral_government = yes } }
+					set_politics = {
+						ruling_party = neutrality
+					}
+				}
+				set_party_name = { ideology = neutrality long_name = "Royalists" name = Royalists }
+			}
+		}
+	}
+	
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					original_tag = CRO
+					NOT = { has_country_leader = { ruling_only = no name = "Felix Habsburg" } }
+					FROM = { 
+						tag = AUS
+						OR = {
+							has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+							has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+							has_idea = AUS_otto_von_figurehead
+						}
+					}
+				}
+				set_cosmetic_tag = EYE_CRO_habsburg		
+				create_country_leader = {
+					name = "Felix Habsburg"
+					desc = "POLITICS_FELIX_HABSBURG_DESC"
+					picture = "gfx/leaders/EYE/Portrait_EYE_Europe_Generic_land_new_1.dds" #Let's just pretend this is Felix
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { }
+				}
+				if = {
+					limit = { NOT = { has_neutral_government = yes } }
+					set_politics = {
+						ruling_party = neutrality
+					}
+				}
+				set_party_name = { ideology = neutrality long_name = "Royalists" name = "Royalists" }
+			}
+			if = {
+				limit = { 
+					original_tag = SLO 
+					NOT = { has_country_leader = { ruling_only = no name = "Maximilian Eugen Habsburg" } }
+					FROM = { 
+						tag = AUS
+						OR = {
+							has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+							has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+							has_idea = AUS_otto_von_figurehead
+						}
+					}
+				}
+				set_cosmetic_tag = EYE_SLO_habsburg
+			
+				create_country_leader = {
+					name = "Maximilian Eugen Habsburg"
+					desc = "POLITICS_MAXIMILIAN_EUGEN_HABSBURG_DESC"
+					picture = "gfx/leaders/EYE/Portrait_EYE_Austria_Otto_I.dds" #Let's just pretend this is Maximilian
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { }
+				}
+				if = {
+					limit = { NOT = { has_neutral_government = yes } }
+					set_politics = {
+						ruling_party = neutrality
+					}
+				}
+				set_party_name = { ideology = neutrality long_name = "Royalists" name = Royalists }
+			}
+			if = {
+				limit = { 
+					original_tag = CZE 
+					NOT = { has_country_leader = { ruling_only = no name = "Josef Franz Habsburg" } }
+					FROM = { 
+						tag = AUS
+						OR = {
+							has_country_leader = { id = 21010 ruling_only = no name = "Otto von Habsburg" }
+							has_country_leader = { id = 21011 ruling_only = no name = "Otto von Habsburg" }
+							has_idea = AUS_otto_von_figurehead
+						}
+					}
+				}
+			
+				create_country_leader = {
+					name = "Josef Franz Habsburg"
+					desc = "POLITICS_JOSEF_FRANZ_HABSBURG_DESC"
+					picture = "gfx/leaders/HUN/Portrait_friedrich_franz.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = { }
+					
+					id = 21018
+				}
+				if = {
+					limit = { NOT = { has_neutral_government = yes } }
+					set_politics = {
+						ruling_party = neutrality
+					}
+				}
+				set_party_name = { ideology = neutrality long_name = "Royalists" name = Royalists }
+			}
+		}
+	}
+	
+	on_release_as_free = {
+		effect = {
+			if = {
+				limit = { tag = SLV }
+				if = {
+					limit = { num_of_civilian_factories < 1 }
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = { num_of_military_factories < 1 }
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = { air_base < 1 }
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = air_base
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = { tag = SLV }
+				if = {
+					limit = { num_of_civilian_factories < 1 }
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = { num_of_military_factories < 1 }
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = { air_base < 1 }
+					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = air_base
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}

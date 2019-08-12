@@ -1,0 +1,157 @@
+﻿###########################
+# ACO Events
+###########################
+
+add_namespace = aco
+
+
+
+# Fascists Attempt to Seize Power
+country_event = {
+	id = aco.1
+	title = aco.1.t
+	desc = aco.1.d
+	picture = GFX_report_event_usa_heavy_cruiser
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	
+
+	option = {
+		name = aco.1.a
+		country_event = { id = aco.2 days = 3 }
+		set_country_flag = aco_fascists_chosen
+	}
+	
+	option = {
+		name = aco.1.b
+		country_event = { id = aco.2 days = 3 }
+		set_country_flag = aco_communists_chosen
+	}
+
+}
+
+
+# ACO Civil War Kicks Off
+country_event = {
+	id = aco.2
+	title = aco.2.t
+	desc = aco.2.d
+	picture = GFX_report_event_usa_heavy_cruiser
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = aco.2.a
+		trigger = { has_country_flag = aco_fascists_chosen }
+		
+		hidden_effect = {
+			#set_capital = 779
+			set_capital = 393
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = communism
+				size = 0.55
+				capital = 378
+				states = { 378 385 386 387 379 388 389 381 390 391 394 359 360 358 357 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = ACO
+					has_communist_government = yes
+				}
+				#load_oob = "SPR_Civil_War"
+				#set_equipment_fraction = 0.5
+				set_stability = 0.9
+				set_war_support = 0.8
+				#country_event = { id = spain.3 days = 1 }
+				
+			}
+			#news_event = { hours = 6 id = news.63 }
+			#set_global_flag = spanish_civil_war
+			
+			#load_oob = "SPA_Civil_War"
+			#set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+			add_ideas = aco_the_third_american_civil_war
+			random_other_country = {
+				limit = {
+					original_tag = ACO
+					has_communist_government = yes
+				}
+				add_ideas = aco_the_third_american_civil_war
+				#set_cosmetic_tag = SPR_civil_war
+			}
+
+			#country_event = { id = spain.2 days = 7 }
+		}
+		#custom_effect_tooltip = nationalists_chosen
+	}
+	
+	option = {
+		name = aco.2.b
+		trigger = { has_country_flag = aco_communists_chosen }
+		hidden_effect = {
+			set_capital = 361
+			start_civil_war = {
+				ruling_party = communism
+				ideology = fascism
+				size = 0.55
+				capital = 393
+				states = { 393 361 261 396 395 392 373 383 384 
+							382 380 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = ACO
+					has_fascist_government = yes
+				}
+				#load_oob = "SPR_Civil_War"
+				#set_equipment_fraction = 0.5
+				set_stability = 0.9
+				set_war_support = 0.8
+				#country_event = { id = spain.3 days = 1 }
+				
+			}
+			#news_event = { hours = 6 id = news.63 }
+			#set_global_flag = spanish_civil_war
+			
+			#load_oob = "SPA_Civil_War"
+			#set_equipment_fraction = 0.5
+			set_stability = 0.9
+			set_war_support = 0.8
+			
+			add_popularity = {
+				ideology = communism
+				popularity = 1
+			}
+			add_ideas = aco_the_third_american_civil_war
+			random_other_country = {
+				limit = {
+					original_tag = ACO
+					has_fascist_government = yes
+				}
+				add_ideas = aco_the_third_american_civil_war
+				#set_cosmetic_tag = SPR_civil_war
+			}
+
+			#country_event = { id = spain.2 days = 7 }
+		}
+		#custom_effect_tooltip = communists_chosen
+	}
+
+}
+
+
+
+

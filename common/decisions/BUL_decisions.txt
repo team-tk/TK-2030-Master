@@ -1,0 +1,37 @@
+BUL_brothers_in_macedonia = {
+	stage_revolt_in_macedonia = {
+		
+		icon = border_war
+
+		visible = {
+			has_completed_focus = BUL_our_brothers_in_macedonia
+		}
+
+		highlight_states = {
+			state = 106
+		}
+
+		available = {
+			YUG = {
+				owns_state = 106
+				controls_state = 106
+			}
+			country_exists = YUG
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 180
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			YUG = {
+				add_timed_idea = { idea = BUL_increased_macedonian_opposition days = 180 }
+			}
+		}
+	}
+}

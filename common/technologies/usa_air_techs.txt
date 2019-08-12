@@ -1,0 +1,43 @@
+technologies = {
+	
+	fighter_bomber1 = {
+		research_cost = 1
+		
+		enable_equipments = {
+			fighter_bomber_equipment_1
+		}
+	}
+	
+	fighter_bomber2 = {
+		research_cost = 1
+		
+		enable_equipments = {
+			fighter_bomber_equipment_2
+		}
+	}
+	
+	modern_fighter1 = {
+		research_cost = 1
+		
+		enable_equipments = {
+			modern_fighter_equipment_1
+		}
+	}
+	
+	cv_multirole1 = {
+		research_cost = 1
+		
+		enable_equipments = {
+			cv_multirole_equipment_1
+		}
+	}
+	
+	transport_plane_20 = {
+		research_cost = 1
+		
+		enable_equipments = {
+			transport_plane_equipment_20
+		}
+	}
+	
+}

@@ -1,0 +1,70 @@
+IRQ_decolonization_des_cat = {
+	IRQ_liberate_sirya = {
+		icon = generic_independence
+		allowed = { tag = IRQ }
+		cost = 300
+		available = {
+			has_political_power > 300
+		}
+		remove_effect = {
+			FRA = { release = SYR }
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 30
+		fire_only_once = yes
+	}
+	IRQ_liberate_palestina = {
+		icon = generic_independence
+		allowed = { tag = IRQ }
+		cost = 300
+		available = {
+			has_political_power > 300
+		}
+		remove_effect = {
+			ENG = { release = PAL }
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 30
+		fire_only_once = yes
+	}
+	IRQ_liberate_jordan = {
+		icon = generic_independence
+		allowed = { tag = IRQ }
+		cost = 300
+		available = {
+			has_political_power > 300
+		}
+		remove_effect = {
+			ENG = { release = JOR }
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 30
+		fire_only_once = yes
+	}
+	IRQ_liberate_lebanon = {
+		icon = generic_independence
+		allowed = { tag = IRQ }
+		cost = 300
+		available = {
+			has_political_power > 300
+		}
+		remove_effect = {
+			FRA = { release = LEB }
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 30
+		fire_only_once = yes
+	}
+}

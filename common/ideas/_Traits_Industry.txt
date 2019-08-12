@@ -1,0 +1,128 @@
+# Age Laws
+	ideas = {
+	
+	industry_size_traits = {
+		law = yes
+		
+		industry_size1 = {
+			removal_cost = -1
+			level = 7
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			industry_size2 = {
+			removal_cost = -1
+			level = 6
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+			production_factory_max_efficiency_factor = 0.02
+			line_change_production_efficiency_factor = 0.02
+			production_factory_efficiency_gain_factor = 0.02
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			industry_size3 = {
+			removal_cost = -1
+			level = 5
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+			production_factory_max_efficiency_factor = 0.04
+			line_change_production_efficiency_factor = 0.04
+			production_factory_efficiency_gain_factor = 0.04
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			industry_size4 = {
+			removal_cost = -1
+			default = yes
+			level = 4
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+			production_factory_max_efficiency_factor = 0.06
+			line_change_production_efficiency_factor = 0.06
+			production_factory_efficiency_gain_factor = 0.06
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			industry_size5 = {
+			removal_cost = -1
+			level = 3
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+			production_factory_max_efficiency_factor = 0.08
+			line_change_production_efficiency_factor = 0.08
+			production_factory_efficiency_gain_factor = 0.08
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			industry_size6 = {
+			removal_cost = -1
+			level = 2
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+			production_factory_max_efficiency_factor = 0.10
+			line_change_production_efficiency_factor = 0.10
+			production_factory_efficiency_gain_factor = 0.10
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			industry_size7 = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+			production_factory_max_efficiency_factor = 0.12
+			line_change_production_efficiency_factor = 0.12
+			production_factory_efficiency_gain_factor = 0.12
+			}
+			
+			cancel_if_invalid = no
+			}
+
+	}
+}
+### EOF ###

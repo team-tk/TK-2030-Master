@@ -1,0 +1,129 @@
+
+ai_historical_focus_list_LUX = {
+	ai_national_focuses = {
+	
+	LUX_feierwon
+	LUX_rietspartei
+	LUX_friendsafar
+	LUX_strengthenties
+	LUX_radioluxembourg
+	LUX_foreignexperts
+	LUX_universititvultzebuerg
+	LUX_boostindustry
+	LUX_expandthesteelworks
+	LUX_arcelormittal
+	LUX_princehenrinetwork
+	LUX_maximiseefficiency
+	LUX_qualityoverquantity
+	LUX_civilianfocus
+	LUX_prepareforwar
+	LUX_volunteerarmy
+	LUX_idealism
+	LUX_restoretheauxiliaries
+	LUX_grandducalgendarmerie
+	LUX_realism
+	LUX_schusterline
+	LUX_lucilinburhuc
+	LUX_war
+	}
+}
+
+ai_focus_defense_LUX = {
+	research = {
+		defensive = 5.0	
+		radar_tech = 1.0
+		construction_tech = 2.0
+		artillery = 2.0
+	}
+}
+
+ai_focus_aggressive_LUX = {
+	research = {
+		offensive = 5.0
+		synth_resources = 1.0
+		motorized_equipment = 2.0
+		armor = 10.0
+	}
+}
+
+ai_focus_war_production_LUX = {
+	research = {
+		industry = 20.0
+		construction_tech = 20.0
+		electronics = 20.0
+		computing_tech = 10.0
+	}
+}
+
+ai_focus_military_equipment_LUX = {
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+}
+
+ai_focus_military_advancements_LUX = {
+	research = {
+		armor = 15.0
+		jet_technology = 5.0
+		land_doctrine = 100.0
+		rocketry = 7.5
+		radar_tech = 3.0
+		encryption_tech = 7.5
+		decryption_tech = 7.5
+		synth_resources = 3.0
+		motorized_equipment = 4.0
+		nuclear = 5.0
+		night_vision = 50.0
+	}
+}
+
+ai_focus_peaceful_LUX = {
+	research = {
+		industry = 25.0
+		construction_tech = 15.0
+		electronics = 20.0
+		computing_tech = 10.0
+	}
+}
+
+ai_focus_naval_LUX = {
+	research = {
+		naval_equipment = 5.0
+		naval_doctrine = 25.0
+		marine_tech = 10.0
+		dd_tech = 3.0
+		cl_tech = 3.0
+		ca_tech = 3.0
+		bc_tech = 3.0
+		bb_tech = 3.0
+		shbb_tech = 3.0
+		tp_tech = 3.0
+		cv_tech = 3.0
+		ss_tech = 3.0
+	}
+}
+
+ai_focus_naval_air_LUX = {
+	research = {
+		naval_air = 4.0
+		naval_bomber = 3.0
+	}
+}
+
+ai_focus_aviation_LUX = {
+	research = {
+		air_doctrine = 50.0
+		light_air = 20.0
+		light_fighter = 4.0
+		jet_technology = 1.0
+		cas_bomber = 2.0		
+		medium_air = 4.0
+		tactical_bomber = 20.0
+		heavy_air = 1.5
+		air_equipment = 5.0
+		para_tech = 10
+	}
+}

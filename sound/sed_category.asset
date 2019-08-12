@@ -1,0 +1,6 @@
+category = {
+ name = "Destroy_building"
+ soundeffects = {
+	building_sabotaged_gui
+ }
+}

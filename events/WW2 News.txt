@@ -1,0 +1,454 @@
+﻿###########################
+# WW2 News
+###########################
+
+add_namespace = ww2news
+
+# Gran Sasso Raid
+news_event = {
+	id = ww2news.0
+	title = ww2news.0.t
+	desc = ww2news.0.d
+	picture = GFX_news_event_gran_sasso_raid
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = mussolini_recued
+	}
+	
+	option = {
+		name = ww2news.0.a	
+	}
+}
+
+# Italian Social Republic Founded!
+news_event = {
+	id = ww2news.1
+	title = ww2news.1.t
+	desc = ww2news.1.d
+	picture = GFX_news_event_italian_social_republic
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2news.1.a	
+	}
+}
+
+# Italy Surrenders!
+news_event = {
+	id = ww2news.2
+	title = ww2news.2.t
+	desc = ww2news.2.d
+	picture = GFX_news_event_italy_surrenders
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2news.2.a	
+	}
+}
+
+# Mussolini Falls From Power
+news_event = {
+	id = ww2news.3
+	title =ww2news.3.t
+	desc = ww2news.3.d
+	picture = GFX_news_event_mussolini_arrested
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2news.3.a	
+	}
+}
+
+
+# Rome Bombed
+news_event = {
+	id = ww2news.4
+	title = ww2news.4.t
+	desc = ww2news.4.d
+	picture = GFX_news_event_german_reichstag_ruins
+
+	fire_only_once = yes
+
+	major = yes
+	
+	trigger = {
+		tag = ITA
+		date > 1943.1.1
+		ITA = { is_in_faction_with = GER }
+		ITA = { has_war_with = ENG }
+		ITA = { has_war_with = SOV }
+		ENG = { has_capitulated = no }
+		SOV = { has_capitulated = no }
+		
+		OR = {
+					ENG = { controls_state = 448 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						controls_state = 448
+				}
+				}
+				
+				OR = {
+					ENG = { controls_state = 271 }
+					any_other_country = {
+						is_in_faction_with = ENG
+						controls_state = 271
+				}
+				}
+		
+	}
+
+	mean_time_to_happen = { 
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = rome_bombed
+	}
+
+	option = {
+		name = ww2news.4.a	
+	}
+}
+
+# German Declaration of War on the USA
+news_event = {
+	id = ww2news.5
+	title =ww2news.5.t
+	desc = ww2news.5.d
+	picture = GFX_news_event_german_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2news.5.a	
+	}
+}
+
+# Attack on Pearl Harbour
+news_event = {
+	id = ww2news.6
+	title =ww2news.6.t
+	desc = ww2news.6.d
+	picture = GFX_news_event_german_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2news.6.a	
+	}
+}
+
+# Iraqi Coup
+news_event = {
+	id = ww2news.7
+	title =ww2news.7.t
+	desc = ww2news.7.d
+	picture = GFX_news_event_german_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2news.7.a	
+	}
+}
+
+# Occupation of Iceland
+news_event = {
+	id = ww2news.8
+	title =ww2news.8.t
+	desc = ww2news.8.d
+	picture = GFX_news_event_german_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2news.8.a	
+	}
+}
+
+# Occupation of Greenland
+news_event = {
+	id = ww2news.9
+	title =ww2news.9.t
+	desc = ww2news.9.d
+	picture = GFX_news_event_german_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2news.9.a	
+	}
+}
+
+# Invasion of Iraq
+news_event = {
+	id = ww2news.10
+	title =ww2news.10.t
+	desc = ww2news.10.d
+	picture = GFX_news_event_german_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2news.10.a	
+		
+	}
+}
+
+# Invasion of Iran
+news_event = {
+	id = ww2news.11
+	title =ww2news.11.t
+	desc = ww2news.11.d
+	picture = GFX_news_event_german_speech
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2news.11.a	
+	}
+}
+
+ Mussolini Dead
+news_event = {
+	id = ww2news.12
+	title = ww2news.12.t
+	desc = ww2news.12.d
+	picture = GFX_news_event_mussolini_dead
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1944.4.4
+		AND = {
+			OR = {
+				ITA = {
+					controls_state = 159
+				}
+
+				SOV = {
+					controls_state = 159
+				}
+
+				YUG = {
+					controls_state = 159
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = ww2news.12.a
+		RSI = {
+			add_stability = -0.15
+			# Junio becomes the new Fascist leader of Germany
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "Junio Valerio Borghese"
+				desc = "POLITICS_JUNIO_VALERIO_BORGHESE_DESC"
+				picture = "Portrait_Italy_Juno.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+					#
+				}
+			}
+		}
+	}
+}
+
+# Plot on Hitler Fails
+news_event = {
+	id = ww2news.13
+	title = ww2news.13.t
+	desc = ww2news.13.d
+	picture = GFX_news_event_july_20_plot
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2news.13.a
+	}
+}
+
+# Hitler Dead!
+news_event = {
+	id = ww2news.14
+	title = ww2news.14.t
+	desc = ww2news.14.d
+	picture = GFX_news_event_hitler_dead
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2news.14.a
+	}
+}
+
+#German Capitulation
+news_event = {
+	id = ww2news.15
+	title = ww2news.15.t
+	desc = ww2news.15.d
+	picture = GFX_news_event_german_surrender_ww2
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = ww2news.15.a
+		trigger = {
+			tag = GER
+		}
+	}
+
+	option = {
+		name = ww2news.15.b
+		trigger = {
+			is_in_faction_with = SOV
+		}
+	}
+
+	option = {
+		name = ww2news.15.c
+		trigger = {
+			is_in_faction_with = ENG
+		}
+	}
+
+	option = {
+		name = ww2news.15.e
+		trigger = {
+			NOT = {
+				tag = GER
+				is_in_faction_with = SOV
+				is_in_faction_with = ENG
+			}
+		}
+	}
+}
+
+#Japanese Surrender
+news_event = {
+	id = ww2news.16
+	title = ww2news.16.t
+	desc = ww2news.16.d
+	picture = GFX_news_event_japanese_surrender_ww2
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = ww2news.16.a
+		trigger = {
+			tag = GER
+		}
+	}
+
+	option = {
+		name = ww2news.16.b
+		trigger = {
+			is_in_faction_with = SOV
+		}
+	}
+
+	option = {
+		name = ww2news.16.c
+		trigger = {
+			is_in_faction_with = ENG
+		}
+	}
+
+	option = {
+		name = ww2news.16.e
+		trigger = {
+			NOT = {
+				tag = GER
+				is_in_faction_with = SOV
+				is_in_faction_with = ENG
+			}
+		}
+	}
+}
+
+# Barbarossa news event
+news_event = {
+	id = ww2news.500
+	title = ww2news.500.t
+	desc = ww2news.500.d
+	picture = GFX_news_event_003
+
+	major = yes
+
+	fire_only_once = yes 
+
+	is_triggered_only = yes  # On action
+
+	option = {
+		name = ww2news.500.a
+		trigger = {
+			NOT = { TAG = GER }
+			has_fascist_government = yes
+		}
+	}	
+	option = {
+		name = ww2news.500.b
+		trigger = {
+		has_communist_government = yes	
+		}
+	}	
+	
+	option = {
+		name = ww2news.500.c
+		trigger = {
+		has_democratic_government = yes	
+		}
+	}	
+	option = {
+		name = ww2news.500.e
+		trigger = {
+		OR = {
+		has_neutral_government = yes
+		has_government = monarchism
+		}
+		}
+	}
+}

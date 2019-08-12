@@ -1,0 +1,7 @@
+#Code by Dziurkacz i just borrow it
+colored_puppets_set = {
+
+}
+colored_puppets_reset = {
+
+}

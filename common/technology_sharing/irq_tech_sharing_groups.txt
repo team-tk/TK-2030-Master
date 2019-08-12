@@ -1,0 +1,34 @@
+technology_sharing_group = {
+	id = IRQ_work_group_progress_arabian_country_thgr
+	name = IRQ_work_group_progress_arabian_country_name
+	desc = IRQ_work_group_progress_arabian_country_desc
+	picture = GFX_technology_sharing_default
+	research_sharing_per_country_bonus = 0.1
+	available = {
+		has_goverment = communism
+		is_in_faction_with = IRQ
+	}
+}
+technology_sharing_group = {
+	id = IRQ_soviet_iraq_economic_theatry_thgr
+	name = IRQ_soviet_iraq_economic_theatry_name
+	desc = IRQ_soviet_iraq_economic_theatry_desc
+	picture = GFX_technology_sharing_default
+	research_sharing_per_country_bonus = 0.1
+	available = {
+		has_goverment = communism
+		is_in_faction_with = SOV
+	}
+	categories = { industry }
+}
+technology_sharing_group = {
+	id = IRQ_joint_research_in_field_industry_thgr
+	name = IRQ_joint_research_in_field_industry_name
+	desc = IRQ_joint_research_in_field_industry_desc
+	picture = GFX_technology_sharing_default
+	research_sharing_per_country_bonus = 0.1
+	available = {
+		is_in_faction_with = IRQ
+	}
+	categories = { industry }
+}

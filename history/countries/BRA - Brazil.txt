@@ -1,0 +1,704 @@
+﻿capital = 500
+
+
+oob = "BRA_1936"
+
+add_ideas = {
+religion_catholicism
+}
+
+add_ideas = { 	
+	export_focus
+	tax_average
+	tariffs_average
+	
+	civilian_economy
+	press_free
+	private_control
+	labor_allowed
+	fdi_regulated
+	security_minor_restrictions
+	
+	cons_volunteer
+	foreign_volunteers
+	
+	train_medium
+	officer_train_low
+	#age_19
+
+	education_budget5 health_budget5 socialsecurity_budget5 
+	
+	unity5	
+	foreign_neutral
+}
+
+add_ideas = { 
+	bra_antropofagia
+	bra_bandeirantes
+	bra_1930 
+	bra_rural_elite
+}
+
+set_convoys = 300
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	early_fighter = 1
+	CAS1 = 1
+	
+}
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns"}
+	}
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battleship = 1
+		transport = 1
+	}
+	set_naval_oob = "BRA_1936_naval_legacy"
+}
+if = {
+	limit = { has_dlc = "Man the Guns"}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+	set_naval_oob = "BRA_1936_naval"	
+}
+set_country_flag = monroe_doctrine
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "BRA_1939"
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		fuel_silos = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			basic_submarine = 1
+			basic_destroyer = 1
+		}
+		set_naval_oob = "BRA_1939_naval_legacy"
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_ship_hull_light = 1
+		}
+		set_naval_oob = "BRA_1939_naval"
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.7.17"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+conservatism = 20
+fascism = 20
+communism = 20
+neutrality = 35
+monarchism = 5
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1934.7.17"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+conservatism = 20
+fascism = 20
+communism = 20
+neutrality = 35
+monarchism = 5
+	}
+}
+
+
+create_country_leader = {
+	name = "Getúlio Vargas"
+	desc = "POLITICS_GETULIO_VARGAS_DESC"
+	picture = "Portrait_Brazil_Getulio_Vargas.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		vfb_trait_vargas_1
+		vfb_trait_vargas_2
+	}
+}
+
+
+create_country_leader = {
+	name = "Plínio Salgado"
+	desc = "POLITICS_PLINIO_SALGADO_DESC"
+	picture = "Portrait_Brazil_Plinio_Salgado.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		vfb_trait_salgado_1
+		vfb_trait_salgado_2
+	}
+}
+
+create_country_leader = {
+				name = "Olímpio Mourão Filho"
+				desc = "POLITICS_MOURAO_DESC"
+				picture = "gfx/leaders/BRA/Mourao.dds"
+				expire = "1965.1.1"
+				ideology = nazism_ideology
+				traits = {
+					vfb_trait_mourao
+					vfb_trait_linhadura
+					vfb_trait_officer
+				}
+			}
+			
+			create_country_leader = {
+				name = "Ernesto Geisel"
+				desc = "POLITICS_GEISEL_DESC"
+				picture = "gfx/leaders/BRA/Geisel.dds"
+				expire = "1965.1.1"
+				ideology = nationalism_ideology
+				traits = {
+					vfb_trait_geisel
+					vfb_trait_castelista
+					vfb_trait_officer
+				}
+			}
+
+
+create_country_leader = {
+	name = "Luís Carlos Prestes"
+	desc = "POLITICS_LUIS_CARLOS_PRESTES_DESC"
+	picture = "gfx/leaders/BRA/Prestes.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		vfb_trait_prestes_1
+		vfb_trait_prestes_2
+	}
+}
+
+
+create_country_leader = {
+				name = "Olga Benário"
+				desc = "POLITICS_OLGA_DESC"
+				picture = "gfx/leaders/BRA/Olga.dds"
+				expire = "1965.1.1"
+				ideology = syndicalism_ideology
+				traits = {
+					vfb_trait_olga
+				}
+			}
+
+##### PLACEHOLDER			
+create_country_leader = {
+				name = "Carlos Lacerda"
+				desc = "POLITICS_CL_DESC"
+				picture = "gfx/leaders/BRA/CL.dds"
+				expire = "1965.1.1"
+				ideology = socialism_ideology
+				traits = {
+					vfb_trait_cl
+				}
+			}
+
+create_country_leader = {
+	name = "Congresso Nacional"
+	desc = "POLITICS_SF_DESC"
+	picture = "gfx/leaders/BRA/Senado.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = {
+		vfb_trait_senado_1
+		vfb_trait_senado_2
+	}
+}
+
+create_country_leader = {
+				name = "Carlos Lacerda"
+				desc = "POLITICS_CL_DESC"
+				picture = "gfx/leaders/BRA/CL.dds"
+				expire = "1965.1.1"
+				ideology = social_democracy
+				traits = {
+					vfb_trait_cl
+				}
+			}
+			
+			create_country_leader = {
+				name = "Adhemar de Barros"
+				desc = "POLITICS_ADHEMAR_DESC"
+				picture = "gfx/leaders/BRA/Adhemar.dds"
+				expire = "1965.1.1"
+				ideology = conservatism_ideology
+				traits = {
+					vfb_trait_adhemar
+				}
+			}
+
+create_country_leader = {
+			name = "Pedro III"
+			desc = "POLITICS_DPIII_DESC"
+			picture = "gfx/leaders/BRA/DPIII.dds"
+			expire = "1965.1.1"
+			ideology = absolutism
+			traits = { vfb_trait_dompedro_1 vfb_trait_dompedro_3 }
+		}
+
+create_country_leader = {
+	name = "José Antônio Flores da Cunha"
+	desc = "POLITICS_flores_da_cunha_DESC"
+	picture = "Portrait_Brazil_Flores.dds"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }	
+}
+
+
+
+create_field_marshal = {
+	name = "Eurico Gaspar Dutra"
+	portrait_path = "gfx/leaders/BRA/Dutra.dds"
+	traits = { career_officer defensive_doctrine infantry_officer }
+	skill = 3
+	
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Humberto de Alencar Castelo Branco"
+	portrait_path = "gfx/leaders/BRA/Branco.dds"
+	traits = { politically_connected offensive_doctrine armor_officer }
+	skill = 3
+	
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Olímpio Mourão Filho"
+	portrait_path = "gfx/leaders/BRA/Mourao.dds"
+	traits = { trait_reckless trait_mountaineer }
+	skill = 2
+	
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Pedro Aurélio de Góis Monteiro"
+	portrait_path = "gfx/leaders/BRA/Goes.dds"
+	traits = { war_hero desert_fox }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Henrique Teixeira Lott"
+	portrait_path = "gfx/leaders/BRA/Lott.dds"
+	traits = { trait_cautious hill_fighter}
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Ernesto Beckmann Geisel"
+	portrait_path = "gfx/leaders/BRA/Geisel.dds"
+	traits = { career_officer politically_connected }
+	skill = 2
+	
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Euclides Zenóbio da Costa"
+	portrait_path = "gfx/leaders/BRA/Zenobio.dds"
+	traits = { war_hero swamp_fox }
+	skill = 2
+	
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "João Batista Mascarenhas de Morais"
+	portrait_path = "gfx/leaders/BRA/Moraes.dds"
+	traits = { career_officer ranger }
+	skill = 3
+	
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Newton de Andrade Cavalcanti"
+	portrait_path = "gfx/leaders/BRA/G1.dds"
+	traits = { jungle_rat }
+	skill = 2
+	
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "João Neves da Fontoura"
+	portrait_path = "gfx/leaders/BRA/G2.dds"
+	traits = { media_personality winter_expert }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Artur da Costa e Silva"
+	portrait_path = "gfx/leaders/BRA/G4.dds"
+	traits = { politically_connected trait_engineer }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Álvaro Fiúza de Castro"
+	portrait_path = "gfx/leaders/BRA/G3.dds"
+	traits = { infantry_leader }
+	skill = 2
+	
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Canrobert Pereira da Costa"
+	portrait_path = "gfx/leaders/BRA/G14.dds"
+	traits = { trait_engineer }
+	skill = 2
+	
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Newton Estilac Leal"
+	portrait_path = "gfx/leaders/BRA/G15.dds"
+	traits = { naval_invader }
+	skill = 2
+	
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Cyro do Espírito Santo Cardoso"
+	portrait_path = "gfx/leaders/BRA/G16.dds"
+	traits = { cavalry_leader }
+	skill = 2
+	
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Odílio Denys"
+	portrait_path = "gfx/leaders/BRA/G17.dds"
+	traits = { panzer_leader }
+	skill = 2
+	
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Amaury Kruel"
+	portrait_path = "gfx/leaders/BRA/G18.dds"
+	traits = { panzer_leader }
+	skill = 2
+	
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Jair Dantas Ribeiro"
+	portrait_path = "gfx/leaders/BRA/G19.dds"
+	traits = { commando }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "José Fernandes Leite de Castro"
+	portrait_path = "gfx/leaders/BRA/G20.dds"
+	traits = { infantry_leader }
+	skill = 3
+	
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Augusto Inácio do Espirito Santo Cardoso"
+	portrait_path = "gfx/leaders/BRA/G21.dds"
+	traits = { cavalry_leader }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "João Gomes Ribeiro Filho"
+	portrait_path = "gfx/leaders/BRA/G22.dds"
+	traits = { commando }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Cândido Mariano da Silva Rondon"
+	portrait_path = "gfx/leaders/BRA/G23.dds"
+	traits = { career_officer infantry_officer }
+	skill = 3
+	
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 6
+}
+
+create_navy_leader = {
+	name = "Augusto Hamann Rademaker Grünewald"
+	portrait_path = "gfx/leaders/BRA/Rademaker.dds"
+	traits = { superior_tactician ironside }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Adalberto de Barros Nunes"
+	portrait_path = "gfx/leaders/BRA/Nunes.dds"
+	traits = { spotter _navy }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Antônio Alves Câmara"
+	portrait_path = "gfx/leaders/BRA/Alves.dds"
+	traits = { seawolf blockade_runner }
+	skill = 3
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	create_equipment_variant = {
+		name = "Minas Geras Class"
+		type = ship_hull_heavy_1
+		name_group = BRA_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Bahia Class"
+		type = ship_hull_cruiser_1
+		name_group = BRA_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Para Class"
+		type = ship_hull_light_1
+		name_group = BRA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Humaytá Class"
+		type = ship_hull_submarine_2
+		name_group = BRA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_mine_layer_sub
+		}
+	}
+}
+
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		create_equipment_variant = {
+			name = "Tupi Class"
+			type = ship_hull_submarine_2
+			name_group = BRA_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = empty
+			}
+		}
+	}
+}

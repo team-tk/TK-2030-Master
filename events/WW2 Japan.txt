@@ -1,0 +1,369 @@
+﻿###########################
+# Japanese WW2 Events
+###########################
+
+add_namespace = ww2japan
+
+# Japanese Instrument of Surrender
+country_event = {
+	id = ww2japan.0
+	title = ww2japan.0.t
+	desc = ww2japan.0.d
+	picture = GFX_report_event_japanese_surrender_ww2
+
+trigger = {
+tag = JAP
+has_global_flag = japanese_ww2
+has_global_flag = hiroshima_atomic
+has_global_flag = nagasaki_atomic
+
+NOT = { SOV = { has_war_with = ENG }}
+NOT = { SOV = { has_war_with = USA }}
+
+		
+OR = { USA = { controls_state = 526 } any_other_country = { is_in_faction_with = USA controls_state = 526} }
+		
+	}
+
+	mean_time_to_happen = { days = 10 }
+
+	option = {
+		name = ww2japan.0.a
+		ai_chance = { factor = 4000 }
+		news_event = { hours = 6 id = ww2news.16 }
+		set_global_flag = japanese_surrender
+		
+					every_country = {
+					limit = { 
+					is_in_faction_with = JAP
+					has_war_with = SOV
+					}
+					white_peace = SOV
+					}
+				
+					every_country = {
+					limit = { 
+					is_in_faction_with = JAP
+					has_war_with = ENG
+					}
+					white_peace = ENG
+					}
+				
+					every_country = {
+					limit = { 
+					is_in_faction_with = JAP
+					has_war_with = USA
+					}
+					white_peace = USA
+					}
+					
+					every_country = {
+					limit = { 
+					is_in_faction_with = JAP
+					has_war_with = CHI
+					}
+					white_peace = CHI
+					}
+							
+			CHI = {
+			transfer_state = 743
+			transfer_state = 524
+			transfer_state = 609
+			transfer_state = 745
+			
+			transfer_state = 595
+			transfer_state = 596
+			transfer_state = 597
+			transfer_state = 598
+			transfer_state = 600
+			transfer_state = 601
+			transfer_state = 602
+			transfer_state = 603
+			transfer_state = 605
+			transfer_state = 606
+			transfer_state = 607
+			transfer_state = 608
+			transfer_state = 613
+			transfer_state = 614
+			transfer_state = 620
+			
+			transfer_state = 743
+			transfer_state = 744
+			transfer_state = 748
+			transfer_state = 749
+			transfer_state = 750
+			transfer_state = 751
+			
+			transfer_state = 591
+			transfer_state = 592
+			transfer_state = 593
+			transfer_state = 594
+			transfer_state = 599
+			
+			transfer_state = 328
+			transfer_state = 610
+			transfer_state = 714
+			transfer_state = 715
+			transfer_state = 716
+			transfer_state = 717
+			transfer_state = 761
+			transfer_state = 611
+			transfer_state = 612
+			
+			transfer_state = 622
+			transfer_state = 615
+			transfer_state = 621
+			transfer_state = 746
+			
+			transfer_state = 287
+			transfer_state = 617
+			transfer_state = 618
+			transfer_state = 619
+			transfer_state = 759
+			transfer_state = 760
+			
+			transfer_state = 283
+			transfer_state = 604
+			transfer_state = 616
+			transfer_state = 753
+			transfer_state = 754
+			transfer_state = 755
+			transfer_state = 756
+			
+			transfer_state = 325
+			transfer_state = 747
+			
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			
+			}
+			
+			USA = {
+					annex_country = { target = JAP transfer_troops = no }
+					}
+					
+			KOR = {
+			transfer_state = 525
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			}
+			
+			JAP = {
+			transfer_state = 282
+			transfer_state = 536
+			transfer_state = 533
+			transfer_state = 534
+			transfer_state = 531
+			transfer_state = 532
+			transfer_state = 535
+			transfer_state = 528
+			transfer_state = 529
+			transfer_state = 530
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			}
+			
+
+		
+		
+			
+					
+			DPR = {
+			transfer_state = 527
+			}
+					
+			SOV = {
+			transfer_state = 537
+			transfer_state = 555
+		}
+		
+	}
+}
+
+# American Capitulation
+country_event = {
+	id = ww2japan.1
+	title = ww2japan.1.t
+	desc = ww2japan.1.d
+	picture = GFX_report_event_jap_military_celebration
+
+	fire_only_once = yes
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2japan.1.a
+		ai_chance = { factor = 10 }
+			
+	}
+	
+	option = {
+		name = ww2japan.1.b
+		ai_chance = { factor = 10 }
+		
+	JPS = {
+	386 = { add_core_of = PREV }
+	385 = { add_core_of = PREV }
+	378 = { add_core_of = PREV }
+	379 = { add_core_of = PREV }
+	463 = { add_core_of = PREV }
+	808 = { add_core_of = PREV }
+	transfer_state = 808
+	transfer_state = 386
+	transfer_state = 385
+	transfer_state = 378
+	transfer_state = 379
+	transfer_state = 463
+	}
+	
+	JAP = { 
+	add_to_faction = JPS 
+	}		
+			
+	}
+	
+	option = {
+		name = ww2japan.1.c
+		ai_chance = { factor = 10 }
+		
+		JPS = {
+	386 = { add_core_of = PREV }
+	385 = { add_core_of = PREV }
+	378 = { add_core_of = PREV }
+	379 = { add_core_of = PREV }
+	463 = { add_core_of = PREV }
+	808 = { add_core_of = PREV }
+	transfer_state = 808
+	transfer_state = 386
+	transfer_state = 385
+	transfer_state = 378
+	transfer_state = 379
+	transfer_state = 463
+	}
+	
+	JAP = {
+	set_autonomy = { target = JPS autonomy_state = autonomy_satellite }
+	add_to_faction = JPS
+	}
+			
+	}
+	
+	option = {
+		name = ww2japan.1.e
+		ai_chance = { factor = 4000 }
+		
+	JPS = {
+	386 = { add_core_of = PREV }
+	385 = { add_core_of = PREV }
+	378 = { add_core_of = PREV }
+	379 = { add_core_of = PREV }
+	463 = { add_core_of = PREV }
+	808 = { add_core_of = PREV }
+	transfer_state = 808
+	set_cosmetic_tag = japanese_pacific_states
+	transfer_state = 386
+	transfer_state = 385
+	transfer_state = 378
+	transfer_state = 379
+	transfer_state = 463
+	}
+	
+	JAP = {
+	set_autonomy = { target = JPS autonomy_state = autonomy_integrated_puppet }
+	add_to_faction = JPS
+	}
+			
+	}
+}
+
+# Canada Capitulation
+country_event = {
+	id = ww2japan.2
+	title = ww2japan.2.t
+	desc = ww2japan.2.d
+	picture = GFX_report_event_jap_military_celebration
+
+	fire_only_once = yes
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = ww2japan.2.a
+		ai_chance = { factor = 10 }
+			
+	}
+	
+	option = {
+		name = ww2japan.2.b
+		ai_chance = { factor = 10 }
+		
+			JPS = {
+	471 = { add_core_of = PREV }
+	473 = { add_core_of = PREV }
+	739 = { add_core_of = PREV }
+	740 = { add_core_of = PREV }
+	transfer_state = 471
+	transfer_state = 473
+	transfer_state = 739
+	transfer_state = 740
+	}
+	
+	JAP = {
+	add_to_faction = JPS
+	}
+			
+	}
+	
+	option = {
+		name = ww2japan.2.c
+		ai_chance = { factor = 10 }
+		
+		JPS = {
+	471 = { add_core_of = PREV }
+	473 = { add_core_of = PREV }
+	739 = { add_core_of = PREV }
+	740 = { add_core_of = PREV }
+	transfer_state = 471
+	transfer_state = 473
+	transfer_state = 739
+	transfer_state = 740
+	}
+	
+	JAP = {
+	set_autonomy = { target = JPS autonomy_state = autonomy_satellite }
+	add_to_faction = JPS
+	}
+			
+	}
+	
+	option = {
+		name = ww2japan.2.e
+		ai_chance = { factor = 4000 }
+		
+	JPS = {
+	471 = { add_core_of = PREV }
+	473 = { add_core_of = PREV }
+	739 = { add_core_of = PREV }
+	740 = { add_core_of = PREV }
+	set_cosmetic_tag = japanese_pacific_states
+	transfer_state = 471
+	transfer_state = 473
+	transfer_state = 739
+	transfer_state = 740
+	}
+	
+	JAP = {
+	set_autonomy = { target = JPS autonomy_state = autonomy_integrated_puppet }
+	add_to_faction = JPS
+	}
+			
+	}
+}

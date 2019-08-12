@@ -1,0 +1,299 @@
+﻿capital = 37
+
+oob = "DEN_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "DEN_1936_naval_mtg"
+	else = {
+		set_naval_oob = "DEN_1936_naval_legacy"
+	}
+}
+
+add_ideas = {
+fog_democratic
+religion_lutheranism
+}
+
+
+add_ideas = {
+	DEN_defenceless_neutrality
+	DEN_christian_x
+}
+
+add_ideas = { 	
+	export_focus
+	tax_average
+	tariffs_average
+	
+	low_economic_mobilisation
+	press_free
+	private_control
+	labor_encouraged
+	fdi_encouraged
+	
+	cons_one
+	foreign_volunteers
+	
+	train_medium
+	officer_train_low
+	security_liberty_first
+	#age_19
+
+	education_budget5 health_budget5 socialsecurity_budget5 
+	
+	unity6	
+	foreign_neutral
+}
+
+set_research_slots = 3
+set_stability = 0.9
+set_war_support = 0.1
+set_convoys = 40
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_destroyer = 1
+		early_heavy_cruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+		mtg_transport = 1
+	}
+}
+
+
+
+
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "1935.10.22"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+monarchism = 90	
+conservatism = 7
+fascism = 1
+communism = 2
+}
+
+create_country_leader = {
+	name = "Thorvald Stauning"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Mogens Fog"
+	picture = "Mogens_Fog_Socialist.dds"
+	expire = "1965.1.1"
+	ideology = socialism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "John Christmas Moller"
+	picture = "John_Christmas_Moller_-Denmark_Conservative.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Frits Clausen"
+	desc = "POLITICS_FRITS_CLAUSEN_DESC"
+	picture = "gfx/leaders/DEN/Portrait_Denmark_Frits_Clausen.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+
+### PLACEHOLDER
+create_country_leader = {
+	name = "Frits Clausen"
+	desc = "POLITICS_FRITS_CLAUSEN_DESC"
+	picture = "gfx/leaders/DEN/Portrait_Denmark_Frits_Clausen.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Aksel Larsen"
+	desc = "POLITICS_AKSEL_LARSEN_DESC"
+	picture = "Aksel_Larsen_communism.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Halfdan Rasmussen"
+	desc = "POLITICS_AKSEL_LARSEN_DESC"
+	picture = "Halfdan_Rasmussen_Syndicalist.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Peter Rochegune Munch"
+	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
+	picture = "Peter_Rochegune-_Denmark_Liberal.dds"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Christian X"
+	picture = "Portrait_Denmark_Christian_X.dds"
+	expire = "1947.4.20"
+	ideology = constitutional
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Cay Lembcke"
+	picture = "Cay_Lembcke_Fascist-Ethnic_Nationalist.dds"
+	expire = "1965.1.1"
+	ideology = ethnic_nationalism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "William Wain Prior"
+	picture = "gfx/leaders/SCA/Portrait_SCA_William_Prior.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = { }
+}
+
+create_field_marshal = {
+	name = "William Wain Prior"
+	portrait_path = "gfx/leaders/SCA/Portrait_SCA_William_Prior.dds"
+	traits = { inflexible_strategist career_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Frederik Essemann"
+	portrait_path = "gfx/leaders/Europe/portrait_europe_generic_navy_4.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Hans Rolsted"
+	portrait_path = "gfx/leaders/SCA/Portrait_SCA_Hans_Rolsted.dds"
+	traits = { career_officer skilled_staffer organizer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Aage Helgesen Vedel"
+	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_navy_3.dds"
+	traits = { spotter }
+	skill = 2
+}
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Rota Class"								# represents Rota and Daphne classes
+		type = ship_hull_submarine_1
+		name_group = DEN_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Herluf Trolle Class"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = DEN_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_torpedo_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Niels Iuel Class"				
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = DEN_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+	}
+}

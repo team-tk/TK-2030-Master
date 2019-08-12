@@ -1,0 +1,7 @@
+IRQ_decolonization_des_cat = {
+	icon = category_generic_independence
+	available = {
+		tag = IRQ
+		has_completed_focus = IRQ_decolonization
+	}
+}

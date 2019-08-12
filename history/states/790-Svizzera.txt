@@ -1,0 +1,26 @@
+
+state={
+	id=790
+	name="STATE_790"
+	manpower = 732840
+	
+	
+	state_category = city
+	
+	resources={
+		aluminium=12
+	}
+
+	history={
+		owner = SWI
+
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		3641 9600 658 3662 3660
+	}
+}

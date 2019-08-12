@@ -1,0 +1,14 @@
+﻿EST_EBD = {
+    color = rgb { 219 202 0 }
+    color_ui = rgb { 219 202 0 }
+}
+
+EBD_EST = {
+	color = rgb { 219 202 0 }
+    color_ui = rgb { 219 202 0 }
+}
+
+EBD = {
+	color = rgb { 219 202 0 }
+    color_ui = rgb { 219 202 0 }
+}

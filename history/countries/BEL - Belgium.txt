@@ -1,0 +1,334 @@
+﻿capital = 6
+
+oob = "BEL_1936"
+
+set_research_slots = 3
+set_stability = 0.75
+set_war_support = 0.3 #we see what you are doing there Adolf
+set_convoys = 400
+
+add_ideas = {
+fog_democratic
+religion_catholicism
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	trench_warfare = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+add_ideas = { 	
+	export_focus
+	tax_average
+	tariffs_average
+	
+	civilian_economy
+	press_free
+	private_control
+	labor_allowed
+	fdi_regulated
+	
+	cons_volunteer
+	foreign_volunteers
+	
+	train_medium
+	officer_train_low
+	security_liberty_first
+	#age_19
+
+	education_budget5 health_budget5 socialsecurity_budget5 
+	
+	unity5	
+	foreign_neutral
+}
+
+add_ideas = {
+	tblra_leopold3
+	tblra_pillarized_society
+	tblra_peacetime_national_union
+	tblra_linguistic_question_in_military
+	tblra_recovery_from_the_great_depression1
+	tblra_digging_of_the_albert_canal
+	
+	
+}
+
+
+
+set_politics = {
+	ruling_party = socdem
+	last_election = "1932.11.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+conservatism = 27.7
+fascism = 11.5
+communism = 6.2
+monarchism = 3
+neutrality = 7.1	
+democratic = 12.4
+socdem = 32.1
+}
+
+create_country_leader = {
+	name = "Joseph Jacquemotte"
+	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_communism
+	traits = { }
+}
+
+### PLACEHOLDER
+
+create_country_leader = {
+	name = "Joseph Jacquemotte"
+	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_syndicalism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Léon Degrelle"
+	desc = "POLITICS_LEON_DEGRELLE_DESC"
+	picture = "Portrait_Belgium_LEON_DEGRELLE.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = { }
+}
+
+### PLACEHOLDER
+create_country_leader = {
+	name = "Léon Degrelle"
+	desc = "POLITICS_LEON_DEGRELLE_DESC"
+	picture = "Portrait_Belgium_LEON_DEGRELLE.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+### PLACEHOLDER
+create_country_leader = {
+	name = "Édouard Van den Bergen"
+	desc = ""
+	picture = "Portrait_Belgium_Edouard_van_den_Bergen.tga"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = { }
+}
+
+#tblra belgian Prime Ministers
+create_country_leader = {
+	name = "Achille van Acker"
+	desc = "Achille van Acker"
+	picture = "Portrait_van_acker.dds"
+	expire = "1939.1.1"
+    ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Paul-Emile Janson"
+	desc = "Paul-Emile Janson"
+	picture = "portrait_Janson.dds"
+	expire = "1939.1.1"
+    ideology = liberalism_ideology
+	traits = {
+	}
+}
+
+
+create_country_leader = {
+	name = "Paul-Henri Spaak"
+	desc = "Paul-Henri Spaak"
+	picture = "gfx/leaders/BEL/Portrait_Spaak.dds"
+	expire = "1939.1.1"
+    ideology = social_democracy
+	traits = {
+		stout_defender
+	}
+}
+
+### PLACEHOLDER
+create_country_leader = {
+	name = "Achille van Acker"
+	desc = "Achille van Acker"
+	picture = "Portrait_van_acker.dds"
+	expire = "1939.1.1"
+    ideology = socialism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Paul Van Zeeland"
+	desc = "Paul Van Zeeland"
+	picture = "portrait_paul_van_zeeland.dds"
+	expire = "1938.1.1"
+    ideology = conservatism_ideology
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Xavier Relecom"
+	desc = "Xavier Relecom"
+	picture = "portrait_xavier_relecom.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = { }
+}
+create_country_leader = {
+	name = "Julien Lahaut"
+	desc = "Julien Lahaut"
+	picture = "LAHAUT_Julien.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = { }
+}
+create_country_leader = {
+	name = "Joseph Jacquemotte"
+	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
+	picture = "COM_BEL_JACQUEMOTTE.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = { }
+}
+
+
+### placeholder
+create_country_leader = {
+	name = "Julien Lahaut"
+	desc = "Julien Lahaut"
+	picture = "LAHAUT_Julien.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Leopold III"
+	picture = "Portrait_Belgium_Leopold_III.dds"
+	expire = "1983.9.15"
+	ideology = constitutional
+	traits = { stout_defender
+	}
+}
+
+create_country_leader = {
+	name = "Staf De Clercq"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Hubert Pierlot"
+	desc = "POLITICS_HUBERT_PIERLOT_DESC"
+	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}
+
+create_field_marshal = {
+	name = "Édouard Van den Bergen"
+	picture = "Portrait_Belgium_Edouard_van_den_Bergen.tga"
+	traits = { walloon artillerist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3	
+	id = 11000
+}
+create_corps_commander = {
+	name = "Victor Van Strydonck de Burkel"
+	picture = "Portrait_Belgium_Victor_van_Strydonck_de_Burkel.tga"
+	traits = { flemish career_officer cavalry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2	
+}
+create_corps_commander = {
+	name = "Maurice Keyaerts"
+	portrait_path = "gfx/leaders/BEL/Portrait_Belgium_MCL_Keyaerts.dds"
+	traits = { walloon ranger career_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 4	
+}
+#create_corps_commander = {
+#	name = "Auguste-Édouard Gilliaert"
+#	portrait_path = "gfx/leaders/BEL/gilliaert.dds"
+#	traits = { flemish jungle_rat }
+#	skill = 2
+#}
+create_corps_commander = {
+	name = "Georges Deffontaine"
+	portrait_path = "gfx/leaders/BEL/portrait_Alexandre_Deffontaine.dds"
+	traits = { walloon meticulous caring_leader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2	
+}
+create_corps_commander = {
+	name = "Maximilien de Neve de Roden"
+	portrait_path = "gfx/leaders/BEL/portrait_DE_NEVE_DE_RODEN.dds"
+	traits = { flemish cavalry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1	
+}
+create_corps_commander = {
+	name = "Alexis Vander Veken"
+	portrait_path = "gfx/leaders/BEL/portrait_vander_veken.dds"
+	traits = { flemish }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1	
+}
+create_corps_commander = {
+	name = "Auguste Baesens"
+	portrait_path = "gfx/leaders/BEL/portrait_Auguste_Baesens.dds"
+	traits = { flemish artillerist obsessed_by_artillery}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_navy_leader = {
+	name = "Georges Timmermans"
+	portrait_path = "gfx/leaders/BEL/Portrait_Belgium_Georges_Timmermans.dds"
+	traits = { flemish blockade_runner }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Lambert Robins"
+	portrait_path = "gfx/leaders/BEL/Portrait_Belgium_Lambert_Robins.dds"
+	traits = { walloon spotter }
+	skill = 1
+}

@@ -1,0 +1,233 @@
+﻿add_namespace = weather_events
+
+########Universal Event############
+
+## RUSSIAN WINTER
+country_event = {
+	id = weather_events.1
+	title = weather_events.1.t
+	desc = weather_events.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	trigger = {
+		tag = SOV
+		OR = {
+				AND = {
+				date > 1936.1.1
+				date < 1936.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1936.11.30
+				date < 1937.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1937.11.30
+				date < 1938.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1938.11.30
+				date < 1939.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1939.11.30
+				date < 1940.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1940.11.30
+				date < 1941.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1941.11.30
+				date < 1942.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1942.11.30
+				date < 1943.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1943.11.30
+				date < 1944.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1944.11.30
+				date < 1945.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1945.11.30
+				date < 1946.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1946.11.30
+				date < 1947.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1947.11.30
+				date < 1948.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1948.11.30
+				date < 1949.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1949.11.30
+				date < 1950.4.1
+				NOT = { has_country_flag = russian_winter }
+			}
+			AND = {
+				date > 1936.3.31
+				date < 1936.12.1
+				has_country_flag = russian_winter
+			}
+			AND = {
+				date > 1937.3.31
+				date < 1937.12.1
+				has_country_flag = russian_winter
+			}
+			AND = {
+				date > 1938.3.31
+				date < 1938.12.1
+				has_country_flag = russian_winter
+			}
+			
+			AND = {
+				date > 1939.3.31
+				date < 1939.12.1
+				has_country_flag = russian_winter
+			}
+			
+			AND = {
+				date > 1940.3.31
+				date < 1940.12.1
+				has_country_flag = russian_winter
+			}
+			
+			AND = {
+				date > 1941.3.31
+				date < 1941.12.1
+				has_country_flag = russian_winter
+			}
+			
+			AND = {
+				date > 1942.3.31
+				date < 1942.12.1
+				has_country_flag = russian_winter
+			}
+			
+			AND = {
+				date > 1943.3.31
+				date < 1943.12.1
+				has_country_flag = russian_winter
+			}
+			
+			AND = {
+				date > 1944.3.31
+				date < 1944.12.1
+				has_country_flag = russian_winter
+			}
+			
+			AND = {
+				date > 1945.3.31
+				date < 1945.12.1
+				has_country_flag = russian_winter
+			}
+			
+			AND = {
+				date > 1946.3.31
+				date < 1946.12.1
+				has_country_flag = russian_winter
+			}
+			
+			AND = {
+				date > 1947.3.31
+				date < 1947.12.1
+				has_country_flag = russian_winter
+			}
+			
+			AND = {
+				date > 1948.3.31
+				date < 1948.12.1
+				has_country_flag = russian_winter
+			}
+			
+			AND = {
+				date > 1949.3.31
+				date < 1949.12.1
+				has_country_flag = russian_winter
+			}
+			AND = {
+				date > 1950.3.31
+				date < 1950.12.1
+				has_country_flag = russian_winter
+			}
+
+			
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	hidden = yes
+	
+	immediate = { 
+		#Army
+		if = { limit = { date > 1936.1.1 < 1936.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1936.3.31 < 1936.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1936.11.30 < 1937.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1937.31.31 < 1937.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1937.11.30 < 1938.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1938.31.31 < 1938.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1938.11.30 < 1939.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1939.31.31 < 1939.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1939.11.30 < 1940.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1940.31.31 < 1940.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1940.11.30 < 1941.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1941.31.31 < 1941.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1941.11.30 < 1942.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1942.31.31 < 1942.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1942.11.30 < 1943.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1943.31.31 < 1943.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1943.11.30 < 1944.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1944.31.31 < 1944.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1944.11.30 < 1945.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1945.31.31 < 1945.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1945.11.30 < 1946.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1946.31.31 < 1946.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1946.11.30 < 1947.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1947.31.31 < 1947.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1947.11.30 < 1948.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1948.31.31 < 1948.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1948.11.30 < 1949.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1949.31.31 < 1949.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		if = { limit = { date > 1949.11.30 < 1950.4.1 NOT = { has_country_flag = russian_winter } } set_country_flag = russian_winter clr_country_flag = russian_summer }
+		if = { limit = { date > 1950.31.31 < 1950.12.1 has_country_flag = russian_winter } set_country_flag = russian_summer clr_country_flag = russian_winter }
+		
+	}
+	
+	option = {
+		name = "Ok"
+		#Army
+		if = { limit = { has_country_flag = russian_winter NOT = { has_idea = russian_winter } } add_ideas = russian_winter }
+		if = { limit = { has_country_flag = russian_summer  has_idea = russian_winter } remove_ideas = russian_winter }
+
+		
+	}
+}
+
+### EOF ###

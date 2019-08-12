@@ -1,0 +1,6244 @@
+﻿###########################
+# Landgrab Events
+###########################
+# By Chris
+###########################
+
+add_namespace = newformevents
+
+country_event = { # Großdeutsches Reich
+	id = newformevents.0
+	title = newformevents.0.t
+	desc = newformevents.0.d # 
+	picture = GFX_report_event_greater_german_reich
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.0.a # A 1000 Years Reich!
+		trigger = { has_fascist_government = yes }
+		ai_chance = { factor = 4000 }
+			set_cosmetic_tag = GER_greater_german_reich
+			add_stability = 0.2
+			set_capital = 64
+			set_province_name = { id = 6558 name = "Posen"}
+			set_province_name = { id = 9503 name = "Straßburg"}
+			set_province_name = { id = 678 name = "Mülhausen"}
+			custom_effect_tooltip = core_gro
+			hidden_effect = { sound_effect = complete_focus  
+			set_country_flag = formed_gro
+			set_global_flag = form_GER_greater_german_reich_flag
+			151 = { add_core_of = ROOT }
+			188 = { add_core_of = ROOT }
+			69 = { add_core_of = ROOT }
+			74 = { add_core_of = ROOT }
+			28 = { add_core_of = ROOT }
+			8 = { add_core_of = ROOT }
+			85 = { add_core_of = ROOT }
+			86 = { add_core_of = ROOT }
+			39 = { add_core_of = ROOT }
+			762 = { add_core_of = ROOT }
+			788 = { add_core_of = ROOT }
+			789 = { add_core_of = ROOT }
+			800 = { add_core_of = ROOT }
+			153 = { add_core_of = ROOT }
+			152 = { add_core_of = ROOT }
+			4 = { add_core_of = ROOT }
+			
+				5 = { add_core_of = ROOT }
+				 42 = { add_core_of = ROOT }
+				 50 = { add_core_of = ROOT }
+				 51 = { add_core_of = ROOT }
+				 52 = { add_core_of = ROOT }
+				 53 = { add_core_of = ROOT }
+				 54 = { add_core_of = ROOT }
+				 55 = { add_core_of = ROOT }
+				 56 = { add_core_of = ROOT }
+				 57 = { add_core_of = ROOT }
+				 58 = { add_core_of = ROOT }
+				 59 = { add_core_of = ROOT }
+				 60 = { add_core_of = ROOT }
+				 61 = { add_core_of = ROOT }
+				 62 = { add_core_of = ROOT }
+				 63 = { add_core_of = ROOT }
+				 64 = { add_core_of = ROOT }
+				 65 = { add_core_of = ROOT }
+				 66 = { add_core_of = ROOT }
+				 67 = { add_core_of = ROOT }
+				 68 = { add_core_of = ROOT }
+				 69 = { add_core_of = ROOT }
+				 763 = { add_core_of = ROOT }
+				 797 = { add_core_of = ROOT }
+			}
+		
+	}
+	
+	option = {
+		name = newformevents.0.b # A 1000 Years Reich!
+		trigger = { has_communist_government = yes }
+		ai_chance = { factor = 4000 }
+			set_cosmetic_tag = GER_greater_german_reich
+			add_stability = 0.2
+			set_capital = 64
+			set_province_name = { id = 6558 name = "Posen"}
+			set_province_name = { id = 9503 name = "Straßburg"}
+			set_province_name = { id = 678 name = "Mülhausen"}
+			custom_effect_tooltip = core_gro
+			hidden_effect = { sound_effect = complete_focus  
+			set_country_flag = formed_gro
+			set_global_flag = form_GER_greater_german_reich_flag
+			151 = { add_core_of = ROOT }
+			188 = { add_core_of = ROOT }
+			69 = { add_core_of = ROOT }
+			74 = { add_core_of = ROOT }
+			28 = { add_core_of = ROOT }
+			8 = { add_core_of = ROOT }
+			85 = { add_core_of = ROOT }
+			86 = { add_core_of = ROOT }
+			39 = { add_core_of = ROOT }
+			762 = { add_core_of = ROOT }
+			788 = { add_core_of = ROOT }
+			789 = { add_core_of = ROOT }
+			800 = { add_core_of = ROOT }
+			153 = { add_core_of = ROOT }
+			152 = { add_core_of = ROOT }
+			4 = { add_core_of = ROOT }
+			
+				5 = { add_core_of = ROOT }
+				 42 = { add_core_of = ROOT }
+				 50 = { add_core_of = ROOT }
+				 51 = { add_core_of = ROOT }
+				 52 = { add_core_of = ROOT }
+				 53 = { add_core_of = ROOT }
+				 54 = { add_core_of = ROOT }
+				 55 = { add_core_of = ROOT }
+				 56 = { add_core_of = ROOT }
+				 57 = { add_core_of = ROOT }
+				 58 = { add_core_of = ROOT }
+				 59 = { add_core_of = ROOT }
+				 60 = { add_core_of = ROOT }
+				 61 = { add_core_of = ROOT }
+				 62 = { add_core_of = ROOT }
+				 63 = { add_core_of = ROOT }
+				 64 = { add_core_of = ROOT }
+				 65 = { add_core_of = ROOT }
+				 66 = { add_core_of = ROOT }
+				 67 = { add_core_of = ROOT }
+				 68 = { add_core_of = ROOT }
+				 69 = { add_core_of = ROOT }
+				 763 = { add_core_of = ROOT }
+				 797 = { add_core_of = ROOT }
+			}
+		
+	}
+	
+	option = {
+		name = newformevents.0.c # A 1000 Years Reich!
+		trigger = { has_democratic_government = yes	}
+
+		ai_chance = { factor = 4000 }
+			set_cosmetic_tag = GER_greater_german_reich
+			add_stability = 0.2
+			set_capital = 64
+			set_province_name = { id = 6558 name = "Posen"}
+			set_province_name = { id = 9503 name = "Straßburg"}
+			set_province_name = { id = 678 name = "Mülhausen"}
+			custom_effect_tooltip = core_gro
+			hidden_effect = { sound_effect = complete_focus  
+			set_country_flag = formed_gro
+			set_global_flag = form_GER_greater_german_reich_flag
+			151 = { add_core_of = ROOT }
+			188 = { add_core_of = ROOT }
+			69 = { add_core_of = ROOT }
+			74 = { add_core_of = ROOT }
+			28 = { add_core_of = ROOT }
+			8 = { add_core_of = ROOT }
+			85 = { add_core_of = ROOT }
+			86 = { add_core_of = ROOT }
+			39 = { add_core_of = ROOT }
+			762 = { add_core_of = ROOT }
+			788 = { add_core_of = ROOT }
+			789 = { add_core_of = ROOT }
+			800 = { add_core_of = ROOT }
+			153 = { add_core_of = ROOT }
+			152 = { add_core_of = ROOT }
+			4 = { add_core_of = ROOT }
+			
+				5 = { add_core_of = ROOT }
+				 42 = { add_core_of = ROOT }
+				 50 = { add_core_of = ROOT }
+				 51 = { add_core_of = ROOT }
+				 52 = { add_core_of = ROOT }
+				 53 = { add_core_of = ROOT }
+				 54 = { add_core_of = ROOT }
+				 55 = { add_core_of = ROOT }
+				 56 = { add_core_of = ROOT }
+				 57 = { add_core_of = ROOT }
+				 58 = { add_core_of = ROOT }
+				 59 = { add_core_of = ROOT }
+				 60 = { add_core_of = ROOT }
+				 61 = { add_core_of = ROOT }
+				 62 = { add_core_of = ROOT }
+				 63 = { add_core_of = ROOT }
+				 64 = { add_core_of = ROOT }
+				 65 = { add_core_of = ROOT }
+				 66 = { add_core_of = ROOT }
+				 67 = { add_core_of = ROOT }
+				 68 = { add_core_of = ROOT }
+				 69 = { add_core_of = ROOT }
+				 763 = { add_core_of = ROOT }
+				 797 = { add_core_of = ROOT }
+			}
+		
+	}
+	
+	option = {
+		name = newformevents.0.e # A 1000 Years Reich!
+		trigger = { OR = { has_neutral_government = yes has_government = monarchism } }
+		ai_chance = { factor = 4000 }
+			set_cosmetic_tag = GER_greater_german_reich
+			add_stability = 0.2
+			set_capital = 64
+			set_province_name = { id = 6558 name = "Posen"}
+			set_province_name = { id = 9503 name = "Straßburg"}
+			set_province_name = { id = 678 name = "Mülhausen"}
+			custom_effect_tooltip = core_gro
+			hidden_effect = { sound_effect = complete_focus  
+			set_country_flag = formed_gro
+			set_global_flag = form_GER_greater_german_reich_flag
+			151 = { add_core_of = ROOT }
+			188 = { add_core_of = ROOT }
+			69 = { add_core_of = ROOT }
+			74 = { add_core_of = ROOT }
+			28 = { add_core_of = ROOT }
+			8 = { add_core_of = ROOT }
+			85 = { add_core_of = ROOT }
+			86 = { add_core_of = ROOT }
+			39 = { add_core_of = ROOT }
+			762 = { add_core_of = ROOT }
+			788 = { add_core_of = ROOT }
+			789 = { add_core_of = ROOT }
+			800 = { add_core_of = ROOT }
+			153 = { add_core_of = ROOT }
+			152 = { add_core_of = ROOT }
+			4 = { add_core_of = ROOT }
+			
+				5 = { add_core_of = ROOT }
+				 42 = { add_core_of = ROOT }
+				 50 = { add_core_of = ROOT }
+				 51 = { add_core_of = ROOT }
+				 52 = { add_core_of = ROOT }
+				 53 = { add_core_of = ROOT }
+				 54 = { add_core_of = ROOT }
+				 55 = { add_core_of = ROOT }
+				 56 = { add_core_of = ROOT }
+				 57 = { add_core_of = ROOT }
+				 58 = { add_core_of = ROOT }
+				 59 = { add_core_of = ROOT }
+				 60 = { add_core_of = ROOT }
+				 61 = { add_core_of = ROOT }
+				 62 = { add_core_of = ROOT }
+				 63 = { add_core_of = ROOT }
+				 64 = { add_core_of = ROOT }
+				 65 = { add_core_of = ROOT }
+				 66 = { add_core_of = ROOT }
+				 67 = { add_core_of = ROOT }
+				 68 = { add_core_of = ROOT }
+				 69 = { add_core_of = ROOT }
+				 763 = { add_core_of = ROOT }
+				 797 = { add_core_of = ROOT }
+			}
+		
+	}
+
+}
+
+country_event = { # Großgermanisches Reich
+	id = newformevents.1
+	title = newformevents.1.t
+	desc = newformevents.1.d # 
+	picture = GFX_report_event_greater_germanic_reich
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.1.a # A 1000 Years Reich!
+
+		ai_chance = { factor = 4000 }
+		
+		
+			add_stability = 0.2
+			#set_capital = 64
+			#set_province_name = { id = 6521 name = "Welthauptstadt Germania" }
+			custom_effect_tooltip = core_ggr
+			hidden_effect = { sound_effect = complete_focus  
+			151 = { add_core_of = ROOT }
+			188 = { add_core_of = ROOT }
+			69 = { add_core_of = ROOT }
+			74 = { add_core_of = ROOT }
+			28 = { add_core_of = ROOT }
+			8 = { add_core_of = ROOT }
+			85 = { add_core_of = ROOT }
+			86 = { add_core_of = ROOT }
+			39 = { add_core_of = ROOT }
+			
+			762 = { add_core_of = ROOT }
+			3 = { add_core_of = ROOT }
+			9 = { add_core_of = ROOT }
+			75 = { add_core_of = ROOT }
+			72 = { add_core_of = ROOT }
+
+			87 = { add_core_of = ROOT }
+			98 = { add_core_of = ROOT }
+			97 = { add_core_of = ROOT }
+			102 = { add_core_of = ROOT }
+			37 = { add_core_of = ROOT }
+			99 = { add_core_of = ROOT }
+			110 = { add_core_of = ROOT }
+			142 = { add_core_of = ROOT }
+			143 = { add_core_of = ROOT }
+			144 = { add_core_of = ROOT }
+			38 = { add_core_of = ROOT }
+			138 = { add_core_of = ROOT }
+			139 = { add_core_of = ROOT }
+			140 = { add_core_of = ROOT }
+			141 = { add_core_of = ROOT }
+			666 = { add_core_of = ROOT }
+			736 = { add_core_of = ROOT }
+			
+			35 = { add_core_of = ROOT }
+			36 = { add_core_of = ROOT }
+			7 = { add_core_of = ROOT }
+			
+			34 = { add_core_of = ROOT }
+			6 = { add_core_of = ROOT }
+			788 = { add_core_of = ROOT }
+			789 = { add_core_of = ROOT }
+			800 = { add_core_of = ROOT }
+			790 = { add_core_of = ROOT }
+			791 = { add_core_of = ROOT }
+			792 = { add_core_of = ROOT }
+			793 = { add_core_of = ROOT }
+			794 = { add_core_of = ROOT }
+			795 = { add_core_of = ROOT }
+			153 = { add_core_of = ROOT }
+			152 = { add_core_of = ROOT }
+			4 = { add_core_of = ROOT }
+			29 = { add_core_of = ROOT }
+			100 = { add_core_of = ROOT }
+			101 = { add_core_of = ROOT }
+			set_cosmetic_tag = GER_greater_germanic_reich
+			set_global_flag = form_GER_greater_germanic_reich_flag
+			}
+
+	}
+
+}
+
+country_event = { # African Union
+	id = newformevents.2
+	title = newformevents.2.t
+	desc = newformevents.2.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.2.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = AFR_formable
+				add_stability = 0.2
+				custom_effect_tooltip = core_land
+				hidden_effect = { sound_effect = complete_focus
+					767 = { add_core_of = ROOT }
+					768 = { add_core_of = ROOT }
+					769 = { add_core_of = ROOT }
+					770 = { add_core_of = ROOT }
+					771 = { add_core_of = ROOT }
+					772 = { add_core_of = ROOT }
+					773 = { add_core_of = ROOT }
+					774 = { add_core_of = ROOT }
+					775 = { add_core_of = ROOT }
+					776 = { add_core_of = ROOT }
+					777 = { add_core_of = ROOT }
+					778 = { add_core_of = ROOT }
+					779 = { add_core_of = ROOT }
+					780 = { add_core_of = ROOT }
+					781 = { add_core_of = ROOT }
+					782 = { add_core_of = ROOT }
+					783 = { add_core_of = ROOT }
+					786 = { add_core_of = ROOT }
+					681 = { add_core_of = ROOT }
+					719 = { add_core_of = ROOT }
+					275 = { add_core_of = ROOT }
+					542 = { add_core_of = ROOT }
+					541 = { add_core_of = ROOT }
+					540 = { add_core_of = ROOT }
+					545 = { add_core_of = ROOT }
+					544 = { add_core_of = ROOT }
+					295 = { add_core_of = ROOT }
+					546 = { add_core_of = ROOT }
+					538 = { add_core_of = ROOT }
+					718 = { add_core_of = ROOT }
+					548 = { add_core_of = ROOT }
+					547 = { add_core_of = ROOT }
+					546 = { add_core_of = ROOT }
+					559 = { add_core_of = ROOT }
+					269 = { add_core_of = ROOT }
+					268 = { add_core_of = ROOT }
+					271 = { add_core_of = ROOT }
+					550 = { add_core_of = ROOT }
+					549 = { add_core_of = ROOT }
+					551 = { add_core_of = ROOT }
+					552 = { add_core_of = ROOT }
+					456 = { add_core_of = ROOT }
+					457 = { add_core_of = ROOT }
+					446 = { add_core_of = ROOT }
+					447 = { add_core_of = ROOT }
+					452 = { add_core_of = ROOT }
+					451 = { add_core_of = ROOT }
+					450 = { add_core_of = ROOT }
+					449 = { add_core_of = ROOT }
+					448 = { add_core_of = ROOT }
+					663 = { add_core_of = ROOT }
+					662 = { add_core_of = ROOT }
+					661 = { add_core_of = ROOT }
+					273 = { add_core_of = ROOT }
+					458 = { add_core_of = ROOT }
+					665 = { add_core_of = ROOT }
+					460 = { add_core_of = ROOT }
+					513 = { add_core_of = ROOT }
+					459 = { add_core_of = ROOT }
+					290 = { add_core_of = ROOT }
+					461 = { add_core_of = ROOT }
+					462 = { add_core_of = ROOT }
+					514 = { add_core_of = ROOT }
+					699 = { add_core_of = ROOT }
+					557 = { add_core_of = ROOT }
+					556 = { add_core_of = ROOT }
+					272 = { add_core_of = ROOT }
+					701 = { add_core_of = ROOT }
+					296 = { add_core_of = ROOT }
+					700 = { add_core_of = ROOT }
+					298 = { add_core_of = ROOT }
+					274 = { add_core_of = ROOT }
+					515 = { add_core_of = ROOT }
+					558 = { add_core_of = ROOT }
+					660 = { add_core_of = ROOT }
+					539 = { add_core_of = ROOT }
+					297 = { add_core_of = ROOT }
+					705 = { add_core_of = ROOT }
+					178 = { add_core_of = ROOT }
+					543 = { add_core_of = ROOT }
+					453 = { add_core_of = ROOT }
+				}
+
+			}
+
+	}
+
+	country_event = { # African Union
+	id = newformevents.3
+	title = newformevents.3.t
+	desc = newformevents.3.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.3.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = LAU_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus
+				41 = { add_core_of = ROOT }
+				165 = { add_core_of = ROOT }
+				166 = { add_core_of = ROOT }
+				167 = { add_core_of = ROOT }
+				168 = { add_core_of = ROOT }
+				169 = { add_core_of = ROOT }
+				170 = { add_core_of = ROOT }
+				171 = { add_core_of = ROOT }
+				172 = { add_core_of = ROOT }
+				173 = { add_core_of = ROOT }
+				174 = { add_core_of = ROOT }
+				175 = { add_core_of = ROOT }
+				785 = { add_core_of = ROOT }
+				176 = { add_core_of = ROOT }
+				177 = { add_core_of = ROOT }
+				178 = { add_core_of = ROOT }
+				46 = { add_core_of = ROOT }
+				76 = { add_core_of = ROOT }
+				766 = { add_core_of = ROOT }
+				77 = { add_core_of = ROOT }
+				78 = { add_core_of = ROOT }
+				79 = { add_core_of = ROOT }
+				80 = { add_core_of = ROOT }
+				81 = { add_core_of = ROOT }
+				82 = { add_core_of = ROOT }
+				83 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				112 = { add_core_of = ROOT }
+				179 = { add_core_of = ROOT }
+				180 = { add_core_of = ROOT }
+				181 = { add_core_of = ROOT }
+				2 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+				114 = { add_core_of = ROOT }
+				115 = { add_core_of = ROOT }
+				117 = { add_core_of = ROOT }
+				156 = { add_core_of = ROOT }
+				157 = { add_core_of = ROOT }
+				158 = { add_core_of = ROOT }
+				159 = { add_core_of = ROOT }
+				160 = { add_core_of = ROOT }
+				161 = { add_core_of = ROOT }
+				162 = { add_core_of = ROOT }
+				163 = { add_core_of = ROOT }
+				1 = { add_core_of = ROOT }
+				14 = { add_core_of = ROOT }
+				15 = { add_core_of = ROOT }
+				16 = { add_core_of = ROOT }
+				17 = { add_core_of = ROOT }
+				18 = { add_core_of = ROOT }
+				19 = { add_core_of = ROOT }
+				20 = { add_core_of = ROOT }
+				21 = { add_core_of = ROOT }
+				22 = { add_core_of = ROOT }
+				23 = { add_core_of = ROOT }
+				24 = { add_core_of = ROOT }
+				25 = { add_core_of = ROOT }
+				26 = { add_core_of = ROOT }
+				27 = { add_core_of = ROOT }
+				28 = { add_core_of = ROOT }
+				29 = { add_core_of = ROOT }
+				30 = { add_core_of = ROOT }
+				31 = { add_core_of = ROOT }
+				32 = { add_core_of = ROOT }
+				33 = { add_core_of = ROOT }
+				735 = { add_core_of = ROOT }
+				736 = { add_core_of = ROOT }
+				34 = { add_core_of = ROOT }
+				3 = { add_core_of = ROOT }				
+			}
+			
+
+			}
+
+	}
+	
+	
+	country_event = { # European Union
+	id = newformevents.4
+	title = newformevents.4.t
+	desc = newformevents.4.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.4.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = EUR_UNIFIED
+			add_stability = 0.2
+			set_capital = 6
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus
+				1 = { add_core_of = ROOT }
+				2 = { add_core_of = ROOT }
+				3 = { add_core_of = ROOT }
+				4 = { add_core_of = ROOT }
+				5 = { add_core_of = ROOT }
+				766 = { add_core_of = ROOT }
+				6 = { add_core_of = ROOT }
+				785 = { add_core_of = ROOT }
+				7 = { add_core_of = ROOT }
+				8 = { add_core_of = ROOT }
+				9 = { add_core_of = ROOT }
+				10 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
+				11 = { add_core_of = ROOT }
+				12 = { add_core_of = ROOT }
+				13 = { add_core_of = ROOT }
+				14 = { add_core_of = ROOT }
+				15 = { add_core_of = ROOT }
+				16 = { add_core_of = ROOT }
+				17 = { add_core_of = ROOT }
+				18 = { add_core_of = ROOT }
+				19 = { add_core_of = ROOT }
+				20 = { add_core_of = ROOT }
+				21 = { add_core_of = ROOT }
+				22 = { add_core_of = ROOT }
+				23 = { add_core_of = ROOT }
+				24 = { add_core_of = ROOT }
+				25 = { add_core_of = ROOT }
+				26 = { add_core_of = ROOT }
+				766 = { add_core_of = ROOT }
+				27 = { add_core_of = ROOT }
+				28 = { add_core_of = ROOT }
+				29 = { add_core_of = ROOT }
+				30 = { add_core_of = ROOT }
+				31 = { add_core_of = ROOT }
+				32 = { add_core_of = ROOT }
+				33 = { add_core_of = ROOT }
+				34 = { add_core_of = ROOT }
+				35 = { add_core_of = ROOT }
+				36 = { add_core_of = ROOT }
+				37 = { add_core_of = ROOT }
+				763 = { add_core_of = ROOT }
+				38 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+				41 = { add_core_of = ROOT }
+				42 = { add_core_of = ROOT }
+				43 = { add_core_of = ROOT }
+				44 = { add_core_of = ROOT }
+				45 = { add_core_of = ROOT }
+				46 = { add_core_of = ROOT }
+				47 = { add_core_of = ROOT }
+				48 = { add_core_of = ROOT }
+				50 = { add_core_of = ROOT }
+				51 = { add_core_of = ROOT }
+				52 = { add_core_of = ROOT }
+				53 = { add_core_of = ROOT }
+				54 = { add_core_of = ROOT }
+				55 = { add_core_of = ROOT }
+				56 = { add_core_of = ROOT }
+				57 = { add_core_of = ROOT }
+				58 = { add_core_of = ROOT }
+				59 = { add_core_of = ROOT }
+				60 = { add_core_of = ROOT }
+				61 = { add_core_of = ROOT }
+				62 = { add_core_of = ROOT }
+				63 = { add_core_of = ROOT }
+				64 = { add_core_of = ROOT }
+				65 = { add_core_of = ROOT }
+				66 = { add_core_of = ROOT }
+				67 = { add_core_of = ROOT }
+				68 = { add_core_of = ROOT }
+				69 = { add_core_of = ROOT }
+				70 = { add_core_of = ROOT }
+				71 = { add_core_of = ROOT }
+				72 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				74 = { add_core_of = ROOT }
+				75 = { add_core_of = ROOT }
+				76 = { add_core_of = ROOT }
+				77 = { add_core_of = ROOT }
+				78 = { add_core_of = ROOT }
+				79 = { add_core_of = ROOT }
+				80 = { add_core_of = ROOT }
+				81 = { add_core_of = ROOT }
+				82 = { add_core_of = ROOT }
+				83 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				85 = { add_core_of = ROOT }
+				86 = { add_core_of = ROOT }
+				87 = { add_core_of = ROOT }
+				88 = { add_core_of = ROOT }
+				89 = { add_core_of = ROOT }
+				90 = { add_core_of = ROOT }
+				91 = { add_core_of = ROOT }
+				92 = { add_core_of = ROOT }
+				93 = { add_core_of = ROOT }
+				94 = { add_core_of = ROOT }
+				95 = { add_core_of = ROOT }
+				96 = { add_core_of = ROOT }
+				97 = { add_core_of = ROOT }
+				98 = { add_core_of = ROOT }
+				99 = { add_core_of = ROOT }
+				100 = { add_core_of = ROOT }
+				102 = { add_core_of = ROOT }
+				103 = { add_core_of = ROOT }
+				104 = { add_core_of = ROOT }
+				105 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+				107 = { add_core_of = ROOT }
+				108 = { add_core_of = ROOT }
+				109 = { add_core_of = ROOT }
+				110 = { add_core_of = ROOT }
+				111 = { add_core_of = ROOT }
+				112 = { add_core_of = ROOT }
+				113 = { add_core_of = ROOT }
+				114 = { add_core_of = ROOT }
+				115 = { add_core_of = ROOT }
+				116 = { add_core_of = ROOT }
+				117 = { add_core_of = ROOT }
+				118 = { add_core_of = ROOT }
+				119 = { add_core_of = ROOT }
+				120 = { add_core_of = ROOT }
+				121 = { add_core_of = ROOT }
+				122 = { add_core_of = ROOT }
+				123 = { add_core_of = ROOT }
+				124 = { add_core_of = ROOT }
+				125 = { add_core_of = ROOT }
+				126 = { add_core_of = ROOT }
+				127 = { add_core_of = ROOT }
+				128 = { add_core_of = ROOT }
+				129 = { add_core_of = ROOT }
+				130 = { add_core_of = ROOT }
+				131 = { add_core_of = ROOT }
+				132 = { add_core_of = ROOT }
+				133 = { add_core_of = ROOT }
+				134 = { add_core_of = ROOT }
+				135 = { add_core_of = ROOT }
+				136 = { add_core_of = ROOT }
+				137 = { add_core_of = ROOT }
+				138 = { add_core_of = ROOT }
+				139 = { add_core_of = ROOT }
+				140 = { add_core_of = ROOT }
+				141 = { add_core_of = ROOT }
+				142 = { add_core_of = ROOT }
+				143 = { add_core_of = ROOT }
+				144 = { add_core_of = ROOT }
+				145 = { add_core_of = ROOT }
+				146 = { add_core_of = ROOT }
+				147 = { add_core_of = ROOT }
+				148 = { add_core_of = ROOT }
+				149 = { add_core_of = ROOT }
+				150 = { add_core_of = ROOT }
+				151 = { add_core_of = ROOT }
+				152 = { add_core_of = ROOT }
+				153 = { add_core_of = ROOT }
+				154 = { add_core_of = ROOT }
+				155 = { add_core_of = ROOT }
+				156 = { add_core_of = ROOT }
+				157 = { add_core_of = ROOT }
+				158 = { add_core_of = ROOT }
+				159 = { add_core_of = ROOT }
+				160 = { add_core_of = ROOT }
+				161 = { add_core_of = ROOT }
+				162 = { add_core_of = ROOT }
+				163 = { add_core_of = ROOT }
+				164 = { add_core_of = ROOT }
+				165 = { add_core_of = ROOT }
+				166 = { add_core_of = ROOT }
+				167 = { add_core_of = ROOT }
+				168 = { add_core_of = ROOT }
+				169 = { add_core_of = ROOT }
+				170 = { add_core_of = ROOT }
+				171 = { add_core_of = ROOT }
+				172 = { add_core_of = ROOT }
+				173 = { add_core_of = ROOT }
+				174 = { add_core_of = ROOT }
+				175 = { add_core_of = ROOT }
+				176 = { add_core_of = ROOT }
+				177 = { add_core_of = ROOT }
+				178 = { add_core_of = ROOT }
+				179 = { add_core_of = ROOT }
+				180 = { add_core_of = ROOT }
+				181 = { add_core_of = ROOT }
+				182 = { add_core_of = ROOT }
+				184 = { add_core_of = ROOT }
+				185 = { add_core_of = ROOT }
+				186 = { add_core_of = ROOT }
+				187 = { add_core_of = ROOT }
+				188 = { add_core_of = ROOT }
+				189 = { add_core_of = ROOT }
+				190 = { add_core_of = ROOT }
+				191 = { add_core_of = ROOT }
+				192 = { add_core_of = ROOT }
+				193 = { add_core_of = ROOT }
+				194 = { add_core_of = ROOT }
+				195 = { add_core_of = ROOT }
+				666 = { add_core_of = ROOT }
+				196 = { add_core_of = ROOT }
+				197 = { add_core_of = ROOT }
+				198 = { add_core_of = ROOT }
+				199 = { add_core_of = ROOT }
+				200 = { add_core_of = ROOT }
+				201 = { add_core_of = ROOT }
+				202 = { add_core_of = ROOT }
+				203 = { add_core_of = ROOT }
+				204 = { add_core_of = ROOT }
+				205 = { add_core_of = ROOT }
+				206 = { add_core_of = ROOT }
+				207 = { add_core_of = ROOT }
+				208 = { add_core_of = ROOT }
+				209 = { add_core_of = ROOT }
+				210 = { add_core_of = ROOT }
+				211 = { add_core_of = ROOT }
+				212 = { add_core_of = ROOT }
+				213 = { add_core_of = ROOT }
+				214 = { add_core_of = ROOT }
+				215 = { add_core_of = ROOT }
+				216 = { add_core_of = ROOT }
+				217 = { add_core_of = ROOT }
+				218 = { add_core_of = ROOT }
+				219 = { add_core_of = ROOT }
+				220 = { add_core_of = ROOT }
+				221 = { add_core_of = ROOT }
+				222 = { add_core_of = ROOT }
+				223 = { add_core_of = ROOT }
+				224 = { add_core_of = ROOT }
+				225 = { add_core_of = ROOT }
+				226 = { add_core_of = ROOT }
+				227 = { add_core_of = ROOT }
+				228 = { add_core_of = ROOT }
+				232 = { add_core_of = ROOT }
+				233 = { add_core_of = ROOT }
+				234 = { add_core_of = ROOT }
+				235 = { add_core_of = ROOT }
+				236 = { add_core_of = ROOT }
+				237 = { add_core_of = ROOT }
+				238 = { add_core_of = ROOT }
+				239 = { add_core_of = ROOT }
+				240 = { add_core_of = ROOT }
+				241 = { add_core_of = ROOT }
+				242 = { add_core_of = ROOT }
+				243 = { add_core_of = ROOT }
+				244 = { add_core_of = ROOT }
+				245 = { add_core_of = ROOT }
+				246 = { add_core_of = ROOT }
+				247 = { add_core_of = ROOT }
+				248 = { add_core_of = ROOT }
+				249 = { add_core_of = ROOT }
+				250 = { add_core_of = ROOT }
+				251 = { add_core_of = ROOT }
+				252 = { add_core_of = ROOT }
+				253 = { add_core_of = ROOT }
+				254 = { add_core_of = ROOT }
+				255 = { add_core_of = ROOT }
+				256 = { add_core_of = ROOT }
+				257 = { add_core_of = ROOT }
+				258 = { add_core_of = ROOT }
+				259 = { add_core_of = ROOT }
+				260 = { add_core_of = ROOT }
+				262 = { add_core_of = ROOT }
+				263 = { add_core_of = ROOT }
+				264 = { add_core_of = ROOT }
+				265 = { add_core_of = ROOT }
+				338 = { add_core_of = ROOT }
+				664 = { add_core_of = ROOT }
+				722 = { add_core_of = ROOT }
+				731 = { add_core_of = ROOT }
+				736 = { add_core_of = ROOT }
+				351 = { add_core_of = ROOT }
+				400 = { add_core_of = ROOT }
+				397 = { add_core_of = ROOT }
+				399 = { add_core_of = ROOT }
+				398 = { add_core_of = ROOT }
+				651 = { add_core_of = ROOT }
+				652 = { add_core_of = ROOT }
+				401 = { add_core_of = ROOT }
+				406 = { add_core_of = ROOT }
+				407 = { add_core_of = ROOT }
+				341 = { add_core_of = ROOT }
+				735 = { add_core_of = ROOT }
+				
+				762 = { add_core_of = ROOT }
+				784 = { add_core_of = ROOT }
+788 = { add_core_of = ROOT }
+789 = { add_core_of = ROOT }
+790 = { add_core_of = ROOT }
+791 = { add_core_of = ROOT }
+792 = { add_core_of = ROOT }
+793 = { add_core_of = ROOT }
+794 = { add_core_of = ROOT }
+795 = { add_core_of = ROOT }
+796 = { add_core_of = ROOT }
+797 = { add_core_of = ROOT }
+798 = { add_core_of = ROOT }
+799 = { add_core_of = ROOT }
+800 = { add_core_of = ROOT }
+801 = { add_core_of = ROOT }
+802 = { add_core_of = ROOT }				
+				
+			}
+			
+
+			}
+
+	}
+
+	country_event = { # Chinese Empire
+	id = newformevents.5
+	title = newformevents.5.t
+	desc = newformevents.5.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.5.a
+
+		ai_chance = { factor = 4000 }
+		
+		
+		set_cosmetic_tag = QIN_formable
+			add_stability = 0.2
+			set_capital = 608
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus
+				615 = { add_core_of = ROOT }
+				621 = { add_core_of = ROOT }
+				622 = { add_core_of = ROOT }
+				283 = { add_core_of = ROOT }
+				604 = { add_core_of = ROOT }
+				616 = { add_core_of = ROOT }
+				287 = { add_core_of = ROOT }
+				617 = { add_core_of = ROOT }
+				618 = { add_core_of = ROOT }
+				619 = { add_core_of = ROOT }
+				322 = { add_core_of = ROOT }
+				330 = { add_core_of = ROOT }
+				325 = { add_core_of = ROOT }
+				591 = { add_core_of = ROOT }
+				592 = { add_core_of = ROOT }
+				593 = { add_core_of = ROOT }
+				594 = { add_core_of = ROOT }
+				599 = { add_core_of = ROOT }
+				611 = { add_core_of = ROOT }
+				612 = { add_core_of = ROOT }
+				328 = { add_core_of = ROOT }
+				610 = { add_core_of = ROOT }
+				714 = { add_core_of = ROOT }
+				715 = { add_core_of = ROOT }
+				716 = { add_core_of = ROOT }
+				717 = { add_core_of = ROOT }
+				609 = { add_core_of = ROOT }
+				657 = { add_core_of = ROOT }
+				560 = { add_core_of = ROOT }
+				561 = { add_core_of = ROOT }
+				655 = { add_core_of = ROOT }
+				408 = { add_core_of = ROOT }
+				409 = { add_core_of = ROOT }
+				602 = { add_core_of = ROOT }
+				603 = { add_core_of = ROOT }
+				605 = { add_core_of = ROOT }
+				601 = { add_core_of = ROOT }
+				620 = { add_core_of = ROOT }
+				600 = { add_core_of = ROOT }
+				595 = { add_core_of = ROOT }
+				620 = { add_core_of = ROOT }
+				596 = { add_core_of = ROOT }
+				606 = { add_core_of = ROOT }
+				613 = { add_core_of = ROOT }
+				607 = { add_core_of = ROOT }
+				597 = { add_core_of = ROOT }
+				614 = { add_core_of = ROOT }
+				608 = { add_core_of = ROOT }
+				329 = { add_core_of = ROOT }
+				524 = { add_core_of = ROOT }
+				589 = { add_claim_by = ROOT }
+				598 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Frankish Empire
+	id = newformevents.6
+	title = newformevents.6.t
+	desc = newformevents.6.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.6.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = FRE_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus
+				3 = { add_core_of = ROOT }
+				151 = { add_core_of = ROOT }
+				6 = { add_core_of = ROOT }
+				34 = { add_core_of = ROOT }
+				7 = { add_core_of = ROOT }
+				35 = { add_core_of = ROOT }
+				36 = { add_core_of = ROOT }
+				8 = { add_core_of = ROOT }
+				2 = { add_core_of = ROOT }
+				157 = { add_core_of = ROOT }
+				161 = { add_core_of = ROOT }
+				162 = { add_core_of = ROOT }
+				158 = { add_core_of = ROOT }
+				159 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+				160 = { add_core_of = ROOT }
+				736 = { add_core_of = ROOT }
+				2 = { add_core_of = ROOT }
+				157 = { add_core_of = ROOT }
+				161 = { add_core_of = ROOT }
+				162 = { add_core_of = ROOT }
+				158 = { add_core_of = ROOT }
+				159 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+				160 = { add_core_of = ROOT }
+				736 = { add_core_of = ROOT }
+				4 = { add_core_of = ROOT }
+				152 = { add_core_of = ROOT }
+				153 = { add_core_of = ROOT }
+				15 = { add_core_of = ROOT }
+				16 = { add_core_of = ROOT }
+				17 = { add_core_of = ROOT }
+				18 = { add_core_of = ROOT }
+				19 = { add_core_of = ROOT }
+				20 = { add_core_of = ROOT }
+				21 = { add_core_of = ROOT }
+				22 = { add_core_of = ROOT }
+				23 = { add_core_of = ROOT }
+				24 = { add_core_of = ROOT }
+				25 = { add_core_of = ROOT }
+				26 = { add_core_of = ROOT }
+				27 = { add_core_of = ROOT }
+				28 = { add_core_of = ROOT }
+				29 = { add_core_of = ROOT }
+				30 = { add_core_of = ROOT }
+				31 = { add_core_of = ROOT }
+				32 = { add_core_of = ROOT }
+				33 = { add_core_of = ROOT }
+				42 = { add_core_of = ROOT }
+				50 = { add_core_of = ROOT }
+				51 = { add_core_of = ROOT }
+				52 = { add_core_of = ROOT }
+				53 = { add_core_of = ROOT }
+				54 = { add_core_of = ROOT }
+				55 = { add_core_of = ROOT }
+				56 = { add_core_of = ROOT }
+				57 = { add_core_of = ROOT }
+				58 = { add_core_of = ROOT }
+				59 = { add_core_of = ROOT }
+				60 = { add_core_of = ROOT }
+				165 = { add_core_of = ROOT }
+				102 = { add_core_of = ROOT }
+				785 = { add_core_of = ROOT }
+				
+				793 = { add_core_of = ROOT }
+				797 = { add_core_of = ROOT }
+				789 = { add_core_of = ROOT }
+				794 = { add_core_of = ROOT }
+				795 = { add_core_of = ROOT }
+			}
+		
+ 
+			}
+
+	}
+	
+	country_event = { # Austro-Hungarian Empire
+	id = newformevents.7
+	title = newformevents.7.t
+	desc = newformevents.7.d # 
+	picture = GFX_report_event_austria_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.7.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = HUN_EMPIRE
+			add_stability = 0.2
+			set_capital = 4
+			set_province_name = { id = 11542 name = "Prag"}
+			set_province_name = { id = 6418 name = "Pilsen"}
+			set_province_name = { id = 3569 name = "Brünn"}
+			set_province_name = { id = 9692 name = "Pressburg"}
+			set_province_name = { id = 6573 name = "Kaschau"}
+			set_province_name = { id = 11610 name = "Fünfkirchen"}
+			set_province_name = { id = 11659 name = "Debrezin"}
+			set_province_name = { id = 6558 name = "Posen"}
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus
+				4 = { add_core_of = ROOT }
+				152 = { add_core_of = ROOT }
+				153 = { add_core_of = ROOT }
+				43 = { add_core_of = ROOT }
+				154 = { add_core_of = ROOT }
+				155 = { add_core_of = ROOT }
+				9 = { add_core_of = ROOT }
+				69 = { add_core_of = ROOT }
+				70 = { add_core_of = ROOT }
+				71 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				74 = { add_core_of = ROOT }
+				75 = { add_core_of = ROOT }
+				69 = { add_core_of = ROOT }
+				664 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+			163 = { add_core_of = ROOT }
+			736 = { add_core_of = ROOT }
+			80 = { add_core_of = ROOT }
+			88 = { add_core_of = ROOT }
+			89 = { add_core_of = ROOT }
+			91 = { add_core_of = ROOT }
+			45 = { add_core_of = ROOT }
+			764 = { add_core_of = ROOT }
+			102 = { add_core_of = ROOT }
+			103 = { add_core_of = ROOT }
+			109 = { add_core_of = ROOT }
+			76 = { add_core_of = ROOT }
+			82 = { add_core_of = ROOT }
+			83 = { add_core_of = ROOT }
+			84 = { add_core_of = ROOT }
+			
+			796 = { add_core_of = ROOT }
+			791 = { add_core_of = ROOT }
+			792 = { add_core_of = ROOT }
+			}
+			
+ 
+			}
+
+	}
+	
+	country_event = { # Polish-Lithuanian Commonwealth
+	id = newformevents.8
+	title = newformevents.8.t
+	desc = newformevents.8.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.8.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = PLC_UNIFIED
+			add_stability = 0.2
+			set_capital = 10
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				188 = { add_core_of = ROOT }
+				12 = { add_core_of = ROOT }
+				190 = { add_core_of = ROOT }
+				11 = { add_core_of = ROOT }
+				189 = { add_core_of = ROOT }
+				85 = { add_core_of = ROOT }
+				86 = { add_core_of = ROOT }
+				87 = { add_core_of = ROOT }
+				88 = { add_core_of = ROOT }
+				90 = { add_core_of = ROOT }
+				10 = { add_core_of = ROOT }
+				98 = { add_core_of = ROOT }
+				91 = { add_core_of = ROOT }
+				92 = { add_core_of = ROOT }
+				93 = { add_core_of = ROOT }
+				94 = { add_core_of = ROOT }
+				95 = { add_core_of = ROOT }
+				96 = { add_core_of = ROOT }
+				97 = { add_core_of = ROOT }
+				72 = { add_core_of = ROOT }
+				204 = { add_core_of = ROOT }
+				206 = { add_core_of = ROOT }
+				207 = { add_core_of = ROOT }
+				194 = { add_core_of = ROOT }
+				241 = { add_core_of = ROOT }
+				199 = { add_core_of = ROOT }
+				201 = { add_core_of = ROOT }
+				198 = { add_core_of = ROOT }
+				202 = { add_core_of = ROOT }
+				203 = { add_core_of = ROOT }
+				197 = { add_core_of = ROOT }
+				226 = { add_core_of = ROOT }
+				193 = { add_core_of = ROOT }
+				259 = { add_core_of = ROOT }
+				225 = { add_core_of = ROOT }
+				224 = { add_core_of = ROOT }
+				242 = { add_core_of = ROOT }
+				243 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				13 = { add_core_of = ROOT }
+				191 = { add_core_of = ROOT }
+				192 = { add_core_of = ROOT }
+				784 = { add_core_of = ROOT }
+
+			5 = { add_core_of = ROOT }
+			763 = { add_core_of = ROOT }	
+						}
+ 
+			}
+
+	}
+	
+	country_event = { # Holy Roman Empire
+	id = newformevents.9
+	title = newformevents.9.t
+	desc = newformevents.9.d # 
+	picture = GFX_report_event_holy_roman_empire
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.9.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = HRE_UNIFIED
+			add_stability = 0.2
+			set_capital = 52
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				42 = { add_core_of = ROOT }
+				50 = { add_core_of = ROOT }
+				51 = { add_core_of = ROOT }
+				52 = { add_core_of = ROOT }
+				53 = { add_core_of = ROOT }
+				54 = { add_core_of = ROOT }
+				55 = { add_core_of = ROOT }
+				56 = { add_core_of = ROOT }
+				57 = { add_core_of = ROOT }
+				58 = { add_core_of = ROOT }
+				59 = { add_core_of = ROOT }
+				60 = { add_core_of = ROOT }
+				61 = { add_core_of = ROOT }
+				62 = { add_core_of = ROOT }
+				63 = { add_core_of = ROOT }
+				64 = { add_core_of = ROOT }
+				65 = { add_core_of = ROOT }
+				66 = { add_core_of = ROOT }
+				67 = { add_core_of = ROOT }
+				68 = { add_core_of = ROOT }
+				6 = { add_core_of = ROOT }
+				7 = { add_core_of = ROOT }
+				8 = { add_core_of = ROOT }
+				34 = { add_core_of = ROOT }
+				35 = { add_core_of = ROOT }
+				36 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+				158 = { add_core_of = ROOT }
+				28 = { add_core_of = ROOT }
+				17 = { add_core_of = ROOT }
+				3 = { add_core_of = ROOT }
+				151 = { add_core_of = ROOT }
+				4 = { add_core_of = ROOT }
+				152 = { add_core_of = ROOT }
+				153 = { add_core_of = ROOT }
+				9 = { add_core_of = ROOT }
+				69 = { add_core_of = ROOT }
+				74 = { add_core_of = ROOT }
+				75 = { add_core_of = ROOT }
+			
+			102 = { add_core_of = ROOT }
+			736 = { add_core_of = ROOT }
+			735 = { add_core_of = ROOT }
+			162 = { add_core_of = ROOT }
+			
+			789 = { add_core_of = ROOT }
+			791 = { add_core_of = ROOT }
+			792 = { add_core_of = ROOT }
+			793 = { add_core_of = ROOT }
+			794 = { add_core_of = ROOT }
+			795 = { add_core_of = ROOT }
+			797 = { add_core_of = ROOT }
+			
+			799 = { add_core_of = ROOT }
+			800 = { add_core_of = ROOT }
+			801 = { add_core_of = ROOT }
+			
+			159 = { add_core_of = ROOT }
+			160 = { add_core_of = ROOT }
+			161 = { add_core_of = ROOT }
+			790 = { add_core_of = ROOT }	
+			}
+ 
+			}
+
+	}
+
+	country_event = { # Iberian Union
+	id = newformevents.10
+	title = newformevents.10.t
+	desc = newformevents.10.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.10.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = IBE_formable
+			add_stability = 0.2
+			set_capital = 41
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus
+				165 = { add_core_of = ROOT }
+				166 = { add_core_of = ROOT }
+				167 = { add_core_of = ROOT }
+				168 = { add_core_of = ROOT }
+				169 = { add_core_of = ROOT }
+				170 = { add_core_of = ROOT }
+				171 = { add_core_of = ROOT }
+				172 = { add_core_of = ROOT }
+				173 = { add_core_of = ROOT }
+				174 = { add_core_of = ROOT }
+				175 = { add_core_of = ROOT }
+				176 = { add_core_of = ROOT }
+				112 = { add_core_of = ROOT }
+				179 = { add_core_of = ROOT }
+				180 = { add_core_of = ROOT }
+				181 = { add_core_of = ROOT }
+				118 = { add_core_of = ROOT }
+				177 = { add_core_of = ROOT }
+				41 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Scandinavia
+	id = newformevents.11
+	title = newformevents.11.t
+	desc = newformevents.11.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.11.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = SCA_UNIFIED
+			add_stability = 0.2
+			set_capital = 37
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus
+				37 = { add_core_of = ROOT }
+				99 = { add_core_of = ROOT }
+				337 = { add_core_of = ROOT }
+				100 = { add_core_of = ROOT }
+				38 = { add_core_of = ROOT }
+				124 = { add_core_of = ROOT }
+				138 = { add_core_of = ROOT }
+				139 = { add_core_of = ROOT }
+				140 = { add_core_of = ROOT }
+				141 = { add_core_of = ROOT }
+				666 = { add_core_of = ROOT }
+				110 = { add_core_of = ROOT }
+				142 = { add_core_of = ROOT }
+				143 = { add_core_of = ROOT }
+				144 = { add_core_of = ROOT }
+				788 = { add_core_of = ROOT }
+				145 = { add_core_of = ROOT }
+			148 = { add_claim_by = ROOT }
+			149 = { add_claim_by = ROOT }
+			150 = { add_claim_by = ROOT }
+			111 = { add_claim_by = ROOT }
+			}
+			
+ 
+			}
+
+	}
+	
+	country_event = { # Arabia
+	id = newformevents.12
+	title = newformevents.12.t
+	desc = newformevents.12.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.12.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = ARA_UNIFIED
+			add_stability = 0.2
+			set_capital = 291
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus
+				292 = { add_core_of = ROOT }
+				678 = { add_core_of = ROOT }
+				679 = { add_core_of = ROOT }
+				293 = { add_core_of = ROOT }
+				659 = { add_core_of = ROOT }
+				294 = { add_core_of = ROOT }
+				658 = { add_core_of = ROOT }
+				291 = { add_core_of = ROOT }
+				656 = { add_core_of = ROOT }
+				675 = { add_core_of = ROOT }
+				676 = { add_core_of = ROOT }
+				454 = { add_core_of = ROOT }
+				455 = { add_core_of = ROOT }
+				553 = { add_core_of = ROOT }
+				554 = { add_core_of = ROOT }
+				677 = { add_core_of = ROOT }
+				680 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Moravia
+	id = newformevents.13
+	title = newformevents.13.t
+	desc = newformevents.13.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.13.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = MR1_formable
+			add_stability = 0.2
+			set_capital = 75
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus
+				4 = { add_core_of = ROOT }
+				43 = { add_core_of = ROOT }
+				154 = { add_core_of = ROOT }
+				155 = { add_core_of = ROOT }
+				9 = { add_core_of = ROOT }
+				69 = { add_core_of = ROOT }
+				70 = { add_core_of = ROOT }
+				71 = { add_core_of = ROOT }
+				72 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
+				74 = { add_core_of = ROOT }
+				75 = { add_core_of = ROOT }
+				69 = { add_core_of = ROOT }
+				664 = { add_core_of = ROOT }
+				45 = { add_core_of = ROOT }
+				82 = { add_core_of = ROOT }
+				83 = { add_core_of = ROOT }
+				65 = { add_core_of = ROOT }
+				66 = { add_core_of = ROOT }
+				67 = { add_core_of = ROOT }
+				88 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Transcaucasia
+	id = newformevents.14
+	title = newformevents.14.t
+	desc = newformevents.14.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.14.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = CAU_formable
+			add_stability = 0.2
+			set_capital = 231
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				229 = { add_core_of = ROOT }
+				230 = { add_core_of = ROOT }
+				231 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Benelux
+	id = newformevents.15
+	title = newformevents.15.t
+	desc = newformevents.15.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.15.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = UNL_UNIFIED
+			add_stability = 0.2
+			set_capital = 7
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				6 = { add_core_of = ROOT }
+				34 = { add_core_of = ROOT }
+				7 = { add_core_of = ROOT }
+				35 = { add_core_of = ROOT }
+				36 = { add_core_of = ROOT }
+				8 = { add_core_of = ROOT }
+				
+				789 = { add_core_of = ROOT }
+				794 = { add_core_of = ROOT }
+				795 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Baltic
+	id = newformevents.16
+	title = newformevents.16.t
+	desc = newformevents.16.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.16.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = BAL_UNIFIED
+			add_stability = 0.2
+			set_capital = 12
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus
+				11 = { add_core_of = ROOT }
+				189 = { add_core_of = ROOT }
+				12 = { add_core_of = ROOT }
+				190 = { add_core_of = ROOT }
+				13 = { add_core_of = ROOT }
+				191 = { add_core_of = ROOT }
+				188 = { add_core_of = ROOT }
+			784 = { add_core_of = ROOT }
+			}
+			
+ 
+			}
+
+	}
+	
+	country_event = { # Central America
+	id = newformevents.17
+	title = newformevents.17.t
+	desc = newformevents.17.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.17.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = USC_UNIFIED
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				313 = { add_core_of = ROOT }
+				312 = { add_core_of = ROOT }
+				314 = { add_core_of = ROOT }
+				317 = { add_core_of = ROOT }
+				316 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Hungarian Kingdom
+	id = newformevents.18
+	title = newformevents.18.t
+	desc = newformevents.18.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.18.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = HUK_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				43 = { add_core_of = ROOT }
+				154 = { add_core_of = ROOT }
+				155 = { add_core_of = ROOT }
+				76 = { add_core_of = ROOT }
+				82 = { add_core_of = ROOT }
+				83 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				70 = { add_core_of = ROOT }
+				71 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				664 = { add_core_of = ROOT }
+				45 = { add_core_of = ROOT }
+				109 = { add_core_of = ROOT }
+				103 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Kievan Rus
+	id = newformevents.19
+	title = newformevents.19.t
+	desc = newformevents.19.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.19.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = KIE_formable
+			add_stability = 0.2
+			set_capital = 202
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				94 = { add_core_of = ROOT }
+				95 = { add_core_of = ROOT }
+				96 = { add_core_of = ROOT }
+				97 = { add_core_of = ROOT }
+				194 = { add_core_of = ROOT }
+				204 = { add_core_of = ROOT }
+				206 = { add_core_of = ROOT }
+				207 = { add_core_of = ROOT }
+				241 = { add_core_of = ROOT }
+				89 = { add_core_of = ROOT }
+				91 = { add_core_of = ROOT }
+				93 = { add_core_of = ROOT }
+				198 = { add_core_of = ROOT }
+				199 = { add_core_of = ROOT }
+				201 = { add_core_of = ROOT }
+				202 = { add_core_of = ROOT }
+				203 = { add_core_of = ROOT }
+				192 = { add_core_of = ROOT }
+				197 = { add_core_of = ROOT }
+				226 = { add_core_of = ROOT }
+				193 = { add_core_of = ROOT }
+				225 = { add_core_of = ROOT }
+				259 = { add_core_of = ROOT }
+				215 = { add_core_of = ROOT }
+				216 = { add_core_of = ROOT }
+				214 = { add_core_of = ROOT }
+				195 = { add_core_of = ROOT }
+				208 = { add_core_of = ROOT }
+				209 = { add_core_of = ROOT }
+				210 = { add_core_of = ROOT }
+				244 = { add_core_of = ROOT }
+				263 = { add_core_of = ROOT }
+				246 = { add_core_of = ROOT }
+				242 = { add_core_of = ROOT }
+				243 = { add_core_of = ROOT }
+				224 = { add_core_of = ROOT }
+				205 = { add_core_of = ROOT }
+				220 = { add_core_of = ROOT }
+				222 = { add_core_of = ROOT }
+				223 = { add_core_of = ROOT }
+				219 = { add_core_of = ROOT }
+				240 = { add_core_of = ROOT }
+				260 = { add_core_of = ROOT }
+				258 = { add_core_of = ROOT }
+				223 = { add_core_of = ROOT }
+				254 = { add_core_of = ROOT }
+				253 = { add_core_of = ROOT }
+				248 = { add_core_of = ROOT }
+				246 = { add_core_of = ROOT }
+				247 = { add_core_of = ROOT }
+				264 = { add_core_of = ROOT }
+				351 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Byzantium
+	id = newformevents.20
+	title = newformevents.20.t
+	desc = newformevents.20.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.20.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = BYZ_UNIFIED
+			add_stability = 0.2
+			set_capital = 341
+			set_province_name = { id = 9833 name = "Konstantinoúpolis"}
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				47 = { add_core_of = ROOT }
+				182 = { add_core_of = ROOT }
+				184 = { add_core_of = ROOT }
+				185 = { add_core_of = ROOT }
+				186 = { add_core_of = ROOT }
+				187 = { add_core_of = ROOT }
+				731 = { add_core_of = ROOT }
+				164 = { add_core_of = ROOT }
+				44 = { add_core_of = ROOT }
+				48 = { add_core_of = ROOT }
+				211 = { add_core_of = ROOT }
+				212 = { add_core_of = ROOT }
+				105 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+				108 = { add_core_of = ROOT }
+				49 = { add_core_of = ROOT }
+				339 = { add_core_of = ROOT }
+				340 = { add_core_of = ROOT }
+				341 = { add_core_of = ROOT }
+				342 = { add_core_of = ROOT }
+				343 = { add_core_of = ROOT }
+				344 = { add_core_of = ROOT }
+				345 = { add_core_of = ROOT }
+				346 = { add_core_of = ROOT }
+				347 = { add_core_of = ROOT }
+				348 = { add_core_of = ROOT }
+				349 = { add_core_of = ROOT }
+				350 = { add_core_of = ROOT }
+				352 = { add_core_of = ROOT }
+				353 = { add_core_of = ROOT }
+				354 = { add_core_of = ROOT }
+				355 = { add_core_of = ROOT }
+				356 = { add_core_of = ROOT }
+				164 = { add_core_of = ROOT }
+				796 = { add_core_of = ROOT }
+				
+451 = { add_core_of = ROOT }
+
+183 = { add_core_of = ROOT }
+553 = { add_core_of = ROOT }
+554 = { add_core_of = ROOT }
+677 = { add_core_of = ROOT }
+680 = { add_core_of = ROOT }
+455 = { add_core_of = ROOT }
+454 = { add_core_of = ROOT }
+453 = { add_core_of = ROOT }
+
+446 = { add_core_of = ROOT }
+447 = { add_core_of = ROOT }
+452 = { add_core_of = ROOT }
+456 = { add_core_of = ROOT }
+457 = { add_core_of = ROOT }
+
+107 = { add_core_of = ROOT }
+551 = { add_core_of = ROOT }
+552 = { add_core_of = ROOT }
+
+675 = { add_core_of = ROOT }
+676 = { add_core_of = ROOT }
+291 = { add_core_of = ROOT }
+
+229 = { add_core_of = ROOT }
+230 = { add_core_of = ROOT }
+231 = { add_core_of = ROOT }
+
+82 = { add_core_of = ROOT }
+83 = { add_core_of = ROOT }
+
+84 = { add_core_of = ROOT }
+76 = { add_core_of = ROOT }
+79 = { add_core_of = ROOT }
+77 = { add_core_of = ROOT }
+
+81 = { add_core_of = ROOT }
+46 = { add_core_of = ROOT }
+766 = { add_core_of = ROOT }
+
+764 = { add_core_of = ROOT }
+
+
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Bulgarian Empire
+	id = newformevents.21
+	title = newformevents.21.t
+	desc = newformevents.21.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.21.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = BUE_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				46 = { add_core_of = ROOT }
+				76 = { add_core_of = ROOT }
+				77 = { add_core_of = ROOT }
+				78 = { add_core_of = ROOT }
+				79 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
+				80 = { add_core_of = ROOT }
+				81 = { add_core_of = ROOT }
+				82 = { add_core_of = ROOT }
+				83 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				184 = { add_core_of = ROOT }
+				731 = { add_core_of = ROOT }
+				44 = { add_core_of = ROOT }
+				45 = { add_core_of = ROOT }
+				43 = { add_core_of = ROOT }
+				154 = { add_core_of = ROOT }
+				105 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+				107 = { add_core_of = ROOT }
+				108 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Gran Colombia
+	id = newformevents.22
+	title = newformevents.22.t
+	desc = newformevents.22.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.22.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = GCO_UNIFIED
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				306 = { add_core_of = ROOT }
+				486 = { add_core_of = ROOT }
+				493 = { add_core_of = ROOT }
+				490 = { add_core_of = ROOT }
+				491 = { add_core_of = ROOT }
+				304 = { add_core_of = ROOT }
+				305 = { add_core_of = ROOT }
+				307 = { add_core_of = ROOT }
+				488 = { add_core_of = ROOT }
+				489 = { add_core_of = ROOT }
+				685 = { add_core_of = ROOT }
+				687 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Mexican Empire
+	id = newformevents.23
+	title = newformevents.23.t
+	desc = newformevents.23.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.23.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = MEE_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				277 = { add_core_of = ROOT }
+				474 = { add_core_of = ROOT }
+				475 = { add_core_of = ROOT }
+				476 = { add_core_of = ROOT }
+				477 = { add_core_of = ROOT }
+				478 = { add_core_of = ROOT }
+				479 = { add_core_of = ROOT }
+				480 = { add_core_of = ROOT }
+				481 = { add_core_of = ROOT }
+				482 = { add_core_of = ROOT }
+				483 = { add_core_of = ROOT }
+				484 = { add_core_of = ROOT }
+				485 = { add_core_of = ROOT }
+				375 = { add_core_of = ROOT }
+				376 = { add_core_of = ROOT }
+				377 = { add_core_of = ROOT }
+				378 = { add_core_of = ROOT }
+				379 = { add_core_of = ROOT }
+				380 = { add_core_of = ROOT }
+				313 = { add_core_of = ROOT }
+				314 = { add_core_of = ROOT }
+				312 = { add_core_of = ROOT }
+				317 = { add_core_of = ROOT }
+				316 = { add_core_of = ROOT }
+				311 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Greater Albania
+	id = newformevents.24
+	title = newformevents.24.t
+	desc = newformevents.24.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.24.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = GAL_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				44 = { add_core_of = ROOT }
+				185 = { add_core_of = ROOT }
+				105 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Balkan Union
+	id = newformevents.25
+	title = newformevents.25.t
+	desc = newformevents.25.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.25.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = BAK_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				45 = { add_core_of = ROOT }
+				102 = { add_core_of = ROOT }
+				103 = { add_core_of = ROOT }
+				104 = { add_core_of = ROOT }
+				105 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+				107 = { add_core_of = ROOT }
+				108 = { add_core_of = ROOT }
+				766 = { add_core_of = ROOT }
+				109 = { add_core_of = ROOT }
+				46 = { add_core_of = ROOT }
+				76 = { add_core_of = ROOT }
+				77 = { add_core_of = ROOT }
+				78 = { add_core_of = ROOT }
+				79 = { add_core_of = ROOT }
+				80 = { add_core_of = ROOT }
+				81 = { add_core_of = ROOT }
+				82 = { add_core_of = ROOT }
+				83 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				47 = { add_core_of = ROOT }
+				182 = { add_core_of = ROOT }
+				184 = { add_core_of = ROOT }
+				185 = { add_core_of = ROOT }
+				186 = { add_core_of = ROOT }
+				187 = { add_core_of = ROOT }
+				731 = { add_core_of = ROOT }
+				48 = { add_core_of = ROOT }
+				211 = { add_core_of = ROOT }
+				212 = { add_core_of = ROOT }
+				736 = { add_core_of = ROOT }
+				163 = { add_core_of = ROOT }
+				164 = { add_core_of = ROOT }
+				44 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Poland Hungary
+	id = newformevents.26
+	title = newformevents.26.t
+	desc = newformevents.26.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.26.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = POH_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				188 = { add_core_of = ROOT }
+				12 = { add_core_of = ROOT }
+				190 = { add_core_of = ROOT }
+				11 = { add_core_of = ROOT }
+				189 = { add_core_of = ROOT }
+				85 = { add_core_of = ROOT }
+				86 = { add_core_of = ROOT }
+				87 = { add_core_of = ROOT }
+				88 = { add_core_of = ROOT }
+				90 = { add_core_of = ROOT }
+				10 = { add_core_of = ROOT }
+				98 = { add_core_of = ROOT }
+				91 = { add_core_of = ROOT }
+				92 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
+				93 = { add_core_of = ROOT }
+				94 = { add_core_of = ROOT }
+				95 = { add_core_of = ROOT }
+				96 = { add_core_of = ROOT }
+				97 = { add_core_of = ROOT }
+				72 = { add_core_of = ROOT }
+				204 = { add_core_of = ROOT }
+				206 = { add_core_of = ROOT }
+				207 = { add_core_of = ROOT }
+				194 = { add_core_of = ROOT }
+				241 = { add_core_of = ROOT }
+				199 = { add_core_of = ROOT }
+				201 = { add_core_of = ROOT }
+				198 = { add_core_of = ROOT }
+				202 = { add_core_of = ROOT }
+				203 = { add_core_of = ROOT }
+				197 = { add_core_of = ROOT }
+				226 = { add_core_of = ROOT }
+				193 = { add_core_of = ROOT }
+				259 = { add_core_of = ROOT }
+				225 = { add_core_of = ROOT }
+				224 = { add_core_of = ROOT }
+				242 = { add_core_of = ROOT }
+				243 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				13 = { add_core_of = ROOT }
+				191 = { add_core_of = ROOT }
+				192 = { add_core_of = ROOT }
+				43 = { add_core_of = ROOT }
+				154 = { add_core_of = ROOT }
+				155 = { add_core_of = ROOT }
+				76 = { add_core_of = ROOT }
+				82 = { add_core_of = ROOT }
+				83 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				70 = { add_core_of = ROOT }
+				71 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				664 = { add_core_of = ROOT }
+				45 = { add_core_of = ROOT }
+				109 = { add_core_of = ROOT }
+				89 = { add_core_of = ROOT }
+				103 = { add_core_of = ROOT }
+				5 = { add_core_of = ROOT }
+			763 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Roman Empire
+	id = newformevents.27
+	title = newformevents.27.t
+	desc = newformevents.27.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.27.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = SPQR_UNIFIED
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				126 = { add_core_of = ROOT }
+				127 = { add_core_of = ROOT }
+				123 = { add_core_of = ROOT }
+				338 = { add_core_of = ROOT }
+				125 = { add_core_of = ROOT }
+				122 = { add_core_of = ROOT }
+				128 = { add_core_of = ROOT }
+				129 = { add_core_of = ROOT }
+				130 = { add_core_of = ROOT }
+				131 = { add_core_of = ROOT }
+				132 = { add_core_of = ROOT }
+				766 = { add_core_of = ROOT }
+				291 = { add_core_of = ROOT }
+				676 = { add_core_of = ROOT }
+				675 = { add_core_of = ROOT }
+				41 = { add_core_of = ROOT }
+				165 = { add_core_of = ROOT }
+				166 = { add_core_of = ROOT }
+				167 = { add_core_of = ROOT }
+				168 = { add_core_of = ROOT }
+				169 = { add_core_of = ROOT }
+				170 = { add_core_of = ROOT }
+				171 = { add_core_of = ROOT }
+				172 = { add_core_of = ROOT }
+				173 = { add_core_of = ROOT }
+				174 = { add_core_of = ROOT }
+				175 = { add_core_of = ROOT }
+				176 = { add_core_of = ROOT }
+				177 = { add_core_of = ROOT }
+				178 = { add_core_of = ROOT }
+				46 = { add_core_of = ROOT }
+				76 = { add_core_of = ROOT }
+				77 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
+				79 = { add_core_of = ROOT }
+				81 = { add_core_of = ROOT }
+				82 = { add_core_of = ROOT }
+				83 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				112 = { add_core_of = ROOT }
+				179 = { add_core_of = ROOT }
+				180 = { add_core_of = ROOT }
+				181 = { add_core_of = ROOT }
+				2 = { add_core_of = ROOT }
+				785 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+				114 = { add_core_of = ROOT }
+				115 = { add_core_of = ROOT }
+				117 = { add_core_of = ROOT }
+				156 = { add_core_of = ROOT }
+				157 = { add_core_of = ROOT }
+				158 = { add_core_of = ROOT }
+				159 = { add_core_of = ROOT }
+				160 = { add_core_of = ROOT }
+				161 = { add_core_of = ROOT }
+				162 = { add_core_of = ROOT }
+				163 = { add_core_of = ROOT }
+				1 = { add_core_of = ROOT }
+				14 = { add_core_of = ROOT }
+				15 = { add_core_of = ROOT }
+				16 = { add_core_of = ROOT }
+				17 = { add_core_of = ROOT }
+				18 = { add_core_of = ROOT }
+				19 = { add_core_of = ROOT }
+				20 = { add_core_of = ROOT }
+				21 = { add_core_of = ROOT }
+				22 = { add_core_of = ROOT }
+				23 = { add_core_of = ROOT }
+				24 = { add_core_of = ROOT }
+				25 = { add_core_of = ROOT }
+				26 = { add_core_of = ROOT }
+				27 = { add_core_of = ROOT }
+				28 = { add_core_of = ROOT }
+				29 = { add_core_of = ROOT }
+				30 = { add_core_of = ROOT }
+				31 = { add_core_of = ROOT }
+				32 = { add_core_of = ROOT }
+				33 = { add_core_of = ROOT }
+				736 = { add_core_of = ROOT }
+				34 = { add_core_of = ROOT }
+				47 = { add_core_of = ROOT }
+				182 = { add_core_of = ROOT }
+				184 = { add_core_of = ROOT }
+				185 = { add_core_of = ROOT }
+				185 = { add_core_of = ROOT }
+				186 = { add_core_of = ROOT }
+				187 = { add_core_of = ROOT }
+				731 = { add_core_of = ROOT }
+				164 = { add_core_of = ROOT }
+				48 = { add_core_of = ROOT }
+				211 = { add_core_of = ROOT }
+				212 = { add_core_of = ROOT }
+				49 = { add_core_of = ROOT }
+				339 = { add_core_of = ROOT }
+				340 = { add_core_of = ROOT }
+				341 = { add_core_of = ROOT }
+				342 = { add_core_of = ROOT }
+				343 = { add_core_of = ROOT }
+				344 = { add_core_of = ROOT }
+				345 = { add_core_of = ROOT }
+				346 = { add_core_of = ROOT }
+				347 = { add_core_of = ROOT }
+				348 = { add_core_of = ROOT }
+				349 = { add_core_of = ROOT }
+				350 = { add_core_of = ROOT }
+				352 = { add_core_of = ROOT }
+				353 = { add_core_of = ROOT }
+				354 = { add_core_of = ROOT }
+				355 = { add_core_of = ROOT }
+				356 = { add_core_of = ROOT }
+				6 = { add_core_of = ROOT }
+				8 = { add_core_of = ROOT }
+				34 = { add_core_of = ROOT }
+				35 = { add_core_of = ROOT }
+				3 = { add_core_of = ROOT }
+				151 = { add_core_of = ROOT }
+				4 = { add_core_of = ROOT }
+				152 = { add_core_of = ROOT }
+				153 = { add_core_of = ROOT }
+				44 = { add_core_of = ROOT }
+				45 = { add_core_of = ROOT }
+				102 = { add_core_of = ROOT }
+				103 = { add_core_of = ROOT }
+				104 = { add_core_of = ROOT }
+				105 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+				107 = { add_core_of = ROOT }
+				108 = { add_core_of = ROOT }
+				109 = { add_core_of = ROOT }
+				42 = { add_core_of = ROOT }
+				50 = { add_core_of = ROOT }
+				52 = { add_core_of = ROOT }
+				53 = { add_core_of = ROOT }
+				43 = { add_core_of = ROOT }
+				154 = { add_core_of = ROOT }
+				155 = { add_core_of = ROOT }
+				116 = { add_core_of = ROOT }
+				183 = { add_core_of = ROOT }
+				454 = { add_core_of = ROOT }
+				455 = { add_core_of = ROOT }
+				453 = { add_core_of = ROOT }
+				446 = { add_core_of = ROOT }
+				447 = { add_core_of = ROOT }
+				452 = { add_core_of = ROOT }
+				456 = { add_core_of = ROOT }
+				457 = { add_core_of = ROOT }
+				551 = { add_core_of = ROOT }
+				552 = { add_core_of = ROOT }
+				553 = { add_core_of = ROOT }
+				554 = { add_core_of = ROOT }
+				677 = { add_core_of = ROOT }
+				680 = { add_core_of = ROOT }
+				458 = { add_core_of = ROOT }
+				665 = { add_core_of = ROOT }
+				459 = { add_core_of = ROOT }
+				460 = { add_core_of = ROOT }
+				290 = { add_core_of = ROOT }
+				118 = { add_core_of = ROOT }
+				461 = { add_core_of = ROOT }
+				229 = { add_core_of = ROOT }
+				230 = { add_core_of = ROOT }
+				231 = { add_core_of = ROOT }
+				735 = { add_core_of = ROOT }
+				
+789 = { add_core_of = ROOT }
+790 = { add_core_of = ROOT }
+791 = { add_core_of = ROOT }
+792 = { add_core_of = ROOT }
+793 = { add_core_of = ROOT }
+794 = { add_core_of = ROOT }
+796 = { add_core_of = ROOT }
+797 = { add_core_of = ROOT }
+798 = { add_core_of = ROOT }
+799 = { add_core_of = ROOT }
+800 = { add_core_of = ROOT }
+801 = { add_core_of = ROOT }
+802 = { add_core_of = ROOT }
+
+448 = { add_core_of = ROOT }
+449 = { add_core_of = ROOT }
+450 = { add_core_of = ROOT }
+451 = { add_core_of = ROOT }
+				
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Angevin Empire
+	id = newformevents.28
+	title = newformevents.28.t
+	desc = newformevents.28.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.28.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = ANE_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				113 = { add_core_of = ROOT }
+				119 = { add_core_of = ROOT }
+				126 = { add_core_of = ROOT }
+				127 = { add_core_of = ROOT }
+				123 = { add_core_of = ROOT }
+				338 = { add_core_of = ROOT }
+				125 = { add_core_of = ROOT }
+				122 = { add_core_of = ROOT }
+				128 = { add_core_of = ROOT }
+				129 = { add_core_of = ROOT }
+				130 = { add_core_of = ROOT }
+				131 = { add_core_of = ROOT }
+				132 = { add_core_of = ROOT }
+				14 = { add_core_of = ROOT }
+				15 = { add_core_of = ROOT }
+				30 = { add_core_of = ROOT }
+				19 = { add_core_of = ROOT }
+				23 = { add_core_of = ROOT }
+				25 = { add_core_of = ROOT }
+				26 = { add_core_of = ROOT }
+				33 = { add_core_of = ROOT }
+				128 = { add_core_of = ROOT }
+				129 = { add_core_of = ROOT }
+				130 = { add_core_of = ROOT }
+				131 = { add_core_of = ROOT }
+				132 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Macedonian Empire
+	id = newformevents.29
+	title = newformevents.29.t
+	desc = newformevents.29.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.29.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = MAC_formable
+			add_stability = 0.2
+			set_capital = 731
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				47 = { add_core_of = ROOT }
+				185 = { add_core_of = ROOT }
+				731 = { add_core_of = ROOT }
+				184 = { add_core_of = ROOT }
+				187 = { add_core_of = ROOT }
+				49 = { add_core_of = ROOT }
+				339 = { add_core_of = ROOT }
+				340 = { add_core_of = ROOT }
+				341 = { add_core_of = ROOT }
+				342 = { add_core_of = ROOT }
+				343 = { add_core_of = ROOT }
+				344 = { add_core_of = ROOT }
+				345 = { add_core_of = ROOT }
+				346 = { add_core_of = ROOT }
+				347 = { add_core_of = ROOT }
+				348 = { add_core_of = ROOT }
+				349 = { add_core_of = ROOT }
+				350 = { add_core_of = ROOT }
+				352 = { add_core_of = ROOT }
+				353 = { add_core_of = ROOT }
+				356 = { add_core_of = ROOT }
+				454 = { add_core_of = ROOT }
+				453 = { add_core_of = ROOT }
+				447 = { add_core_of = ROOT }
+				452 = { add_core_of = ROOT }
+				787 = { add_core_of = ROOT }
+				446 = { add_core_of = ROOT }
+				456 = { add_core_of = ROOT }
+				457 = { add_core_of = ROOT }
+				656 = { add_core_of = ROOT }
+				553 = { add_core_of = ROOT }
+				677 = { add_core_of = ROOT }
+				554 = { add_core_of = ROOT }
+				680 = { add_core_of = ROOT }
+				291 = { add_core_of = ROOT }
+				675 = { add_core_of = ROOT }
+				676 = { add_core_of = ROOT }
+				266 = { add_core_of = ROOT }
+				410 = { add_core_of = ROOT }
+				411 = { add_core_of = ROOT }
+				412 = { add_core_of = ROOT }
+				413 = { add_core_of = ROOT }
+				414 = { add_core_of = ROOT }
+				415 = { add_core_of = ROOT }
+				416 = { add_core_of = ROOT }
+				417 = { add_core_of = ROOT }
+				418 = { add_core_of = ROOT }
+				419 = { add_core_of = ROOT }
+				420 = { add_core_of = ROOT }
+				421 = { add_core_of = ROOT }
+				267 = { add_core_of = ROOT }
+				444 = { add_core_of = ROOT }
+				445 = { add_core_of = ROOT }
+				443 = { add_core_of = ROOT }
+				440 = { add_core_of = ROOT }
+				441 = { add_core_of = ROOT }
+				442 = { add_core_of = ROOT }
+				405 = { add_core_of = ROOT }
+				742 = { add_core_of = ROOT }
+				211 = { add_core_of = ROOT }
+				212 = { add_core_of = ROOT }
+				48 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # South American Union
+	id = newformevents.30
+	title = newformevents.30.t
+	desc = newformevents.30.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.30.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = SOU_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				280 = { add_core_of = ROOT }
+				495 = { add_core_of = ROOT }
+				496 = { add_core_of = ROOT }
+				497 = { add_core_of = ROOT }
+				498 = { add_core_of = ROOT }
+				499 = { add_core_of = ROOT }
+				500 = { add_core_of = ROOT }
+				501 = { add_core_of = ROOT }
+				502 = { add_core_of = ROOT }
+				503 = { add_core_of = ROOT }
+				504 = { add_core_of = ROOT }
+				505 = { add_core_of = ROOT }
+				300 = { add_core_of = ROOT }
+				301 = { add_core_of = ROOT }
+				278 = { add_core_of = ROOT }
+				508 = { add_core_of = ROOT }
+				509 = { add_core_of = ROOT }
+				510 = { add_core_of = ROOT }
+				511 = { add_core_of = ROOT }
+				512 = { add_core_of = ROOT }
+				279 = { add_core_of = ROOT }
+				506 = { add_core_of = ROOT }
+				507 = { add_core_of = ROOT }
+				302 = { add_core_of = ROOT }
+				487 = { add_core_of = ROOT }
+				303 = { add_core_of = ROOT }
+				490 = { add_core_of = ROOT }
+				491 = { add_core_of = ROOT }
+				492 = { add_core_of = ROOT }
+				494 = { add_core_of = ROOT }
+				305 = { add_core_of = ROOT }
+				306 = { add_core_of = ROOT }
+				486 = { add_core_of = ROOT }
+				493 = { add_core_of = ROOT }
+				307 = { add_core_of = ROOT }
+				488 = { add_core_of = ROOT }
+				489 = { add_core_of = ROOT }
+				687 = { add_core_of = ROOT }
+				309 = { add_core_of = ROOT }
+				310 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # The World
+	id = newformevents.31
+	title = newformevents.31.t
+	desc = newformevents.31.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.31.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = WOR_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				every_owned_state = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Ottoman Empire
+	id = newformevents.32
+	title = newformevents.32.t
+	desc = newformevents.32.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.32.a
+
+		ai_chance = { factor = 4000 }
+		
+
+
+		
+		set_cosmetic_tag = OTT_UNIFIED
+			set_capital = 341
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				49 = { add_core_of = ROOT }
+				339 = { add_core_of = ROOT }
+				340 = { add_core_of = ROOT }
+				341 = { add_core_of = ROOT }
+				342 = { add_core_of = ROOT }
+				343 = { add_core_of = ROOT }
+				344 = { add_core_of = ROOT }
+				345 = { add_core_of = ROOT }
+				346 = { add_core_of = ROOT }
+				347 = { add_core_of = ROOT }
+				348 = { add_core_of = ROOT }
+				349 = { add_core_of = ROOT }
+				350 = { add_core_of = ROOT }
+				352 = { add_core_of = ROOT }
+				353 = { add_core_of = ROOT }
+				354 = { add_core_of = ROOT }
+				355 = { add_core_of = ROOT }
+				356 = { add_core_of = ROOT }
+				47 = { add_core_of = ROOT }
+				182 = { add_core_of = ROOT }
+				184 = { add_core_of = ROOT }
+				185 = { add_core_of = ROOT }
+				186 = { add_core_of = ROOT }
+				187 = { add_core_of = ROOT }
+				731 = { add_core_of = ROOT }
+				48 = { add_core_of = ROOT }
+				211 = { add_core_of = ROOT }
+				212 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+				291 = { add_core_of = ROOT }
+				675 = { add_core_of = ROOT }
+				676 = { add_core_of = ROOT }
+				553 = { add_core_of = ROOT }
+				554 = { add_core_of = ROOT }
+				677 = { add_core_of = ROOT }
+				680 = { add_core_of = ROOT }
+				552 = { add_core_of = ROOT }
+				273 = { add_core_of = ROOT }
+				679 = { add_core_of = ROOT }
+				454 = { add_core_of = ROOT }
+				455 = { add_core_of = ROOT }
+				183 = { add_core_of = ROOT }
+			453 = { add_core_of = ROOT }
+			446 = { add_core_of = ROOT }
+			447 = { add_core_of = ROOT }
+			452 = { add_core_of = ROOT }
+			456 = { add_core_of = ROOT }
+			457 = { add_core_of = ROOT }
+			551 = { add_core_of = ROOT }
+			450 = { add_core_of = ROOT }
+			451 = { add_core_of = ROOT }
+			448 = { add_core_of = ROOT }
+			449 = { add_core_of = ROOT }
+			661 = { add_core_of = ROOT }
+			662 = { add_core_of = ROOT }
+			663 = { add_core_of = ROOT }
+			679 = { add_core_of = ROOT }
+			164 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Mongol Empire
+	id = newformevents.33
+	title = newformevents.33.t
+	desc = newformevents.33.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.33.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = MOE_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				615 = { add_core_of = ROOT }
+				621 = { add_core_of = ROOT }
+				622 = { add_core_of = ROOT }
+				283 = { add_core_of = ROOT }
+				604 = { add_core_of = ROOT }
+				616 = { add_core_of = ROOT }
+				287 = { add_core_of = ROOT }
+				617 = { add_core_of = ROOT }
+				618 = { add_core_of = ROOT }
+				619 = { add_core_of = ROOT }
+				322 = { add_core_of = ROOT }
+				330 = { add_core_of = ROOT }
+				325 = { add_core_of = ROOT }
+				591 = { add_core_of = ROOT }
+				592 = { add_core_of = ROOT }
+				593 = { add_core_of = ROOT }
+				594 = { add_core_of = ROOT }
+				599 = { add_core_of = ROOT }
+				611 = { add_core_of = ROOT }
+				612 = { add_core_of = ROOT }
+				328 = { add_core_of = ROOT }
+				610 = { add_core_of = ROOT }
+				714 = { add_core_of = ROOT }
+				715 = { add_core_of = ROOT }
+				716 = { add_core_of = ROOT }
+				717 = { add_core_of = ROOT }
+				609 = { add_core_of = ROOT }
+				657 = { add_core_of = ROOT }
+				560 = { add_core_of = ROOT }
+				561 = { add_core_of = ROOT }
+				655 = { add_core_of = ROOT }
+				408 = { add_core_of = ROOT }
+				409 = { add_core_of = ROOT }
+				602 = { add_core_of = ROOT }
+				603 = { add_core_of = ROOT }
+				605 = { add_core_of = ROOT }
+				601 = { add_core_of = ROOT }
+				620 = { add_core_of = ROOT }
+				600 = { add_core_of = ROOT }
+				595 = { add_core_of = ROOT }
+				620 = { add_core_of = ROOT }
+				596 = { add_core_of = ROOT }
+				606 = { add_core_of = ROOT }
+				613 = { add_core_of = ROOT }
+				607 = { add_core_of = ROOT }
+				597 = { add_core_of = ROOT }
+				614 = { add_core_of = ROOT }
+				608 = { add_core_of = ROOT }
+				329 = { add_core_of = ROOT }
+				589 = { add_core_of = ROOT }
+				266 = { add_core_of = ROOT }
+				410 = { add_core_of = ROOT }
+				411 = { add_core_of = ROOT }
+				412 = { add_core_of = ROOT }
+				413 = { add_core_of = ROOT }
+				414 = { add_core_of = ROOT }
+				416 = { add_core_of = ROOT }
+				417 = { add_core_of = ROOT }
+				418 = { add_core_of = ROOT }
+				419 = { add_core_of = ROOT }
+				420 = { add_core_of = ROOT }
+				421 = { add_core_of = ROOT }
+				291 = { add_core_of = ROOT }
+				676 = { add_core_of = ROOT }
+				676 = { add_core_of = ROOT }
+				229 = { add_core_of = ROOT }
+				230 = { add_core_of = ROOT }
+				231 = { add_core_of = ROOT }
+				40 = { add_core_of = ROOT }
+				137 = { add_core_of = ROOT }
+				192 = { add_core_of = ROOT }
+				193 = { add_core_of = ROOT }
+				194 = { add_core_of = ROOT }
+				195 = { add_core_of = ROOT }
+				196 = { add_core_of = ROOT }
+				197	= { add_core_of = ROOT }
+				198 = { add_core_of = ROOT }
+				199 = { add_core_of = ROOT }
+				200 = { add_core_of = ROOT }
+				201 = { add_core_of = ROOT }
+				202 = { add_core_of = ROOT }
+				203 = { add_core_of = ROOT }
+				204 = { add_core_of = ROOT }
+				205 = { add_core_of = ROOT }
+				206 = { add_core_of = ROOT }
+				207 = { add_core_of = ROOT }
+				208 = { add_core_of = ROOT }
+				209 = { add_core_of = ROOT }
+				210 = { add_core_of = ROOT }
+				217 = { add_core_of = ROOT }
+				218 = { add_core_of = ROOT }
+				219 = { add_core_of = ROOT }
+				220 = { add_core_of = ROOT }
+				221 = { add_core_of = ROOT }
+				222 = { add_core_of = ROOT }
+				223 = { add_core_of = ROOT }
+				224 = { add_core_of = ROOT }
+				225 = { add_core_of = ROOT }
+				226 = { add_core_of = ROOT }
+				227 = { add_core_of = ROOT }
+				228 = { add_core_of = ROOT }
+				232 = { add_core_of = ROOT }
+				233 = { add_core_of = ROOT }
+				234 = { add_core_of = ROOT }
+				235 = { add_core_of = ROOT }
+				236 = { add_core_of = ROOT }
+				237 = { add_core_of = ROOT }
+				238 = { add_core_of = ROOT }
+				239 = { add_core_of = ROOT }
+				240 = { add_core_of = ROOT }
+				241 = { add_core_of = ROOT }
+				242 = { add_core_of = ROOT }
+				243 = { add_core_of = ROOT }
+				244 = { add_core_of = ROOT }
+				245 = { add_core_of = ROOT }
+				246 = { add_core_of = ROOT }
+				247 = { add_core_of = ROOT }
+				248 = { add_core_of = ROOT }
+				249 = { add_core_of = ROOT }
+				250 = { add_core_of = ROOT }
+				251 = { add_core_of = ROOT }
+				252 = { add_core_of = ROOT }
+				253 = { add_core_of = ROOT }
+				254 = { add_core_of = ROOT }
+				255 = { add_core_of = ROOT }
+				256 = { add_core_of = ROOT }
+				257 = { add_core_of = ROOT }
+				258 = { add_core_of = ROOT }
+				259 = { add_core_of = ROOT }
+				260 = { add_core_of = ROOT }
+				263 = { add_core_of = ROOT }
+				264 = { add_core_of = ROOT }
+				265 = { add_core_of = ROOT }
+				351 = { add_core_of = ROOT }
+				398 = { add_core_of = ROOT }
+				399 = { add_core_of = ROOT }
+				400 = { add_core_of = ROOT }
+				401 = { add_core_of = ROOT }
+				402 = { add_core_of = ROOT }
+				403 = { add_core_of = ROOT }
+				404 = { add_core_of = ROOT }
+				405 = { add_core_of = ROOT }
+				406 = { add_core_of = ROOT }
+				407 = { add_core_of = ROOT }
+				408 = { add_core_of = ROOT }
+				409 = { add_core_of = ROOT }
+				560 = { add_core_of = ROOT }
+				561 = { add_core_of = ROOT }
+				563 = { add_core_of = ROOT }
+				564 = { add_core_of = ROOT }
+				565 = { add_core_of = ROOT }
+				566 = { add_core_of = ROOT }
+				567 = { add_core_of = ROOT }
+				568 = { add_core_of = ROOT }
+				569 = { add_core_of = ROOT }
+				570 = { add_core_of = ROOT }
+				571 = { add_core_of = ROOT }
+				572 = { add_core_of = ROOT }
+				573 = { add_core_of = ROOT }
+				578 = { add_core_of = ROOT }
+				582 = { add_core_of = ROOT }
+				583 = { add_core_of = ROOT }
+				584 = { add_core_of = ROOT }
+				585 = { add_core_of = ROOT }
+				586 = { add_core_of = ROOT }
+				587 = { add_core_of = ROOT }
+				588 = { add_core_of = ROOT }
+				589 = { add_core_of = ROOT }
+				590 = { add_core_of = ROOT }
+				651 = { add_core_of = ROOT }
+				652 = { add_core_of = ROOT }
+				653 = { add_core_of = ROOT }
+				654 = { add_core_of = ROOT }
+				655 = { add_core_of = ROOT }
+				657 = { add_core_of = ROOT }
+				732 = { add_core_of = ROOT }
+				742 = { add_core_of = ROOT }
+				525 = { add_core_of = ROOT }
+				527 = { add_core_of = ROOT }
+				598 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Greater Israel
+	id = newformevents.34
+	title = newformevents.34.t
+	desc = newformevents.34.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.34.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = GIS_formable
+			add_stability = 0.2
+			set_capital = 454
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				454 = { add_core_of = ROOT }
+				455 = { add_core_of = ROOT }
+				453 = { add_core_of = ROOT }
+				446 = { add_core_of = ROOT }
+				457 = { add_core_of = ROOT }
+				456 = { add_core_of = ROOT }
+				675 = { add_core_of = ROOT }
+				680 = { add_core_of = ROOT }
+				553 = { add_core_of = ROOT }
+				554 = { add_core_of = ROOT }
+				677 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # China
+	id = newformevents.35
+	title = newformevents.35.t
+	desc = newformevents.35.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.35.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = CHI_formable
+			add_stability = 0.2
+			set_capital = 608
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				every_state = {
+					if = {
+						limit = { is_core_of = CHI }
+						remove_core_of = CHI
+					}
+					if = {
+						limit = { is_core_of = PRC }
+						remove_core_of = PRC
+					}
+					if = {
+						limit = { is_core_of = YUN }
+						remove_core_of = YUN
+					}
+					if = {
+						limit = { is_core_of = GXC }
+						remove_core_of = GXC
+					}
+					if = {
+						limit = { is_core_of = XSM }
+						remove_core_of = XSM
+					}
+					if = {
+						limit = { is_core_of = SHX }
+						remove_core_of = SHX
+					}
+					if = {
+						limit = { is_core_of = SIK }
+						remove_core_of = SIK
+					}
+					if = {
+						limit = { is_core_of = MEN }
+						remove_core_of = MEN
+					}
+				}
+				595 = { add_core_of = ROOT }
+				596 = { add_core_of = ROOT }
+				597 = { add_core_of = ROOT }
+				598 = { add_core_of = ROOT }
+				600 = { add_core_of = ROOT }
+				601 = { add_core_of = ROOT }
+				602 = { add_core_of = ROOT }
+				603 = { add_core_of = ROOT }
+				605 = { add_core_of = ROOT }
+				606 = { add_core_of = ROOT }
+				607 = { add_core_of = ROOT }
+				608 = { add_core_of = ROOT }
+				613 = { add_core_of = ROOT }
+				614 = { add_core_of = ROOT }
+				620 = { add_core_of = ROOT }
+				325 = { add_core_of = ROOT }
+				591 = { add_core_of = ROOT }
+				592 = { add_core_of = ROOT }
+				593 = { add_core_of = ROOT }
+				594 = { add_core_of = ROOT }
+				599 = { add_core_of = ROOT }
+				283 = { add_core_of = ROOT }
+				604 = { add_core_of = ROOT }
+				616 = { add_core_of = ROOT }
+				287 = { add_core_of = ROOT }
+				617 = { add_core_of = ROOT }
+				618 = { add_core_of = ROOT }
+				619 = { add_core_of = ROOT }
+				621 = { add_core_of = ROOT }
+				622 = { add_core_of = ROOT }
+				611 = { add_core_of = ROOT }
+				612 = { add_core_of = ROOT }
+				328 = { add_core_of = ROOT }
+				610 = { add_core_of = ROOT }
+				714 = { add_core_of = ROOT }
+				715 = { add_core_of = ROOT }
+				716 = { add_core_of = ROOT }
+				717 = { add_core_of = ROOT }
+				609 = { add_core_of = ROOT }
+				524 = { add_core_of = ROOT }
+				326 = { add_core_of = ROOT }
+				729 = { add_core_of = ROOT }
+				728 = { add_core_of = ROOT }
+				set_party_name = { ideology = neutrality long_name = CHI_neutrality_party name = CHI_neutrality_party }
+				set_party_name = { ideology = democratic long_name = CHI_democratic_party name = CHI_democratic_party }
+				set_party_name = { ideology = communism long_name = CHI_communism_party_long name = CHI_communism_party }
+				set_party_name = { ideology = fascism long_name = CHI_fascism_party_long name = CHI_fascism_party }
+				if = {
+					limit = { 
+						NOT = { has_fascist_government = yes }
+					}
+					create_country_leader = {
+						name = "Wang Jingwei"
+						desc = "POLITICS_WANG_JINGWEI_DESC"
+						picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							
+						}
+					}
+				}
+			}
+			
+ 
+			}
+
+	}
+	
+	country_event = { # Mughal Empire
+	id = newformevents.36
+	title = newformevents.36.t
+	desc = newformevents.36.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.36.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = MUG_formable
+			add_stability = 0.2
+			set_capital = 439
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				267 = { add_core_of = ROOT }
+				415 = { add_core_of = ROOT }
+				424 = { add_core_of = ROOT }
+				425 = { add_core_of = ROOT }
+				426 = { add_core_of = ROOT }
+				427 = { add_core_of = ROOT }
+				428 = { add_core_of = ROOT }
+				429 = { add_core_of = ROOT }
+				430 = { add_core_of = ROOT }
+				431 = { add_core_of = ROOT }
+				433 = { add_core_of = ROOT }
+				435 = { add_core_of = ROOT }
+				436 = { add_core_of = ROOT }
+				437 = { add_core_of = ROOT }
+				787 = { add_core_of = ROOT }
+				438 = { add_core_of = ROOT }
+				439 = { add_core_of = ROOT }
+				440 = { add_core_of = ROOT }
+				441 = { add_core_of = ROOT }
+				442 = { add_core_of = ROOT }
+				443 = { add_core_of = ROOT }
+				444 = { add_core_of = ROOT }
+				445 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Persian Empire
+	id = newformevents.37
+	title = newformevents.37.t
+	desc = newformevents.37.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.37.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = PER_UNIFIED
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				267 = { add_core_of = ROOT }
+				415 = { add_core_of = ROOT }
+				266 = { add_core_of = ROOT }
+				410 = { add_core_of = ROOT }
+				411 = { add_core_of = ROOT }
+				412 = { add_core_of = ROOT }
+				413 = { add_core_of = ROOT }
+				414 = { add_core_of = ROOT }
+				415 = { add_core_of = ROOT }
+				416 = { add_core_of = ROOT }
+				417 = { add_core_of = ROOT }
+				418 = { add_core_of = ROOT }
+				419 = { add_core_of = ROOT }
+				420 = { add_core_of = ROOT }
+				421 = { add_core_of = ROOT }
+				291 = { add_core_of = ROOT }
+				675 = { add_core_of = ROOT }
+				676 = { add_core_of = ROOT }
+				584 = { add_core_of = ROOT }
+				656 = { add_core_of = ROOT }
+				442 = { add_core_of = ROOT }
+				443 = { add_core_of = ROOT }
+				444 = { add_core_of = ROOT }
+				445 = { add_core_of = ROOT }
+				742 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # North Sea Empire
+	id = newformevents.38
+	title = newformevents.38.t
+	desc = newformevents.38.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.38.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = NSE_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				37 = { add_core_of = ROOT }
+				99 = { add_core_of = ROOT }
+				125 = { add_core_of = ROOT }
+				126 = { add_core_of = ROOT }
+				127 = { add_core_of = ROOT }
+				128 = { add_core_of = ROOT }
+				129 = { add_core_of = ROOT }
+				130 = { add_core_of = ROOT }
+				131 = { add_core_of = ROOT }
+				132 = { add_core_of = ROOT }
+				338 = { add_core_of = ROOT }
+				110 = { add_core_of = ROOT }
+				142 = { add_core_of = ROOT }
+				143 = { add_core_of = ROOT }
+				788 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Inca Empire
+	id = newformevents.39
+	title = newformevents.39.t
+	desc = newformevents.39.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.39.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = INC_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				302 = { add_core_of = ROOT }
+				506 = { add_core_of = ROOT }
+				508 = { add_core_of = ROOT }
+				492 = { add_core_of = ROOT }
+				494 = { add_core_of = ROOT }
+				303 = { add_core_of = ROOT }
+				490 = { add_core_of = ROOT }
+				491 = { add_core_of = ROOT }
+				305 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Greater Finland
+	id = newformevents.40
+	title = newformevents.40.t
+	desc = newformevents.40.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.40.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = GFI_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				111 = { add_core_of = ROOT }
+				145 = { add_core_of = ROOT }
+				146 = { add_core_of = ROOT }
+				147 = { add_core_of = ROOT }
+				148 = { add_core_of = ROOT }
+				149 = { add_core_of = ROOT }
+				150 = { add_core_of = ROOT }
+				722 = { add_core_of = ROOT }
+				195 = { add_core_of = ROOT }
+				216 = { add_core_of = ROOT }
+				215 = { add_core_of = ROOT }
+				213 = { add_core_of = ROOT }
+				13 = { add_claim_by = ROOT }
+			191 = { add_claim_by = ROOT }
+			208 = { add_claim_by = ROOT }
+			666 = { add_claim_by = ROOT }
+			144 = { add_claim_by = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Turkestan
+	id = newformevents.41
+	title = newformevents.41.t
+	desc = newformevents.41.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.41.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = TKS_formable
+			add_stability = 0.2
+			set_capital = 405
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				49 = { add_core_of = ROOT }
+				339 = { add_core_of = ROOT }
+				340 = { add_core_of = ROOT }
+				341 = { add_core_of = ROOT }
+				342 = { add_core_of = ROOT }
+				343 = { add_core_of = ROOT }
+				344 = { add_core_of = ROOT }
+				345 = { add_core_of = ROOT }
+				346 = { add_core_of = ROOT }
+				347 = { add_core_of = ROOT }
+				348 = { add_core_of = ROOT }
+				349 = { add_core_of = ROOT }
+				350 = { add_core_of = ROOT }
+				352 = { add_core_of = ROOT }
+				353 = { add_core_of = ROOT }
+				354 = { add_core_of = ROOT }
+				355 = { add_core_of = ROOT }
+				356 = { add_core_of = ROOT }
+				229 = { add_core_of = ROOT }
+				230 = { add_core_of = ROOT }
+				231 = { add_core_of = ROOT }
+				232 = { add_core_of = ROOT }
+				233 = { add_core_of = ROOT }
+				236 = { add_core_of = ROOT }
+				237 = { add_core_of = ROOT }
+				406 = { add_core_of = ROOT }
+				407 = { add_core_of = ROOT }
+				402 = { add_core_of = ROOT }
+				584 = { add_core_of = ROOT }
+				585 = { add_core_of = ROOT }
+				587 = { add_core_of = ROOT }
+				583 = { add_core_of = ROOT }
+				590 = { add_core_of = ROOT }
+				588 = { add_core_of = ROOT }
+				404 = { add_core_of = ROOT }
+				589 = { add_core_of = ROOT }
+				586 = { add_core_of = ROOT }
+				732 = { add_core_of = ROOT }
+				405 = { add_core_of = ROOT }
+				742 = { add_core_of = ROOT }
+				654 = { add_core_of = ROOT }
+				329 = { add_core_of = ROOT }
+				287 = { add_core_of = ROOT }
+			617 = { add_core_of = ROOT }
+			618 = { add_core_of = ROOT }
+			619 = { add_core_of = ROOT }
+			183 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Indochina
+	id = newformevents.42
+	title = newformevents.42.t
+	desc = newformevents.42.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.42.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = ICH_formable
+			add_stability = 0.2
+			set_capital = 289
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				289 = { add_core_of = ROOT }
+				724 = { add_core_of = ROOT }
+				741 = { add_core_of = ROOT }
+				670 = { add_core_of = ROOT }
+				286 = { add_core_of = ROOT }
+				671 = { add_core_of = ROOT }
+				288 = { add_core_of = ROOT }
+			640 = { add_core_of = ROOT }
+			336 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Swedish Empire
+	id = newformevents.43
+	title = newformevents.43.t
+	desc = newformevents.43.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.43.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = SEP_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				38 = { add_core_of = ROOT }
+				124 = { add_core_of = ROOT }
+				138 = { add_core_of = ROOT }
+				139 = { add_core_of = ROOT }
+				140 = { add_core_of = ROOT }
+				141 = { add_core_of = ROOT }
+				666 = { add_core_of = ROOT }
+				111 = { add_core_of = ROOT }
+				145 = { add_core_of = ROOT }
+				146 = { add_core_of = ROOT }
+				147 = { add_core_of = ROOT }
+				148 = { add_core_of = ROOT }
+				149 = { add_core_of = ROOT }
+				150 = { add_core_of = ROOT }
+				143 = { add_core_of = ROOT }
+				195 = { add_core_of = ROOT }
+			208 = { add_core_of = ROOT }
+			12 = { add_core_of = ROOT }
+			13 = { add_core_of = ROOT }
+			191 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Greater Tibet
+	id = newformevents.44
+	title = newformevents.44.t
+	desc = newformevents.44.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.44.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = GTI_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				322 = { add_core_of = ROOT }
+				601 = { add_core_of = ROOT }
+				604 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Greater Yugoslavia
+	id = newformevents.45
+	title = newformevents.45.t
+	desc = newformevents.45.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.45.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = YUG_formable
+			add_stability = 0.2
+			set_capital = 107
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				set_party_name = { ideology = democratic  long_name = YU1_democratic_party_long  name = YU1_democratic_party }
+				set_party_name = { ideology = fascism  long_name = YU1_fascist_party_long  name = YU1_fascist_party }
+				set_party_name = { ideology = communism  long_name = YU1_communism_party_long  name = YU1_communism_party }
+				set_party_name = { ideology = neutrality  long_name = YU1_neutrality_party_long  name = YU1_neutrality_party }
+				45 = { remove_core_of = YUG  add_core_of = ROOT }
+				102 = { remove_core_of = YUG  add_core_of = ROOT }
+				103 = { remove_core_of = YUG  add_core_of = ROOT }
+				104 = { remove_core_of = YUG  add_core_of = ROOT }
+				105 = { remove_core_of = YUG  add_core_of = ROOT }
+				106 = { remove_core_of = YUG  add_core_of = ROOT }
+				107 = { remove_core_of = YUG  add_core_of = ROOT }
+				108 = { remove_core_of = YUG  add_core_of = ROOT }
+				109 = { remove_core_of = YUG  add_core_of = ROOT }
+				764 = { remove_core_of = YUG  add_core_of = ROOT }
+				44 = { add_core_of = ROOT }
+				48 = { add_core_of = ROOT }
+				212 = { add_core_of = ROOT }
+				211 = { add_core_of = ROOT }
+			}
+			77 = { add_core_of = ROOT }
+			184 = { add_core_of = ROOT }
+			731 = { add_core_of = ROOT }
+			163 = { add_core_of = ROOT }
+			736 = { remove_core_of = YUG  add_core_of = ROOT }
+			211 = { add_core_of = ROOT }
+ 
+			}
+
+	}
+	
+	country_event = { # Abyssinia
+	id = newformevents.46
+	title = newformevents.46.t
+	desc = newformevents.46.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.46.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = ABY_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				271 = { add_core_of = ROOT }
+				550 = { add_core_of = ROOT }
+				268 = { add_core_of = ROOT }
+			269 = { add_core_of = ROOT }
+			559 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	
+	country_event = { # North American Union
+	id = newformevents.47
+	title = newformevents.47.t
+	desc = newformevents.47.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.47.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = NOA_formable
+			add_stability = 0.2
+			set_capital = 358
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				331 = { add_core_of = ROOT }
+				332 = { add_core_of = ROOT }
+				261 = { add_core_of = ROOT }
+				357 = { add_core_of = ROOT }
+				358 = { add_core_of = ROOT }
+				359 = { add_core_of = ROOT }
+				360 = { add_core_of = ROOT }
+				361 = { add_core_of = ROOT }
+				362 = { add_core_of = ROOT }
+				363 = { add_core_of = ROOT }
+				364 = { add_core_of = ROOT }
+				365 = { add_core_of = ROOT }
+				366 = { add_core_of = ROOT }
+				367 = { add_core_of = ROOT }
+				368 = { add_core_of = ROOT }
+				369 = { add_core_of = ROOT }
+				370 = { add_core_of = ROOT }
+				371 = { add_core_of = ROOT }
+				372 = { add_core_of = ROOT }
+				373 = { add_core_of = ROOT }
+				374 = { add_core_of = ROOT }
+				375 = { add_core_of = ROOT }
+				376 = { add_core_of = ROOT }
+				377 = { add_core_of = ROOT }
+				378 = { add_core_of = ROOT }
+				379 = { add_core_of = ROOT }
+				380 = { add_core_of = ROOT }
+				381 = { add_core_of = ROOT }
+				382 = { add_core_of = ROOT }
+				383 = { add_core_of = ROOT }
+				384 = { add_core_of = ROOT }
+				385 = { add_core_of = ROOT }
+				386 = { add_core_of = ROOT }
+				387 = { add_core_of = ROOT }
+				388 = { add_core_of = ROOT }
+				389 = { add_core_of = ROOT }
+				390 = { add_core_of = ROOT }
+				391 = { add_core_of = ROOT }
+				392 = { add_core_of = ROOT }
+				393 = { add_core_of = ROOT }
+				394 = { add_core_of = ROOT }
+				395 = { add_core_of = ROOT }
+				396 = { add_core_of = ROOT }
+				463 = { add_core_of = ROOT }
+				685 = { add_core_of = ROOT }
+				331 = { add_core_of = ROOT }
+				332 = { add_core_of = ROOT }
+				276 = { add_core_of = ROOT }
+				464 = { add_core_of = ROOT }
+				465 = { add_core_of = ROOT }
+				466 = { add_core_of = ROOT }
+				467 = { add_core_of = ROOT }
+				468 = { add_core_of = ROOT }
+				469 = { add_core_of = ROOT }
+				470 = { add_core_of = ROOT }
+				471 = { add_core_of = ROOT }
+				472 = { add_core_of = ROOT }
+				473 = { add_core_of = ROOT }
+				682 = { add_core_of = ROOT }
+				683 = { add_core_of = ROOT }
+				739 = { add_core_of = ROOT }
+				740 = { add_core_of = ROOT }
+				311 = { add_core_of = ROOT }
+				277 = { add_core_of = ROOT }
+				474 = { add_core_of = ROOT }
+				475 = { add_core_of = ROOT }
+				476 = { add_core_of = ROOT }
+				477 = { add_core_of = ROOT }
+				478 = { add_core_of = ROOT }
+				479 = { add_core_of = ROOT }
+				480 = { add_core_of = ROOT }
+				481 = { add_core_of = ROOT }
+				482 = { add_core_of = ROOT }
+				483 = { add_core_of = ROOT }
+				484 = { add_core_of = ROOT }
+				485 = { add_core_of = ROOT }
+				314 = { add_core_of = ROOT }
+				313 = { add_core_of = ROOT }
+				312 = { add_core_of = ROOT }
+				317 = { add_core_of = ROOT }
+				316 = { add_core_of = ROOT }
+				304 = { add_core_of = ROOT }
+				315 = { add_core_of = ROOT }
+				318 = { add_core_of = ROOT }
+				319 = { add_core_of = ROOT }
+				101 = { add_core_of = ROOT }
+			690 = { add_core_of = ROOT }
+			730 = { add_core_of = ROOT }
+			693 = { add_core_of = ROOT }
+			689 = { add_core_of = ROOT }
+			686 = { add_core_of = ROOT }
+			694 = { add_core_of = ROOT }
+			308 = { add_core_of = ROOT }
+			692 = { add_core_of = ROOT }
+			691 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Greater Egypt
+	id = newformevents.48
+	title = newformevents.48.t
+	desc = newformevents.48.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.48.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = GEG_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				551 = { add_core_of = ROOT }
+				552 = { add_core_of = ROOT }
+				456 = { add_core_of = ROOT }
+				457 = { add_core_of = ROOT }
+				446 = { add_core_of = ROOT }
+				453 = { add_core_of = ROOT }
+				447 = { add_core_of = ROOT }
+				452 = { add_core_of = ROOT }
+				454 = { add_core_of = ROOT }
+				455 = { add_core_of = ROOT }
+				553 = { add_core_of = ROOT }
+				554 = { add_core_of = ROOT }
+				677 = { add_core_of = ROOT }
+				680 = { add_core_of = ROOT }
+				663 = { add_core_of = ROOT }
+			451 = { add_core_of = ROOT }
+			450 = { add_core_of = ROOT }
+			679 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { #Hispaniola
+	id = newformevents.49
+	title = newformevents.49.t
+	desc = newformevents.49.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.49.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = HIS_formable
+			add_stability = 0.2
+			set_capital = 318
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				318 = { add_core_of = ROOT }
+				319 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Peru-Bolivian Confederation
+	id = newformevents.50
+	title = newformevents.50.t
+	desc = newformevents.50.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.50.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = PRB_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				490 = { add_core_of = ROOT }
+				491 = { add_core_of = ROOT }
+				303 = { add_core_of = ROOT }
+				494 = { add_core_of = ROOT }
+				492 = { add_core_of = ROOT }
+				487 = { add_core_of = ROOT }
+				302 = { add_core_of = ROOT }
+				506 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Caribbean Union
+	id = newformevents.51
+	title = newformevents.51.t
+	desc = newformevents.51.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.51.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = CAB_formable
+			add_stability = 0.2
+			set_capital = 318
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				315 = { add_core_of = ROOT }
+				318 = { add_core_of = ROOT }
+				319 = { add_core_of = ROOT }
+				689 = { add_core_of = ROOT }
+			690 = { add_core_of = ROOT }
+			693 = { add_core_of = ROOT }
+			686 = { add_core_of = ROOT }
+			694 = { add_core_of = ROOT }
+			308 = { add_core_of = ROOT }
+			692 = { add_core_of = ROOT }
+			691 = { add_core_of = ROOT }
+			695 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Australasian Union
+	id = newformevents.52
+	title = newformevents.52.t
+	desc = newformevents.52.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.52.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = AAS_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				285 = { add_core_of = ROOT }
+				517 = { add_core_of = ROOT }
+				518 = { add_core_of = ROOT }
+				519 = { add_core_of = ROOT }
+				520 = { add_core_of = ROOT }
+				521 = { add_core_of = ROOT }
+				522 = { add_core_of = ROOT }
+				523 = { add_core_of = ROOT }
+				634 = { add_core_of = ROOT }
+				674 = { add_core_of = ROOT }
+				737 = { add_core_of = ROOT }
+				284 = { add_core_of = ROOT }
+				723 = { add_core_of = ROOT }
+				635 = { add_core_of = ROOT }
+			636 = { add_core_of = ROOT }
+			734 = { add_core_of = ROOT }
+			669 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Golden Circle
+	id = newformevents.53
+	title = newformevents.53.t
+	desc = newformevents.53.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.53.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = GOL_formable
+			add_stability = 0.2
+			set_capital = 277
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				361 = { add_core_of = ROOT }
+				374 = { add_core_of = ROOT }
+				369 = { add_core_of = ROOT }
+				375 = { add_core_of = ROOT }
+				371 = { add_core_of = ROOT }
+				372 = { add_core_of = ROOT }
+				370 = { add_core_of = ROOT }
+				367 = { add_core_of = ROOT }
+				368 = { add_core_of = ROOT }
+				365 = { add_core_of = ROOT }
+				366 = { add_core_of = ROOT }
+				364 = { add_core_of = ROOT }
+				363 = { add_core_of = ROOT }
+				362 = { add_core_of = ROOT }
+				277 = { add_core_of = ROOT }
+				474 = { add_core_of = ROOT }
+				475 = { add_core_of = ROOT }
+				476 = { add_core_of = ROOT }
+				477 = { add_core_of = ROOT }
+				478 = { add_core_of = ROOT }
+				479 = { add_core_of = ROOT }
+				480 = { add_core_of = ROOT }
+				481 = { add_core_of = ROOT }
+				482 = { add_core_of = ROOT }
+				483 = { add_core_of = ROOT }
+				484 = { add_core_of = ROOT }
+				485 = { add_core_of = ROOT }
+				311 = { add_core_of = ROOT }
+				313 = { add_core_of = ROOT }
+				314 = { add_core_of = ROOT }
+				312 = { add_core_of = ROOT }
+				317 = { add_core_of = ROOT }
+				316 = { add_core_of = ROOT }
+				685 = { add_core_of = ROOT }
+				304 = { add_core_of = ROOT }
+				315 = { add_core_of = ROOT }
+				318 = { add_core_of = ROOT }
+				689 = { add_core_of = ROOT }
+				690 = { add_core_of = ROOT }
+				693 = { add_core_of = ROOT }
+				686 = { add_core_of = ROOT }
+				694 = { add_core_of = ROOT }
+				308 = { add_core_of = ROOT }
+				692 = { add_core_of = ROOT }
+				691 = { add_core_of = ROOT }
+				695 = { add_core_of = ROOT }
+				489 = { add_core_of = ROOT }
+			493 = { add_core_of = ROOT }
+			307 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Maghreb
+	id = newformevents.54
+	title = newformevents.54.t
+	desc = newformevents.54.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.54.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = MAG_formable
+			add_stability = 0.2
+			set_capital = 461
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				448 = { add_core_of = ROOT }
+				661 = { add_core_of = ROOT }
+				449 = { add_core_of = ROOT }
+				662 = { add_core_of = ROOT }
+				663 = { add_core_of = ROOT }
+				450 = { add_core_of = ROOT }
+				451 = { add_core_of = ROOT }
+				458 = { add_core_of = ROOT }
+				665 = { add_core_of = ROOT }
+				459 = { add_core_of = ROOT }
+				460 = { add_core_of = ROOT }
+				513 = { add_core_of = ROOT }
+				461 = { add_core_of = ROOT }
+				462 = { add_core_of = ROOT }
+				290 = { add_core_of = ROOT }
+				699 = { add_core_of = ROOT }
+				783 = { add_core_of = ROOT }
+				557 = { add_core_of = ROOT }
+			514 = { add_core_of = ROOT }
+			273 = { add_core_of = ROOT }
+			699 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Greater Canada
+	id = newformevents.55
+	title = newformevents.55.t
+	desc = newformevents.55.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.55.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = GCA_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				276 = { add_core_of = ROOT }
+				464 = { add_core_of = ROOT }
+				465 = { add_core_of = ROOT }
+				466 = { add_core_of = ROOT }
+				467 = { add_core_of = ROOT }
+				468 = { add_core_of = ROOT }
+				469 = { add_core_of = ROOT }
+				470 = { add_core_of = ROOT }
+				471 = { add_core_of = ROOT }
+				472 = { add_core_of = ROOT }
+				473 = { add_core_of = ROOT }
+				682 = { add_core_of = ROOT }
+				683 = { add_core_of = ROOT }
+				739 = { add_core_of = ROOT }
+				740 = { add_core_of = ROOT }
+				357 = { add_core_of = ROOT }
+				358 = { add_core_of = ROOT }
+				463 = { add_core_of = ROOT }
+				331 = { add_core_of = ROOT }
+			332 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Visegrad
+	id = newformevents.56
+	title = newformevents.56.t
+	desc = newformevents.56.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.56.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = VIS_formable
+			add_stability = 0.2
+			set_capital = 43
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				10 = { add_core_of = ROOT }
+				85 = { add_core_of = ROOT }
+				86 = { add_core_of = ROOT }
+				87 = { add_core_of = ROOT }
+				88 = { add_core_of = ROOT }
+				90 = { add_core_of = ROOT }
+				92 = { add_core_of = ROOT }
+				98 = { add_core_of = ROOT }
+				9 = { add_core_of = ROOT }
+				69 = { add_core_of = ROOT }
+				70 = { add_core_of = ROOT }
+				71 = { add_core_of = ROOT }
+				72 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				74 = { add_core_of = ROOT }
+				75 = { add_core_of = ROOT }
+				664 = { add_core_of = ROOT }
+				43 = { add_core_of = ROOT }
+				154 = { add_core_of = ROOT }
+				155 = { add_core_of = ROOT }
+				89 = { add_core_of = ROOT }
+			91 = { add_core_of = ROOT }
+			93 = { add_core_of = ROOT }
+			94 = { add_core_of = ROOT }
+			95 = { add_core_of = ROOT }
+			96 = { add_core_of = ROOT }
+			97 = { add_core_of = ROOT }
+			76 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # La Plata
+	id = newformevents.57
+	title = newformevents.57.t
+	desc = newformevents.57.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.57.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = PLA_formable
+			add_stability = 0.2
+			set_capital = 278
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				278 = { add_core_of = ROOT }
+				508 = { add_core_of = ROOT }
+				509 = { add_core_of = ROOT }
+				510 = { add_core_of = ROOT }
+				511 = { add_core_of = ROOT }
+				512 = { add_core_of = ROOT }
+				301 = { add_core_of = ROOT }
+				688 = { add_core_of = ROOT }
+				300 = { add_core_of = ROOT }
+				302 = { add_core_of = ROOT }
+				487 = { add_core_of = ROOT }
+				506 = { add_core_of = ROOT }
+			299 = { add_claim_by = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Celtic Union
+	id = newformevents.58
+	title = newformevents.58.t
+	desc = newformevents.58.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.58.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = CEL_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				113 = { add_core_of = ROOT }
+				119 = { add_core_of = ROOT }
+				134 = { add_core_of = ROOT }
+				135 = { add_core_of = ROOT }
+				120 = { add_core_of = ROOT }
+				121 = { add_core_of = ROOT }
+				133 = { add_core_of = ROOT }
+				136 = { add_core_of = ROOT }
+				122 = { add_core_of = ROOT }
+			123 = { add_core_of = ROOT }
+			14 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Alpine Federation
+	id = newformevents.59
+	title = newformevents.59.t
+	desc = newformevents.59.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.59.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = ALP_formable
+			add_stability = 0.2
+			set_capital = 4
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				3 = { add_core_of = ROOT }
+				151 = { add_core_of = ROOT }
+				4 = { add_core_of = ROOT }
+				152 = { add_core_of = ROOT }
+				153 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+			52 = { add_core_of = ROOT }
+			790 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Greater Croatia
+	id = newformevents.60
+	title = newformevents.60.t
+	desc = newformevents.60.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.60.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = GCR_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				103 = { add_core_of = ROOT }
+				104 = { add_core_of = ROOT }
+				109 = { add_core_of = ROOT }
+				163 = { add_core_of = ROOT }
+			736 = { add_core_of = ROOT }
+			102 = { add_claim_by = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Greater Serbia
+	id = newformevents.61
+	title = newformevents.61.t
+	desc = newformevents.61.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.61.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = GSE_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				45 = { add_core_of = ROOT }
+				107 = { add_core_of = ROOT }
+				108 = { add_core_of = ROOT }
+				105 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
+				104 = { add_claim_by = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Greater Lithuania
+	id = newformevents.62
+	title = newformevents.62.t
+	desc = newformevents.62.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.62.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = GLI_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				11 = { add_core_of = ROOT }
+				189 = { add_core_of = ROOT }
+				94 = { add_core_of = ROOT }
+				95 = { add_core_of = ROOT }
+				96 = { add_core_of = ROOT }
+				97 = { add_core_of = ROOT }
+				194 = { add_core_of = ROOT }
+				204 = { add_core_of = ROOT }
+				206 = { add_core_of = ROOT }
+				207 = { add_core_of = ROOT }
+				241 = { add_core_of = ROOT }
+				784 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Chile-Argentina
+	id = newformevents.63
+	title = newformevents.63.t
+	desc = newformevents.63.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.63.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = CHG_formable
+			add_stability = 0.2
+			set_capital = 278
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				507 = { add_core_of = ROOT }
+				279 = { add_core_of = ROOT }
+				506 = { add_core_of = ROOT }
+				512 = { add_core_of = ROOT }
+				511 = { add_core_of = ROOT }
+				508 = { add_core_of = ROOT }
+				509 = { add_core_of = ROOT }
+				510 = { add_core_of = ROOT }
+				278 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Assyrian Empire
+	id = newformevents.64
+	title = newformevents.64.t
+	desc = newformevents.64.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.54.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = ASS_formable
+			add_stability = 0.2
+			set_capital = 291
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				291 = { add_core_of = ROOT }
+				675 = { add_core_of = ROOT }
+				676 = { add_core_of = ROOT }
+				553 = { add_core_of = ROOT }
+				554 = { add_core_of = ROOT }
+				677 = { add_core_of = ROOT }
+				680 = { add_core_of = ROOT }
+				656 = { add_core_of = ROOT }
+			454 = { add_core_of = ROOT }
+			455 = { add_core_of = ROOT }
+			344 = { add_core_of = ROOT }
+			350 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Carpathian Union
+	id = newformevents.65
+	title = newformevents.65.t
+	desc = newformevents.65.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.65.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = CAP_formable
+			add_stability = 0.2
+			set_capital = 43
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				43 = { add_core_of = ROOT }
+				154 = { add_core_of = ROOT }
+				155 = { add_core_of = ROOT }
+				76 = { add_core_of = ROOT }
+				82 = { add_core_of = ROOT }
+				83 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				81 = { add_core_of = ROOT }
+				46 = { add_core_of = ROOT }
+				79 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				70 = { add_core_of = ROOT }
+				71 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				664 = { add_core_of = ROOT }
+				45 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
+				109 = { add_core_of = ROOT }
+				103 = { add_core_of = ROOT }
+				77 = { add_core_of = ROOT }
+				78 = { add_core_of = ROOT }
+				80 = { add_core_of = ROOT }
+				88 = { add_core_of = ROOT }
+				89 = { add_core_of = ROOT }
+				45 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Asian Union
+	id = newformevents.66
+	title = newformevents.66.t
+	desc = newformevents.66.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.66.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = ASI_formable
+			add_stability = 0.2
+			set_capital = 605
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				524 = { add_core_of = ROOT }
+				327 = { add_core_of = ROOT }
+				623 = { add_core_of = ROOT }
+				624 = { add_core_of = ROOT }
+				625 = { add_core_of = ROOT }
+				626 = { add_core_of = ROOT }
+				627 = { add_core_of = ROOT }
+				628 = { add_core_of = ROOT }
+				659 = { add_core_of = ROOT }
+				658 = { add_core_of = ROOT }
+				656 = { add_core_of = ROOT }
+				453 = { add_core_of = ROOT }
+				422 = { add_core_of = ROOT }
+				728 = { add_core_of = ROOT }
+				729 = { add_core_of = ROOT }
+				326 = { add_core_of = ROOT }
+				398 = { add_core_of = ROOT }
+				399 = { add_core_of = ROOT }
+				400 = { add_core_of = ROOT }
+				787 = { add_core_of = ROOT }
+				401 = { add_core_of = ROOT }
+				402 = { add_core_of = ROOT }
+				403 = { add_core_of = ROOT }
+				404 = { add_core_of = ROOT }
+				405 = { add_core_of = ROOT }
+				406 = { add_core_of = ROOT }
+				407 = { add_core_of = ROOT }
+				408 = { add_core_of = ROOT }
+				409 = { add_core_of = ROOT }
+				560 = { add_core_of = ROOT }
+				561 = { add_core_of = ROOT }
+				563 = { add_core_of = ROOT }
+				564 = { add_core_of = ROOT }
+				565 = { add_core_of = ROOT }
+				566 = { add_core_of = ROOT }
+				567 = { add_core_of = ROOT }
+				568 = { add_core_of = ROOT }
+				569 = { add_core_of = ROOT }
+				570 = { add_core_of = ROOT }
+				571 = { add_core_of = ROOT }
+				572 = { add_core_of = ROOT }
+				573 = { add_core_of = ROOT }
+				578 = { add_core_of = ROOT }
+				582 = { add_core_of = ROOT }
+				583 = { add_core_of = ROOT }
+				584 = { add_core_of = ROOT }
+				585 = { add_core_of = ROOT }
+				586 = { add_core_of = ROOT }
+				587 = { add_core_of = ROOT }
+				588 = { add_core_of = ROOT }
+				589 = { add_core_of = ROOT }
+				590 = { add_core_of = ROOT }
+				651 = { add_core_of = ROOT }
+				652 = { add_core_of = ROOT }
+				653 = { add_core_of = ROOT }
+				654 = { add_core_of = ROOT }
+				655 = { add_core_of = ROOT }
+				657 = { add_core_of = ROOT }
+				732 = { add_core_of = ROOT }
+				742 = { add_core_of = ROOT }
+				282 = { add_core_of = ROOT }
+				526 = { add_core_of = ROOT }
+				528 = { add_core_of = ROOT }
+				529 = { add_core_of = ROOT }
+				530 = { add_core_of = ROOT }
+				531 = { add_core_of = ROOT }
+				532 = { add_core_of = ROOT }
+				533 = { add_core_of = ROOT }
+				534 = { add_core_of = ROOT }
+				535 = { add_core_of = ROOT }
+				536 = { add_core_of = ROOT }
+				537 = { add_core_of = ROOT }
+				555 = { add_core_of = ROOT }
+				267 = { add_core_of = ROOT }
+				415 = { add_core_of = ROOT }
+				670 = { add_core_of = ROOT }
+				741 = { add_core_of = ROOT }
+				671 = { add_core_of = ROOT }
+				286 = { add_core_of = ROOT }
+				291 = { add_core_of = ROOT }
+				675 = { add_core_of = ROOT }
+				676 = { add_core_of = ROOT }
+				455 = { add_core_of = ROOT }
+				328 = { add_core_of = ROOT }
+				610 = { add_core_of = ROOT }
+				714 = { add_core_of = ROOT }
+				715 = { add_core_of = ROOT }
+				716 = { add_core_of = ROOT }
+				717 = { add_core_of = ROOT }
+				611 = { add_core_of = ROOT }
+				612 = { add_core_of = ROOT }
+				323 = { add_core_of = ROOT }
+				289 = { add_core_of = ROOT }
+				724 = { add_core_of = ROOT }
+				329 = { add_core_of = ROOT }
+				293 = { add_core_of = ROOT }
+				324 = { add_core_of = ROOT }
+				595 = { add_core_of = ROOT }
+				596 = { add_core_of = ROOT }
+				597 = { add_core_of = ROOT }
+				598 = { add_core_of = ROOT }
+				600 = { add_core_of = ROOT }
+				601 = { add_core_of = ROOT }
+				602 = { add_core_of = ROOT }
+				603 = { add_core_of = ROOT }
+				605 = { add_core_of = ROOT }
+				606 = { add_core_of = ROOT }
+				607 = { add_core_of = ROOT }
+				608 = { add_core_of = ROOT }
+				613 = { add_core_of = ROOT }
+				614 = { add_core_of = ROOT }
+				620 = { add_core_of = ROOT }
+				454 = { add_core_of = ROOT }
+				553 = { add_core_of = ROOT }
+				554 = { add_core_of = ROOT }
+				677 = { add_core_of = ROOT }
+				680 = { add_core_of = ROOT }
+				330 = { add_core_of = ROOT }
+				283 = { add_core_of = ROOT }
+				604 = { add_core_of = ROOT }
+				616 = { add_core_of = ROOT }
+				615 = { add_core_of = ROOT }
+				621 = { add_core_of = ROOT }
+				591 = { add_core_of = ROOT }
+				592 = { add_core_of = ROOT }
+				593 = { add_core_of = ROOT }
+				594 = { add_core_of = ROOT }
+				599 = { add_core_of = ROOT }
+				336 = { add_core_of = ROOT }
+				49 = { add_core_of = ROOT }
+				339 = { add_core_of = ROOT }
+				340 = { add_core_of = ROOT }
+				342 = { add_core_of = ROOT }
+				343 = { add_core_of = ROOT }
+				344 = { add_core_of = ROOT }
+				345 = { add_core_of = ROOT }
+				346 = { add_core_of = ROOT }
+				347 = { add_core_of = ROOT }
+				348 = { add_core_of = ROOT }
+				349 = { add_core_of = ROOT }
+				350 = { add_core_of = ROOT }
+				351 = { add_core_of = ROOT }
+				352 = { add_core_of = ROOT }
+				353 = { add_core_of = ROOT }
+				354 = { add_core_of = ROOT }
+				355 = { add_core_of = ROOT }
+				356 = { add_core_of = ROOT }
+				287 = { add_core_of = ROOT }
+				617 = { add_core_of = ROOT }
+				618 = { add_core_of = ROOT }
+				619 = { add_core_of = ROOT }
+				322 = { add_core_of = ROOT }
+				325 = { add_core_of = ROOT }
+				622 = { add_core_of = ROOT }
+				292 = { add_core_of = ROOT }
+				678 = { add_core_of = ROOT }
+				679 = { add_core_of = ROOT }
+				294 = { add_core_of = ROOT }
+				525 = { add_core_of = ROOT }
+				527 = { add_core_of = ROOT }
+				266 = { add_core_of = ROOT }
+				410 = { add_core_of = ROOT }
+				411 = { add_core_of = ROOT }
+				412 = { add_core_of = ROOT }
+				413 = { add_core_of = ROOT }
+				414 = { add_core_of = ROOT }
+				416 = { add_core_of = ROOT }
+				417 = { add_core_of = ROOT }
+				418 = { add_core_of = ROOT }
+				419 = { add_core_of = ROOT }
+				420 = { add_core_of = ROOT }
+				421 = { add_core_of = ROOT }
+				288 = { add_core_of = ROOT }
+				423 = { add_core_of = ROOT }
+				424 = { add_core_of = ROOT }
+				425 = { add_core_of = ROOT }
+				426 = { add_core_of = ROOT }
+				427 = { add_core_of = ROOT }
+				428 = { add_core_of = ROOT }
+				429 = { add_core_of = ROOT }
+				430 = { add_core_of = ROOT }
+				431 = { add_core_of = ROOT }
+				432 = { add_core_of = ROOT }
+				433 = { add_core_of = ROOT }
+				434 = { add_core_of = ROOT }
+				435 = { add_core_of = ROOT }
+				436 = { add_core_of = ROOT }
+				437 = { add_core_of = ROOT }
+				438 = { add_core_of = ROOT }
+				439 = { add_core_of = ROOT }
+				440 = { add_core_of = ROOT }
+				441 = { add_core_of = ROOT }
+				442 = { add_core_of = ROOT }
+				443 = { add_core_of = ROOT }
+				444 = { add_core_of = ROOT }
+				445 = { add_core_of = ROOT }
+				640 = { add_core_of = ROOT }
+				609 = { add_core_of = ROOT }
+				281 = { add_core_of = ROOT }
+			733 = { add_core_of = ROOT }
+			650 = { add_core_of = ROOT }
+			183 = { add_core_of = ROOT }
+			164 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Eurasia
+	id = newformevents.67
+	title = newformevents.67.t
+	desc = newformevents.67.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.67.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = EUA_formable
+			add_stability = 0.2
+			set_capital = 219
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				524 = { add_core_of = ROOT }
+				327 = { add_core_of = ROOT }
+				623 = { add_core_of = ROOT }
+				624 = { add_core_of = ROOT }
+				625 = { add_core_of = ROOT }
+				763 = { add_core_of = ROOT }
+				626 = { add_core_of = ROOT }
+				627 = { add_core_of = ROOT }
+				628 = { add_core_of = ROOT }
+				659 = { add_core_of = ROOT }
+				658 = { add_core_of = ROOT }
+				656 = { add_core_of = ROOT }
+				785 = { add_core_of = ROOT }
+				453 = { add_core_of = ROOT }
+				764 = { add_core_of = ROOT }
+				422 = { add_core_of = ROOT }
+				728 = { add_core_of = ROOT }
+				729 = { add_core_of = ROOT }
+				326 = { add_core_of = ROOT }
+				398 = { add_core_of = ROOT }
+				763 = { add_core_of = ROOT }
+				399 = { add_core_of = ROOT }
+				400 = { add_core_of = ROOT }
+				784 = { add_core_of = ROOT }
+				401 = { add_core_of = ROOT }
+				402 = { add_core_of = ROOT }
+				403 = { add_core_of = ROOT }
+				404 = { add_core_of = ROOT }
+				766 = { add_core_of = ROOT }
+				405 = { add_core_of = ROOT }
+				406 = { add_core_of = ROOT }
+				407 = { add_core_of = ROOT }
+				408 = { add_core_of = ROOT }
+				409 = { add_core_of = ROOT }
+				560 = { add_core_of = ROOT }
+				561 = { add_core_of = ROOT }
+				563 = { add_core_of = ROOT }
+				564 = { add_core_of = ROOT }
+				565 = { add_core_of = ROOT }
+				566 = { add_core_of = ROOT }
+				567 = { add_core_of = ROOT }
+				568 = { add_core_of = ROOT }
+				569 = { add_core_of = ROOT }
+				570 = { add_core_of = ROOT }
+				571 = { add_core_of = ROOT }
+				572 = { add_core_of = ROOT }
+				573 = { add_core_of = ROOT }
+				578 = { add_core_of = ROOT }
+				582 = { add_core_of = ROOT }
+				583 = { add_core_of = ROOT }
+				584 = { add_core_of = ROOT }
+				585 = { add_core_of = ROOT }
+				586 = { add_core_of = ROOT }
+				587 = { add_core_of = ROOT }
+				588 = { add_core_of = ROOT }
+				589 = { add_core_of = ROOT }
+				590 = { add_core_of = ROOT }
+				651 = { add_core_of = ROOT }
+				652 = { add_core_of = ROOT }
+				653 = { add_core_of = ROOT }
+				654 = { add_core_of = ROOT }
+				655 = { add_core_of = ROOT }
+				657 = { add_core_of = ROOT }
+				732 = { add_core_of = ROOT }
+				742 = { add_core_of = ROOT }
+				282 = { add_core_of = ROOT }
+				526 = { add_core_of = ROOT }
+				528 = { add_core_of = ROOT }
+				529 = { add_core_of = ROOT }
+				530 = { add_core_of = ROOT }
+				531 = { add_core_of = ROOT }
+				532 = { add_core_of = ROOT }
+				533 = { add_core_of = ROOT }
+				534 = { add_core_of = ROOT }
+				535 = { add_core_of = ROOT }
+				536 = { add_core_of = ROOT }
+				537 = { add_core_of = ROOT }
+				555 = { add_core_of = ROOT }
+				267 = { add_core_of = ROOT }
+				415 = { add_core_of = ROOT }
+				670 = { add_core_of = ROOT }
+				741 = { add_core_of = ROOT }
+				671 = { add_core_of = ROOT }
+				286 = { add_core_of = ROOT }
+				291 = { add_core_of = ROOT }
+				675 = { add_core_of = ROOT }
+				676 = { add_core_of = ROOT }
+				455 = { add_core_of = ROOT }
+				328 = { add_core_of = ROOT }
+				610 = { add_core_of = ROOT }
+				714 = { add_core_of = ROOT }
+				715 = { add_core_of = ROOT }
+				716 = { add_core_of = ROOT }
+				717 = { add_core_of = ROOT }
+				611 = { add_core_of = ROOT }
+				612 = { add_core_of = ROOT }
+				323 = { add_core_of = ROOT }
+				289 = { add_core_of = ROOT }
+				724 = { add_core_of = ROOT }
+				329 = { add_core_of = ROOT }
+				293 = { add_core_of = ROOT }
+				324 = { add_core_of = ROOT }
+				595 = { add_core_of = ROOT }
+				596 = { add_core_of = ROOT }
+				597 = { add_core_of = ROOT }
+				598 = { add_core_of = ROOT }
+				600 = { add_core_of = ROOT }
+				601 = { add_core_of = ROOT }
+				602 = { add_core_of = ROOT }
+				603 = { add_core_of = ROOT }
+				605 = { add_core_of = ROOT }
+				606 = { add_core_of = ROOT }
+				607 = { add_core_of = ROOT }
+				608 = { add_core_of = ROOT }
+				613 = { add_core_of = ROOT }
+				614 = { add_core_of = ROOT }
+				620 = { add_core_of = ROOT }
+				454 = { add_core_of = ROOT }
+				553 = { add_core_of = ROOT }
+				554 = { add_core_of = ROOT }
+				677 = { add_core_of = ROOT }
+				680 = { add_core_of = ROOT }
+				330 = { add_core_of = ROOT }
+				283 = { add_core_of = ROOT }
+				604 = { add_core_of = ROOT }
+				616 = { add_core_of = ROOT }
+				615 = { add_core_of = ROOT }
+				621 = { add_core_of = ROOT }
+				591 = { add_core_of = ROOT }
+				592 = { add_core_of = ROOT }
+				593 = { add_core_of = ROOT }
+				594 = { add_core_of = ROOT }
+				599 = { add_core_of = ROOT }
+				336 = { add_core_of = ROOT }
+				49 = { add_core_of = ROOT }
+				339 = { add_core_of = ROOT }
+				340 = { add_core_of = ROOT }
+				342 = { add_core_of = ROOT }
+				343 = { add_core_of = ROOT }
+				344 = { add_core_of = ROOT }
+				345 = { add_core_of = ROOT }
+				346 = { add_core_of = ROOT }
+				347 = { add_core_of = ROOT }
+				348 = { add_core_of = ROOT }
+				349 = { add_core_of = ROOT }
+				350 = { add_core_of = ROOT }
+				351 = { add_core_of = ROOT }
+				352 = { add_core_of = ROOT }
+				353 = { add_core_of = ROOT }
+				354 = { add_core_of = ROOT }
+				355 = { add_core_of = ROOT }
+				356 = { add_core_of = ROOT }
+				287 = { add_core_of = ROOT }
+				617 = { add_core_of = ROOT }
+				618 = { add_core_of = ROOT }
+				619 = { add_core_of = ROOT }
+				322 = { add_core_of = ROOT }
+				325 = { add_core_of = ROOT }
+				622 = { add_core_of = ROOT }
+				292 = { add_core_of = ROOT }
+				678 = { add_core_of = ROOT }
+				679 = { add_core_of = ROOT }
+				294 = { add_core_of = ROOT }
+				525 = { add_core_of = ROOT }
+				527 = { add_core_of = ROOT }
+				266 = { add_core_of = ROOT }
+				410 = { add_core_of = ROOT }
+				411 = { add_core_of = ROOT }
+				412 = { add_core_of = ROOT }
+				413 = { add_core_of = ROOT }
+				414 = { add_core_of = ROOT }
+				416 = { add_core_of = ROOT }
+				417 = { add_core_of = ROOT }
+				418 = { add_core_of = ROOT }
+				419 = { add_core_of = ROOT }
+				420 = { add_core_of = ROOT }
+				421 = { add_core_of = ROOT }
+				288 = { add_core_of = ROOT }
+				423 = { add_core_of = ROOT }
+				424 = { add_core_of = ROOT }
+				425 = { add_core_of = ROOT }
+				426 = { add_core_of = ROOT }
+				427 = { add_core_of = ROOT }
+				428 = { add_core_of = ROOT }
+				429 = { add_core_of = ROOT }
+				430 = { add_core_of = ROOT }
+				431 = { add_core_of = ROOT }
+				432 = { add_core_of = ROOT }
+				433 = { add_core_of = ROOT }
+				434 = { add_core_of = ROOT }
+				435 = { add_core_of = ROOT }
+				436 = { add_core_of = ROOT }
+				437 = { add_core_of = ROOT }
+				438 = { add_core_of = ROOT }
+				439 = { add_core_of = ROOT }
+				440 = { add_core_of = ROOT }
+				784 = { add_core_of = ROOT }
+				441 = { add_core_of = ROOT }
+				787 = { add_core_of = ROOT }
+				442 = { add_core_of = ROOT }
+				443 = { add_core_of = ROOT }
+				444 = { add_core_of = ROOT }
+				445 = { add_core_of = ROOT }
+				640 = { add_core_of = ROOT }
+				609 = { add_core_of = ROOT }
+				1 = { add_core_of = ROOT }
+				2 = { add_core_of = ROOT }
+				3 = { add_core_of = ROOT }
+				4 = { add_core_of = ROOT }
+				5 = { add_core_of = ROOT }
+				6 = { add_core_of = ROOT }
+				7 = { add_core_of = ROOT }
+				8 = { add_core_of = ROOT }
+				9 = { add_core_of = ROOT }
+				10 = { add_core_of = ROOT }
+				11 = { add_core_of = ROOT }
+				12 = { add_core_of = ROOT }
+				13 = { add_core_of = ROOT }
+				14 = { add_core_of = ROOT }
+				15 = { add_core_of = ROOT }
+				16 = { add_core_of = ROOT }
+				17 = { add_core_of = ROOT }
+				18 = { add_core_of = ROOT }
+				19 = { add_core_of = ROOT }
+				20 = { add_core_of = ROOT }
+				21 = { add_core_of = ROOT }
+				22 = { add_core_of = ROOT }
+				23 = { add_core_of = ROOT }
+				24 = { add_core_of = ROOT }
+				25 = { add_core_of = ROOT }
+				26 = { add_core_of = ROOT }
+				27 = { add_core_of = ROOT }
+				28 = { add_core_of = ROOT }
+				29 = { add_core_of = ROOT }
+				30 = { add_core_of = ROOT }
+				31 = { add_core_of = ROOT }
+				32 = { add_core_of = ROOT }
+				33 = { add_core_of = ROOT }
+				34 = { add_core_of = ROOT }
+				35 = { add_core_of = ROOT }
+				36 = { add_core_of = ROOT }
+				37 = { add_core_of = ROOT }
+				38 = { add_core_of = ROOT }
+				39 = { add_core_of = ROOT }
+				41 = { add_core_of = ROOT }
+				42 = { add_core_of = ROOT }
+				43 = { add_core_of = ROOT }
+				44 = { add_core_of = ROOT }
+				45 = { add_core_of = ROOT }
+				46 = { add_core_of = ROOT }
+				47 = { add_core_of = ROOT }
+				48 = { add_core_of = ROOT }
+				50 = { add_core_of = ROOT }
+				51 = { add_core_of = ROOT }
+				52 = { add_core_of = ROOT }
+				53 = { add_core_of = ROOT }
+				54 = { add_core_of = ROOT }
+				55 = { add_core_of = ROOT }
+				56 = { add_core_of = ROOT }
+				57 = { add_core_of = ROOT }
+				58 = { add_core_of = ROOT }
+				59 = { add_core_of = ROOT }
+				60 = { add_core_of = ROOT }
+				61 = { add_core_of = ROOT }
+				62 = { add_core_of = ROOT }
+				63 = { add_core_of = ROOT }
+				64 = { add_core_of = ROOT }
+				65 = { add_core_of = ROOT }
+				66 = { add_core_of = ROOT }
+				67 = { add_core_of = ROOT }
+				68 = { add_core_of = ROOT }
+				69 = { add_core_of = ROOT }
+				70 = { add_core_of = ROOT }
+				71 = { add_core_of = ROOT }
+				72 = { add_core_of = ROOT }
+				73 = { add_core_of = ROOT }
+				74 = { add_core_of = ROOT }
+				75 = { add_core_of = ROOT }
+				76 = { add_core_of = ROOT }
+				77 = { add_core_of = ROOT }
+				78 = { add_core_of = ROOT }
+				79 = { add_core_of = ROOT }
+				80 = { add_core_of = ROOT }
+				81 = { add_core_of = ROOT }
+				82 = { add_core_of = ROOT }
+				83 = { add_core_of = ROOT }
+				84 = { add_core_of = ROOT }
+				85 = { add_core_of = ROOT }
+				86 = { add_core_of = ROOT }
+				87 = { add_core_of = ROOT }
+				88 = { add_core_of = ROOT }
+				89 = { add_core_of = ROOT }
+				90 = { add_core_of = ROOT }
+				91 = { add_core_of = ROOT }
+				92 = { add_core_of = ROOT }
+				93 = { add_core_of = ROOT }
+				94 = { add_core_of = ROOT }
+				95 = { add_core_of = ROOT }
+				96 = { add_core_of = ROOT }
+				97 = { add_core_of = ROOT }
+				98 = { add_core_of = ROOT }
+				99 = { add_core_of = ROOT }
+				100 = { add_core_of = ROOT }
+				102 = { add_core_of = ROOT }
+				103 = { add_core_of = ROOT }
+				104 = { add_core_of = ROOT }
+				105 = { add_core_of = ROOT }
+				106 = { add_core_of = ROOT }
+				107 = { add_core_of = ROOT }
+				108 = { add_core_of = ROOT }
+				109 = { add_core_of = ROOT }
+				110 = { add_core_of = ROOT }
+				111 = { add_core_of = ROOT }
+				112 = { add_core_of = ROOT }
+				113 = { add_core_of = ROOT }
+				114 = { add_core_of = ROOT }
+				115 = { add_core_of = ROOT }
+				116 = { add_core_of = ROOT }
+				117 = { add_core_of = ROOT }
+				118 = { add_core_of = ROOT }
+				119 = { add_core_of = ROOT }
+				120 = { add_core_of = ROOT }
+				121 = { add_core_of = ROOT }
+				122 = { add_core_of = ROOT }
+				123 = { add_core_of = ROOT }
+				124 = { add_core_of = ROOT }
+				125 = { add_core_of = ROOT }
+				126 = { add_core_of = ROOT }
+				127 = { add_core_of = ROOT }
+				128 = { add_core_of = ROOT }
+				129 = { add_core_of = ROOT }
+				130 = { add_core_of = ROOT }
+				131 = { add_core_of = ROOT }
+				132 = { add_core_of = ROOT }
+				133 = { add_core_of = ROOT }
+				134 = { add_core_of = ROOT }
+				135 = { add_core_of = ROOT }
+				136 = { add_core_of = ROOT }
+				137 = { add_core_of = ROOT }
+				138 = { add_core_of = ROOT }
+				139 = { add_core_of = ROOT }
+				140 = { add_core_of = ROOT }
+				141 = { add_core_of = ROOT }
+				142 = { add_core_of = ROOT }
+				143 = { add_core_of = ROOT }
+				144 = { add_core_of = ROOT }
+				145 = { add_core_of = ROOT }
+				146 = { add_core_of = ROOT }
+				147 = { add_core_of = ROOT }
+				148 = { add_core_of = ROOT }
+				149 = { add_core_of = ROOT }
+				150 = { add_core_of = ROOT }
+				151 = { add_core_of = ROOT }
+				152 = { add_core_of = ROOT }
+				153 = { add_core_of = ROOT }
+				154 = { add_core_of = ROOT }
+				155 = { add_core_of = ROOT }
+				156 = { add_core_of = ROOT }
+				157 = { add_core_of = ROOT }
+				158 = { add_core_of = ROOT }
+				159 = { add_core_of = ROOT }
+				160 = { add_core_of = ROOT }
+				161 = { add_core_of = ROOT }
+				162 = { add_core_of = ROOT }
+				163 = { add_core_of = ROOT }
+				164 = { add_core_of = ROOT }
+				165 = { add_core_of = ROOT }
+				166 = { add_core_of = ROOT }
+				167 = { add_core_of = ROOT }
+				168 = { add_core_of = ROOT }
+				169 = { add_core_of = ROOT }
+				170 = { add_core_of = ROOT }
+				171 = { add_core_of = ROOT }
+				172 = { add_core_of = ROOT }
+				173 = { add_core_of = ROOT }
+				174 = { add_core_of = ROOT }
+				175 = { add_core_of = ROOT }
+				176 = { add_core_of = ROOT }
+				177 = { add_core_of = ROOT }
+				178 = { add_core_of = ROOT }
+				179 = { add_core_of = ROOT }
+				180 = { add_core_of = ROOT }
+				181 = { add_core_of = ROOT }
+				182 = { add_core_of = ROOT }
+				184 = { add_core_of = ROOT }
+				185 = { add_core_of = ROOT }
+				186 = { add_core_of = ROOT }
+				187 = { add_core_of = ROOT }
+				188 = { add_core_of = ROOT }
+				189 = { add_core_of = ROOT }
+				190 = { add_core_of = ROOT }
+				191 = { add_core_of = ROOT }
+				192 = { add_core_of = ROOT }
+				193 = { add_core_of = ROOT }
+				194 = { add_core_of = ROOT }
+				195 = { add_core_of = ROOT }
+				666 = { add_core_of = ROOT }
+				196 = { add_core_of = ROOT }
+				197 = { add_core_of = ROOT }
+				198 = { add_core_of = ROOT }
+				199 = { add_core_of = ROOT }
+				200 = { add_core_of = ROOT }
+				201 = { add_core_of = ROOT }
+				202 = { add_core_of = ROOT }
+				203 = { add_core_of = ROOT }
+				204 = { add_core_of = ROOT }
+				205 = { add_core_of = ROOT }
+				206 = { add_core_of = ROOT }
+				207 = { add_core_of = ROOT }
+				208 = { add_core_of = ROOT }
+				209 = { add_core_of = ROOT }
+				210 = { add_core_of = ROOT }
+				211 = { add_core_of = ROOT }
+				212 = { add_core_of = ROOT }
+				213 = { add_core_of = ROOT }
+				214 = { add_core_of = ROOT }
+				215 = { add_core_of = ROOT }
+				216 = { add_core_of = ROOT }
+				217 = { add_core_of = ROOT }
+				218 = { add_core_of = ROOT }
+				219 = { add_core_of = ROOT }
+				220 = { add_core_of = ROOT }
+				221 = { add_core_of = ROOT }
+				222 = { add_core_of = ROOT }
+				223 = { add_core_of = ROOT }
+				224 = { add_core_of = ROOT }
+				225 = { add_core_of = ROOT }
+				226 = { add_core_of = ROOT }
+				227 = { add_core_of = ROOT }
+				228 = { add_core_of = ROOT }
+				232 = { add_core_of = ROOT }
+				233 = { add_core_of = ROOT }
+				234 = { add_core_of = ROOT }
+				235 = { add_core_of = ROOT }
+				236 = { add_core_of = ROOT }
+				237 = { add_core_of = ROOT }
+				238 = { add_core_of = ROOT }
+				239 = { add_core_of = ROOT }
+				240 = { add_core_of = ROOT }
+				241 = { add_core_of = ROOT }
+				242 = { add_core_of = ROOT }
+				243 = { add_core_of = ROOT }
+				244 = { add_core_of = ROOT }
+				245 = { add_core_of = ROOT }
+				246 = { add_core_of = ROOT }
+				247 = { add_core_of = ROOT }
+				248 = { add_core_of = ROOT }
+				249 = { add_core_of = ROOT }
+				250 = { add_core_of = ROOT }
+				251 = { add_core_of = ROOT }
+				252 = { add_core_of = ROOT }
+				253 = { add_core_of = ROOT }
+				254 = { add_core_of = ROOT }
+				255 = { add_core_of = ROOT }
+				256 = { add_core_of = ROOT }
+				257 = { add_core_of = ROOT }
+				258 = { add_core_of = ROOT }
+				259 = { add_core_of = ROOT }
+				260 = { add_core_of = ROOT }
+				262 = { add_core_of = ROOT }
+				263 = { add_core_of = ROOT }
+				264 = { add_core_of = ROOT }
+				265 = { add_core_of = ROOT }
+				338 = { add_core_of = ROOT }
+				664 = { add_core_of = ROOT }
+				722 = { add_core_of = ROOT }
+				731 = { add_core_of = ROOT }
+				736 = { add_core_of = ROOT }
+				351 = { add_core_of = ROOT }
+				400 = { add_core_of = ROOT }
+				397 = { add_core_of = ROOT }
+				399 = { add_core_of = ROOT }
+				398 = { add_core_of = ROOT }
+				651 = { add_core_of = ROOT }
+				652 = { add_core_of = ROOT }
+				401 = { add_core_of = ROOT }
+				406 = { add_core_of = ROOT }
+				407 = { add_core_of = ROOT }
+				341 = { add_core_of = ROOT }
+				735 = { add_core_of = ROOT }
+				281 = { add_core_of = ROOT }
+				733 = { add_core_of = ROOT }
+				650 = { add_core_of = ROOT }
+				183 = { add_core_of = ROOT }
+				164 = { add_core_of = ROOT }
+			
+				762 = { add_core_of = ROOT }
+				784 = { add_core_of = ROOT }
+				788 = { add_core_of = ROOT }
+				789 = { add_core_of = ROOT }
+				790 = { add_core_of = ROOT }
+				791 = { add_core_of = ROOT }
+				792 = { add_core_of = ROOT }
+				793 = { add_core_of = ROOT }
+				794 = { add_core_of = ROOT }
+				795 = { add_core_of = ROOT }
+				796 = { add_core_of = ROOT }
+				797 = { add_core_of = ROOT }
+				798 = { add_core_of = ROOT }
+				799 = { add_core_of = ROOT }
+				800 = { add_core_of = ROOT }
+				801 = { add_core_of = ROOT }
+				802 = { add_core_of = ROOT }
+				
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Great Britain
+	id = newformevents.68
+	title = newformevents.68.t
+	desc = newformevents.68.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.68.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = BRI_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				113 = { add_core_of = ROOT }
+				134 = { add_core_of = ROOT }
+				135 = { add_core_of = ROOT }
+				119 = { add_core_of = ROOT }
+				120 = { add_core_of = ROOT }
+				121 = { add_core_of = ROOT }
+				133 = { add_core_of = ROOT }
+				136 = { add_core_of = ROOT }
+				131 = { add_core_of = ROOT }
+				130 = { add_core_of = ROOT }
+				132 = { add_core_of = ROOT }
+				128 = { add_core_of = ROOT }
+				122 = { add_core_of = ROOT }
+				129 = { add_core_of = ROOT }
+				125 = { add_core_of = ROOT }
+				338 = { add_core_of = ROOT }
+				123 = { add_core_of = ROOT }
+				127 = { add_core_of = ROOT }
+				126 = { add_core_of = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Greater Russia
+	id = newformevents.69
+	title = newformevents.69.t
+	desc = newformevents.69.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.69.a
+
+		ai_chance = { factor = 4000 }
+		
+		
+		set_cosmetic_tag = RUE_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+				40 = { add_core_of = ROOT }
+				137 = { add_core_of = ROOT }
+				192 = { add_core_of = ROOT }
+				193 = { add_core_of = ROOT }
+				194 = { add_core_of = ROOT }
+				195 = { add_core_of = ROOT }
+				196 = { add_core_of = ROOT }
+				197	= { add_core_of = ROOT }
+				766 = { add_core_of = ROOT }
+				198 = { add_core_of = ROOT }
+				199 = { add_core_of = ROOT }
+				200 = { add_core_of = ROOT }
+				201 = { add_core_of = ROOT }
+				202 = { add_core_of = ROOT }
+				203 = { add_core_of = ROOT }
+				204 = { add_core_of = ROOT }
+				205 = { add_core_of = ROOT }
+				206 = { add_core_of = ROOT }
+				207 = { add_core_of = ROOT }
+				208 = { add_core_of = ROOT }
+				209 = { add_core_of = ROOT }
+				210 = { add_core_of = ROOT }
+				217 = { add_core_of = ROOT }
+				218 = { add_core_of = ROOT }
+				219 = { add_core_of = ROOT }
+				220 = { add_core_of = ROOT }
+				221 = { add_core_of = ROOT }
+				222 = { add_core_of = ROOT }
+				223 = { add_core_of = ROOT }
+				224 = { add_core_of = ROOT }
+				225 = { add_core_of = ROOT }
+				226 = { add_core_of = ROOT }
+				227 = { add_core_of = ROOT }
+				228 = { add_core_of = ROOT }
+				232 = { add_core_of = ROOT }
+				233 = { add_core_of = ROOT }
+				234 = { add_core_of = ROOT }
+				235 = { add_core_of = ROOT }
+				236 = { add_core_of = ROOT }
+				237 = { add_core_of = ROOT }
+				238 = { add_core_of = ROOT }
+				239 = { add_core_of = ROOT }
+				240 = { add_core_of = ROOT }
+				241 = { add_core_of = ROOT }
+				242 = { add_core_of = ROOT }
+				243 = { add_core_of = ROOT }
+				244 = { add_core_of = ROOT }
+				245 = { add_core_of = ROOT }
+				246 = { add_core_of = ROOT }
+				247 = { add_core_of = ROOT }
+				248 = { add_core_of = ROOT }
+				249 = { add_core_of = ROOT }
+				250 = { add_core_of = ROOT }
+				251 = { add_core_of = ROOT }
+				252 = { add_core_of = ROOT }
+				253 = { add_core_of = ROOT }
+				254 = { add_core_of = ROOT }
+				255 = { add_core_of = ROOT }
+				256 = { add_core_of = ROOT }
+				257 = { add_core_of = ROOT }
+				258 = { add_core_of = ROOT }
+				259 = { add_core_of = ROOT }
+				260 = { add_core_of = ROOT }
+				263 = { add_core_of = ROOT }
+				264 = { add_core_of = ROOT }
+				265 = { add_core_of = ROOT }
+				351 = { add_core_of = ROOT }
+				398 = { add_core_of = ROOT }
+				399 = { add_core_of = ROOT }
+				400 = { add_core_of = ROOT }
+				401 = { add_core_of = ROOT }
+				402 = { add_core_of = ROOT }
+				403 = { add_core_of = ROOT }
+				404 = { add_core_of = ROOT }
+				405 = { add_core_of = ROOT }
+				406 = { add_core_of = ROOT }
+				407 = { add_core_of = ROOT }
+				408 = { add_core_of = ROOT }
+				409 = { add_core_of = ROOT }
+				560 = { add_core_of = ROOT }
+				561 = { add_core_of = ROOT }
+				563 = { add_core_of = ROOT }
+				564 = { add_core_of = ROOT }
+				565 = { add_core_of = ROOT }
+				566 = { add_core_of = ROOT }
+				567 = { add_core_of = ROOT }
+				568 = { add_core_of = ROOT }
+				569 = { add_core_of = ROOT }
+				570 = { add_core_of = ROOT }
+				571 = { add_core_of = ROOT }
+				572 = { add_core_of = ROOT }
+				573 = { add_core_of = ROOT }
+				578 = { add_core_of = ROOT }
+				582 = { add_core_of = ROOT }
+				583 = { add_core_of = ROOT }
+				584 = { add_core_of = ROOT }
+				585 = { add_core_of = ROOT }
+				586 = { add_core_of = ROOT }
+				587 = { add_core_of = ROOT }
+				588 = { add_core_of = ROOT }
+				589 = { add_core_of = ROOT }
+				590 = { add_core_of = ROOT }
+				651 = { add_core_of = ROOT }
+				652 = { add_core_of = ROOT }
+				653 = { add_core_of = ROOT }
+				654 = { add_core_of = ROOT }
+				655 = { add_core_of = ROOT }
+				657 = { add_core_of = ROOT }
+				732 = { add_core_of = ROOT }
+				742 = { add_core_of = ROOT }
+				11 = { add_core_of = ROOT }
+				189 = { add_core_of = ROOT }
+				12 = { add_core_of = ROOT }
+				190 = { add_core_of = ROOT }
+				13 = { add_core_of = ROOT }
+				191 = { add_core_of = ROOT }
+				329 = { add_core_of = ROOT }
+				111 = { add_core_of = ROOT }
+				145 = { add_core_of = ROOT }
+				146 = { add_core_of = ROOT }
+				147 = { add_core_of = ROOT }
+				148 = { add_core_of = ROOT }
+				149 = { add_core_of = ROOT }
+				150 = { add_core_of = ROOT }
+				722 = { add_core_of = ROOT }
+				93 = { add_core_of = ROOT }
+				94 = { add_core_of = ROOT }
+				95 = { add_core_of = ROOT }
+				96 = { add_core_of = ROOT }
+				97 = { add_core_of = ROOT }
+				98 = { add_core_of = ROOT }
+				87 = { add_core_of = ROOT }
+				90 = { add_core_of = ROOT }
+				92 = { add_core_of = ROOT }
+				10 = { add_core_of = ROOT }
+				88 = { add_core_of = ROOT }
+				89 = { add_core_of = ROOT }
+				91 = { add_core_of = ROOT }
+				78 = { add_core_of = ROOT }
+				80 = { add_core_of = ROOT }
+				537 = { add_core_of = ROOT }
+			463 = { add_core_of = ROOT }
+			341 = { add_claim_by = ROOT }
+			287 = { add_claim_by = ROOT }
+			617 = { add_claim_by = ROOT }
+			618 = { add_claim_by = ROOT }
+			619 = { add_claim_by = ROOT }
+			759 = { add_claim_by = ROOT }
+			760 = { add_claim_by = ROOT }
+			330 = { add_claim_by = ROOT }
+			328 = { add_claim_by = ROOT }
+			610 = { add_claim_by = ROOT }
+			714 = { add_claim_by = ROOT }
+			715 = { add_claim_by = ROOT }
+			716 = { add_claim_by = ROOT }
+			717 = { add_claim_by = ROOT }
+			761 = { add_claim_by = ROOT }
+			611 = { add_claim_by = ROOT }
+			612 = { add_claim_by = ROOT }
+			745 = { add_claim_by = ROOT }
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Alamannia
+	id = newformevents.70
+	title = newformevents.70.t
+	desc = newformevents.70.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.70.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = SWI_alamannia
+		add_stability = 0.2
+		custom_effect_tooltip = core_land
+			
+			hidden_effect = {
+			sound_effect = complete_focus  
+			set_global_flag = SWI_formed_alamannia
+			add_state_core = 153
+			add_state_core = 28
+			add_state_core = 42
+			add_state_core = 50
+			add_state_core = 52
+			add_state_core = 53
+			add_state_core = 54
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # British Imperial Federation
+	id = newformevents.71
+	title = newformevents.71.t
+	desc = newformevents.71.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+option = {
+name = newformevents.71.a
+
+ai_chance = { factor = 4000 }
+
+add_stability = 0.2
+custom_effect_tooltip = core_land
+set_cosmetic_tag = ENG_imperial_federation_unified
+	
+hidden_effect = {
+sound_effect = complete_focus  
+news_event = { id = mtg_news.9 days = 1 }
+add_state_core = 332
+add_state_core = 276
+add_state_core = 464
+add_state_core = 465
+add_state_core = 466
+add_state_core = 467
+add_state_core = 468
+add_state_core = 469
+add_state_core = 470
+add_state_core = 471
+add_state_core = 472
+add_state_core = 473
+add_state_core = 682
+add_state_core = 683
+add_state_core = 285
+add_state_core = 517
+add_state_core = 519
+add_state_core = 520
+add_state_core = 521
+add_state_core = 522
+add_state_core = 523
+add_state_core = 674
+add_state_core = 737
+add_state_core = 284
+add_state_core = 723
+}
+}
+}
+	
+	country_event = { # Franco British Union
+	id = newformevents.72
+	title = newformevents.72.t
+	desc = newformevents.72.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.72.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = FRA_UK
+add_stability = 0.2
+custom_effect_tooltip = core_land
+			
+			hidden_effect = {
+			sound_effect = complete_focus  
+			
+add_state_core = 120
+add_state_core = 121
+add_state_core = 133
+add_state_core = 136
+add_state_core = 131
+add_state_core = 130
+add_state_core = 132
+add_state_core = 128
+add_state_core = 122
+add_state_core = 129
+add_state_core = 125
+add_state_core = 338
+add_state_core = 123
+add_state_core = 127
+add_state_core = 126
+add_state_core = 131
+			
+add_state_core = 14
+add_state_core = 15
+add_state_core = 16
+add_state_core = 17
+add_state_core = 18
+add_state_core = 19
+add_state_core = 20
+add_state_core = 21
+add_state_core = 22
+add_state_core = 23
+add_state_core = 24
+add_state_core = 25
+add_state_core = 26
+add_state_core = 27
+add_state_core = 29
+add_state_core = 30
+add_state_core = 31
+add_state_core = 32
+add_state_core = 33
+add_state_core = 785
+add_state_core = 793
+add_state_core = 1
+add_state_core = 28
+			
+
+			}
+		
+		
+		
+ 
+			}
+
+	}
+	
+	country_event = { # French Empire
+	id = newformevents.73
+	title = newformevents.73.t
+	desc = newformevents.73.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.73.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = FRA_EMPIRE
+		add_stability = 0.2
+		custom_effect_tooltip = core_land
+			
+			hidden_effect = {
+			sound_effect = complete_focus  
+			
+add_state_core = 165
+add_state_core = 798
+add_state_core = 799
+add_state_core = 158
+add_state_core = 162
+
+add_state_core = 8
+add_state_core = 789
+add_state_core = 34
+add_state_core = 35
+add_state_core = 36
+add_state_core = 6
+add_state_core = 7
+add_state_core = 794
+add_state_core = 795
+
+add_state_core = 797
+add_state_core = 42
+add_state_core = 51
+add_state_core = 56
+add_state_core = 58
+add_state_core = 59
+			
+add_state_core = 14
+add_state_core = 15
+add_state_core = 16
+add_state_core = 17
+add_state_core = 18
+add_state_core = 19
+add_state_core = 20
+add_state_core = 21
+add_state_core = 22
+add_state_core = 23
+add_state_core = 24
+add_state_core = 25
+add_state_core = 26
+add_state_core = 27
+add_state_core = 29
+add_state_core = 30
+add_state_core = 31
+add_state_core = 32
+add_state_core = 33
+add_state_core = 785
+add_state_core = 793
+add_state_core = 1
+add_state_core = 28
+
+add_state_core = 2
+add_state_core = 736
+add_state_core = 791
+add_state_core = 103
+add_state_core = 163
+			
+
+			}
+		
+ 
+			}
+
+	}
+	
+	country_event = { # German Empire
+	id = newformevents.74
+	title = newformevents.74.t
+	desc = newformevents.74.d # 
+	picture = GFX_report_event_german_empire
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.74.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = GER_german_empire
+		add_stability = 0.2
+		custom_effect_tooltip = core_land
+			
+			hidden_effect = {
+			sound_effect = complete_focus  
+			
+			set_capital = 64
+			set_province_name = { id = 6558 name = "Posen"}
+			set_province_name = { id = 9503 name = "Straßburg"}
+			set_province_name = { id = 678 name = "Mülhausen"}
+				 8 = { add_core_of = ROOT }
+				 5 = { add_core_of = ROOT }
+				 42 = { add_core_of = ROOT }
+				 50 = { add_core_of = ROOT }
+				 51 = { add_core_of = ROOT }
+				 52 = { add_core_of = ROOT }
+				 53 = { add_core_of = ROOT }
+				 54 = { add_core_of = ROOT }
+				 55 = { add_core_of = ROOT }
+				 56 = { add_core_of = ROOT }
+				 57 = { add_core_of = ROOT }
+				 58 = { add_core_of = ROOT }
+				 59 = { add_core_of = ROOT }
+				 60 = { add_core_of = ROOT }
+				 61 = { add_core_of = ROOT }
+				 62 = { add_core_of = ROOT }
+				 63 = { add_core_of = ROOT }
+				 64 = { add_core_of = ROOT }
+				 65 = { add_core_of = ROOT }
+				 66 = { add_core_of = ROOT }
+				 67 = { add_core_of = ROOT }
+				 68 = { add_core_of = ROOT }
+				 28 = { add_core_of = ROOT }
+				 763 = { add_core_of = ROOT }
+				 797 = { add_core_of = ROOT }
+				 
+				 188 = { add_core_of = ROOT }
+				 762 = { add_core_of = ROOT }
+				 788 = { add_core_of = ROOT }
+				 789 = { add_core_of = ROOT }
+				 85 = { add_core_of = ROOT }
+				 86 = { add_core_of = ROOT }
+
+			
+
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Islamic Caliphate
+	id = newformevents.75
+	title = newformevents.75.t
+	desc = newformevents.75.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.75.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = ISS_formable
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+			add_state_core = 183
+add_state_core = 410
+add_state_core = 414
+add_state_core = 416
+add_state_core = 412
+add_state_core = 418
+add_state_core = 411
+add_state_core = 419
+add_state_core = 421
+add_state_core = 413
+
+add_state_core = 417
+add_state_core = 420
+add_state_core = 266
+
+add_state_core = 584
+add_state_core = 229
+add_state_core = 230
+add_state_core = 232
+
+add_state_core = 675
+add_state_core = 676
+add_state_core = 291
+add_state_core = 656
+
+add_state_core = 350
+add_state_core = 353
+add_state_core = 354
+add_state_core = 349
+add_state_core = 344
+add_state_core = 352
+
+add_state_core = 677
+add_state_core = 680
+add_state_core = 553
+add_state_core = 554
+
+add_state_core = 453
+add_state_core = 454
+add_state_core = 455
+
+add_state_core = 292
+add_state_core = 678
+add_state_core = 679
+add_state_core = 658
+add_state_core = 659
+add_state_core = 765
+add_state_core = 293
+add_state_core = 294
+
+add_state_core = 446
+add_state_core = 447
+add_state_core = 452
+
+add_state_core = 448
+add_state_core = 449
+add_state_core = 450
+add_state_core = 451
+add_state_core = 661
+add_state_core = 662
+add_state_core = 663
+
+add_state_core = 290
+add_state_core = 461
+add_state_core = 462
+
+add_state_core = 458
+add_state_core = 459
+add_state_core = 460
+add_state_core = 513
+add_state_core = 665
+
+add_state_core = 112
+add_state_core = 179
+add_state_core = 181
+
+add_state_core = 118
+
+add_state_core = 169
+add_state_core = 170
+add_state_core = 176
+add_state_core = 41
+add_state_core = 175
+add_state_core = 173
+add_state_core = 165
+add_state_core = 166
+add_state_core = 167
+add_state_core = 168
+			}
+		
+ 
+			}
+
+	}
+	
+	country_event = { # Mutapa
+	id = newformevents.76
+	title = newformevents.76.t
+	desc = newformevents.76.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.76.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = MUT_UNIFIED
+		add_stability = 0.2
+		custom_effect_tooltip = core_land
+			
+			hidden_effect = { sound_effect = complete_focus 
+			541 = { add_core_of = ROOT }
+			681 = { add_core_of = ROOT }
+			719 = { add_core_of = ROOT }
+			275 = { add_core_of = ROOT }
+			542 = { add_core_of = ROOT }
+			545 = { add_core_of = ROOT }
+			544 = { add_core_of = ROOT }
+				news_event = { id = wtt_news.63 hours = 6 }
+				set_global_flag = form_mutapa_flag
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Nordic Union
+	id = newformevents.77
+	title = newformevents.77.t
+	desc = newformevents.77.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.77.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = NDC_UNIFIED
+		add_stability = 0.2
+		custom_effect_tooltip = core_land
+		
+			# Norway
+			custom_effect_tooltip = form_country_norway_coring_states_tt
+			hidden_effect = {
+				110 = { add_core_of = ROOT }
+				142 = { add_core_of = ROOT }
+				143 = { add_core_of = ROOT }
+				144 = { add_core_of = ROOT }
+			}
+			# Sweden
+			custom_effect_tooltip = form_country_sweden_coring_states_tt
+			hidden_effect = {
+				124 = { add_core_of = ROOT }
+				138 = { add_core_of = ROOT }
+				139 = { add_core_of = ROOT }
+				140 = { add_core_of = ROOT }
+				141 = { add_core_of = ROOT }
+				38 = { add_core_of = ROOT }
+				666 = { add_core_of = ROOT }
+			}
+			# Denmark
+			custom_effect_tooltip = form_country_denmark_coring_states_tt
+			hidden_effect = {
+				37 = { add_core_of = ROOT }
+				99 = { add_core_of = ROOT }
+				100 = { add_core_of = ROOT }
+				101 = { add_core_of = ROOT }
+				337 = { add_core_of = ROOT }
+			}
+			# Finland
+			custom_effect_tooltip = form_country_finland_coring_states_tt
+			hidden_effect = {
+				111 = { add_core_of = ROOT }
+				145 = { add_core_of = ROOT }
+				148 = { add_core_of = ROOT }
+				149 = { add_core_of = ROOT }
+				150 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				sound_effect = complete_focus 
+				news_event = { id = wtt_news.54 hours = 6 }
+				set_global_flag = form_nordic_league_flag
+			}
+		
+ 
+			}
+
+	}
+	
+	country_event = { # Ratanoskin Empire
+	id = newformevents.78
+	title = newformevents.78.t
+	desc = newformevents.78.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.78.a
+
+		ai_chance = { factor = 4000 }
+		
+		add_stability = 0.2
+		custom_effect_tooltip = core_land
+		set_cosmetic_tag = RAT_UNIFIED
+			
+			hidden_effect = {
+			sound_effect = complete_focus 
+			741 = { add_core_of = ROOT }
+			670 = { add_core_of = ROOT }
+				news_event = { id = wtt_news.69 hours = 6 }
+				set_global_flag = form_rattanakosin_kingdom_flag
+			}
+ 
+			}
+
+	}
+	
+	country_event = { # Reform Czechoslovakia
+	id = newformevents.79
+	title = newformevents.79.t
+	desc = newformevents.79.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.79.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = CZE_reunited
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  }
+9 = { add_core_of = ROOT }
+69 = { add_core_of = ROOT }
+70 = { add_core_of = ROOT }
+71 = { add_core_of = ROOT }
+72 = { add_core_of = ROOT }
+74 = { add_core_of = ROOT }
+75 = { add_core_of = ROOT }
+664 = { add_core_of = ROOT }
+
+ 
+			}
+
+	}
+	
+	country_event = { # Reform Germany
+	id = newformevents.80
+	title = newformevents.80.t
+	desc = newformevents.80.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.80.a
+
+		ai_chance = { factor = 4000 }
+		
+			set_cosmetic_tag = GER_reunited
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  }
+		
+42 = { add_core_of = ROOT }
+50 = { add_core_of = ROOT }
+51 = { add_core_of = ROOT }
+52 = { add_core_of = ROOT }
+53 = { add_core_of = ROOT }
+54 = { add_core_of = ROOT }
+55 = { add_core_of = ROOT }
+56 = { add_core_of = ROOT }
+57 = { add_core_of = ROOT }
+58 = { add_core_of = ROOT }
+59 = { add_core_of = ROOT }
+60 = { add_core_of = ROOT }
+61 = { add_core_of = ROOT }
+62 = { add_core_of = ROOT }
+64 = { add_core_of = ROOT }
+65 = { add_core_of = ROOT }
+797 = { add_core_of = ROOT }
+
+ 
+			}
+
+	}
+	
+	country_event = { # Reform Soviet Union
+	id = newformevents.81
+	title = newformevents.81.t
+	desc = newformevents.81.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.81.a
+
+		ai_chance = { factor = 4000 }
+		
+			set_cosmetic_tag = SOV_reunited
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  }
+		
+40 = { add_core_of = ROOT }
+137 = { add_core_of = ROOT }
+192 = { add_core_of = ROOT }
+193 = { add_core_of = ROOT }
+194 = { add_core_of = ROOT }
+195 = { add_core_of = ROOT }
+196 = { add_core_of = ROOT }
+197 = { add_core_of = ROOT }
+198 = { add_core_of = ROOT }
+199 = { add_core_of = ROOT }
+200 = { add_core_of = ROOT }
+201 = { add_core_of = ROOT }
+202 = { add_core_of = ROOT }
+203 = { add_core_of = ROOT }
+204 = { add_core_of = ROOT }
+205 = { add_core_of = ROOT }
+206 = { add_core_of = ROOT }
+207 = { add_core_of = ROOT }
+208 = { add_core_of = ROOT }
+209 = { add_core_of = ROOT }
+210 = { add_core_of = ROOT }
+213 = { add_core_of = ROOT }
+214 = { add_core_of = ROOT }
+215 = { add_core_of = ROOT }
+216 = { add_core_of = ROOT }
+217 = { add_core_of = ROOT }
+218 = { add_core_of = ROOT }
+219 = { add_core_of = ROOT }
+220 = { add_core_of = ROOT }
+221 = { add_core_of = ROOT }
+222 = { add_core_of = ROOT }
+223 = { add_core_of = ROOT }
+224 = { add_core_of = ROOT }
+225 = { add_core_of = ROOT }
+226 = { add_core_of = ROOT }
+227 = { add_core_of = ROOT }
+228 = { add_core_of = ROOT }
+229 = { add_core_of = ROOT }
+230 = { add_core_of = ROOT }
+231 = { add_core_of = ROOT }
+232 = { add_core_of = ROOT }
+233 = { add_core_of = ROOT }
+234 = { add_core_of = ROOT }
+235 = { add_core_of = ROOT }
+236 = { add_core_of = ROOT }
+237 = { add_core_of = ROOT }
+238 = { add_core_of = ROOT }
+239 = { add_core_of = ROOT }
+240 = { add_core_of = ROOT }
+241 = { add_core_of = ROOT }
+242 = { add_core_of = ROOT }
+243 = { add_core_of = ROOT }
+244 = { add_core_of = ROOT }
+245 = { add_core_of = ROOT }
+246 = { add_core_of = ROOT }
+247 = { add_core_of = ROOT }
+248 = { add_core_of = ROOT }
+249 = { add_core_of = ROOT }
+250 = { add_core_of = ROOT }
+251 = { add_core_of = ROOT }
+252 = { add_core_of = ROOT }
+253 = { add_core_of = ROOT }
+254 = { add_core_of = ROOT }
+255 = { add_core_of = ROOT }
+256 = { add_core_of = ROOT }
+257 = { add_core_of = ROOT }
+258 = { add_core_of = ROOT }
+259 = { add_core_of = ROOT }
+260 = { add_core_of = ROOT }
+262 = { add_core_of = ROOT }
+263 = { add_core_of = ROOT }
+264 = { add_core_of = ROOT }
+265 = { add_core_of = ROOT }
+351 = { add_core_of = ROOT }
+397 = { add_core_of = ROOT }
+398 = { add_core_of = ROOT }
+399 = { add_core_of = ROOT }
+400 = { add_core_of = ROOT }
+401 = { add_core_of = ROOT }
+402 = { add_core_of = ROOT }
+403 = { add_core_of = ROOT }
+404 = { add_core_of = ROOT }
+405 = { add_core_of = ROOT }
+406 = { add_core_of = ROOT }
+407 = { add_core_of = ROOT }
+408 = { add_core_of = ROOT }
+409 = { add_core_of = ROOT }
+516 = { add_core_of = ROOT }
+560 = { add_core_of = ROOT }
+561 = { add_core_of = ROOT }
+562 = { add_core_of = ROOT }
+563 = { add_core_of = ROOT }
+564 = { add_core_of = ROOT }
+565 = { add_core_of = ROOT }
+566 = { add_core_of = ROOT }
+567 = { add_core_of = ROOT }
+568 = { add_core_of = ROOT }
+569 = { add_core_of = ROOT }
+570 = { add_core_of = ROOT }
+571 = { add_core_of = ROOT }
+572 = { add_core_of = ROOT }
+573 = { add_core_of = ROOT }
+574 = { add_core_of = ROOT }
+575 = { add_core_of = ROOT }
+576 = { add_core_of = ROOT }
+577 = { add_core_of = ROOT }
+578 = { add_core_of = ROOT }
+579 = { add_core_of = ROOT }
+580 = { add_core_of = ROOT }
+581 = { add_core_of = ROOT }
+582 = { add_core_of = ROOT }
+583 = { add_core_of = ROOT }
+584 = { add_core_of = ROOT }
+585 = { add_core_of = ROOT }
+586 = { add_core_of = ROOT }
+587 = { add_core_of = ROOT }
+588 = { add_core_of = ROOT }
+589 = { add_core_of = ROOT }
+590 = { add_core_of = ROOT }
+637 = { add_core_of = ROOT }
+644 = { add_core_of = ROOT }
+651 = { add_core_of = ROOT }
+652 = { add_core_of = ROOT }
+653 = { add_core_of = ROOT }
+654 = { add_core_of = ROOT }
+655 = { add_core_of = ROOT }
+657 = { add_core_of = ROOT }
+732 = { add_core_of = ROOT }
+742 = { add_core_of = ROOT }
+
+12 = { add_core_of = ROOT }
+190 = { add_core_of = ROOT }
+11 = { add_core_of = ROOT }
+188 = { add_core_of = ROOT }
+189 = { add_core_of = ROOT }
+13 = { add_core_of = ROOT }
+191 = { add_core_of = ROOT }
+
+146 = { add_core_of = ROOT }
+147 = { add_core_of = ROOT }
+
+763 = { add_core_of = ROOT }
+
+78 = { add_core_of = ROOT }
+80 = { add_core_of = ROOT }
+73 = { add_core_of = ROOT }
+
+784 = { add_core_of = ROOT }
+
+89 = { add_core_of = ROOT }
+91 = { add_core_of = ROOT }
+93 = { add_core_of = ROOT }
+94 = { add_core_of = ROOT }
+95 = { add_core_of = ROOT }
+96 = { add_core_of = ROOT }
+
+537 = { add_core_of = ROOT }
+555 = { add_core_of = ROOT }
+
+ 
+			}
+
+	}
+	
+	country_event = { # Reform Yugoslavia
+	id = newformevents.82
+	title = newformevents.82.t
+	desc = newformevents.82.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.82.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = YUG_reunited
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  }
+		
+45 = { add_core_of = ROOT }
+102 = { add_core_of = ROOT }
+103 = { add_core_of = ROOT }
+104 = { add_core_of = ROOT }
+105 = { add_core_of = ROOT }
+106 = { add_core_of = ROOT }
+107 = { add_core_of = ROOT }
+108 = { add_core_of = ROOT }
+109 = { add_core_of = ROOT }
+791 = { add_core_of = ROOT }
+792 = { add_core_of = ROOT }
+736 = { add_core_of = ROOT }
+163 = { add_core_of = ROOT }
+796 = { add_core_of = ROOT }
+ 
+			}
+
+	}
+	
+	country_event = { # Reform Great Britain
+	id = newformevents.83
+	title = newformevents.83.t
+	desc = newformevents.83.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.83.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = ENG_reunited
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  }
+add_state_core = 120
+add_state_core = 121
+add_state_core = 133
+add_state_core = 136
+add_state_core = 130
+add_state_core = 132
+add_state_core = 128
+add_state_core = 122
+add_state_core = 129
+add_state_core = 125
+add_state_core = 338
+add_state_core = 123
+add_state_core = 127
+add_state_core = 126
+add_state_core = 131
+
+add_state_core = 119
+			}
+
+	}
+	
+	country_event = { # Reform Korea
+	id = newformevents.84
+	title = newformevents.84.t
+	desc = newformevents.84.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.84.a
+
+		ai_chance = { factor = 4000 }
+		
+			set_cosmetic_tag = KOR_reunited
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  }
+		525 = { add_core_of = ROOT }
+		527 = { add_core_of = ROOT }
+ 
+			}
+
+	}
+	
+	country_event = { # Western Roman Empire
+	id = newformevents.85
+	title = newformevents.85.t
+	desc = newformevents.85.d # 
+	picture = GFX_report_event_generic_formable_nation
+
+	is_triggered_only = yes
+
+	option = {
+		name = newformevents.85.a
+
+		ai_chance = { factor = 4000 }
+		
+		set_cosmetic_tag = SPQR_UNIFIED
+			add_stability = 0.2
+			custom_effect_tooltip = core_land
+			hidden_effect = { sound_effect = complete_focus  
+
+add_state_core = 131
+add_state_core = 130
+add_state_core = 132
+add_state_core = 128
+add_state_core = 122
+add_state_core = 129
+add_state_core = 125
+add_state_core = 338
+add_state_core = 123
+add_state_core = 127
+add_state_core = 126
+
+add_state_core = 14
+add_state_core = 15
+add_state_core = 16
+add_state_core = 17
+add_state_core = 18
+add_state_core = 19
+add_state_core = 20
+add_state_core = 21
+add_state_core = 22
+add_state_core = 23
+add_state_core = 24
+add_state_core = 25
+add_state_core = 26
+add_state_core = 27
+add_state_core = 29
+add_state_core = 30
+add_state_core = 31
+add_state_core = 32
+add_state_core = 33
+add_state_core = 785
+add_state_core = 793
+add_state_core = 28
+add_state_core = 735
+
+add_state_core = 1
+114 = { add_core_of = ROOT }
+
+add_state_core = 6
+add_state_core = 34
+add_state_core = 8
+add_state_core = 42
+add_state_core = 35
+
+add_state_core = 112
+add_state_core = 179
+add_state_core = 180
+add_state_core = 181
+
+45 = { add_core_of = ROOT }
+102 = { add_core_of = ROOT }
+103 = { add_core_of = ROOT }
+104 = { add_core_of = ROOT }
+109 = { add_core_of = ROOT }
+791 = { add_core_of = ROOT }
+792 = { add_core_of = ROOT }
+736 = { add_core_of = ROOT }
+163 = { add_core_of = ROOT }
+
+2 = { add_core_of = ROOT }
+115 = { add_core_of = ROOT }
+117 = { add_core_of = ROOT }
+156 = { add_core_of = ROOT }
+158 = { add_core_of = ROOT }
+159 = { add_core_of = ROOT }
+160 = { add_core_of = ROOT }
+448 = { add_core_of = ROOT }
+162 = { add_core_of = ROOT }
+451 = { add_core_of = ROOT }
+
+161 = { add_core_of = ROOT }
+450 = { add_core_of = ROOT }
+157 = { add_core_of = ROOT }
+39 = { add_core_of = ROOT }
+
+41 = { add_core_of = ROOT }
+165 = { add_core_of = ROOT }
+169 = { add_core_of = ROOT }
+176 = { add_core_of = ROOT }
+167 = { add_core_of = ROOT }
+171 = { add_core_of = ROOT }
+172 = { add_core_of = ROOT }
+166 = { add_core_of = ROOT }
+168 = { add_core_of = ROOT }
+173 = { add_core_of = ROOT }
+174 = { add_core_of = ROOT }
+170 = { add_core_of = ROOT }
+175 = { add_core_of = ROOT }
+
+
+461 = { add_core_of = ROOT }
+459 = { add_core_of = ROOT }
+460 = { add_core_of = ROOT }
+458 = { add_core_of = ROOT }
+665 = { add_core_of = ROOT }
+
+add_state_core = 153
+add_state_core = 152
+add_state_core = 4
+add_state_core = 3
+add_state_core = 151
+
+add_state_core = 154
+add_state_core = 43
+
+add_state_core = 155
+
+add_state_core = 118
+add_state_core = 116
+
+290 = { add_core_of = ROOT }
+177 = { add_core_of = ROOT }
+				
+789 = { add_core_of = ROOT }
+790 = { add_core_of = ROOT }
+791 = { add_core_of = ROOT }
+792 = { add_core_of = ROOT }
+793 = { add_core_of = ROOT }
+794 = { add_core_of = ROOT }
+797 = { add_core_of = ROOT }
+798 = { add_core_of = ROOT }
+799 = { add_core_of = ROOT }
+800 = { add_core_of = ROOT }
+801 = { add_core_of = ROOT }
+802 = { add_core_of = ROOT }
+
+448 = { add_core_of = ROOT }
+449 = { add_core_of = ROOT }
+450 = { add_core_of = ROOT }
+
+
+				
+			}
+		
+ 
+			}
+
+	}

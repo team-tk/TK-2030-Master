@@ -1,0 +1,407 @@
+ideas = {
+
+	political_advisor = {
+	
+			# POLITICAL	
+		generic_socialism_revolutionary = {
+			
+			allowed = {
+				#NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				NOT = {
+					has_available_idea_with_traits = { idea = socialism_revolutionary limit = 1 }
+				}
+				
+			}
+
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = NZL_the_lee_affair
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+			traits = { socialism_revolutionary }
+	
+			on_add = {
+				#country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = socialism
+				}
+			}
+	
+			ai_will_do = { #EAI
+				base = 0
+				modifier = { 
+					add = 10000
+					has_country_flag = EAI_socialism_focus
+				}
+			}
+		}
+	
+	
+	# POLITICAL	
+		generic_syndicalism_revolutionary = {
+			
+			allowed = {
+				#NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				NOT = {
+					has_available_idea_with_traits = { idea = syndicalism_revolutionary limit = 1 }
+				}
+				
+			}
+
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = NZL_the_lee_affair
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+			traits = { syndicalism_revolutionary }
+	
+			on_add = {
+				#country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = syndicalism
+				}
+			}
+	
+			ai_will_do = { #EAI
+				base = 0
+				modifier = { 
+					add = 10000
+					has_country_flag = EAI_syndicalism_focus
+				}
+			}
+		}
+		
+					
+		generic_conservatism_reformer = {
+			
+			allowed = {
+				#NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				NOT = {
+					has_available_idea_with_traits = { idea = conservatism_reformer limit = 1 }
+				}
+				
+			}
+			
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					OR = {
+						has_completed_focus = NZL_strengthen_the_commonwealth
+						has_completed_focus = NZL_constitution_amendment_act
+					}
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+
+			
+			traits = { conservatism_reformer }
+	
+			on_add = {
+				#country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = conservatism
+				}
+			}
+	
+			ai_will_do = { #EAI
+				base = 0
+				modifier = { 
+					add = 10000
+					has_country_flag = EAI_conservatism_focus
+				}
+			}
+		}
+	
+				
+		generic_socdem_reformer = {
+			
+			allowed = {
+				#NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				NOT = {
+					has_available_idea_with_traits = { idea = socdem_reformer limit = 1 }
+				}
+				
+			}
+			
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					OR = {
+						has_completed_focus = NZL_strengthen_the_commonwealth
+						has_completed_focus = NZL_constitution_amendment_act
+					}
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+
+			
+			traits = { socdem_reformer }
+	
+			on_add = {
+				#country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = socdem
+				}
+			}
+	
+			ai_will_do = { #EAI
+				base = 0
+				modifier = { 
+					add = 10000
+					has_country_flag = EAI_socdem_focus
+				}
+			}
+		}
+		
+				generic_nazism_demagogue = {
+			
+			allowed = {
+				#NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				NOT = {
+					has_available_idea_with_traits = { idea = nazism_demagogue limit = 1 }
+				}
+
+			}
+			
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = NZL_in_the_darkness
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}				
+			}
+			
+			traits = { nazism_demagogue }
+	
+			on_add = {
+				#country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = nazism
+				}
+			}
+
+			ai_will_do = { #EAI
+				base = 0
+				modifier = { 
+					add = 10000
+					OR = {
+						has_country_flag = EAI_nazism_focus
+
+						AND = {
+							original_tag = BUL 
+							has_government = neutrality 
+							date > 1940.6.1 
+							is_historical_focus_on = yes
+						}
+					}
+				}
+			}
+		}
+		
+				generic_nationalism_demagogue = {
+			
+			allowed = {
+				#NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				NOT = {
+					has_available_idea_with_traits = { idea = nationalism_demagogue limit = 1 }
+				}
+
+			}
+			
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = NZL_in_the_darkness
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}				
+			}
+			
+			traits = { nationalism_demagogue }
+	
+			on_add = {
+				#country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = nationalism
+				}
+			}
+
+			ai_will_do = { #EAI
+				base = 0
+				modifier = { 
+					add = 10000
+						has_country_flag = EAI_nationalism_focus
+
+				}
+			}
+		}
+
+	
+	
+	
+		cleric = {
+		
+		allowed = {
+		#NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				
+				NOT = {
+					has_available_idea_with_traits = { idea = theocratic_supporter limit = 1 }
+				}
+				
+			}
+			
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = NZL_in_the_darkness
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}				
+			}
+			
+			#picture = generic_political_advisor_europe_4
+			
+			#allowed = { always = yes }
+			
+			traits = { theocratic_supporter }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		monarchist = {
+			
+			#picture = generic_political_advisor_europe_4
+			
+			allowed = {
+			#NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				NOT = {
+					has_available_idea_with_traits = { idea = staunch_monarchist limit = 1 }
+				}
+				
+			}
+			
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = NZL_in_the_darkness
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}				
+			}
+			
+			#allowed = { always = yes }
+			
+			traits = { staunch_monarchist }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		authoritarian = {
+			
+			#picture = generic_political_advisor_europe_3
+			
+			#allowed = { always = yes }
+			
+			allowed = {
+			#NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
+				NOT = {
+					has_available_idea_with_traits = { idea = authoritarian_supporter limit = 1 }
+				}
+				
+			}
+			
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = NZL_in_the_darkness
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}				
+			}
+			
+			traits = { authoritarian_supporter }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

@@ -1,0 +1,898 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+
+EAI_GER_prep_for_maginot = {
+	enable = {
+		original_tag = GER
+		
+		is_historical_focus_on = yes
+		
+		focus_progress = { focus = GER_around_maginot progress > 0 }
+		
+		NOT = { has_completed_focus = GER_around_maginot }
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = { type = conquer id = "BEL" value = 2000 }
+	ai_strategy = { type = conquer id = "HOL" value = 2000 }
+}
+
+EAI_GER_ignore_ITA = {
+	enable = {
+		original_tag = GER
+		
+		is_historical_focus_on = yes
+		
+		has_war_with = FRA
+		
+		FRA = { has_capitulated = no }
+		
+		is_in_faction_with = ITA
+		
+		ITA = { has_war_with = FRA }
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = { type = dont_defend_ally_borders id = "ITA" value = 500 }
+}
+
+EAI_GER_ignore_FIN = {
+	enable = {
+		is_in_faction_with = GER
+	}
+	abort = {
+		NOT = { is_in_faction_with = GER }
+	}
+	
+	ai_strategy = { type = dont_defend_ally_borders id = "FIN" value = 500 }
+}
+
+EAI_GER_warprep = {
+	enable = {
+		is_historical_focus_on = yes
+
+		date < 1941.1.1
+		
+		original_tag = GER
+		
+		focus_progress = { focus = GER_danzig_or_war progress > 0 }
+		
+		any_neighbor_country = { tag = FRA }
+		
+		FRA = { is_in_faction_with = ENG }
+		
+		NOT = { has_war_with = FRA }
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = conquer
+		id = "FRA"
+		value = 100
+	}
+}
+
+EAI_GER_wardec_YUG = {
+	enable = {
+		is_historical_focus_on = yes
+
+		original_tag = GER
+		
+		has_completed_focus = GER_demand_slovenia
+	}
+
+	ai_strategy = {
+		type = consider_weak
+		id = "YUG"
+		value = 1000
+	}
+}
+
+EAI_invasion_of_yugoslavia = {
+	enable = {
+		is_historical_focus_on = yes
+		
+		original_tag = GER
+		
+		focus_progress = { focus = GER_demand_slovenia progress > 0 }
+	}
+	abort = {
+		has_completed_focus = GER_demand_slovenia
+	}
+	
+	ai_strategy = { type = conquer id = "YUG" value = 500 }
+}
+
+EAI_portuguese_trade_relation = {
+	enable = {
+		is_historical_focus_on = yes
+
+		date > 1940.1.1
+		
+		original_tag = GER
+		
+		has_political_power > 100
+		
+		check_variable = { EAI_FOCUS/LAND/armor_focus = global.EAI_MARM_FOCUS }
+		
+		NOT = { has_war_with = POR }
+		
+		POR = { tungsten > 200 }
+		
+		POR = { has_opinion = { target = ROOT value < 90 } }
+	}
+	abort = {
+		OR = {
+			NOT = { has_political_power > 80 }
+			NOT = { POR = { has_opinion = { target = ROOT value < 90 } } }
+		}
+	}
+	ai_strategy = {
+		type = befriend
+		id = "POR"
+		value = 500
+	}
+}
+
+EAI_i_spr = { #why is GER using 50 divisions to guard against Spain?
+	enable = {
+		tag = GER
+		is_historical_focus_on = yes
+		has_government = fascism
+		has_war_with = SOV
+	}
+	abort = {
+		NOT = { has_war_with = SOV }
+	}
+	ai_strategy = {
+		type = ignore
+		id = "SPR"
+		value = 500
+	}
+	ai_strategy = {
+		type = ignore
+		id = "D01"
+		value = 500
+	}
+}
+
+EAI_i_bnl = {
+	enable = {
+		tag = GER
+		is_historical_focus_on = yes
+		has_government = fascism
+		NOT = { 
+			has_country_flag = EAI_declare_war_@BEL 
+			has_country_flag = EAI_declare_war_@LUX 
+			has_country_flag = EAI_declare_war_@HOL 
+		}
+		NOT = { 
+			GER = { has_capitulated = yes }
+			GER = { exists = no }
+			GER = { is_subject = yes }
+		}
+		NOT = { has_country_flag = GER_invade_BNL }
+		NOT = { has_completed_focus = GER_around_maginot }
+	}
+	abort = {
+		OR = { 
+			has_country_flag = EAI_declare_war_@BEL 
+			has_country_flag = EAI_declare_war_@LUX 
+			has_country_flag = EAI_declare_war_@HOL 
+		}
+		has_completed_focus = GER_around_maginot
+	}
+	ai_strategy = {
+		type = ignore
+		id = "BEL"
+		value = 500
+	}
+	ai_strategy = {
+		type = ignore
+		id = "HOL"
+		value = 500
+	}
+	ai_strategy = {
+		type = ignore
+		id = "LUX"
+		value = 500
+	}
+}
+
+EAI_i_swe = {
+	enable = {
+		tag = GER
+		is_historical_focus_on = yes
+		
+		NOT = {
+			has_country_flag = EAI_declare_war_@SWE
+
+			SOV = { has_capitulated = yes }
+			SOV = { exists = no }
+			SOV = { is_puppet = yes }
+			SOV = { has_government = fascism }
+			is_in_faction_with = SOV
+		}
+	}
+	abort = {
+		OR = {
+			has_country_flag = EAI_declare_war_@SWE
+
+			SOV = { has_capitulated = yes }
+			SOV = { exists = no }
+			SOV = { is_puppet = yes }
+			SOV = { has_government = fascism }
+			is_in_faction_with = SOV
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "SWE"
+		value = 300
+	}
+}
+
+danzig_of_war_preparation = {
+	enable = {
+		tag = GER
+		focus_progress = {
+			focus = GER_danzig_or_war
+			progress > 0.01
+		}
+		NOT = {
+			has_completed_focus = GER_danzig_or_war
+			owns_state = 85 
+		}
+		country_exists = POL
+	}
+	
+	abort = {
+		OR = {
+			NOT = { country_exists = POL }
+			
+			AND = {
+				has_completed_focus = GER_danzig_or_war
+				GER = { has_war_with = POL }
+			}
+			
+			owns_state = 85 
+		}
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "POL"
+		value = 100
+	}
+}
+
+dont_die_in_mountains = {
+	enable = {
+		tag = GER
+		country_exists = SWI
+
+		NOT = { 
+			has_country_flag = EAI_declare_war_@SWI
+
+			FRA = { has_capitulated = yes }
+			FRA = { exists = no }
+			FRA = { is_puppet = yes }
+			is_in_faction_with = FRA
+		}
+	}
+	abort = {
+		OR = { 
+			has_country_flag = EAI_declare_war_@SWI
+
+			FRA = { has_capitulated = yes }
+			FRA = { exists = no }
+			FRA = { is_puppet = yes }
+			is_in_faction_with = FRA
+		}
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = "SWI"
+		value = 500
+	}
+}
+
+EAI_dont_die_in_mountains2 = {
+	enable = {
+		tag = GER
+		country_exists = SWI
+
+		NOT = { 
+			has_country_flag = EAI_declare_war_@SWI
+
+			FRA = { has_capitulated = yes }
+			FRA = { exists = no }
+			FRA = { is_puppet = yes }
+			is_in_faction_with = FRA
+		}
+	}
+	abort = {
+		OR = { 
+			has_country_flag = EAI_declare_war_@SWI
+
+			FRA = { has_capitulated = yes }
+			FRA = { exists = no }
+			FRA = { is_puppet = yes }
+			is_in_faction_with = FRA
+		}
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = "SWI"
+		value = 500
+	}
+}
+
+war_with_soviets = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_ussr_war_goal
+		country_exists = SOV
+	}
+	abort = {
+		NOT = { country_exists = SOV }
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"			
+		value = 200
+	}
+}
+
+soviet_ally = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_soviet_ally
+		country_exists = SOV
+	}
+	abort = {
+		NOT = { country_exists = SOV }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "SOV"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SOV"			
+		value = 200
+	}	
+}
+
+
+italy_ally = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_italy_ally
+		country_exists = ITA
+		is_historical_focus_on = no
+	}
+	abort = {
+		NOT = { country_exists = ITA }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "ITA"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ITA"			
+		value = 200
+	}	
+}
+
+italy_ally_2 = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_italy_ally
+		country_exists = ITA
+		is_historical_focus_on = no
+	}
+	abort = {
+		NOT = { country_exists = ITA }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "ITA"			
+		value = 200
+	}	
+}
+
+iron_pact_italy = {
+	enable = {
+		tag = GER
+		ITA = {
+			has_completed_focus = ITA_pact_of_steel
+			exists = yes
+		}
+		is_historical_focus_on = no
+	}
+	abort = {
+		NOT = { country_exists = ITA }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "ITA"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ITA"			
+		value = 100
+	}	
+}
+
+japan_ally = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_japan_friend
+		country_exists = JAP
+	}
+	abort = {
+		NOT = { country_exists = JAP }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "JAP"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "JAP"			
+		value = 200
+	}	
+}
+
+china_ally = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_china_friend
+		country_exists = CHI
+	}
+	abort = {
+		NOT = { country_exists = CHI }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "CHI"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "CHI"			
+		value = 200
+	}	
+}
+
+turkey_ally = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_turkey_friend
+		country_exists = TUR
+	}
+	abort = {
+		NOT = { country_exists = TUR }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "TUR"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "TUR"			
+		value = 100
+	}	
+}
+
+spain_ally = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_nationalist_spain_ally
+		country_exists = SPR
+		SPR = { has_government = fascism } # TODO Find way to detect dynamic revolter tag
+	}
+	abort = {
+		NOT = { country_exists = SPR }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "SPR"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SPR"			
+		value = 100
+	}	
+}
+
+denmark_ally = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_denmark_friend
+		country_exists = DEN
+	}
+	abort = {
+		NOT = { country_exists = DEN }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "DEN"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "DEN"			
+		value = 100
+	}	
+}
+
+sweden_ally = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_sweden_friend
+		country_exists = SWE
+	}
+	abort = {
+		NOT = { country_exists = SWE }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "SWE"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SWE"			
+		value = 100
+	}	
+}
+
+dutch_ally = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_dutch_friend
+		country_exists = HOL
+	}
+	abort = {
+		NOT = { country_exists = HOL }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "HOL"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "HOL"			
+		value = 100
+	}	
+}
+
+norway_ally = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_norway_friend
+		country_exists = NOR
+	}
+	abort = {
+		NOT = { country_exists = NOR }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "NOR"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "NOR"			
+		value = 100
+	}	
+}
+
+anschluss_rejected = {
+	enable = {
+		tag = GER
+		has_completed_focus = GER_anschluss
+		country_exists = AUS
+	}
+	abort = {
+		NOT = {
+			country_exists = AUS
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "AUS"			
+		value = 300
+	}		
+}
+
+CZE_is_idiot = {
+	enable = {
+		tag = GER
+		has_global_flag = CZE_refused_sudetenland
+		country_exists = CZE
+	}
+	abort = {
+		NOT = {
+			country_exists = CZE
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "CZE"			
+		value = 300
+	}		
+}
+
+play_nice_with_ribbentrop_pact = {
+	enable = {
+		tag = GER
+		has_global_flag = sov_yes_pact		
+	}
+	abort = {
+		OR ={
+			GER = { has_war_with = SOV }
+			date > 1941.5.1
+			AND = {
+				LIT = { is_in_faction_with = SOV }
+				LAT = { is_in_faction_with = SOV }
+				EST = { is_in_faction_with = SOV }
+			}
+		}
+	}
+	
+	# leave britney alone!
+	ai_strategy = {
+		type = ignore
+		id = "LIT"
+		value = 100
+	}
+	ai_strategy = {
+		type = ignore
+		id = "LAT"
+		value = 100
+	}
+	ai_strategy = {
+		type = ignore
+		id = "EST"
+		value = 100
+	}
+}
+
+tfv_protect_fascist_south_africa = {
+	enable = {
+		original_tag = GER
+		has_country_flag = saf_fascist_uprising # Set from the national focus
+	}
+	abort = {
+		surrender_progress > 0.8
+		SAF = { has_civil_war = no }
+	}
+	
+	ai_strategy = {
+		type = protect
+		id = "SAF"
+		value = 200
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SAF"
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SAF"
+		value = 200
+	}
+}
+
+# axis_stay_away_from_the_royal_navy = { #fixed
+# 	enable = {
+# 		has_war_with = ENG
+		
+# 		GER = {
+# 			naval_strength_ratio = {
+# 				tag = ENG 
+# 				ratio < 0.5
+# 			}
+# 		}
+
+# 		# if we manage to get a foothold in UK we must do what we can to exploit it! (checks coastal states)
+# 		NOT = {
+# 			any_state = {
+# 				OR = { region = 1 region = 2 region = 3 } 
+				
+# 				is_coastal = yes
+				
+# 				ROOT = { divisions_in_state = { state = PREV size > 0 } }
+# 			}
+# 		}
+# 	}
+# 	abort = {
+# 		OR = {
+# 			NOT = { has_war_with = ENG }
+
+# 			NOT = {
+# 				GER = {
+# 					naval_strength_ratio = {
+# 						tag = ENG 
+# 						ratio < 0.5
+# 					}
+# 				}
+# 			}
+
+# 			any_state = {
+# 				OR = { region = 1 region = 2 region = 3 } 
+				
+# 				is_coastal = yes
+				
+# 				ROOT = { divisions_in_state = { state = PREV size > 0 } }
+# 			}
+# 		}
+# 	}
+	
+# 	ai_strategy = {
+# 		type = naval_avoid_region
+# 		id = 18 #english channel
+# 		value = 2000
+# 	}
+# 	ai_strategy = {
+# 		type = naval_avoid_region
+# 		id = 42
+# 		value = 2000
+# 	}
+# 	ai_strategy = {
+# 		type = naval_avoid_region
+# 		id = 47
+# 		value = 2000
+# 	}
+# 	ai_strategy = {
+# 		type = naval_avoid_region
+# 		id = 48
+# 		value = 2000
+# 	}
+# 	ai_strategy = {
+# 		type = naval_avoid_region
+# 		id = 68
+# 		value = 2000
+# 	}
+	
+# 	ai_strategy = {
+# 		type = naval_avoid_region
+# 		id = 61
+# 		value = 2000
+# 	}
+# 	ai_strategy = {
+# 		type = naval_avoid_region
+# 		id = 62
+# 		value = 2000
+# 	}
+# 	ai_strategy = {
+# 		type = naval_avoid_region
+# 		id = 65
+# 		value = 2000
+# 	}
+# 	ai_strategy = {
+# 		type = naval_avoid_region
+# 		id = 103
+# 		value = 2000
+# 	}
+# 	ai_strategy = {
+# 		type = naval_avoid_region
+# 		id = 102
+# 		value = 2000
+# 	}
+# 	ai_strategy = {
+# 		type = naval_avoid_region
+# 		id = 100
+# 		value = 2000
+# 	}
+# }
+
+make_sure_poland_is_ganked_before_we_move = {
+	enable = {
+		tag = GER
+		
+		focus_progress = { focus = GER_around_maginot progress > 0 }
+		
+		NOT = {
+			AND = {
+				date > 1939.11.1
+			
+				OR = {
+					POL = { has_capitulated = yes }
+					POL = { exists = no }
+					POL = { is_subject = yes }
+					POL = { has_government = fascism }
+					is_in_faction_with = POL
+				}
+				
+				OR = {
+					DEN = { has_capitulated = yes }
+					DEN = { exists = no }
+					DEN = { is_subject = yes }
+					DEN = { has_government = fascism }
+					is_in_faction_with = DEN
+					date > 1940.2.1
+				}
+			}
+		}
+	}
+	abort = {
+		date > 1939.11.1
+		
+		OR = {
+			POL = { has_capitulated = yes }
+			POL = { exists = no }
+			POL = { is_subject = yes }
+			POL = { has_government = fascism }
+			is_in_faction_with = POL
+		}
+		
+		OR = {
+			DEN = { has_capitulated = yes }
+			DEN = { exists = no }
+			DEN = { is_subject = yes }
+			DEN = { has_government = fascism }
+			is_in_faction_with = DEN
+			date > 1940.2.1
+		}
+	}
+
+	ai_strategy = {
+		type = declare_war
+		id = "HOL"			
+		value = -2000 
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "BEL"
+		value = -2000 
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "LUX"
+		value = -2000 
+	}
+}

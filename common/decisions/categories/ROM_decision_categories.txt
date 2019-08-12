@@ -1,0 +1,17 @@
+##############################
+#### BITTER PEACE ROMANIA ####
+##############################
+
+ROM_great_romania_cat = {
+
+	icon = decision_category_generic_fascism
+	
+	allowed = {
+		tag = ROM			
+	}
+
+	visible = {
+		tag = ROM	
+		ROM = { is_in_faction_with = GER }	
+	}
+}

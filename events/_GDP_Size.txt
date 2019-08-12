@@ -1,0 +1,117 @@
+﻿add_namespace = gdp_size
+
+########Universal Event############
+
+country_event = {
+	id = gdp_size.1
+	title = gdp_size.1.t
+	desc = gdp_size.1.desc
+	picture = GFX_report_event_military_planning
+	
+	trigger = {
+		if = { limit = { is_ai = no } date > 1936.1.1 }
+		OR = {
+			#Industry
+			AND = {				
+				num_of_civilian_factories < 6 
+				NOT = { has_country_flag = gdp_size1 }
+			}
+			AND = {
+				num_of_civilian_factories > 5
+				num_of_civilian_factories < 10
+				NOT = { has_country_flag = gdp_size2 }
+			}
+			AND = {
+				num_of_civilian_factories > 9
+				num_of_civilian_factories < 20
+				NOT = { has_country_flag = gdp_size3 }
+			}
+			AND = {
+				num_of_civilian_factories > 19
+				num_of_civilian_factories < 30
+				NOT = { has_country_flag = gdp_size4 }
+			}
+			AND = {
+				num_of_civilian_factories > 29
+				num_of_civilian_factories < 50
+				NOT = { has_country_flag = gdp_size5 }
+			}
+			AND = {
+				num_of_civilian_factories > 49
+				num_of_civilian_factories < 100
+				NOT = { has_country_flag = gdp_size6 }
+			}
+			AND = {
+				num_of_civilian_factories > 99
+				num_of_civilian_factories < 300
+				NOT = { has_country_flag = gdp_size7 }
+			}
+			AND = {
+				num_of_civilian_factories > 299
+				num_of_civilian_factories < 500
+				NOT = { has_country_flag = gdp_size8 }
+			}
+			AND = {
+				num_of_civilian_factories > 499
+				num_of_civilian_factories < 1000
+				NOT = { has_country_flag = gdp_size9 }
+			}
+			AND = {
+				num_of_civilian_factories > 999
+				NOT = { has_country_flag = gdp_size10 }
+			}
+			
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = { 
+		#Army
+		if = { limit = { num_of_civilian_factories < 6 NOT = { has_country_flag = gdp_size1 } } set_country_flag = gdp_size1 }
+		
+		if = { limit = { num_of_civilian_factories > 5 num_of_civilian_factories < 10 NOT = { has_country_flag = gdp_size2 } } set_country_flag = gdp_size2 }
+		
+		if = { limit = { num_of_civilian_factories > 9 num_of_civilian_factories < 20 NOT = { has_country_flag = gdp_size3 } } set_country_flag = gdp_size3 }
+		
+		if = { limit = { num_of_civilian_factories > 19 num_of_civilian_factories < 30 NOT = { has_country_flag = gdp_size4 } } set_country_flag = gdp_size4 }
+		
+		if = { limit = { num_of_civilian_factories > 29 num_of_civilian_factories < 50 NOT = { has_country_flag = gdp_size5 } } set_country_flag = gdp_size5 }
+		
+		if = { limit = { num_of_civilian_factories > 49 num_of_civilian_factories < 100 NOT = { has_country_flag = gdp_size6 } } set_country_flag = gdp_size6 }
+		
+		if = { limit = { num_of_civilian_factories > 99 num_of_civilian_factories < 300 NOT = { has_country_flag = gdp_size7 } } set_country_flag = gdp_size7 }
+		
+		if = { limit = { num_of_civilian_factories > 299 num_of_civilian_factories < 500 NOT = { has_country_flag = gdp_size8 } } set_country_flag = gdp_size8 }
+		
+		if = { limit = { num_of_civilian_factories > 499 num_of_civilian_factories < 1000 NOT = { has_country_flag = gdp_size9 } } set_country_flag = gdp_size9 }
+		
+		if = { limit = { num_of_civilian_factories > 999 NOT = { has_country_flag = gdp_size10 } } set_country_flag = gdp_size10 }
+		
+	}
+	
+	option = {
+		name = "Ok"
+		#Army
+		if = { limit = { has_country_flag = gdp_size1 NOT = { has_idea = gdp_size1 } } add_ideas = gdp_size1 }
+		if = { limit = { has_country_flag = gdp_size2 NOT = { has_idea = gdp_size2 } } add_ideas = gdp_size2 }
+		if = { limit = { has_country_flag = gdp_size3 NOT = { has_idea = gdp_size3 } } add_ideas = gdp_size3 }
+		if = { limit = { has_country_flag = gdp_size4 NOT = { has_idea = gdp_size4 } } add_ideas = gdp_size4 }
+		if = { limit = { has_country_flag = gdp_size5 NOT = { has_idea = gdp_size5 } } add_ideas = gdp_size5 }
+		if = { limit = { has_country_flag = gdp_size6 NOT = { has_idea = gdp_size6 } } add_ideas = gdp_size6 }
+		if = { limit = { has_country_flag = gdp_size7 NOT = { has_idea = gdp_size7 } } add_ideas = gdp_size7 }
+		if = { limit = { has_country_flag = gdp_size8 NOT = { has_idea = gdp_size8 } } add_ideas = gdp_size8 }
+		if = { limit = { has_country_flag = gdp_size9 NOT = { has_idea = gdp_size9 } } add_ideas = gdp_size9 }
+		if = { limit = { has_country_flag = gdp_size10 NOT = { has_idea = gdp_size10 } } add_ideas = gdp_size10 }
+
+		
+
+
+		
+	}
+}
+
+### EOF ###

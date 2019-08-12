@@ -1,0 +1,61 @@
+﻿units = {
+
+	division= {
+		name = "1ère Division de Marche d'Infanterie"
+		location = 9909 # Normandy
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1
+	}
+	
+	division= {
+		name = "1ère Division Blindée"
+		location = 3928 # Normandy
+		division_template = "Division Légère Mécanique"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 1
+	}
+	
+		division= {
+		name = "3ème Division d'Infanterie Algérienne"
+		location = 911 # Normandy
+		division_template = "Division Coloniale"
+		start_experience_factor = 0.1 
+		start_equipment_factor = 1
+	}
+	
+	division= {
+		name = "9ème Division d'Infanterie Coloniale"
+		location = 911 # Normandy
+		division_template = "Division Coloniale"
+		start_experience_factor = 0.1 
+		start_equipment_factor = 1
+	}
+	
+	division= {
+		name = "1er Groupe de Tabors Marocains"
+		location = 3928 # Normandy
+		division_template = "Division Coloniale"
+		start_experience_factor = 0.1 
+		start_equipment_factor = 1
+	}
+	
+	division= {
+		name = "3ème Groupe de Tabors Marocains"
+		location = 9909 # Normandy
+		division_template = "Division Coloniale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	
+	division= {
+		name = "4ème Groupe de Tabors Marocains"
+		location = 9909 # Normandy
+		division_template = "Division Coloniale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	
+	
+	
+}

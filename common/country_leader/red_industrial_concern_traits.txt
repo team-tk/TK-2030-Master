@@ -1,0 +1,86 @@
+#Industrial modifiers
+
+#		global_building_slots_factor =
+#		industry_air_damage_factor =
+#		industrial_capacity_factory =
+#		industrial_capacity_dockyard =
+#       line_change_production_efficiency_factor =
+#       production_factory_start_efficiency_factor =
+#       production_factory_efficiency_gain_factor
+#       production_factory_max_efficiency_factor
+
+#
+
+#NOTE: empty entries are necessary for HoI IV to display a hint localization
+
+leader_traits = {
+    #------------------ Czech Designers --------------------
+    csd_concern = {}
+    #------------------ French Designers --------------------
+    sncf_concern = {}
+    #------------------ German Designers --------------------
+    farben_concern = {}
+    krupp_concern = {}
+    reichsbahn_concern = {}   
+    siemens_concern = {}
+    #------------------ Italian Designers -------------------
+    danieli_concern = {}
+    #------------------ Japanese Designers ------------------
+    kawasaki_concern = {}
+    sumitomo_concern = {}
+    #------------------ UK Designers ------------------------
+    english_electric_concern = {}   
+    #------------------ US Designers ------------------------
+    beth_steel_concern = {}
+    esso_concern = {}
+    ge_concern = {}    
+    nyc_system_concern = {}    
+    pennsyvlania_rr_concern = {}        
+    us_steel_concern = {}
+	
+		industrial_concern = {
+		random = no
+		production_speed_buildings_factor = 0.05
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+		quality_submarine_manufacturer = {
+		random = no
+		equipment_bonus = {
+			submarine = {sub_visibility = -0.2 surface_visibility = -0.2 naval_speed = 0.25
+			build_cost_ic = 0.30}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	motorized_infantry_manufacturer = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	uniform_manufacturer = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		
+		winter_attrition_factor = -0.4
+		heat_attrition_factor = -0.4
+		army_morale_factor = 0.02
+	}
+	
+	resource_concern = {
+		random = no
+		ai_will_do = { factor = 1}
+		
+		local_resources_factor = 0.10
+	}
+}

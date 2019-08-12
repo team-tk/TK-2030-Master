@@ -1,0 +1,82 @@
+﻿capital = 78
+
+#oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+religion_orthodoxism
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+conservatism = 55
+fascism = 1
+communism = 30
+neutrality = 14
+}
+
+create_country_leader = {
+	name = "Tihon Konstantinov"
+	desc = "POLITICS_TIHON_KONSTANTINOV_DESC"
+	picture = "gfx/leaders/MOL/Tihon.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ion Inculet"
+	desc = "POLITICS_ION_INCULET_DESC"
+	picture = "gfx/leaders/MOL/Ion.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Nicolae"
+	desc = "POLITICS_PRINCE_NICOLAE_DESC"
+	picture = "gfx/leaders/MOL/Nicolae.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Nicolae"
+	desc = "POLITICS_PRINCE_NICOLAE_DESC"
+	picture = "gfx/leaders/MOL/Nicolae.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Carol II"
+	desc = "POLITICS_CAROL_II_DESC"
+	picture = gfx/leaders/ROM/GFX_Portrait_romania_Carol_II			
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = { hedonist camarilla_leader }
+	id = 2200
+}

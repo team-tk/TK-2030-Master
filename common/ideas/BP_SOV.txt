@@ -1,0 +1,267 @@
+ideas = {
+
+	country = {
+	
+	sov_soviet_winter = {
+
+			allowed = { always = no }
+			picture = generic_acquire_tanks
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = ROM
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = HUN
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = BUL
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = SLO
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		
+		russian_winter = {
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.20
+			}
+
+		}
+	
+	soviet_steamroller = {
+
+			allowed = { always = no }
+			picture = generic_acquire_tanks
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.10
+				army_armor_attack_factor = 0.10
+			    army_armor_defence_factor = 0.10
+			    army_armor_speed_factor = 0.25
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+		}
+		
+			shattered_retreat = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_army_of_aggression_focus
+
+			removal_cost = -1
+
+			modifier = {
+			    army_core_defence_factor = 0.10
+			    army_speed_factor = -0.15
+				army_attack_factor = -0.20
+				army_morale_factor = -0.15
+				army_org_factor = -0.15
+				dig_in_speed_factor = -0.25
+			}
+		}
+		army_destroyed = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = FRA_matignon_agreements
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.30
+				max_dig_in = -10
+			}
+		}
+		soviet_air_forces_1941 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = air_support_focus
+
+			modifier = {
+				air_ace_generation_chance_factor = -1.0
+				air_interception_attack_factor = -0.2
+				air_intercept_efficiency = -0.2
+				air_air_superiority_attack_factor = -0.1
+				air_close_air_support_attack_factor = -0.1
+				air_cas_efficiency = -0.1
+				air_superiority_efficiency = -0.2
+				air_escort_efficiency = -0.25
+			}
+		}
+
+		SOV_1941_great_patriotic_war = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_intel_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.25
+				army_core_defence_factor = 0.15
+				conscription = 0.02
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		SOV_operation_citadel = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_volunteer_expedition_bonus
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = -0.20
+				max_dig_in = 5
+			}
+		}
+		
+		SOV_sacred_war = {
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = SOV_Sacred_War
+		
+			modifier = {
+				surrender_limit = 0.30
+				partisan_effect = 0.20
+				army_core_defence_factor = 0.10	
+				army_core_attack_factor = 0.10					
+			}		
+		}
+
+		SOV_sacred_war2 = {
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = SOV_Sacred_War
+		
+			modifier = {
+				surrender_limit = 0.40
+				partisan_effect = 0.40				
+				army_core_defence_factor = 0.25
+				army_core_attack_factor = 0.25				
+			}		
+		}
+		
+		SOV_sour_loser_ussr = {	
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}	
+	
+			picture = SOV_sour_loser_ussr	
+
+			modifier = {
+				stability_factor = -1
+				war_support_factor = -1
+			}
+		}
+		
+
+		SOV_stalin_dead = {
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ger_bulwark_against_bolshevism
+	
+			modifier = {
+				army_org = -10
+				army_morale_factor = -0.05		
+			}
+		
+		}
+	}
+}	

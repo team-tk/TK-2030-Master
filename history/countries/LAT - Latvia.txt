@@ -1,0 +1,241 @@
+﻿capital = 12
+
+oob = "LAT_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "LAT_1936_naval_mtg"
+	else = {
+		set_naval_oob = "LAT_1936_naval_legacy"
+	}
+}
+
+set_research_slots = 3
+
+add_ideas = {
+religion_lutheranism
+}
+
+set_convoys = 10
+
+add_ideas = { 	
+		export_focus
+		tax_low
+		tariffs_average
+		
+		civilian_economy
+		press_regulated
+		key_industries
+		labor_none
+		fdi_allowed
+		
+		cons_volunteer
+		foreign_volunteers
+		
+		train_none
+		#age_19
+
+		education_budget2 health_budget2  socialsecurity_budget2
+		officer_train_none
+		security_minor_restrictions
+		unity6		
+		foreign_isolationism
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		submarine_mine_laying = 1
+		early_ship_hull_submarine = 1
+	}
+}
+
+
+
+
+set_politics = {
+	ruling_party = nationalism
+	last_election = "1931.10.3"
+	election_frequency = 108
+	elections_allowed = no
+}
+
+set_popularities = {
+conservatism = 20
+nazism = 15
+communism = 15
+nationalism = 50
+}
+
+
+
+
+create_country_leader = {
+	name = "Kārlis Ulmanis"
+    desc = "POLITICS_KARLIS_ULMANIS_DESC"
+	picture = "gfx/leaders/LAT/Portrait_Karlis_Ulmanis.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = { dictator }
+}
+
+create_country_leader = {
+	name = "Janis Stelmahers"
+	picture = "gfx/leaders/LAT/Portrait_Janis_Stelmahers.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+
+create_country_leader = {
+	name = "Gustavs Celmiņš"
+	desc = "POLITICS_GUSTAVS_CELMINS_DESC"
+	picture = "gfx/leaders/LAT/Gustavs_Celmins_Fascist.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { President }
+}
+
+create_country_leader = {
+	name = "Jānis Kalnbērziņš"
+	desc = "POLITICS_JANIS_KALNBERZINS_DESC"
+	picture = "gfx/leaders/LAT/Portrait_Janis_Kalnberzins.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = { General Secretary }
+}
+
+
+create_country_leader = {
+	name = "Jānis Kalnbērziņš"
+	desc = "POLITICS_JANIS_KALNBERZINS_DESC"
+	picture = "gfx/leaders/LAT/Portrait_Janis_Kalnberzins.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { General Secretary }
+}
+
+create_country_leader = {
+	name = "Margers Skujenieks"
+	picture = "gfx/leaders/LAT/Margers_Skujenieks_Socialist.dds"
+	expire = "1965.1.1"
+	ideology = socialism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Pauls Kalnins"
+	picture = "gfx/leaders/LAT/Pauls_Kalnins_-socdem_.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Jānis Goldmanis"
+	desc = "POLITICS_JANIS_GOLDMANIS_DESC"
+	picture = "gfx/leaders/LAT/Portrait_Janis_Goldmanis.dds"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Alberts Kviesis"
+	picture = "gfx/leaders/LAT/Alberts_Kviesis_-Conservative.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Duke Adolf Friedrich of Mecklenburg"
+	desc = "POLITICS_ADOLF_FRIEDRICH_DESC"
+	picture = "Portrait_Baltic_Adolf_Friedrich.tga"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Kārlis Lobe"
+	desc = ""
+	picture = "gfx/leaders/LAT/Portrait_Karlis_Lobe.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = { }
+}
+
+
+create_field_marshal = {
+	name = "Kārlis Lobe"
+	picture = "Portrait_Karlis_Lobe.dds"
+	traits = { offensive_doctrine defensive_doctrine }
+	skill = 3
+	id = 6577
+}
+
+create_field_marshal = {
+	name = "Gustavs Praudiņš"
+	picture = "Portrait_Gustavs_Praudins.dds"
+	traits = { old_guard }
+	skill = 4
+	id = 6578
+}
+
+create_corps_commander = {
+	name = "Alfrēds-Jānis Bērziņš"
+	picture = "Portrait_Alfreds_Berzins.dds"
+	traits = { trickster  brilliant_strategist }
+	skill = 2
+	id = 6579
+}
+
+create_corps_commander = {
+	name = "Rūdolfs Kandis"
+	picture = "Portrait_Rudolfs_Kandis.dds"
+	traits = { trickster infantry_officer }
+	skill = 2
+	id = 6579
+}
+
+create_navy_leader = {
+	name = "Teodors Spāde"
+		picture = "Portrait_Teodors_Spade.dds"
+	traits = { spotter superior_tactician }
+	skill = 3
+	id = 6580
+}
+
+### VARIANTS ###
+# 1936 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	### Ship Variants ###
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "Ronis Class"								
+		type = ship_hull_submarine_1
+		name_group = LAT_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+}

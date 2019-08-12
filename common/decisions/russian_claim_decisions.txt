@@ -1,0 +1,185 @@
+
+
+russia_claim_category = {
+	SOV_claims_on_poland = {
+
+		icon = generic_form_nation
+
+		allowed = {
+				original_tag = SOV
+		}
+		available = {
+			has_completed_focus = SOV_expansionism
+		}
+		visible = {
+			original_tag = SOV
+			OR = { 
+			has_fascist_government = yes
+			has_neutral_government = yes
+			#has_government = monarchism			
+			}
+			NOT = { has_global_flag = SOV_claim_poland }
+		}
+		complete_effect = {
+			add_state_claim = 87
+			add_state_claim = 88
+			add_state_claim = 89
+			add_state_claim = 90
+			add_state_claim = 91
+			add_state_claim = 92
+			add_state_claim = 93
+			add_state_claim = 94
+			add_state_claim = 95
+			add_state_claim = 96
+			add_state_claim = 97
+			add_state_claim = 98
+			add_state_claim = 10
+			hidden_effect = {
+				set_global_flag = SOV_claim_poland
+			}
+		}
+	}
+	SOV_claims_on_romania = {
+
+		icon = generic_form_nation
+
+		allowed = {
+				original_tag = SOV
+		}
+		available = {
+			has_completed_focus = SOV_expansionism
+		}
+		visible = {
+			original_tag = SOV
+			OR = { 
+			has_fascist_government = yes
+			has_neutral_government = yes
+			#has_government = monarchism			
+			}
+			NOT = { has_global_flag = SOV_claim_romania }
+		}
+		complete_effect = {
+			add_state_claim = 80
+			add_state_claim = 78
+			hidden_effect = {
+				set_global_flag = SOV_claim_romania
+			}
+		}
+	}
+	SOV_claims_on_the_baltics = {
+
+		icon = generic_form_nation
+
+		allowed = {
+				original_tag = SOV
+		}
+		available = {
+			has_completed_focus = SOV_expansionism
+		}
+		visible = {
+			original_tag = SOV
+			OR = { 
+			has_fascist_government = yes
+			has_neutral_government = yes
+			#has_government = monarchism			
+			}
+			NOT = { has_global_flag = SOV_claim_the_baltics }
+		}
+		complete_effect = {
+			add_state_claim = 13
+			add_state_claim = 191
+			add_state_claim = 12
+			add_state_claim = 190
+			add_state_claim = 11
+			add_state_claim = 189
+			hidden_effect = {
+				set_global_flag = SOV_claim_the_baltics
+			}
+		}
+	}
+	SOV_claims_on_finland = {
+
+		icon = generic_form_nation
+
+		allowed = {
+				original_tag = SOV
+		}
+		available = {
+			has_completed_focus = SOV_expansionism
+		}
+		visible = {
+			original_tag = SOV
+			OR = { 
+			has_fascist_government = yes
+			has_neutral_government = yes
+			#has_government = monarchism			
+			}
+			NOT = { has_global_flag = SOV_claim_finland }
+		}
+		complete_effect = {
+			add_state_claim = 145
+			add_state_claim = 146
+			add_state_claim = 147
+			add_state_claim = 148
+			add_state_claim = 149
+			add_state_claim = 150
+			add_state_claim = 722
+			add_state_claim = 111
+			hidden_effect = {
+				set_global_flag = SOV_finland
+			}
+		}
+	}
+	SOV_claims_on_japan = {
+
+		icon = generic_form_nation
+
+		allowed = {
+				original_tag = SOV
+		}
+		available = {
+			has_completed_focus = SOV_expansionism
+		}
+		visible = {
+			original_tag = SOV
+			OR = { 
+			has_fascist_government = yes
+			has_neutral_government = yes
+			#has_government = monarchism			
+			}
+			NOT = { has_global_flag = SOV_claim_japan }
+		}
+		complete_effect = {
+			add_state_claim = 555
+			add_state_claim = 537
+			hidden_effect = {
+				set_global_flag = SOV_japan
+			}
+		}
+	}
+}
+SOV_FSB = {
+	SOV_operation_krokodil = {
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			always = yes
+		}
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			always = yes
+		}
+
+		complete_effect = {
+			SOV = { country_event = { days = 2 id = ww2soviet.202 } } 	
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

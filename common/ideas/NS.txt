@@ -1,0 +1,400 @@
+ideas = { # Ideas of Quisling Norway
+
+	country = { }
+	
+	political_advisor = {
+		NS_haakon_lie = {	
+
+			picture = generic_political_advisor_europe_5
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { democratic_reformer }
+			
+			available = {
+				always = no
+			}
+		}
+		
+		NS_henry_kristiansen = {
+		
+			picture = generic_political_advisor_europe_6
+		
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { communist_revolutionary }
+			
+			available = {
+				always = no
+			}
+		}	
+	
+		NS_rolf_fuglesang = {
+		
+			picture = generic_political_advisor_europe_4
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			available = {
+				NOT = { has_idea = NS_johan_hjort }
+			}
+			
+			cost = 50
+			
+			modifier = {
+				political_power_factor = 0.1
+			}
+			
+			traits = { fascist_demagogue }
+			
+			do_effect = {
+				NOT = { has_fascist_government = yes }
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		NS_johan_hjort = {
+			
+			picture = generic_political_advisor_europe_2
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			available = {
+				NOT = { has_idea = NS_rolf_fuglesang }
+			}
+			
+			cost = 50
+			
+			modifier = {
+				conscription = 0.005
+				war_support_factor = 0.05
+			}
+			
+			traits = { fascist_demagogue }
+			
+			do_effect = {
+				NOT = { has_fascist_government = yes }
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		NS_gustav_jaeger = {
+			
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { popular_figurehead }
+			
+			ai_will_do = {
+				factor = 1
+			}			
+		}
+		
+		NS_eivind_blehr = {
+			
+			picture = generic_political_advisor_europe_1
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { silent_workhorse }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		NS_tormod_hustad = {
+			
+			picture = generic_political_advisor_europe_4
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { captain_of_industry }
+		}
+		
+		NS_karl_marthinsen = { #Instrumental part of the Norwegian Holocaust, known for his brutality
+		
+			picture = karl_marthinsen
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { prince_of_terror }
+		}
+	}
+	
+	army_chief = {
+		
+		NS_ragnvald_hvoslef = {
+		
+			picture = generic_army_europe_5
+		
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { army_chief_morale_2 }
+		}
+		
+		NS_jonas_lie = {
+			
+			picture = jonas_lie
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { army_chief_offensive_2 }
+		}
+		
+	}
+	air_chief = {
+	
+		NS_tryggve_gran = {
+		
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { air_chief_all_weather_3 }
+		}
+		
+		NS_rudolf_bratteng = { # Norwegian Fighter for the Lutwaffe
+		
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { air_bomber_interception_2 }
+		}
+	}
+	navy_chief = {
+	
+		NS_kjeld_irgens = {
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+		}		
+		
+	}
+	theorist = {
+		
+		NS_jens_bache-wiig = {
+			
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		NS_axle_rod = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		NS_reidar_aagaard = { #Founder of the Hirdens Flyveavdeling which would later become the Hirdens Flykorps
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		
+		NS_bjarne_eriksen = { #Manager of Norsk Hydro
+		
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			research_bonus = {
+				nuclear = 0.1
+			}
+			
+			traits = { nuclear_scientist }
+		}
+	}
+	high_command = {
+	
+		NS_oliver_moystad = {
+		
+			picture = oliver_moystad
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { army_infantry_2 }
+		}
+		
+		NS_carl_hanssen = {
+		
+			picture = generic_political_advisor_europe_5
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { army_artillery_2 }
+		}
+		
+		NS_axel_stang = {
+			
+			picture = axel_stang
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { army_chief_organizational_1 }
+		}
+		
+		NS_alf_whist = {
+			
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { navy_fleet_logistics_2 }
+		}
+		
+		NS_finn_kjelstrup = {
+		
+			picture = generic_navy_europe_1
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { navy_chief_reform_2 }
+		}
+		
+		NS_christen_knudsen = {
+			
+			picture = generic_navy_europe_3
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { navy_anti_submarine_3 }
+		}
+		
+		NS_hans_haereid = { # Norwegian Bomber for the Lutwaffe
+		
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = NOR
+				NOT = { tag = NOR }
+				has_global_flag = NS_Allowed
+			}
+			
+			traits = { air_tactical_bombing_2 }
+		}		
+	}
+}

@@ -1,0 +1,28 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	ENG_edward_visit = { value = 50 }
+	ENG_disband_allies = { value = -100 }
+	ENG_recognise_manchu = { value = 50 }
+	ENG_colonies_seized = { value = -50 }
+	ENG_refused_syndicate = { value = -100 }
+	ENG_vegetarian_success = { value = -100 }
+	ENG_vegetarian_failure = { value = -50 }
+	possessions_seized = { value = -30 }
+	ENG_friendly_policy = { value = 30 }
+	ENG_hostile_policy = { value = -30 }
+	oil_nationalised = { value = -50 }
+	imperial_conference = { value = 30 }
+	operational_cooperation = { value = 10 }
+	oil_possessions_seized_1 = { value = -50 }
+
+}	

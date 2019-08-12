@@ -1,0 +1,263 @@
+# Age Laws
+	ideas = {
+	
+	women_army = {
+		law = yes
+		
+		women_army_banned = {
+			removal_cost = -1
+			level = 6
+			
+			available = {
+			NOT = { has_government = communism }
+			NOT = { has_government = socialism }
+			NOT = { has_government = syndicalism }
+			}
+
+			modifier = {
+			conscription = -0.020
+			political_power_factor = 0.03
+			}
+			
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 100000
+					has_government = theocratic
+				}
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					has_manpower < 1000000 
+				}
+				modifier = {
+					factor = 0
+					NOT = { has_government = theocratic }
+				}
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+		
+		women_army_nurse = {
+			default = yes
+			removal_cost = -1
+			level = 5
+			
+			available = {
+			
+			}
+
+			modifier = {
+			political_power_factor = 0.01
+			}
+			
+			ai_will_do = {
+				factor = 5
+				
+				modifier = {
+					factor = 100000
+					has_manpower <  150000
+				}
+			
+				modifier = {
+					factor = 100000
+					has_war = yes
+				}
+				
+				
+				
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			women_army_auxiliary = {
+			removal_cost = -1
+			level = 4
+			
+			available = {
+			NOT = { has_government = theocratic }
+			}
+
+			modifier = {
+			conscription = 0.005
+			political_power_factor = -0.01
+			army_morale_factor = -0.01
+			army_org_factor = -0.01
+			}
+			
+			ai_will_do = {
+				factor = 5
+				
+				modifier = {
+					factor = 100000
+					has_manpower <  150000
+				}
+			
+				modifier = {
+					factor = 100000
+					has_war = yes
+				}
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			
+			women_army_pilots = {
+			removal_cost = -1
+
+			level = 3
+			
+			available = {
+			NOT = { has_government = neutrality }
+			NOT = { has_government = nationalism }
+			NOT = { has_government = fascism }
+			NOT = { has_government = nazism }
+			NOT = { has_government = theocratic }
+			}
+
+			modifier = {
+			conscription = 0.010
+			political_power_factor = -0.02
+			army_morale_factor = -0.02
+			army_org_factor = -0.02
+			}
+			
+			ai_will_do = {
+				factor = 5
+				
+				modifier = {
+					factor = 100000
+					has_manpower <  150000
+				}
+			
+				modifier = {
+					factor = 100000
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					NOT = { has_government = communism }
+					NOT = { has_government = socialism }
+					NOT = { has_government = syndicalism }
+				}
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			women_army_snipers = {
+			removal_cost = -1
+			level = 2
+			
+			available = {
+			NOT = { has_government = neutrality }
+			NOT = { has_government = nationalism }
+			NOT = { has_government = fascism }
+			NOT = { has_government = nazism }
+			NOT = { has_government = theocratic }
+			}
+
+			modifier = {
+			conscription = 0.015
+			political_power_factor = -0.03
+			army_morale_factor = -0.03
+			army_org_factor = -0.03
+			consumer_goods_factor = 0.01
+			industrial_capacity_factory = -0.01
+			industrial_capacity_dockyard = -0.01
+			}
+			
+			ai_will_do = {
+   				factor = 10
+
+				modifier = {
+					factor = 100000
+					has_manpower < 1000000
+					is_major = yes
+				}
+				modifier = {
+					factor = 100000
+					has_manpower < 500000
+					is_major = no
+				}
+				modifier = {
+					factor = 0
+					NOT = { has_government = communism }
+					NOT = { has_government = socialism }
+					NOT = { has_government = syndicalism }
+				}
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			women_army_soldiers = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+			NOT = { has_government = neutrality }
+			NOT = { has_government = nationalism }
+			NOT = { has_government = fascism }
+			NOT = { has_government = nazism }
+			NOT = { has_government = theocratic }
+			}
+
+			modifier = {
+			conscription = 0.020
+			political_power_factor = -0.04
+			army_morale_factor = -0.04
+			army_org_factor = -0.04
+			consumer_goods_factor = 0.02
+			industrial_capacity_factory = -0.02
+			industrial_capacity_dockyard = -0.02
+			}
+			
+			ai_will_do = {
+   				factor = 10
+				modifier = {
+					factor = 100000
+					has_idea = cons_extensive_draft
+				}
+				modifier = {
+					factor = 100000
+					has_manpower < 150000 
+				}
+				modifier = {
+					factor = 0
+					NOT = { has_government = communism }
+					NOT = { has_government = socialism }
+					NOT = { has_government = syndicalism }
+				}
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			
+			
+			#women_army_special = {
+			#removal_cost = -1
+			#level = 1
+			
+			#available = {
+			#}
+
+			#modifier = {
+			#conscription = 0.020
+			#}
+			
+			#cancel_if_invalid = no
+			#}
+
+	}
+}
+### EOF ###

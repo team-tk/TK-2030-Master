@@ -1,0 +1,146 @@
+# Age Laws
+	ideas = {
+	
+	unity_traits = {
+		law = yes
+		
+		unity1 = {
+			removal_cost = -1
+			level = 7
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = -0.20
+				production_factory_max_efficiency_factor = -0.20
+				production_factory_efficiency_gain_factor = -0.20
+				drift_defence_factor = -0.30
+				foreign_subversive_activites = 0.30
+				consumer_goods_factor = 0.10
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			unity2 = {
+			removal_cost = -1
+			level = 6
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = -0.15
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				drift_defence_factor = -0.20
+				foreign_subversive_activites = 0.20
+				consumer_goods_factor = 0.05
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			unity3 = {
+			removal_cost = -1
+			level = 5
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				drift_defence_factor = -0.10
+				foreign_subversive_activites = 0.10
+				consumer_goods_factor = 0.025
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			unity4 = {
+			removal_cost = -1
+			default = yes
+			level = 4
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			unity5 = {
+			removal_cost = -1
+			level = 3
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.025
+				production_factory_max_efficiency_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025
+				drift_defence_factor = 0.10
+				foreign_subversive_activites = -0.10
+				consumer_goods_factor = -0.01
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			unity6 = {
+			removal_cost = -1
+			level = 2
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				drift_defence_factor = 0.20
+				foreign_subversive_activites = -0.20
+				consumer_goods_factor = -0.02
+			}
+			
+			cancel_if_invalid = no
+			}
+			
+			unity7 = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+				political_power_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				drift_defence_factor = 0.30
+				foreign_subversive_activites = -0.30
+				consumer_goods_factor = -0.04
+			}
+			
+			cancel_if_invalid = no
+			}
+
+	}
+}
+### EOF ###

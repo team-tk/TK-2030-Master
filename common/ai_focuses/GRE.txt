@@ -1,0 +1,13 @@
+ai_historical_focus_list_GRE = {
+	ai_national_focuses = {
+	gre_appoint_metaxas
+	GRE_Fourth_of_August
+	GRE_EON
+	GRE_THC
+	GRE_Militarisim
+	GRE_Mass_Conscription
+	GRE_Yparano_Olon
+	GRE_FKAC
+	GRE_Metaxas_Line
+	}
+}

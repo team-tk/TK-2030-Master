@@ -1,0 +1,112 @@
+ideas = {
+	country = {
+		b_n_surrender_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				surrender_limit = -0.10
+			}
+		}
+	}
+	country = {
+		b_n_surrender_idea_2 = {
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				surrender_limit = -0.20
+			}
+		}
+	}
+	country = {
+		b_n_surrender_idea_3 = {
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				surrender_limit = -0.30
+	
+			}	
+		} }
+		country = {
+		b_n_surrender_idea_4 = {
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				surrender_limit = -0.40
+	
+			}	
+		} }	
+		country = {
+		b_n_surrender_idea_5 = {
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				surrender_limit = -0.50
+	
+			}	
+		}
+		}	
+				country = {
+		b_n_surrender_idea_6 = {
+			allowed = { 
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				surrender_limit = -0.60
+	
+			}	
+		}	
+	}
+	}

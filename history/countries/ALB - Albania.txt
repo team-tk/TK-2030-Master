@@ -1,0 +1,220 @@
+﻿capital = 44
+
+OOB = "ALB_1936"
+
+add_ideas = {
+religion_sunni_islamism
+}
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+add_ideas = { 	
+	export_focus
+	tax_low
+	tariffs_average
+	
+	civilian_economy
+	press_regulated
+	key_industries
+	labor_none
+	fdi_allowed
+	
+	cons_volunteer
+	foreign_volunteers
+	
+	train_none
+	officer_train_none
+	#age_19
+	security_minor_restrictions
+	education_budget2 health_budget2   socialsecurity_budget2 
+	
+	unity6		
+	foreign_isolationism
+	neutrality_idea
+}
+
+add_ideas = {
+        ALB_rural_idea
+        ALB_bad_manpower
+}
+
+set_politics = {
+	ruling_party = monarchism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+monarchism = 100
+}
+
+set_convoys = 5
+
+#Victor Emmanuel III of Italy after 39
+
+
+create_country_leader = {
+	name = "Zog"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Albania_King_Zog.dds"
+	expire = "1965.1.1"
+	ideology = absolutism
+	traits = { dictator }
+}
+
+create_country_leader = {
+	name = "Mustava Merlika Kruja"
+	desc = ""
+	picture = "Mustafa.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { dictator }
+}
+### PLACEHOLDER
+create_country_leader = {
+	name = "Mustava Merlika Kruja"
+	desc = ""
+	picture = "Mustafa.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { dictator }
+}
+
+create_country_leader = {
+	name = "Xhafer Bej Ypi"
+	desc = ""
+	picture = "ypi.dds"
+	expire = "1965.1.1"
+	ideology = liberalism_ideology
+	traits = { old_figurehead }
+}
+
+create_country_leader = {
+	name = "Enver Hoxha"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_ALB_Enver_Hoxha.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		staunch_stalinist
+	}
+}
+
+create_country_leader = {
+	name = "Enver Hoxha"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_ALB_Enver_Hoxha.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Myslim Peza"
+	desc = ""
+	picture = "Portrait_ALB_Myslim_Peza.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = { staunch_stalinist }
+}
+
+create_country_leader = {
+	name = "Haxhi Lleshi"
+	desc = ""
+	picture = "Haxhi_Lleshi_Syndicalist.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Fan S. Noli"
+	desc = ""
+	picture = "Portrait_ALB_Fan_S_Noli.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}
+
+### PLACEHOLDER
+		create_country_leader = {
+	name = "Midhat Frashëri"
+	desc = ""
+	picture = "midhat.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = {
+	old_figurehead 
+	nationalist_symbol
+	}
+}
+
+		create_country_leader = {
+	name = "Maliq Bushati"
+	desc = ""
+	picture = "Maliq_Bushati_Nationalist.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Mehmet Ismail Shehu"
+	desc = ""
+	picture = "Mehmet_Ismail_Shehu_Socialist.dds"
+	expire = "1965.1.1"
+	ideology = socialism_ideology
+	traits = { }
+}
+
+
+
+create_country_leader = {
+	name = "Gustav Mirdashi"
+	desc = ""
+	picture = "Gustav_Mirdashi.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = { }
+}
+
+
+
+create_corps_commander = {
+	name = "Spiro Moisiu"
+	picture = "albania.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Xhemal Aranitasi"
+	portrait_path = "gfx/leaders/EUROPE/Portrait_Europe_Generic_land_1.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Gustav Mirdashi"
+	portrait_path = "gfx/leaders/ALB/Gustav_Mirdashi.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 1
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 3
+}
+

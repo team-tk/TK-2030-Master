@@ -1,0 +1,240 @@
+﻿l_english:
+
+generic_nazism_demagogue:0 "Nazi Politician"
+generic_nationalism_demagogue:0 "Nationalist Politician"
+
+generic_conservatism_reformer:0 "Conservative Politician"
+generic_democratic_reformer:0 "Liberal Politician"
+generic_socdem_reformer:0 "Social Democratic Politician"
+
+generic_syndicalism_revolutionary:0 "Syndicalist Politician"
+generic_socialism_revolutionary:0 "Socialist Politician"
+
+rename_states:0 "Rename States"
+
+ newpolitical.1.t:0 "Monarchists Demand Referendum"
+ newpolitical.1.d:1 "The rapidly growing [Root.GetAdjective] monarchist movement has never claimed that they need majority support before they seize power, counting on uniting the nation under their leadership once their rule is established. However, it seems their public support has grown rapidly. Many monarchists are now calling [Root.GetLeader] a hypocrite, claiming to represent the wishes of the people while in reality turning a deaf ear to the masses.\n\nThe call for a referendum has been dismissed as typical attempts at disrupting the system by [Root.GetRulingParty] members so far, but at least it's a political measure. If we do not act now, the monarchists may choose the violent struggle as a better path to power."
+ newpolitical.1.c:0 "If the people want it, we'll hold the referendum."
+ newpolitical.2.t:0 "Authoritarian Demand Referendum"
+ newpolitical.2.d:1 "The rapidly growing [Root.GetAdjective] reactionary movement has never claimed that they need majority support before they seize power, counting on uniting the nation under their leadership once their rule is established. However, it seems their public support has grown rapidly. Many reactionaries are now calling [Root.GetLeader] a hypocrite, claiming to represent the wishes of the people while in reality turning a deaf ear to the masses.\n\nThe call for a referendum has been dismissed as typical attempts at disrupting the system by [Root.GetRulingParty] members so far, but at least it's a political measure. If we do not act now, the reactionaries may choose the violent struggle as a better path to power."
+ newpolitical.2.c:0 "If the people want it, we'll hold the referendum."
+ newpolitical.3.t:0 "Theocrats Demand Referendum"
+ newpolitical.3.d:1 "The rapidly growing [Root.GetAdjective] theocratic movement has never claimed that they need majority support before they seize power, counting on uniting the nation under their leadership once their rule is established. However, it seems their public support has grown rapidly. Many theocrats are now calling [Root.GetLeader] a hypocrite, claiming to represent the wishes of the people while in reality turning a deaf ear to the masses.\n\nThe call for a referendum has been dismissed as typical attempts at disrupting the system by [Root.GetRulingParty] members so far, but at least it's a political measure. If we do not act now, the conservatives may choose the violent struggle as a better path to power."
+ newpolitical.3.c:0 "If the people want it, we'll hold the referendum."
+ 
+ newpolitical.4.t:0 "Conservatives Demand Referendum"
+ newpolitical.4:0 "Unsurprisingly, the idea of the people ruling the nation they inhabit can easily grow very popular among the people. The [Root.GetRulingParty], of course, sees the idea of democracy as represented by these movements - freedom of speech, public elections, free press - merely populist rhetoric meant to weaken [Root.GetLeader]'s government.\n\nHowever, there is no denying those ideas have taken hold among the [Root.GetAdjective] population. In true democratic fashion, they call for a public referendum on replacing the current regime. Although currently easy to ignore, these ideas have a way of growing very persistent. What will happen to us if we make peaceful revolution impossible?"
+ newpolitical.4.c:0 "If we accept the referendum, perhaps we can preserve our legacy."
+ 
+ newpolitical.5.t:0 "Social Democrats Demand Referendum"
+ newpolitical.5.d:0 "Unsurprisingly, the idea of the people ruling the nation they inhabit can easily grow very popular among the people. The [Root.GetRulingParty], of course, sees the idea of democracy as represented by these movements - freedom of speech, public elections, free press - merely populist rhetoric meant to weaken [Root.GetLeader]'s government.\n\nHowever, there is no denying those ideas have taken hold among the [Root.GetAdjective] population. In true democratic fashion, they call for a public referendum on replacing the current regime. Although currently easy to ignore, these ideas have a way of growing very persistent. What will happen to us if we make peaceful revolution impossible?"
+ newpolitical.5.c:0 "If we accept the referendum, perhaps we can preserve our legacy."
+ 
+ newpolitical.6.t:0 "Nazis Demand Referendum"
+ newpolitical.6.d:1 "The rapidly growing [Root.GetAdjective] national socialist movement has never claimed that they need majority support before they seize power, counting on uniting the nation under their leadership once their rule is established. However, it seems their public support has grown rapidly. Many nazis are now calling [Root.GetLeader] a hypocrite, claiming to represent the wishes of the people while in reality turning a deaf ear to the masses.\n\nThe call for a referendum has been dismissed as typical attempts at disrupting the system by [Root.GetRulingParty] members so far, but at least it's a political measure. If we do not act now, the nazis may choose the violent struggle as a better path to power."
+ newpolitical.6.c:0 "If the people want it, we'll hold the referendum."
+ 
+ newpolitical.7.t:0 "Nationalists Demand Referendum"
+ newpolitical.7.d:1 "The rapidly growing [Root.GetAdjective] nationalist movement has never claimed that they need majority support before they seize power, counting on uniting the nation under their leadership once their rule is established. However, it seems their public support has grown rapidly. Many nationalists are now calling [Root.GetLeader] a hypocrite, claiming to represent the wishes of the people while in reality turning a deaf ear to the masses.\n\nThe call for a referendum has been dismissed as typical attempts at disrupting the system by [Root.GetRulingParty] members so far, but at least it's a political measure. If we do not act now, the nationalists may choose the violent struggle as a better path to power."
+ newpolitical.7.c:0 "If the people want it, we'll hold the referendum."
+ 
+ newpolitical.8.t:0 "Syndicalists Demand Referendum"
+ newpolitical.8.d:0 "Syndicalist ideas took root in [Root.GetName] a long time ago, but have gained much more widespread support lately. The movement has spread outside political theory and into political practice, with disgruntled workers and even some high-profile celebrities voicing support. The syndicalists call this class consciousness. The [Root.GetRulingParty] call it a fast track to riots and treason.\n\nShowing little faith in [Root.GetLeader] being willing to implement the reforms they demand, the more vocal syndicalists have called for an immediate referendum to have the current government removed. While we might be able to reverse the momentum of this mass movement, failure to do so will doubtlessly result in the more popular syndicalist method of removal: Revolution."
+ newpolitical.8.c:0 "The referendum is preferable to a bloody revolt."
+ 
+ newpolitical.9.t:0 "Socialists Demand Referendum"
+ newpolitical.9.d:0 "Socialist ideas took root in [Root.GetName] a long time ago, but have gained much more widespread support lately. The movement has spread outside political theory and into political practice, with disgruntled workers and even some high-profile celebrities voicing support. The socialists call this class consciousness. The [Root.GetRulingParty] call it a fast track to riots and treason.\n\nShowing little faith in [Root.GetLeader] being willing to implement the reforms they demand, the more vocal socialists have called for an immediate referendum to have the current government removed. While we might be able to reverse the momentum of this mass movement, failure to do so will doubtlessly result in the more popular socialist method of removal: Revolution."
+ newpolitical.9.c:0 "The referendum is preferable to a bloody revolt."
+ 
+ political.20.t:0 "Liberals Demand Referendum"
+ political.20.d:0 "Unsurprisingly, the idea of the people ruling the nation they inhabit can easily grow very popular among the people. The [Root.GetRulingParty], of course, sees the idea of democracy as represented by these movements - freedom of speech, public elections, free press - merely populist rhetoric meant to weaken [Root.GetLeader]'s government.\n\nHowever, there is no denying those ideas have taken hold among the [Root.GetAdjective] population. In true democratic fashion, they call for a public referendum on replacing the current regime. Although currently easy to ignore, these ideas have a way of growing very persistent. What will happen to us if we make peaceful revolution impossible?"
+ political.20.c:0 "If we accept the referendum, perhaps we can preserve our legacy."
+ 
+ democratic_on_the_rise:0 "Liberalism on the Rise"
+ democratic_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of liberal values, finding support with an increasing number of the population. The nation's path to democracy lies open, merely awaiting the choice of peaceful or violent transition."
+ 
+ 
+ monarchism_on_the_rise:0 "Monarchism on the Rise"
+ monarchism_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of monarchist values, finding support with an increasing number of the population. The nation's path to monarchism lies open, merely awaiting the choice of peaceful or violent transition."
+ open_up_political_discourse_monarchism:0 "Open Up Political Discourse"
+ open_up_political_discourse_monarchism_desc:1 "We must open up the acceptance of diverging viewpoints in the government. Perhaps this will eventually make it possible to affect a peaceful change in the politics of our nation."
+ discredit_government_monarchism:0 "Discredit Government"
+ discredit_government_monarchism_desc:0 "By pointing out our current government's many flaws we can make people think about the ideological causes of these failures."
+ hold_the_monarchist_national_referendum:0 "Hold National Referendum"
+ hold_the_monarchist_national_referendum_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
+ neutrality_on_the_rise:0 "Authoritarian on the Rise"
+ neutrality_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of Authoritarian values, finding support with an increasing number of the population. The nation's path to Authoritarian lies open, merely awaiting the choice of peaceful or violent transition."
+ open_up_political_discourse_neutrality:0 "Open Up Political Discourse"
+ open_up_political_discourse_neutrality_desc:1 "We must open up the acceptance of diverging viewpoints in the government. Perhaps this will eventually make it possible to affect a peaceful change in the politics of our nation."
+ discredit_government_neutrality:0 "Discredit Government"
+ discredit_government_neutrality_desc:0 "By pointing out our current government's many flaws we can make people think about the ideological causes of these failures."
+ hold_the_neutrality_national_referendum:0 "Hold National Referendum"
+ hold_the_neutrality_national_referendum_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
+ 
+ theocratic_on_the_rise:0 "Theocracy on the Rise"
+ theocratic_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of theocratic values, finding support with an increasing number of the population. The nation's path to monarchism lies open, merely awaiting the choice of peaceful or violent transition."
+ open_up_political_discourse_theocratic:0 "Open Up Political Discourse"
+ open_up_political_discourse_theocratic_desc:1 "We must open up the acceptance of diverging viewpoints in the government. Perhaps this will eventually make it possible to affect a peaceful change in the politics of our nation."
+ discredit_government_theocratic:0 "Discredit Government"
+ discredit_government_theocratic_desc:0 "By pointing out our current government's many flaws we can make people think about the ideological causes of these failures."
+ hold_the_theocratic_national_referendum:0 "Hold National Referendum"
+ hold_the_theocratic_national_referendum_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
+ expand_civil_theocratic_support:0 "Expand Civil Support"
+ expand_civil_theocratic_support_desc:1 "We must ensure the continuing spread of support for our cause among the people, and encourage them to publically challenge the authority of the present government. As the position of the government is increasingly undermined and civil unrest continues to mount, it will become easier for us to achieve our goals. This holds especially true if, unlike a legal change in government, these goals involves a more... sinister means of regime change."
+ 
+ 
+ ### CONSERVATISM
+ 
+  conservatism_on_the_rise:0 "Conservatism on the Rise"
+ conservatism_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of conservative values, finding support with an increasing number of the population. The nation's path to monarchism lies open, merely awaiting the choice of peaceful or violent transition."
+ open_up_political_discourse_conservatism:0 "Open Up Political Discourse"
+ open_up_political_discourse_conservatism_desc:1 "We must open up the acceptance of diverging viewpoints in the government. Perhaps this will eventually make it possible to affect a peaceful change in the politics of our nation."
+ discredit_government_conservatism:0 "Discredit Government"
+ discredit_government_conservatism_desc:0 "By pointing out our current government's many flaws we can make people think about the ideological causes of these failures."
+ hold_the_conservatism_national_referendum:0 "Hold National Referendum"
+ hold_the_conservatism_national_referendum_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
+ expand_civil_conservatism_support:0 "Expand Civil Support"
+ expand_civil_conservatism_support_desc:1 "We must ensure the continuing spread of support for our cause among the people, and encourage them to publically challenge the authority of the present government. As the position of the government is increasingly undermined and civil unrest continues to mount, it will become easier for us to achieve our goals. This holds especially true if, unlike a legal change in government, these goals involves a more... sinister means of regime change."
+ 
+ 
+  ### SOCDEM
+ 
+ socdem_on_the_rise:0 "Social Democracy on the Rise"
+ socdem_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of social democratic values, finding support with an increasing number of the population. The nation's path to monarchism lies open, merely awaiting the choice of peaceful or violent transition."
+ open_up_political_discourse_socdem:0 "Open Up Political Discourse"
+ open_up_political_discourse_socdem_desc:1 "We must open up the acceptance of diverging viewpoints in the government. Perhaps this will eventually make it possible to affect a peaceful change in the politics of our nation."
+ discredit_government_socdem:0 "Discredit Government"
+ discredit_government_socdem_desc:0 "By pointing out our current government's many flaws we can make people think about the ideological causes of these failures."
+ hold_the_socdem_national_referendum:0 "Hold National Referendum"
+ hold_the_socdem_national_referendum_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
+ expand_civil_socdem_support:0 "Expand Civil Support"
+ expand_civil_socdem_support_desc:1 "We must ensure the continuing spread of support for our cause among the people, and encourage them to publically challenge the authority of the present government. As the position of the government is increasingly undermined and civil unrest continues to mount, it will become easier for us to achieve our goals. This holds especially true if, unlike a legal change in government, these goals involves a more... sinister means of regime change."
+ 
+ 
+ ### Nationalism
+ 
+ nationalism_on_the_rise:0 "Nationalism on the Rise"
+ nationalism_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of nationalist values, finding support with an increasing number of the population. The nation's path to monarchism lies open, merely awaiting the choice of peaceful or violent transition."
+ open_up_political_discourse_nationalism:0 "Open Up Political Discourse"
+ open_up_political_discourse_nationalism_desc:1 "We must open up the acceptance of diverging viewpoints in the government. Perhaps this will eventually make it possible to affect a peaceful change in the politics of our nation."
+ discredit_government_nationalism:0 "Discredit Government"
+ discredit_government_nationalism_desc:0 "By pointing out our current government's many flaws we can make people think about the ideological causes of these failures."
+ hold_the_nationalism_national_referendum:0 "Hold National Referendum"
+ hold_the_nationalism_national_referendum_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
+ expand_civil_nationalism_support:0 "Expand Civil Support"
+ expand_civil_nationalism_support_desc:1 "We must ensure the continuing spread of support for our cause among the people, and encourage them to publically challenge the authority of the present government. As the position of the government is increasingly undermined and civil unrest continues to mount, it will become easier for us to achieve our goals. This holds especially true if, unlike a legal change in government, these goals involves a more... sinister means of regime change."
+ 
+ 
+### Nazism
+ 
+ nazism_on_the_rise:0 "Nazism on the Rise"
+ nazism_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of national socialist values, finding support with an increasing number of the population. The nation's path to monarchism lies open, merely awaiting the choice of peaceful or violent transition."
+ open_up_political_discourse_nazism:0 "Open Up Political Discourse"
+ open_up_political_discourse_nazism_desc:1 "We must open up the acceptance of diverging viewpoints in the government. Perhaps this will eventually make it possible to affect a peaceful change in the politics of our nation."
+ discredit_government_nazism:0 "Discredit Government"
+ discredit_government_nazism_desc:0 "By pointing out our current government's many flaws we can make people think about the ideological causes of these failures."
+ hold_the_nazism_national_referendum:0 "Hold National Referendum"
+ hold_the_nazism_national_referendum_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
+ expand_civil_nazism_support:0 "Expand Civil Support"
+ expand_civil_nazism_support_desc:1 "We must ensure the continuing spread of support for our cause among the people, and encourage them to publically challenge the authority of the present government. As the position of the government is increasingly undermined and civil unrest continues to mount, it will become easier for us to achieve our goals. This holds especially true if, unlike a legal change in government, these goals involves a more... sinister means of regime change."
+ 
+ 
+ ### Syndicalism
+ 
+ syndicalism_on_the_rise:0 "Syndicalism on the Rise"
+ syndicalism_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of syndicalist values, finding support with an increasing number of the population. The nation's path to monarchism lies open, merely awaiting the choice of peaceful or violent transition."
+ open_up_political_discourse_syndicalism:0 "Open Up Political Discourse"
+ open_up_political_discourse_syndicalism_desc:1 "We must open up the acceptance of diverging viewpoints in the government. Perhaps this will eventually make it possible to affect a peaceful change in the politics of our nation."
+ discredit_government_syndicalism:0 "Discredit Government"
+ discredit_government_syndicalism_desc:0 "By pointing out our current government's many flaws we can make people think about the ideological causes of these failures."
+ hold_the_syndicalism_national_referendum:0 "Hold National Referendum"
+ hold_the_syndicalism_national_referendum_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
+ expand_civil_syndicalism_support:0 "Expand Civil Support"
+ expand_civil_syndicalism_support_desc:1 "We must ensure the continuing spread of support for our cause among the people, and encourage them to publically challenge the authority of the present government. As the position of the government is increasingly undermined and civil unrest continues to mount, it will become easier for us to achieve our goals. This holds especially true if, unlike a legal change in government, these goals involves a more... sinister means of regime change."
+ 
+ 
+ ### Socialism
+ 
+ socialism_on_the_rise:0 "Socialism on the Rise"
+ socialism_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of socialist values, finding support with an increasing number of the population. The nation's path to monarchism lies open, merely awaiting the choice of peaceful or violent transition."
+ open_up_political_discourse_socialism:0 "Open Up Political Discourse"
+ open_up_political_discourse_socialism_desc:1 "We must open up the acceptance of diverging viewpoints in the government. Perhaps this will eventually make it possible to affect a peaceful change in the politics of our nation."
+ discredit_government_socialism:0 "Discredit Government"
+ discredit_government_socialism_desc:0 "By pointing out our current government's many flaws we can make people think about the ideological causes of these failures."
+ hold_the_socialism_national_referendum:0 "Hold National Referendum"
+ hold_the_socialism_national_referendum_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
+ expand_civil_socialism_support:0 "Expand Civil Support"
+ expand_civil_socialism_support_desc:1 "We must ensure the continuing spread of support for our cause among the people, and encourage them to publically challenge the authority of the present government. As the position of the government is increasingly undermined and civil unrest continues to mount, it will become easier for us to achieve our goals. This holds especially true if, unlike a legal change in government, these goals involves a more... sinister means of regime change."
+ 
+ 
+ expand_civil_monarchism_support:0 "Expand Civil Support"
+ expand_civil_monarchism_support_desc:1 "We must ensure the continuing spread of support for our cause among the people, and encourage them to publically challenge the authority of the present government. As the position of the government is increasingly undermined and civil unrest continues to mount, it will become easier for us to achieve our goals. This holds especially true if, unlike a legal change in government, these goals involves a more... sinister means of regime change."
+ expand_civil_neutrality_support:0 "Expand Civil Support"
+ expand_civil_neutrality_support_desc:1 "We must ensure the continuing spread of support for our cause among the people, and encourage them to publically challenge the authority of the present government. As the position of the government is increasingly undermined and civil unrest continues to mount, it will become easier for us to achieve our goals. This holds especially true if, unlike a legal change in government, these goals involves a more... sinister means of regime change."
+ 
+ 
+ ban_fascist_party:0 "Ban Fascism"
+ ban_fascist_party_desc:0 "In the current situation, allowing fascist parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ ban_fascist_party_tt:1 "Change in popularity of Fascism: §G-§![?.Root.party_popularity@fascism|%0G].\n"
+ ban_democratic_party:1 "Ban Liberalism"
+ ban_democratic_party_desc:1 "The parties in the political center have been a thorn in the side of our government for too long. Their insistence on the 'rights' of the individual undermine our efforts to create a better nation for the whole of our population."
+ ban_democratic_party_tt:1 "Change in popularity of Democracy: §G-§![?.Root.party_popularity@democratic|%0G].\n"
+ ban_communist_party:0 "Ban Communism"
+ ban_communist_party_desc:0 "The Communist Party has been protesting against the government at every turn, sowing discontent and making it hard to govern. It is time to crack down on this."
+ ban_communist_party_tt:1 "Change in popularity of Communism: §G-§![?.Root.party_popularity@communism|%0G].\n" 
+ 
+ban_nazism_party:0 "Ban Nazism"
+ban_nazism_party_desc:0 "In the current situation, allowing nazi parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ban_neutrality_party:0 "Ban Authoritarianism"
+ban_neutrality_party_desc:0 "In the current situation, allowing authoritarian parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ban_nationalism_party:0 "Ban Nationalism"
+ban_nationalism_party_desc:0 "In the current situation, allowing nationalist parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ban_monarchism_party:0 "Ban Monarchism"
+ban_monarchism_party_desc:0 "In the current situation, allowing monarchist parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ban_theocratic_party:0 "Ban Theocratic Extremism"
+ban_theocratic_party_desc:0 "In the current situation, allowing theocratic parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ban_syndicalism_party:0 "Ban Syndicalism"
+ban_syndicalism_party_desc:0 "In the current situation, allowing syndicalist parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ban_socialism_party:0 "Ban Socialism"
+ban_socialism_party_desc:0 "In the current situation, allowing syndicalist parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ban_conservatism_party:0 "Ban Conservatism"
+ban_conservatism_party_desc:0 "In the current situation, allowing conservative parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ban_socdem_party:0 "Ban Social Democracy"
+ban_socdem_party_desc:0 "In the current situation, allowing social democrat parties to continue to organize would undermine our ability to govern effectively. Drastic measures will need to be taken."
+ 
+ anti_fascist_raids:0 "Anti-Fascist Raids"
+ anti_fascist_raids_desc:0 "We must crack down on fascist elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
+ anti_nazism_raids:0 "Anti-Nazi Raids"
+ anti_nazism_raids_desc:0 "We must crack down on nazi elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
+ anti_nationalism_raids:0 "Anti-Nationalist Raids"
+ anti_nationalism_raids_desc:0 "We must crack down on nationalist elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
+ anti_neutrality_raids:0 "Anti-Authoritarian Raids"
+ anti_neutrality_raids_desc:0 "We must crack down on authoritarian elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government." 
+ anti_theocratic_raids:0 "Anti-Theocratic Raids"
+ anti_theocratic_raids_desc:0 "We must crack down on theocratic elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government." 
+ anti_monarchism_raids:0 "Anti-Monarchist Raids"
+ anti_monarchism_raids_desc:0 "We must crack down on monarchist elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government." 
+ anti_conservatism_raids:0 "Anti-Conservative Raids"
+ anti_conservatism_raids_desc:0 "We must crack down on conservative elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the state."
+ anti_socdem_raids:0 "Anti-Social Democrat Raids"
+ anti_socdem_raids_desc:0 "We must crack down on social democrat elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the state."
+ anti_democratic_raids:0 "Anti-Liberal Raids"
+ anti_democratic_raids_desc:0 "We must crack down on liberal elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the state."
+ anti_communist_raids:0 "Anti-Communist Raids"
+ anti_communist_raids_desc:0 "We must crack down on communist elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
+ anti_syndicalism_raids:0 "Anti-Syndicalist Raids"
+ anti_syndicalism_raids_desc:0 "We must crack down on syndicalist elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
+ anti_socialism_raids:0 "Anti-Socialist Raids"
+ anti_socialism_raids_desc:0 "We must crack down on socialist elements in our nation for the sake of long-term domestic stability. Their influence is too great, and may potentially become a problem to the government."
+ 
+ban_nazism_party_tt:1 "Change in popularity of Nazism: §G-§![?.Root.party_popularity@nazism|%0G].\n"
+ban_nationalism_party_tt:1 "Change in popularity of Nationalism: §G-§![?.Root.party_popularity@nationalism|%0G].\n"
+ban_neutrality_party_tt:1 "Change in popularity of Authoritarianism: §G-§![?.Root.party_popularity@neutrality|%0G].\n"
+ban_theocratic_party_tt:1 "Change in popularity of Theocratic: §G-§![?.Root.party_popularity@theocratic|%0G].\n"
+ban_monarchism_party_tt:1 "Change in popularity of Monarchism: §G-§![?.Root.party_popularity@monarchism|%0G].\n"
+ban_conservatism_party_tt:1 "Change in popularity of Conservatism: §G-§![?.Root.party_popularity@conservatism|%0G].\n"
+ban_socdem_party_tt:1 "Change in popularity of Social Democracy: §G-§![?.Root.party_popularity@socdem|%0G].\n"
+ban_syndicalism_party_tt:1 "Change in popularity of Syndicalism: §G-§![?.Root.party_popularity@syndicalism|%0G].\n"
+ban_socialism_party_tt:1 "Change in popularity of Socialism: §G-§![?.Root.party_popularity@socialism|%0G].\n"
+ban_democratic_party_tt:1 "Change in popularity of Liberalism: §G-§![?.Root.party_popularity@democratic|%0G].\n"
+ 

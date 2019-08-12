@@ -1,0 +1,263 @@
+#Category only allowed for POR
+POR_wolfram_embargo = {
+
+	POR_wolfram_embargo_mission = {
+	
+		allowed = { always = yes }
+
+		icon = category_generic_prospect_for_resources
+
+		available = {
+			original_tag = POR
+			has_neutral_government = yes
+		}
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		fire_only_once = yes
+
+		modifier = {
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = POR_wolfram_embargo_mission_tt
+				every_other_country = {	
+					limit = { NOT = { has_neutral_government = yes 
+					} 
+				}
+					add_opinion_modifier = { target = PREV modifier = sanctions_relations 
+					}
+			}
+		}
+	}
+}
+
+form_iberia_category = {
+	
+	form_iberia = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			OR = {
+				original_tag = POR
+			}
+		}
+
+		available = {
+			is_subject = no
+			# Portugal
+			custom_trigger_tooltip = {
+				tooltip = form_iberia_portugal_required_states_tt
+				controls_state = 112
+				controls_state = 179
+				controls_state = 180
+				controls_state = 181
+				controls_state = 697
+				controls_state = 698
+			}
+			# Spain
+			custom_trigger_tooltip = {
+				tooltip = form_iberia_spain_required_states_tt
+				controls_state = 178
+				controls_state = 171
+				controls_state = 174
+				controls_state = 170
+				controls_state = 172
+				controls_state = 176
+				controls_state = 41
+				controls_state = 175
+				controls_state = 169
+				controls_state = 173
+				controls_state = 168
+				controls_state = 167
+				controls_state = 166
+				controls_state = 165
+				controls_state = 177
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = POR
+			}
+			NOT = { has_global_flag = form_iberia_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = IBE_Unified
+			# Portugal
+			custom_effect_tooltip = form_iberia_portugal_coring_states_tt
+			hidden_effect = {
+				112 = { add_core_of = ROOT }
+				179 = { add_core_of = ROOT }
+				180 = { add_core_of = ROOT }
+				181 = { add_core_of = ROOT }
+				697 = { add_core_of = ROOT }
+				698 = { add_core_of = ROOT }
+			}
+			# Spain
+			custom_effect_tooltip = form_iberia_spain_coring_states_tt
+			hidden_effect = {
+				178 = { add_core_of = ROOT }
+				171 = { add_core_of = ROOT }
+				174 = { add_core_of = ROOT }
+				170 = { add_core_of = ROOT }
+				172 = { add_core_of = ROOT }
+				176 = { add_core_of = ROOT }
+				41 = { add_core_of = ROOT }
+				175 = { add_core_of = ROOT }
+				169 = { add_core_of = ROOT }
+				173 = { add_core_of = ROOT }
+				168 = { add_core_of = ROOT }
+				167 = { add_core_of = ROOT }
+				166 = { add_core_of = ROOT }
+				165 = { add_core_of = ROOT }
+				177 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				news_event = { id = news.705 hours = 6 }
+				set_global_flag = form_iberia_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+#Category allowed for POR
+#Visible when has completed POR_ukpba focus.
+#Visible if independent
+POR_colonial_empire = {
+
+	POR_claim_brazil = {
+
+		icon = generic_nationalism
+
+		available = {
+			country_exists = BRA
+		}
+
+		fire_only_once = yes
+		
+		is_good = no 
+		
+		activation = {
+			BRA = { exists = yes }
+		}
+
+		complete_effect = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BRA
+			}	
+		}
+	}
+	
+	POR_demand_ceuta = {
+
+		icon = generic_nationalism
+
+		available = {
+			country_exists = SPR
+		}
+
+		fire_only_once = yes
+		
+		is_good = no 
+		
+		activation = {
+			SPR = { exists = yes }
+		}
+
+		complete_effect = {
+			random_other_country = {
+				limit = {
+					owns_state = 290
+				}
+				country_event = { id = portugal.10 }
+			}
+			290 = { 
+				if = {
+					limit = { is_controlled_by = ROOT }
+				set_state_name = "STATE_1001"
+				}
+			}	
+		}
+	}
+}
+
+POR_colonial_release = {
+
+	POR_release_angola = {
+
+		icon = generic_independence
+
+		available = {
+			country_exists = ANG
+		}
+
+		fire_only_once = yes
+		is_good = no 
+		activation = {
+			has_completed_focus = POR_colonial_question
+			has_full_control_of_state = 540
+			ANG = { exists = no }
+		}
+
+		complete_effect = {
+			add_political_power = 100
+			if = {
+				limit = {
+					any_state = {
+						is_controlled_by = ROOT
+						is_core_of = ANG
+					}
+				}
+				release = ANG
+				set_autonomy = { target = ANG autonomy_state = autonomy_colony }
+			}
+		}
+	}
+	
+	POR_release_monzabique = {
+
+		icon = generic_independence
+
+		available = {
+			country_exists = MZB
+		}
+
+		fire_only_once = yes
+		is_good = no 
+		activation = {
+			has_completed_focus = POR_colonial_question
+			has_full_control_of_state = 544
+			ANG = { exists = no }
+		}
+
+		complete_effect = {
+			add_political_power = 100
+			if = {
+				limit = {
+					any_state = {
+						is_controlled_by = ROOT
+						is_core_of = MZB
+					}
+				}
+				release = MZB
+				set_autonomy = { target = MZB autonomy_state = autonomy_colony }
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+ai_historical_focus_list_VEN = {
+	ai_national_focuses = {
+	VEN_strengthenthegovernment
+	VEN_comprimisewithworkers
+	VEN_encourageforeigninvestment
+	VEN_allowlocalelections
+	VEN_inviteamericaninvestors
+	VEN_pushforfreedom
+	VEN_lowertradebarriers
+	VEN_oilbreakthrough
+	VEN_americaneconomicsupport
+	VEN_alignwithallies
+	#VEN_prepareintervention
+	VEN_awartimeeconomy
+	}
+}

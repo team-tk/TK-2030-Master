@@ -1,0 +1,83 @@
+AST_ship_requisition = {
+
+	AST_requisition_ship_from_uk = {
+	
+		icon = category_generic_naval
+
+		available = {
+			country_exists = ENG
+			ENG = { has_completed_focus = uk_navy }
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			country_exists = ENG
+			ENG = { has_completed_focus = uk_navy }
+			NOT = {
+				ENG = { 
+					has_communist_government = yes
+					has_fascist_government = yes
+					has_neutral_government = yes
+				}
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			464 = {
+				custom_effect_tooltip = AST_destroyers_tt_hmas
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_tech = basic_ship_hull_light
+						NOT = { has_tech = improved_ship_hull_light }
+					}
+				}
+				hidden_effect = { load_oob = "AST_tribal_hmas" }
+				ENG = {
+					transfer_ship = {
+						prefer_name = "HMCS Noble"
+						type = basic_ship_hull_light
+						target = AST
+					}
+					transfer_ship = {
+						prefer_name = "HMCS Cutlass"
+						type = basic_ship_hull_light
+						target = AST
+					}
+				}
+			}
+			if = {
+				limit = {
+					ENG = {
+						has_tech = improved_ship_hull_light
+					}
+				}
+				hidden_effect = { load_oob = "AST_j-k-n_hmas" }
+				ENG = {
+					transfer_ship = {
+						prefer_name = "HMCS Noble"
+						type = improved_ship_hull_light
+						target = AST
+					}
+					transfer_ship = {
+						prefer_name = "HMCS Cutlass"
+						type = improved_ship_hull_light
+						target = AST
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 90
+		}
+	
+	}
+
+}

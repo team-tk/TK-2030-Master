@@ -1,0 +1,181 @@
+
+bookmarks = {
+	bookmark = {
+		name = "Decade of Crisis"
+		desc = "DECADE_CRISIS_DESC"
+		date = 1960.1.1.12
+		picture = "GFX_select_date_1960"
+		default_country = "USA"
+		default = yes
+		
+		"USA"={
+			history = "USA_DECADE_CRISIS_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"SOV"={
+			history = "SOV_DECADE_CRISIS_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			
+			}
+		}
+		
+		"PRC"={
+			history = "PRC_DECADE_CRISIS_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}	
+		}
+		
+		"DDR"={
+			history = "DDR_DECADE_CRISIS_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+			
+		"CUB" = {
+			history = "CUB_DECADE_CRISIS_DESC"
+			ideology = communism
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}
+			
+		}
+	
+		"VIN"={
+			history = "VIN_DECADE_CRISIS_DESC"
+			ideology = communism
+			minor = yes
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"VIE"={
+			history = "VIE_DECADE_CRISIS_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"FRA"={
+			history = "FRA_DECADE_CRISIS_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ENG"={
+			history = "ENG_DECADE_CRISIS_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"WGR"={
+			minor = yes
+			history = "WGR_DECADE_CRISIS_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"SAF"={
+			minor = yes
+			history = "SAF_DECADE_CRISIS_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"IRQ"={
+			minor = yes
+			history = "IRQ_DECADE_CRISIS_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"BUL"={
+			minor = yes
+			history = "BUL_DECADE_CRISIS_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"ITA"={
+			minor = yes
+			history = "ITA_DECADE_CRISIS_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"KOR"={
+			minor = yes
+			history = "ITA_DECADE_CRISIS_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"DPR"={
+			minor = yes
+			history = "KPA_DECADE_CRISIS_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ZIM"={
+			minor = yes
+			history = "ZIM_DECADE_CRISIS_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"---"={
+			history = "OTHER_DESC"
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -1,0 +1,481 @@
+ideas = {
+	    political_advisor = {
+	                        LAT_Margers_Skujenieks = {
+	                        picture = idea_margers_skujenieks
+	                        allowed = { original_tag = LAT }
+	                        traits = { backroom_backstabber }
+	                        }
+	                        LAT_Janis_Balodis = {
+	                        picture = idea_janis_balodis
+	                        allowed = { original_tag = LAT }
+	                        traits = { war_industrialist }
+	                        }
+	                        LAT_Ludvigs_Ekis = {
+	                        picture = idea_ludvigs_ekis
+	                        allowed = { original_tag = LAT }
+	                        traits = { smooth_talking_charmer }
+	                        }
+	                        LAT_Leonids_Breikss = {
+	                        picture = idea_leonids_breikss
+	                        allowed = { original_tag = LAT }
+	                        traits = { fascist_demagogue }
+	                        on_add = { country_event = political.7 }
+	                        }
+	                        LAT_Janis_Lencmanis = {
+	                        picture = idea_janis_lencmanis
+	                        allowed = { original_tag = LAT }
+	                        traits = { communist_revolutionary }
+	                        on_add = { country_event = political.1 }
+	                        }
+	                        LAT_Peteris_Jurasevskis = {
+	                        picture = idea_peteris_jurasevskis
+	                        allowed = { original_tag = LAT }
+	                        traits = { democratic_reformer }
+	                        on_add = { country_event = political.13 }
+	                        }
+	                        LAT_Arturs_Kaposts = {
+	                        picture = idea_arturs_kaposts
+	                        allowed = { original_tag = LAT }
+	                        traits = { captain_of_industry }
+	                        }
+                                LAT_Aspazija = {
+	                        picture = idea_aspazija
+	                        allowed = { original_tag = LAT }
+	                        traits = { popular_figurehead }
+	                        }
+                                LAT_Eduards_Laimins = {
+	                        picture = idea_eduards_laimins
+	                        allowed = { original_tag = LAT }
+	                        traits = { fortification_engineer }
+	                        }
+                                LAT_Juris_Paberzs = {
+	                        picture = idea_juris_paberzs
+	                        allowed = { original_tag = LAT }
+	                        traits = { prince_of_terror }
+	                        }
+	    }
+	    theorist = {
+	               LAT_Krisjanis_Berkis = {
+	               picture = krisjanis_berkis
+	               allowed = { original_tag = LAT }
+	               research_bonus = { land_doctrine = 0.07 }
+	               traits = { military_theorist }
+	               }
+	               LAT_Eriks_Martins = {
+	               picture = eriks_martins
+	               allowed = { original_tag = LAT }
+			       available = { NOT = { has_country_flag = Crash_of_Herberts_Cukurs } }
+	               research_bonus = { air_doctrine = 0.07 }
+	               traits = { air_warfare_theorist }
+	               }
+	    }
+	    high_command = {
+	                   LAT_Janis_Indans = {
+	                   picture = janis_indans
+	                   allowed = { original_tag = LAT }
+	                   traits = { air_close_air_support_2 }
+	                   ai_will_do = { factor = 1 }
+	                   }
+	                   LAT_Arhibalds_fon_Keizerlings = {
+	                   picture = arhibalds_fon_keizerlings
+	                   allowed = { original_tag = LAT }
+	                   traits = { navy_screen_2 }
+	                   ai_will_do = { factor = 1 }
+	                   }
+	                   LAT_Martins_Penikis = {
+	                   picture = martins_penikis
+	                   allowed = { original_tag = LAT }
+	                   traits = { army_infantry_2 }
+	                   ai_will_do = { factor = 1 }
+	                   }
+	                   LAT_Martins_Hartmanis = {
+	                   picture = martins_hartmanis
+	                   allowed = { original_tag = LAT }
+	                   traits = { army_entrenchment_2 }
+	                   ai_will_do = { factor = 1 }
+	                   }
+	    }
+	    army_chief = {
+	                 LAT_Fricis_Celmins = {
+	                 picture = fricis_celmins
+	                 allowed = { original_tag = LAT }
+	                 traits = { army_chief_defensive_2 }
+	                 ai_will_do = { factor = 1 }
+	                 }
+	                 LAT_Rudolfs_Kocins = {
+	                 picture = rudolfs_kocins
+	                 allowed = { original_tag = LAT }
+	                 traits = { army_chief_drill_2 }
+	                 ai_will_do = { factor = 1 }
+	                 }
+	                 LAT_Krisjanis_Berkis_2 = {
+	                 picture = Krisjanis_Berkis_2
+	                 allowed = { original_tag = LAT }
+	                 traits = { army_chief_offensive_2 }
+	                 ai_will_do = { factor = 1 }
+	                 }
+	    }
+	    air_chief = {
+	                LAT_Karlis_Irbitis = {
+	                picture = karlis_irbitis
+	                allowed = { original_tag = LAT }
+	                traits = { air_chief_ground_support_2 }
+	                ai_will_do = { factor = 1 }
+	                }
+	    }
+	    navy_chief = {
+	                 LAT_Teodors_Spade = {
+	                 picture = teodors_spade
+	                 allowed = { original_tag = LAT }
+	                 traits = { navy_chief_decisive_battle_2 }
+	                 ai_will_do = { factor = 1 }
+	                 }
+	                 LAT_Hugo_Legzdins = {
+	                 picture = hugo_legzdins
+	                 allowed = { original_tag = LAT }
+	                 traits = { navy_chief_commerce_raiding_2 }
+	                 ai_will_do = { factor = 1 }
+	                 }
+	    }
+	    aircraft_manufacturer = {
+	                            designer = yes
+	                            VEF = {
+	                                    picture = idea_valsts_elektrotehniska_fabrika
+	                                    allowed = { original_tag = LAT }
+	                                    research_bonus = { air_equipment = 0.10 }
+	                                    traits = { light_aircraft_manufacturer }
+	                                    equipment_bonus = { }
+	                                    ai_will_do = { factor = 1 }
+	                                    }
+	    }
+	    materiel_manufacturer = {
+	                            designer = yes
+	                            Ford_Vairogs = {
+	                                           picture = idea_ford_vairogs
+	                                           allowed = { original_tag = LAT }
+	                                           research_bonus = { motorized_equipment = 0.10 }
+	                                           traits = { motorized_equipment_manufacturer }
+	                                           modifier = { }
+	                                           }
+	    }
+	    industrial_concern = {
+	                         RRR = {
+	                                 picture = idea_rigas_radio_rupnica
+	                                 allowed = { original_tag = LAT }
+	                                 research_bonus = { electronics = 0.10 }
+	                                 traits = { electronics_concern }
+	                                 modifier = { }
+	                                 }
+	    }
+
+    country = {
+		fascism_on_the_rise = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascism_drift = 0.10
+
+		
+			}
+		}
+		
+		communism_on_the_rise = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.10
+
+		
+			}
+		}
+		
+		collectivist_ethos = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = nkvd
+			
+			modifier = {
+				fascism_drift = 0.02
+				fascism_acceptance = 85
+				communism_drift = 0.02
+				communism_acceptance = 85
+
+		
+			}
+		}
+		
+		militarism_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_fascist_government = yes
+			}
+			
+			removal_cost = -1
+
+			picture = general_staff
+	
+			modifier = {
+				conscription = 0.05
+				enemy_partisan_effect = -0.1
+			}
+		}
+		
+		paramilitarism_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_communist_government = yes
+					has_fascist_government = yes
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = general_staff
+	
+			modifier = {
+				training_time_army_factor = -0.1
+			}
+		}
+		
+		indoctrination_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_communist_government = yes
+					has_fascist_government = yes
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = anti_soviet_pact
+	
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		
+		political_commissars_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_communist_government = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				army_morale_factor = 0.1
+			}
+		}
+		
+		democratic_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_democratic_government = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				democratic_drift = 0.1
+				democratic_acceptance = 85
+			}
+		}
+		
+		liberty_ethos_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_democratic_government = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				trade_opinion_factor = 0.2
+			}
+		}
+		
+		neutrality_idea = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_neutral_government = yes
+			}
+
+			cancel = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_communism_drift_bonus
+	
+			modifier = {
+				#generate_wargoal_tension = 1.00
+				join_faction_tension = 1.00
+				#lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
+				ai_get_ally_desire_factor = -100
+			}
+		}
+		
+		deterrence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+	
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+		
+		volunteer_corps_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_volunteer_expedition_bonus
+
+			modifier = {
+				send_volunteer_divisions_required = -0.25
+			}
+		}
+		
+		foreign_expeditions_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.5
+			}
+		}
+		
+		military_youth_focus = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_communist_government = yes
+					has_fascist_government = yes
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		
+
+		
+              }
+}

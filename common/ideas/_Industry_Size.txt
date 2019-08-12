@@ -1,0 +1,139 @@
+ideas = {
+
+	country = {
+		agrarian_society = {
+
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+
+			research_bonus = {
+				armor = -0.075
+				naval_equipment = -0.075
+				air_equipment = -0.075
+				industry = -0.075
+				electronics = -0.075
+				motorized_equipment = -0.075
+				infantry_weapons = -0.075
+				artillery = -0.075
+				support_equipment = -0.075
+				}
+			modifier = {
+				#production_speed_buildings_factor = -0.075
+				#industrial_capacity_factory = -0.075
+				#industrial_capacity_dockyard = -0.075
+				production_factory_efficiency_gain_factor = 0.04
+				line_change_production_efficiency_factor = 0.04
+				production_factory_max_efficiency_factor = 0.04
+			}
+		}
+
+		pre_industrial_society = {
+
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+
+			research_bonus = {
+				armor = -0.0375
+				naval_equipment = -0.0375
+				air_equipment = -0.0375
+				industry = -0.0375
+				electronics = -0.0375
+				motorized_equipment = -0.0375
+				infantry_weapons = -0.0375
+				artillery = -0.0375
+				support_equipment = -0.0375
+				}
+			modifier = {
+				#production_speed_buildings_factor = -0.0375
+				#industrial_capacity_factory = -0.0375
+				#industrial_capacity_dockyard = -0.0375
+				production_factory_efficiency_gain_factor = 0.06
+				line_change_production_efficiency_factor = 0.06
+				production_factory_max_efficiency_factor = 0.06
+			}
+		}
+
+		early_industry = {
+
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+
+			research_bonus = {
+
+				}
+			modifier = {
+			production_factory_efficiency_gain_factor = 0.08
+			line_change_production_efficiency_factor = 0.08
+			production_factory_max_efficiency_factor = 0.08
+			}
+		}
+
+		basic_industry = {
+
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+
+			research_bonus = {
+				armor = 0.0375
+				naval_equipment = 0.0375
+				air_equipment = 0.0375
+				industry = 0.0375
+				electronics = 0.0375
+				motorized_equipment = 0.0375
+				infantry_weapons = 0.0375
+				artillery = 0.0375
+				support_equipment = 0.0375
+				}
+			modifier = {
+				#production_speed_buildings_factor = 0.03
+				#industrial_capacity_factory = 0.0375
+				#industrial_capacity_dockyard = 0.0375
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				
+			}
+		}
+
+		heavy_industry = {
+
+			allowed = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+
+			research_bonus = {
+				armor = 0.075
+				naval_equipment = 0.075
+				air_equipment = 0.075
+				industry = 0.075
+				electronics = 0.075
+				motorized_equipment = 0.075
+				infantry_weapons = 0.075
+				artillery = 0.075
+				support_equipment = 0.075
+				}
+			modifier = {
+				#production_speed_buildings_factor = 0.075
+				#industrial_capacity_factory = 0.075
+				#industrial_capacity_dockyard = 0.075
+				production_factory_efficiency_gain_factor = 0.12
+				line_change_production_efficiency_factor = 0.12
+				production_factory_max_efficiency_factor = 0.12
+			}
+		}
+	}
+}

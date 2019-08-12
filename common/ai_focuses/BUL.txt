@@ -1,0 +1,34 @@
+ai_historical_focus_list_BUL = {
+	ai_national_focuses = {
+	
+	BUL_fight_the_crisis
+	BUL_expand_facilities
+	BUL_rearm_ourselves
+	BUL_bulgarian_infrastructure
+	BUL_girdap	
+	BUL_across_the_land
+	BUL_steel_exports
+	BUL_bulgarian_research_institutes
+	BUL_restore_the_bulgarian_army
+	BUL_vmz_sopot
+	BUL_bulgarian_arms
+	BUL_license_german_equipment
+	BUL_over_the_balkans
+	BUL_protect_bulgaria
+	BUL_political_force
+	BUL_bulgarian_resentment
+	BUL_ignore_treaty_neuilly_sur_seine
+	BUL_german_arm_deliveries
+	BUL_sign_salonika_agreement
+	BUL_exercise_direct_power
+	BUL_dismantle_the_government
+	BUL_permit_german_troops
+	BUL_sign_the_tripartite_pact
+	BUL_airfields_for_germany
+	BUL_join_the_axis
+	BUL_expel_soviet_diplomats
+	BUL_dedication_to_the_axis
+	BUL_depose_the_king
+	BUL_acquire_panzer_iv
+	}
+}

@@ -1,0 +1,187 @@
+#################
+#### Persia ####
+#################
+
+
+PER_cease_oil_concessions = {
+
+	icon = category_generic_independence
+
+	picture = GFX_category_generic_political_actions
+	
+	allowed = {
+		tag = PER
+	}
+
+	on_map_area = {
+		state = 410
+		name = PER_cease_oil_concessions_map_category_name_1
+		zoom = 250
+	}
+	
+	on_map_area = {
+		state = 412
+		name = PER_cease_oil_concessions_map_category_name_2
+		zoom = 250
+	}
+
+	priority = {
+		base = 0
+		modifier = {
+			add = 10
+			OR = {
+				has_completed_focus = nationalism_focus
+				has_completed_focus = internationalism_focus
+				has_completed_focus = interventionism_focus
+			}
+		}
+	}
+
+	visible = {
+		
+		OR = {
+			has_completed_focus = nationalism_focus
+			has_completed_focus = internationalism_focus
+			has_completed_focus = interventionism_focus
+			AND = {
+				has_completed_focus = neutrality_focus
+				ENG = { has_added_tension_amount > 0.19 }
+			}
+		}
+	}
+}
+
+PER_oil_nationalization_decision = {
+	icon = generic_prospect_for_resources
+	
+	picture = GFX_decision_cat_generic_persian_oil
+
+	allowed = {
+		original_tag = PER
+	}
+}
+PER_greater_iran = {
+	icon = tribe_hunting
+	allowed = {
+		original_tag = PER
+	}
+}
+PER_money_var_conversion = {
+	icon = generic_economy
+	
+	
+
+	allowed = {
+		original_tag = PER
+	}
+}
+
+PER_relation_with_germany = {
+	icon = generic_economy
+	
+	picture = GFX_decision_cat_generic_persian_germany
+	
+	visible = {
+		NOT = { has_global_flag = PER_agreed_to_demand }
+		has_completed_focus = PER_drift_germany
+		}
+
+	allowed = {
+		original_tag = PER
+		NOT = { has_communist_government = yes }
+		NOT = { has_global_flag = PER_agreed_to_demand }
+		NOT = { has_completed_focus = PER_tudeh_iraj }
+	}
+}
+
+PER_economy_decisions = {
+	icon = generic_economy
+	
+	picture = GFX_decision_cat_generic_persian_economy
+
+	allowed = {
+		original_tag = PER
+	}
+}
+PER_integrate_afghanistan_cat = {
+	icon = generic_economy
+		
+	visible = {
+	original_tag = PER
+	PER = { has_completed_focus = PER_unite_afghanistan }
+	}
+	
+	available = {
+	PER = { has_completed_focus = PER_unite_afghanistan }
+	}
+
+	allowed = {
+	original_tag = PER
+	}
+}
+PER_unruly_tribes_cat = {
+	icon = tribe_hunting
+	
+	allowed = {
+	original_tag = PER
+}
+}
+######################################
+############ CLERGY ##################
+######################################
+PER_clergy_dec_cat = {
+	icon = tribe_hunting
+
+	picture = GFX_cat_generic_persian_clergy
+	
+	visible = {
+	NOT = { has_global_flag = PER_clergy_coup_flag }
+	}
+	
+	available = {
+	NOT = { has_global_flag = PER_clergy_coup_flag }
+	}
+	
+	allowed = {
+	original_tag = PER 
+	NOT = { has_global_flag = PER_clergy_coup_flag }
+	}
+}
+##################################
+####### diplomacy ################
+PER_diplomacy_cat = {
+	icon = generic_crisis
+
+	picture = GFX_decision_cat_picture_chi_political_support
+	visible = {
+	NOT = { has_completed_focus = PER_crush_foreign_influence }
+	}
+	
+	allowed = {
+	original_tag = PER
+	}
+}
+#################
+###pan_iranism###
+#################
+PER_pan_iranism_cat = {
+	icon = pan_iranism
+
+	visible = {
+	has_completed_focus = PER_unite_the_iranians
+	
+	}
+	
+	allowed = {
+	original_tag = PER
+	}
+}
+	
+
+
+	
+
+
+
+
+

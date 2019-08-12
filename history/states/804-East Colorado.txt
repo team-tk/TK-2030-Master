@@ -1,0 +1,25 @@
+
+state={
+	id=804
+	name="STATE_804"
+	manpower = 89050
+	resources={
+		oil=3
+	}
+	
+	state_category = town
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = USA
+		victory_points = {
+		}
+	}
+
+	provinces={
+		1738 1809 7780 11772 12570 12642
+	}
+}

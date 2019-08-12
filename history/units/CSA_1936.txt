@@ -1,0 +1,362 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infantry Division"  	# Standard formation for frontline divisions
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # US Eng Rgt consisted of 2 Bns
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
+	}
+}
+division_template = {
+	name = "National Guard Division"  	# Standard formation for NG divisions through late 1940
+
+	regiments = {						
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Cavalry Division"  		# 1st Cavalry Division only
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
+		engineer = { x = 0 y = 1 }   # US Eng Bn
+	}
+}
+
+
+###### OOB ######
+units = {
+	
+	### Army of Northern Virginia
+	division= {			
+		name = "A. P. Hill's Light Division"		
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.5
+
+	}			
+	division= {			
+		name = "Walker's Greyhounds Division"		
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}			
+	division= {			
+		name = "Stonewall Division"		
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}	
+	division= {			
+		name = "Lee Division"		
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}	
+	division= {			
+		name = "Texas Division"		
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}		
+	division= {			
+		name = "Virginia Division"		
+		location = 3823
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}		
+
+
+	### Army of Kentucky -- note: Armies only paper organizations in 1936 ###
+	# IV Army Corps #
+	division= {			
+		name = "'Dixie' Division"		
+		location = 12709
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+
+	}			
+	division= {			
+		name = "'Indianhead' Division"		
+		location = 12709
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+
+	}				
+	division = {			
+		name = "'Old Hickory' Division"		
+		location = 12709
+		division_template = "National Guard Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.99
+
+	}	
+	division= {			
+		name = "Kentucky Division"		
+		location = 12709
+		division_template = "National Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.99
+
+	}			
+	division= {			
+		name = "Stuart Division"		
+		location = 12709
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.99
+	}			
+					
+			
+	### ATLANTIC FLEET -- Norfolk
+	navy = {					
+		name = "Battleship Division 3"				
+		base = 788
+		location = 788 # Norfolk		
+		ship = { name = "CSS Mississippi" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }								
+	}					
+	navy = {					
+		name = "Battleship Division 5"				
+		base = 788
+		location = 788 # Norfolk			
+		ship = { name = "CSS Texas" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New York class" } } }				
+	}					
+	navy = {					
+		name = "Cruiser Division 2"				
+		base = 788
+		location = 788 # Norfolk
+		ship = { name = "CSS Omaha" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+		ship = { name = "CSS Milwaukee" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+		ship = { name = "CSS Cincinnati" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+		ship = { name = "CSS Memphis" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = USA version_name = "Omaha Class" } } }				
+	}					
+	navy = {					
+		name = "Cruiser Division 7"				
+		base = 788
+		location = 788 # Norfolk
+		ship = { name = "CSS Augusta" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Northampton Class" } } }				
+		ship = { name = "CSS Tuscaloosa" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
+		ship = { name = "CSS Quincy" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = USA version_name = "New Orleans Class" } } }	
+	}					
+	navy = {					
+		name = "CSS Ranger"				
+		base = 788
+		location = 788 # Norfolk
+		ship = { name = "CSS Ranger" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA version_name = "Ranger class" } } 
+			air_wings = {
+				cv_fighter_equipment_0 =  { owner = "USA" amount = 30 } # historical: 36
+				cv_CAS_equipment_1 =  { owner = "USA" amount = 15 } # historical: 15
+				cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 10 } # historical: 12
+			}
+		}
+	}					
+	navy = {					
+		name = "Destroyer Flotilla  3"				
+		base = 788
+		location = 788 # Norfolk
+		# 13th Destroyer Division				
+		ship = { name = "CSS Clemson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Chandler" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Southard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Hovey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Long" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		# 14th Destroyer Division				
+		ship = { name = "CSS Little" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Gregory" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Stringham" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Colhoun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		# 17th Destroyer Division				
+		ship = { name = "CSS Goldsborough" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS McFarland" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Reuben James" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Hopkins" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Belknap" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		# 18th Destroyer Division				
+		ship = { name = "CSS Osmond Ingram" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Bancroft" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Gillis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Greene" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		# 21st Destroyer Division				
+		ship = { name = "CSS McKean" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Dorsey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Boggs" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Hamilton" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Elliot" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		# 30th Destroyer Division				
+		ship = { name = "CSS MacLeish" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Sturtevant" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Overton" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Bainbridge" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		# 31st Destroyer Division				
+		ship = { name = "CSS Broome" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Simpson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS McCormick" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Truxtun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+	}					
+	navy = {					
+		name = "Destroyer Flotilla  4"				
+		base = 788
+		location = 788 # Norfolk
+		# 3rd Destroyer Division				
+		ship = { name = "CSS Decatur" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Badger" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Babbitt" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Leary" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Schenck" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		# 4th Destroyer Division				
+		ship = { name = "CSS Jacob Jones" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Roper" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Dickerson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Herbert" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		# 28th Destroyer Division				
+		ship = { name = "CSS Dallas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Du Pont" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Bernadou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Ellis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Cole" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		# 29th Destroyer Division				
+		ship = { name = "CSS Lea" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Tarbell" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Upshur" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		ship = { name = "CSS Greer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Clemson class" } } }		
+		
+		ship = { name = "CSS Porter" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Porter Class" } } }		
+		ship = { name = "CSS Selfridge" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Porter Class" } } }		
+		ship = { name = "CSS McDougal" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Porter Class" } } }		
+		ship = { name = "CSS Winslow" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Porter Class" } } }	
+		ship = { name = "CSS Phelps" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Porter Class" } } }		
+		ship = { name = "CSS Clark" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Porter Class" } } }		
+		ship = { name = "CSS Moffett" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Porter Class" } } }		
+		ship = { name = "CSS Balch" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Porter Class" } } }	
+		
+	}				
+	
+	navy = {					
+		name = "1st Submarine Squadron"				
+		base = 788
+		location = 788 # Norfolk
+		# 11th Submarine Division			
+		ship = { name = "CSS O-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS O-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS O-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS O-6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS O-7" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS O-8" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS O-10" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		# 12th Submarine Division			
+		ship = { name = "CSS R-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS R-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS R-5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS R-6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS R-7" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS R-9" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS R-10" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+	}					
+	navy = {					
+		name = "3rd Submarine Squadron"				
+		base = 788
+		location = 788 # Norfolk
+		# 31st Submarine Division			
+		ship = { name = "CSS S-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS S-11" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS S-12" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS S-13" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS S-14" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS S-15" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS S-16" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "CSS S-17" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		# 32nd Submarine Division			
+		ship = { name = "CSS Barracuda" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
+		ship = { name = "CSS Bass" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
+		ship = { name = "CSS Bonita" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
+	}									
+	
+}
+		
+air_wings = {
+	
+
+	### 3 CSAAF Wing -- Louisiana
+	811= { 
+		# 20th Pursuit Group 
+		fighter_equipment_0 =  {
+			owner = "USA" 
+			amount = 96
+		}
+		# 3rd Attack Group 
+		CAS_equipment_1 = {
+			owner = "USA" 
+			amount = 48
+		}
+	}
+
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+		
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "USA"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 70
+	}
+
+}
+#####################

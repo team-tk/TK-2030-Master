@@ -1,0 +1,46 @@
+ideas = {
+	country = {
+
+		vampirized_economy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				OR = {	
+					AND = {	
+						is_puppet = no
+						is_subject = no
+					}
+					has_global_flag = indian_national_mobilisation
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+
+			research_bonus = {  
+				industry = -0.25
+			}				
+												
+			modifier = {
+				stability_factor = -0.15 # was none
+				war_support_factor = -0.25 # was none
+				research_time_factor = 0.5 # was none	
+				production_speed_arms_factory_factor = -0.5
+				production_speed_industrial_complex_factor = -0.5
+				ai_get_ally_desire_factor = -300
+				conscription_factor = -0.5				
+				join_faction_tension = 0.5				
+				political_power_factor = -0.5 
+				consumer_goods_factor = 0.05
+			}	
+		}
+	}
+}

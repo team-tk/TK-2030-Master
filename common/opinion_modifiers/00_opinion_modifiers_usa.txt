@@ -1,0 +1,25 @@
+opinion_modifiers = {
+
+	us_soviet_cooperation = {
+		value = 25
+	}
+	
+	confederate_oil_investment = {
+		value = 75
+	}
+	
+	ger_confederate_oil_investment = {
+		value = 45
+	}
+	
+	yankee_imperialists = {
+		value = -80
+	}
+
+	cs_british_cooperation = {
+		value = 55
+	}
+	aco_comintern_ties = {
+		value = 45
+	}
+}	

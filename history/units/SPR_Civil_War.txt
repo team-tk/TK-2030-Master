@@ -1,0 +1,152 @@
+﻿division_template = {
+	name = "Columna Milicianos"			# International volunteers -- poor equipment, no experience (militia)
+    is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "I Milicia de Madrid"
+		location = 3938  # Madrid
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "Quinto Regimiento"
+		location = 3938  # Madrid
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "II Milicia de Madrid"
+		location = 3938  # Madrid
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "III Milicia de Madrid"
+		location = 3938  # Madrid
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "IV Milicia de Madrid"
+		location = 3938  # Madrid
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "V Milicia de Madrid"
+		location = 3938  # Madrid
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "VI Milicia de Madrid"
+		location = 3938  # Madrid
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "VII Milicia de Madrid"
+		location = 3938  # Madrid
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "1os Voluntarios Vascos"
+		location = 740  # Bilbao
+		division_template = "Columna Milicianos"
+		start_experience_factor = 0.5
+	}
+    division = {
+		name = "2os Voluntarios Vascos"
+		location = 740  # Bilbao
+		division_template = "Columna Milicianos"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "3os Voluntarios Vascos"
+		location = 740  # Bilbao
+		division_template = "Columna Milicianos"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "I Brigada Confederal"
+		location = 9764  # Barcelona
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "II Brigada Confederal"
+		location = 9764  # Barcelona
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "III Brigada Confederal"
+		location = 9764  # Barcelona
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "I Milicia del CSP"
+		location = 9979  # Malaga
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "I Milicias Valencianas"
+		location = 6906  # Valencia
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "II Milicias Valencianas"
+		location = 6906  # Valencia
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "III Milicias Valencianas"
+		location = 6906  # Valencia
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "IV Milicias Valencianas"
+		location = 6906  # Valencia
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "V Milicias Valencianas"
+		location = 6906  # Valencia
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "II Milicia del CSP"
+		location = 9979  # Malaga
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "III Milicia del CSP"
+		location = 9979  # Malaga
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "IV Milicia del CSP"
+		location = 9979  # Malaga
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "V Milicia del CSP"
+		location = 9979  # Malaga
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "VI Milicia del CSP"
+		location = 9979  # Malaga
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "VII Milicia del CSP"
+		location = 9979  # Malaga
+		division_template = "Columna Milicianos"
+	}
+	division = {
+		name = "Milicias de Santander"
+		location = 11688  # Santander
+		division_template = "Columna Milicianos"
+	}
+}

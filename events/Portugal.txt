@@ -1,0 +1,799 @@
+###########################
+# Portugal events Events
+###########################
+
+add_namespace = portugal
+
+# Demand Ceuta from Spain
+country_event = {
+	id = portugal.10
+	title = portugal.10.t
+	desc = portugal.10.d
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portugal.10.a
+		ai_chance = { factor = 85 }
+		country_event = { id = portugal.11 }
+		effect_tooltip = {
+			POR = { transfer_state = 290 }
+			remove_opinion_modifier = { target = POR modifier = por_supported_spain_civil_war }
+		}
+
+		hidden_effect = {
+			news_event = { id = news.700 }
+		}
+	}
+	option = {
+		name = portugal.10.b
+		ai_chance = { factor = 15 }
+		country_event = { id = portugal.12 }
+		effect_tooltip = {
+			POR = { add_state_claim = 290 }
+		}
+	}
+}
+
+# Spain Gives Up Ceuta
+country_event = {
+	id = portugal.11
+	title = portugal.11.t
+	desc = portugal.11.d
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portugal.11.a
+		POR = { transfer_state = 290 }
+		remove_opinion_modifier = { target = POR modifier = por_supported_spain_civil_war }
+	}
+}
+
+# Spain Refuses to Give Up Ceuta
+country_event = {
+	id = portugal.12
+	title = portugal.12.t
+	desc = portugal.12.d
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portugal.12.a
+		POR = { add_state_claim = 290 }
+	}
+}
+
+# Request Land from England
+country_event = {
+	id = portugal.13
+	title = portugal.13.t
+	desc = portugal.13.d
+	picture = GFX_report_event_african_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portugal.13.a
+		ai_chance = { factor = 70 }
+		country_event = { id = portugal.14 }
+		effect_tooltip = {
+			POR = { 
+				transfer_state = 422
+				transfer_state = 281 
+				transfer_state = 545 
+			}
+		}
+
+		hidden_effect = {
+			news_event = { id = news.702 }
+		}
+	}
+	option = {
+		name = portugal.13.b
+		ai_chance = { factor = 30 }
+		country_event = { id = portugal.15 }
+		effect_tooltip = {
+			POR = { 
+				add_state_claim = 422 
+				add_state_claim = 281
+				add_state_claim = 545 
+			}
+		}
+	}
+}
+
+# England Gives Up Land
+country_event = {
+	id = portugal.14
+	title = portugal.14.t
+	desc = portugal.14.d
+	picture = GFX_report_event_african_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portugal.14.a
+		POR = { 
+			transfer_state = 422 
+			transfer_state = 281 
+			transfer_state = 545 
+		}
+	}
+}
+
+# England Refuses to Give Up Land
+country_event = {
+	id = portugal.15
+	title = portugal.15.t
+	desc = portugal.15.d
+	picture = GFX_report_event_south_africa_patrol
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portugal.15.a
+		POR = { 
+			add_state_claim = 422 
+			add_state_claim = 281 
+			add_state_claim = 545 
+		}
+	}
+}
+
+# Indonesian Nationalists Alert 
+country_event = {
+	id = portugal.16
+	title = portugal.16.t	
+	desc = portugal.16.desc	#
+	picture = GFX_report_event_merchant_ship_01
+	
+	
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portugal.16.a
+		
+	}
+
+}
+
+# Indonesian Nationalists Alert 
+country_event = {
+	id = portugal.17
+	title = portugal.17.t	
+	desc = portugal.17.desc
+	picture = GFX_report_event_fascist_gathering
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = portugal.17.a
+		start_civil_war = {
+			ideology = neutrality
+			size = 1
+			states = { 334 673 669 668 738 667 }
+		}
+	}
+	option = {
+		trigger = {
+			is_ai = no
+		}
+		name = portugal.17.b
+		if = {
+			limit = {
+				has_democratic_government = yes
+			}
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = democratic
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_communist_government = yes
+			}
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = communism
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_fascist_government = yes			}
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = communism
+				size = 0.5
+			}
+		}
+	}
+}
+
+# Demand X from Indonesia
+country_event = {
+	id = portugal.18
+	title = portugal.18.t
+	desc = portugal.18.d
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portugal.18.a
+		ai_chance = { factor = 85 }
+		country_event = { id = portugal.19 }
+		effect_tooltip = {
+			POR = { 
+				transfer_state = 667
+				transfer_state = 668 
+			}
+		}
+
+		hidden_effect = {
+			news_event = { id = news.703 }
+		}
+	}
+	option = {
+		name = portugal.18.b
+		ai_chance = { factor = 15 }
+		country_event = { id = portugal.20 }
+		effect_tooltip = {
+			POR = { 
+				add_state_claim = 667 
+				add_state_claim = 668 
+			}
+		}
+	}
+}
+
+# Indonesia Gives Up X
+country_event = {
+	id = portugal.19
+	title = portugal.19.t
+	desc = portugal.19.d
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portugal.19.a
+		POR = { 
+			transfer_state = 667
+			transfer_state = 668
+		}
+	}
+}
+
+# Indonesia Refuses to Give Up X
+country_event = {
+	id = portugal.20
+	title = portugal.20.t
+	desc = portugal.20.d
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = portugal.20.a
+		POR = { 
+			add_state_claim = 667
+			add_state_claim = 668
+		}
+	}
+}
+
+#Spain Cedes Ceuta
+news_event = {
+	id = news.700
+	title = news.700.t
+	desc = news.700.d
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		POR = {
+			save_event_target_as = Portugal
+		}
+	}
+
+	#This is an important step towards complete Mediterranean dominance.
+	option = {
+		name = news.700.a
+		trigger = {
+			tag = POR
+		}
+	}
+
+	#
+	option = {
+		name = news.700.b
+		trigger = {
+			is_in_faction_with = POR
+			NOT = { tag = POR }
+		}
+	}
+
+	#Portugal is strengthening its grip on the Mediterrenean.
+	option = {
+		name = news.700.b
+		trigger = {
+			NOT = {	is_in_faction_with = POR }
+			NOT = {
+				OR = {
+					tag = FROM
+					tag = POR
+				}
+			}
+		}
+	}
+
+	#A symbol of the \"dear friendship\" between our nations.
+	option = {
+		name = news.700.c
+		trigger = {
+			tag = FROM
+		}
+	}
+}
+
+#Portugal reafirms old alliance with England
+news_event = {
+	id = news.701
+	title = news.701.t
+	desc = news.701.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	#Our nations stand together as friends.
+	option = {
+		name = news.701.a
+		trigger = {
+			OR = {
+				tag = POR
+				tag = ENG
+			}
+		}
+	}
+
+	#The status-quo will be maintained.
+	option = {
+		name = news.701.b
+		trigger =  {
+			NOT = {
+				OR = {
+					tag = POR
+					tag = ENG
+				}
+			}
+			POR = {
+				has_war = no
+			}
+		}
+	}
+
+	#It will be interesting to see where this ends.
+	option = {
+		name = news.701.c
+		trigger =  {
+			NOT = {
+				OR = {
+					tag = POR
+					tag = ENG
+				}
+			}
+			POR = {
+				has_war = yes
+			}
+		}
+	}
+}
+
+#England Cedes Land
+news_event = {
+	id = news.702
+	title = news.702.t
+	desc = news.702.d
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		POR = {
+			save_event_target_as = Portugal
+		}
+	}
+
+	#This is an important step towards complete African dominance.
+	option = {
+		name = news.702.a
+		trigger = {
+			tag = POR
+		}
+	}
+
+	#
+	option = {
+		name = news.702.b
+		trigger = {
+			is_in_faction_with = POR
+			NOT = { tag = POR }
+		}
+	}
+
+	#Portugal is strengthening its grip in Africa.
+	option = {
+		name = news.702.b
+		trigger = {
+			NOT = {	is_in_faction_with = POR }
+			NOT = {
+				OR = {
+					tag = FROM
+					tag = POR
+				}
+			}
+		}
+	}
+
+	#A symbol of the \"dear friendship\" between our nations.
+	option = {
+		name = news.702.c
+		trigger = {
+			tag = FROM
+		}
+	}
+}
+
+#Indonesia Cedes X
+news_event = {
+	id = news.703
+	title = news.703.t
+	desc = news.703.d
+	picture = GFX_news_event_generic_sign_treaty2
+
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		POR = {
+			save_event_target_as = Portugal
+		}
+	}
+
+	#This is an important step towards complete Mediterranean dominance.
+	option = {
+		name = news.703.a
+		trigger = {
+			tag = POR
+		}
+	}
+
+	#
+	option = {
+		name = news.703.b
+		trigger = {
+			is_in_faction_with = POR
+			NOT = { tag = POR }
+		}
+	}
+
+	#Portugal is strengthening its grip on the Mediterrenean.
+	option = {
+		name = news.703.b
+		trigger = {
+			NOT = {	is_in_faction_with = POR }
+			NOT = {
+				OR = {
+					tag = FROM
+					tag = POR
+				}
+			}
+		}
+	}
+
+	#A symbol of the \"dear friendship\" between our nations.
+	option = {
+		name = news.703.c
+		trigger = {
+			tag = FROM
+		}
+	}
+}
+
+#Oscar Carmona forced to adbicate
+news_event = {
+	id = news.704
+	title = news.704.t
+	desc = news.704.desc
+	picture = GFX_news_event_portuguese_assembleia
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.704.a
+		trigger = {
+			TAG = POR
+		}
+	}
+	option = {
+		name = news.704.b
+		trigger = { 
+			NOT = { TAG = POR }
+		}
+	}
+}
+
+# Formation of Iberia
+news_event = {
+	id = news.705
+	title = news.705.t
+	desc = news.705.desc
+	picture = GFX_news_event_generic_parliament
+
+	is_triggered_only = yes
+	
+	option = {
+		name = news.705.a
+		trigger = {
+			OR = {
+				original_tag = POR
+			}
+			NOT = { has_war_with = FROM }
+		}
+	}
+	option = {
+		name = NEWS.705.b
+		trigger = {
+			NOT = { original_tag = POR }
+			NOT = { has_war_with = FROM }
+		}
+	}
+	option = {
+		name = news.705.c
+		trigger = {
+			has_war_with = FROM
+		}
+	}
+}
+
+# Event starting neutral civil war
+country_event = {
+	id = news.706
+	title = news.706.t
+	desc = news.706.d
+	picture = GFX_report_event_ger_civil_war
+
+	is_triggered_only = yes
+	
+	#civil war starts
+	option = {
+		name = news.706.a
+		hidden_effect = {
+			set_capital = 112
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = neutrality
+				size = 0.5
+				capital = 180
+				states = { 180 181 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = POR
+					has_neutral_government = yes
+				}
+				set_stability = 0.9
+				set_war_support = 0.8
+			}
+			
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.30
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.35
+			}	
+			set_stability = 0.9
+			set_war_support = 0.8
+		}
+		custom_effect_tooltip = POR_fascism_civil_war_tt
+		add_stability = -0.25
+		random_other_country = {
+			limit = {
+				original_tag = POR
+				has_neutral_government = yes
+			}
+			set_cosmetic_tag = POR_civil_war
+		}
+	}
+}
+
+country_event = {
+	id = news.707
+	title = news.707.t
+	desc = news.707.d
+	picture = GFX_report_event_ger_civil_war
+
+	is_triggered_only = yes
+	
+	#civil war starts
+	option = {
+		name = news.707.a
+		hidden_effect = {
+			set_capital = 112
+			start_civil_war = {
+				ruling_party = communism
+				ideology = neutrality
+				size = 0.5
+				capital = 180
+				states = { 180 181 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = POR
+					has_neutral_government = yes
+				}
+				set_stability = 0.9
+				set_war_support = 0.8
+			}
+			
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.35
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.30
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}	
+			set_stability = 0.9
+			set_war_support = 0.8
+		}
+		custom_effect_tooltip = POR_communism_civil_war_tt
+		add_stability = -0.25
+		random_other_country = {
+			limit = {
+				original_tag = POR
+				has_neutral_government = yes
+			}
+			set_cosmetic_tag = POR_civil_war
+		}
+	}
+}
+
+country_event = {
+	id = news.708
+	title = news.708.t
+	desc = news.708.d
+	picture = GFX_report_event_ger_civil_war
+
+	is_triggered_only = yes
+	
+	#civil war starts
+	option = {
+		name = news.708.a
+		hidden_effect = {
+			set_capital = 180
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = neutrality
+				size = 0.5
+				capital = 112
+				states = { 112 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = POR
+					has_neutral_government = yes
+				}
+				set_stability = 0.9
+				set_war_support = 0.8
+			}
+			
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.25
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.4
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.25
+			}	
+			set_stability = 0.9
+			set_war_support = 0.8
+		}
+		custom_effect_tooltip = POR_communism_civil_war_tt
+		add_stability = -0.50
+		random_other_country = {
+			limit = {
+				original_tag = POR
+				has_neutral_government = yes
+			}
+			set_cosmetic_tag = POR_civil_war
+		}
+	}
+}
+
+# Iberian-Pact
+country_event = {
+	id = portugal.21
+	title = portugal.21.t
+	desc = portugal.21.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = portugal.21.a
+		ai_chance = { 
+			factor = 100 
+			modifier = {
+				factor = 0
+				POR = {
+					OR = { 
+						has_wargoal_against = SPR
+						is_justifying_wargoal_against = SPR
+					}
+					NOT = {
+						is_in_faction_with = SPR
+					}
+				}
+			}
+		}
+		country_event = { days = 1 id = portugal.22 }
+		add_opinion_modifier = { target = POR modifier = iber_pact }		
+		set_global_flag = spr_yes_pact
+	}
+}

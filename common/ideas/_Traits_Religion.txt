@@ -1,0 +1,283 @@
+# Age Laws
+	ideas = {
+	
+	religion_traits = {
+		law = yes
+		
+		religion_atheism = {
+		default = yes
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_buddhism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_catholicism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			
+			religion_protestantism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_confucianism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_hinduism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_sunni_islamism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_shia_islamism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_ibadi_islamism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_shafi_islamism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_judaism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_lutheranism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_orthodoxism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_paganism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_shintoism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			religion_sikhism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+			religion_taoism = {
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			
+			}
+			
+	
+
+	}
+}
+### EOF ###

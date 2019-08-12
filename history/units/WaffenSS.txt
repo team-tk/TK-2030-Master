@@ -1,0 +1,213 @@
+﻿####SS####
+division_template = {
+	name = "SS-Panzer-Division 40"				
+	division_names_group = SS_Arm_01
+
+	regiments = {
+		SS_medium_armor = { x = 0 y = 0 }
+		SS_medium_armor = { x = 0 y = 1 }
+		SS_medium_armor = { x = 0 y = 2 }	
+		SS_medium_armor = { x = 0 y = 3 }
+		
+		SS_motorized = { x = 1 y = 0 }
+		SS_motorized = { x = 1 y = 1 }
+		SS_motorized = { x = 1 y = 2 }
+		
+		SS_motorized = { x = 2 y = 0 }
+		SS_motorized = { x = 2 y = 1 }
+		SS_motorized = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        signal_company = { x = 0 y = 2 }
+        logistics_company = { x = 0 y = 3 }
+        maintenance_company = { x = 0 y = 4 }
+	}
+	priority = 2
+	is_locked = no
+	#template_counter = 65
+}
+
+division_template = {
+	name = "SS-Panzer-Division 42"				
+	division_names_group = SS_Arm_01
+
+	regiments = {
+		SS_heavy_armor = { x = 0 y = 0 }
+		SS_heavy_armor = { x = 0 y = 1 }
+		SS_heavy_armor = { x = 0 y = 2 }	
+		SS_heavy_armor = { x = 0 y = 3 }
+		
+		SS_motorized = { x = 1 y = 0 }
+		SS_motorized = { x = 1 y = 1 }
+		SS_motorized = { x = 1 y = 2 }
+		
+		SS_motorized = { x = 2 y = 0 }
+		SS_motorized = { x = 2 y = 1 }
+		SS_motorized = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        signal_company = { x = 0 y = 2 }
+        logistics_company = { x = 0 y = 3 }
+        maintenance_company = { x = 0 y = 4 }
+	}
+	priority = 2
+	is_locked = no
+}
+
+division_template = {
+	name = "Waffen-SS Volks Div."
+	division_names_group = SS_Inf_01
+	regiments = {
+		SS_infantry = { x = 0 y = 0 }
+		SS_infantry = { x = 0 y = 1 }
+		SS_infantry = { x = 0 y = 2 }
+		
+		SS_infantry = { x = 1 y = 0 }
+		SS_infantry = { x = 1 y = 1 }
+		SS_infantry = { x = 1 y = 2 }
+		
+		SS_infantry = { x = 2 y = 0 }
+	    SS_infantry = { x = 2 y = 1 }
+		SS_infantry = { x = 2 y = 2 }
+		
+		SS_infantry = { x = 3 y = 0 }
+
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        signal_company = { x = 0 y = 2 }
+        logistics_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4 }
+	}
+	priority = 2
+	is_locked = no
+}
+
+
+
+division_template = {
+	name = "SS-Gebirgs-Division"
+	division_names_group = SS_Mnt_01
+	regiments = {
+		SS_mountaineers = { x = 0 y = 0 }
+		SS_mountaineers = { x = 0 y = 1 }
+		SS_mountaineers = { x = 0 y = 2 }
+		
+		SS_mountaineers = { x = 1 y = 0 }
+		SS_mountaineers = { x = 1 y = 1 }
+		SS_mountaineers = { x = 1 y = 2 }
+		
+		SS_mountaineers = { x = 2 y = 0 }
+	    SS_mountaineers = { x = 2 y = 1 }
+		SS_mountaineers = { x = 2 y = 2 }
+		
+		SS_mountaineers = { x = 3 y = 0 }
+
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        signal_company = { x = 0 y = 2 }
+        logistics_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4 }
+	}
+	priority = 2
+	is_locked = no
+}
+
+
+division_template = {
+	name = "SS-Grenadier-Division"
+	division_names_group = SS_MOT_01
+	regiments = {
+		SS_motorized = { x = 0 y = 0 }
+		SS_motorized = { x = 0 y = 1 }
+		SS_motorized = { x = 0 y = 2 }
+		
+		SS_motorized = { x = 1 y = 0 }
+		SS_motorized = { x = 1 y = 1 }
+		SS_motorized = { x = 1 y = 2 }
+		
+		SS_motorized = { x = 2 y = 0 }
+	    SS_motorized = { x = 2 y = 1 }
+		SS_motorized = { x = 2 y = 2 }
+		
+		SS_motorized = { x = 3 y = 0 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        field_hospital = { x = 0 y = 2 }
+        logistics_company = { x = 0 y = 3 }
+        maintenance_company = { x = 0 y = 4 }
+	}
+	priority = 2
+	is_locked = no
+}
+
+
+
+division_template = {
+	name = "SS-Panzergrenadier-Division"
+	division_names_group = SS_MEC_01
+	regiments = {
+		SS_mechanized = { x = 0 y = 0 }
+		SS_mechanized = { x = 0 y = 1 }
+		SS_mechanized = { x = 0 y = 2 }
+		
+		SS_mechanized = { x = 1 y = 0 }
+		SS_mechanized = { x = 1 y = 1 }
+		SS_mechanized = { x = 1 y = 2 }
+		
+		medium_sp_artillery_brigade = { x = 2 y = 0 }
+		medium_sp_artillery_brigade = { x = 2 y = 1 }
+		medium_tank_destroyer_brigade = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        field_hospital = { x = 0 y = 2 }
+        logistics_company = { x = 0 y = 3 }
+        maintenance_company = { x = 0 y = 4 }
+	}
+	priority = 2
+	is_locked = no
+}
+
+
+
+division_template = {
+	name = "SS-Kavallerie-Division"
+	division_names_group = SS_Cav_01
+	regiments = {
+		SS_cavalry = { x = 0 y = 0 }
+		SS_cavalry = { x = 0 y = 1 }
+		SS_cavalry = { x = 0 y = 2 }
+		
+		SS_cavalry = { x = 1 y = 0 }
+		SS_cavalry = { x = 1 y = 1 }
+		SS_cavalry = { x = 1 y = 2 }
+		
+		SS_cavalry = { x = 2 y = 0 }
+	    SS_cavalry = { x = 2 y = 1 }
+		SS_cavalry = { x = 2 y = 2 }
+		
+		SS_cavalry = { x = 3 y = 0 }
+
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        signal_company = { x = 0 y = 2 }
+        logistics_company = { x = 0 y = 3 }
+        field_hospital = { x = 0 y = 4 }
+	}
+	priority = 2
+	is_locked = no
+}
+

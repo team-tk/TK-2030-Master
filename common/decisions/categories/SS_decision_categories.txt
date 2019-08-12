@@ -1,0 +1,27 @@
+SS_demands = { 
+	allowed = {
+		original_tag = GER
+	}
+
+	visible = {
+		OR = { has_government = nazism has_government = theocratic }
+	}
+}
+SS_recruitment = { 
+	allowed = {
+		original_tag = GER
+	}
+
+	available = {
+		OR = { has_government = nazism has_government = theocratic }
+	}
+
+	visible = {
+		OR = { has_government = nazism has_government = theocratic }
+	}
+}
+wehrmacht_demands = {
+	allowed = {
+		original_tag = GER
+	}
+}

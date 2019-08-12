@@ -1,0 +1,188 @@
+frente_popular = {
+    ban_falange = {
+        allowed = { 
+	        tag = SPR
+		}
+        available = {
+            has_idea = SPR_polarization
+			has_democratic_government = yes
+            has_civil_war = no
+        }
+		cost = 30
+        visible = {
+			has_country_flag = popular_front
+        }
+        fire_only_once = yes
+        complete_effect = {
+            add_popularity = { ideology = fascism popularity = -0.1 }
+            add_political_power = 20
+            add_stability = 0.05			
+            set_country_flag = falange_banned
+
+        }
+
+    }
+	
+	land_redistribution = {
+        allowed = { 
+	        tag = SPR
+		}
+        available = {
+		    has_democratic_government = yes
+            has_civil_war = no
+        }
+        visible = {
+			has_country_flag = popular_front
+        }
+        fire_only_once = yes
+		cost = 50
+        complete_effect = {
+            add_political_power = -20				
+            169 = {
+				add_extra_state_shared_building_slots = 1					
+			}
+			170 = {
+				add_extra_state_shared_building_slots = 1					
+			}
+			173 = {
+				add_extra_state_shared_building_slots = 1					
+			}
+
+        }
+
+    }
+	
+	vote_galicia = {
+        allowed = { 
+	        tag = SPR
+		}
+        available = {
+		    has_democratic_government = yes
+            has_civil_war = no
+        }
+		cost = 30
+        visible = {
+			has_country_flag = popular_front
+        }
+        fire_only_once = yes
+        complete_effect = {
+            add_stability = 0.1				
+			171 = {
+				add_extra_state_shared_building_slots = 1					
+			}
+
+        }
+
+    }
+	
+	amnesty = {
+        allowed = { 
+	        tag = SPR
+		}
+        available = {
+		    has_democratic_government = yes
+            has_civil_war = no
+        }
+		cost = 20
+        visible = {
+			has_country_flag = popular_front
+        }
+        fire_only_once = yes
+        complete_effect = {
+            add_political_power = -10				
+			add_popularity = { ideology = communism popularity = 0.05 }
+            add_manpower = 10000
+			add_war_support = 0.1
+        }
+
+    }
+
+ 
+}
+
+ceda_government = {
+    abolish_labour = {
+        allowed = { 
+	        tag = SPR
+		}
+        available = {
+			has_neutral_government = yes
+            has_civil_war = no
+        }
+		cost = 35
+        visible = {
+			has_country_flag = ceda_elected
+        }
+        fire_only_once = yes
+        complete_effect = {
+            add_popularity = { ideology = communism popularity = -0.05 }
+            add_political_power = -10
+            add_stability = 0.05			
+        }
+
+    }
+	
+	restore_church_sunsidy = {
+        allowed = { 
+	        tag = SPR
+		}
+        available = {
+			has_neutral_government = yes
+            has_civil_war = no
+        }
+		cost = 50
+        visible = {
+			has_country_flag = ceda_elected
+        }
+        fire_only_once = yes
+        complete_effect = {
+            add_popularity = { ideology = communism popularity = -0.1 }
+            add_political_power = -25
+			add_war_support = -0.15
+            add_stability = 0.1			
+        }
+
+    }
+	
+	amnesty_right = {
+        allowed = { 
+	        tag = SPR
+		}
+        available = {
+			has_neutral_government = yes
+            has_civil_war = no
+        }
+		cost = 20
+        visible = {
+			has_country_flag = ceda_elected
+        }
+        fire_only_once = yes
+        complete_effect = {
+            add_popularity = { ideology = fascism popularity = 0.05 }
+            add_political_power = -5
+			add_war_support = 0.1		
+        }
+    }
+	
+	abolish_basque_estatute = {
+        allowed = { 
+	        tag = SPR
+		}
+        available = {
+			has_neutral_government = yes
+            has_civil_war = no
+        }
+		cost = 60
+        visible = {
+			has_country_flag = ceda_elected
+        }
+        fire_only_once = yes
+        complete_effect = {
+            add_popularity = { ideology = fascism popularity = 0.05 }
+            add_political_power = -30
+			add_stability = 0.05
+            add_war_support = 0.05			
+        }
+    }
+
+}

@@ -1,0 +1,9 @@
+soundeffect =
+{
+	name = "building_sabotaged_gui"
+	volume = 0.7
+	sounds = {
+		sound = building_sabotaged_01
+
+	}
+}

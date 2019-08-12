@@ -1,0 +1,149 @@
+bookmarks = {
+	bookmark = {	#Millennium Dawn
+		name = "MILLENIUM_DAWN_NAME"
+		desc = "MILLENIUM_DAWN_DESC"
+		date = 2000.1.1.12
+		picture = "GFX_select_date_2000"
+		default_country = "USA"
+		default = yes
+		
+		"PRC"={
+			history = "PRC_MILLENIUM_DAWN_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"FRA"={
+			history = "FRA_MILLENIUM_DAWN_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"GER"={
+			history = "GER_MILLENIUM_DAWN_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"JAP"={
+			history = "JAP_MILLENIUM_DAWN_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"SOV"={
+			history = "SOV_MILLENIUM_DAWN_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ENG"={
+			history = "ENG_MILLENIUM_DAWN_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"USA"={
+			history = "USA_MILLENIUM_DAWN_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		"---"={
+			history = "OTHER_MILLENIUM_DAWN_DESC"
+		}
+		
+		"DEN"={
+			minor = yes
+			history = "DEN_MILLENIUM_DAWN_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ETH"={
+			minor = yes
+			history = "ETH_MILLENIUM_DAWN_DESC"
+			ideology = democratic_socialist
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"FIN"={
+			minor = yes
+			history = "FIN_MILLENIUM_DAWN_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ICE"={
+			minor = yes
+			history = "ICE_MILLENIUM_DAWN_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"ITA"={
+			minor = yes
+			history = "ITA_MILLENIUM_DAWN_DESC"
+			ideology = democratic_socialist
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"NOR"={
+			minor = yes
+			history = "NOR_MILLENIUM_DAWN_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"SWE"={
+			minor = yes
+			history = "SWE_MILLENIUM_DAWN_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"SWI"={
+			minor = yes
+			history = "SWI_MILLENIUM_DAWN_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

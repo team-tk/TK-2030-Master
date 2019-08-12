@@ -1,0 +1,24 @@
+state={
+	id=799
+	name="STATE_799"
+
+	history={
+		owner = MCO
+		victory_points = {
+			13219 1
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = MCO
+
+	}
+
+	provinces={
+		13219
+	}
+	manpower=22501
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

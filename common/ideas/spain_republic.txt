@@ -1,0 +1,787 @@
+ideas = {
+
+	political_advisor = {
+
+		SPR_salmon = {
+
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_communist_government = yes }
+			}
+			available = {
+				date > 1936.7.17
+				has_neutral_government = yes
+			}
+			
+			traits = { moderate_politician }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		SPR_dolores_ibarruri = {
+
+			picture = dolores_ibarruri
+				
+			allowed = {
+				original_tag = SPR				
+				NOT = { has_fascist_government = yes }
+			}
+			available = {
+				date > 1936.7.17
+				NOT = { has_country_flag = civil_war_avoided }
+				has_communist_government = yes
+			}
+			
+			traits = { communist_revolutionary }
+			
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_communist_government = yes
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		SPR_espla = {
+
+			picture = generic_political_advisor_south_america_2
+				
+			allowed = {
+				original_tag = SPR				
+				NOT = { has_fascist_government = yes }
+			}
+			available = {
+				date > 1936.7.17
+				has_democratic_government = yes
+			}
+			
+			traits = { democratic_reformer }
+			
+			on_add = {
+				country_event = political.13
+			}
+	
+			do_effect = {
+				NOT = {
+					has_democratic_government = yes
+				}
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		SPR_luca = {
+
+			picture = generic_political_advisor_south_america_1
+				
+			allowed = {
+				original_tag = SPR				
+				NOT = { has_fascist_government = yes }
+			}
+			available = {
+				date > 1936.7.17
+				NOT = { has_country_flag = civil_war_avoided }
+				has_fascist_government = yes
+			}
+			
+			traits = { fascist_demagogue }
+			
+			on_add = {
+				country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_fascist_government = yes
+				}
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		SPR_francisco_largo_caballero = {
+
+			picture = generic_air_europe_1
+				
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+				NOT = { has_neutral_government = yes}
+			}
+			available = {
+			    NOT = { has_fascist_government = yes }
+				NOT = { has_neutral_government = yes }
+				NOT = { has_country_flag = caballero_rebellion }
+			}
+			
+			traits = { captain_of_industry }
+		}
+		
+		SPR_araquistain = {
+
+			picture = generic_political_advisor_south_america_3
+				
+			allowed = {
+				original_tag = SPR				
+				NOT = { has_fascist_government = yes }
+			}
+			available = {
+				has_communist_government = yes
+				has_completed_focus = SPR_pol6
+			}
+			
+			traits = { backroom_backstabber }
+			
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		
+		SPR_uribe = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			available = {
+				has_communist_government = yes
+			}
+			
+			traits = { war_industrialist }
+		}
+		
+		SPR_barcia = {
+
+			picture = generic_political_advisor_europe_1
+				
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+				NOT = { has_communist_government = yes }
+			}
+			available = {
+			    NOT = { has_fascist_government = yes }
+				NOT = { has_communist_government = yes }
+			}
+			
+			traits = { pro_allies }
+		}
+		
+		SPR_jordana = {
+
+			picture = generic_political_advisor_south_america_3
+				
+			allowed = {
+				original_tag = SPR
+				NOT = { has_communist_government = yes }
+			}
+			available = {
+			    has_fascist_government = yes
+				NOT = { has_idea_with_trait = pro_axis }
+			}
+			
+			traits = { pro_allies }
+		}
+		
+		SPR_chapaprieta = {
+
+			picture = generic_political_advisor_europe_3
+				
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+				NOT = { has_communist_government = yes }
+			}
+			available = {
+			    NOT = { has_fascist_government = yes }
+				NOT = { has_communist_government = yes }
+				has_completed_focus = SPR_pol4
+			}
+			
+			traits = { austerity_preponent }
+		}
+		
+		SPR_madariaga = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+				NOT = { has_communist_government = yes }
+			}
+			available = {
+			    NOT = { has_fascist_government = yes }
+				NOT = { has_communist_government = yes }
+				has_completed_focus = SPR_pol3
+			}
+			
+			traits = { education_reformer }
+		}
+		
+		SPR_giron = {
+
+			picture = generic_army_europe_3
+				
+			allowed = {
+				original_tag = SPR
+				NOT = { has_communist_government = yes }
+			}
+			available = {
+			    has_fascist_government = yes
+				has_completed_focus = SPR_armas
+			}
+			
+			traits = { war_industrialist }
+		}
+		
+		SPR_ramos = {
+			
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+            
+			available = {
+			    has_democratic_government = yes
+			}
+			
+			picture = generic_political_advisor_europe_3
+						
+			traits = { war_industrialist }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SPR_suner = {
+
+			picture = generic_army_europe_2
+				
+			allowed = {
+				original_tag = SPR
+				NOT = { has_communist_government = yes }
+			}
+			available = {
+			    NOT = { has_democratic_government = yes }
+				NOT = { has_communist_government = yes }
+				NOT = { has_idea_with_trait = pro_allies }
+			}
+			
+			traits = { pro_axis }
+		}
+        
+		SPR_carrillo = {
+			
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+				NOT = { has_neutral_government = yes}
+			}
+			
+			available = {
+			    has_communist_government = yes
+			}
+
+			picture = generic_political_advisor_europe_1
+						
+			traits = { prince_of_terror }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SPR_casares = {
+			
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+            
+			available = {
+			    has_democratic_government = yes
+			}
+			
+			picture = generic_political_advisor_europe_2
+						
+			traits = { prince_of_terror }
+	
+			on_add = {				
+			}
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SPR_alejandro = {
+
+			picture = generic_political_advisor_europe_3
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			available = {
+				NOT = { has_communist_government = yes }
+			}
+			
+			traits = { fortification_engineer }
+		}
+
+		SPR_diego_martinez_barrio = {
+
+			picture = generic_navy_europe_1
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			available = {
+			    NOT = { has_fascist_government = yes }
+				NOT = { has_communist_government = yes }
+			}
+			traits = { backroom_backstabber }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+
+	theorist = {
+
+		SPR_nicolas_molero = {
+					
+					
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+			picture = generic_army_europe_3
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+
+		SPR_andres_saborit_colomer = {
+					
+					
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+			picture = generic_navy_europe_1
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+		
+		rojo = {
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			available = {
+				has_completed_focus = SPR_infa
+			}
+			picture = generic_army_europe_1
+			
+			cost = 250
+			
+			research_bonus = {
+				cat_grand_battle_plan = 0.15
+			}
+			
+			traits = { grand_battle_plan_expert }
+		}
+	}
+	# MILITARY
+	army_chief = {
+
+		SPR_carlos_masquelet_lacaci = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		
+		SPR_vincente_rojo_lluch = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+
+			
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPR_francisco_franco = {
+			
+			
+			allowed = {
+				original_tag = SPR
+			}
+			picture = francisco_franco
+			
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = spr_franco_unavailable_tooltip
+					OR = {
+						has_fascist_government = yes
+						AND = {
+							NOT = { has_communist_government = yes }
+							NOT = {
+								any_country = {
+									NOT = {
+										tag = ROOT
+									}
+									original_tag = SPR
+									has_fascist_government = yes
+								}
+							}
+						}
+					}
+				}
+				NOT = { has_country_flag = republican_spain }
+			}
+
+			
+			traits = { army_chief_offensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		SPR_ignacio_hidalgo_cisneros = {
+			
+			picture = generic_air_europe_1
+			
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+			
+		SPR_andres_garcia_calle = {
+			
+			picture = generic_air_europe_3
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { air_chief_ground_support_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	navy_chief = {
+			
+		SPR_louis_gonzalez_ubieta = {
+			
+			picture = generic_navy_europe_1
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPR_indalecio_prieto_tuero = {
+			
+			picture = generic_navy_europe_2
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	high_command = {
+		
+		SPR_jose_miaja = {
+			
+			picture = generic_army_europe_2
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SPR_asensio = {
+			
+			picture = generic_army_europe_1
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SPR_sanchez = {
+			
+			picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPR_diego_hidalgo_duran = {
+			
+			picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { army_concealment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		SPR_miguel_buiza_femandez_palacios = {
+			
+			picture = generic_navy_europe_2
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPR_antonio_azarola_gresillon = {
+			
+			picture = generic_navy_europe_2
+
+			allowed = {
+				original_tag = SPR
+				NOT = { has_fascist_government = yes }
+			}
+			
+
+			
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	naval_manufacturer = { 			
+		
+		designer = yes
+		
+		secn = {
+			
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				# fast and well armed
+			}
+			
+			traits = { naval_manufacturer }
+			
+			modifier = {
+				# Weak defence vs air
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 		
+			
+		designer = yes
+		
+		casa = {
+			
+			picture = generic_air_manufacturer_2
+
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				# capable of aerobatics, forward shooting machine guns, low number of crashes
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+	
+	    designer = yes
+		
+	    instalaza = {
+
+			allowed = {
+				original_tag = SPR
+			}
+			available = {
+				has_completed_focus = SPR_mil_3
+			}
+			picture = generic_infantry_equipment_manufacturer_2
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}
