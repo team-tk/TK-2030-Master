@@ -10,12 +10,18 @@ state={
 	}
 
 	history={
-		owner = SOV
+		owner = RUS
 		buildings = {
 			infrastructure = 3
 		}
 		add_core_of = SOV
 		add_core_of = RUS
+		1918.1.1 = {
+			owner = SOV
+			}
+		1941.6.22 = {
+			owner = ENG
+		}
 	}
 
 	provinces={

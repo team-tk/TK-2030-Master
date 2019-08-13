@@ -20,6 +20,14 @@ state={
 				naval_base = 4
 			}
 		}
+
+		1936.1.1 = {
+			owner = SPR
+			}
+		1941.6.22 = {
+			owner = VIC
+			}
+
 	}
 
 	provinces={

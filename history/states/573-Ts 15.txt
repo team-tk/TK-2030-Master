@@ -13,13 +13,16 @@ state={
 		victory_points = {
 			10329 1
 		}
-		owner = SOV
+		owner = RUS
 		buildings = {
 			infrastructure = 4
 
 		}
 		add_core_of = SOV
 		add_core_of = RUS
+		1918.1.1 = {
+			owner = SOV
+			}
 	}
 
 	provinces={

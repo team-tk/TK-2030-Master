@@ -28,6 +28,14 @@ state={
 				naval_base = 8
 			}
 		}
+
+		1936.1.1 = {
+			owner = FRA
+			}
+		1941.6.22 = {
+			owner = VIC
+			}
+
 	}
 
 	provinces={
