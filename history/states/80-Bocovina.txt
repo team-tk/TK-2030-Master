@@ -1,0 +1,39 @@
+state={
+	id=80
+	name="STATE_80"
+	manpower = 474600
+	
+	state_category = rural
+	
+	history=
+	{
+		victory_points = {
+			577 1 
+		}
+		owner = AUS
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+		}
+		add_core_of = ROM
+		
+		1910.1.1 = {
+			owner = AUS
+			add_claim_by = ROM
+		}
+		
+		1918.11.11 = {
+			owner = ROM
+			add_core_of = ROM
+		}
+		
+		1936.1.1 = {
+			owner = ROM
+			add_core_of = ROM
+		}
+		
+	}
+	provinces={
+		577 6761 9548 11689
+	}
+}

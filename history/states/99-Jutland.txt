@@ -26,6 +26,9 @@ state={
 
 		}
 		add_core_of = DEN
+		1941.6.22 = {
+			owner = GER
+			}
 
 	}
 

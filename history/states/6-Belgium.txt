@@ -33,6 +33,9 @@ state={
 		
 		add_core_of = BEL
 		add_core_of = VLA
+		1941.6.22 = {
+			owner = GER
+			}
 	}
 
 	provinces={

@@ -43,8 +43,11 @@ state={
 				radar_station = 1
 			}
 		}
-	
-		set_demilitarized_zone = yes
+
+	1918.11.11 = {
+			set_demilitarized_zone = yes
+		}
+		
 	
 	
 		1936.3.7 = {

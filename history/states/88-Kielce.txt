@@ -1,0 +1,56 @@
+state={
+	id=88
+	name="STATE_88"
+	resources={
+		steel=5.000
+		oil=3.000
+	}
+
+	history={
+		owner = AUS
+		victory_points = {
+			9427 20 
+		}
+		victory_points = {
+			442 3 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 3
+			air_base = 4
+
+		}
+		add_core_of = AUS
+
+		1910.1.1 = {
+			owner = AUS
+			controller = AUS
+			add_core_of = AUS
+			add_claim_by = POL
+		}
+		
+		1918.11.11 = {
+			owner = POL
+			controller = POL
+			add_core_of = POL
+		}
+
+		1936.1.1 = {
+			owner = POL
+			controller = POL
+			add_core_of = POL
+		}
+		1941.6.22 = {
+			owner = GER
+			}
+
+	}
+
+	provinces={
+		417 442 466 3410 3434 6499 6522 9412 9427 9494 11398 11413 11507 
+	}
+	manpower=3692800
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}
