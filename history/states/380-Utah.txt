@@ -15,8 +15,7 @@ state= {
 			infrastructure = 3
 		}
 		add_core_of = USA
-		victory_points = {
-		}
+		
 	}
 	provinces={
 		1740 1756 4668 4742 4865 7764 7818 10582 10662 13153
