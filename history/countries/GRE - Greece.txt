@@ -1,6 +1,6 @@
-﻿capital = 47
+﻿capital = 837
 
-oob = "GRE_1936"
+oob = "GRE_1910"
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "GRE_1936_naval_mtg"
