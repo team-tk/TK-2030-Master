@@ -1,0 +1,29 @@
+
+state={
+	id=151
+	name="Schweiz"
+	manpower = 1854711
+	
+	
+	state_category = city
+	
+	resources={
+		aluminium=15 # was: 24
+	}
+
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+		}
+		victory_points = { 663 10 }
+		victory_points = { 9620 15 }
+		
+		add_core_of = SWI
+	}
+
+	provinces={
+		661 663 11601 11623 9638 11604 636 9618 9620 6683
+	}
+}

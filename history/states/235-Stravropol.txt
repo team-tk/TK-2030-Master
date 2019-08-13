@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = SOV
+		owner = RUS
 		buildings = {
 			infrastructure = 4
 			air_base = 2
@@ -20,6 +20,9 @@ state={
 		victory_points = {
 			11696 3
 		}
+		1918.1.1 = {
+			owner = SOV
+			}
 	}
 
 	provinces={
