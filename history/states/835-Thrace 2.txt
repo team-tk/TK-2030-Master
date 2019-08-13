@@ -1,0 +1,40 @@
+
+state={
+	id=835
+	name="THRACE_2"
+	manpower = 382500
+	
+	state_category = rural
+	
+	resources={
+		chromium=11 # was: 16
+	}
+
+	history={
+		
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_claim_by = GRE
+		add_claim_by = BUL
+		
+		1913.10.10 = {
+			owner = BUL
+			add_core_of = BUL
+		}
+
+		1914.1.1 = {
+			owner = GRE
+			add_core_of = GRE
+		}
+		1941.6.22 = {
+			owner = BUL
+			}
+		
+	}
+
+	provinces={
+		11774
+	}
+}

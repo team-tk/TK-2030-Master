@@ -1,0 +1,48 @@
+state= {
+	id=843
+	name="Shantou"
+	manpower = 7400
+	state_category = town
+	resources={
+		tungsten=15 # was: 20
+		steel= 15 # was: 20
+		chromium = 3 # was: 4
+	}
+
+	history= {
+		owner = CHI
+		add_core_of = GXC
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			9938 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		victory_points = {
+			9938 1
+		}
+		
+		1936.1.1 = {
+				owner = GXC
+		}
+
+		1938.10.25 = {		
+			remove_core_of = GXC
+			owner = CHI
+			JAP = {
+				set_province_controller = 9938
+			} 			
+		}
+		1941.6.22 = {
+				owner = JAP
+		}
+	}
+	provinces={
+		9938 
+	}
+}

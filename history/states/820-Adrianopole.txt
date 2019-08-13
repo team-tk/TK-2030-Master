@@ -1,0 +1,35 @@
+state=
+{
+	id=820
+	name="Adrianopole"
+	manpower = 984791
+	
+	state_category = town
+
+	history=
+	{
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			12049 = {
+				naval_base = 2
+			}
+			11842 = {
+				land_fort = 3
+			}
+		}
+		
+		
+		victory_points = {
+			11842 5 
+		}
+
+		add_core_of = TUR
+		add_claim_by = BUL
+
+	}
+
+	provinces={
+		3893 11842 13226
+	}
+}

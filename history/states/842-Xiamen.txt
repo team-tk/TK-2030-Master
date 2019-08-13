@@ -1,0 +1,33 @@
+state= {
+	id=842
+	name="Xiamen"
+	manpower = 1175
+	state_category = city
+	history=
+	{
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			7071 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+			}
+			
+		}
+		
+		victory_points = { 
+			7071 1 
+		}
+
+		1941.6.22 = {		
+			owner = JAP		
+		}
+	}
+	provinces={
+		7071
+	}
+}

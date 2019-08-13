@@ -1,0 +1,33 @@
+
+state={
+	id=822
+	name="Ahtopol"
+	manpower = 382500
+	
+	state_category = town
+	
+	resources={
+		chromium=11 # was: 16
+	}
+
+	history={
+		victory_points = {
+			13227 1
+		}
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+		}
+		add_claim_by = BUL
+		
+		1913.10.10 = {
+			owner = BUL
+			add_core_of = BUL
+		}
+		
+	}
+
+	provinces={
+		13227
+	}
+}

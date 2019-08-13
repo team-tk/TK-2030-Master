@@ -1,0 +1,39 @@
+state= {
+	id=841
+	name="Fuzhou"
+	manpower = 5755
+	state_category = city
+	resources={
+		tungsten=15 # was: 20
+		steel= 15 # was: 20
+		chromium = 3 # was: 4
+	}
+
+	history= {
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			
+			
+			4196 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+		victory_points = { 
+			4196 3 
+		}
+
+		1941.6.22 = {		
+			owner = JAP
+			} 			
+	}
+	provinces={
+		4196
+	}
+
+}

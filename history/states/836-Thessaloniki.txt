@@ -1,0 +1,39 @@
+state={
+	id=836
+	name="Thessaloniki"
+	manpower=1155700
+	
+	state_category = town
+
+	history={
+		owner = TUR
+		
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 2
+			11818 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = TUR
+		add_core_of = GRE
+		add_claim_by = BUL
+		
+		1913.10.10 = {
+			owner = GRE
+			add_core_of = GRE
+		}
+		1941.6.22 = {
+			owner = BUL
+			}
+
+	}
+	
+	provinces={
+		895 3526 3936 11818 
+	}
+}

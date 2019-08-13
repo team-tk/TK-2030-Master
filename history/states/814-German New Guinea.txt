@@ -3,8 +3,8 @@ state={
 	name="STATE_814"
 
 	history={
-		owner = AST
-		controller = AST
+		owner = GER
+		controller = GER
 		add_core_of = PNG
 		buildings = {
 			infrastructure = 2
@@ -21,6 +21,11 @@ state={
 				naval_base = 1
 
 			}
+			
+		1918.11.11 = {
+			owner = AST
+			controller = AST
+			}
 
 		}
 		victory_points = {
@@ -30,7 +35,7 @@ state={
 	}
 
 	provinces={
-		1389 4393 4418 7305 7333 7365 7614 11018 10231 10248 10251 10423 10974 11004 12154 12193 12237 12240 12400 12428
+		1389 4393 4418 7365 7614 11018 10251 10423 11004 12154 12193 12237 12240 12400 12428
 	}
 	manpower=577000
 	buildings_max_level_factor=1

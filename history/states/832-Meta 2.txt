@@ -1,0 +1,25 @@
+
+state={
+	id=832
+	name="Meta"
+	manpower = 176626
+
+	state_category = pastoral
+
+	history={
+		owner = PRU
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = PRU
+
+		1936.1.1 = {
+			owner = COL
+			}
+
+	}
+
+	provinces={
+		12825
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=815
+	name="STATE_815"
+	manpower = 517081
+	
+	state_category = rural
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			12702 1 
+		}
+		
+		1936.1.1 = {
+			owner = SAU
+			add_core_of = SAU
+			}
+		
+	}
+
+	provinces={
+		1955 12702 10791 
+	}
+}
