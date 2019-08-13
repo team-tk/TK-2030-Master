@@ -110,16 +110,6 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		
-		"HOL"={
-			minor = yes
-			history = "HOL_BALKAN_POWDER_KEG_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
 
 		"JAP"={
 			minor = yes

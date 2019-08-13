@@ -9,12 +9,11 @@ bookmarks = {
 		
 		"FRA"={
 			history = "FRA_GATHERING_STORM_DESC"
-			ideology = socdem
+			ideology = democratic
 			ideas = {
-			fog_democratic
-			FRA_victors_of_wwi
-			#FRA_disjointed_government
-			FRA_protected_by_the_maginot_line
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
 				FRA_initiate_government_reform
@@ -26,10 +25,9 @@ bookmarks = {
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			fog_democratic
-			#home_of_the_free
-			great_depression
-			undisturbed_isolation
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
 			}
 			focuses = {
 				USA_war_plan_black
@@ -39,11 +37,10 @@ bookmarks = {
 		}
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
-			ideology = conservatism
+			ideology = democratic
 			available = { has_dlc = "Man the Guns" }
 			ideas = {
-			fog_democratic
-				#stiff_upper_lip
+				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
 				george_v
 			}
@@ -55,11 +52,10 @@ bookmarks = {
 		}
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
-			ideology = conservatism
+			ideology = democratic
 			available = { NOT = { has_dlc = "Man the Guns" } }
 			ideas = {
-			fog_democratic
-				#stiff_upper_lip
+				stiff_upper_lip
 				ENG_the_war_to_end_all_wars
 				george_v
 			}
@@ -71,13 +67,12 @@ bookmarks = {
 		}
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
-			ideology = nazism
+			ideology = fascism
 			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
-			fog_dictatorship
 				sour_loser
 				general_staff
-				#GER_mefo_bills_1
+				GER_mefo_bills_1
 			}
 			focuses = {
 				GER_thousand_year_reich
@@ -87,13 +82,12 @@ bookmarks = {
 		}
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
-			ideology = nazism
+			ideology = fascism
 			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
-			fog_dictatorship
 				sour_loser
 				general_staff
-				#GER_mefo_bills_1
+				GER_mefo_bills_1
 			}
 			focuses = {
 				GER_anschluss
@@ -105,7 +99,6 @@ bookmarks = {
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-			fog_dictatorship
 				vittoria_mutilata
 				victor_emmanuel
 			}	
@@ -119,9 +112,8 @@ bookmarks = {
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-				fog_dictatorship
 				state_shintoism
-				#JAP_zaibatsus
+				JAP_zaibatsus
 				JAP_militarism
 			}	
 			focuses = {
@@ -134,7 +126,6 @@ bookmarks = {
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-			fog_dictatorship_lw
 				trotskyite_plot
 				home_of_revolution
 			}
@@ -156,7 +147,7 @@ bookmarks = {
 			history = "POL_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-			fog_authoritarian	
+				
 			}
 			focuses = {
 				POL_the_baltic_alliance
@@ -169,7 +160,6 @@ bookmarks = {
 			history = "CAN_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			fog_democratic
 				CAN_great_depression_1
 				CAN_conscription_crisis
 			}
@@ -182,9 +172,8 @@ bookmarks = {
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
-			ideology = socdem
+			ideology = democratic
 			ideas = {
-			fog_democratic
 				AST_great_depression_1
 			}
 			focuses = {
@@ -196,9 +185,9 @@ bookmarks = {
 		"NZL"={
 			minor = yes
 			history = "NZL_GATHERING_STORM_DESC"
-			ideology = socdem
+			ideology = democratic
 			ideas = {
-			fog_democratic	
+				
 			}
 			focuses = {
 				NZL_bob_semple_tank
@@ -209,9 +198,8 @@ bookmarks = {
 		"SAF"={
 			minor = yes
 			history = "SAF_GATHERING_STORM_DESC"
-			ideology = conservatism
+			ideology = democratic
 			ideas = {
-			fog_democratic
 				SAF_ossewabrandwag
 				SAF_history_of_segregation
 			}
@@ -226,7 +214,6 @@ bookmarks = {
 			history = "RAJ_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-			fog_authoritarian
 				RAJ_agrarian_society
 				RAJ_princely_states
 			}
@@ -241,7 +228,6 @@ bookmarks = {
 			history = "CZE_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			fog_democratic
 				CZE_skoda_works
 				CZE_divided_nation
 			}
@@ -255,9 +241,8 @@ bookmarks = {
 		"HUN"={
 			minor = yes
 			history = "HUN_GATHERING_STORM_DESC"
-			ideology = monarchism
+			ideology = neutrality
 			ideas = {
-			fog_authoritarian
 				HUN_treaty_of_triannon
 			}
 			focuses = {
@@ -270,9 +255,8 @@ bookmarks = {
 		"ROM"={
 			minor = yes
 			history = "ROM_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = neutrality
 			ideas = {
-			fog_authoritarian
 				ROM_king_carol_ii_hedonist
 				neutrality_idea
 			}
@@ -286,9 +270,8 @@ bookmarks = {
 		"BUL"={
 			minor = yes
 			history = "BUL_GATHERING_STORM_DESC"
-			ideology = monarchism
+			ideology = neutrality
 			ideas = {
-			fog_authoritarian
 				BUL_bulgarian_tsardom
 			}
 			focuses = {
@@ -301,10 +284,9 @@ bookmarks = {
 		"YUG"={
 			minor = yes
 			history = "YUG_GATHERING_STORM_DESC"
-			ideology = monarchism
+			ideology = neutrality
 			ideas = {
-			fog_authoritarian
-				#anti_german_military
+				anti_german_military
 				YUG_idea_croatian_opposition
 				YUG_idea_serbian_general_staff
 			}
@@ -319,10 +301,9 @@ bookmarks = {
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-			fog_authoritarian
 				CHI_army_corruption_1
 				CHI_hyper_inflation_1
-				#CHI_nine_power_treaty
+				CHI_nine_power_treaty
 			}
 			focuses = {
 				CHI_united_front
@@ -335,9 +316,8 @@ bookmarks = {
 			history = "PRC_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-			fog_dictatorship_lw
 				PRC_the_long_march_1
-				#PRC_low_popular_support_3
+				PRC_low_popular_support_3
 				PRC_power_struggles
 			}
 			focuses = {
@@ -352,10 +332,9 @@ bookmarks = {
 			history = "MEXICO_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-			fog_authoritarian
 				curse
 				porfirismo
-				#maximato
+				maximato
 			}
 			focuses = {
 			Exile_Calles
@@ -369,7 +348,6 @@ bookmarks = {
 			history = "HOL_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			fog_democratic
 				HOL_wilhelmina
 				tdlra_pillarized_society
 			}
@@ -383,9 +361,8 @@ bookmarks = {
 		"SWE"={
 			minor = yes
 			history = "SWE_GATHERING_STORM_DESC"
-			ideology = socdem
+			ideology = democratic
 			ideas = {
-			fog_democratic
 				SWE_gustaf_v
 				en_svensk_tiger
 			}
@@ -401,7 +378,6 @@ bookmarks = {
 			history = "FIN_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			fog_authoritarian
 			FIN_lotta_svard
 			sisu
 				
@@ -416,11 +392,10 @@ bookmarks = {
 		"BEL"={
 			minor = yes
 			history = "BEL_GATHERING_STORM_DESC"
-			ideology = socdem
+			ideology = democratic
 			ideas = {
-			fog_democratic
 				tblra_pillarized_society
-				#tblra_peacetime_national_union
+				tblra_peacetime_national_union
 				tblra_linguistic_question_in_military
 			}
 			focuses = {
@@ -435,10 +410,9 @@ bookmarks = {
 			history = "SPR_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			fog_democratic
 			SPR_riots
 			SPR_old_guard
-			#SPR_depression
+			SPR_depression
 			}
 			focuses = {
 				SPR_election
@@ -449,11 +423,8 @@ bookmarks = {
 		"POR"={
 			minor = yes
 			history = "POR_GATHERING_STORM_DESC"
-			ideology = nationalism
+			ideology = neutrality
 			ideas = {
-			fog_authoritarian
-			POR_oscar_carmona
-			bdprata_1			
 			}
 			focuses = {
 				POR_estadonovo
@@ -465,9 +436,8 @@ bookmarks = {
 		"IRE"={
 			minor = yes
 			history = "IRE_GATHERING_STORM_DESC"
-			ideology = conservatism
+			ideology = democratic
 			ideas = {
-			fog_democratic
 				IRE_trade_war
 				IRE_ira
 			}
@@ -481,12 +451,9 @@ bookmarks = {
 		"TUR"={
 			minor = yes
 			history = "TUR_GATHERING_STORM_DESC"
-			ideology = socialism
+			ideology = neutrality
 			ideas = {
-			fog_authoritarian
-			TUR_recovering_from_the_war_for_independence
-			TUR_treaty_of_lousanne
-			#TUR_opposition_to_reforms
+
 			}
 			focuses = {
 				TUR_expand_the_sadabat_pact

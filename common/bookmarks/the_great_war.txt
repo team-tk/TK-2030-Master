@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "THE_GREAT_WAR_NAME"
 		desc = "THE_GREAT_WAR_DESC"
-		date = 1914.5.1.1
+		date = 1914.1.1.1
 		picture = "GFX_select_date_1914"
 		default_country = "GER"
 		default = no
@@ -104,16 +104,6 @@ bookmarks = {
 		"BEL"={
 			minor = yes
 			history = "BEL_THE_GREAT_WAR_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"HOL"={
-			minor = yes
-			history = "HOL_THE_GREAT_WAR_DESC"
 			ideology = democratic
 			ideas = {
 			}
