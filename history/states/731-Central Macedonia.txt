@@ -1,0 +1,42 @@
+state={
+	id=731
+	name="STATE_731"
+	manpower=1155700
+	
+	state_category = town
+
+	history={
+		owner = TUR
+		
+		#victory_points = {
+		#	3844 1
+		#}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 2
+			11818 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = TUR
+		add_core_of = GRE
+		add_claim_by = BUL
+		
+		1913.10.10 = {
+			owner = GRE
+			add_core_of = GRE
+		}
+		1941.6.22 = {
+			owner = GER
+			}
+
+	}
+	
+	provinces={
+		936 966 3844 10163 
+	}
+}

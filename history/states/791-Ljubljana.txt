@@ -7,15 +7,24 @@ state={
 	
 	history =
 	{
-		owner = YUG
+		owner = AUS
 		buildings = {
 			infrastructure = 6
 		}
 		add_core_of = YUG
 		add_core_of = SLV
+
+		1918.11.11 = {
+			owner = YUG
+			add_core_of = YUG
+			}
+
 		victory_points = {
 			9627 3 
 		}
+		1941.6.22 = {
+			owner = ITA
+			}
 	}
 	provinces={
 		9627 6650 }

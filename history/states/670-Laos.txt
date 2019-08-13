@@ -6,14 +6,17 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = FRI
+		owner = FRA
 		add_core_of = LAO
-		add_core_of = FRI
+		add_core_of = FRA
 		victory_points = {
 			1464 1
 		}
 		buildings = {
 			infrastructure = 2
+		}
+		1941.6.22 = {
+				owner = JAP
 		}
 
 	}

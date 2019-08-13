@@ -12,6 +12,14 @@ state={
 			infrastructure = 3
 
 		}
+
+		1936.1.1 = {
+			owner = FRA
+			}
+		1941.6.22 = {
+			owner = VIC
+			}
+
 	}
 	
 	state_category = pastoral

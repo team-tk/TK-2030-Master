@@ -13,6 +13,9 @@ state={
 		} 
 		add_core_of = HOL
 		victory_points = { 9363 1 }
+		1941.6.22 = {
+			owner = GER
+			}
 	}
 
 	provinces={

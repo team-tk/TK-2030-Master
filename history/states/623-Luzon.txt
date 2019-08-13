@@ -1,0 +1,32 @@
+state= {
+	id=623
+	name="STATE_623"
+	manpower = 1008371
+	
+	state_category = city
+	
+	resources={
+		rubber=1 # was: 2
+	}
+
+	history= {
+		owner = PHI
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			
+			1415 = {
+				naval_base = 1
+			}
+		}
+		
+		victory_points = {
+			1415 1 
+		}
+		
+		add_core_of = PHI
+	}
+	provinces={
+		1388 1415 4233 4350 4423 7325 7439 10167 10252 10298 12253 
+	}
+}
