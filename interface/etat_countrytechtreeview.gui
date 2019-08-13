@@ -1007,6 +1007,55 @@ guiTypes = {
 	
 			}		
 
+			gridboxtype = {
+				name = "DARK_jungle_marines_tree"
+				position = { x = 140 y = 325 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "DARK_jungle_training_tech_tree"
+				position = { x = 140 y = 325 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
+				name = "ICE_elite_mountaineers_tree"
+				position = { x = 140 y = 325 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}	
+			
+			gridboxtype = {
+				name = "ICE_elite_marines_tree"
+				position = { x = 140 y = 325 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}	
+			
+			gridboxtype = {
+				name = "ICE_elite_paratroopers_tree"
+				position = { x = 140 y = 325 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+			
+				gridboxtype = {
+				name = "ICE_elite_infantry_tech_tree"
+				position = { x = 140 y = 325 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+		
+			gridboxtype = {
+				name = "SWI_red_cross_tech_tree"
+				position = { x = 140 y = 325 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
 
 			gridboxtype = {
 				name = "marines_tree"
@@ -1440,7 +1489,7 @@ guiTypes = {
 					
 					instantTextBoxType = {
 						name = "armour_year15"
-						position = { x = 60 y = 1818
+						position = { x = 60 y = 1818 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -1854,14 +1903,6 @@ guiTypes = {
 			gridboxtype = {
 				name = "gw_armoured_car_tree"
 				position = { x = 5% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "basic_medium_assault_gun_tree"
-				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
