@@ -59,7 +59,7 @@ country_event = {
 	every_country = {
 	if = {
 	limit = {
-	NOT = { has_fascist_government = yes }
+	NOT = { has_government = fascism }
 	}
 	
 	set_politics = {
@@ -346,7 +346,7 @@ country_event = {
 	every_country = {
 	if = {
 	limit = {
-	NOT = { has_communist_government = yes }
+	NOT = { has_government = communism }
 	}
 	
 	

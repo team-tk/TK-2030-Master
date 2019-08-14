@@ -83,12 +83,12 @@ country_event = {
 			}
 			AND = {
 				has_deployed_air_force_size = { size > 10500 }
-				has_deployed_air_force_size = { size < 14500 }
+				has_deployed_air_force_size = { size < 20500 }
 				NOT = { has_country_flag = airforce_size7 }
 			}
 			
 			AND = {
-				has_deployed_air_force_size = { size > 14500 }
+				has_deployed_air_force_size = { size > 20500 }
 				NOT = { has_country_flag = airforce_size8 }
 			}
 			
@@ -124,11 +124,11 @@ country_event = {
 			}
 			AND = {
 				has_navy_size = { size > 500 }
-				has_navy_size = { size < 1010 }
+				has_navy_size = { size < 1050 }
 				NOT = { has_country_flag = navy_size7 }
 			}
 			AND = {
-				has_navy_size = { size > 1010 }
+				has_navy_size = { size > 1050 }
 				NOT = { has_country_flag = navy_size8 }
 			}
 		}
@@ -172,9 +172,9 @@ country_event = {
 		
 		if = { limit = { has_deployed_air_force_size = { size > 7000 } has_deployed_air_force_size = { size < 10500 } NOT = { has_country_flag = airforce_size6 } } set_country_flag = airforce_size6 clr_country_flag = airforce_size2 clr_country_flag = airforce_size3	clr_country_flag = airforce_size4 clr_country_flag = airforce_size5 clr_country_flag = airforce_size5 clr_country_flag = airforce_size1 clr_country_flag = airforce_size7 clr_country_flag = airforce_size8 }
 		
-		if = { limit = { has_deployed_air_force_size = { size > 10500 }  has_deployed_air_force_size = { size < 14500 } NOT = { has_country_flag = airforce_size7 } } set_country_flag = airforce_size7 clr_country_flag = airforce_size2 clr_country_flag = airforce_size3	clr_country_flag = airforce_size4 clr_country_flag = airforce_size5 clr_country_flag = airforce_size5 clr_country_flag = airforce_size1 clr_country_flag = airforce_size6 clr_country_flag = airforce_size8 }
+		if = { limit = { has_deployed_air_force_size = { size > 10500 }  has_deployed_air_force_size = { size < 20500 } NOT = { has_country_flag = airforce_size7 } } set_country_flag = airforce_size7 clr_country_flag = airforce_size2 clr_country_flag = airforce_size3	clr_country_flag = airforce_size4 clr_country_flag = airforce_size5 clr_country_flag = airforce_size5 clr_country_flag = airforce_size1 clr_country_flag = airforce_size6 clr_country_flag = airforce_size8 }
 		
-		if = { limit = { has_deployed_air_force_size = { size > 14500 }   NOT = { has_country_flag = airforce_size8 } } set_country_flag = airforce_size8 clr_country_flag = airforce_size2 clr_country_flag = airforce_size3	clr_country_flag = airforce_size4 clr_country_flag = airforce_size5 clr_country_flag = airforce_size5 clr_country_flag = airforce_size1 clr_country_flag = airforce_size6 clr_country_flag = airforce_size7 }
+		if = { limit = { has_deployed_air_force_size = { size > 20500 }   NOT = { has_country_flag = airforce_size8 } } set_country_flag = airforce_size8 clr_country_flag = airforce_size2 clr_country_flag = airforce_size3	clr_country_flag = airforce_size4 clr_country_flag = airforce_size5 clr_country_flag = airforce_size5 clr_country_flag = airforce_size1 clr_country_flag = airforce_size6 clr_country_flag = airforce_size7 }
 		
 		#Naval
 		
@@ -190,9 +190,9 @@ country_event = {
 		
 		if = { limit = { has_navy_size = { size > 175 } has_navy_size = { size < 500 } NOT = { has_country_flag = navy_size6 } } set_country_flag = navy_size6 clr_country_flag = navy_size2	clr_country_flag = navy_size3 clr_country_flag = navy_size4 clr_country_flag = navy_size5 clr_country_flag = navy_size1 clr_country_flag = navy_size7 clr_country_flag = navy_size8 }
 		
-		if = { limit = { has_navy_size = { size > 500 } has_navy_size = { size < 1010 } NOT = { has_country_flag = navy_size7 } } set_country_flag = navy_size7 clr_country_flag = navy_size2	clr_country_flag = navy_size3 clr_country_flag = navy_size4 clr_country_flag = navy_size5 clr_country_flag = navy_size1 clr_country_flag = navy_size6 clr_country_flag = navy_size8  }
+		if = { limit = { has_navy_size = { size > 500 } has_navy_size = { size < 1050 } NOT = { has_country_flag = navy_size7 } } set_country_flag = navy_size7 clr_country_flag = navy_size2	clr_country_flag = navy_size3 clr_country_flag = navy_size4 clr_country_flag = navy_size5 clr_country_flag = navy_size1 clr_country_flag = navy_size6 clr_country_flag = navy_size8  }
 		
-		if = { limit = { has_navy_size = { size > 1010 } NOT = { has_country_flag = navy_size8 } } set_country_flag = navy_size8 clr_country_flag = navy_size2	clr_country_flag = navy_size3 clr_country_flag = navy_size4 clr_country_flag = navy_size5 clr_country_flag = navy_size1 clr_country_flag = navy_size6 clr_country_flag = navy_size7  }
+		if = { limit = { has_navy_size = { size > 1050 } NOT = { has_country_flag = navy_size8 } } set_country_flag = navy_size8 clr_country_flag = navy_size2	clr_country_flag = navy_size3 clr_country_flag = navy_size4 clr_country_flag = navy_size5 clr_country_flag = navy_size1 clr_country_flag = navy_size6 clr_country_flag = navy_size7  }
 	}
 	
 	option = {
