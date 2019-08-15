@@ -1,5 +1,8 @@
 AOI = "countries/AOI - Africa Orientale Italiana.txt"
 BFR = "countries/BFR - Baikal Federal Republic.txt"
+CAT = "countries/Catalonia.txt"
+CAB = "countries/Carribean.txt"
+NFL = "countries/Newfoundland.txt"
 DVR = "countries/DVR - Far Eastern Republic.txt"
 PGG = "countries/GER - General-Government.txt"
 RKA = "countries/GER - RKA_Nordland.txt"
