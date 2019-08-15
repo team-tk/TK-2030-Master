@@ -1,9 +1,8 @@
-﻿capital = 811
+﻿capital = 362
 
 oob = "CSA_1936"
 
 set_research_slots = 4
-add_research_slot = -1
 
 
 # Starting tech
@@ -87,28 +86,57 @@ set_stability = 0.7
 set_war_support = 0.4
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 85
-		}
-
-		fascism = {
-			popularity = 11
-		}
-		
-		communism = {
-			popularity = 4
-			#banned = no #default is no
-		}
-	}
-	
 	ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
-
+set_popularities = {
+	conservatism = 32
+	democratic = 55
+	socdem = 6
+	fascism = 2
+	communism = 5
+}
+set_party_name = { 
+    ideology = conservatism 
+    long_name = "Southern Democratic Party" 
+    name = "Dixiecrats" 
+}
+set_party_name = { 
+    ideology = democratic 
+    long_name = "National Populist Party (Moderate)" 
+    name = "Moderate Populists" 
+}
+set_party_name = { 
+    ideology = socdem 
+    long_name = "National Populist Party (Radicals)" 
+    name = "Radical Populists" 
+}
+set_party_name = { 
+    ideology = fascism 
+    long_name = "Ku Klux Klan" 
+    name = "KKK" 
+}
+set_party_name = {
+	ideology = nazism
+	long_name = "White Anglo-Saxon Protestants Organisation"
+	name = "WASPS Organisation"
+}
+set_party_name = {
+	ideology = neutrality
+	long_name = "Provisional Government of "
+}
+set_party_name = {
+	ideology = nationalism
+	long_name = "National Patriotic League of America (Southern)"	
+	name = "National Patriots"
+}
+set_party_name = { 
+    ideology = communism 
+    long_name = "Southern Communists' Party" 
+    name = "SCP" 
+}
 add_ideas = {
 	#usa_american_constitution
 	usa_bill_of_rights
@@ -137,6 +165,24 @@ add_ideas = {
 	csa_rural_society
 	csa_the_southern_fighting_man
 	csa_the_klan
+
+	free_trade
+	tax_high
+	tariffs_high
+
+	press_free
+	security_liberty_first
+	private_control
+	labor_allowed
+	fdi_regulated
+
+	train_low
+	officer_train_low
+	age_18 age_35
+
+	education_budget5 health_budget5 socialsecurity_budget5 
+	
+	unity5
 }
 
 

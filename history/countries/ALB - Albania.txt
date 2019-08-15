@@ -3,7 +3,7 @@
 OOB = "ALB_1936"
 
 add_ideas = {
-religion_sunni_islamism
+	religion_sunni_islamism
 }
 
 set_technology = {
@@ -142,19 +142,19 @@ create_country_leader = {
 }
 
 ### PLACEHOLDER
-		create_country_leader = {
-	name = "Midhat Frashëri"
-	desc = ""
-	picture = "midhat.dds"
-	expire = "1965.1.1"
-	ideology = nationalism_ideology
-	traits = {
-	old_figurehead 
-	nationalist_symbol
+	create_country_leader = {
+		name = "Midhat Frashëri"
+		desc = ""
+		picture = "midhat.dds"
+		expire = "1965.1.1"
+		ideology = nationalism_ideology
+		traits = {
+		old_figurehead 
+		nationalist_symbol
 	}
 }
 
-		create_country_leader = {
+create_country_leader = {
 	name = "Maliq Bushati"
 	desc = ""
 	picture = "Maliq_Bushati_Nationalist.dds"

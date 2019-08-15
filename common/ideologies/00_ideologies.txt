@@ -550,7 +550,7 @@ ideologies = {
 	
 		types = {
 		
-		kemalism = {
+			kemalism = {
 			}
 			
 			centrism = {
