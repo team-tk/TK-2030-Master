@@ -26,7 +26,7 @@ state={
 		}
 		
 		1918.11.11 = {
-				owner = YUG
+				owner = ITA
 		}
 
 		1941.6.22 = {

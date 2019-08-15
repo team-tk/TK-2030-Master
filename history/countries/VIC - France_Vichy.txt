@@ -2,6 +2,7 @@
 
 oob = "empty"
 
+inherit_technology = FRA
 set_research_slots = 2
 set_convoys = 50
 set_stability = 0.70 
@@ -106,6 +107,10 @@ set_politics = {
 	elections_allowed = no
 }
 
+add_ideas = {
+	VIC_recovering_from_war
+}
+
 set_popularities = {
 neutrality = 70
 fascism = 10
@@ -115,17 +120,102 @@ democratic = 20
 create_country_leader = {
 	name = "Philippe Pétain"
 	desc = ""
-	picture = "gfx/leaders/FRA/Portrait_France_Philippe_Petain.dds"
+	picture = "Portrait_France_Philippe_Petain.dds"
 	expire = "1951.7.23"
 	ideology = vichy
-	traits = { }
+	traits = {
+					anti_communist
+					fascist_sympathies
+					popular_figurehead
+				}
 }
 
 create_country_leader = {
 	name = "Philippe Pétain"
 	desc = ""
-	picture = "gfx/leaders/FRA/Portrait_France_Philippe_Petain.dds"
+	picture = "Portrait_France_Philippe_Petain.dds"
 	expire = "1951.7.23"
-	ideology = fascism_ideology
-	traits = { }
+	ideology = french_fascism
+	traits = {
+					anti_communist
+					fascist_sympathies
+					popular_figurehead
+				}
+}
+
+create_field_marshal = {
+	name = "Maxime Weygand"
+	picture = "Portrait_France_Maxime_Weygand.dds"
+	traits = { french_army_trait defensive_doctrine old_guard inflexible_strategist career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Henri Giraud"
+	picture = "portrait_france_henri_giraud.dds"
+	traits = { french_army_trait trickster trait_cautious career_officer infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "François Darlan"
+		picture = "Portrait_France_Francois_Darlan.dds"
+	traits = { french_navy_trait naval_lineage bold superior_tactician }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Jean-Marie Charles Abrial"
+		picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
+	traits = { french_navy_trait chief_engineer superior_tactician }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Jean-Pierre Esteva"
+		picture = "Portrait_France_Jean-Pierre_Esteva.dds"
+	traits = { french_navy_trait aviation_enthusiast }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "René-Émile Godfroy"
+		picture = "Portrait_France_Rene-Emile_Godfroy.dds"
+	traits = { french_navy_trait gentlemanly battleship_adherent old_guard_navy spotter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Jean de Laborde"
+	picture = "Portrait_France_Jean_de_Laborde.dds"
+	traits = { french_navy_trait naval_lineage aviation_enthusiast }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
 }

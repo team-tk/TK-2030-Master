@@ -1720,3 +1720,18 @@ GER_Blitz_Amerika_desc:0 "Our American invasion force will unleash a re-designed
  
  GER_landing_craft_tt:0 "Schaltet die Technologie 'Landungsschiff' frei\n"
  GER_tank_landing_craft_tt:0 "Schaltet die Technologie 'Fortschrittliches Landungsschiff' frei\n"
+ 
+ GER_french_state_collaboration_focus:0 "French State Collaboration"
+ GER_french_state_collaboration_focus_desc:0 "With the old corrupted France defeated, the new French State has to prove his devotion to the Reich." 
+ GER_fall_anton_focus:0 "Fall Anton"
+ GER_fall_anton_focus_desc:0 "Fall Anton was the codename for the military occupation of Vichy France carried out by Germany and Italy in November 1942. It marked the end of the Vichy regime as a nominally-independent state and the disbandment of its army (the severely-limited Armistice Army), but it continued its existence as a puppet government in Occupied France. One of the last actions of its armed forces before their dissolution was the scuttling of the French fleet in Toulon to prevent it from falling into Axis hands."
+ GER_total_war_mobilisation_focus:0 "Total War Mobilisation of the Reich"
+ GER_total_war_mobilisation_focus_desc:0 "Our enemies are numerous and getting stronger day by day. We have no choice but to prepare our nation to be totally mobilised for the war effort, if we want to have a chance to match them. "
+ GER_atlantic_wall_focus:0 "Build the Atlantikwall"
+ GER_atlantic_wall_focus_desc:0 "Build an extensive system of coastal defence and fortifications along the coast of continental Europe."
+ GER_finish_atlantic_wall_focus:0 "Complete the Atlantikwall"
+ GER_finish_atlantic_wall_focus_desc:0 "Complete the wall to maintain inviolable our Reich."
+ VIC_french_collaboration:0 "Collaboration with Germany"
+ VIC_recovering_from_war:0 "Recovering From War"
+ VIC_recovering_from_war_desc:0 "The stunning defeat of the powerful French Army has left the people totally dejected and reluctant to any new war."
+ 

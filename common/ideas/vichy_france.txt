@@ -1,0 +1,65 @@
+ideas = {
+
+country = {
+
+			VIC_recovering_from_war = {
+
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				tag = VIC
+				has_government = neutrality
+			}
+			
+			cancel = {
+				has_war = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			cancel_if_invalid = yes
+			
+			modifier = {
+				ai_get_ally_desire_factor = -500
+				ai_join_ally_desire_factor = -500
+				conscription_factor = -0.5	# AS			
+				join_faction_tension = 1
+				consumer_goods_factor = 0.1        # AS
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				ai_badass_factor = 0.01    # Will receive 1% of the threat from others				
+				war_support_factor = -0.9
+			}
+		}
+	
+			VIC_french_collaboration = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				has_completed_focus = GER_french_state_collaboration_focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = german_advisors
+	
+			modifier = {
+				industrial_capacity_factory = -0.40
+				conscription = -0.25
+			}	
+			
+			ai_will_do = {
+				factor = 0
+			}			
+			
+		}	
+		
+		}
+
+
+}

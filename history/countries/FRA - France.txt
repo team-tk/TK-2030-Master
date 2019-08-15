@@ -379,6 +379,11 @@ create_country_leader = {
 	picture = "Portrait_France_Philippe_Petain.dds"
 	expire = "1965.1.1"
 	ideology = french_fascism
+	traits = {
+					anti_communist
+					fascist_sympathies
+					popular_figurehead
+				}
 }
 
 create_country_leader = {
@@ -419,7 +424,11 @@ create_country_leader = {
 	picture = "Portrait_France_Philippe_Petain.dds"
 	expire = "1965.1.1"
 	ideology = vichy
-	traits = { }
+	traits = {
+					anti_communist
+					fascist_sympathies
+					popular_figurehead
+				}
 }
 
 create_country_leader = {
