@@ -271,10 +271,10 @@ GER_case_anton_category = {
 			original_tag = GER
 			has_war = yes
 			has_fascist_government = yes
-			any_country = {
-				original_tag = FRA
-				has_fascist_government = yes
-				is_subject_of = GER
+			country_exists = VIC
+			VIC = {
+				#has_fascist_government = yes
+				#is_subject_of = GER
 				NOT = { has_country_flag = case_anton }
 				custom_trigger_tooltip = {
 					tooltip = GER_case_anton_tt2
@@ -309,11 +309,7 @@ GER_case_anton_category = {
 		visible = {
 			original_tag = GER
 			has_fascist_government = yes
-			any_country = {
-				original_tag = FRA
-				has_fascist_government = yes
-				is_subject_of = GER
-			}
+			country_exists = VIC
 		}
 		ai_will_do = {
 			factor = 1
@@ -325,12 +321,7 @@ GER_case_anton_category = {
 		complete_effect = {
 			custom_effect_tooltip = GER_case_anton_tt
 			hidden_effect = {
-				random_other_country = {
-					limit = {
-						original_tag = FRA
-						has_fascist_government = yes
-						is_subject_of = GER
-					}
+				VIC = {
 					set_country_flag = case_anton
 				}
 			}
