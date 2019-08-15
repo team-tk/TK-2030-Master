@@ -24,11 +24,13 @@ focus_tree = {
 	focus = {
 		id = USA_political_chaos
 		icon = GFX_goal_generic_political_pressure
+		text = USA_political_chaos_desc
 		x = 3
 		y = 0
 		cost = 1
 		available = {
-			date < 1936.1.15
+			always = no
+			#has_country_flag = huey_long_dead
 		}
 		ai_will_do = {
 			factor = 0
@@ -36,7 +38,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_timed_idea = {
-				idea = usa_political_chaos days = 360
+				idea = usa_political_chaos days = 90
 			}
 			#country_event = { id = usa.1860 days = 2 }
 		}
