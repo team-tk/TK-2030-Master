@@ -1716,7 +1716,12 @@ country_event = {
 				
 				
 			}
-			
+			FAS = {
+				annex_country = {
+					target = USA
+					transfer_troops = no
+				}
+			}
 			#bounce
 			#PRU = { country_event = { id = usa.91 days = 5 } }
 			
@@ -1975,7 +1980,7 @@ country_event = {
 			
 			FAS = {	load_oob = "FAS_1936" }
 			FAS = {
-				#annex_country = {
+				annex_country = {
 					target = USA
 					transfer_troops = no
 				}
@@ -2009,14 +2014,14 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	#trigger = {
-	#	NOT = { country_exists = USA }
-	#	OR = {
-	#		TAG = CSA
-	#		TAG = ACO
-	#		TAG = FAS
-	#	}
-	#}
+	trigger = {
+		NOT = { country_exists = USA }
+		OR = {
+			TAG = CSA
+			TAG = ACO
+			TAG = FAS
+		}
+	}
 	
 	option = { # The Second American Civil War Begins
 		name = usa.99.a

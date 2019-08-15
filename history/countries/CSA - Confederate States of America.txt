@@ -97,8 +97,8 @@ set_popularities = {
 	socdem = 14
 	nazism = 5
 	fascism = 2
-	communism = 5
-	neutrality = 8 #hmm?
+	communism = 4
+	neutrality = 8 
 } 
 add_ideas = {
 	#usa_american_constitution
