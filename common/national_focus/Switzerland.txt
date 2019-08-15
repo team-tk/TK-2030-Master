@@ -140,6 +140,7 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = { var = SWI_manpower_pool value = 150000 }
+				load_oob = "SWI_load_conscription_1"
 			}
 		}
 	}
@@ -2234,6 +2235,9 @@ focus_tree = {
 				remove_idea = SWI_special_conscription_2
 				add_idea = SWI_special_conscription_3
 			}
+			hidden_effect = {
+				load_oob = "SWI_load_conscription_2"
+			}
 		}
 	}
 	focus = {
@@ -2264,6 +2268,9 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = SWI_special_conscription_3
 				add_idea = SWI_special_conscription_4
+			}
+			hidden_effect = {
+				load_oob = "SWI_load_conscription_3"
 			}
 		}
 	}
