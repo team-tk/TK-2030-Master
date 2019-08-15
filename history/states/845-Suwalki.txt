@@ -1,0 +1,30 @@
+
+state={
+	id=845
+	name="Suwalki"
+	manpower = 1238
+	state_category = town
+
+	history={
+		victory_points = {
+			6375 3
+		}
+		#victory_points = {
+		#	11386 1
+		#}
+		owner = GER
+		controller = GER
+		
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = GER
+		1941.6.22 = {
+			owner = SOV
+			}
+	}
+
+	provinces={
+		400 3254
+	}
+}
