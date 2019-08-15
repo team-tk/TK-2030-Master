@@ -98,8 +98,8 @@ set_popularities = {
 	nazism = 5
 	fascism = 2
 	communism = 5
-	neutrality = 8
-}
+	neutrality = 8 #hmm?
+} 
 add_ideas = {
 	#usa_american_constitution
 	usa_bill_of_rights
