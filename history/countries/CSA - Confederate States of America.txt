@@ -86,57 +86,20 @@ set_stability = 0.7
 set_war_support = 0.4
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	conservatism = 32
-	democratic = 55
-	socdem = 6
+	conservatism = 51
+	democratic = 16
+	socdem = 14
+	nazism = 5
 	fascism = 2
-	communism = 5
-}
-set_party_name = { 
-    ideology = conservatism 
-    long_name = "Southern Democratic Party" 
-    name = "Dixiecrats" 
-}
-set_party_name = { 
-    ideology = democratic 
-    long_name = "National Populist Party (Moderate)" 
-    name = "Moderate Populists" 
-}
-set_party_name = { 
-    ideology = socdem 
-    long_name = "National Populist Party (Radicals)" 
-    name = "Radical Populists" 
-}
-set_party_name = { 
-    ideology = fascism 
-    long_name = "Ku Klux Klan" 
-    name = "KKK" 
-}
-set_party_name = {
-	ideology = nazism
-	long_name = "White Anglo-Saxon Protestants Organisation"
-	name = "WASPS Organisation"
-}
-set_party_name = {
-	ideology = neutrality
-	long_name = "Provisional Government of "
-}
-set_party_name = {
-	ideology = nationalism
-	long_name = "National Patriotic League of America (Southern)"	
-	name = "National Patriots"
-}
-set_party_name = { 
-    ideology = communism 
-    long_name = "Southern Communists' Party" 
-    name = "SCP" 
-}
+	communism = 4
+	neutrality = 8 
+} 
 add_ideas = {
 	#usa_american_constitution
 	usa_bill_of_rights
@@ -204,7 +167,7 @@ create_country_leader = {
 	desc = "POLITICS_EARL_BROWDER_DESC"
 	picture = "Portrait_USA_Franklin_Roosevelt.dds"
 	expire = "1965.1.1"
-	ideology = depositism
+	ideology = provisional_government
 	traits = {
 		
 	}

@@ -254,13 +254,13 @@ country_event = {
 			remove_ideas = usa_packed_court
 		}
 		
-set_politics = {
-	ruling_party = conservatism
-	last_election = "1936.11.3"
-	election_frequency = 48
-	elections_allowed = yes
-}
-#add_popularity = { ideology = conservatism popularity = 0.03 }
+		set_politics = {
+			ruling_party = conservatism
+			last_election = "1936.11.3"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		#add_popularity = { ideology = conservatism popularity = 0.03 }
 		create_country_leader = {
 			name = "Alf Landon"
 			desc = "POLITICS_ALF_LANDON_DESC"
@@ -401,7 +401,6 @@ country_event = {
 		date > 1944.1.1
 		date < 1945.1.1
 		has_country_leader = { id = 1776 ruling_only = yes name = "Franklin Delano Roosevelt" } 
-		has_war = no
 	}
 	
 	option = {
@@ -424,14 +423,14 @@ country_event = {
 		remove_ideas = new_deal
 		#set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 		
-set_politics = {
-	ruling_party = conservatism
-	last_election = "1944.11.7"
-	election_frequency = 48
-	elections_allowed = yes
-}
+		set_politics = {
+			ruling_party = conservatism
+			last_election = "1944.11.7"
+			election_frequency = 48
+			elections_allowed = yes
+		}
 
-#add_popularity = { ideology = conservatism popularity = 0.03 }
+		#add_popularity = { ideology = conservatism popularity = 0.03 }
 		create_country_leader = {
 			name = "Thomas E. Dewey"
 			desc = "POLITICS_THOMAS_DEWEY_DESC"
@@ -525,13 +524,13 @@ country_event = {
 		}
 		remove_ideas = new_deal
 		#set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-set_politics = {
-	ruling_party = conservatism
-	last_election = "1944.11.7"
-	election_frequency = 48
-	elections_allowed = yes
-}
-#add_popularity = { ideology = conservatism popularity = 0.03 }
+		set_politics = {
+			ruling_party = conservatism
+			last_election = "1944.11.7"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		#add_popularity = { ideology = conservatism popularity = 0.03 }
 		create_country_leader = {
 			name = "Douglas MacArthur"
 			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
@@ -1026,11 +1025,12 @@ country_event = {
 	
 	trigger = {
 		tag = USA
-		OR = {
+		AND = {
 			has_completed_focus = USA_political_chaos
-			focus_progress = {
-				focus = USA_political_chaos
-				progress > 0.1
+			has_stability < 0.5
+			has_stability > 0.4
+			NOT = {
+				has_idea = usa_political_chaos
 			}
 		}
 	}
@@ -1041,6 +1041,7 @@ country_event = {
 
 	option = {
 		name = usa.90.a
+		add_stability = -0.10
 		country_event = { id = usa.92 days = 1 }
 	}
 }
@@ -1062,9 +1063,9 @@ country_event = {
 		#has_completed_focus = USA_political_chaos
 	}
 
-	#mean_time_to_happen = {
-	#	days = 1
-	#}
+	mean_time_to_happen = {
+		days = 1
+	}
 
 	option = {
 		name = usa.91.a
@@ -1094,6 +1095,7 @@ country_event = {
 
 	option = {
 		name = usa.92.a
+		add_stability = -0.05
 		hidden_effect = { country_event = { id = usa.93 days = 3 } }
 	}
 }
@@ -1300,9 +1302,9 @@ country_event = {
 	option = {
 		name = usa.95.a
 		
-	set_politics = {
-	ruling_party = democratic
-	}
+		set_politics = {
+			ruling_party = neutrality
+		}
 		
 		kill_country_leader = yes
 		
@@ -1312,8 +1314,8 @@ country_event = {
 			desc = "POLITICS_Douglas_MacArthur_DESC"
 			picture = "Portrait_USA_Douglas_MacArthur.dds"
 			expire = "1947.1.1"
-			ideology = liberalism_ideology
-			traits = { }
+			ideology = corporatism
+			traits = { dictator }
 		}
 		
 		hidden_effect = {
@@ -1714,7 +1716,12 @@ country_event = {
 				
 				
 			}
-			
+			FAS = {
+				annex_country = {
+					target = USA
+					transfer_troops = no
+				}
+			}
 			#bounce
 			#PRU = { country_event = { id = usa.91 days = 5 } }
 			
@@ -1972,10 +1979,12 @@ country_event = {
 			}
 			
 			FAS = {	load_oob = "FAS_1936" }
-			#annex_country = {
-			#	target = USA
-			#	transfer_troops = no
-			#}
+			FAS = {
+				annex_country = {
+					target = USA
+					transfer_troops = no
+				}
+			}
 			USA = { 
 				delete_unit_template_and_units = {
 					division_template = "Infantry Division"
@@ -2005,14 +2014,14 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	#trigger = {
-	#	NOT = { country_exists = USA }
-	#	OR = {
-	#		TAG = CSA
-	#		TAG = ACO
-	#		TAG = FAS
-	#	}
-	#}
+	trigger = {
+		NOT = { country_exists = USA }
+		OR = {
+			TAG = CSA
+			TAG = ACO
+			TAG = FAS
+		}
+	}
 	
 	option = { # The Second American Civil War Begins
 		name = usa.99.a
