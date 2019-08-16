@@ -267,6 +267,8 @@ country_event = {
 			socdem = 80
 			}
 			
+			add_ideas = fog_democratic
+			
 #create_country_leader = {
 	#name = "Mark Clark"
 	#desc = ""
@@ -386,6 +388,7 @@ country_event = {
 			transfer_state = 9
 			transfer_state = 664
 			transfer_state = 72
+			add_ideas = fog_dictatorship_lw
 		}
 		POL = {
 			transfer_state = 66
@@ -403,6 +406,8 @@ country_event = {
 			transfer_state = 88
 			transfer_state = 68
 			transfer_state = 762 ### SILESIA
+			
+			add_ideas = fog_dictatorship_lw
 		}
 		ITA = {
 			transfer_state = 39
@@ -422,12 +427,17 @@ country_event = {
 				ruling_party = democratic
 				elections_allowed = yes
 			}
+			
+			add_ideas = fog_democratic
+			
 		}
 		BUL = {
 			transfer_state = 77
 			transfer_state = 211
 			transfer_state = 212
 			transfer_state = 48
+			
+			add_ideas = fog_dictatorship_lw
 		}
 		YUG = {
 			transfer_state = 108
@@ -451,10 +461,13 @@ country_event = {
 				elections_allowed = no
 			}
 			
+			add_ideas = fog_dictatorship_lw
+			
 		}
 		ALB = {
 			transfer_state = 44
 			add_state_core = 44
+			add_ideas = fog_dictatorship_lw
 		}
 		GRE = {
 			transfer_state = 731
@@ -466,6 +479,7 @@ country_event = {
 			transfer_state = 184
 			transfer_state = 743
 			transfer_state = 164
+			
 		}
 		HUN = {
 			transfer_state = 43
@@ -474,6 +488,7 @@ country_event = {
 			add_state_core = 43
 			add_state_core = 154
 			add_state_core = 155
+			add_ideas = fog_dictatorship_lw
 		}
 		NOR = {
 			transfer_state = 110
@@ -490,6 +505,7 @@ country_event = {
 			transfer_state = 84
 			transfer_state = 46
 			transfer_state = 79
+			add_ideas = fog_dictatorship_lw
 		}
 		DDR = {
 			transfer_state = 60
@@ -498,6 +514,8 @@ country_event = {
 			transfer_state = 62
 			transfer_state = 61
 			#set_cosmetic_tag = ddr_occupied
+			
+			add_ideas = fog_dictatorship_lw
 			
 			#create_country_leader = {
 	#name = "Georgy Zhukov"
@@ -563,12 +581,12 @@ country_event = {
 			annex_country = { target = GER transfer_troops = no }
 		}
 		
-		every_state = {
-				limit = { NOT = { is_core_of = WGR } }
-				remove_core_of = GER
-			}
+				#every_state = {
+				#limit = { NOT = { is_core_of = WGR } }
+				#remove_core_of = GER
+				#}
 			
-			GER = {
+			WGR = {
 			transfer_state = 56
 			transfer_state = 57
 			transfer_state = 58
@@ -583,16 +601,20 @@ country_event = {
 			transfer_state = 813
 			set_capital = 51
 			
-			set_politics = {
-				ruling_party = conservatism
-				elections_allowed = yes
-			}
+			#set_politics = {
+				#ruling_party = conservatism
+				#elections_allowed = yes
+			#}
 			
-			set_popularities = {
-			nazism = 10
-			communism = 10
-			democratic = 80
-			}
+			#set_popularities = {
+			#nazism = 10
+			#communism = 10
+			#conservatism = 80
+			#}
+			
+			add_ideas = fog_democratic
+			
+			change_tag_from = GER
 			
 			}
 			

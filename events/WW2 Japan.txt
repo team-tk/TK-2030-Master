@@ -145,11 +145,21 @@ OR = { USA = { controls_state = 526 } any_other_country = { is_in_faction_with =
 					}
 					
 			KOR = {
+
 			transfer_state = 525
 			set_politics = {
 				ruling_party = democratic
 				elections_allowed = yes
 			}
+			
+			set_popularities = {
+			fascism = 10
+			communism = 10
+			conservatism = 80
+			}
+			
+			add_ideas = fog_democratic
+			
 			}
 			
 			JAP = {
@@ -167,6 +177,16 @@ OR = { USA = { controls_state = 526 } any_other_country = { is_in_faction_with =
 				ruling_party = democratic
 				elections_allowed = yes
 			}
+			
+			set_popularities = {
+			fascism = 10
+			communism = 10
+			conservatism = 80
+			}
+			
+			add_ideas = fog_democratic
+			
+			
 			}
 			
 

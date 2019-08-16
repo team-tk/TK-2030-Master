@@ -4,6 +4,10 @@ add_ideas = {
 religion_atheism
 }
 
+add_ideas = fog_dictatorship_lw
+
+inherit_technology = GER
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
