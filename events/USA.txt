@@ -1027,8 +1027,7 @@ country_event = {
 		tag = USA
 		AND = {
 			has_completed_focus = USA_political_chaos
-			has_stability < 0.5
-			has_stability > 0.4
+			has_stability < 0.3
 			NOT = {
 				has_idea = usa_political_chaos
 			}
