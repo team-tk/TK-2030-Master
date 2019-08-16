@@ -5731,7 +5731,9 @@ country_event = {
 			transfer_state = 27
 			transfer_state = 20
 			transfer_state = 32
-			transfer_state = 21				
+			transfer_state = 21
+			transfer_state = 3
+			transfer_state = 793			
 			set_capital = 17
 			add_state_core = 17
 			add_state_core = 18
@@ -5955,6 +5957,16 @@ country_event = {
 					if = { 
 						limit = { OR = { GER = { has_full_control_of_state = 547 } any_allied_country = { 		has_full_control_of_state = 547 }}}
 						transfer_state = 547
+					}
+					
+					if = { 
+						limit = { OR = { GER = { has_full_control_of_state = 829 } any_allied_country = { 		has_full_control_of_state = 829 }}}
+						transfer_state = 829
+					}
+					
+					if = { 
+						limit = { OR = { GER = { has_full_control_of_state = 830 } any_allied_country = { 		has_full_control_of_state = 830 }}}
+						transfer_state = 830
 					}
 
 					add_state_core = 295 # Leopoldville

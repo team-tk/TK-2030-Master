@@ -18,7 +18,8 @@ state={
 			infrastructure = 2
 		}
 		1941.6.22 = {
-			owner = ENG
+			owner = FFR
+			add_core_of = FFR
 			}
 
 	}

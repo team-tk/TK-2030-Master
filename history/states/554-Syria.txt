@@ -23,7 +23,7 @@ state={
 			add_core_of = SYR
 			}
 		1941.6.22 = {
-			owner = ENG
+			owner = VIC
 			}	
 
 	}

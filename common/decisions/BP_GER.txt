@@ -1922,6 +1922,8 @@ GER_annex_belgium = {
 			OR = { GER = { controls_state = 20 } any_other_country = { is_subject_of = GER controls_state = 20 } }
 			OR = { GER = { controls_state = 21 } any_other_country = { is_subject_of = GER controls_state = 21 } }
 			OR = { GER = { controls_state = 32 } any_other_country = { is_subject_of = GER controls_state = 32 } }
+			OR = { GER = { controls_state = 3 } any_other_country = { is_subject_of = GER controls_state = 3 } }
+			OR = { GER = { controls_state = 793 } any_other_country = { is_subject_of = GER controls_state = 793 } }
 		}
 
 		ai_will_do = {
@@ -2034,6 +2036,8 @@ GER_annex_belgium = {
 				OR = { has_full_control_of_state = 768 any_country = { is_subject_of = GER has_full_control_of_state = 768 }}
 				OR = { has_full_control_of_state = 548 any_country = { is_subject_of = GER has_full_control_of_state = 548 }}
 				OR = { has_full_control_of_state = 547 any_country = { is_subject_of = GER has_full_control_of_state = 547 }}
+				OR = { has_full_control_of_state = 829 any_country = { is_subject_of = GER has_full_control_of_state = 829 }}
+				OR = { has_full_control_of_state = 830 any_country = { is_subject_of = GER has_full_control_of_state = 830 }}
 			}
 		}
 

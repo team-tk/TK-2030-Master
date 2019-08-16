@@ -6,9 +6,9 @@ bookmarks = {
 		picture = "GFX_select_date_1941"
 		default_country = "GER"
 	
-		FRA = {
-			history = FRA_OPERATION_BARBAROSSA_DESC
-			ideology = democratic
+		VIC = {
+			history = VIC_OPERATION_BARBAROSSA_DESC
+			ideology = neutrality
 			ideas = {
 			}
 			focuses = {
@@ -24,7 +24,7 @@ bookmarks = {
 		}
 		ENG = {
 			history = ENG_OPERATION_BARBAROSSA_DESC
-			ideology = democratic
+			ideology = conservatism
 			ideas = {
 			}
 			focuses = {
@@ -33,7 +33,7 @@ bookmarks = {
 		}
 		GER = {
 			history = GER_OPERATION_BARBAROSSA_DESC
-			ideology = fascism
+			ideology = nazism
 			ideas = {
 			}
 			focuses = {
