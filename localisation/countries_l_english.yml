@@ -7586,3 +7586,8 @@
  VIC_communism_ADJ:0 "French"
  VIC_syndicalism_ADJ:0 "French"
  VIC_theocratic_ADJ:0 "French"
+
+ SHN_fascism:0 "Provisional Government of the Republic of China"
+ SHN_neutrality:0 "Shandong Clique"
+ SHN_communism:0 "Communist Shandong"
+ SHN_monarchism:0 "Qing Province of Shandong"

@@ -10,7 +10,7 @@ if = {
 }
 
 add_ideas = {
-religion_taoism
+	religion_taoism
 }
 
 add_ideas = {

@@ -1,0 +1,51 @@
+﻿capital = 597
+
+# oob = "SHN_1936"
+
+add_ideas = {
+	religion_taoism
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+set_war_support = 0.3
+set_stability = 0.4
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_party_name = {
+	ideology = neutrality
+	long_name = "Kuomintang"
+	name = "Pro-Nanjing Camp"
+}
+set_party_name = {
+	ideology = monarchism
+	long_name = "Qing dynasty"
+	name = "Pro-Hsinking Camp"
+}
+set_party_name = {
+	ideology = fascism
+	long_name = "Japanese Collaborationists"
+	name = "Pro-Tokyo Camp"
+}
+set_party_name = {
+	ideology = communism
+	long_name = "Communist Party of China"
+	name = "CCP"
+}
+set_popularities = {
+	neutrality = 71
+	monarchism = 8
+	fascism = 10
+	communism = 11
+}
+
