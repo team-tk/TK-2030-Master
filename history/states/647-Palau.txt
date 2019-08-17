@@ -19,6 +19,12 @@ state=
 		victory_points = {
 			4357 1 
 		}
+		
+		1918.11.11 = {
+			owner = JAP
+			controller = JAP
+			}
+		
 	}
 	provinces={
 		4357 12103

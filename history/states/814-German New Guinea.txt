@@ -21,16 +21,16 @@ state={
 				naval_base = 1
 
 			}
-			
-		1918.11.11 = {
-			owner = AST
-			controller = AST
-			}
 
 		}
 		victory_points = {
 			12237 1 
 		}
+		
+		1918.11.11 = {
+			owner = AST
+			controller = AST
+			}
 
 	}
 

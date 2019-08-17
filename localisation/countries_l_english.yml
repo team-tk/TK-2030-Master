@@ -7355,7 +7355,7 @@
  
  FRI_conservatism:0 "Republic of Indochina"
  FRI_conservatism_ADJ:0 "Indochinese"
- FRI_conservatism_DEF:0 "The Republic of Indochina"
+ _conservatism_DEF:0 "The Republic of Indochina"
  FRI_democratic:0 "Republic of Indochina"
  FRI_democratic_ADJ:0 "Indochinese"
  FRI_democratic_DEF:0 "The Republic of Indochina"

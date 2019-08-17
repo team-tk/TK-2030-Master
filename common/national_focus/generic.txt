@@ -1,5 +1,5 @@
 focus_tree = {
-	id = test_focus
+	id = generic_focus
 	
 	country = {
 		factor = 1

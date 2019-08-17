@@ -662,7 +662,7 @@ country_event = {
 			factor = 50
 		}
 		name = tdlra.26.a
-		add_ideas = tdlra_women_in_the_army
+		add_ideas = women_army_soldiers
 		add_political_power = -50
     }
 	option = {
