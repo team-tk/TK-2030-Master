@@ -544,6 +544,26 @@ JAP_SHOGUNATE = {
 	color_ui = rgb {221  178  83 }
 }
 
+AUC_OCCUPIED = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
+}
+
+DDR_OCCUPIED = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
+}
+
+WGR_OCCUPIED = {
+	color = rgb { 208 12 39 }
+	color_ui = rgb { 208 12 39 }
+}
+
+AUS_OCCUPIED = {
+	color = rgb { 208 12 39 }
+	color_ui = rgb { 208 12 39 }
+}
+
 
 ##Majors
 

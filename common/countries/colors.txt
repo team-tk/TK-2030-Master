@@ -598,6 +598,10 @@ IND = {
 	color = rgb { 204 102 0 }
 	color_ui = rgb { 255 128 0 }
 }
+AUC = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }

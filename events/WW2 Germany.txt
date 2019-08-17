@@ -252,31 +252,58 @@ country_event = {
 			
 			AUS = {
 			transfer_state = 153
-			transfer_state = 4
 			transfer_state = 152
-			#set_cosmetic_tag = aus_occupied
+			set_cosmetic_tag = AUS_OCCUPIED
 			
 			set_politics = {
-				ruling_party = socdem
-				elections_allowed = yes
+				ruling_party = democratic
+				elections_allowed = no
 			}
 			
 			set_popularities = {
 			nazism = 10
 			communism = 10
-			socdem = 80
+			democratic = 80
 			}
 			
 			add_ideas = fog_democratic
 			
-#create_country_leader = {
-	#name = "Mark Clark"
-	#desc = ""
-	#picture = "gfx/leaders/USA/Portrait_USA_Mark_W_Clark.dds"
-	#expire = "1955.7.27"
-	#ideology = liberalism_ideology
-	#traits = { }
-#}
+create_country_leader = {
+	name = "Mark Clark"
+	desc = ""
+	picture = "gfx/leaders/USA/Portrait_USA_Mark_W_Clark.dds"
+	expire = "1955.7.27"
+	ideology = liberalism_ideology
+	traits = { }
+}
+			
+			}
+			
+			AUC = {
+			transfer_state = 4
+			set_cosmetic_tag = AUC_OCCUPIED
+			
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			
+			set_popularities = {
+			nazism = 10
+			democratic = 10
+			communism = 80
+			}
+			
+			add_ideas = fog_dictatorship_lw
+			
+create_country_leader = {
+	name = "Karl Renner"
+	desc = "POLITICS_KARL_RENNER_DESC"
+	picture = "gfx/leaders/AUS/Karl_Renner_Social_Democracy.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = { }
+}
 			
 			}
 		
@@ -513,20 +540,18 @@ country_event = {
 			transfer_state = 65
 			transfer_state = 62
 			transfer_state = 61
-			#set_cosmetic_tag = ddr_occupied
+			set_cosmetic_tag = DDR_OCCUPIED
 			
 			add_ideas = fog_dictatorship_lw
 			
-			#create_country_leader = {
-	#name = "Georgy Zhukov"
-	#desc = ""
-	#picture = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
-	#expire = "1949.10.7"
-	#ideology = stalinism
-	#traits = {
-		
-	#}
-#}
+	create_country_leader = {
+	name = "Georgy Zhukov"
+	desc = ""
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
+	expire = "1949.10.7"
+	ideology = stalinism
+	traits = { }
+}
 			
 			}
 		SOV = {
@@ -563,6 +588,7 @@ country_event = {
 			
 			
 			add_to_faction = DDR
+			add_to_faction = AUC
 			add_to_faction = BUL
 			add_to_faction = ALB
 			add_to_faction = POL
@@ -570,6 +596,7 @@ country_event = {
 			add_to_faction = ROM
 			#add_to_faction = YUG
 			add_to_faction = CZE
+			puppet = AUC
 			puppet = DDR
 			puppet = BUL
 			puppet = ALB
@@ -581,12 +608,14 @@ country_event = {
 			annex_country = { target = GER transfer_troops = no }
 		}
 		
-				#every_state = {
-				#limit = { NOT = { is_core_of = WGR } }
-				#remove_core_of = GER
-				#}
+		
+		
+				every_state = {
+				limit = { NOT = { is_core_of = WGR } }
+				remove_core_of = GER
+				}
 			
-			WGR = {
+			GER = {
 			transfer_state = 56
 			transfer_state = 57
 			transfer_state = 58
@@ -601,21 +630,37 @@ country_event = {
 			transfer_state = 813
 			set_capital = 51
 			
-			#set_politics = {
-				#ruling_party = conservatism
-				#elections_allowed = yes
-			#}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
 			
-			#set_popularities = {
-			#nazism = 10
-			#communism = 10
-			#conservatism = 80
-			#}
+			set_popularities = {
+			nazism = 10
+			communism = 10
+			democratic = 80
+			}
+			
+	create_country_leader = {
+	name = "Dwight D. Eisenhower"
+	desc = ""
+	picture = "gfx/leaders/USA/Portrait_USA_Dwight_D_Eisenhower.dds"
+	expire = "1949.5.23"
+	ideology = liberalism_ideology
+	traits = { }
+	}
 			
 			add_ideas = fog_democratic
 			
-			change_tag_from = GER
+			#change_tag_from = GER
 			
+			set_cosmetic_tag = WGR_OCCUPIED
+			
+			}
+			
+			USA = {
+			puppet = GER
+			puppet = AUS
 			}
 			
 
