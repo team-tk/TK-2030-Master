@@ -1,11 +1,10 @@
 ﻿l_english:
 
-DDR_OCCUPIED_subject:0 "Soviet Occupied Germany"
-WGR_OCCUPIED_subject:0 "Allied Occupied Germany"
-GER_OCCUPIED_subject:0 "Allied Occupied Germany"
-AUS_OCCUPIED_subject:0 "Allied Occupied Austria"
-AUC_OCCUPIED_subject:0 "Soviet Occupied Austria"
-
+ DDR_OCCUPIED_subject:0 "Soviet Occupied Germany"
+ WGR_OCCUPIED_subject:0 "Allied Occupied Germany"
+ GER_OCCUPIED_subject:0 "Allied Occupied Germany"
+ AUS_OCCUPIED_subject:0 "Allied Occupied Austria"
+ AUC_OCCUPIED_subject:0 "Soviet Occupied Austria"
  JAP_SHOGUNATE_neutrality:0 "Japanese Shogunate"
  JAP_SHOGUNATE_neutrality_DEF:0 "Japanese Shogunate"
 
@@ -1111,7 +1110,7 @@ AUC_OCCUPIED_subject:0 "Soviet Occupied Austria"
  MUT_UNIFIED_conservatism:0 "Republic of Mutapa"
  MUT_UNIFIED_socialism:0 "Republic of Mutapa"
  MUT_UNIFIED_socdem:0 "Republic of Mutapa"
- MUT_UNIFIED_conservatism_DEF::0 "The Republic of Mutapa"
+ MUT_UNIFIED_conservatism_DEF:0 "The Republic of Mutapa"
  MUT_UNIFIED_socialism_DEF:0 "The Republic of Mutapa"
  MUT_UNIFIED_socdem:0 "The Republic of Mutapa"
  MUT_UNIFIED_communism:0 "Mutapa Socialist Republic"
@@ -2511,3 +2510,4 @@ AUC_OCCUPIED_subject:0 "Soviet Occupied Austria"
  ISS_formable_neutrality_ADJ:0 "Islamic"
  ISS_formable_communism_ADJ:0 "Islamic"
  ISS_formable_monarchism_ADJ:0 "Islamic"
+ 

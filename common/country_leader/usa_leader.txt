@@ -1710,7 +1710,7 @@ leader_traits = {
 				anti_air_attack = 0.3 ap_attack = 0.1 build_cost_ic = -0.1
 			}
 			heavy_cruiser = {
-				attack = 0.2 ap_attack = 0.1 armor_value = 0.2 build_cost_ic = -0.1 #fire_range = 0.1 
+				navy_capital_ship_attack_factor = 0.2 ap_attack = 0.1 armor_value = 0.2 build_cost_ic = -0.1 #fire_range = 0.1 
 			}
 		}
 		
@@ -1736,7 +1736,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			capital_ship = {
-				attack = 0.1 anti_air_attack = 0.1 ap_attack = 0.1 armor_value = 0.1 naval_speed = 0.1 #fire_range = 0.1 
+				navy_capital_ship_attack_factor = 0.1 anti_air_attack = 0.1 ap_attack = 0.1 armor_value = 0.1 naval_speed = 0.1 #fire_range = 0.1 
 			}
 		}
 		
@@ -1749,7 +1749,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			screen_ship = {
-				attack = 0.2 naval_speed = 0.1 naval_range = 0.3 reliability = 0.1
+				navy_screen_attack_factor = 0.2 naval_speed = 0.1 naval_range = 0.3 reliability = 0.1
 			}
 			capital_ship = {
 				attack = 0.2 armor_value = 0.2 naval_range = 0.2 build_cost_ic = -0.1
@@ -1768,7 +1768,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			screen_ship = {
-				attack = 0.15 naval_speed = 0.15 naval_range = 0.3 reliability = 0.15
+				navy_screen_attack_factor = 0.15 naval_speed = 0.15 naval_range = 0.3 reliability = 0.15
 			}
 		}
 		
@@ -1781,7 +1781,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			capital_ship = {
-				attack = 0.2 anti_air_attack = 0.2 ap_attack = 0.2 naval_speed = 0.2 build_cost_ic = -0.1 #fire_range = 0.2 
+				navy_capital_ship_attack_factor = 0.2 anti_air_attack = 0.2 ap_attack = 0.2 naval_speed = 0.2 build_cost_ic = -0.1 #fire_range = 0.2 
 			}
 		}
 		
@@ -1794,7 +1794,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			carrier = {
-				attack = 0.6 anti_air_attack = 0.6 carrier_size = 0.5 naval_speed = 0.1 build_cost_ic = 0.4
+				navy_capital_ship_attack_factor = 0.6 anti_air_attack = 0.6 carrier_size = 0.5 naval_speed = 0.1 build_cost_ic = 0.4
 			}
 		}
 		
@@ -1807,10 +1807,10 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			heavy_cruiser = {
-				attack = 0.4 anti_air_attack = 0.4 ap_attack = 0.3 armor_value = 0.2 naval_range = 0.2 build_cost_ic = 0.25 #fire_range = 0.3 
+				navy_capital_ship_attack_factor = 0.4 anti_air_attack = 0.4 ap_attack = 0.3 armor_value = 0.2 naval_range = 0.2 build_cost_ic = 0.25 #fire_range = 0.3 
 			}
 			battle_cruiser = {
-				attack = 0.4 anti_air_attack = 0.4 ap_attack = 0.3 armor_value = 0.2 naval_speed = 0.2 build_cost_ic = 0.25 #fire_range = 0.3 
+				navy_capital_ship_attack_factor = 0.4 anti_air_attack = 0.4 ap_attack = 0.3 armor_value = 0.2 naval_speed = 0.2 build_cost_ic = 0.25 #fire_range = 0.3 
 			}
 		}
 		
@@ -1823,13 +1823,13 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			light_cruiser = {
-				attack = 0.2 anti_air_attack = 0.4 ap_attack = 0.2 naval_range = 0.2 build_cost_ic = 0.1 #fire_range = 0.2 
+				navy_screen_attack_factor = 0.2 anti_air_attack = 0.4 ap_attack = 0.2 naval_range = 0.2 build_cost_ic = 0.1 #fire_range = 0.2 
 			}
 			heavy_cruiser = {
-				attack = 0.2 ap_attack = 0.2 armor_value = 0.2 naval_speed = 0.2 build_cost_ic = 0.1 #fire_range = 0.2 
+				navy_capital_ship_attack_factor = 0.2 ap_attack = 0.2 armor_value = 0.2 naval_speed = 0.2 build_cost_ic = 0.1 #fire_range = 0.2 
 			}
 			battleship = {
-				attack = 0.15 anti_air_attack = 0.15 ap_attack = 0.15 armor_value = 0.1 naval_speed = 0.1 build_cost_ic = 0.1 #fire_range = 0.15 
+				navy_capital_ship_attack_factor = 0.15 anti_air_attack = 0.15 ap_attack = 0.15 armor_value = 0.1 naval_speed = 0.1 build_cost_ic = 0.1 #fire_range = 0.15 
 			}
 		}
 		
@@ -1855,10 +1855,10 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			destroyer = {
-				attack = 0.2 anti_air_attack = 0.4 ap_attack = 0.2 naval_speed = 0.2 naval_range = 0.4 build_cost_ic = 0.15 #fire_range = 0.2 evasion = 0.2 
+				navy_screen_attack_factor = 0.2 anti_air_attack = 0.4 ap_attack = 0.2 naval_speed = 0.2 naval_range = 0.4 build_cost_ic = 0.15 #fire_range = 0.2 evasion = 0.2 
 			}
 			light_cruiser = {
-				attack = 0.2 anti_air_attack = 0.4 ap_attack = 0.2 naval_speed = 0.2 naval_range = 0.4 build_cost_ic = 0.15 #fire_range = 0.2 evasion = 0.2 
+				navy_screen_attack_factor = 0.2 anti_air_attack = 0.4 ap_attack = 0.2 naval_speed = 0.2 naval_range = 0.4 build_cost_ic = 0.15 #fire_range = 0.2 evasion = 0.2 
 			}
 		}
 		

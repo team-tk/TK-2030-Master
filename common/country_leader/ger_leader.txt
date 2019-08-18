@@ -368,13 +368,13 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			heavy_cruiser = {
-				armor_value = 0.5 attack = 0.2 ap_attack = 1.8 naval_range = 0.25 build_cost_ic = 0.65 #fire_range = 0.35 
+				armor_value = 0.5 navy_capital_ship_attack_factor = 0.2 ap_attack = 1.8 naval_range = 0.25 build_cost_ic = 0.65 #fire_range = 0.35 
 			}
 			#panzerschiff = {
 			#	attack = 0.2 ap_attack = 0.1 naval_speed = 0.2 build_cost_ic = 0.1 #fire_range = 0.1 
 			#}
 			battleship = {
-				attack = 0.2 naval_speed = 0.1 naval_range = 0.25
+				navy_capital_ship_attack_factor = 0.2 naval_speed = 0.1 naval_range = 0.25
 			}
 		}
 		
@@ -387,7 +387,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			destroyer = {
-				attack = 0.3 ap_attack = 0.5 naval_range = 0.3 build_cost_ic = 0.3 #fire_range = 0.1 
+				navy_screen_attack_factor = 0.3 ap_attack = 0.5 naval_range = 0.3 build_cost_ic = 0.3 #fire_range = 0.1 
 			}
 			carrier = {
 				armor_value = 0.2 naval_speed = 0.3
@@ -406,7 +406,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			screen_ship = {
-				attack = 0.25 ap_attack = 1 naval_range = 0.75 build_cost_ic = 0.4 #fire_range = 0.2 
+				navy_screen_attack_factor = 0.25 ap_attack = 1 naval_range = 0.75 build_cost_ic = 0.4 #fire_range = 0.2 
 			}
 			submarine = {
 				sub_visibility = -0.15 surface_visibility = -0.15 naval_speed = 0.15 naval_range = 0.25
@@ -425,7 +425,7 @@ leader_traits = {
 				ap_attack = 0.2 naval_speed = 0.2 build_cost_ic = 0.1
 			}
 			capital_ship = {
-				attack = 0.2 armor_value = 0.2 build_cost_ic = 0.1
+				navy_capital_ship_attack_factor = 0.2 armor_value = 0.2 build_cost_ic = 0.1
 			}
 			submarine = {
 				naval_range = 0.2 reliability = 0.2 build_cost_ic = 0.1

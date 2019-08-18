@@ -72,7 +72,7 @@ leader_traits = {
 	
 	staunch_democrat = {
 		random = no
-	    democracy_drift = 0.025
+	    democratic_drift = 0.025
 		
 		ai_will_do = {
 			factor = 1
