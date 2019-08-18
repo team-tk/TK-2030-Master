@@ -431,7 +431,7 @@ instant_effect = {
 	# CL: Amphion-class variant ("HMS Amphion", Comm. 15-Jun, 1936, "HMS Apollo", Comm. 13-Jan 1936, "HMS Penelope", Comm. 12-Nov 1936)
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser 
 			creator = "ENG" 
 			version_name = "Leander Class"
 		}
@@ -442,7 +442,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser 
 			creator = "ENG" 
 			version_name = "Leander Class"
 		}
@@ -453,7 +453,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser 
 			creator = "ENG" 
 			version_name = "Leander Class"
 		}
@@ -464,7 +464,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser 
 			creator = "ENG" 
 			version_name = "Leander Class"
 		}
@@ -476,7 +476,7 @@ instant_effect = {
 	#CL: 5x Town Class (Newcastle, Southhampton, Sheffield, Glasgow, Birmingham)
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser 
 			creator = "ENG" 
 			version_name = "Town Class"
 		}
@@ -486,7 +486,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser 
 			creator = "ENG" 
 			version_name = "Town Class"
 		}
@@ -496,7 +496,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser 
 			creator = "ENG" 
 			version_name = "Town Class"
 		}
@@ -507,7 +507,7 @@ instant_effect = {
 	# SS: S-class variant (x2) ("HMS Seawolf" "HMS Narwhal")
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_submarine_1
+			type = ship_hull_submarine 
 			creator = "ENG" 
 			version_name = "S Class"
 		}
@@ -518,7 +518,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_submarine_1
+			type = ship_hull_submarine 
 			creator = "ENG" 
 			version_name = "S Class"
 		}
@@ -530,7 +530,7 @@ instant_effect = {
 	# DD: G/H class (x9) ("HMS Gallant" "HMS Garland" "HMS Gipsy" "HMS Glowworm" "HMS Grafton" "HMS Grenade" "HMS Grenville" "HMS Greyhound" "HMS Griffin")
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = ship_hull_light 
 			creator = "ENG" 
 			version_name = "E/F/G/H Class"
 		}
@@ -541,7 +541,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = ship_hull_light 
 			creator = "ENG" 
 			version_name = "E/F/G/H Class"
 		}
@@ -552,7 +552,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = ship_hull_light 
 			creator = "ENG" 
 			version_name = "E/F/G/H Class"
 		}
@@ -563,7 +563,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = ship_hull_light 
 			creator = "ENG" 
 			version_name = "E/F/G/H Class"
 		}
@@ -574,7 +574,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = ship_hull_light 
 			creator = "ENG" 
 			version_name = "E/F/G/H Class"
 		}
@@ -585,7 +585,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = ship_hull_light 
 			creator = "ENG" 
 			version_name = "E/F/G/H Class"
 		}
@@ -596,7 +596,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = ship_hull_light 
 			creator = "ENG" 
 			version_name = "E/F/G/H Class"
 		}
@@ -607,7 +607,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = ship_hull_light 
 			creator = "ENG" 
 			version_name = "E/F/G/H Class"
 		}
@@ -618,7 +618,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = ship_hull_light 
 			creator = "ENG" 
 			version_name = "E/F/G/H Class"
 		}
@@ -629,7 +629,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_carrier_1
+			type = ship_hull_carrier 
 			creator = "ENG" 
 			version_name = "Ark Royal Class"
 		}

@@ -12,7 +12,7 @@ leader_traits = {
 		ai_strategy = {
 			type = alliance
 			id = "ENG"
-			factor = 200"
+			factor = 200
 		}
 	}
 	venizelist_legacy = {

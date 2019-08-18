@@ -17,7 +17,7 @@ leader_traits = {
 	vfb_trait_dompedro_2 = {
 		random = no
 		
-		attack = 0.05
+		division_offence_factor = 0.05
 		subjects_autonomy_gain = 0.3
 		generate_wargoal_tension = -0.25
 		ai_focus_aggressive_factor = 0.5
@@ -34,7 +34,7 @@ leader_traits = {
 	vfb_trait_dompedro_3= {
 		random = no
 		
-		attack = 0.05
+		division_offence_factor = 0.05
 		subjects_autonomy_gain = 0.3
 		generate_wargoal_tension = -0.75
 		ai_focus_aggressive_factor = 0.5
@@ -263,7 +263,7 @@ leader_traits = {
 	vfb_trait_americo = {
 		random = no
 
-		research_time_factor = -0.02
+		research_speed_factor = -0.02
 		
 		ai_will_do = {
 			factor = 1
@@ -273,7 +273,7 @@ leader_traits = {
 	vfb_trait_salles = {
 		random = no
 
-		research_time_factor = -0.02
+		research_speed_factor = -0.02
 		
 		ai_will_do = {
 			factor = 1
