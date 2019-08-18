@@ -1,0 +1,610 @@
+focus_tree = {
+	id = USA
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = USA_state_of_affairs
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 1.00
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = USA_relations_with_Germany
+		icon = GFX_goal_tripartite_pact
+		cost = 0.00
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = USA_political_chaos
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 4
+		y = 0
+
+	}
+	focus = {
+		id = USA_continue_the_new_deal
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = USA_state_of_affairs
+		}
+		mutually_exclusive = {
+			focus = USA_a_change_of_course
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = USA_victory_in_elections
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_continue_the_new_deal
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = USA_democratic_gerrymandering
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_victory_in_elections
+		}
+		mutually_exclusive = {
+			focus = USA_interparty_relations
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = USA_remove_the_threat_of_longism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_democratic_gerrymandering
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = USA_support_puerto_rican_farm_cooperatives
+		icon = GFX_goal_generic_soviet_construction
+		cost = 0.00
+		prerequisite = {
+			focus = USA_continue_the_new_deal
+		}
+		mutually_exclusive = {
+			focus = USA_puerto_rico_isnt_worth_time
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = USA_puerto_rico_isnt_worth_time
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 0.00
+		prerequisite = {
+			focus = USA_continue_the_new_deal
+		}
+		mutually_exclusive = {
+			focus = USA_support_puerto_rican_farm_cooperatives
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = USA_fund_hispanic_companies_in_central_america
+		icon = GFX_goal_generic_construct_civilian
+		cost = 0.00
+		prerequisite = {
+			focus = USA_support_puerto_rican_farm_cooperatives
+			focus = USA_puerto_rico_isnt_worth_time
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = USA_expand_the_social_security_act
+		icon = GFX_goal_generic_major_alliance
+		cost = 5.00
+		prerequisite = {
+			focus = USA_continue_the_new_deal
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = USA_support_the_AFL
+		icon = GFX_goal_generic_defence
+		cost = 0.00
+		prerequisite = {
+			focus = USA_expand_the_social_security_act
+		}
+		mutually_exclusive = {
+			focus = USA_support_the_CIO
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = USA_trade_relations_with_Germany
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 0.00
+		prerequisite = {
+			focus = USA_relations_with_Germany
+		}
+		prerequisite = {
+			focus = USA_support_the_AFL
+		}
+		mutually_exclusive = {
+			focus = USA_trade_relations_with_the_soviets
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = USA_a_change_of_course
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0.00
+		prerequisite = {
+			focus = USA_state_of_affairs
+		}
+		mutually_exclusive = {
+			focus = USA_continue_the_new_deal
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = USA_ban_child_labour
+		icon = GFX_goal_generic_demand_territory
+		cost = 5.00
+		prerequisite = {
+			focus = USA_continue_the_new_deal
+			focus = USA_a_change_of_course
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = USA_support_the_CIO
+		icon = GFX_goal_support_communism
+		cost = 0.00
+		prerequisite = {
+			focus = USA_expand_the_social_security_act
+		}
+		prerequisite = {
+			focus = USA_ban_child_labour
+		}
+		mutually_exclusive = {
+			focus = USA_support_the_AFL
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = USA_wealth_tax_act
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_support_the_AFL
+			focus = USA_support_the_CIO
+			focus = USA_remove_the_threat_of_longism
+		}
+		mutually_exclusive = {
+			focus = USA_moderate_share_our_wealth
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = USA_trade_relations_with_the_soviets
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 0.00
+		prerequisite = {
+			focus = USA_support_the_AFL
+			focus = USA_support_the_CIO
+		}
+		mutually_exclusive = {
+			focus = USA_trade_relations_with_Germany
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = USA_fascism_option
+		icon = GFX_goal_support_fascism
+		cost = 0.00
+		prerequisite = {
+			focus = USA_a_change_of_course
+		}
+		mutually_exclusive = {
+			focus = USA_christian_option
+			focus = USA_republican_option
+			focus = USA_leftist_option
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = USA_nationalize_large_corporations
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0.00
+		prerequisite = {
+			focus = USA_fascism_option
+		}
+		prerequisite = {
+			focus = USA_ban_child_labour
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = USA_class_collaborationism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_support_the_CIO
+			focus = USA_nationalize_large_corporations
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = USA_the_public_support_fascism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_nationalize_large_corporations
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = USA_technocratic_takeover
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_class_collaborationism
+		}
+		prerequisite = {
+			focus = USA_the_public_support_fascism
+		}
+		mutually_exclusive = {
+			focus = USA_WASPS_takeover
+			focus = USA_republican_america
+			focus = USA_leftist_takeover
+			focus = USA_a_christian_america
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = USA_WASPS_takeover
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_the_public_support_fascism
+		}
+		mutually_exclusive = {
+			focus = USA_technocratic_takeover
+			focus = USA_a_christian_america
+			focus = USA_republican_america
+			focus = USA_leftist_takeover
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = USA_christian_option
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_a_change_of_course
+		}
+		mutually_exclusive = {
+			focus = USA_fascism_option
+			focus = USA_republican_option
+			focus = USA_leftist_option
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = USA_attract_both_left_and_right
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_christian_option
+		}
+		prerequisite = {
+			focus = USA_ban_child_labour
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = USA_share_our_wealth
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_nationalize_large_corporations
+			focus = USA_attract_both_left_and_right
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = USA_republican_option
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_a_change_of_course
+		}
+		mutually_exclusive = {
+			focus = USA_christian_option
+			focus = USA_fascism_option
+			focus = USA_leftist_option
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = USA_restart_privatisation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_republican_option
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = USA_support_hardline_churches
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_attract_both_left_and_right
+			focus = USA_restart_privatisation
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = USA_a_christian_america
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_share_our_wealth
+			focus = USA_support_hardline_churches
+		}
+		mutually_exclusive = {
+			focus = USA_WASPS_takeover
+			focus = USA_republican_america
+			focus = USA_leftist_takeover
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = USA_republican_gerrymandering
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_restart_privatisation
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = USA_republican_america
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_support_hardline_churches
+		}
+		prerequisite = {
+			focus = USA_republican_gerrymandering
+		}
+		mutually_exclusive = {
+			focus = USA_a_christian_america
+			focus = USA_WASPS_takeover
+			focus = USA_technocratic_takeover
+			focus = USA_leftist_takeover
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = USA_leftist_option
+		icon = GFX_goal_support_communism
+		cost = 0.00
+		prerequisite = {
+			focus = USA_a_change_of_course
+		}
+		mutually_exclusive = {
+			focus = USA_republican_option
+			focus = USA_christian_option
+			focus = USA_fascism_option
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = USA_destroy_wall_street
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_leftist_option
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = USA_red_guard
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_leftist_option
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = USA_total_redistribution_of_wealth
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_destroy_wall_street
+		}
+		prerequisite = {
+			focus = USA_red_guard
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = USA_syndicated_newspapers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_red_guard
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = USA_leftist_takeover
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_total_redistribution_of_wealth
+		}
+		prerequisite = {
+			focus = USA_syndicated_newspapers
+		}
+		mutually_exclusive = {
+			focus = USA_republican_america
+			focus = USA_a_christian_america
+			focus = USA_WASPS_takeover
+			focus = USA_technocratic_takeover
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = USA_interparty_relations
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_victory_in_elections
+		}
+		mutually_exclusive = {
+			focus = USA_democratic_gerrymandering
+		}
+		x = -1
+		y = 3
+
+	}
+	focus = {
+		id = USA_longists_in_government
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_interparty_relations
+		}
+		x = 0
+		y = 4
+
+	}
+	focus = {
+		id = USA_works_progress_administration
+		icon = GFX_goal_generic_soviet_construction
+		cost = 0.00
+		prerequisite = {
+			focus = USA_class_collaborationism
+		}
+		prerequisite = {
+			focus = USA_fund_hispanic_companies_in_central_america
+		}
+		prerequisite = {
+			focus = USA_remove_the_threat_of_longism
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = USA_abolish_slum_housing
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_wealth_tax_act
+		}
+		prerequisite = {
+			focus = USA_works_progress_administration
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = USA_moderate_share_our_wealth
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_longists_in_government
+			focus = USA_remove_the_threat_of_longism
+		}
+		mutually_exclusive = {
+			focus = USA_wealth_tax_act
+		}
+		x = 1
+		y = 5
+
+	}
+}
