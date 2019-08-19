@@ -23,6 +23,16 @@ state={
 				air_base = 3
 			}
 		}
+		
+		1949.1.1 = {
+			owner = WGR
+			controller = WGR
+			}
+			
+			1990.10.3 = {
+			owner = GER
+			controller = GER
+			}
 	}
 
 	provinces={

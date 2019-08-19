@@ -610,12 +610,12 @@ create_country_leader = {
 		
 		
 		
-				every_state = {
-				limit = { NOT = { is_core_of = WGR } }
-				remove_core_of = GER
-				}
+				#every_state = {
+				#limit = { NOT = { is_core_of = WGR } }
+				#remove_core_of = GER
+				#}
 			
-			GER = {
+			WGR = {
 			transfer_state = 56
 			transfer_state = 57
 			transfer_state = 58
@@ -652,14 +652,14 @@ create_country_leader = {
 			
 			add_ideas = fog_democratic
 			
-			#change_tag_from = GER
+			change_tag_from = GER
 			
 			set_cosmetic_tag = WGR_OCCUPIED
 			
 			}
 			
 			USA = {
-			puppet = GER
+			puppet = WGR
 			puppet = AUS
 			}
 			

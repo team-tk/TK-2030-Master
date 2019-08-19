@@ -21,6 +21,9 @@ state=
 			owner = ITA
 			add_core_of = ITA
 			}
+			1949.1.1 = {
+			owner = YUG
+			}
 
 	} 
 	provinces={	

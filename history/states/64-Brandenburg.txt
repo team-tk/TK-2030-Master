@@ -35,6 +35,15 @@ state={
 				industrial_complex = 7
 			}
 		}
+		1949.1.1 = {
+			owner = DDR
+			controller = DDR
+			}
+			
+			1990.10.3 = {
+			owner = GER
+			controller = GER
+			}
 	}
 
 	provinces={

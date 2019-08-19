@@ -28,6 +28,10 @@ state={
 			owner = FFR
 			add_core_of = FFR
 			}
+			1949.1.1 = {
+			owner = FRA
+			controller = FRA
+			}
 
 	}
 

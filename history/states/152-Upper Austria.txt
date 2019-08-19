@@ -47,6 +47,9 @@ state={
 			controller = GER
 			add_core_of = GER
 		}
+		1949.1.1 = {
+			owner = AUS
+		}
 	}
 
 	provinces={

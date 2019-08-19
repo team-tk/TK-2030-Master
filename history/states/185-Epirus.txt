@@ -37,6 +37,9 @@ state={
 		1941.6.22 = {
 			owner = ITA
 			}
+			1949.1.1 = {
+			owner = GRE
+			}
 	}
 
 	provinces={

@@ -25,6 +25,15 @@ state={
 		}
 		add_core_of = GER
 		add_core_of = DDR
+		1949.1.1 = {
+			owner = DDR
+			controller = DDR
+			}
+			
+			1990.10.3 = {
+			owner = GER
+			controller = GER
+			}
 	}
 
 	provinces={
