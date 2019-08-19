@@ -2,7 +2,57 @@ ideas = {
 
 
 	country = {
-	
+		usa_puerto_rican_farm_cooperatives = {
+			#picture = goal_generic_army_doctrines
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_war = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				stability_weekly = 0.01	
+			}
+		}
+		usa_expanded_war_department = {
+			picture = goal_generic_army_doctrines
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_war = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				license_infantry_eq_production_speed_factor = 0.05
+				license_light_tank_eq_tech_difference_speed_factor = 0.10
+				army_attack_factor = 0.1
+				heat_attrition_factor = -0.3
+				acclimatization_hot_climate_gain_factor = 0.1
+				war_support_weekly = 0.01	
+				war_support_factor = 0.05
+				mobilization_speed = 0.1
+				offensive_war_stability_factor = 0.2
+				conscription = 0.03
+			}
+		}
 		usa_the_second_american_civil_war = {
 
 			picture = generic_pp_unity_bonus
