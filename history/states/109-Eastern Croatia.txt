@@ -31,6 +31,11 @@ state={
 			1949.1.1 = {
 			owner = YUG
 			}
+			
+			1991.6.25 = {
+			owner = CRO
+			controller = CRO
+			}
 		
 	}
 

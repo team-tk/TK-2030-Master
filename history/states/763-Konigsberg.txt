@@ -37,6 +37,11 @@ state={
 			owner = SOV
 			controller = SOV
 		}
+		
+		1991.12.26 = {
+			owner = RUS
+			controller = RUS
+			}
 	}
 
 	provinces={

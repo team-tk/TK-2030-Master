@@ -19,9 +19,11 @@ state={
 		1918.1.1 = {
 			owner = SOV
 			}
-		1941.6.22 = {
-			owner = ENG
-		}
+			
+			1991.12.26 = {
+			owner = RUS
+			controller = RUS
+			}
 	}
 
 	provinces={

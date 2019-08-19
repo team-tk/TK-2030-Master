@@ -13,6 +13,7 @@ state={
 	history={
 		
 		owner = FRA
+		add_core_of = CMR
 		buildings = {
 			infrastructure = 4
 		}
@@ -25,6 +26,8 @@ state={
 			}
 		1941.6.22 = {
 			owner = FFR
+			controller = FFR
+			add_core_of = FFR
 		}
 		1949.1.1 = {
 			owner = FRA

@@ -28,6 +28,10 @@ state={
 			1949.1.1 = {
 			owner = CZE
 			}
+			1993.1.1 = {
+			owner = CZR
+			controller = CZR
+			}
 	}
 
 	provinces={

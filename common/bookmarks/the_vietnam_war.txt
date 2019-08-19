@@ -65,14 +65,14 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"VIE"={
-			history = "VIE_DECADE_CRISIS_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
+#		"VIE"={
+#			history = "VIE_DECADE_CRISIS_DESC"
+#			ideology = democratic
+#			ideas = {
+#			}
+#			focuses = {
+#			}
+#		}
 
 		"FRA"={
 			history = "FRA_DECADE_CRISIS_DESC"

@@ -26,6 +26,11 @@ state={
 			}
 
 		}
+		
+		1991.12.26 = {
+			owner = UZB
+			controller = UZB
+			}
 
 	}
 

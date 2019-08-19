@@ -39,8 +39,8 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"SOV"={
-			history = "SOV_MILLENIUM_DAWN_DESC"
+		"RUS"={
+			history = "RUS_MILLENIUM_DAWN_DESC"
 			ideology = neutrality
 			ideas = {
 			}

@@ -27,6 +27,11 @@ state={
 				dockyard = 2
 			}
 		}
+		
+		1991.12.26 = {
+			owner = UKR
+			controller = UKR
+			}
 	}
 
 	provinces={

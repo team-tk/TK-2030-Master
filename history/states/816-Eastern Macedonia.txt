@@ -33,6 +33,11 @@ state=
 			1949.1.1 = {
 			owner = YUG
 			}
+			
+			1992.9.8 = {
+			owner = MAC
+			controller = MAC
+			}
 
 	}
 

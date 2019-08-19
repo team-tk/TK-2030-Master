@@ -25,6 +25,11 @@ state={
 		victory_points = {
 			1794 1
 		}
+		
+		1991.12.26 = {
+			owner = RUS
+			controller = RUS
+			}
 	}
 
 	provinces={

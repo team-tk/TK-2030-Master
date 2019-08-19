@@ -33,6 +33,11 @@ state={
 				arms_factory = 10
 			}
 		}
+		
+		1991.12.26 = {
+			owner = RUS
+			controller = RUS
+			}
 	}
 
 	provinces={

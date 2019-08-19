@@ -25,6 +25,15 @@ state={
 		1918.1.1 = {
 			owner = TAN
 			}
+			1944.1.1 = {
+			owner = SOV
+			controller = SOV
+			}
+			
+			1991.12.26 = {
+			owner = RUS
+			controller = RUS
+			}
 	}
 
 	provinces={

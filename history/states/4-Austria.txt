@@ -40,6 +40,10 @@ state={
 			controller = AUC
 			add_core_of = AUC
 		}
+		1955.7.27 = {
+			owner = AUS
+			controller = AUS
+		}
 	}
 
 	provinces={

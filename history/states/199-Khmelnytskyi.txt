@@ -22,6 +22,11 @@ state={
 		1918.11.11 = {
 			owner = SOV
 			}
+			
+			1991.12.26 = {
+			owner = UKR
+			controller = UKR
+			}
 	}
 
 	provinces={

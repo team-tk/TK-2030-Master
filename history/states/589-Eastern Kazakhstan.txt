@@ -25,6 +25,11 @@ state={
 		victory_points = {
 			1668 1
 		}
+		
+		1991.12.26 = {
+			owner = KAZ
+			controller = KAZ
+			}
 	}
 
 	provinces={

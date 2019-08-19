@@ -21,6 +21,16 @@ state={
 		1918.11.11 = {
 			owner = SOV
 			}
+			
+			1991.12.26 = {
+			owner = BLR
+			controller = BLR
+			}
+			
+			1991.12.26 = {
+			owner = RUS
+			controller = RUS
+			}
 		
 	}
 

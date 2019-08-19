@@ -27,6 +27,15 @@ state={
 			owner = SAR
 			controller = SAR
 			}
+			1957.1.1 = {
+			owner = WGR
+			controller = WGR
+			add_core_of = WGR
+			}
+			1990.10.3 = {
+			owner = GER
+			controller = GER
+			}
 
 	}
 

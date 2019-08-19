@@ -26,6 +26,11 @@ state={
 				industrial_complex = 3
 			}
 		}
+		
+		1991.12.26 = {
+			owner = RUS
+			controller = RUS
+			}
 	}
 
 	provinces={

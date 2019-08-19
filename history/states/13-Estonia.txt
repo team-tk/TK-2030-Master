@@ -30,6 +30,11 @@ state={
 		1941.6.22 = {
 			owner = SOV
 			}
+			
+			1991.12.26 = {
+			owner = EST
+			controller = EST
+			}
 		
 	}
 

@@ -24,6 +24,11 @@ state={
 			1949.1.1 = {
 			owner = YUG
 			}
+			
+			1991.6.25 = {
+			owner = SLV
+			controller = SLV
+			}
 
 	}
 	provinces={
