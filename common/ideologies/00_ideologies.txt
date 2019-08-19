@@ -418,7 +418,9 @@ ideologies = {
 			british_fascism = {
 
 			}
-			
+			national_syndicalism = {
+				
+			}
 			
 			
 
