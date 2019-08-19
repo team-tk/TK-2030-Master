@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # USA Events
 ###########################
 
@@ -374,13 +374,23 @@ country_event = {
 		add_political_power = 250
 		add_stability = -0.1
 		#remove_ideas = great_depression
+		create_country_leader = {
+			name = "Alf Landon"
+			desc = "POLITICS_ALF_LANDON_DESC"
+			picture = "Portrait_USA_Alf_Landon.dds"
+			expire = "1965.1.1"
+			ideology = conservatism_ideology
+			traits = { }
+		}
+		set_politics = {
+			ruling_party = conservatism
+		}
 	}
 
 	option = { 
 		name = usa.8.b
 		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 		#add_ideas = new_deal
-		retire_country_leader = yes
 		#remove_ideas = great_depression
 		add_stability = 0.2
 	}

@@ -1,4 +1,4 @@
-﻿capital = 361
+capital = 361
 
 oob = "USA_1936"
 if = {
@@ -250,15 +250,6 @@ create_country_leader = {
 	picture = "Portrait_USA_Norman_Thomas.dds"
 	expire = "1965.1.1"
 	ideology = socialism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Alf Landon"
-	desc = "POLITICS_ALF_LANDON_DESC"
-	picture = "Portrait_USA_Alf_Landon.dds"
-	expire = "1965.1.1"
-	ideology = conservatism_ideology
 	traits = { }
 }
 
