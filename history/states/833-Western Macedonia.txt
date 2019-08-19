@@ -1,6 +1,6 @@
 state={
 	id=833
-	name="Western Macedonia"
+	name="Manastir"
 	resources={
 		chromium=70.000
 		aluminium=16.000
@@ -36,7 +36,7 @@ state={
 	}
 
 	provinces={
-		833 867 974 11856 
+		974 11856 
 	}
 	manpower=1374200
 	buildings_max_level_factor=1.000
