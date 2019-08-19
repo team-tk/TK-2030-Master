@@ -2,6 +2,10 @@ focus_tree = {
 	id = USA
 	country = {
 		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
 	}
 	default = no
 	focus = {
@@ -25,6 +29,14 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		x = 4
+		y = 0
+
+	}
+	focus = {
+		id = USA_war_department
+		icon = GFX_goal_generic_military_sphere
+		cost = 0.00
+		x = 27
 		y = 0
 
 	}
@@ -212,9 +224,6 @@ focus_tree = {
 			focus = USA_support_the_CIO
 			focus = USA_remove_the_threat_of_longism
 		}
-		mutually_exclusive = {
-			focus = USA_moderate_share_our_wealth
-		}
 		x = 4
 		y = 5
 
@@ -301,7 +310,6 @@ focus_tree = {
 			focus = USA_WASPS_takeover
 			focus = USA_republican_america
 			focus = USA_leftist_takeover
-			focus = USA_a_christian_america
 		}
 		x = 11
 		y = 5
@@ -482,7 +490,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_red_guard
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 0.00
 		prerequisite = {
 			focus = USA_leftist_option
@@ -537,6 +545,177 @@ focus_tree = {
 
 	}
 	focus = {
+		id = USA_reaffirm_monroe_doctrine
+		icon = GFX_goal_generic_defence
+		cost = 0.00
+		prerequisite = {
+			focus = USA_war_department
+		}
+		mutually_exclusive = {
+			focus = USA_greater_america_strategy
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = USA_protect_our_interests
+		icon = GFX_goal_generic_military_sphere
+		cost = 0.00
+		prerequisite = {
+			focus = USA_reaffirm_monroe_doctrine
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = USA_guarantee_the_americas
+		icon = GFX_goal_generic_military_deal
+		cost = 0.00
+		prerequisite = {
+			focus = USA_protect_our_interests
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = USA_greater_america_strategy
+		icon = GFX_goal_generic_major_war
+		cost = 0.00
+		prerequisite = {
+			focus = USA_war_department
+		}
+		mutually_exclusive = {
+			focus = USA_reaffirm_monroe_doctrine
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = USA_give_the_canal_back
+		icon = GFX_goal_generic_major_alliance
+		cost = 0.00
+		prerequisite = {
+			focus = USA_reaffirm_monroe_doctrine
+			focus = USA_greater_america_strategy
+		}
+		mutually_exclusive = {
+			focus = USA_defend_panama_canal
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = USA_defend_panama_canal
+		icon = GFX_goal_generic_defence
+		cost = 0.00
+		prerequisite = {
+			focus = USA_greater_america_strategy
+		}
+		mutually_exclusive = {
+			focus = USA_give_the_canal_back
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = USA_Joint_Army_and_Navy_Board
+		icon = GFX_goal_generic_major_war
+		cost = 0.00
+		prerequisite = {
+			focus = USA_give_the_canal_back
+			focus = USA_defend_panama_canal
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = USA_Plan_Black
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = USA_Joint_Army_and_Navy_Board
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = USA_claim_central_america
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_greater_america_strategy
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = USA_War_Plans_to_unite_america
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_defend_panama_canal
+		}
+		prerequisite = {
+			focus = USA_greater_america_strategy
+		}
+		prerequisite = {
+			focus = USA_claim_central_america
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = USA_Plan_Red
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = USA_Joint_Army_and_Navy_Board
+			focus = USA_War_Plans_to_unite_america
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = USA_Plan_Green
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = USA_Joint_Army_and_Navy_Board
+			focus = USA_War_Plans_to_unite_america
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = USA_claims_for_Central_America
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_War_Plans_to_unite_america
+		}
+		prerequisite = {
+			focus = USA_Plan_Green
+		}
+		prerequisite = {
+			focus = USA_Plan_Red
+		}
+		x = 29
+		y = 5
+
+	}
+	focus = {
 		id = USA_interparty_relations
 		icon = GFX_goal_unknown
 		cost = 0.00
@@ -580,7 +759,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_abolish_slum_housing
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production2
 		cost = 0.00
 		prerequisite = {
 			focus = USA_wealth_tax_act
@@ -598,13 +777,58 @@ focus_tree = {
 		cost = 0.00
 		prerequisite = {
 			focus = USA_longists_in_government
-			focus = USA_remove_the_threat_of_longism
 		}
-		mutually_exclusive = {
+		x = 0
+		y = 5
+
+	}
+	focus = {
+		id = USA_peacetime_keynesianism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_moderate_share_our_wealth
+		}
+		x = 0
+		y = 6
+
+	}
+	focus = {
+		id = USA_attract_communists_to_our_cause
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 0.00
+		prerequisite = {
+			focus = USA_moderate_share_our_wealth
 			focus = USA_wealth_tax_act
 		}
-		x = 1
-		y = 5
+		x = 2
+		y = 6
+
+	}
+	focus = {
+		id = USA_Plan_Orange
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = USA_Joint_Army_and_Navy_Board
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = USA_War_Plan_Purple
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = USA_Plan_Red
+			focus = USA_Plan_Green
+		}
+		prerequisite = {
+			focus = USA_claims_for_Central_America
+		}
+		x = 27
+		y = 6
 
 	}
 }
