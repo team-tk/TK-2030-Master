@@ -2087,6 +2087,8 @@ FRA_nazism_party:0 "MNSF"
 FRA_nazism_party_long:0 "Mouvement National-Socialiste Français"
 FRA_monarchism_party:0 "Maison Bonaparte"
 FRA_monarchism_party_long:0 "Maison Bonaparte"
+FRA_monarchism_party_roi:0 "Camelots du Roi"
+FRA_monarchism_party_roi_long:0 "Camelots du Roi"
 FRA_syndicalism_party:0 "CGT"
 FRA_syndicalism_party_long:0 "Confédération générale du travail" #syndicalists
 FRA_theocratic_party:0 "Église Catholique"
