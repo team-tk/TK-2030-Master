@@ -236,6 +236,18 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Franklin Delano Roosevelt"
+	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
+	picture = "Portrait_USA_Franklin_Roosevelt.dds"
+	expire = "1947.1.1"
+	ideology = libertarianism_ideology
+	traits = {
+		champion_of_the_common_man
+		dislikes_germany
+	}
+}
+
+create_country_leader = {
 	name = "A. Philip Randolph"
 	desc = "POLITICS_A_PHILIP_RANDOLPH_DESC"
 	picture = "Portrait_USA_A._Phillip_Randolph.dds"
@@ -245,11 +257,20 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "A. Philip Randolph"
+	desc = "POLITICS_A_PHILIP_RANDOLPH_DESC"
+	picture = "Portrait_USA_A._Phillip_Randolph.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Norman Thomas"
 	desc = "POLITICS_NORMAN_THOMAS_DESC"
 	picture = "Portrait_USA_Norman_Thomas.dds"
 	expire = "1965.1.1"
-	ideology = socialism_ideology
+	ideology = democratic_socialism
 	traits = { }
 }
 
@@ -268,6 +289,15 @@ create_country_leader = {
 	picture = "Portrait_USA_Fritz_Kuhn.dds"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Fritz Kuhn"
+	desc = "POLITICS_FRITZ_KUHN_DESC"
+	picture = "Portrait_USA_Fritz_Kuhn.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
 	traits = { }
 }
 
@@ -319,6 +349,24 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Earl Browder"
+	desc = "POLITICS_EARL_BROWDER_DESC"
+	picture = "portrait_USA_earl_browder.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Earl Browder"
+	desc = "POLITICS_EARL_BROWDER_DESC"
+	picture = "portrait_USA_earl_browder.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
 
 
 
@@ -347,6 +395,15 @@ create_country_leader = {
 	picture = "Portrait_USA_Paul_Washington.dds"
 	expire = "1965.1.1"
 	ideology = constitutional
+	expire = "1965.1.1"
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Paul Washington I"
+	picture = "Portrait_USA_Paul_Washington.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
 	expire = "1965.1.1"
 	traits = { }
 }

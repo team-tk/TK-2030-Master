@@ -80,12 +80,14 @@ neutrality = 50
 }
 
 
+
+
 create_country_leader = {
 	name = "Konstantin Päts"
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
 	picture = "GFX_Portrait_estonia_konstantin_pats"
 	expire = "1965.1.1"
-	ideology = agrarianism
+	ideology = oligarchism
 	traits = {
 		exiled
 	}
@@ -96,7 +98,7 @@ create_country_leader = {
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
 	picture = "GFX_Portrait_estonia_konstantin_pats"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = agrarianism
 	traits = {
 		exiled
 	}

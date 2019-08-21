@@ -102,6 +102,15 @@ neutrality = 70
 }
 
 create_country_leader = {
+				name = "José Pascual Tamborini"
+				desc = "POLITICS_JOSE_TAMBORINI_DESC"
+				picture = "Portrait_Argentine_Pascual_Tamborini.tga"
+				expire = "1965.1.1"
+				ideology = libertarianism_ideology
+				traits = {}
+			}
+
+create_country_leader = {
 	name = "Agustín Pedro Justo"
 	desc = "POLITICS_AGUSTIN_PEDRO_JUSTO_DESC"
 	picture = "gfx/leaders/ARG/Portrait_Argentine_Agustin_Justo.tga"
@@ -150,6 +159,26 @@ create_country_leader = {
 			traits = {}
 		}
 		
+		create_country_leader = {
+			name = "Nicolas Repetto"
+			desc = "POLITICS_NICOLAS_REPETTO_DESC"
+			picture = "Portrait_Argentine_Nicolas_Repetto.tga"
+			expire = "1965.1.1"
+			ideology = democratic_socialism
+			traits = {}
+		}
+		
+		create_country_leader = {
+			name = "Alicia Moreau de Justo"
+			desc = "POLITICS_MOREAU_DEJUSTO_DESC"
+			picture = "Portrait_Argentine_Alicia_Justo.tga"
+			expire = "1965.1.1"
+			ideology = progressivism_ideology
+			traits = {}
+		}
+		
+
+		
 		
 		### PLACEHOLDER
 		
@@ -168,6 +197,28 @@ create_country_leader = {
 	picture = "Portrait_Argentine_Rodolfo_Ghioldi.tga"
 	expire = "1965.1.1"
 	ideology = marxism
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Rodolfo Ghioldi"
+	desc = "POLITICS_RODOLFO_GHIOLDI_DESC"
+	picture = "Portrait_Argentine_Rodolfo_Ghioldi.tga"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Rodolfo Ghioldi"
+	desc = "POLITICS_RODOLFO_GHIOLDI_DESC"
+	picture = "Portrait_Argentine_Rodolfo_Ghioldi.tga"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
 	traits = {
 		dictator
 	}
@@ -206,6 +257,17 @@ create_country_leader = {
 	picture = "gfx/leaders/ARG/Portrait_ARG_Peron_General.tga"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Juan Domingo Peron"
+	desc = ""
+	picture = "gfx/leaders/ARG/Portrait_ARG_Peron_General.tga"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
 	traits = {
 		dictator
 	}

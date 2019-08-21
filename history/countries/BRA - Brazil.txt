@@ -226,6 +226,19 @@ create_country_leader = {
 			}
 			
 			create_country_leader = {
+				name = "Olímpio Mourão Filho"
+				desc = "POLITICS_MOURAO_DESC"
+				picture = "gfx/leaders/BRA/Mourao.dds"
+				expire = "1965.1.1"
+				ideology = strasserism_ideology
+				traits = {
+					vfb_trait_mourao
+					vfb_trait_linhadura
+					vfb_trait_officer
+				}
+			}
+			
+			create_country_leader = {
 				name = "Ernesto Geisel"
 				desc = "POLITICS_GEISEL_DESC"
 				picture = "gfx/leaders/BRA/Geisel.dds"
@@ -251,15 +264,38 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+				name = "João Goulart"
+				desc = "POLITICS_JANGO_DESC"
+				picture = "gfx/leaders/BRA/Jango.dds"
+				expire = "1965.1.1"
+				ideology = maoism_ideology
+				traits = {
+					vfb_trait_jango
+				}
+			}
+
 
 create_country_leader = {
-				name = "Olga Benário"
-				desc = "POLITICS_OLGA_DESC"
-				picture = "gfx/leaders/BRA/Olga.dds"
+				name = "Carlos Lacerda"
+				desc = "POLITICS_CLCOMUNISTA_DESC"
+				picture = "gfx/leaders/BRA/CL.dds"
 				expire = "1965.1.1"
 				ideology = syndicalism_ideology
 				traits = {
-					vfb_trait_olga
+					vfb_trait_cl
+				}
+			}
+			
+			create_country_leader = {
+				name = "Miguel Costa"
+				desc = "POLITICS_MCCOMUNISTA_DESC"
+				picture = "gfx/leaders/BRA/G13.dds"
+				expire = "1965.1.1"
+				ideology = trotskyism_ideology
+				traits = {
+					vfb_trait_mc
+					vfb_trait_tenentista
 				}
 			}
 
@@ -269,7 +305,7 @@ create_country_leader = {
 				desc = "POLITICS_CL_DESC"
 				picture = "gfx/leaders/BRA/CL.dds"
 				expire = "1965.1.1"
-				ideology = socialism_ideology
+				ideology = democratic_socialism
 				traits = {
 					vfb_trait_cl
 				}
@@ -299,6 +335,17 @@ create_country_leader = {
 			}
 			
 			create_country_leader = {
+				name = "Carlos Lacerda"
+				desc = "POLITICS_CL_DESC"
+				picture = "gfx/leaders/BRA/CL.dds"
+				expire = "1965.1.1"
+				ideology = progressivism_ideology
+				traits = {
+					vfb_trait_cl
+				}
+			}
+			
+			create_country_leader = {
 				name = "Adhemar de Barros"
 				desc = "POLITICS_ADHEMAR_DESC"
 				picture = "gfx/leaders/BRA/Adhemar.dds"
@@ -317,6 +364,15 @@ create_country_leader = {
 			ideology = absolutism
 			traits = { vfb_trait_dompedro_1 vfb_trait_dompedro_3 }
 		}
+		
+		create_country_leader = {
+			name = "Pedro III"
+			desc = "POLITICS_DPIII_DESC"
+			picture = "gfx/leaders/BRA/DPIII.dds"
+			expire = "1965.1.1"
+			ideology = fascist_monarchy
+			traits = { vfb_trait_dompedro_1 vfb_trait_dompedro_3 }
+		}
 
 create_country_leader = {
 	name = "José Antônio Flores da Cunha"
@@ -324,6 +380,15 @@ create_country_leader = {
 	picture = "Portrait_Brazil_Flores.dds"
 	expire = "1965.1.1"
 	ideology = liberalism_ideology
+	traits = { }	
+}
+
+create_country_leader = {
+	name = "José Antônio Flores da Cunha"
+	desc = "POLITICS_flores_da_cunha_DESC"
+	picture = "Portrait_Brazil_Flores.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
 	traits = { }	
 }
 

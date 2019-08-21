@@ -104,6 +104,24 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Michael Joseph Savage"
+	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+	picture = "GFX_NZL_michael_joseph_savage"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+		name = "Peter Fraser"
+		desc = "POLITICS_PETER_FRASER_DESC"
+		picture = "Portrait_NewZealand_Peter_Fraser.dds"
+		expire = "1965.1.1"
+		ideology = democratic_socialism
+		traits = { }
+	}
+
+create_country_leader = {
 	name = "George Forbes"
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
@@ -122,6 +140,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Thomas Hislop"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Sidney Holland"
 	desc = "POLITICS_SIDNEY_HOLLAND_DESC"
 	picture = "GFX_NZL_sidney_holland"
@@ -136,6 +163,15 @@ create_country_leader = {
 	picture = "GFX_NZL_john_ormond"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "John Ormond"
+	desc = "POLITICS_JOHN_ORMOND_DESC"
+	picture = "GFX_NZL_john_ormond"
+	expire = "1965.1.1"
+	ideology = ultranationalism
 	traits = { }
 }
 
@@ -159,6 +195,15 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "John Ormond"
+	desc = "POLITICS_JOHN_ORMOND_DESC"
+	picture = "GFX_NZL_john_ormond"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
 ### PLACEHOLDER
 create_country_leader = {
 	name = "Elsie Farrelly"
@@ -170,13 +215,37 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Elsie Farrelly"
+	desc = "POLITICS_JOHN_ORMOND_DESC"
+	picture = "GFX_NZL_elsie_farrelly"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Elsie Farrelly"
+	desc = "POLITICS_JOHN_ORMOND_DESC"
+	picture = "GFX_NZL_elsie_farrelly"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Governor General Michael Joseph Savage"
 	picture = "Portrait_New_Zeeland_GG_Michael_Joseph_Savage.dds"
 	expire = "1965.1.1"
 	ideology = constitutional
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Governor General Michael Joseph Savage"
+	picture = "Portrait_New_Zeeland_GG_Michael_Joseph_Savage.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
+	traits = { }
 }
 
 

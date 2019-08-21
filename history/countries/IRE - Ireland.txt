@@ -144,10 +144,26 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "William Norton"
+	picture = "William_Norton_-Socdem_Ireland.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "William Thomas Cosgrave"
 	picture = "William_Thomas_Cosgrave_Liberal.dds"
 	expire = "1965.1.1"
 	ideology = center_right
+	traits = { }
+}
+
+create_country_leader = {
+	name = "William Thomas Cosgrave"
+	picture = "William_Thomas_Cosgrave_Liberal.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
 	traits = { }
 }
 

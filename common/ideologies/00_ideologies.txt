@@ -621,6 +621,11 @@ ideologies = {
 			
 			paternal_autocrat = {
 			}
+			
+			agrarianism = {
+			}
+			
+			
 				
 			
 		}
@@ -808,8 +813,9 @@ ideologies = {
 			progressivism_ideology = {
 			}
 			
-			agrarianism = {
-			}
+			
+			
+			
 		}
 		
 		dynamic_faction_names = {

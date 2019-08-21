@@ -91,13 +91,25 @@ create_country_leader = {
 create_country_leader = {
 				name = "Leon Trotsky"
 				desc = "POLITICS_LEON_TROTSKY_DESC"
-				picture = "Portrait_Leon_Trotsky.dds"
+				picture = "gfx/leaders/SOV/Portrait_Leon_Trotsky.dds"
 				expire = "1951.1.1"
 				ideology = trotskyism_ideology
 				traits = {
 					bolshevik_militarist
 				}
 			}
+			
+			create_country_leader = {
+				name = "Leon Trotsky"
+				desc = "POLITICS_LEON_TROTSKY_DESC"
+				picture = "gfx/leaders/SOV/Portrait_Leon_Trotsky.dds"
+				expire = "1951.1.1"
+				ideology = maoism_ideology
+				traits = {
+					bolshevik_militarist
+				}
+			}
+			
 
 create_country_leader = {
 	name = "Konstantin Rodzaevsky"
@@ -128,10 +140,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Alexander Fyodorovich Kerensky"
+	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_1.dds"
+	expire = "1953.3.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Kirill"
 	picture = "gfx/leaders/SOV/Portrait_Soviet_Tsar_Kirill.dds"
 	expire = "1938.10.12"
 	ideology = absolutism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Kirill"
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Tsar_Kirill.dds"
+	expire = "1938.10.12"
+	ideology = fascist_monarchy
 	traits = { }
 }
 
@@ -153,6 +182,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Anastasy Vonsyatsky"
+	picture = "gfx/leaders/SOV/Anastasy_Vonsyatsky.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { dictator }
+}
+
+create_country_leader = {
 	name = "Sergei Trufanov"
 	picture = "gfx/leaders/SOV/Sergei_Trufanov.dds"
 	expire = "1965.1.1"
@@ -165,6 +202,14 @@ create_country_leader = {
 	picture = "gfx/leaders/SOV/Pavel_Nikolayevich_Milyukov.dds"
 	expire = "1965.1.1"
 	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Pavel Nikolayevich Milyukov"
+	picture = "gfx/leaders/SOV/Pavel_Nikolayevich_Milyukov.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
 	traits = { }
 }
 

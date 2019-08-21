@@ -190,6 +190,51 @@ if = {
 
 add_opinion_modifier = { target = CHI modifier = hostile_status }
 
+
+create_country_leader = {
+	name = "Chiang Kai-Shek"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "gfx/leaders/CHI/Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		generallissimo
+	}
+}
+
+create_country_leader = {
+	name = "Chiang Kai-Shek"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "gfx/leaders/CHI/Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = {
+		generallissimo
+	}
+}
+
+create_country_leader = {
+	name = "Chiang Kai-Shek"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "gfx/leaders/CHI/Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = national_conservatism
+	traits = {
+		generallissimo
+	}
+}
+
+create_country_leader = {
+	name = "Chiang Kai-Shek"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "gfx/leaders/CHI/Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = center_right
+	traits = {
+		generallissimo
+	}
+}
+
 create_country_leader = {
 	name = "Mao Zedong"
 	desc = "POLITICS_MAO_ZEDONG_DESC"
@@ -199,6 +244,93 @@ create_country_leader = {
 	traits = {
 		cornered_fox
 	}
+}
+
+create_country_leader = {
+	name = "Zhang Guotao"
+	desc = "POLITICS_ZHANG_GUOTAO_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "Zhang Guotao"
+	desc = "POLITICS_ZHANG_GUOTAO_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "Zhang Guotao"
+	desc = "POLITICS_ZHANG_GUOTAO_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "Wang Jingwei"
+	desc = "POLITICS_WANG_JINGWEI_DESC"
+	picture = "GFX_portrait_chi_wang_jingwei"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Wang Jingwei"
+	desc = "POLITICS_WANG_JINGWEI_DESC"
+	picture = "GFX_portrait_chi_wang_jingwei"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Wang Jingwei"
+	desc = "POLITICS_WANG_JINGWEI_DESC"
+	picture = "GFX_portrait_chi_wang_jingwei"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Weng Wenhao" 
+	desc = "POLITICS_ZHANG_LAN_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Weng Wenhao" 
+	desc = "POLITICS_ZHANG_LAN_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Weng Wenhao" 
+	desc = "POLITICS_ZHANG_LAN_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
 }
 
 create_country_leader = {
@@ -212,13 +344,12 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Aisin Gioro Puyi"
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
-	expire = "1960.1.1"
-	ideology = taoism
-	traits = {
-		warrior_code
-	}
+	name = "Wang Jingwei"
+	desc = "POLITICS_WANG_JINGWEI_DESC"
+	picture = "GFX_portrait_chi_wang_jingwei"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
+	traits = { }
 }
 
 create_field_marshal = {

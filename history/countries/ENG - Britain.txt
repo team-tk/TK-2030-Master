@@ -300,6 +300,18 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Oswald Mosley"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Portrait_Britain_Oswald_Mosley.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = {
+		champion_of_peace_1
+		economic_reformer
+	}
+}
+
+create_country_leader = {
 	name = "John Simon"
 	desc = "POLITICS_JOHN_SIMON_DESC"
 	picture = "Portrait_Britain_John_Simon.dds"
@@ -309,11 +321,28 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "John Simon"
+	desc = "POLITICS_JOHN_SIMON_DESC"
+	picture = "Portrait_Britain_John_Simon.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Clement Attlee"
 	desc = "POLITICS_CLEMENT_ATTLEE_DESC"
 	picture = "Portrait_Britain_Clement_Attlee.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy
+	traits = { }
+}
+create_country_leader = {
+	name = "Clement Attlee"
+	desc = "POLITICS_CLEMENT_ATTLEE_DESC"
+	picture = "Portrait_Britain_Clement_Attlee.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
 	traits = { }
 }
 
@@ -349,7 +378,18 @@ create_country_leader = {
 	desc = "POLITICS_HARRY_POLLITT_DESC"
 	picture = "portrait_eng_harry_pollitt.dds"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = stalinism
+	traits = {
+		staunch_stalinist
+	}
+}
+
+create_country_leader = {
+	name = "Harry Pollitt"
+	desc = "POLITICS_HARRY_POLLITT_DESC"
+	picture = "portrait_eng_harry_pollitt.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
 	traits = {
 		staunch_stalinist
 	}
@@ -361,6 +401,15 @@ create_country_leader = {
 	picture = "Portrait_Britain_Palme_Dutt.dds"
 	expire = "1965.1.1"
 	ideology = revolutionary_socialism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Rajani Palme Dutt"
+	desc = "POLITICS_PALME_DUTT_DESC"
+	picture = "Portrait_Britain_Palme_Dutt.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
 	traits = { }
 }
 

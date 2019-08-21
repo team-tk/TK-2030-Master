@@ -267,6 +267,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Tetsu Katayama"
+	picture = "GFX_Portrait_tetsu_katayama"
+	expire = "1989.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Hideki Tojo"
 	picture = "Hideki_Tojo.dds"
 	expire = "1965.1.1"
@@ -295,6 +303,14 @@ create_country_leader = {
 	picture = "Inejiro_Asanuma.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Inejiro Asanuma"
+	picture = "Inejiro_Asanuma.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
 	traits = { }
 }
 

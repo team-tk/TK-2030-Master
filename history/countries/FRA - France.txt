@@ -279,13 +279,6 @@ set_autonomy = {
 
 #Order matters here Laval will start as leaders because added last
 
-create_country_leader = {
-	name = "Charles Huntziger"
-	desc = "POLITICS_CHARLES_HUNTZIGER_DESC"
-	picture = "portrait_france_charles_huntziger.dds"
-	expire = "1965.1.1"
-	ideology = nationalism_ideology
-}
 
 create_country_leader = {
 	name = "Charles de Gaulle"
@@ -312,6 +305,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Paul Reynaud"
+	desc = "POLITICS_PAUL_REYNAUD_DESC"
+	picture = "Portrait_France_Paul_Reynaud.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+}
+
+create_country_leader = {
 	name = "Édouard Daladier"
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 	picture = "Portrait_France_Edouard_Daladier.dds"
@@ -333,11 +334,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Joseph Darnand"
-	desc = "POLITICS_JOSEPH_DARNAND_DESC"
-	picture = "Portrait_France_Joseph_Darnand.dds"
+	name = "Jacques Doriot"
+	desc = "POLITICS_JACQUES_DORIOT_DESC"
+	picture = "Portrait_France_Jacques_Doriot.dds"
 	expire = "1965.1.1"
-        ideology = strasserism_ideology
+	ideology = strasserism_ideology
 }
 
 create_country_leader = {
@@ -346,6 +347,14 @@ create_country_leader = {
 	picture = "Portrait_France_Albert_Sarraut.dds"
 	expire = "1965.1.1"
         ideology = social_democracy
+}
+
+create_country_leader = {
+	name = "Albert Sarraut"
+	desc = "POLITICS_ALBERT_SARRAUT_DESC"
+	picture = "Portrait_France_Albert_Sarraut.dds"
+	expire = "1965.1.1"
+        ideology = progressivism_ideology
 }
 
 create_country_leader = {
