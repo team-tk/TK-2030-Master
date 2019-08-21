@@ -1,4 +1,4 @@
-﻿### OOB ###
+### OOB ###
 division_template = {
 	name = "Infanterie Divisie"		# Same for "Active" and "Reserve" Infantry Divisions
 

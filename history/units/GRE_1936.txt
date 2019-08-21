@@ -1,5 +1,5 @@
-﻿division_template = {
-	name = "Trigonikó Pezikoú" 				# Triangular Infantry Division
+division_template = {
+	name = "Trigonik� Peziko�" 				# Triangular Infantry Division
 	# Prior to 1940 mobilization = 3rd, 4th, 5th, 9th, 10, 13th;
 	# 	6th, 7th, 11th, and 12th had 2 regiments; 14th had 1 regiment
 	# Note: sources have all Greek regular infantry as mountain-trained
@@ -16,7 +16,7 @@
 	}
 }
 division_template = {
-	name = "Tetrágono Pezikoú" 				# Square Infantry Division
+	name = "Tetr�gono Peziko�" 				# Square Infantry Division
 	# Prior to 1940 mobilization = 1st, 2nd, 8th
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -34,7 +34,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Merarchía Ippikoú" 			# Cavalry Division
+	name = "Merarch�a Ippiko�" 			# Cavalry Division
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -50,117 +50,117 @@ division_template = {
 }
 
 units = {
-	######## Ellinikó Genikó Epiteleío ########
+	######## Ellinik� Genik� Epitele�o ########
 	division = {
-		name = "V Merarchía Pezikoú"
+		name = "V Merarch�a Peziko�"
 		location = 12058
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "Trigonik� Peziko�" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 	division = {
-		name = "VIII Merarchía Pezikoú"
+		name = "VIII Merarch�a Peziko�"
 		location = 3914
-		division_template = "Tetrágono Pezikoú" 
+		division_template = "Tetr�gono Peziko�" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 
 	}
 	division = {
-		name = "Merarchía Ippikoú"
+		name = "Merarch�a Ippiko�"
 		location = 11818
-		division_template = "Merarchía Ippikoú" 
+		division_template = "Merarch�a Ippiko�" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 
-	# A Sóma Stratoú
+	# A S�ma Strato�
 	division = {
-		name = "II Merarchía Pezikoú"
+		name = "II Merarch�a Peziko�"
 		location = 4109
-		division_template = "Tetrágono Pezikoú" 
+		division_template = "Tetr�gono Peziko�" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 
 	}
 	division = {
-		name = "III Merarchía Pezikoú"
+		name = "III Merarch�a Peziko�"
 		location = 4193
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "Trigonik� Peziko�" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 	division = {
-		name = "IV Merarchía Pezikoú"
+		name = "IV Merarch�a Peziko�"
 		location = 7096
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "Trigonik� Peziko�" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 
-	# B Sóma Stratoú
+	# B S�ma Strato�
 	division = {
-		name = "I Merarchía Pezikoú"
+		name = "I Merarch�a Peziko�"
 		location = 863
-		division_template = "Tetrágono Pezikoú" 
+		division_template = "Tetr�gono Peziko�" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 
 	}
 	division = {
-		name = "IX Merarchía Pezikoú"
+		name = "IX Merarch�a Peziko�"
 		location = 966
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "Trigonik� Peziko�" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 
-	# C Sóma Stratoú
+	# C S�ma Strato�
 	division = {
-		name = "VI Merarchía Pezikoú"
+		name = "VI Merarch�a Peziko�"
 		location = 3526
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "Trigonik� Peziko�" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
 	division = {
-		name = "X Merarchía Pezikoú"
+		name = "X Merarch�a Peziko�"
 		location = 10163
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "Trigonik� Peziko�" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
 	division = {
-		name = "XI Merarchía Pezikoú"
+		name = "XI Merarch�a Peziko�"
 		location = 11818
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "Trigonik� Peziko�" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
 
-	# D Sóma Stratoú
+	# D S�ma Strato�
 	division = {
-		name = "VII Merarchía Pezikoú"
+		name = "VII Merarch�a Peziko�"
 		location = 9791
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "Trigonik� Peziko�" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
 
-	# E Sóma Stratoú
+	# E S�ma Strato�
 	division = {
-		name = "XII Merarchía Pezikoú"
+		name = "XII Merarch�a Peziko�"
 		location = 11774
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "Trigonik� Peziko�" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -168,7 +168,7 @@ units = {
 
 	##### NAVAL UNITS #####
 	navy = {					
-		name = "Vasilikó Polemikó Naftikó"				
+		name = "Vasilik� Polemik� Naftik�"				
 		base = 4109
 		location = 4109 # Athens
 		ship = { name = "RHS Georgios Averoff" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GRE } } }				
@@ -184,7 +184,7 @@ units = {
 		ship = { name = "RHS Spetsai" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
 	}					
 	navy = {					
-		name = "Stolískou Ypovrychíon"				
+		name = "Stol�skou Ypovrych�on"				
 		base = 4109 
 		location = 4109 # Athens
 		ship = { name = "RHS Katsonis" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GRE } } }		

@@ -1,4 +1,4 @@
-﻿add_namespace = EAI_CFG
+add_namespace = EAI_CFG
 
 ############################################################################################################
 # Expert AI mod - AI military config events

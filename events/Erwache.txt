@@ -1,4 +1,4 @@
-﻿#ERWACHE FOCUS MOD EVENTS
+#ERWACHE FOCUS MOD EVENTS
 
 add_namespace = erwache
 

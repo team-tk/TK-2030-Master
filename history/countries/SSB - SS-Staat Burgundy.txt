@@ -1,4 +1,4 @@
-﻿capital = 17 # Nanzig
+capital = 17 # Nanzig
 
 oob = "empty"
 

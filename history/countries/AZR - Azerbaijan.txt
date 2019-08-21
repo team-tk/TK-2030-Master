@@ -1,4 +1,4 @@
-﻿capital = 229 #Baku
+capital = 229 #Baku
 
 oob = "AZR_1936"
 

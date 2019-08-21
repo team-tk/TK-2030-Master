@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Panzer-Division HG"
 
 	regiments = {
@@ -29,10 +29,10 @@
 
 units = {
 	division= {	
-		name = "1. Fallschirm-Panzer Division 'Hermann Göring'"
+		name = "1. Fallschirm-Panzer Division 'Hermann G�ring'"
 		location = 6521 # Berlin
 		division_template = "Panzer-Division HG"
 		start_experience_factor = 1.0 
-		start_equipment_factor = 1  # From SS-Verfügungstruppe
+		start_equipment_factor = 1  # From SS-Verf�gungstruppe
 	}
 }

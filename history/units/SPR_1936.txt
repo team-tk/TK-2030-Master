@@ -1,4 +1,4 @@
-﻿##### Division Templates #####
+##### Division Templates #####
 division_template = {
 	name = "División de Infantería" 		# Used for both regular infantry divisions and larger garrison divisions
 	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support

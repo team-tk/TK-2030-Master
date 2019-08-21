@@ -1,4 +1,4 @@
-﻿start_equipment_factor = 0.3
+start_equipment_factor = 0.3
 division_template = {
 	name = "Mixed Division"				# Mixed Division - Divisions raised in 1939, still at reserve levels at start of war
 

@@ -1,4 +1,4 @@
-﻿capital = 279
+capital = 279
 
 add_ideas = {
 fog_democratic

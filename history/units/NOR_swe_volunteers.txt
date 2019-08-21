@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Volunteer Division"  	# Swedish Volunteer Divisions
 
 	regiments = {

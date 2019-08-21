@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "SS-Panzer-Division FR"				
 	division_names_group = SS_Arm_01
 

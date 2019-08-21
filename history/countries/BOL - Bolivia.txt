@@ -1,4 +1,4 @@
-﻿capital = 302
+capital = 302
 
 oob = "BOL_1936"
 

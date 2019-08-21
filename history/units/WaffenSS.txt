@@ -1,4 +1,4 @@
-﻿####SS####
+####SS####
 division_template = {
 	name = "SS-Panzer-Division 40"				
 	division_names_group = SS_Arm_01

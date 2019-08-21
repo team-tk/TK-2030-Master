@@ -1,4 +1,4 @@
-﻿##### Division Templates #####
+##### Division Templates #####
 division_template = {
 	name = "Pehota Delitev"					# Infantry Division
 
@@ -53,7 +53,7 @@ units = {
 
 air_wings = {
 	102 = {
-		fighter_equipment_0 =  { owner = "SLV" amount = 30 create_if_missing = yes } # Slovenské Vzdušné Zbrane -- Avia B.534 Dogan
+		fighter_equipment_0 =  { owner = "SLV" amount = 30 create_if_missing = yes } # Slovensk� Vzdu�n� Zbrane -- Avia B.534 Dogan
 	}
 }
 

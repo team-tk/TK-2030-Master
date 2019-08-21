@@ -1,5 +1,5 @@
-﻿division_template = {
-	name = "División de Infantería"		# Infantry Division
+division_template = {
+	name = "Divisi�n de Infanter�a"		# Infantry Division
 	division_names_group = SPAN_INF_02
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -15,7 +15,7 @@
 }
 
 division_template = {
-	name = "Infantería de Montaña"			# Mountain Brigade
+	name = "Infanter�a de Monta�a"			# Mountain Brigade
 	division_names_group = SPAN_MNT_02
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -28,7 +28,7 @@ division_template = {
 }
 
 division_template = {
-	name = "División de Caballería"  	# Cavalry Division
+	name = "Divisi�n de Caballer�a"  	# Cavalry Division
 	division_names_group = SPAN_CAV_01
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -44,7 +44,7 @@ division_template = {
 }
 
 units = {
-	##### Ejército Argentino #####
+	##### Ej�rcito Argentino #####
 	division = {
 		name = "Regimiento N*3 'General Belgrano'"
 		division_name = {
@@ -52,7 +52,7 @@ units = {
 			name_order = 1
 		}
 		location = 1568
-		division_template = "División de Infantería"
+		division_template = "Divisi�n de Infanter�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -63,18 +63,18 @@ units = {
 			name_order = 2
 		}
 		location = 8187
-		division_template = "División de Infantería"
+		division_template = "Divisi�n de Infanter�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Regimiento N*5 'General de Olazábal'"
+		name = "Regimiento N*5 'General de Olaz�bal'"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
 		location = 2172
-		division_template = "División de Infantería"
+		division_template = "Divisi�n de Infanter�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -85,7 +85,7 @@ units = {
 			name_order = 4
 		}
 		location = 5184
-		division_template = "División de Infantería"
+		division_template = "Divisi�n de Infanter�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -96,7 +96,7 @@ units = {
 			name_order = 5
 		}
 		location = 12351
-		division_template = "División de Infantería"
+		division_template = "Divisi�n de Infanter�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -107,7 +107,7 @@ units = {
 			name_order = 6
 		}
 		location = 2199
-		division_template = "Infantería de Montaña"
+		division_template = "Infanter�a de Monta�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -118,31 +118,31 @@ units = {
 			name_order = 7
 		}
 		location = 10992
-		division_template = "Infantería de Montaña"
+		division_template = "Infanter�a de Monta�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "R. de Caballería 'Coronel Brandsen'"
+		name = "R. de Caballer�a 'Coronel Brandsen'"
 		division_name = {
 			is_name_ordered = yes
 		}
 		location = 2172
-		division_template = "División de Caballería"
+		division_template = "Divisi�n de Caballer�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division= {	
-		name = "R. de Caballería 'General Paz'"
+		name = "R. de Caballer�a 'General Paz'"
 		location = 12394
-		division_template = "División de Caballería"
+		division_template = "Divisi�n de Caballer�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 }
 
 air_wings = {
-	### Dirección General de Aeronáutica -- Buenos Aires
+	### Direcci�n General de Aeron�utica -- Buenos Aires
 	278 = {
 		# Fighter Air Group -- Dewotine D.21s
 		fighter_equipment_0 =  {

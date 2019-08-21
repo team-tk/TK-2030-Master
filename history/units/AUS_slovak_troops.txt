@@ -1,4 +1,4 @@
-﻿##### Division Templates #####
+##### Division Templates #####
 division_template = {
 	name = "Pesi Divize"					# Infantry Division
 
@@ -17,7 +17,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Puska Brigáda"					# Infantry Division
+	name = "Puska Brig�da"					# Infantry Division
 
 	division_names_group = SLO_INF_02
 
@@ -28,7 +28,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Mobilná Skupina" 				# Mobile Group
+	name = "Mobiln� Skupina" 				# Mobile Group
 	division_names_group = SLO_CAV_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -41,9 +41,9 @@ division_template = {
 
 
 units = {
-	##### Slovenská Polná Armádna (CO: Catlos) #####
+	##### Slovensk� Poln� Arm�dna (CO: Catlos) #####
 	division = {
-		#name = "1. Pesi Divize 'Janosík'"
+		#name = "1. Pesi Divize 'Janos�k'"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 1
@@ -54,7 +54,7 @@ units = {
 		start_equipment_factor = 1
 	}
 	division = {
-		#name = "2. Pesi Divize 'Skultéty'"
+		#name = "2. Pesi Divize 'Skult�ty'"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 2
@@ -76,40 +76,40 @@ units = {
 		start_equipment_factor = 1
 	}
 	division = {
-		#name = "1. Puska Brigáda"
+		#name = "1. Puska Brig�da"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 1
 		}
 		location = 6604
-		division_template = "Puska Brigáda"
+		division_template = "Puska Brig�da"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
 	division = {
-		#name = "2. Puska Brigáda"
+		#name = "2. Puska Brig�da"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 2
 		}
 		location = 6604
-		division_template = "Puska Brigáda"
+		division_template = "Puska Brig�da"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
 	division = {
-		name = "Rychle Vojská Skupina 'Kalinciak'"
+		name = "Rychle Vojsk� Skupina 'Kalinciak'"
 		location = 9692
-		division_template = "Mobilná Skupina" 
+		division_template = "Mobiln� Skupina" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
 }
 
 air_wings = {
-	### Slovenské Vzdušné Zbrane (SVZ) ###
+	### Slovensk� Vzdu�n� Zbrane (SVZ) ###
 	70 = {
-		fighter_equipment_0 =  { owner = "SLO" amount = 30 create_if_missing = yes } # Slovenské Vzdušné Zbrane -- Avia B.534 Dogan
+		fighter_equipment_0 =  { owner = "SLO" amount = 30 create_if_missing = yes } # Slovensk� Vzdu�n� Zbrane -- Avia B.534 Dogan
 	}
 }
 

@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "SS-Kavallerie-Division LU"
 	division_names_group = SS_Cav_01
 	regiments = {
@@ -30,8 +30,8 @@
 
 units = {
 	division= {	
-		name = "37. SS-Freiwilligen-Kavallerie-Division 'Lützow'"
-		location = 6711 # Siebenbürgen
+		name = "37. SS-Freiwilligen-Kavallerie-Division 'L�tzow'"
+		location = 6711 # Siebenb�rgen
 		division_template = "SS-Kavallerie-Division LU"
 		start_experience_factor = 0.4
 	}

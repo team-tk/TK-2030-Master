@@ -1,4 +1,4 @@
-﻿capital = 51
+capital = 51
 
 add_ideas = {
 religion_lutheranism

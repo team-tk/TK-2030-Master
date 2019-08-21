@@ -1,4 +1,4 @@
-﻿capital = 500 # Rio de Janeiro
+capital = 500 # Rio de Janeiro
 
 oob = "empty"
 

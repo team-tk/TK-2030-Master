@@ -2,28 +2,28 @@ units = {
 	division = {
 		name = "1er Tabor de Regulares"		
 		location = 12100
-		division_template = "División de Infantería"
+		division_template = "DivisiÃ³n de InfanterÃ­a"
 		start_equipment_factor = 0.8
 
 	}			
 	division = {			
 		name = "2o Tabor de Regulares"		
 		location = 12100
-		division_template = "División de Infantería"
+		division_template = "DivisiÃ³n de InfanterÃ­a"
 		start_equipment_factor = 0.8
 
 	}			
 	division = {			
 		name = "3er Tabor de Regulares"		
 		location = 12100
-		division_template = "División de Infantería"
+		division_template = "DivisiÃ³n de InfanterÃ­a"
 		start_equipment_factor = 0.8
 
 	}
 	division = {			
 		name = "4o Tabor de Regulares"		
 		location = 12100
-		division_template = "División de Infantería"
+		division_template = "DivisiÃ³n de InfanterÃ­a"
 		start_equipment_factor = 0.8
 
 	}

@@ -1,4 +1,4 @@
-﻿
+
 division_template = {
 	name = "SS-Panzer-Division LS"				
 	division_names_group = SS_Arm_01
@@ -35,6 +35,6 @@ units = {
 		location = 3544 # Warsaw
 		division_template = "SS-Panzer-Division LS"
 		start_experience_factor = 1.0
-		#start_equipment_factor = 0.20  # From SS-Verfügungstruppe
+		#start_equipment_factor = 0.20  # From SS-Verf�gungstruppe
 	}
 }

@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Infanterie-Division"
 
 	division_names_group = GER_Inf_01
@@ -479,43 +479,43 @@ units = {
 	}
 	#Naval Security Battalions
 	division= {	
-		name = "Marine-Schützen-Regiment 1" 
+		name = "Marine-Sch�tzen-Regiment 1" 
 		location = 241 # Wilhelmshaven
 		division_template = "Marine-Sicherungs Brigade" 
 		start_experience_factor = 0.1
 	}
 	division= {	
-		name = "Marine-Schützen-Regiment 2" 
+		name = "Marine-Sch�tzen-Regiment 2" 
 		location = 6325 # Hamburg
 		division_template = "Marine-Sicherungs Brigade" 
 		start_experience_factor = 0.1
 	}
 	division= {	
-		name = "Marine-Schützen-Regiment 3" 
+		name = "Marine-Sch�tzen-Regiment 3" 
 		location = 6389 # Kiel
 		division_template = "Marine-Sicherungs Brigade" 
 		start_experience_factor = 0.1
 	}
 	division= {	
-		name = "Marine-Schützen-Regiment 4" 
+		name = "Marine-Sch�tzen-Regiment 4" 
 		location = 321 # Rostock
 		division_template = "Marine-Sicherungs Brigade" 
 		start_experience_factor = 0.1
 	}
 	division= {	
-		name = "Marine-Schützen-Regiment 5" 
+		name = "Marine-Sch�tzen-Regiment 5" 
 		location = 6282 # Stettin
 		division_template = "Marine-Sicherungs Brigade" 
 		start_experience_factor = 0.1
 	}
 	division= {	
-		name = "Marine-Schützen-Regiment 6" 
+		name = "Marine-Sch�tzen-Regiment 6" 
 		location = 11372 # Koslin
 		division_template = "Marine-Sicherungs Brigade" 
 		start_experience_factor = 0.1
 	}
 	division= {	
-		name = "Marine-Schützen-Regiment 7" 
+		name = "Marine-Sch�tzen-Regiment 7" 
 		location = 6332 # Konigsberg
 		division_template = "Marine-Sicherungs Brigade" 
 		start_experience_factor = 0.1
@@ -623,13 +623,13 @@ air_wings = {
 
 	### VI. Luftkreiskommando -- Kiel ###
 	58 = { 
-		# Küstenfliegergruppe 106		
+		# K�stenfliegergruppe 106		
 		nav_bomber_equipment_1 =  {		# He 59, Do 18
 			owner = "GER" 
 			amount = 72
 		}
-		name = "Küstenfliegergruppe 106"
-		# Küstenfliegergruppe 206
+		name = "K�stenfliegergruppe 106"
+		# K�stenfliegergruppe 206
 	}
 }
 

@@ -1,4 +1,4 @@
-﻿
+
 units= {
 	##### NAVAL UNITS #####
 	### ITALY ###
@@ -105,7 +105,7 @@ units= {
 			ship = { name = "RCT Antonio Pigafetta" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } } 
 			ship = { name = "RCT Alvise da Mosto" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } } 
 			ship = { name = "RCT Giovanni da Verrazzano" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } } 
-			ship = { name = "RCT Nicolò Zeno" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } } 
+			ship = { name = "RCT Nicol� Zeno" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } } 
 		} 
 		task_force = { 
 			name = "I Gruppo Sommergibili" 

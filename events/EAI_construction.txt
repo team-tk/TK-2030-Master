@@ -1,4 +1,4 @@
-﻿add_namespace = EAI_C
+add_namespace = EAI_C
 
 ############################################################################################################
 # Expert AI mod - scriptable construction logic for the AI

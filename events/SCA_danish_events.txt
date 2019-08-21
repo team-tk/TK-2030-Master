@@ -1,4 +1,4 @@
-﻿add_namespace = SCA_denmark
+add_namespace = SCA_denmark
 
 #Rules of Neutrality Renewed
 country_event = {

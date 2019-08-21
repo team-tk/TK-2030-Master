@@ -1,4 +1,4 @@
-﻿
+
 division_template = {
 	name = "SS-Kavallerie-Division FG"
 	division_names_group = SS_Cav_01
@@ -32,7 +32,7 @@ division_template = {
 units = {
 	division= {	
 		name = "8. SS-Kavallerie-Division 'Florian Geyer'"
-		location = 6711 # Siebenbürgen
+		location = 6711 # Siebenb�rgen
 		division_template = "SS-Kavallerie-Division FG"
 		start_experience_factor = 0.5
 	}

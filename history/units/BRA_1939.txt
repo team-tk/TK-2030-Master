@@ -1,5 +1,5 @@
-﻿division_template = {
-	name = "Batalhão de Infantaria"		# Infantry Division
+division_template = {
+	name = "Batalh�o de Infantaria"		# Infantry Division
 	division_names_group = BRA_INF_01
 	
 	regiments = {
@@ -47,83 +47,83 @@ division_template = {
 }
 
 units = {
-	##### Exército Brasileiro #####
+	##### Ex�rcito Brasileiro #####
 	division= {	
-		name = "1o Batalhão de Infantaria"
+		name = "1o Batalh�o de Infantaria"
 		location = 10980 # Rio de Janeiro
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		name = "2o Batalhão de Infantaria"
+		name = "2o Batalh�o de Infantaria"
 		location = 10513 # Sao Paulo
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		name = "3o Batalhão de Infantaria"
+		name = "3o Batalh�o de Infantaria"
 		location = 10447 # Porto Alegre
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		name = "4o Batalhão de Infantaria"
+		name = "4o Batalh�o de Infantaria"
 		location = 5168 # Recife
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		name = "5o Batalhão de Infantaria"
+		name = "5o Batalh�o de Infantaria"
 		location = 8242 # Belo Horizonte
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		name = "6o Batalhão de Infantaria"
+		name = "6o Batalh�o de Infantaria"
 		location = 10980 # Rio de Janeiro
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		name = "7o Batalhão de Infantaria"
+		name = "7o Batalh�o de Infantaria"
 		location = 10513 # Sao Paulo
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		name = "8o Batalhão de Infantaria"
+		name = "8o Batalh�o de Infantaria"
 		location = 10447 # Porto Alegre
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		name = "9o Batalhão de Infantaria"
+		name = "9o Batalh�o de Infantaria"
 		location = 10513 # Sao Paulo
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		name = "10o Batalhão de Infantaria"
+		name = "10o Batalh�o de Infantaria"
 		location = 10447 # Porto Alegre
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -165,16 +165,16 @@ units = {
 		base = 10980 
 		location = 10980 # Rio de Janiero
 		ship = { name = "NRB Minas Gerais" definition = battleship equipment = { battleship_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB São Paulo" definition = battleship equipment = { battleship_2 = { amount = 1 owner = BRA } } }
+		ship = { name = "NRB S�o Paulo" definition = battleship equipment = { battleship_2 = { amount = 1 owner = BRA } } }
 		ship = { name = "NRB Bahia" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BRA } } }
 		ship = { name = "NRB Rio Grande do Sul" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = BRA } } }
 		# 1a Flotilla de Contratorpedeiros
 		ship = { name = "NRB Piaui" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
 		ship = { name = "NRB Rio Grande do Norte" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Paraíba" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NRB Para�ba" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
 		ship = { name = "NRB Alagoas" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
 		# 2a Flotilla de Contratorpedeiros
-		ship = { name = "NRB Marnhão" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }	
+		ship = { name = "NRB Marnh�o" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }	
 		ship = { name = "NRB Sergipe" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
 		ship = { name = "NRB Santa Catharina" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
 		ship = { name = "NRB Mato Grosso" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = BRA } } }
@@ -183,23 +183,23 @@ units = {
 		name = "Flotilha de Submarinos"			
 		base = 10980 
 		location = 10980 # Rio de Janiero
-		ship = { name = "NRB Humaytá" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Humaytá" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Humaytá" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Humaytá" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Humaytá" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Humaytá" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Humaytá" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Humaytá" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Humaytá" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
-		ship = { name = "NRB Humaytá" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NRB Humayt�" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NRB Humayt�" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NRB Humayt�" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NRB Humayt�" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NRB Humayt�" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NRB Humayt�" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NRB Humayt�" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NRB Humayt�" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NRB Humayt�" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
+		ship = { name = "NRB Humayt�" definition = submarine equipment = { submarine_1 = { amount = 1 owner = BRA } } }
 		
 	}		
 }
 
 
 air_wings = {
-	### Aviação Militar -- Rio de Janiero
+	### Avia��o Militar -- Rio de Janiero
 	500 = {
 		# Fighter Air Group -- Boeing 256s
 		fighter_equipment_0 =  {

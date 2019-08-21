@@ -1,4 +1,4 @@
-﻿add_namespace = iran_clergy_event
+add_namespace = iran_clergy_event
 #######################
 #### clergy revolt ####
 #######################

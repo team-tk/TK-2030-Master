@@ -1,4 +1,4 @@
-﻿### British Malaya OOB ###
+### British Malaya OOB ###
 
 division_template = {
 	name = "Malaya Infantry Brigade"		

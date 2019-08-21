@@ -1,4 +1,4 @@
-﻿capital = 64
+capital = 64
 
 add_ideas = {
 religion_atheism

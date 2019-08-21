@@ -1,4 +1,4 @@
-﻿capital = 126 # London
+capital = 126 # London
 
 oob = "empty"
 

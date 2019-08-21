@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "SS-Grenadier-Division LE"
 	division_names_group = SS_MOT_01
 	regiments = {

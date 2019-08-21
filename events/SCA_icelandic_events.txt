@@ -1,4 +1,4 @@
-﻿add_namespace = SCA_iceland
+add_namespace = SCA_iceland
 
 country_event = { # Invasion of Iceland
 	id = SCA_iceland.1

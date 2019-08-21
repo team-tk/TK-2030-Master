@@ -1,4 +1,4 @@
-﻿### British East Asia Reinforcements OOB ###
+### British East Asia Reinforcements OOB ###
 
 division_template = {
 	name = "Infantry Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions

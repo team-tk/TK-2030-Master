@@ -1,9 +1,9 @@
-﻿units = {	
+units = {	
 	navy = {
-		name = "Mávur"			
+		name = "M�vur"			
 		base = 12674
 		location = 12674  # Iceland			
-		ship = { name = "Mávur" definition = carrier equipment = { carrier_4 = { amount = 1 owner = ICE } }
+		ship = { name = "M�vur" definition = carrier equipment = { carrier_4 = { amount = 1 owner = ICE } }
 			air_wings = {
 				
 			}

@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Columna Milicianos"			# International volunteers -- poor equipment, no experience (militia)
     is_locked = yes
 	regiments = {

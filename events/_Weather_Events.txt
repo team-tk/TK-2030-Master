@@ -1,4 +1,4 @@
-﻿add_namespace = weather_events
+add_namespace = weather_events
 
 ########Universal Event############
 
