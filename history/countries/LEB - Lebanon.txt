@@ -94,8 +94,34 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Pierre Gemayel"
+	desc = ""
+	picture = "gfx/leaders/LEB/Portrait_Lebanon_Sheick_Pierre_Gemayel.dds"
+	ideology = nazism_ideology
+}
+
+create_country_leader = {
+	name = "Pierre Gemayel"
+	desc = ""
+	picture = "gfx/leaders/LEB/Portrait_Lebanon_Sheick_Pierre_Gemayel.dds"
+	ideology = strasserism_ideology
+}
+
+create_country_leader = {
 	name = "Farajallah el-Helou"
 	desc = ""
 	picture = "gfx/leaders/LEB/Portrait_Lebanon_Farajallah_el-Helou.dds"
 	ideology = leninism
+}
+create_country_leader = {
+	name = "Farajallah el-Helou"
+	desc = ""
+	picture = "gfx/leaders/LEB/Portrait_Lebanon_Farajallah_el-Helou.dds"
+	ideology = maoism_ideology
+}
+create_country_leader = {
+	name = "Farajallah el-Helou"
+	desc = ""
+	picture = "gfx/leaders/LEB/Portrait_Lebanon_Farajallah_el-Helou.dds"
+	ideology = trotskyism_ideology
 }

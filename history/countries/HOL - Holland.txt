@@ -195,6 +195,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Anton Mussert"
+	desc = "POLITICS_ANTON_MUSSERT_DESC"
+	picture = "portrait_hol_anton_mussert.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = {
+		leider
+	}
+}
+
 #### placeholder
 
 create_country_leader = {
@@ -222,6 +233,28 @@ create_country_leader = {
 	picture = "GFX_portrait_HOL_lou_de_visser"
 	expire = "1965.1.1"
 	ideology = leninism
+	traits = {
+		veteran_communist
+	}
+}
+
+create_country_leader = {
+	name = "Lou de Visser"
+	desc = "POLITICS_LOU_DE_VISSER_DESC"
+	picture = "GFX_portrait_HOL_lou_de_visser"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = {
+		veteran_communist
+	}
+}
+
+create_country_leader = {
+	name = "Lou de Visser"
+	desc = "POLITICS_LOU_DE_VISSER_DESC"
+	picture = "GFX_portrait_HOL_lou_de_visser"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
 	traits = {
 		veteran_communist
 	}

@@ -41,6 +41,17 @@ create_country_leader = {
 	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
 	picture = "GFX_portrait_men_demchugdongrub"
 	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		spirit_of_genghis
+	}
+}
+
+create_country_leader = {
+	name = "Prince Demchugdongrub"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "GFX_portrait_men_demchugdongrub"
+	expire = "1965.1.1"
 	ideology = absolutism
 	traits = {
 		spirit_of_genghis

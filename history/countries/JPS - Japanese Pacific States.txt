@@ -107,6 +107,15 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/JAP/Portrait_Japan_Isoroku_Yamamoto.dds"
 	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = { warrior_code }
+}
+
+create_country_leader = {
+	name = "Admiral Isoroku Yamamoto"
+	desc = ""
+	picture = "gfx/leaders/JAP/Portrait_Japan_Isoroku_Yamamoto.dds"
+	expire = "1965.1.1"
 	ideology = taisei_yokusankai
 	traits = { warrior_code }
 }

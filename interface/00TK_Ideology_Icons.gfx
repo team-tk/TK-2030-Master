@@ -45,6 +45,50 @@ spriteType = {
 		texturefile = "gfx/interface/ideologies/nazism_group.dds"
 	}
 	
+	### NEW IDEOLOGIES
+	
+	spriteType = {
+		name = "GFX_ideology_libertarianism_group"
+		texturefile = "gfx/interface/ideologies/libertarianism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_progressivism_group"
+		texturefile = "gfx/interface/ideologies/progressivism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_islamism_group"
+		texturefile = "gfx/interface/ideologies/islamism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_strasserism_group"
+		texturefile = "gfx/interface/ideologies/strasserism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_paganism_group"
+		texturefile = "gfx/interface/ideologies/paganism_group.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_ideology_trotskyism_group"
+		texturefile = "gfx/interface/ideologies/trotskyism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_maoism_group"
+		texturefile = "gfx/interface/ideologies/maoism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/fascist_monarchism_group.dds"
+	}
+	
+	
 
 	######## MONARCHISM
 	
@@ -462,6 +506,423 @@ spriteType = {
 		name = "GFX_ideology_INS_monarchism_group"
 		texturefile = "gfx/interface/ideologies/monarchism/INS_monarchism.dds"
 	}
+	
+			
+	#### MONARCHISM
+	
+	spriteType = {
+		name = "GFX_ideology_TUN_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/TUN_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_MOR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/MOR_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ADR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/ADR_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_AFG_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/AFG_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ALB_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/ALB_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_AUS_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/AUS_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_BEL_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/BEL_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_BHU_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/BHU_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_BRA_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/BRA_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_BUL_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/BUL_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_CHI_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/CHI_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SIK_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/CHI_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_XSM_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/CHI_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GXC_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/CHI_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_YUN_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/CHI_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SHX_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/CHI_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_PRC_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/CHI_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_MAN_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/CHI_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_CZE_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/CZE_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_CZR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/CZE_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_DEN_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/DEN_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ICE_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/DEN_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GLD_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/DEN_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ENG_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/ENG_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_CAN_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/ENG_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_AST_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/ENG_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_NZL_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/ENG_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_EST_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/EST_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ETH_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/ETH_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_FIN_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/FIN_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_FRA_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/FRA_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_VIC_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/FRA_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GER_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/GER_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_WGR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/GER_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_DDR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/GER_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SAR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/GER_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_GRE_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/GRE_monarchism.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_ideology_HOL_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/HOL_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_HUN_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/HUN_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_NIR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/IRE_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_IRE_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/IRE_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_IRQ_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/IRQ_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ITA_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/ITA_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_RSI_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/ITA_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_JAP_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/JAP_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_LAT_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/LAT_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_LIE_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/LIE_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_LIT_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/LIT_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_LUX_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/LUX_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_MCO_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/MCO_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_MEX_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/MEX_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_NEP_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/NEP_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_NOR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/NOR_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_OMA_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/OMA_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_PER_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/PER_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_POL_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/POL_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_POR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/POR_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_ROM_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/ROM_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SAU_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/SAU_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SIA_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/SIA_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SMR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/SMR_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SOV_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/SOV_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_RUS_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/SOV_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SPR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/SPR_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SWE_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/SWE_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SWI_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/SWI_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_TIB_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/TIB_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_TUR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/TUR_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_USA_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/USA_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_VCT_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/VCT_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_YEM_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/YEM_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_YUG_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/YUG_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_MON_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/MON_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_MEN_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/MON_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_UKR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/UKR_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_BLR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/BLR_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_SAF_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/SAF_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_RAJ_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/RAJ_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_MAL_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/MAL_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_KOR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/KOR_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_DPR_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/KOR_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_INS_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/monarchism/INS_monarchism.dds"
+	}
+
+	
 	
 	#### AUTONOMY ICONS
 	

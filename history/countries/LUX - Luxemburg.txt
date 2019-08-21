@@ -129,6 +129,16 @@ create_country_leader = {
 		traits = { }
 	}
 	
+	### PLACEHOLDER
+	create_country_leader = {
+		name = "Damian Kratzenberg"
+		desc = "POLITICS_DAMIAN_KRATZENBERG_DESC"
+		picture = "gfx/leaders/LUX/Luxembourg_Leader_Kratzenberg.dds"
+		expire = "1965.1.1"
+		ideology = strasserism_ideology
+		traits = { }
+	}
+	
 	
 	create_country_leader = {
 		name = "Charles Marx"
@@ -136,6 +146,24 @@ create_country_leader = {
 		picture = "gfx/leaders/LUX/Luxembourg_Leader_Marx.dds"
 		expire = "1965.1.1"
 		ideology = marxism
+		traits = {  }
+	}
+	
+	create_country_leader = {
+		name = "Charles Marx"
+		desc = "POLITICS_CHARLES_MARX_DESC"
+		picture = "gfx/leaders/LUX/Luxembourg_Leader_Marx.dds"
+		expire = "1965.1.1"
+		ideology = maoism_ideology
+		traits = {  }
+	}
+	
+	create_country_leader = {
+		name = "Charles Marx"
+		desc = "POLITICS_CHARLES_MARX_DESC"
+		picture = "gfx/leaders/LUX/Luxembourg_Leader_Marx.dds"
+		expire = "1965.1.1"
+		ideology = trotskyism_ideology
 		traits = {  }
 	}
 	

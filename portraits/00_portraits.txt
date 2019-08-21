@@ -60,6 +60,40 @@ continent = {
 				"gfx/leaders/Europe/politician13.dds"
 			}
 		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
 		syndicalism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -95,6 +129,40 @@ continent = {
 			}
 		}
 		liberalism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		progressivism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
 				"gfx/leaders/Europe/politician2.dds"
@@ -180,6 +248,24 @@ continent = {
 			}
 		}
 		
+		strasserism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		
 		fascism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -231,12 +317,71 @@ continent = {
 				"gfx/leaders/Europe/politician_monarchist13.dds"
 			}
 		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Europe/politician_monarchist1.dds"
+				"gfx/leaders/Europe/politician_monarchist2.dds"
+				"gfx/leaders/Europe/politician_monarchist3.dds"
+				"gfx/leaders/Europe/politician_monarchist4.dds"
+				"gfx/leaders/Europe/politician_monarchist5.dds"
+				"gfx/leaders/Europe/politician_monarchist6.dds"
+				"gfx/leaders/Europe/politician_monarchist7.dds"
+				"gfx/leaders/Europe/politician_monarchist8.dds"
+				"gfx/leaders/Europe/politician_monarchist9.dds"
+				"gfx/leaders/Europe/politician_monarchist10.dds"
+				"gfx/leaders/Europe/politician_monarchist11.dds"
+				"gfx/leaders/Europe/politician_monarchist12.dds"
+				"gfx/leaders/Europe/politician_monarchist13.dds"
+			}
+		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_2.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_2.dds"
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -282,6 +427,40 @@ continent = {
 				"gfx/leaders/Europe/politician13.dds"
 			}
 		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
 		syndicalism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -317,6 +496,40 @@ continent = {
 			}
 		}
 		liberalism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		progressivism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
 				"gfx/leaders/Europe/politician2.dds"
@@ -402,6 +615,24 @@ continent = {
 			}
 		}
 		
+		strasserism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		
 		fascism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -453,12 +684,71 @@ continent = {
 				"gfx/leaders/Europe/politician_monarchist13.dds"
 			}
 		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Europe/politician_monarchist1.dds"
+				"gfx/leaders/Europe/politician_monarchist2.dds"
+				"gfx/leaders/Europe/politician_monarchist3.dds"
+				"gfx/leaders/Europe/politician_monarchist4.dds"
+				"gfx/leaders/Europe/politician_monarchist5.dds"
+				"gfx/leaders/Europe/politician_monarchist6.dds"
+				"gfx/leaders/Europe/politician_monarchist7.dds"
+				"gfx/leaders/Europe/politician_monarchist8.dds"
+				"gfx/leaders/Europe/politician_monarchist9.dds"
+				"gfx/leaders/Europe/politician_monarchist10.dds"
+				"gfx/leaders/Europe/politician_monarchist11.dds"
+				"gfx/leaders/Europe/politician_monarchist12.dds"
+				"gfx/leaders/Europe/politician_monarchist13.dds"
+			}
+		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_2.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_2.dds"
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -674,10 +964,157 @@ continent = {
 				"gfx/leaders/Europe/politician_monarchist13.dds"
 			}
 		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Europe/politician_monarchist1.dds"
+				"gfx/leaders/Europe/politician_monarchist2.dds"
+				"gfx/leaders/Europe/politician_monarchist3.dds"
+				"gfx/leaders/Europe/politician_monarchist4.dds"
+				"gfx/leaders/Europe/politician_monarchist5.dds"
+				"gfx/leaders/Europe/politician_monarchist6.dds"
+				"gfx/leaders/Europe/politician_monarchist7.dds"
+				"gfx/leaders/Europe/politician_monarchist8.dds"
+				"gfx/leaders/Europe/politician_monarchist9.dds"
+				"gfx/leaders/Europe/politician_monarchist10.dds"
+				"gfx/leaders/Europe/politician_monarchist11.dds"
+				"gfx/leaders/Europe/politician_monarchist12.dds"
+				"gfx/leaders/Europe/politician_monarchist13.dds"
+			}
+		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_2.dds"
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		strasserism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		progressivism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		
+				paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -707,6 +1144,40 @@ continent = {
 	
 	political = {
 		communism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		maoism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
 				"gfx/leaders/Europe/politician2.dds"
@@ -758,6 +1229,40 @@ continent = {
 			}
 		}
 		liberalism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		progressivism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
 				"gfx/leaders/Europe/politician2.dds"
@@ -843,6 +1348,24 @@ continent = {
 			}
 		}
 		
+		strasserism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		
 		fascism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -894,12 +1417,71 @@ continent = {
 				"gfx/leaders/Europe/politician_monarchist13.dds"
 			}
 		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Europe/politician_monarchist1.dds"
+				"gfx/leaders/Europe/politician_monarchist2.dds"
+				"gfx/leaders/Europe/politician_monarchist3.dds"
+				"gfx/leaders/Europe/politician_monarchist4.dds"
+				"gfx/leaders/Europe/politician_monarchist5.dds"
+				"gfx/leaders/Europe/politician_monarchist6.dds"
+				"gfx/leaders/Europe/politician_monarchist7.dds"
+				"gfx/leaders/Europe/politician_monarchist8.dds"
+				"gfx/leaders/Europe/politician_monarchist9.dds"
+				"gfx/leaders/Europe/politician_monarchist10.dds"
+				"gfx/leaders/Europe/politician_monarchist11.dds"
+				"gfx/leaders/Europe/politician_monarchist12.dds"
+				"gfx/leaders/Europe/politician_monarchist13.dds"
+			}
+		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_2.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_2.dds"
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -1103,11 +1685,150 @@ continent = {
 				"gfx/leaders/Africa/politician12.dds"
 			}
 		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		strasserism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		progressivism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/African_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/African_Shaman_1.dds"
-					"gfx/leaders/TKGENERIC/African_Shaman_2.dds"
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		
+		paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -1305,7 +2026,101 @@ continent = {
 
 			}
 		}
+		strasserism = {
+				male = { 
+				"gfx/leaders/Asia/politician1.dds"
+				"gfx/leaders/Asia/politician2.dds"
+				"gfx/leaders/Asia/politician3.dds"
+				"gfx/leaders/Asia/politician4.dds"
+				"gfx/leaders/Asia/politician5.dds"
+				"gfx/leaders/Asia/politician6.dds"
+				"gfx/leaders/Asia/politician7.dds"
+				"gfx/leaders/Asia/politician8.dds"
+				"gfx/leaders/Asia/politician9.dds"
+				"gfx/leaders/Asia/politician10.dds"
+				"gfx/leaders/Asia/politician11.dds"
+				"gfx/leaders/Asia/politician12.dds"
+
+			}
+		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/Asia/politician1.dds"
+				"gfx/leaders/Asia/politician2.dds"
+				"gfx/leaders/Asia/politician3.dds"
+				"gfx/leaders/Asia/politician4.dds"
+				"gfx/leaders/Asia/politician5.dds"
+				"gfx/leaders/Asia/politician6.dds"
+				"gfx/leaders/Asia/politician7.dds"
+				"gfx/leaders/Asia/politician8.dds"
+				"gfx/leaders/Asia/politician9.dds"
+				"gfx/leaders/Asia/politician10.dds"
+				"gfx/leaders/Asia/politician11.dds"
+				"gfx/leaders/Asia/politician12.dds"
+
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/Asia/politician1.dds"
+				"gfx/leaders/Asia/politician2.dds"
+				"gfx/leaders/Asia/politician3.dds"
+				"gfx/leaders/Asia/politician4.dds"
+				"gfx/leaders/Asia/politician5.dds"
+				"gfx/leaders/Asia/politician6.dds"
+				"gfx/leaders/Asia/politician7.dds"
+				"gfx/leaders/Asia/politician8.dds"
+				"gfx/leaders/Asia/politician9.dds"
+				"gfx/leaders/Asia/politician10.dds"
+				"gfx/leaders/Asia/politician11.dds"
+				"gfx/leaders/Asia/politician12.dds"
+
+			}
+		}
+		progressivism = {
+				male = { 
+				"gfx/leaders/Asia/politician1.dds"
+				"gfx/leaders/Asia/politician2.dds"
+				"gfx/leaders/Asia/politician3.dds"
+				"gfx/leaders/Asia/politician4.dds"
+				"gfx/leaders/Asia/politician5.dds"
+				"gfx/leaders/Asia/politician6.dds"
+				"gfx/leaders/Asia/politician7.dds"
+				"gfx/leaders/Asia/politician8.dds"
+				"gfx/leaders/Asia/politician9.dds"
+				"gfx/leaders/Asia/politician10.dds"
+				"gfx/leaders/Asia/politician11.dds"
+				"gfx/leaders/Asia/politician12.dds"
+
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/Asia/politician1.dds"
+				"gfx/leaders/Asia/politician2.dds"
+				"gfx/leaders/Asia/politician3.dds"
+				"gfx/leaders/Asia/politician4.dds"
+				"gfx/leaders/Asia/politician5.dds"
+				"gfx/leaders/Asia/politician6.dds"
+				"gfx/leaders/Asia/politician7.dds"
+				"gfx/leaders/Asia/politician8.dds"
+				"gfx/leaders/Asia/politician9.dds"
+				"gfx/leaders/Asia/politician10.dds"
+				"gfx/leaders/Asia/politician11.dds"
+				"gfx/leaders/Asia/politician12.dds"
+
+			}
+		}
 		monarchism = {
+				male = { 
+				"gfx/leaders/Asia/politician_monarchist1.dds"
+				"gfx/leaders/Asia/politician_monarchist2.dds"
+				"gfx/leaders/Asia/politician_monarchist3.dds"
+				"gfx/leaders/Asia/politician_monarchist4.dds"
+
+			}
+		}
+		fascist_monarchism = {
 				male = { 
 				"gfx/leaders/Asia/politician_monarchist1.dds"
 				"gfx/leaders/Asia/politician_monarchist2.dds"
@@ -1316,8 +2131,10 @@ continent = {
 		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Asian_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Asian_Priest_2.dds" 
+				"gfx/leaders/Asia/politician_monarchist1.dds"
+				"gfx/leaders/Asia/politician_monarchist2.dds"
+				"gfx/leaders/Asia/politician_monarchist3.dds"
+				"gfx/leaders/Asia/politician_monarchist4.dds"
 			}
 		}
 	}	
@@ -1344,6 +2161,38 @@ continent = {
 	
 	political = {
 		communism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
+			}
+		}
+		trotskyism = {
 				male = { 
 				"gfx/leaders/Arabia/politician1.dds"
 				"gfx/leaders/Arabia/politician2.dds"
@@ -1392,6 +2241,38 @@ continent = {
 			}
 		}
 		liberalism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"				
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"				
+			}
+		}
+		progressivism = {
 				male = { 
 				"gfx/leaders/Arabia/politician1.dds"
 				"gfx/leaders/Arabia/politician2.dds"
@@ -1472,6 +2353,23 @@ continent = {
 			}
 		}
 		
+		strasserism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
+			}
+		}
+		
 		fascism = {
 				male = { 
 				"gfx/leaders/Arabia/politician1.dds"
@@ -1489,6 +2387,22 @@ continent = {
 			}
 		}
 		neutrality = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
+			}
+		}
+		fascist_monarchism = {
 				male = { 
 				"gfx/leaders/Arabia/politician1.dds"
 				"gfx/leaders/Arabia/politician2.dds"
@@ -1522,8 +2436,52 @@ continent = {
 		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Arab_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Arab_Priest_2.dds" 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds" 
+			}
+		}
+		
+		paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -1551,17 +2509,7 @@ GER = {
 		}
 	}
 	
-	
-	political = {
 
-		theocratic = {
-				male = { 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
-			}
-		}
-	}
 	
 }
 
@@ -1587,16 +2535,6 @@ WGR = {
 	}
 	
 	
-	political = {
-
-		theocratic = {
-				male = { 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
-			}
-		}
-	}
 	
 }
 
@@ -1622,16 +2560,6 @@ DDR = {
 	}
 	
 	
-	political = {
-
-		theocratic = {
-				male = { 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
-			}
-		}
-	}
 	
 }
 
@@ -1965,6 +2893,40 @@ SAF = {
 				"gfx/leaders/Europe/politician13.dds"
 			}
 		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
 		syndicalism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -2000,6 +2962,40 @@ SAF = {
 			}
 		}
 		liberalism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		progressivism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
 				"gfx/leaders/Europe/politician2.dds"
@@ -2085,6 +3081,24 @@ SAF = {
 			}
 		}
 		
+		strasserism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		
 		fascism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -2136,12 +3150,71 @@ SAF = {
 				"gfx/leaders/Europe/politician_monarchist13.dds"
 			}
 		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Europe/politician_monarchist1.dds"
+				"gfx/leaders/Europe/politician_monarchist2.dds"
+				"gfx/leaders/Europe/politician_monarchist3.dds"
+				"gfx/leaders/Europe/politician_monarchist4.dds"
+				"gfx/leaders/Europe/politician_monarchist5.dds"
+				"gfx/leaders/Europe/politician_monarchist6.dds"
+				"gfx/leaders/Europe/politician_monarchist7.dds"
+				"gfx/leaders/Europe/politician_monarchist8.dds"
+				"gfx/leaders/Europe/politician_monarchist9.dds"
+				"gfx/leaders/Europe/politician_monarchist10.dds"
+				"gfx/leaders/Europe/politician_monarchist11.dds"
+				"gfx/leaders/Europe/politician_monarchist12.dds"
+				"gfx/leaders/Europe/politician_monarchist13.dds"
+			}
+		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_2.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_2.dds"
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -2770,10 +3843,157 @@ MEX = {
 				"gfx/leaders/Europe/politician_monarchist13.dds"
 			}
 		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Europe/politician_monarchist1.dds"
+				"gfx/leaders/Europe/politician_monarchist2.dds"
+				"gfx/leaders/Europe/politician_monarchist3.dds"
+				"gfx/leaders/Europe/politician_monarchist4.dds"
+				"gfx/leaders/Europe/politician_monarchist5.dds"
+				"gfx/leaders/Europe/politician_monarchist6.dds"
+				"gfx/leaders/Europe/politician_monarchist7.dds"
+				"gfx/leaders/Europe/politician_monarchist8.dds"
+				"gfx/leaders/Europe/politician_monarchist9.dds"
+				"gfx/leaders/Europe/politician_monarchist10.dds"
+				"gfx/leaders/Europe/politician_monarchist11.dds"
+				"gfx/leaders/Europe/politician_monarchist12.dds"
+				"gfx/leaders/Europe/politician_monarchist13.dds"
+			}
+		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_2.dds"
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		strasserism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		progressivism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		
+				paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -2896,88 +4116,325 @@ BAH = {
 	political = {
 		communism = {
 				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
 			}
 		}
 		syndicalism = {
 				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"	
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
 			}
 		}
 		conservatism = {
 				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"		
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"				
 			}
 		}
 		liberalism = {
 				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"		
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"				
 			}
 		}
 		socialism = {
 				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"		
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"				
 			}
 		}
 		socdem = {
 				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_2.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"		
-			}
-		}
-		fascism = {
-				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
-			}
-		}
-		nazism = {
-				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"				
 			}
 		}
 		nationalism = {
 				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Army_Generic_2.dds"
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		nazism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		
+		fascism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
 			}
 		}
 		neutrality = {
 				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
 			}
 		}
 		monarchism = {
 				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		strasserism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		progressivism = {
+				male = { 
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
 			}
 		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/Africa/Portrait_Africa_Generic_3.dds" 
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic.dds"
-					"gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+				"gfx/leaders/Africa/politician1.dds"
+				"gfx/leaders/Africa/politician2.dds"
+				"gfx/leaders/Africa/politician3.dds"
+				"gfx/leaders/Africa/politician4.dds"
+				"gfx/leaders/Africa/politician5.dds"
+				"gfx/leaders/Africa/politician6.dds"
+				"gfx/leaders/Africa/politician7.dds"
+				"gfx/leaders/Africa/politician8.dds"
+				"gfx/leaders/Africa/politician9.dds"
+				"gfx/leaders/Africa/politician10.dds"
+				"gfx/leaders/Africa/politician11.dds"
+				"gfx/leaders/Africa/politician12.dds"
+			}
+		}
+		
+		paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -3191,10 +4648,157 @@ BLZ = {
 				"gfx/leaders/Europe/politician_monarchist13.dds"
 			}
 		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Europe/politician_monarchist1.dds"
+				"gfx/leaders/Europe/politician_monarchist2.dds"
+				"gfx/leaders/Europe/politician_monarchist3.dds"
+				"gfx/leaders/Europe/politician_monarchist4.dds"
+				"gfx/leaders/Europe/politician_monarchist5.dds"
+				"gfx/leaders/Europe/politician_monarchist6.dds"
+				"gfx/leaders/Europe/politician_monarchist7.dds"
+				"gfx/leaders/Europe/politician_monarchist8.dds"
+				"gfx/leaders/Europe/politician_monarchist9.dds"
+				"gfx/leaders/Europe/politician_monarchist10.dds"
+				"gfx/leaders/Europe/politician_monarchist11.dds"
+				"gfx/leaders/Europe/politician_monarchist12.dds"
+				"gfx/leaders/Europe/politician_monarchist13.dds"
+			}
+		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_2.dds"
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		strasserism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		progressivism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/South America/politician1.dds"
+				"gfx/leaders/South America/politician2.dds"
+				"gfx/leaders/South America/politician3.dds"
+				"gfx/leaders/South America/politician4.dds"
+				"gfx/leaders/South America/politician5.dds"
+				"gfx/leaders/South America/politician6.dds"
+				"gfx/leaders/South America/politician7.dds"
+				"gfx/leaders/South America/politician8.dds"
+				"gfx/leaders/South America/politician9.dds"
+				"gfx/leaders/South America/politician10.dds"
+				"gfx/leaders/South America/politician11.dds"
+				"gfx/leaders/South America/politician12.dds"
+				"gfx/leaders/South America/politician13.dds"
+			}
+		}
+		
+				paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -3223,6 +4827,40 @@ ARG = {
 	
 	political = {
 		communism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		maoism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
 				"gfx/leaders/Europe/politician2.dds"
@@ -3274,6 +4912,40 @@ ARG = {
 			}
 		}
 		liberalism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		progressivism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
 				"gfx/leaders/Europe/politician2.dds"
@@ -3359,6 +5031,24 @@ ARG = {
 			}
 		}
 		
+		strasserism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		
 		fascism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -3410,12 +5100,71 @@ ARG = {
 				"gfx/leaders/Europe/politician_monarchist13.dds"
 			}
 		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Europe/politician_monarchist1.dds"
+				"gfx/leaders/Europe/politician_monarchist2.dds"
+				"gfx/leaders/Europe/politician_monarchist3.dds"
+				"gfx/leaders/Europe/politician_monarchist4.dds"
+				"gfx/leaders/Europe/politician_monarchist5.dds"
+				"gfx/leaders/Europe/politician_monarchist6.dds"
+				"gfx/leaders/Europe/politician_monarchist7.dds"
+				"gfx/leaders/Europe/politician_monarchist8.dds"
+				"gfx/leaders/Europe/politician_monarchist9.dds"
+				"gfx/leaders/Europe/politician_monarchist10.dds"
+				"gfx/leaders/Europe/politician_monarchist11.dds"
+				"gfx/leaders/Europe/politician_monarchist12.dds"
+				"gfx/leaders/Europe/politician_monarchist13.dds"
+			}
+		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_2.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_2.dds"
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -3462,6 +5211,40 @@ CHL = {
 				"gfx/leaders/Europe/politician13.dds"
 			}
 		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
 		syndicalism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -3497,6 +5280,40 @@ CHL = {
 			}
 		}
 		liberalism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		progressivism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
 				"gfx/leaders/Europe/politician2.dds"
@@ -3582,6 +5399,24 @@ CHL = {
 			}
 		}
 		
+		strasserism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		
 		fascism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -3633,12 +5468,71 @@ CHL = {
 				"gfx/leaders/Europe/politician_monarchist13.dds"
 			}
 		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Europe/politician_monarchist1.dds"
+				"gfx/leaders/Europe/politician_monarchist2.dds"
+				"gfx/leaders/Europe/politician_monarchist3.dds"
+				"gfx/leaders/Europe/politician_monarchist4.dds"
+				"gfx/leaders/Europe/politician_monarchist5.dds"
+				"gfx/leaders/Europe/politician_monarchist6.dds"
+				"gfx/leaders/Europe/politician_monarchist7.dds"
+				"gfx/leaders/Europe/politician_monarchist8.dds"
+				"gfx/leaders/Europe/politician_monarchist9.dds"
+				"gfx/leaders/Europe/politician_monarchist10.dds"
+				"gfx/leaders/Europe/politician_monarchist11.dds"
+				"gfx/leaders/Europe/politician_monarchist12.dds"
+				"gfx/leaders/Europe/politician_monarchist13.dds"
+			}
+		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_2.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_2.dds"
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -3683,6 +5577,40 @@ URG = {
 				"gfx/leaders/Europe/politician13.dds"
 			}
 		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
 		syndicalism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -3718,6 +5646,40 @@ URG = {
 			}
 		}
 		liberalism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		progressivism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
 				"gfx/leaders/Europe/politician2.dds"
@@ -3803,6 +5765,24 @@ URG = {
 			}
 		}
 		
+		strasserism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		
 		fascism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -3854,12 +5834,71 @@ URG = {
 				"gfx/leaders/Europe/politician_monarchist13.dds"
 			}
 		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Europe/politician_monarchist1.dds"
+				"gfx/leaders/Europe/politician_monarchist2.dds"
+				"gfx/leaders/Europe/politician_monarchist3.dds"
+				"gfx/leaders/Europe/politician_monarchist4.dds"
+				"gfx/leaders/Europe/politician_monarchist5.dds"
+				"gfx/leaders/Europe/politician_monarchist6.dds"
+				"gfx/leaders/Europe/politician_monarchist7.dds"
+				"gfx/leaders/Europe/politician_monarchist8.dds"
+				"gfx/leaders/Europe/politician_monarchist9.dds"
+				"gfx/leaders/Europe/politician_monarchist10.dds"
+				"gfx/leaders/Europe/politician_monarchist11.dds"
+				"gfx/leaders/Europe/politician_monarchist12.dds"
+				"gfx/leaders/Europe/politician_monarchist13.dds"
+			}
+		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_2.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_2.dds"
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -3904,6 +5943,40 @@ BRA = {
 				"gfx/leaders/Europe/politician13.dds"
 			}
 		}
+		trotskyism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		maoism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
 		syndicalism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -3939,6 +6012,40 @@ BRA = {
 			}
 		}
 		liberalism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		libertarianism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"					
+			}
+		}
+		progressivism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
 				"gfx/leaders/Europe/politician2.dds"
@@ -4024,6 +6131,24 @@ BRA = {
 			}
 		}
 		
+		strasserism = {
+				male = { 
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		
 		fascism = {
 				male = { 
 				"gfx/leaders/Europe/politician1.dds"
@@ -4075,12 +6200,71 @@ BRA = {
 				"gfx/leaders/Europe/politician_monarchist13.dds"
 			}
 		}
+		fascist_monarchism = {
+				male = { 
+				"gfx/leaders/Europe/politician_monarchist1.dds"
+				"gfx/leaders/Europe/politician_monarchist2.dds"
+				"gfx/leaders/Europe/politician_monarchist3.dds"
+				"gfx/leaders/Europe/politician_monarchist4.dds"
+				"gfx/leaders/Europe/politician_monarchist5.dds"
+				"gfx/leaders/Europe/politician_monarchist6.dds"
+				"gfx/leaders/Europe/politician_monarchist7.dds"
+				"gfx/leaders/Europe/politician_monarchist8.dds"
+				"gfx/leaders/Europe/politician_monarchist9.dds"
+				"gfx/leaders/Europe/politician_monarchist10.dds"
+				"gfx/leaders/Europe/politician_monarchist11.dds"
+				"gfx/leaders/Europe/politician_monarchist12.dds"
+				"gfx/leaders/Europe/politician_monarchist13.dds"
+			}
+		}
 		theocratic = {
 				male = { 
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Catholic_Priest_2.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_1.dds"
-					"gfx/leaders/TKGENERIC/Europe_Protestant_Priest_2.dds"
+				"gfx/leaders/Europe/politician1.dds"
+				"gfx/leaders/Europe/politician2.dds"
+				"gfx/leaders/Europe/politician3.dds"
+				"gfx/leaders/Europe/politician4.dds"
+				"gfx/leaders/Europe/politician5.dds"
+				"gfx/leaders/Europe/politician6.dds"
+				"gfx/leaders/Europe/politician7.dds"
+				"gfx/leaders/Europe/politician8.dds"
+				"gfx/leaders/Europe/politician9.dds"
+				"gfx/leaders/Europe/politician10.dds"
+				"gfx/leaders/Europe/politician11.dds"
+				"gfx/leaders/Europe/politician12.dds"
+				"gfx/leaders/Europe/politician13.dds"
+			}
+		}
+		paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
 			}
 		}
 	}
@@ -4109,25 +6293,6 @@ RPE = {
 	}
 	
 	
-	political = {
-	
-	nazism = {
-				male = { 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
-			}
-		}
-
-		theocratic = {
-				male = { 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
-			}
-		}
-	}
-	
 }
 
 DMA = {
@@ -4150,24 +6315,6 @@ DMA = {
 	}
 	
 	
-	political = {
-	
-	nazism = {
-				male = { 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
-			}
-		}
-
-		theocratic = {
-				male = { 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
-			}
-		}
-	}
 	
 }
 
@@ -4190,25 +6337,7 @@ DMA = {
 		}
 	}
 	
-	
-	political = {
-	
-	nazism = {
-				male = { 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
-			}
-		}
 
-		theocratic = {
-				male = { 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
-			}
-		}
-	}
 	
 }
 
@@ -4232,24 +6361,6 @@ SSB = {
 	}
 	
 	
-	political = {
-	
-	nazism = {
-				male = { 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
-			}
-		}
-
-		theocratic = {
-				male = { 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
-			}
-		}
-	}
 	
 }
 
@@ -4275,15 +6386,5 @@ MTA = {
 	}
 	
 	
-	political = {
-
-		theocratic = {
-				male = { 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
-					"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
-			}
-		}
-	}
 	
 }

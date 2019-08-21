@@ -63,7 +63,7 @@ create_country_leader = {
 	name = "Hamid Idris Awate"
 	desc = "POLITICS_HAMID_IDRIS_AWATE_DESC"
 	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
-	ideology = anti_revisionism
+	ideology = marxism
 	traits = {
 		#
 	}

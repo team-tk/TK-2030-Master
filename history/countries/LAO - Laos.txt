@@ -48,6 +48,39 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Khamsen"
+	desc = ""
+	picture = "Portrait_Laos_Khamsen.dds"
+	expire = "1953.3.1"
+	ideology = trotskyism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Khamsen"
+	desc = ""
+	picture = "Portrait_Laos_Khamsen.dds"
+	expire = "1953.3.1"
+	ideology = maoism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Khamsen"
+	desc = ""
+	picture = "Portrait_Laos_Khamsen.dds"
+	expire = "1953.3.1"
+	ideology = syndicalism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
 	name = "Sisavang Vong"
 	desc = ""
 	picture = "Portrait_Laos_Sisavang_Vong.dds"

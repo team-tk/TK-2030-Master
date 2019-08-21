@@ -373,6 +373,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
+			name = "Edward VIII"
+			desc = "POLITICS_EDWARD_EDWARD_DESC"
+			picture = "Portrait_Britain_Edward_VIII.dds"
+			expire = "1965.1.1"
+			ideology = fascist_monarchy
+			traits = {
+				inexperienced_imperialist				
+			}
+		}
+
+create_country_leader = {
 	name = "Cosmo Gordon Lang"
 	desc = ""
 	picture = "Portrait_ENG_Cosmo_Lang.dds"

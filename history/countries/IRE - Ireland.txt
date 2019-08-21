@@ -92,12 +92,38 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "James Larkin"
+	desc = "POLITICS_JAMES_LARKIN_DESC"
+	picture = "gfx/leaders/IRE/Portrait_Ireland_Big_Jim.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "James Larkin"
+	desc = "POLITICS_JAMES_LARKIN_DESC"
+	picture = "gfx/leaders/IRE/Portrait_Ireland_Big_Jim.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
 ### PLACEHOLDER
 create_country_leader = {
 	name = "William Joyce"
 	picture = "gfx/leaders/IRE/william_joyce_nazism.dds"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "William Joyce"
+	picture = "gfx/leaders/IRE/william_joyce_nazism.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
 	traits = { }
 }
 
@@ -168,10 +194,19 @@ create_country_leader = {
 	picture = "gfx/leaders/ENG/Portrait_Britain_George_V.dds"
 	expire = "1936.1.20"
 	ideology = constitutional
-	traits = {
-		
-	}
+	traits = { }
 }
+
+create_country_leader = {
+			name = "Edward VIII"
+			desc = "POLITICS_EDWARD_EDWARD_DESC"
+			picture = "gfx/leaders/ENG/Portrait_Britain_Edward_VIII.dds"
+			expire = "1965.1.1"
+			ideology = fascist_monarchy
+			traits = {
+				inexperienced_imperialist				
+			}
+		}
 
 create_corps_commander = {
 	name = "Michael Costello"

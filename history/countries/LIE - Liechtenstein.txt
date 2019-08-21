@@ -50,4 +50,15 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Franz Joseph II"
+	desc = ""
+	picture = "Portrait_Liechtenstein_franz.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
+	traits = {
+		#
+	}
+}
+
 

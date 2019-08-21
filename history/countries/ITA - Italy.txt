@@ -292,9 +292,16 @@ create_country_leader = {
 	picture = "Portrait_Italy_Benito_Mussolini.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Benito Mussolini"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "Portrait_Italy_Benito_Mussolini.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
 }
 
 create_country_leader = {
@@ -324,9 +331,25 @@ create_country_leader = {
 	picture = "GFX_portrait_ita_palmiro_togliatti"
 	expire = "1965.1.1"
 	ideology = marxism
-	traits = {
-		
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Palmiro Togliatti"
+	desc = "POLITICS_PALMIRO_TOGLIATTI_DESC"
+	picture = "GFX_portrait_ita_palmiro_togliatti"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Palmiro Togliatti"
+	desc = "POLITICS_PALMIRO_TOGLIATTI_DESC"
+	picture = "GFX_portrait_ita_palmiro_togliatti"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
 }
 
 create_country_leader = {
@@ -334,9 +357,15 @@ create_country_leader = {
 	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
-	traits = {
-		
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Victor Emmanuel III"
+	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
+	traits = { }
 }
 
 create_country_leader = {

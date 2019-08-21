@@ -158,6 +158,22 @@ create_country_leader = {
 		propaganda_expert
 	}
 }
+
+### PLACEHOLDER
+create_country_leader = {
+	name = "Salvador Abascal"
+	desc = "POLITICS_SALVADOR_ABASCAL_DESC"
+	picture = "GFX_Portrait_MEX_Salvador_Abascal"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = {
+		fascist_militia_leader
+		fascist_sympathies
+		anti_communist
+		propaganda_expert
+	}
+}
+
 ### PLACEHOLDER
 create_country_leader = {
 	name = "Salvador Abascal"
@@ -203,6 +219,16 @@ create_country_leader = { # Stalinist, took over after assassination of Trotsky.
 	}
 }
 
+create_country_leader = { # Stalinist, took over after assassination of Trotsky. 1940-1959
+	name = "Dionisio Encina"
+	desc = "POLITICS_DIONISIO_ENCINA_DESC"
+	picture = "GFX_Portrait_MEX_Dionisio_Encina"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = {
+		staunch_stalinist
+	}
+}
 
 
 create_country_leader = { # Trotskyist, led the PCM 1929-1940
@@ -210,7 +236,7 @@ create_country_leader = { # Trotskyist, led the PCM 1929-1940
 	desc = "POLITICS_HERNAN_LABORDE_DESC"
 	picture = "GFX_Portrait_MEX_Hernan_Laborde"
 	expire = "1965.1.1"
-	ideology = trotskyism
+	ideology = trotskyism_ideology
 	traits = {
 		devoted_trotskyist
 	}

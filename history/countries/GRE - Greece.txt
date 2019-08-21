@@ -126,6 +126,24 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Markos Vafiadis"
+	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
+	picture = "Portrait_Greece_Markos_Vafiadis.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Markos Vafiadis"
+	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
+	picture = "Portrait_Greece_Markos_Vafiadis.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Nikos Kazantzakis"
 	picture = "Nikos_Kazantzakis_Syndicalist.dds"
 	expire = "1965.1.1"
@@ -206,6 +224,14 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Konstantinos Logothetopoulos"
+	picture = "Konstantinos_Logothetopoulos_Nazism.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
 
 create_country_leader = {
 	name = "George II"
@@ -213,6 +239,15 @@ create_country_leader = {
 	picture = "gre_george_ii.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "George II"
+	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
+	picture = "gre_george_ii.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
 	traits = { }
 }
 

@@ -67,6 +67,28 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Johannes Valurson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Johannes Valurson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "Haraldur Gudmunsson"
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
@@ -89,10 +111,53 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Einar Olgeirsson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Einar Olgeirsson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Einar Olgeirsson"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "Christian X"
 	picture = "gfx/leaders/DEN/Portrait_Denmark_Christian_X.dds"
 	expire = "1947.4.20"
 	ideology = constitutional
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Christian X"
+	picture = "gfx/leaders/DEN/Portrait_Denmark_Christian_X.dds"
+	expire = "1947.4.20"
+	ideology = fascist_monarchy
 	traits = {
 		#
 	}

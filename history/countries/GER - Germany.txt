@@ -253,6 +253,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Anton Drexler"
+	desc = "POLITICS_ANTON_DREXLER_DESC"
+	picture = "Portrait_Germany_Anton_Drexler.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { dictator }
+}
+
+create_country_leader = {
 	name = "Konrad Adenauer"
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "Portrait_Germany_Konrad_Adenauer.dds"
@@ -291,6 +300,24 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Wilhelm III"
+	desc = ""
+	picture = "Portrait_Germany_Prince_Wilhelm.dds"
+	expire = 1965.1.1
+	ideology = fascist_monarchy
+	traits = { new_monarchist }
+}
+
+create_country_leader = {
+	name = "Wilhelm II"
+	desc = ""
+	picture = "Portrait_Germany_King_Wilhelm.dds"
+	expire = 1941.6.4
+	ideology = fascist_monarchy
+	traits = { restoring_monarchist }
+}
+
+create_country_leader = {
 	name = "Ludwig Beck"
 	desc = ""
 	picture = "Portrait_Germany_Ludwig_August_Theodor_Beck.dds"
@@ -305,7 +332,16 @@ create_country_leader = {
 	desc = "POLITICS_ERNST_THALMANN_DESC"
 	picture = "Portrait_Germany_Ernst_Thalmann_I.tga"
 	expire = "1956.1.1"
-	ideology = stalinism
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Ernst Thälmann"
+	desc = "POLITICS_ERNST_THALMANN_DESC"
+	picture = "Portrait_Germany_Ernst_Thalmann_I.tga"
+	expire = "1956.1.1"
+	ideology = trotskyism_ideology
 	traits = { }
 }
 

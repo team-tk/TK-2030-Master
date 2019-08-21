@@ -124,6 +124,24 @@ create_country_leader = {
 	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
 	picture = "Portrait_Hungary_Matyas_Rakoski.dds"
 	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Mátyás Rákosi"
+	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
+	picture = "Portrait_Hungary_Matyas_Rakoski.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Mátyás Rákosi"
+	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
+	picture = "Portrait_Hungary_Matyas_Rakoski.dds"
+	expire = "1965.1.1"
 	ideology = syndicalism_ideology
 	traits = { }
 }
@@ -191,6 +209,15 @@ create_country_leader = {
 					ideology = nazism_ideology
 					traits = { }
 				}
+				
+				create_country_leader = {
+					name = "Ferenc Szálasi"
+					desc = "POLITICS_FERENC_SZALASI_DESC"
+					picture = "gfx/leaders/HUN/Portrait_Hungary_Ferenc_Szalasi.dds"
+					expire = "1965.1.1"
+					ideology = strasserism_ideology
+					traits = { }
+				}
 
 				create_country_leader = {
 					name = "Ferenc Rajniss"
@@ -217,6 +244,20 @@ create_country_leader = {
 		picture = "Portrait_Hungary_Miklos_Horthy.dds"
 		expire = "1965.1.1"
 		ideology = absolutism
+		traits = {
+			fascist_sympathies
+			anti_communist
+		}
+		id = 500 #Horthy Neutral
+	}
+	
+	
+	create_country_leader = {
+		name = "Miklós Horthy"
+		desc = "POLITICS_MIKLOS_HORTHY_DESC"
+		picture = "Portrait_Hungary_Miklos_Horthy.dds"
+		expire = "1965.1.1"
+		ideology = fascist_monarchy
 		traits = {
 			fascist_sympathies
 			anti_communist

@@ -333,6 +333,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Joseph Darnand"
+	desc = "POLITICS_JOSEPH_DARNAND_DESC"
+	picture = "Portrait_France_Joseph_Darnand.dds"
+	expire = "1965.1.1"
+        ideology = strasserism_ideology
+}
+
+create_country_leader = {
 	name = "Albert Sarraut"
 	desc = "POLITICS_ALBERT_SARRAUT_DESC"
 	picture = "Portrait_France_Albert_Sarraut.dds"
@@ -362,6 +370,22 @@ create_country_leader = {
 	picture = "Portrait_France_Benoit_Frachon.tga"
 	expire = "1965.1.1"
 	ideology = marxism
+}
+
+create_country_leader = {
+	name = "Benoît Frachon"
+	desc = "POLITICS_BENOIT_FRACHON_DESC"
+	picture = "Portrait_France_Benoit_Frachon.tga"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+}
+
+create_country_leader = {
+	name = "Benoît Frachon"
+	desc = "POLITICS_BENOIT_FRACHON_DESC"
+	picture = "Portrait_France_Benoit_Frachon.tga"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
 }
 
 
@@ -445,6 +469,14 @@ create_country_leader = {
 	picture = "Portrait_France_Louis_Napoleon.dds"
 	expire = "1997.5.3"
 	ideology = absolutism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Napoleón V"
+	picture = "Portrait_France_Louis_Napoleon.dds"
+	expire = "1997.5.3"
+	ideology = fascist_monarchy
 	traits = { }
 }
 

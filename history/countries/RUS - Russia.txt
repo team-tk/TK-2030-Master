@@ -93,7 +93,7 @@ create_country_leader = {
 				desc = "POLITICS_LEON_TROTSKY_DESC"
 				picture = "Portrait_Leon_Trotsky.dds"
 				expire = "1951.1.1"
-				ideology = trotskyism
+				ideology = trotskyism_ideology
 				traits = {
 					bolshevik_militarist
 				}

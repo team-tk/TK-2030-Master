@@ -76,7 +76,7 @@ create_country_leader = {
 	desc = "POLITICS_TAKELE_WOLDE_HAWARIAT_DESC"
 	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
 	expire = "1965.1.1"
-	ideology = anti_revisionism
+	ideology = marxism
 	traits = { }
 }
 create_country_leader = {

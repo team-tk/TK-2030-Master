@@ -161,7 +161,7 @@ if = {
 
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = fascist_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -172,7 +172,7 @@ set_popularities = {
 conservatism = 20
 democratic = 15
 socdem = 3
-fascism = 60
+fascist_monarchism = 60
 communism  = 2
 }
 
@@ -233,19 +233,6 @@ create_country_leader = {
 	id = 700 #Hirohito
 }
 
-create_country_leader = {
-	name = "Hirohito"
-	desc = "POLITICS_Hirohito_DESC"
-	picture = "Portrait_Japan_Hirohito.dds"
-	expire = "1989.1.1"
-	ideology = shintoism
-	traits = {
-		warrior_code
-		emperor_showa
-		imperial_sanction
-	}
-	id = 700 #Hirohito
-}
 
 create_country_leader = {
 	name = "Kyuichi Tokuda"
@@ -256,10 +243,34 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Kyuichi Tokuda"
+	picture = "GFX_Portrait_kyuichi_tokuda"
+	expire = "1989.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Kyuichi Tokuda"
+	picture = "GFX_Portrait_kyuichi_tokuda"
+	expire = "1989.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Tetsu Katayama"
 	picture = "GFX_Portrait_tetsu_katayama"
 	expire = "1989.1.1"
 	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Hideki Tojo"
+	picture = "Hideki_Tojo.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
 	traits = { }
 }
 
@@ -300,6 +311,14 @@ create_country_leader = {
 	picture = "Masaki_Jinzaburo.dds"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Masaki Jinzaburo"
+	picture = "Masaki_Jinzaburo.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
 	traits = { }
 }
 

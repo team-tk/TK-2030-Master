@@ -42,14 +42,34 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Sekula Drljević"
+	desc = ""
+	picture = "gfx/leaders/MNT/monf.dds"
+	expire = "1953.3.1"
+	ideology = nazism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Sekula Drljević"
+	desc = ""
+	picture = "gfx/leaders/MNT/monf.dds"
+	expire = "1953.3.1"
+	ideology = strasserism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
 	name = "Andrija Radović"
 	desc = ""
 	picture = "gfx/leaders/MNT/mond.dds"
 	expire = "1953.3.1"
 	ideology = conservatism_ideology
-	traits = {
-		
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -58,9 +78,7 @@ create_country_leader = {
 	picture = "gfx/leaders/MNT/monn.dds"
 	expire = "1953.3.1"
 	ideology = despotism
-	traits = {
-		
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -69,6 +87,24 @@ create_country_leader = {
 	picture = "gfx/leaders/MNT/monc.dds"
 	expire = "1953.3.1"
 	ideology = leninism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Blažo Jovanović"
+	desc = ""
+	picture = "gfx/leaders/MNT/monc.dds"
+	expire = "1953.3.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Blažo Jovanović"
+	desc = ""
+	picture = "gfx/leaders/MNT/monc.dds"
+	expire = "1953.3.1"
+	ideology = trotskyism_ideology
 	traits = { }
 }
 
