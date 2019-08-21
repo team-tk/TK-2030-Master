@@ -1,4 +1,4 @@
-﻿capital = 277 # Madagascar
+capital = 277 # Madagascar
 
 oob = "empty"
 

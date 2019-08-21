@@ -1,5 +1,5 @@
-﻿division_template = {
-	name = "Fallschirmjäger-Division"
+division_template = {
+	name = "Fallschirmj�ger-Division"
 
 	regiments = {
 		D7F_paratrooper = { x = 0 y = 0 }
@@ -29,10 +29,10 @@
 
 units = {
 	division= {	
-		name = "1. Fallschirm-Jäger-Division"
+		name = "1. Fallschirm-J�ger-Division"
 		location = 6521 # Berlin
-		division_template = "Fallschirmjäger-Division"
+		division_template = "Fallschirmj�ger-Division"
 		start_experience_factor = 1.0
-		start_equipment_factor = 1  # From SS-Verfügungstruppe
+		start_equipment_factor = 1  # From SS-Verf�gungstruppe
 	}
 }

@@ -1,4 +1,4 @@
-﻿capital = 781
+capital = 781
 
 oob = "ACO_1936"
 

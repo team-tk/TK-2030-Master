@@ -1,4 +1,4 @@
-﻿add_namespace = SCA_norway
+add_namespace = SCA_norway
 
 #Give Norway 2000 Manpower to start (So they can man their new boat!) ## Outdated by discovery of on_startup in on_actions
 #country_event = {

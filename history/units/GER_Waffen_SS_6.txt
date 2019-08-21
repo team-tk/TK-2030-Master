@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "SS-Gebirgs-Division NO"
 	division_names_group = SS_Mnt_01
 	regiments = {

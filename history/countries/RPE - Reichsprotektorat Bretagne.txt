@@ -1,4 +1,4 @@
-﻿capital = 14 # Brittany
+capital = 14 # Brittany
 
 oob = "empty"
 

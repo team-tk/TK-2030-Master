@@ -1,4 +1,4 @@
-﻿capital = 550
+capital = 550
 
 add_ideas = {
 religion_sunni_islamism

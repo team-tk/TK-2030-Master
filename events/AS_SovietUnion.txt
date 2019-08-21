@@ -1,4 +1,4 @@
-﻿##### August Storm
+##### August Storm
 ##### SOV Events
 
 add_namespace = as_sov

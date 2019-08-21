@@ -1,4 +1,4 @@
-﻿add_namespace = EAI_DM_W
+add_namespace = EAI_DM_W
 
 #######################################################
 # Expert AI mod - scripted AI war justifications

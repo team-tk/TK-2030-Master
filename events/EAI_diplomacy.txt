@@ -1,4 +1,4 @@
-﻿add_namespace = EAI_DM
+add_namespace = EAI_DM
 
 ############################################################################################################
 # Expert AI mod - diplomacy events

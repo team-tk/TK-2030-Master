@@ -1,4 +1,4 @@
-﻿capital = 275 # Pretoria
+capital = 275 # Pretoria
 
 oob = "empty"
 

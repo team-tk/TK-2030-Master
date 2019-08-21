@@ -1,4 +1,4 @@
-﻿add_namespace = SCA_finland
+add_namespace = SCA_finland
 
 # Continuation War
 #country_event = { ## OBSOLETED BY DECISIONS

@@ -1,4 +1,4 @@
-﻿add_namespace = SCA_sweden
+add_namespace = SCA_sweden
 
 #Changes name of Democratic Party in 1938
 country_event = {

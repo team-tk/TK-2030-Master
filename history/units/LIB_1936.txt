@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Infantry Brigade"		# LFF never exceeded 1500 troops during WW2
 	division_names_group = LIB_INF_01
 	regiments = {

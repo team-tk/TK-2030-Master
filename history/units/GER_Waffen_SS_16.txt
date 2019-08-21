@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "SS-Panzergrenadier-Division RS"
 	division_names_group = SS_MEC_01
 	regiments = {
@@ -27,7 +27,7 @@
 
 units = {
 	division= {	
-		name = "16. SS-Panzergrenadier-Division 'Reichsführer SS'"
+		name = "16. SS-Panzergrenadier-Division 'Reichsf�hrer SS'"
 		location = 3780 # Milan
 		division_template = "SS-Panzergrenadier-Division RS"
 		start_experience_factor = 0.5

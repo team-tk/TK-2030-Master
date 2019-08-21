@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Panzer-Division 41"
 
 	regiments = {
@@ -63,7 +63,7 @@ units = {
 		location = 1149 # Tripoli
 		division_template = "Panzer-Division 41"
 		start_experience_factor = 0.3 
-		start_equipment_factor = 1  # From SS-Verfügungstruppe
+		start_equipment_factor = 1  # From SS-Verf�gungstruppe
 	}
 	
 	division= {	
@@ -71,7 +71,7 @@ units = {
 		location = 1149 # Tripoli
 		division_template = "Panzer-Division 41"
 		start_experience_factor = 0.3 
-		start_equipment_factor = 1  # From SS-Verfügungstruppe
+		start_equipment_factor = 1  # From SS-Verf�gungstruppe
 	}
 	
 	division= {	
@@ -79,7 +79,7 @@ units = {
 		location = 1149 # Tripoli
 		division_template = "Panzergrenadier-Division 41"
 		start_experience_factor = 0.3 
-		start_equipment_factor = 1  # From SS-Verfügungstruppe
+		start_equipment_factor = 1  # From SS-Verf�gungstruppe
 	}
 	
 	division= {	
@@ -87,7 +87,7 @@ units = {
 		location = 1149 # Tripoli
 		division_template = "Panzergrenadier-Division 41"
 		start_experience_factor = 0.3 
-		start_equipment_factor = 1  # From SS-Verfügungstruppe
+		start_equipment_factor = 1  # From SS-Verf�gungstruppe
 	}
 	
 }

@@ -1,4 +1,4 @@
-﻿##### August Storm
+##### August Storm
 ##### Silent Events
 
 add_namespace = as_silent

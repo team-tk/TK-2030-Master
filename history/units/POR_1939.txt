@@ -1,4 +1,4 @@
-﻿start_equipment_factor = 0.25
+start_equipment_factor = 0.25
 division_template = {
 	name = "Guarda Nacional Republicana"		# Infantry Division
 	# Note: each regiment could also mobilize a 3rd battalion if called up
@@ -11,7 +11,7 @@ division_template = {
 	
 }
 division_template = {
-	name = "Policia de Segurança Publica"		# Infantry Division
+	name = "Policia de Seguran�a Publica"		# Infantry Division
 	# Note: each regiment could also mobilize a 3rd battalion if called up
 	regiments = {
 		PSP = { x = 0 y = 0 }
@@ -22,7 +22,7 @@ division_template = {
 	
 }
 division_template = {
-	name = "Força de Caçadores"		# Elite light infantry, always fully mobilized w best equipment
+	name = "For�a de Ca�adores"		# Elite light infantry, always fully mobilized w best equipment
 	division_names_group = POR_CAC_01
 
 	regiments = {
@@ -33,7 +33,7 @@ division_template = {
 	priority = 2
 }
 division_template = {
-	name = "Caçadores Paraquedistas"		# Elite light infantry, always fully mobilized w best equipment
+	name = "Ca�adores Paraquedistas"		# Elite light infantry, always fully mobilized w best equipment
 	division_names_group = POR_CAC_01
 
 	regiments = {
@@ -45,12 +45,12 @@ division_template = {
 }
 
 units = {
-	###### Exército Portugues (CO: Cabral) #####
+	###### Ex�rcito Portugues (CO: Cabral) #####
 	# Governo Militar Portugues (CO: Cunha) #
 	division = {
 		name = "Governo Militar Portugues"
 		location = 11805
-		division_template = "Divisão de Infanteria"
+		division_template = "Divis�o de Infanteria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -66,24 +66,24 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-	division = { # "5a Força de Caçadores"
+	division = { # "5a For�a de Ca�adores"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 5
 		}
 		location = 11805
-		division_template = "Força de Caçadores"
+		division_template = "For�a de Ca�adores"
 		start_experience_factor = 0.3
 	}
 
 	# 1a Distrito Militar (CO: Junior) #
-	division = { # "1a Divisão de Infanteria"
+	division = { # "1a Divis�o de Infanteria"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 9817
-		division_template = "Divisão de Infanteria"
+		division_template = "Divis�o de Infanteria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -99,68 +99,68 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-	division = { # "1a Força de Caçadores"
+	division = { # "1a For�a de Ca�adores"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
 		location = 9817
-		division_template = "Força de Caçadores"
+		division_template = "For�a de Ca�adores"
 		start_experience_factor = 0.3
 	}
 
 	# 2a Distrito Militar (CO: Franco) #
-	division = { # "2a Divisão de Infanteria"
+	division = { # "2a Divis�o de Infanteria"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
 		location = 3798
-		division_template = "Divisão de Infanteria"
+		division_template = "Divis�o de Infanteria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division = { # "2a Força de Caçadores"
+	division = { # "2a For�a de Ca�adores"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
 		location = 3798
-		division_template = "Força de Caçadores"
+		division_template = "For�a de Ca�adores"
 		start_experience_factor = 0.3
 	}
 
 	# 3a Distrito Militar )CO: Meneses) #
-	division = { # "3a Divisão de Infanteria"
+	division = { # "3a Divis�o de Infanteria"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
 		location = 844
-		division_template = "Divisão de Infanteria"
+		division_template = "Divis�o de Infanteria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division = { # "3a Força de Caçadores"
+	division = { # "3a For�a de Ca�adores"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
 		location = 844
-		division_template = "Força de Caçadores"
+		division_template = "For�a de Ca�adores"
 		start_experience_factor = 0.3
 	}
 
 	# 4a Distrito Militar (CO: Correia) #
-	division = { # "4a Divisão de Infanteria"
+	division = { # "4a Divis�o de Infanteria"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
 		}
 		location = 9869
-		division_template = "Divisão de Infanteria"
+		division_template = "Divis�o de Infanteria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
@@ -176,13 +176,13 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-	division = { # "4a Força de Caçadores"
+	division = { # "4a For�a de Ca�adores"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 4
 		}
 		location = 9869
-		division_template = "Força de Caçadores"
+		division_template = "For�a de Ca�adores"
 		start_experience_factor = 0.3
 	}
 
@@ -193,7 +193,7 @@ units = {
 				name_order = 21
 		}
 		location = 1751
-		division_template = "Policia de Segurança Publica"
+		division_template = "Policia de Seguran�a Publica"
 		start_experience_factor = 0.3
 	}
 
@@ -203,7 +203,7 @@ units = {
 				name_order = 22
 		}
 		location = 8248
-		division_template = "Policia de Segurança Publica"
+		division_template = "Policia de Seguran�a Publica"
 		start_experience_factor = 0.3
 	}
 	division = { # "2a Policia de Angola"
@@ -212,26 +212,26 @@ units = {
 				name_order = 23
 		}
 		location = 10966
-		division_template = "Policia de Segurança Publica"
+		division_template = "Policia de Seguran�a Publica"
 		start_experience_factor = 0.3
 	}
 
-	division = { # "1a Policia de Moçambique"
+	division = { # "1a Policia de Mo�ambique"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 24
 		}
 		location = 8245
-		division_template = "Policia de Segurança Publica"
+		division_template = "Policia de Seguran�a Publica"
 		start_experience_factor = 0.3
 	}
-	division = { # "2a Policia de Moçambique"
+	division = { # "2a Policia de Mo�ambique"
 		division_name = {
 				is_name_ordered = yes
 				name_order = 25
 		}
 		location = 8245
-		division_template = "Policia de Segurança Publica"
+		division_template = "Policia de Seguran�a Publica"
 		start_experience_factor = 0.3
 	}
 
@@ -246,9 +246,9 @@ units = {
 		ship = { name = "NRP Douro I" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }
 		ship = { name = "NRP Guadiana" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }
 		ship = { name = "NRP Vouga" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }
-		ship = { name = "NRP Tâmega" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }		
+		ship = { name = "NRP T�mega" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }		
 		ship = { name = "NRP Lima" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }
-		ship = { name = "NRP Dão" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }
+		ship = { name = "NRP D�o" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }
 		ship = { name = "NRP Tejo II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }
 		ship = { name = "NRP Douro II" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POR } } }
 		# Flotilha Espadarte
@@ -256,27 +256,27 @@ units = {
 		ship = { name = "NRP Ave" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR } } }	
 		ship = { name = "NRP Sado" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR } } }	
 		ship = { name = "NRP Mondego" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR } } }
-		ship = { name = "NRP Cávado" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR } } }
-		ship = { name = "NRP Zêzere" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR } } }
+		ship = { name = "NRP C�vado" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR } } }
+		ship = { name = "NRP Z�zere" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POR } } }
 	}				
 
 }
 
 
-### Aeronáutica Militar ###
+### Aeron�utica Militar ###
 air_wings = {
 	112 = {
-		# Esquadrão de Alverca-- Ju 86K, Ju 52/3m bombers
+		# Esquadr�o de Alverca-- Ju 86K, Ju 52/3m bombers
 		tac_bomber_equipment_0 = {
 			owner = "POR" 
 			amount = 20
 		}
-		# Esquadrão de Bombardeiro de Tancos  -- Vickers Valparaiso light bombers
+		# Esquadr�o de Bombardeiro de Tancos  -- Vickers Valparaiso light bombers
 		CAS_equipment_1 = {
 			owner = "POR" 
 			amount = 20
 		}
-		# Esquadrão de Tancos  -- Gladiator II fighters
+		# Esquadr�o de Tancos  -- Gladiator II fighters
 		fighter_equipment_0 = {
 			owner = "POR" 
 			amount = 30

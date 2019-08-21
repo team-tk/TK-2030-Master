@@ -1,4 +1,4 @@
-﻿##### Division Templates #####
+##### Division Templates #####
 division_template = {
 	name = "Brigade Coloniale"			# Represents: 2xRgt colonial forces and , usually with old equipment
 

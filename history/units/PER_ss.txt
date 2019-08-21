@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Sarbaz-e-Motor"			# Infantry Brigade
 
 
@@ -19,7 +19,7 @@
 
 units = {
 	division = {
-		name = "Berīgād-e Shvts Shtafl"
+		name = "Berigad-e Shvts Shtafl"
 		location = 10837
 		division_template = "Sarbaz-e-Motor"		
 		start_experience_factor = 1

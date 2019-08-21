@@ -1,4 +1,4 @@
-﻿add_namespace = AM_political
+add_namespace = AM_political
 
 ########Neutrality on the Rise############
 

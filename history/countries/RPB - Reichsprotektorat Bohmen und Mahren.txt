@@ -1,4 +1,4 @@
-﻿capital = 9 # Bohemia
+capital = 9 # Bohemia
 
 oob = "empty"
 

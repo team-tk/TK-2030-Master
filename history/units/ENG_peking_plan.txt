@@ -1,10 +1,10 @@
-﻿units = {
+units = {
 	navy = {
-			name = "Dywizjon Kontrtorpedowców"
+			name = "Dywizjon Kontrtorpedowc�w"
 			base = 126
 			location = 11374
 			ship = { name = "ORP Burza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }	
-			ship = { name = "ORP Błyskawica" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }		
+			ship = { name = "ORP Blyskawica" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }		
 			ship = { name = "ORP Grom" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG } } }		
 		}
 }

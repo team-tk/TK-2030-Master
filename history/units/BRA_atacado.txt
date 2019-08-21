@@ -1,41 +1,41 @@
-﻿units = {
-	##### Exército Brasileiro #####
+units = {
+	##### Ex�rcito Brasileiro #####
 	division= {	
-		name = "Polícia Militar do Espírito Santo"
+		name = "Pol�cia Militar do Esp�rito Santo"
 		location = 10980 # Rio de Janeiro
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "Polícia Militar de São Paulo"
+		name = "Pol�cia Militar de S�o Paulo"
 		location = 10513 # Sao Paulo
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "Polícia Militar de Minas Gerais"
+		name = "Pol�cia Militar de Minas Gerais"
 		location = 10513 # Sao Paulo
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		name = "Polícia Militar do Rio de Janeiro"
+		name = "Pol�cia Militar do Rio de Janeiro"
 		location = 10513 # Sao Paulo
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		name = "Polícia Militar do Rio Grande do Sul"
+		name = "Pol�cia Militar do Rio Grande do Sul"
 		location = 10447 # Porto Alegre
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
 
@@ -49,7 +49,7 @@
 
 	}
 	division= {	
-		name = "Tiro de Guerra - São Paulo"
+		name = "Tiro de Guerra - S�o Paulo"
 		location = 10513 # Sao Paulo
 		division_template = "Regimento de Cavalaria"
 		start_experience_factor = 0.5
@@ -65,7 +65,7 @@
 
 	}
 	division= {	
-		name = "Voluntários de São Paulo"
+		name = "Volunt�rios de S�o Paulo"
 		location = 10513
 		division_template = "Regimento de Cavalaria Blindada"
 		start_experience_factor = 0.1
@@ -79,9 +79,9 @@
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Legião Tenentista"
+		name = "Legi�o Tenentista"
 		location = 10513
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 1
 		start_equipment_factor = 0.1
 	}

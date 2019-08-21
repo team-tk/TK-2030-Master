@@ -1,4 +1,4 @@
-﻿capital = 382
+capital = 382
 
 oob = "empty"
 add_ideas = neutrality_idea

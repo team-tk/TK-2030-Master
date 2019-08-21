@@ -1,4 +1,4 @@
-﻿capital = 439
+capital = 439
 
 oob = "RAJ_1936"
 

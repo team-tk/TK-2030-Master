@@ -1,4 +1,4 @@
-﻿add_namespace = bra
+add_namespace = bra
 add_namespace = election_BRA
 add_namespace = news_BRA
 

@@ -1,4 +1,4 @@
-﻿capital = 798
+capital = 798
 
 oob = "ADR_1936"
 

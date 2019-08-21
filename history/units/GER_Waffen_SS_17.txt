@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "SS-Panzergrenadier-Division GB"
 	division_names_group = SS_MEC_01
 	regiments = {
@@ -27,7 +27,7 @@
 
 units = {
 	division= {	
-		name = "17. SS-Panzergrenadier-Division 'Götz von Berlichingen'"
+		name = "17. SS-Panzergrenadier-Division 'G�tz von Berlichingen'"
 		location = 11596 # Poitiers
 		division_template = "SS-Panzergrenadier-Division GB"
 		start_experience_factor = 0.5

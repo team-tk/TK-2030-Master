@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "SS-Panzergrenadier-Division HW"
 	division_names_group = SS_MEC_01
 	regiments = {
@@ -28,7 +28,7 @@
 units = {
 	division= {	
 		name = "18. SS-Freiwilligen-Panzergrenadier-Division 'Horst Wessel'"
-		location = 6711 # Siebenbürgen
+		location = 6711 # Siebenb�rgen
 		division_template = "SS-Panzergrenadier-Division HW"
 		start_experience_factor = 0.4
 	}

@@ -1,4 +1,4 @@
-﻿### OOB ###
+### OOB ###
 division_template = {
 	name = "Cavalerie Divisie"  	# Cavalry Division
 

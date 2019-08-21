@@ -1,4 +1,4 @@
-﻿units = {
+units = {
 	navy = {
 		name = "Re-fitted Danish Flotilla"
 		location = 6287 # Copenhagen

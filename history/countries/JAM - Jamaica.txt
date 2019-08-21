@@ -1,4 +1,4 @@
-﻿capital = 689
+capital = 689
 
 oob = "JAM_1936"
 

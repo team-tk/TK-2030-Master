@@ -1,5 +1,5 @@
-﻿division_template = {
-	name = "División de Infantaria"
+division_template = {
+	name = "Divisi�n de Infantaria"
 	division_names_group = SPAN_INF_02
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -15,7 +15,7 @@
 }
 
 division_template = {
-	name = "Infantería de Montaña"
+	name = "Infanter�a de Monta�a"
 	division_names_group = SPAN_MTN_02
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -28,7 +28,7 @@ division_template = {
 }
 
 division_template = {
-	name = "División de Caballería"  	# Cavalry Division
+	name = "Divisi�n de Caballer�a"  	# Cavalry Division
 	division_names_group = SPAN_CAV_01
 
 	regiments = {
@@ -53,7 +53,7 @@ units = {
 			name_order = 1
 		}
 		location = 2199
-		division_template = "Infantería de Montaña"
+		division_template = "Infanter�a de Monta�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -64,7 +64,7 @@ units = {
 			name_order = 1
 		}
 		location = 10992
-		division_template = "Infantería de Montaña"
+		division_template = "Infanter�a de Monta�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 	}
@@ -80,7 +80,7 @@ units = {
 		start_equipment_factor = 1.0
 	}
 	division = {
-		#name = "Regimiento N*5 'General de Olazábal'"
+		#name = "Regimiento N*5 'General de Olaz�bal'"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
@@ -124,16 +124,16 @@ units = {
 		start_equipment_factor = 1.0
 	}
 	division= {	
-		name = "R. de Caballería 'Coronel Brandsen'"
+		name = "R. de Caballer�a 'Coronel Brandsen'"
 		location = 2172
-		division_template = "División de Caballería"
+		division_template = "Divisi�n de Caballer�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}
 	division= {	
-		name = "R. de Caballería 'General Paz'"
+		name = "R. de Caballer�a 'General Paz'"
 		location = 12394
-		division_template = "División de Caballería"
+		division_template = "Divisi�n de Caballer�a"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 	}

@@ -1,4 +1,4 @@
-﻿capital = 770
+capital = 770
 
 oob = "MLW_1936"
 

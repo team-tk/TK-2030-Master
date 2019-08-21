@@ -3583,6 +3583,24 @@ focus_tree = {
 			custom_effect_tooltip = FRA_camelots_roi_tooltip
 			add_war_support = 0.05
 			add_ideas = FRA_camelot
+			hidden_effect = {	
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Jean d'Orléans"
+					desc = "POLITICS_JEAN_DORLEANS_DESC"
+					picture = "Portrait_France_Jean_dOrleans.tga"
+					expire = "1965.1.1"
+					ideology = absolutism
+				}
+				set_party_name = {
+					ideology = monarchism
+					long_name = FRA_monarchism_party_roi_long
+					name = FRA_monarchism_party_roi
+				}
+				set_politics = {
+					ruling_party = monarchism
+				}
+			}
 		}
 	}
 	

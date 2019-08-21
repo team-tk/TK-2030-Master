@@ -1,4 +1,4 @@
-﻿##### Division Templates #####
+##### Division Templates #####
 division_template = {
 	name = "División de Infantería" 		# Regular infantry divisions, all at reserve levels in 1939
 	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support

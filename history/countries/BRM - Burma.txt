@@ -1,4 +1,4 @@
-﻿capital = 288 #Rangoon
+capital = 288 #Rangoon
 
 #oob = "BRM_1936"
 

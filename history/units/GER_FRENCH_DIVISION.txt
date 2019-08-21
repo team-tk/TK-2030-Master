@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Franzosisch-Legion"
 
 	regiments = {
@@ -25,7 +25,7 @@ units = {
 		location = 6521 # 	Zagreb
 		division_template = "Franzosisch-Legion"
 		start_experience_factor = 0.3 
-		start_equipment_factor = 1  # From SS-Verfügungstruppe
+		start_equipment_factor = 1  # From SS-Verf�gungstruppe
 	}
 	
 }

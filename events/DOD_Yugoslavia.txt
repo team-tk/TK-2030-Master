@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Yugoslavian Events #EAI: block some events choices for AI on historical from causing a mess
 ###########################
 

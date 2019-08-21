@@ -1,33 +1,33 @@
-﻿units = {
-	##### Exército Brasileiro #####
+units = {
+	##### Ex�rcito Brasileiro #####
 	division= {	
-		name = "Batalhão de Infantaria do Vale do Paraíba"
+		name = "Batalh�o de Infantaria do Vale do Para�ba"
 		location = 10980 # Rio de Janeiro
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "Polícia Militar de São Paulo"
+		name = "Pol�cia Militar de S�o Paulo"
 		location = 10513 # Sao Paulo
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "Batalhão de Infantaria do Sul de São Paulo"
+		name = "Batalh�o de Infantaria do Sul de S�o Paulo"
 		location = 10513 # Sao Paulo
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
 
 	}
 	division= {	
-		name = "Batalhão de Infantaria do Vale do Paraíba"
+		name = "Batalh�o de Infantaria do Vale do Para�ba"
 		location = 10513 # Sao Paulo
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.5
 
@@ -35,13 +35,13 @@
 	division= {	
 		name = "Brigada Militar do Rio Grande do Sul"
 		location = 10447 # Porto Alegre
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
 
 	}
 	division= {	
-		name = "Frente Única de Maracaju"
+		name = "Frente �nica de Maracaju"
 		location = 10980 # Rio de Janeiro
 		division_template = "Regimento de Cavalaria"
 		start_experience_factor = 0.5
@@ -49,7 +49,7 @@
 
 	}
 	division= {	
-		name = "Cavalaria da Frente Única de Maracaju"
+		name = "Cavalaria da Frente �nica de Maracaju"
 		location = 10513 # Sao Paulo
 		division_template = "Regimento de Cavalaria"
 		start_experience_factor = 0.5
@@ -65,7 +65,7 @@
 
 	}
 	division= {	
-		name = "Regimento de Cavalaria Blindada do Vale do Paraíba"
+		name = "Regimento de Cavalaria Blindada do Vale do Para�ba"
 		location = 10513
 		division_template = "Regimento de Cavalaria Blindada"
 		start_experience_factor = 0.1
@@ -79,9 +79,9 @@
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "Batalhão do Bispo"
+		name = "Batalh�o do Bispo"
 		location = 10513
-		division_template = "Batalhão de Infantaria"
+		division_template = "Batalh�o de Infantaria"
 		start_experience_factor = 1
 		start_equipment_factor = 0.1
 	}

@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Rebel Forces"
 	division_names_group = LIB_INF_01
 	regiments = {

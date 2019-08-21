@@ -1,4 +1,4 @@
-﻿capital = 26 # Vichy
+capital = 26 # Vichy
 
 oob = "empty"
 

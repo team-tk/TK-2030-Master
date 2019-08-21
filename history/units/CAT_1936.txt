@@ -1,6 +1,6 @@
-﻿##### Division Templates #####
+##### Division Templates #####
 division_template = {
-	name = "Divisió d'Infanteria" 		# Used for both regular infantry divisions and larger garrison divisions
+	name = "Divisi� d'Infanteria" 		# Used for both regular infantry divisions and larger garrison divisions
 	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -16,7 +16,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Divisió de Cavalleria"  		# Only one Cavalry Division (3x bge of 2x2 Rgts)
+	name = "Divisi� de Cavalleria"  		# Only one Cavalry Division (3x bge of 2x2 Rgts)
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }

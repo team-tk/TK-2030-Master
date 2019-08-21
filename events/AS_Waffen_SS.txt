@@ -1,4 +1,4 @@
-﻿##### August Storm
+##### August Storm
 ##### Waffen-SS Events
 
 add_namespace = as_waffen_ss

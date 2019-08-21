@@ -1,4 +1,4 @@
-﻿
+
 
 units = {
 ##16TH ARMY SECOND WAVE
@@ -44,7 +44,7 @@ units = {
 	}
 	
 	division= {	
-		name = "Infanterie-Regiment (mot.) Großdeutschland"
+		name = "Infanterie-Regiment (mot.) Gro�deutschland"
 		location = 11446 # Britain
 		division_template = "Infanterie-Division (mot.)"
 		start_experience_factor = 0.3 

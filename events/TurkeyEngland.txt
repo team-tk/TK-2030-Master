@@ -1,4 +1,4 @@
-﻿add_namespace = englishturkishwar
+add_namespace = englishturkishwar
 
 ###Great Britain Middle East colonies is occupied by Turks###
 country_event = {

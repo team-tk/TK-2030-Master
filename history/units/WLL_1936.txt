@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Division d'Infanterie"		# Same for "Active" and "Reserve" Infantry Divisions
 
 	regiments = {

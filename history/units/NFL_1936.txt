@@ -1,4 +1,4 @@
-﻿### British Newfoundland OOB ###
+### British Newfoundland OOB ###
 
 division_template = {
 	name = "Territorial Guard"		

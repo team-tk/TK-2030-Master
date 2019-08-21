@@ -1,4 +1,4 @@
-﻿add_namespace = EAI_H
+add_namespace = EAI_H
 
 ############################################################################################################
 # Expert AI mod - difficulty events

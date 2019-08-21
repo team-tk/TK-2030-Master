@@ -10,8 +10,8 @@ if = {
 }
 
 add_ideas = {
-fog_democratic
-religion_protestantism
+	fog_democratic
+	religion_protestantism
 }
 
 add_ideas = {
@@ -24,9 +24,9 @@ add_ideas = {
 	infrastructure_budget4
 }
 
-#set_research_slots = 4
+set_research_slots = 4
 #set_research_slots = 5
-set_research_slots = 2
+
 
 set_stability = 0.55
 set_war_support = 0
@@ -149,9 +149,9 @@ set_politics = {
 }
 
 set_popularities = {
-conservatism = 32
-democratic = 55
-socdem = 6
+conservatism = 35
+democratic = 46
+socdem = 12
 fascism = 2
 communism = 5
 }

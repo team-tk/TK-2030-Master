@@ -1,4 +1,4 @@
-﻿####SS####
+####SS####
 
 division_template = {
 	name = "Força Expedicionária Brasileira (FEB)"

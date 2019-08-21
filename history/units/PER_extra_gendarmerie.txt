@@ -1,6 +1,6 @@
-﻿
+
 division_template = {
-	name = "Žāndārmirī"			# Garrison Brigade
+	name = "�andarmiri"			# Garrison Brigade
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -13,33 +13,33 @@ division_template = {
 
 units = {
 	division = {
-		name = "Žāndārmirī-ye Daulatī"
+		name = "�andarmiri-ye Daulati"
 		location = 10837
-		division_template = "Žāndārmirī"		
+		division_template = "�andarmiri"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}
 	division = {
-		name = "Žāndārmirī-ye Daulatī"
+		name = "�andarmiri-ye Daulati"
 		location = 7953
-		division_template = "Žāndārmirī"		
+		division_template = "�andarmiri"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}
 	division = {
-		name = "Žāndārmirī-ye Daulatī"
+		name = "�andarmiri-ye Daulati"
 		location = 2026
-		division_template = "Žāndārmirī"		
+		division_template = "�andarmiri"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
 	}
 	division = {
-		name = "Žāndārmirī-ye Daulatī"
+		name = "�andarmiri-ye Daulati"
 		location = 2026
-		division_template = "Žāndārmirī"		
+		division_template = "�andarmiri"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 

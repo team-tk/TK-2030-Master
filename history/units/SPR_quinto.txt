@@ -4,7 +4,7 @@ units = {
 	division = {			
 		name = "Quinto Regimiento"		
 		location = 3938  # Madrid
-		division_template = "División de Infantería"
+		division_template = "DivisiÃ³n de InfanterÃ­a"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1
 
