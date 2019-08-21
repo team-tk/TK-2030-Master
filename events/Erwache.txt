@@ -641,7 +641,7 @@ country_event = { #opposing hitler
 	option = { #Schutzstaffel
 		name = erwache.11.e
 		add_popularity = {ideology = nazism popularity = -0.05}
-		add_popularity = {ideology = theocratic popularity = 0.05}
+		add_popularity = {ideology = paganism popularity = 0.05}
 		add_stability = -0.05
 		add_timed_idea = {idea = GER_theocratic_idea days = 365}
 	}
@@ -752,7 +752,7 @@ country_event = { #arrest hitler
 	option = { #replace with SS
 		name = erwache.12.e
 		add_popularity = {ideology = nazism popularity = -0.05}
-		add_popularity = {ideology = theocratic popularity= 0.05}
+		add_popularity = {ideology = paganism popularity= 0.05}
 		add_stability = -0.25
 		#set_country_flag = GER_liberal_government
 		
@@ -761,14 +761,14 @@ country_event = { #arrest hitler
 				news_event = { hours = 6 id = erwache_news.4 }
 	
 				start_civil_war = {
-					ruling_party = theocratic
+					ruling_party = paganism
 					ideology = nazism
 					size = 0.5
 					keep_unit_leaders = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 }
 				}
 			}
 			50 = { #Hitler goes peacefully
-				set_politics = {ruling_party = theocratic elections_allowed = no}
+				set_politics = {ruling_party = paganism elections_allowed = no}
 				news_event = { hours = 6 id = erwache_news.5 }
 			}
 		}

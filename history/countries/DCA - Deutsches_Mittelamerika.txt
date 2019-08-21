@@ -83,7 +83,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/GER/Portrait_Germany_Karl_Friedrich_Otto_Wolff.dds"
 	expire = "1965.1.1"
-	ideology = paganism
+	ideology = paganism_ideology
 	traits = { reichskommissar }
 }
 

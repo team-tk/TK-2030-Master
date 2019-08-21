@@ -2137,6 +2137,40 @@ continent = {
 				"gfx/leaders/Asia/politician_monarchist4.dds"
 			}
 		}
+		
+		paganism = {
+				male = { 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait1.dds"
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait2.dds" 
+				"gfx/leaders/TKGENERIC/AllgemeineSSGeneralPortrait3.dds" 
+				"gfx/leaders/Europe/sspolitician1.dds"
+				"gfx/leaders/Europe/sspolitician2.dds"
+				"gfx/leaders/Europe/sspolitician3.dds"
+				"gfx/leaders/Europe/sspolitician4.dds"
+				"gfx/leaders/Europe/sspolitician5.dds"
+				"gfx/leaders/Europe/sspolitician6.dds"
+				"gfx/leaders/Europe/sspolitician7.dds"
+				"gfx/leaders/Europe/sspolitician8.dds"
+				"gfx/leaders/Europe/sspolitician9.dds"
+			}
+		}
+		
+		islamism = {
+				male = { 
+				"gfx/leaders/Arabia/politician1.dds"
+				"gfx/leaders/Arabia/politician2.dds"
+				"gfx/leaders/Arabia/politician3.dds"
+				"gfx/leaders/Arabia/politician4.dds"
+				"gfx/leaders/Arabia/politician5.dds"
+				"gfx/leaders/Arabia/politician6.dds"
+				"gfx/leaders/Arabia/politician7.dds"
+				"gfx/leaders/Arabia/politician8.dds"
+				"gfx/leaders/Arabia/politician9.dds"
+				"gfx/leaders/Arabia/politician10.dds"
+				"gfx/leaders/Arabia/politician11.dds"
+				"gfx/leaders/Arabia/politician12.dds"
+			}
+		}
 	}	
 
 }

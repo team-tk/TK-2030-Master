@@ -274,6 +274,9 @@ ideologies = {
 			national_populism = {
 			}
 			
+			ultranationalism = {
+			}
+			
 			
 
 		}
@@ -336,7 +339,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 		
-		color = { 127 0 0 }
+		color = { 120 0 0 }
 		
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -431,6 +434,10 @@ ideologies = {
 
 			}
 			national_syndicalism = {
+				
+			}
+			
+			third_position = {
 				
 			}
 			
@@ -722,7 +729,7 @@ ideologies = {
 			"FACTION_NAME_FASCIST_5"
 		}
 		
-		color = { 45 45 45 }
+		color = { 22 22 22 }
 		
 		war_impact_on_world_tension = 0.25		#no major danger
 		faction_impact_on_world_tension = 0.1
@@ -920,7 +927,7 @@ ideologies = {
 			"FACTION_NAME_FASCIST_5"
 		}
 		
-		color = { 18 53 36 }
+		color = { 46 0 0 }
 		
 		war_impact_on_world_tension = 1.0			#evil!
 		faction_impact_on_world_tension = 1.0
@@ -1004,7 +1011,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 		
-		color = { 150 0 0 }
+		color = { 160 0 0 }
 		
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5

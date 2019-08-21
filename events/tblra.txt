@@ -2858,7 +2858,7 @@ country_event = {
 			desc = "War van Overstraeten"
 			picture = "gfx/leaders/VLA/portait_war_van_overstraeten.dds"
 			expire = "1965.1.1"
-			ideology = leninism
+			ideology = trotskyism_ideology
 			traits = {
 				#
 			}
@@ -2966,7 +2966,7 @@ country_event = {
 			desc = "POLITICS_WALTER_DAUGE_DESC"
 			picture = "gfx/leaders/BEL/Portrait_Belgium_Walter_Dauge.tga"
 			expire = "1965.1.1"
-			ideology = leninism
+			ideology = trotskyism_ideology
 			traits = {
 			}
 		}
@@ -3311,7 +3311,7 @@ country_event = {
 			desc = "War van Overstraeten"
 			picture = "gfx/leaders/VLA/portait_war_van_overstraeten.dds"
 			expire = "1965.1.1"
-			ideology = leninism
+			ideology = trotskyism_ideology
 			traits = {
 			#
 			}	

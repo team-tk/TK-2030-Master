@@ -83,7 +83,7 @@ create_country_leader = {
 	desc = "POLITICS_HEINRICH_HIMMLER_DESC"
 	picture = "gfx/leaders/GER/Portrait_Germany_Heinrich_Himmler.dds"
 	expire = "1965.1.1"
-	ideology = paganism
+	ideology = paganism_ideology
 	traits = { dictator }
 }
 

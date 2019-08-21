@@ -5694,13 +5694,13 @@ country_event = {
 				inherit_technology = GER
 				RPE = {	
 				set_politics = {
-				ruling_party = theocratic
+				ruling_party = paganism
 				elections_allowed = no
 				}
 				set_popularities = {
 				democratic = 20
 				nazism = 40
-				theocratic = 40
+				paganism = 40
 				}
 				}
 			}
@@ -5759,13 +5759,13 @@ country_event = {
 				inherit_technology = GER
 				SSB = {	
 				set_politics = {
-				ruling_party = theocratic
+				ruling_party = paganism
 				elections_allowed = no
 				}
 				set_popularities = {
 				democratic = 20
 				nazism = 40
-				theocratic = 40
+				paganism = 40
 				}
 				}
 				
@@ -6042,13 +6042,13 @@ country_event = {
 				inherit_technology = GER
 				DMA = {	
 				set_politics = {
-				ruling_party = theocratic
+				ruling_party = paganism
 				elections_allowed = no
 				}
 				set_popularities = {
 				democratic = 20
 				nazism = 40
-				theocratic = 40
+				paganism = 40
 				}
 				}
 			}

@@ -12,9 +12,14 @@ ideas = {
 			NOT = { 
 			has_government = fascism
 			has_government = nazism
+			has_government = strasserism
+			has_government = paganism
 			has_government = communism
 			has_government = syndicalism
+			has_government = maoism
+			has_government = trotskyism
 			has_government = theocratic
+			has_government = islamism
 			has_idea = security_police_state
 			has_idea = security_major_restrictions
 			has_idea = press_censored
@@ -36,6 +41,8 @@ ideas = {
 			socdem_acceptance = 10
 			conservatism_acceptance = 10
 			democratic_acceptance = 10
+			libertarianism_acceptance = 10
+			progressivism_acceptance = 10
 			}
 			
 			rule = {
@@ -74,15 +81,18 @@ ideas = {
 						has_war = yes
 					}
 					
-					has_government = fascism
-					has_government = nazism
-					has_government = communism
-					has_government = socialism
-					has_government = syndicalism
-					has_government = neutrality
-					has_government = nationalism
-					has_government = monarchism
-					has_government = theocratic
+			has_government = fascism
+			has_government = nazism
+			has_government = strasserism
+			has_government = paganism
+			has_government = communism
+			has_government = syndicalism
+			has_government = maoism
+			has_government = trotskyism
+			has_government = theocratic
+			has_government = islamism
+			has_government = fascist_monarchism
+			has_government = monarchism
 				}
 			}
 			
@@ -139,9 +149,13 @@ ideas = {
 					OR = {
 					has_government = fascism
 					has_government = nazism
+					has_government = strasserism
+					has_government = paganism
 					has_government = neutrality
 					has_government = nationalism
 					has_government = theocratic
+					has_government = islamism
+					has_government = fascist_monarchism
 					}
 			}
 			
@@ -158,6 +172,9 @@ ideas = {
 		nationalism_acceptance = 10
 		nazism_acceptance = 10
 		fascism_acceptance = 10
+		paganism_acceptance = 10
+		strasserism_acceptance = 10
+		fascist_monarchism_acceptance = 10
 		}
 			
 
@@ -188,6 +205,9 @@ ideas = {
 					has_government = communism
 					has_government = socialism
 					has_government = syndicalism
+					has_government = maoism
+					has_government = trotskyism
+					has_government = islamism
 					}
 					}
 			
@@ -203,7 +223,9 @@ ideas = {
 		puppet_cost_factor = -0.3
 		communism_acceptance = 10
 		syndicalism_acceptance = 10
-		socialism_acceptance = 10		
+		socialism_acceptance = 10
+		maoism_acceptance = 10
+		trotskyism_acceptance = 10		
 		}
 			
 
@@ -238,6 +260,8 @@ ideas = {
 						has_government = socdem
 						has_government = conservatism
 						has_government = democratic
+						has_government = progressivism
+						has_government = libertarianism
 						has_government = socialism
 						has_government = neutrality
 						has_government = nationalism
@@ -265,6 +289,8 @@ ideas = {
 		socdem_acceptance = 10
 		conservatism_acceptance = 10
 		democratic_acceptance = 10
+		libertarianism_acceptance = 10
+		progressivism_acceptance = 10
 		nationalism_acceptance = 10
 		monarchism_acceptance = 10
 		neutrality_acceptance = 10
@@ -294,8 +320,10 @@ ideas = {
 			has_idea = press_regulated
 			has_idea = security_minor_restrictions
 			}
-					
+			OR = { 	
 			has_government = monarchism
+			has_government = fascist_monarchism
+			}
 			}
 			
 			level = 1
@@ -310,6 +338,7 @@ ideas = {
 		justify_war_goal_time = -0.25
 		nationalism_acceptance = 10
 		monarchism_acceptance = 10
+		fascist_monarchism_acceptance = 10
 		neutrality_acceptance = 10
 		socialism_acceptance = 10		
 		
