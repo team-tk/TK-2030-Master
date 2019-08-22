@@ -197,7 +197,7 @@ create_country_leader = {
 	name = "Karim Buzarjomehri"
 	picture = "gfx/leaders/PER/Karim_Buzarjomehri.dds"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = military_dictatorship
 	traits = { }
 }
 

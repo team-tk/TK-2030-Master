@@ -185,11 +185,14 @@ create_country_leader = {
 
 
 create_country_leader = {
-	name = "Juan Garcia Oliver"
-	picture = "Juan_Garcia_Oliver_Syndicalist.dds"
+	name = "Francisco Largo Caballero"
+	desc = "POLITICS_CABALLERO_DESC"
+	picture = "Portrait_Spain_Caballero.dds"
 	expire = "1965.1.1"
 	ideology = trotskyism_ideology
-	traits = { }
+	traits = {
+		exalted_revolutionary
+	}
 }
 
 ### PLACEHOLDER
@@ -234,6 +237,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Francisco Franco"
+	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+	picture = "Portrait_Spain_Francisco_Franco.dds"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = { careful_diplomat dictator }
+}
+
+create_country_leader = {
 	name = "Agustín Muñoz Grandes"
 	desc = "POLITICS_AGUSTIN_MUNOZ_GRANDES_DESC"
 	picture = "Agustin_Grandes.dds"
@@ -245,13 +257,13 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Agustín Muñoz Grandes"
-	desc = "POLITICS_AGUSTIN_MUNOZ_GRANDES_DESC"
-	picture = "Agustin_Grandes.dds"
+	name = "José Antonio Primo de Rivera"
+	desc = "POLITICS_RIVERA_DESC"
+	picture = "Portrait_Spain_Rivera.dds"
 	expire = "1965.1.1"
 	ideology = strasserism_ideology
 	traits = {
-		dictator
+		ambitious_reformer
 	}
 }
 

@@ -86,6 +86,25 @@ create_country_leader = {
 	ideology = leninism
 	traits = { }
 }
+
+create_country_leader = {
+	name = "Georgi Dimitrov"
+	desc = "POLITICS_GEORGI_DIMITROV_DESC"
+	picture = "Portrait_Bulgaria_Georgi_Dimitrov.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Georgi Dimitrov"
+	desc = "POLITICS_GEORGI_DIMITROV_DESC"
+	picture = "Portrait_Bulgaria_Georgi_Dimitrov.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
 ### PLACEHOLDER
 create_country_leader = {
 	name = "Georgi Dimitrov"
@@ -138,6 +157,15 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Atanas Burov"
+	desc = "POLITICS_ATANAS_BUROV_DESC"
+	picture = "gfx/leaders/BUL/burov.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
 
 
 create_country_leader = {
@@ -167,11 +195,29 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Hristo Lukov"
+	desc = "POLITICS_HRISTO_LUKOV_DESC"
+	picture = "Portrait_bulgaria_hristo_lukov.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Boris III"
 	desc = "POLITICS_BORIS_III_DESC"
 	picture = "Portrait_Bulgaria_Boris_III.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Boris III"
+	desc = "POLITICS_BORIS_III_DESC"
+	picture = "Portrait_Bulgaria_Boris_III.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
 	traits = { }
 }
 

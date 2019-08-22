@@ -178,10 +178,26 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Georgios Kondylis"
+	picture = "Georgios_Kondylis_-Liberal_Greece.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Georgios Papandreou"
 	picture = "Georgios_Papandreou-_socdem_greece.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Georgios Papandreou"
+	picture = "Georgios_Papandreou-_socdem_greece.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
 	traits = { }
 }
 
@@ -200,6 +216,28 @@ create_country_leader = {
 	picture = "Portrait_Greece_Markos_Vafiadis.dds"
 	expire = "1965.1.1"
 	ideology = marxism
+	traits = {
+		stalins_puppet
+	}
+}
+
+create_country_leader = {
+	name = "Markos Vafiadis"
+	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
+	picture = "Portrait_Greece_Markos_Vafiadis.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = {
+		stalins_puppet
+	}
+}
+
+create_country_leader = {
+	name = "Markos Vafiadis"
+	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
+	picture = "Portrait_Greece_Markos_Vafiadis.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
 	traits = {
 		stalins_puppet
 	}

@@ -217,11 +217,29 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Eduard Dingeldey"
+	desc = "POLITICS_EDUARD_DINGELDEY_DESC"
+	picture = "Portrait_Germany_Eduard_Dingeldey.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Hans Vogel"
 	desc = "POLITICS_HANS_VOGEL_DESC"
 	picture = "Portrait_Germany_Hans_Vogel.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Hans Vogel"
+	desc = "POLITICS_HANS_VOGEL_DESC"
+	picture = "Portrait_Germany_Hans_Vogel.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
 	traits = { }
 }
 
@@ -328,19 +346,10 @@ create_country_leader = {
 
 
 create_country_leader = {
-	name = "Ernst Thälmann"
-	desc = "POLITICS_ERNST_THALMANN_DESC"
-	picture = "Portrait_Germany_Ernst_Thalmann_I.tga"
-	expire = "1956.1.1"
-	ideology = maoism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Ernst Thälmann"
-	desc = "POLITICS_ERNST_THALMANN_DESC"
-	picture = "Portrait_Germany_Ernst_Thalmann_I.tga"
-	expire = "1956.1.1"
+	name = "Otto Wels"
+	desc = "POLITICS_OTTO_WELS_DESC"
+	picture = "Ottowelsportait.dds"
+	expire = "1939.1.16"
 	ideology = trotskyism_ideology
 	traits = { }
 }

@@ -156,6 +156,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Árpád Szakasits"
+	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
+	picture = "gfx/leaders/HUN/arpad.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "István Friedrich"
 	picture = "gfx/leaders/HUN/István_Friedrich_-Conservative_.dds"
 	expire = "1965.1.1"
@@ -168,6 +177,14 @@ create_country_leader = {
 	picture = "gfx/leaders/HUN/Margit_Slachta_-Liberal_Hungary.dds"
 	expire = "1965.1.1"
 	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Margit Slachta"
+	picture = "gfx/leaders/HUN/Margit_Slachta_-Liberal_Hungary.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
 	traits = { }
 }
 
@@ -200,6 +217,18 @@ create_country_leader = {
 					
 					id = 21010
 				}
+				
+
+				create_country_leader = {
+					name = "Otto von Habsburg"
+					desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
+					picture = "gfx/leaders/HUN/Portrait_otto_von_hapsburg.dds"
+					expire = "1965.1.1"
+					ideology = fascist_monarchy
+					traits = { }
+					
+					id = 21010
+				}				
 				
 				create_country_leader = {
 					name = "Ferenc Szálasi"

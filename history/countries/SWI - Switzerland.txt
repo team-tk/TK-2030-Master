@@ -93,6 +93,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Hans Oprecht"
+	desc = ""
+	picture = "Hans_Oprecht_-Swiss_socdem.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Edgar Woog"
 	desc = ""
 	picture = "Edgar_Woog_Socialism.dds"
@@ -107,6 +116,15 @@ create_country_leader = {
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = swiss_federalism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Ernest Béuin"
+	desc = "POLITICS_ERNST_BEGUIN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
 	traits = { }
 }
 
@@ -162,11 +180,28 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Georges Oltramare"
+	picture = "Georges_Oltramare_Fascist.dds" 
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Fritz Platten"
 	desc = "POLITICS_FRITZ_PLATTEN_DESC"
 	picture = "Fritz_Platten_Switzerland_Communist.dds"
 	expire = "1965.1.1"
 	ideology = marxism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Fritz Platten"
+	desc = "POLITICS_FRITZ_PLATTEN_DESC"
+	picture = "Fritz_Platten_Switzerland_Communist.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
 	traits = { }
 }
 
@@ -179,11 +214,29 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Fritz Platten"
+	desc = "POLITICS_FRITZ_PLATTEN_DESC"
+	picture = "Fritz_Platten_Switzerland_Communist.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Royal Council"
 	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
 	picture = "Portrait_Switzerland_Federal_council.dds" # does this exist?
 	expire = "1965.1.1"
 	ideology = constitutional
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Royal Council"
+	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
+	picture = "Portrait_Switzerland_Federal_council.dds" # does this exist?
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
 	traits = { }
 }
 

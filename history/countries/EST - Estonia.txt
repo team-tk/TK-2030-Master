@@ -203,6 +203,17 @@ create_country_leader = {
 			    political_dancer
 			}
 		}
+		
+		create_country_leader = {
+			name = "Friedrich Karl I"
+			desc = "KARL_DESC"
+			picture = "gfx/leaders/EST/frederik_karl.dds"
+			expire = "1965.1.1"
+			ideology = fascist_monarchy
+			traits = {
+			    political_dancer
+			}
+		}
 
 create_field_marshal = {
 	name = "Johan Laidoner"

@@ -132,11 +132,29 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Milan Nedic"
+	desc = ""
+	picture = "gfx/leaders/SER/serf.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Milan Grol"
 	desc = "POLITICS_MILAN_GROL_DESC"
 	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
 	expire = "1965.1.1"
 	ideology = liberalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Milan Grol"
+	desc = "POLITICS_MILAN_GROL_DESC"
+	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
 	traits = { }
 }
 
@@ -148,6 +166,13 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Josip Kopac"
+	picture = "gfx/leaders/YUG/Josip_Kopac_Socdem.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
 create_country_leader = {
 	name = "Draza Mihailovic"
 	desc = ""
@@ -176,6 +201,24 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Josip Broz Tito"
+	desc = "POLITICS_JOSIP_BROZ_TITO_DESC"
+	picture = "Portrait_Yugoslavia_Josip_Broz_Tito.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Josip Broz Tito"
+	desc = "POLITICS_JOSIP_BROZ_TITO_DESC"
+	picture = "Portrait_Yugoslavia_Josip_Broz_Tito.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Mosa Pijade"
 	desc = ""
 	picture = "Mosa_Pijade_Syndicalist.dds"
@@ -199,6 +242,15 @@ create_country_leader = {
 	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Prince Paul"
+	desc = "POLITICS_PRINCE_PAUL_DESC"
+	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
 	traits = { }
 }
 

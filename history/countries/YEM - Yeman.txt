@@ -32,7 +32,14 @@ create_country_leader = {
 	picture = "GFX_portrait_yemen_imam_yahya"
 	expire = "1965.1.1"
 	ideology = emiratism
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Imam Yahya"
+	desc = "POLITICS_IMAM_YAHYA_DESC"
+	picture = "GFX_portrait_yemen_imam_yahya"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
+	traits = { }
 }

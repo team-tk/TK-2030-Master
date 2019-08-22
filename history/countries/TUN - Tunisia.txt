@@ -66,9 +66,31 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_1.dds"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Amin al-Husseini"
+	desc = ""
+	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_1.dds"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Amin al-Husseini"
+	desc = ""
+	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_1.dds"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Amin al-Husseini"
+	desc = ""
+	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_1.dds"
+	ideology = ultranationalism
+	traits = { }
 }
 
 create_country_leader = {
@@ -76,9 +98,39 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
 	ideology = leninism
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Bulus Farah"
+	desc = ""
+	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Bulus Farah"
+	desc = ""
+	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Bulus Farah"
+	desc = ""
+	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Bulus Farah"
+	desc = ""
+	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
+	ideology = revolutionary_socialism
+	traits = { }
 }
 
 create_country_leader = {
@@ -87,6 +139,15 @@ create_country_leader = {
 	picture = "gfx/leaders/TUN/Portrait_Tunisia_Moncef_Bey.tga"
 	expire = "1965.1.1"
 	ideology = liberalism_ideology
+}
+
+
+create_country_leader = {
+	name = "Moncef Bey"
+	desc = "POLITICS_TUN2_DESC"
+	picture = "gfx/leaders/TUN/Portrait_Tunisia_Moncef_Bey.tga"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
 }
 
 create_country_leader = {
@@ -103,4 +164,12 @@ create_country_leader = {
 	picture = "gfx/leaders/TUN/Portrait_Tunisia_Moncef_Bey.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
+}
+
+create_country_leader = {
+	name = "Moncef Bey"
+	desc = "POLITICS_TUN2_DESC"
+	picture = "gfx/leaders/TUN/Portrait_Tunisia_Moncef_Bey.tga"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
 }

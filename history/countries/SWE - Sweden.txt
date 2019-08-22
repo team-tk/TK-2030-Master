@@ -126,6 +126,15 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Per Albin Hansson"
+	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
+	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
 
 create_country_leader = {
 	name = "Karl Kilbom"
@@ -145,11 +154,38 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Sven Olov Lindholm"
+	desc = "POLITICS_SVEN_OLOV_LINDHOLM_DESC"
+	picture = "gfx/leaders/SWE/Portrait_SWE_Sven_Olov_Lindholm.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { dictator }
+}
+
+create_country_leader = {
 	name = "Sven Linderot"
 	desc = "POLITICS_SVEN_LINDEROT_DESC"
 	picture = "Sven_Linderot_Communism_Sweden.dds"
 	expire = "1965.1.1"
 	ideology = marxism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Sven Linderot"
+	desc = "POLITICS_SVEN_LINDEROT_DESC"
+	picture = "Sven_Linderot_Communism_Sweden.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Sven Linderot"
+	desc = "POLITICS_SVEN_LINDEROT_DESC"
+	picture = "Sven_Linderot_Communism_Sweden.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
 	traits = { }
 }
 
@@ -187,6 +223,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Gustaf V"
+	picture = "Portrait_Sweden_Gustaf_V.dds"
+	expire = "1950.10.29"
+	ideology = fascist_monarchy
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Birger Furugard"
 	picture = "Birger_Furugard_Ethnic_Nationalist.dds"
 	expire = "1965.1.1"
@@ -202,6 +246,16 @@ create_country_leader = {
 	ideology = center_right
 	traits = { }
 }
+
+create_country_leader = {
+	name = "Axel Pehrsson-Bramstorp"
+	desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
+	picture = "Axel_Pehrsson-Bramstorp_-Liberal_Sweden.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
 create_country_leader = {
 	name = "Gösta Bagge"
 	desc = ""

@@ -161,6 +161,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Dirk Jan de Geer"
+	desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
+	picture = "Portrait_Netherlands_Dirk_Jan_de_Geer.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Hendrikus Colijn"
 	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
 	picture = "GFX_portrait_holland_hendrikus_colijn"
@@ -283,6 +292,15 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Willem Schermerhorn"
+	desc = "POLITICS_WIM_SCHERMERHORN_DESC"
+	picture = "GFX_portrait_hol_wim_schermerhorn"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
 ### PLACEHOLDER
 create_country_leader = {
 	name = "Willem Schermerhorn"
@@ -298,6 +316,16 @@ create_country_leader = {
 	picture = "Portrait_Netherlands_Wilhelmina.dds"
 	expire = "1948.9.4"
 	ideology = constitutional
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Queen Willhelmina"
+	picture = "Portrait_Netherlands_Wilhelmina.dds"
+	expire = "1948.9.4"
+	ideology = fascist_monarchy
 	traits = {
 		#
 	}

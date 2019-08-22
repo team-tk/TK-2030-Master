@@ -110,6 +110,15 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Johan Nygaardsvold"
+	desc = "POLITICS_JOHAN_NYGAARDSVOLD_DESC"
+	picture = "Portrait_Norway_Johan_Nygaardsvold.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
 
 create_country_leader = {
 	name = "Vidkun Quisling"
@@ -117,6 +126,15 @@ create_country_leader = {
 	picture = "Portrait_Norway_Vidkun_Quisling.dds"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Vidkun Quisling"
+	desc = "POLITICS_VIDKUN_QUISLING_DESC"
+	picture = "Portrait_Norway_Vidkun_Quisling.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
 	traits = { }
 }
 
@@ -138,11 +156,38 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Johan Ludwig Mowinckel"
+	desc = "POLITICS_JOHAN_LUDWIG_MOWINCKEL_DESC"
+	picture = "Johan_Ludwig_Mowinckel_-Liberal_Norway.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Adam Egede-Nissen"
 	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
 	picture = "Adam_Egede-Nissen_Communism.dds"
 	expire = "1965.1.1"
 	ideology = marxism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Adam Egede-Nissen"
+	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
+	picture = "Adam_Egede-Nissen_Communism.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Adam Egede-Nissen"
+	desc = "POLITICS_ADAM_EGEDE_NISSEN_DESC"
+	picture = "Adam_Egede-Nissen_Communism.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
 	traits = { }
 }
 
@@ -167,6 +212,14 @@ create_country_leader = {
 	picture = "Portrait_Norway_Haakon_VIII.dds"
 	expire = "1957.9.21"
 	ideology = constitutional
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Haakon VIII"
+	picture = "Portrait_Norway_Haakon_VIII.dds"
+	expire = "1957.9.21"
+	ideology = fascist_monarchy
 	traits = { }
 }
 

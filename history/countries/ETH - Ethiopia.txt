@@ -72,11 +72,43 @@ create_country_leader = {
 	traits = { }
 }
 create_country_leader = {
+	name = "Makonnen Endelkachew"
+	desc = "POLITICS_MAKONNEN_ENDELKACHEW_DESC"
+	picture = "gfx/leaders/SAF/Portrait_South_Africa_Political_Leader_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+create_country_leader = {
 	name = "Takele Wolde Hawariat"
 	desc = "POLITICS_TAKELE_WOLDE_HAWARIAT_DESC"
 	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
 	expire = "1965.1.1"
 	ideology = marxism
+	traits = { }
+}
+create_country_leader = {
+	name = "Takele Wolde Hawariat"
+	desc = "POLITICS_TAKELE_WOLDE_HAWARIAT_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+create_country_leader = {
+	name = "Takele Wolde Hawariat"
+	desc = "POLITICS_TAKELE_WOLDE_HAWARIAT_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+create_country_leader = {
+	name = "Takele Wolde Hawariat"
+	desc = "POLITICS_TAKELE_WOLDE_HAWARIAT_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
 	traits = { }
 }
 create_country_leader = {
@@ -90,12 +122,59 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Haile Selassie Gugsa" #Most notable defector to Italy
+	desc = "POLITICS_HAILE_SELASSIE_GUGSA_DESC"
+	picture = "gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+	id = 30100
+}
+
+create_country_leader = {
+	name = "Haile Selassie Gugsa" #Most notable defector to Italy
+	desc = "POLITICS_HAILE_SELASSIE_GUGSA_DESC"
+	picture = "gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+	id = 30100
+}
+
+create_country_leader = {
+	name = "Haile Selassie Gugsa" #Most notable defector to Italy
+	desc = "POLITICS_HAILE_SELASSIE_GUGSA_DESC"
+	picture = "gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+	expire = "1965.1.1"
+	ideology = ultranationalism
+	traits = { }
+	id = 30100
+}
+
+create_country_leader = {
 	name = "Haile Selassie"
 	desc = "POLITICS_HAILE_SELASSIE_DESC"
 	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
 	traits = { DARK_lion_of_judah }
+}
+
+create_country_leader = {
+	name = "Haile Selassie"
+	desc = "POLITICS_HAILE_SELASSIE_DESC"
+	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
+	traits = { DARK_lion_of_judah }
+}
+
+create_country_leader = {
+	name = "Seyoum Mengesha"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = military_dictatorship
+	traits = { }
 }
 
 

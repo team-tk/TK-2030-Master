@@ -101,6 +101,23 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Xavier Relecom"
+	desc = "Xavier Relecom"
+	picture = "portrait_xavier_relecom.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+create_country_leader = {
+	name = "Julien Lahaut"
+	desc = "Julien Lahaut"
+	picture = "LAHAUT_Julien.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Léon Degrelle"
 	desc = "POLITICS_LEON_DEGRELLE_DESC"
 	picture = "Portrait_Belgium_LEON_DEGRELLE.dds"
@@ -116,6 +133,15 @@ create_country_leader = {
 	picture = "Portrait_Belgium_LEON_DEGRELLE.dds"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Léon Degrelle"
+	desc = "POLITICS_LEON_DEGRELLE_DESC"
+	picture = "Portrait_Belgium_LEON_DEGRELLE.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
 	traits = { }
 }
 
@@ -140,11 +166,30 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Achille van Acker"
+	desc = "Achille van Acker"
+	picture = "Portrait_van_acker.dds"
+	expire = "1939.1.1"
+    ideology = progressivism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Paul-Emile Janson"
 	desc = "Paul-Emile Janson"
 	picture = "portrait_Janson.dds"
 	expire = "1939.1.1"
     ideology = liberalism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Paul-Emile Janson"
+	desc = "Paul-Emile Janson"
+	picture = "portrait_Janson.dds"
+	expire = "1939.1.1"
+    ideology = libertarianism_ideology
 	traits = {
 	}
 }
@@ -221,6 +266,15 @@ create_country_leader = {
 	picture = "Portrait_Belgium_Leopold_III.dds"
 	expire = "1983.9.15"
 	ideology = constitutional
+	traits = { stout_defender
+	}
+}
+
+create_country_leader = {
+	name = "Leopold III"
+	picture = "Portrait_Belgium_Leopold_III.dds"
+	expire = "1983.9.15"
+	ideology = fascist_monarchy
 	traits = { stout_defender
 	}
 }

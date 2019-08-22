@@ -168,6 +168,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "James Hertzog"
+	picture = "Portrait_South_Africa_GG_James_Hertzog.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Charles Stallard"
 	desc = ""
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"

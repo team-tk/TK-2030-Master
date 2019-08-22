@@ -31,9 +31,7 @@ create_country_leader = {
 	picture = "GFX_portrait_nepal_portrait_juddah_rana"
 	expire = "1965.1.1"
 	ideology = despotism
-	traits = {
-		#
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -42,7 +40,14 @@ create_country_leader = {
 	picture = "GFX_portrait_nepal_portrait_juddah_rana"
 	expire = "1965.1.1"
 	ideology = absolutism
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Juddha Rana"
+	desc = "POLITICS_JUDDHA_RANA_DESC"
+	picture = "GFX_portrait_nepal_portrait_juddah_rana"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
+	traits = { }
 }

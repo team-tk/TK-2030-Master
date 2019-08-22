@@ -329,6 +329,11 @@ ideologies = {
 			hoxhaism = {
 			}
 			
+			anti_revisionism = {
+			}
+			
+			
+			
 		}
 		
 		dynamic_faction_names = {
@@ -372,6 +377,9 @@ ideologies = {
 			}
 			
 			anarcho_syndicalism = {
+			}
+			
+			anarchist_communism = {
 			}
 			
 			

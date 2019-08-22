@@ -115,6 +115,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Thorvald Stauning"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Mogens Fog"
 	picture = "Mogens_Fog_Socialist.dds"
 	expire = "1965.1.1"
@@ -151,11 +160,38 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Frits Clausen"
+	desc = "POLITICS_FRITS_CLAUSEN_DESC"
+	picture = "gfx/leaders/DEN/Portrait_Denmark_Frits_Clausen.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Aksel Larsen"
 	desc = "POLITICS_AKSEL_LARSEN_DESC"
 	picture = "Aksel_Larsen_communism.dds"
 	expire = "1965.1.1"
 	ideology = leninism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Aksel Larsen"
+	desc = "POLITICS_AKSEL_LARSEN_DESC"
+	picture = "Aksel_Larsen_communism.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Aksel Larsen"
+	desc = "POLITICS_AKSEL_LARSEN_DESC"
+	picture = "Aksel_Larsen_communism.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
 	traits = { }
 }
 
@@ -178,10 +214,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Peter Rochegune Munch"
+	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
+	picture = "Peter_Rochegune-_Denmark_Liberal.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Christian X"
 	picture = "Portrait_Denmark_Christian_X.dds"
 	expire = "1947.4.20"
 	ideology = constitutional
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Christian X"
+	picture = "Portrait_Denmark_Christian_X.dds"
+	expire = "1947.4.20"
+	ideology = fascist_monarchy
 	traits = { }
 }
 

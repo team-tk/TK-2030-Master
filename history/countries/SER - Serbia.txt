@@ -70,7 +70,25 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/SER/serf.dds"
 	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Milan Nedic"
+	desc = ""
+	picture = "gfx/leaders/SER/serf.dds"
+	expire = "1965.1.1"
 	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Milan Nedic"
+	desc = ""
+	picture = "gfx/leaders/SER/serf.dds"
+	expire = "1965.1.1"
+	ideology = ultranationalism
 	traits = { }
 }
 
@@ -95,6 +113,24 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Aleksandar Ranković"
+	desc = ""
+	picture = "gfx/leaders/SER/serc.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Aleksandar Ranković"
+	desc = ""
+	picture = "gfx/leaders/SER/serc.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
 ### placeholder
 create_country_leader = {
 	name = "Milan Nedic"
@@ -116,12 +152,19 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Prince Paul"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
+	name = "Peter II"
+	desc = ""
+	picture = "gfx/leaders/SER/Portrait_Yugoslavia_Peter_II.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Peter II"
+	desc = ""
+	picture = "gfx/leaders/SER/Portrait_Yugoslavia_Peter_II.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
+	traits = { }
 }

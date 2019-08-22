@@ -35,9 +35,43 @@ create_country_leader = {
 	picture = "gfx/leaders/Tan/Portrait_Salchak_Toka.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Salchak Toka"
+	desc = "POLITICS_SALCHAK_TOKA_DESC"
+	picture = "gfx/leaders/Tan/Portrait_Salchak_Toka.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Salchak Toka"
+	desc = "POLITICS_SALCHAK_TOKA_DESC"
+	picture = "gfx/leaders/Tan/Portrait_Salchak_Toka.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Salchak Toka"
+	desc = "POLITICS_SALCHAK_TOKA_DESC"
+	picture = "gfx/leaders/Tan/Portrait_Salchak_Toka.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Salchak Toka"
+	desc = "POLITICS_SALCHAK_TOKA_DESC"
+	picture = "gfx/leaders/Tan/Portrait_Salchak_Toka.dds"
+	expire = "1965.1.1"
+	ideology = revolutionary_socialism
+	traits = { }
 }
 
 
