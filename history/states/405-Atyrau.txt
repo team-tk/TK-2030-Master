@@ -5,6 +5,7 @@ state={
 	history={
 		owner = RUS
 		add_core_of = UZB
+		add_core_of = RUS
 		victory_points = {
 			1459 3 
 		}
@@ -18,7 +19,7 @@ state={
 
 		1918.11.11 = {
 			owner = SOV
-			}
+		}
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4
@@ -30,7 +31,7 @@ state={
 		1991.12.26 = {
 			owner = UZB
 			controller = UZB
-			}
+		}
 
 	}
 
