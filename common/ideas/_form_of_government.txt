@@ -208,6 +208,7 @@ ideas = {
 					has_government = maoism
 					has_government = trotskyism
 					has_government = islamism
+					has_government = neutrality
 					}
 					}
 			
@@ -236,6 +237,7 @@ ideas = {
 
 			}
 		}
+		
 		
 			fog_dictatorship_de = {
 			
@@ -278,6 +280,7 @@ ideas = {
 			level = 1
 			
 		rule = {
+		can_declare_war_on_same_ideology = yes
 		can_force_government = no
 		can_send_volunteers = yes
 		can_puppet = yes
@@ -342,6 +345,234 @@ ideas = {
 		neutrality_acceptance = 10
 		socialism_acceptance = 10		
 		
+		}
+			
+
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+
+			}
+		}
+		
+		fog_dictatorship_re = {
+			
+			#cost = 150
+			removal_cost = -1
+			
+			available = {
+			
+					
+			NOT = { 
+			has_idea = security_liberty_first
+			has_idea = press_free
+			has_idea = press_regulated
+			has_idea = security_minor_restrictions
+			}
+					
+					OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = nationalism
+					}
+			}
+			
+			level = 1
+			
+		rule = {
+		can_force_government = no
+		can_send_volunteers = yes
+		can_puppet = yes
+		}
+		
+		modifier = {
+		justify_war_goal_when_in_major_war_time = -0.80
+		nationalism_acceptance = 10
+		fascism_acceptance = 10
+		conservatism_acceptance = 10
+		neutrality_acceptance = 10
+		}
+			
+
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+
+			}
+		}
+		
+		fog_dictatorship_mi = {
+			
+			#cost = 150
+			removal_cost = -1
+			
+			available = {
+			
+					
+			NOT = { 
+			has_idea = security_liberty_first
+			has_idea = press_free
+			has_idea = press_regulated
+			has_idea = security_minor_restrictions
+			}
+					
+					OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = nationalism
+					}
+			}
+			
+			level = 1
+			
+		rule = {
+		can_force_government = no
+		can_send_volunteers = yes
+		can_puppet = yes
+		}
+		
+		modifier = {
+		justify_war_goal_when_in_major_war_time = -0.80
+		nationalism_acceptance = 10
+		fascism_acceptance = 10
+		conservatism_acceptance = 10
+		neutrality_acceptance = 10
+		}
+			
+
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+
+			}
+		}
+		
+		fog_dictatorship_ss = {
+			
+			#cost = 150
+			removal_cost = -1
+			
+			available = {
+			
+					
+			NOT = { 
+			has_idea = security_liberty_first
+			has_idea = press_free
+			has_idea = press_regulated
+			has_idea = security_minor_restrictions
+			}
+					
+			OR = {	
+			AND = {
+			original_tag = GER
+			has_government = nazism
+			}
+					
+			has_government = paganism
+			}
+			}
+			
+			level = 1
+			
+		rule = {
+		can_force_government = no
+		can_send_volunteers = yes
+		can_puppet = yes
+		}
+		
+		modifier = {
+		justify_war_goal_when_in_major_war_time = -0.80
+		paganism_acceptance = 10
+		nazism_acceptance = 10
+		fascism_acceptance = 10
+		nationalism_acceptance = 10
+		}
+			
+
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+
+			}
+		}
+		
+		fog_dictatorship_is = {
+			
+			#cost = 150
+			removal_cost = -1
+			
+			available = {
+			
+					
+			NOT = { 
+			has_idea = security_liberty_first
+			has_idea = press_free
+			has_idea = press_regulated
+			has_idea = security_minor_restrictions
+			}
+						
+			has_government = islamism
+			}
+			
+			level = 1
+			
+		rule = {
+		can_force_government = no
+		can_send_volunteers = yes
+		can_puppet = yes
+		}
+		
+		modifier = {
+		justify_war_goal_when_in_major_war_time = -0.80
+		socialism_acceptance = 10
+		neutrality_acceptance = 10
+		nationalism_acceptance = 10
+		}
+			
+
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+
+			}
+		}
+		
+		fog_dictatorship_th = {
+			
+			#cost = 150
+			removal_cost = -1
+			
+			available = {
+			
+					
+			NOT = { 
+			has_idea = security_liberty_first
+			has_idea = press_free
+			has_idea = press_regulated
+			has_idea = security_minor_restrictions
+			}
+						
+			has_government = theocratic
+			}
+			
+			level = 1
+			
+		rule = {
+		can_force_government = no
+		can_send_volunteers = yes
+		can_puppet = yes
+		}
+		
+		modifier = {
+		justify_war_goal_when_in_major_war_time = -0.80
+		conservatism_acceptance = 10
+		neutrality_acceptance = 10
+		nationalism_acceptance = 10
 		}
 			
 

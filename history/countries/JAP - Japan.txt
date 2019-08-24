@@ -3,7 +3,7 @@ capital = 282
 oob = "JAP_1936"
 
 add_ideas = {
-fog_dictatorship
+fog_dictatorship_mo
 religion_shintoism
 }
 
@@ -23,6 +23,7 @@ add_ideas = {
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
 	JAP_militarism
+	JAP_hirohito
 }
 
 add_ideas = {

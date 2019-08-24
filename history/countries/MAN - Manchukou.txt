@@ -27,7 +27,7 @@ if = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = monarchism
+	ruling_party = fascist_monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -35,7 +35,7 @@ set_politics = {
 
 set_popularities = {
 fascism = 37
-monarchism = 63
+fascist_monarchism = 63
 }
 
 create_country_leader = {

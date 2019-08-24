@@ -17,6 +17,26 @@
  fog_dictatorship_lw:0 "Left-Wing Dictatorship"
  fog_dictatorship_de:0 "Global Policeman"
  
+ fog_dictatorship_an:0 "Anarchist Dictatorship"
+ fog_dictatorship_re:0 "Reactionary Dictatorship"
+ fog_dictatorship_is:0 "Islamic Dictatorship"
+ fog_dictatorship_mi:0 "Military Dictatorship"
+ fog_dictatorship_ss:0 "SS Dictatorship"
+ fog_dictatorship_th:0 "Theocratic Dictatorship"
+ 
+ form_of_congress:0 "Type of Legislature"
+ foc_congress_closed:0 "Closed Legislature"
+ foc_congress_unicameral:0 "Unicameral Legislature"
+ foc_congress_bicameral:0 "Bicameral Legislature"
+ foc_congress_rubber:0 "Rubber-Stamp Legislature"
+ 
+ form_of_judiciary:0 "Type of Justice System"
+ foj_common_law:0 "Common Law"
+ foj_civil_law:0 "Civil Law"
+ foj_mixed_law:0 "Mixed Law"
+ foj_islamic_law:0 "Islamic Law"
+ foj_kangaroo:0 "Kangaroo Court"
+ 
  JAP_military_purges1:0 "Military Purges"
 
 ### New Advisor Traits

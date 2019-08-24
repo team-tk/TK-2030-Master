@@ -29,6 +29,81 @@ spriteType = {
 		name = "GFX_idea_fog_dictatorship_mo"
 		texturefile = "gfx/interface/ideas/government/form_of_government/monarchist_dictatorship.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_fog_dictatorship_re"
+		texturefile = "gfx/interface/ideas/government/form_of_government/reactionary_dictatorship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fog_dictatorship_is"
+		texturefile = "gfx/interface/ideas/government/form_of_government/islamic_dictatorship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fog_dictatorship_mi"
+		texturefile = "gfx/interface/ideas/government/form_of_government/military_dictatorship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fog_dictatorship_ss"
+		texturefile = "gfx/interface/ideas/government/form_of_government/ss_dictatorship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fog_dictatorship_th"
+		texturefile = "gfx/interface/ideas/government/form_of_government/theocratic_dictatorship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fog_dictatorship_an"
+		texturefile = "gfx/interface/ideas/government/form_of_government/anarchist_dictatorship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_foc_congress_closed"
+		texturefile = "gfx/interface/ideas/government/congress/closed_congress.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_foc_congress_unicameral"
+		texturefile = "gfx/interface/ideas/government/congress/congress.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_foc_congress_bicameral"
+		texturefile = "gfx/interface/ideas/government/congress/congress.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_foc_congress_rubber"
+		texturefile = "gfx/interface/ideas/government/congress/rubber_stamp.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_foj_common_law"
+		texturefile = "gfx/interface/ideas/government/judiciary/judiciary.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_foj_civil_law"
+		texturefile = "gfx/interface/ideas/government/judiciary/judiciary.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_foj_mixed_law"
+		texturefile = "gfx/interface/ideas/government/judiciary/judiciary.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_foj_islamic_law"
+		texturefile = "gfx/interface/ideas/government/judiciary/islamic_law.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_foj_kangaroo"
+		texturefile = "gfx/interface/ideas/government/judiciary/kangaroo_courts.dds"
+	}
 
 
 	spriteType = {

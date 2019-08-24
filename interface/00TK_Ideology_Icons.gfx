@@ -734,7 +734,7 @@ spriteType = {
 	
 	spriteType = {
 		name = "GFX_ideology_JAP_fascist_monarchism_group"
-		texturefile = "gfx/interface/ideologies/monarchism/JAP_monarchism.dds"
+		texturefile = "gfx/interface/ideologies/party_emblems/JAP_fascism.dds"
 	}
 	
 	spriteType = {
@@ -758,8 +758,18 @@ spriteType = {
 	}
 	
 	spriteType = {
+		name = "GFX_ideology_MAN_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/party_emblems/MAN_fascism.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_MCO_fascist_monarchism_group"
 		texturefile = "gfx/interface/ideologies/monarchism/MCO_monarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_MEN_fascist_monarchism_group"
+		texturefile = "gfx/interface/ideologies/party_emblems/MEN_fascism.dds"
 	}
 	
 	spriteType = {
@@ -877,10 +887,6 @@ spriteType = {
 		texturefile = "gfx/interface/ideologies/monarchism/MON_monarchism.dds"
 	}
 	
-	spriteType = {
-		name = "GFX_ideology_MEN_fascist_monarchism_group"
-		texturefile = "gfx/interface/ideologies/monarchism/MON_monarchism.dds"
-	}
 	
 	spriteType = {
 		name = "GFX_ideology_UKR_fascist_monarchism_group"
