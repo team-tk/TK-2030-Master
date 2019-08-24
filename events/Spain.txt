@@ -265,15 +265,15 @@ country_event = {
 		    } 
 				load_oob = "SPR_Civil_War"
 				set_province_controller = 9812
-	    set_province_controller = 871
-		set_province_controller = 798
-		set_province_controller = 3909
-		set_province_controller = 3954
-	    set_province_controller = 790
-		set_province_controller = 11793
-		set_province_controller = 11819
-		set_province_controller = 899
-		set_province_controller = 9845
+	    		set_province_controller = 871
+				set_province_controller = 798
+				set_province_controller = 3909
+				set_province_controller = 3954
+	    		set_province_controller = 790
+				set_province_controller = 11793
+				set_province_controller = 11819
+				set_province_controller = 899
+				set_province_controller = 9845
 				set_equipment_fraction = 0.3
 				set_stability = 0.4
 			    set_war_support = 0.8
@@ -1210,6 +1210,7 @@ country_event = {
 		has_defensive_war = no
 		NOT = { has_democratic_government = yes }
 		NOT = { has_communist_government = yes }
+		NOT = { is_historical_focus_on = yes }
 	}
 	
 	option = { # Support Government
@@ -2936,7 +2937,13 @@ country_event = {
 	}
 
 	option = { #Send Support
-	    ai_chance = { factor = 0.1 }
+		if = {
+			limit = {
+				is_historical_focus_on = no
+			}
+			ai_chance = { factor = 0 }
+		}
+		ai_chance = { factor = 0.5 }
 		name = spain.32.a
 		set_country_flag = promised_help_republican_spain
 		hidden_effect = {
@@ -2957,7 +2964,13 @@ country_event = {
 	}
 
 	option = {
-	    ai_chance = { factor = 0.9 }
+		if = {
+			limit = {
+				is_historical_focus_on = yes
+			}
+			ai_chance = { factor = 1 }
+		}
+		ai_chance = { factor = 0.5 }
 		name = spain.32.b
 	}
 }
@@ -2978,46 +2991,46 @@ country_event = {
 	option = { #War!
 		name = spain.33.a
 		    GER = {
-		    declare_war_on = { target = FRA type = annex_everything }
+		    	declare_war_on = { target = FRA type = annex_everything }
 			}
-		    FRA = {
-			if = {
-			limit = { is_faction_leader = no }
-		    create_faction = "french_alliance"
-			set_country_flag = fra_ger_spr_war
-            }			
-			set_rule = { can_create_factions = yes }
-			if = {
-			limit = {
-			SPR = {
-			has_fascist_government = yes
-			}
-			}
-			add_to_faction = D01
-			D01 = {
-				add_ai_strategy = {
-					type = alliance
-					id = "FRA"
-					value = 200
+			FRA = {
+				if = {
+					limit = { is_faction_leader = no }
+		   			create_faction = "french_alliance"
+					set_country_flag = fra_ger_spr_war
+         	    }			
+				set_rule = { can_create_factions = yes }
+				if = {
+					limit = {
+						SPR = {
+							has_fascist_government = yes
+						}
+					}
+					add_to_faction = D01
+					D01 = {
+						add_ai_strategy = {
+							type = alliance
+							id = "FRA"
+							value = 200
+						}
+					}
+				}
+				if = {
+					limit = {
+						SPR = {
+							has_democratic_government = yes
+						}
+				}
+				add_to_faction = SPR
+				SPR = {
+					add_ai_strategy = {
+						type = alliance
+						id = "FRA"
+						value = 200
+					}
 				}
 			}
-			}
-			if = {
-			limit = {
-			SPR = {
-			has_democratic_government = yes
-			}
-			}
-			add_to_faction = SPR
-			SPR = {
-				add_ai_strategy = {
-					type = alliance
-					id = "FRA"
-					value = 200
-				}
-			}
-			}
-			}
+		}
 		if = {
 		    limit = {
 			SPR = {
@@ -3622,6 +3635,8 @@ country_event = {
 	trigger = {
 		NOT = { has_global_flag = scw_over }
 		has_defensive_war = no
+		is_tutorial = no
+		is_historical_focus_on = no
 	}
 	
 	option = { # Support Government
@@ -4465,14 +4480,15 @@ country_event = {
 				    ambitious_reformer
 	            }
             }
-            set_party_name = 
-		   {ideology = communism 
-		    long_name = SPR_wf_long 
-		    name = SPR_wf }	
+            set_party_name = {
+				ideology = communism 
+		    	long_name = SPR_wf_long 
+		   		name = SPR_wf 
+			}	
             #every_country = {
 		        #country_event = { hours = 6 id = spain.67 }
 		    #}
-		country_event = { id = spain.64 days = 1 }			
+			country_event = { id = spain.64 days = 1 }			
 		}
 		custom_effect_tooltip = junta_seizes_power
 		add_political_power = -25
