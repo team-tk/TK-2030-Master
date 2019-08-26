@@ -16,6 +16,16 @@ spriteType = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_fog_authoritarian_mi"
+		texturefile = "gfx/interface/ideas/government/form_of_government/military_dictatorship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fog_authoritarian_re"
+		texturefile = "gfx/interface/ideas/government/form_of_government/reactionary_dictatorship.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_fog_dictatorship_lw"
 		texturefile = "gfx/interface/ideas/government/form_of_government/left_wing_dictatorship.dds"
 	}
@@ -73,7 +83,7 @@ spriteType = {
 	spriteType = {
 		name = "GFX_idea_foc_congress_bicameral"
 		texturefile = "gfx/interface/ideas/government/congress/congress.dds"
-	}	
+	}
 	
 	spriteType = {
 		name = "GFX_idea_foc_congress_rubber"

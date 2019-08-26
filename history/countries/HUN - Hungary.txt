@@ -111,6 +111,19 @@ if = {
 }
 
 create_country_leader = {
+		name = "Miklós Horthy"
+		desc = "POLITICS_MIKLOS_HORTHY_DESC"
+		picture = "Portrait_Hungary_Miklos_Horthy.dds"
+		expire = "1965.1.1"
+		ideology = oligarchism
+		traits = {
+			fascist_sympathies
+			anti_communist
+		}
+		id = 500 #Horthy Neutral
+	}
+
+create_country_leader = {
 	name = "Mátyás Rákosi"
 	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
 	picture = "Portrait_Hungary_Matyas_Rakoski.dds"

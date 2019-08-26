@@ -5,6 +5,8 @@ oob = "GER_1936"
 add_ideas = {
 religion_lutheranism
 fog_dictatorship
+foc_congress_rubber
+foj_kangaroo
 }
 
 set_fuel_ratio = 0.8
@@ -271,9 +273,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Anton Drexler"
-	desc = "POLITICS_ANTON_DREXLER_DESC"
-	picture = "Portrait_Germany_Anton_Drexler.dds"
+	name = "Otto Strasser"
+	picture = "Germany_Strasserism_Otto_Strasser.dds"
 	expire = "1965.1.1"
 	ideology = strasserism_ideology
 	traits = { dictator }

@@ -11,6 +11,8 @@ if = {
 
 add_ideas = {
 fog_dictatorship_lw
+foc_congress_rubber
+foj_kangaroo
 religion_atheism
 }
 

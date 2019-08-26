@@ -126,13 +126,22 @@ create_country_leader = {
 	traits = { }
 }
 
-### PLACEHOLDER
 create_country_leader = {
 	name = "Léon Degrelle"
 	desc = "POLITICS_LEON_DEGRELLE_DESC"
 	picture = "Portrait_Belgium_LEON_DEGRELLE.dds"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
+	traits = { }
+}
+
+### PLACEHOLDER
+create_country_leader = {
+	name = "Léon Degrelle"
+	desc = "POLITICS_LEON_DEGRELLE_DESC"
+	picture = "Belgium_Germany_Puppet_National Socialist_Leon_Degrelle.dds"
+	expire = "1965.1.1"
+	ideology = paganism_ideology
 	traits = { }
 }
 
@@ -282,7 +291,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Staf De Clercq"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "Belgium_Nationalism_Staf_de_Clercq.dds"
 	expire = "1965.1.1"
 	ideology = nationalism_ideology
 	traits = { }

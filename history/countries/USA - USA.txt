@@ -11,6 +11,8 @@ if = {
 
 add_ideas = {
 	fog_democratic
+	foj_civil_law
+	foc_congress_bicameral
 	religion_protestantism
 }
 

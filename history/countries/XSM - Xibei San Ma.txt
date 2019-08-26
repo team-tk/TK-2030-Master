@@ -24,14 +24,14 @@ if = {
 
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = reactionary
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 100
+	reactionary = 100
 }
 
 create_country_leader = {
@@ -40,6 +40,17 @@ create_country_leader = {
 	picture = "GFX_portrait_xsm_ma_bufang"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ma Bufang"
+	desc = ""
+	picture = "GFX_portrait_xsm_ma_bufang"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
 	traits = {
 		#
 	}

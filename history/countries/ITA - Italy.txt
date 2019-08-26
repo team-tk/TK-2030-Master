@@ -30,6 +30,8 @@ add_ideas = {
 
 add_ideas = {
 fog_dictatorship
+foc_congress_rubber
+foj_kangaroo
 religion_catholicism
 }
 
@@ -317,7 +319,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ferruccio Parri"
 	desc = "POLITICS_FERRUCCIO_PARRI_DESC"
-	picture = "GFX_portrait_italy_ferruccio_parri"
+	picture = "Italy_Social Democratic_Ferruccio_Parri.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy
 	traits = {
@@ -328,7 +330,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ferruccio Parri"
 	desc = "POLITICS_FERRUCCIO_PARRI_DESC"
-	picture = "GFX_portrait_italy_ferruccio_parri"
+	picture = "Italy_Social Democratic_Ferruccio_Parri.dds"
 	expire = "1965.1.1"
 	ideology = progressivism_ideology
 	traits = {
@@ -339,7 +341,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Palmiro Togliatti"
 	desc = "POLITICS_PALMIRO_TOGLIATTI_DESC"
-	picture = "GFX_portrait_ita_palmiro_togliatti"
+	picture = "Italy_Communist_Palmiro_Togliatti.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = { }
@@ -348,7 +350,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Palmiro Togliatti"
 	desc = "POLITICS_PALMIRO_TOGLIATTI_DESC"
-	picture = "GFX_portrait_ita_palmiro_togliatti"
+	picture = "Italy_Communist_Palmiro_Togliatti.dds"
 	expire = "1965.1.1"
 	ideology = maoism_ideology
 	traits = { }
@@ -357,7 +359,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Palmiro Togliatti"
 	desc = "POLITICS_PALMIRO_TOGLIATTI_DESC"
-	picture = "GFX_portrait_ita_palmiro_togliatti"
+	picture = "Italy_Communist_Palmiro_Togliatti.dds"
 	expire = "1965.1.1"
 	ideology = trotskyism_ideology
 	traits = { }

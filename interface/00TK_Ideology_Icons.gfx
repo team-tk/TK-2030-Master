@@ -88,6 +88,26 @@ spriteType = {
 		texturefile = "gfx/interface/ideologies/fascist_monarchism_group.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_ideology_demsoc_group"
+		texturefile = "gfx/interface/ideologies/demsoc_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_reactionary_group"
+		texturefile = "gfx/interface/ideologies/reactionary_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_demnat_group"
+		texturefile = "gfx/interface/ideologies/demnat_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_christian_democratic_group"
+		texturefile = "gfx/interface/ideologies/christian_democratic_group.dds"
+	}
+	
 	
 
 	######## MONARCHISM

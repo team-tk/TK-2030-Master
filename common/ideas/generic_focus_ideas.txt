@@ -451,11 +451,11 @@ ideas = {
 			}
 		
 			modifier = {
-			 stalinism_drift = -0.05
-			 anarchism_drift = -0.05
-			 leninism_drift = -0.05
-			 revisionism_drift = -0.05
-			 democratic_socialism_drift = -0.05
+			 communism_drift = -0.05
+			 maoism_drift = -0.05
+			 trotskyism_drift = -0.05
+			 syndicalism_drift = -0.05
+			 socialism_drift = -0.05
 			 production_speed_buildings_factor = 0.1
 			 production_factory_start_efficiency_factor = -0.05
 			 conscription_factor = -0.15
@@ -1237,7 +1237,7 @@ ideas = {
 			}
 		}
 		
-		revisionism_idea_focus = {
+		trotskyism_idea_focus = {
 			
 			
 			allowed = {
@@ -1253,7 +1253,7 @@ ideas = {
 			picture = generic_communism_drift_bonus
 	
 			modifier = {
-				socialism_drift = 0.1
+				trotskyism_drift = 0.1
 			}
 		}
 		
@@ -1277,7 +1277,7 @@ ideas = {
 			}
 		}
 		
-		stalinism_idea_focus = {
+		maoism_idea_focus = {
 			
 			
 			allowed = {
@@ -1293,7 +1293,7 @@ ideas = {
 			picture = generic_communism_drift_bonus
 	
 			modifier = {
-				communism_drift = 0.1
+				maoism_drift = 0.1
 			}
 		}
 		

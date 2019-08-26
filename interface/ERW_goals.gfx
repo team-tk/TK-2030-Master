@@ -1345,12 +1345,12 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_goal_liechtenstein_flag_goal"
-		texturefile = "gfx/interface/goals/liechtenstein_FLAG.dds"
+		texturefile = "gfx/interface/goals/LIECHTENSTEIN_FLAG.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_goal_liechtenstein_flag_goal_shine"
-		texturefile = "gfx/interface/goals/liechtenstein_FLAG.dds"			
+		texturefile = "gfx/interface/goals/LIECHTENSTEIN_FLAG.dds"			
 	}
 	
 	SpriteType = {

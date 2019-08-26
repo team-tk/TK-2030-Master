@@ -9,9 +9,7 @@
  FOG_AUTHORITARIAN_NAME_DEMOCRATIC:0 "Authoritarian Democracy"
  FOG_AUTHORITARIAN_NAME:0 "Authoritarian Government"
  
- fog_dictatorship:0 "[Root.GetFogDictatorshipName]"
- FOG_DICTATORSHIP_NAME_NEUTRAL:0 "Dictatorship"
- FOG_DICTATORSHIP_NAME:0 "Right-Wing Dictatorship"
+ fog_dictatorship:0 "Right-Wing Dictatorship"
  
  fog_dictatorship_mo:0 "Absolute Monarchy"
  fog_dictatorship_lw:0 "Left-Wing Dictatorship"
@@ -35,7 +33,7 @@
  foj_civil_law:0 "Civil Law"
  foj_mixed_law:0 "Mixed Law"
  foj_islamic_law:0 "Islamic Law"
- foj_kangaroo:0 "Kangaroo Court"
+ foj_kangaroo:0 "Show Trials"
  
  JAP_military_purges1:0 "Military Purges"
 

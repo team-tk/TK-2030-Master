@@ -203,6 +203,14 @@ create_country_leader = {
 	name = "Grand Duchess Charlotte"
 	picture = "Portrait_Luxembourg_Charlotte.dds"
 	expire = "1964.11.12"
+	ideology = despotism
+	traits = { charismatic_monarch }
+}
+
+create_country_leader = {
+	name = "Grand Duchess Charlotte"
+	picture = "Portrait_Luxembourg_Charlotte.dds"
+	expire = "1964.11.12"
 	ideology = fascist_monarchy
 	traits = { charismatic_monarch }
 }

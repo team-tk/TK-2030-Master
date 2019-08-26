@@ -92,4 +92,34 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_ideology_national_socialism.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_goal_ideology_paganism"
+		texturefile = "gfx/interface/goals/goal_ideology_paganism.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_ideology_trotskyism"
+		texturefile = "gfx/interface/goals/goal_ideology_trotskyism.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_ideology_maoism"
+		texturefile = "gfx/interface/goals/goal_ideology_maoism.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_ideology_islamism"
+		texturefile = "gfx/interface/goals/goal_ideology_islamism.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_ideology_strasserism"
+		texturefile = "gfx/interface/goals/goal_ideology_strasserism.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_ideology_liberalism"
+		texturefile = "gfx/interface/goals/goal_ideology_liberalism.dds"
+	}
+	
 }

@@ -2349,7 +2349,7 @@ focus = {
 	
 	focus = {
 		id = social_liberalism_focus
-		icon = GFX_goal_ideology_social_liberal
+		icon = GFX_goal_ideology_liberalism
 		prerequisite = { focus = centrist_path }
 		mutually_exclusive = { focus = market_liberalism_focus focus = christian_democracy_focus }
 		x = -38
@@ -3201,10 +3201,10 @@ focus = {
 	}
 	
 	focus = {
-		id = revisionism_focus
-		icon = GFX_goal_ideology_radical_revisionism
+		id = trotskyism_focus
+		icon = GFX_goal_ideology_trotskyism
 		prerequisite = { focus = the_path_towards_socialism }
-		mutually_exclusive = { focus = stalinism_focus focus = leninism_focus focus = anarchism_focus }
+		mutually_exclusive = { focus = maoism_focus focus = leninism_focus focus = anarchism_focus }
 		x = -46
 		y = 3
 		cost = 10
@@ -3212,14 +3212,14 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = revisionism_idea_focus
+			add_ideas = trotskyism_idea_focus
 		}
 	}
 	
 	focus = {
-		id = revisionism_government_focus
+		id = trotskyism_government_focus
 		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = revisionism_focus }
+		prerequisite = { focus = trotskyism_focus }
 		x = -46
 		y = 4
 		cost = 10
@@ -3227,10 +3227,10 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = socialism elections_allowed = no }
-			add_ideas = revisionism_idea_focus
+			set_politics = { ruling_party = trotskyism elections_allowed = no }
+			add_ideas = trotskyism_idea_focus
 			remove_ideas = path_towards_socialism_focus
-			add_popularity = { ideology = socialism popularity = 0.10 }
+			add_popularity = { ideology = trotskyism popularity = 0.10 }
 		}
 	}
 	
@@ -3238,8 +3238,8 @@ focus = {
 		id = leninism_focus
 		icon = GFX_goal_ideology_leninism
 		prerequisite = { focus = the_path_towards_socialism }
-		mutually_exclusive = { focus = stalinism_focus focus = revisionism_focus focus = anarchism_focus }
-		x = -48
+		mutually_exclusive = { focus = maoism_focus focus = trotskyism_focus focus = anarchism_focus }
+		x = -50
 		y = 3
 		cost = 10
 		
@@ -3272,7 +3272,7 @@ focus = {
 		id =  leninism_government_focus
 		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = leninism_focus }
-		x = -48
+		x = -50
 		y = 4
 		cost = 10
 
@@ -3287,11 +3287,11 @@ focus = {
 	}
 	
 	focus = {
-		id = stalinism_focus
-		icon = GFX_goal_ideology_stalinism
+		id = maoism_focus
+		icon = GFX_goal_ideology_maoism
 		prerequisite = { focus = the_path_towards_socialism }
-		mutually_exclusive = { focus = revisionism_focus focus = leninism_focus focus = anarchism_focus }
-		x = -50
+		mutually_exclusive = { focus = trotskyism_focus focus = leninism_focus focus = anarchism_focus }
+		x = -48
 		y = 3
 		cost = 10
 		
@@ -3316,25 +3316,25 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = stalinism_idea_focus
+			add_ideas = maoism_idea_focus
 		}
 	}
 	
 	focus = {
-		id = stalinism_government_focus
+		id = maoism_government_focus
 		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = stalinism_focus }
-		x = -50
+		prerequisite = { focus = maoism_focus }
+		x = -48
 		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = communism elections_allowed = no }
-			add_ideas = stalinism_idea_focus
+			set_politics = { ruling_party = maoism elections_allowed = no }
+			add_ideas = maoism_idea_focus
 			remove_ideas = path_towards_socialism_focus
-			add_popularity = { ideology = communism popularity = 0.10 }
+			add_popularity = { ideology = maoism popularity = 0.10 }
 		}
 	}
 	
@@ -3342,7 +3342,7 @@ focus = {
 		id = anarchism_focus
 		icon = GFX_goal_ideology_anarchism
 		prerequisite = { focus = the_path_towards_socialism }
-		mutually_exclusive = { focus = stalinism_focus focus = leninism_focus focus = revisionism_focus }
+		mutually_exclusive = { focus = maoism_focus focus = leninism_focus focus = trotskyism_focus }
 		x = -52
 		y = 3
 		cost = 10
@@ -3435,7 +3435,7 @@ focus = {
 	focus = {
 		id = foreign_expeditions
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = market_liberal_government_focus focus = social_liberal_government_focus focus = christian_democracy_government_focus focus = progressive_government_focus focus = democratic_socialist_government_focus focus = social_democracy_government_focus focus = despotism_government_focus focus = authoritarian_democracy_government_focus focus = conservative_government_focus focus = reactionary_government_focus focus = democratic_nationalism_government_focus focus = fascism_government_focus focus = national_socialism_government_focus focus = fascist_monarchy_government_focus focus = ultranationalism_government_focus focus = militarism_government_focus focus = theocracy_government_focus focus = monarchy_government_focus focus = anarchism_government_focus focus = stalinism_government_focus focus = leninism_government_focus focus = revisionism_government_focus }
+		prerequisite = { focus = market_liberal_government_focus focus = social_liberal_government_focus focus = christian_democracy_government_focus focus = progressive_government_focus focus = democratic_socialist_government_focus focus = social_democracy_government_focus focus = despotism_government_focus focus = authoritarian_democracy_government_focus focus = conservative_government_focus focus = reactionary_government_focus focus = democratic_nationalism_government_focus focus = fascism_government_focus focus = national_socialism_government_focus focus = fascist_monarchy_government_focus focus = ultranationalism_government_focus focus = militarism_government_focus focus = theocracy_government_focus focus = monarchy_government_focus focus = anarchism_government_focus focus = maoism_government_focus focus = leninism_government_focus focus = trotskyism_government_focus }
 		x = -34
 		y = 5
 		cost = 10
@@ -3450,7 +3450,7 @@ focus = {
 	focus = {
 		id = neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = market_liberal_government_focus focus = social_liberal_government_focus focus = christian_democracy_government_focus focus = progressive_government_focus focus = democratic_socialist_government_focus focus = social_democracy_government_focus focus = despotism_government_focus focus = authoritarian_democracy_government_focus focus = conservative_government_focus focus = reactionary_government_focus focus = democratic_nationalism_government_focus focus = fascism_government_focus focus = national_socialism_government_focus focus = fascist_monarchy_government_focus focus = ultranationalism_government_focus focus = militarism_government_focus focus = theocracy_government_focus focus = monarchy_government_focus focus = anarchism_government_focus focus = stalinism_government_focus focus = leninism_government_focus focus = revisionism_government_focus }
+		prerequisite = { focus = market_liberal_government_focus focus = social_liberal_government_focus focus = christian_democracy_government_focus focus = progressive_government_focus focus = democratic_socialist_government_focus focus = social_democracy_government_focus focus = despotism_government_focus focus = authoritarian_democracy_government_focus focus = conservative_government_focus focus = reactionary_government_focus focus = democratic_nationalism_government_focus focus = fascism_government_focus focus = national_socialism_government_focus focus = fascist_monarchy_government_focus focus = ultranationalism_government_focus focus = militarism_government_focus focus = theocracy_government_focus focus = monarchy_government_focus focus = anarchism_government_focus focus = maoism_government_focus focus = leninism_government_focus focus = trotskyism_government_focus }
 		mutually_exclusive = { focus = foreign_expeditions }
 		x = -38
 		y = 5

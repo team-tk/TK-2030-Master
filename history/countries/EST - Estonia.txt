@@ -85,7 +85,7 @@ neutrality = 50
 create_country_leader = {
 	name = "Konstantin Päts"
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
-	picture = "GFX_Portrait_estonia_konstantin_pats"
+	picture = "Estonia_Authoritarian_Konstantin_Pats.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
@@ -96,7 +96,18 @@ create_country_leader = {
 create_country_leader = {
 	name = "Konstantin Päts"
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
-	picture = "GFX_Portrait_estonia_konstantin_pats"
+	picture = "Estonia_Authoritarian_Konstantin_Pats.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		exiled
+	}
+}
+
+create_country_leader = {
+	name = "Konstantin Päts"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "Estonia_Authoritarian_Konstantin_Pats.dds"
 	expire = "1965.1.1"
 	ideology = agrarianism
 	traits = {
@@ -107,7 +118,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Konstantin Päts"
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
-	picture = "GFX_Portrait_estonia_konstantin_pats"
+	picture = "Estonia_Authoritarian_Konstantin_Pats.dds"
 	expire = "1965.1.1"
 	ideology = liberalism_ideology
 	traits = { }
