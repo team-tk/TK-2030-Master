@@ -1896,6 +1896,8 @@ ENG_neutrality_party:0 "BF"
 ENG_neutrality_party_long:0 "Britain First"
 ENG_theocratic_party:0 "Church of England"
 ENG_theocratic_party_long:0 "Church of England"
+ENG_neutrality_party_kings_party:0 "The King's Party"
+
 
 EQG_communism_party:0 "Com. Party of Equatorial Guinea"
 EQG_communism_party_long:0 "Communist Party of Equatorial Guinea"
