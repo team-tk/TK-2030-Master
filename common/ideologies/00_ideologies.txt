@@ -1059,6 +1059,9 @@ ideologies = {
 				
 			}
 			
+			national_bolshevik = {
+			}
+			
 			
 
 		}
