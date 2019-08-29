@@ -21,6 +21,10 @@ state={
 		1918.11.11 = {
 			owner = ENG
 		}
+		1960.1.1 = {
+			owner = JOR
+			controller = JOR
+			}
 	}
 
 	provinces={
