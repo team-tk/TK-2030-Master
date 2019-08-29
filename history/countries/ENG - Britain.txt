@@ -841,6 +841,8 @@ create_navy_leader = {
 
 1941.1.1 = {
 
+remove_ideas = MTG_naval_treaty_adherent
+
 set_autonomy = {
 		target = IRE
 		autonomous_state = autonomy_free

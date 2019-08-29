@@ -1974,6 +1974,8 @@ if = {
 
 1941.1.1 = {
 
+remove_ideas = MTG_naval_treaty_adherent
+
 add_political_power = 1500
 set_stability = 0.75
 set_war_support = 0.20

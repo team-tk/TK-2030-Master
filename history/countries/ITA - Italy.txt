@@ -1518,6 +1518,15 @@ if = {
     oob = "ITA_1941"
 	
 	add_political_power = 1500
+	
+	white_peace = ETH
+	
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		remove_ideas = MTG_naval_treaty_adherent
+	}
 
 complete_national_focus = ITA_extra_tech_slot
 complete_national_focus = ITA_industrial_effort_2

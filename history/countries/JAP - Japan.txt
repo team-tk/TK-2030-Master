@@ -1399,6 +1399,18 @@ add_ideas = {
 		cons_expanded_draft
 		closed_economy
 	}
+	
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		remove_ideas = MTG_naval_treaty_adherent
+	}
+	
+	declare_war_on = {
+		target = CHI
+		type = puppet_wargoal_focus
+	}
 
 complete_national_focus = JAP_army_expansion_law #March 10 1936	
 complete_national_focus = JAP_purge_the_kodoha_faction #May 20 1936	
