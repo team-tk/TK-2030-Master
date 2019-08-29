@@ -1580,32 +1580,6 @@ democratic = 14
 
 1960.1.1 = {
 	set_politics = {
-	
-		parties = {
-        democratic = { popularity = 0 }
-        communism = { popularity = 2 }
-        fascism = { popularity = 5.20 }
-        nationalism = { popularity = 0 }
-        monarchism = { popularity = 0 }
-        reactionary = { popularity = 0 }
-        islamism = { popularity = 0 }
-        islamism = { popularity = 0 }
-        
-        socdem = { popularity = 31.7 }
-        democratic = { popularity = 0 }
-        islamism = { popularity = 0 }        
-        conservatism = { popularity = 0 }
-        
-        conservatism = { popularity = 44.65	 }
-        christian_democratic = { popularity = 15.57 }
-        socialism { popularity = 0 }
-        democratic = { popularity = 0 }
-        democratic = { popularity = 0 }
-        trotskyism = { popularity = 0 }
-        maoism = { popularity = 0 }
-        
-		}
-	
 	ruling_party = conservatism
 	last_election = "1961.12.19"
 	election_frequency = 48
