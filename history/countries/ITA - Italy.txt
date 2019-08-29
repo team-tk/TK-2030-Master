@@ -140,12 +140,23 @@ if = {
 	add_ideas = MTG_naval_treaty_adherent
 }
 
+
+	
+	
+	if = {
+
+	limit = { 
+	has_start_date = 1936.01.01
+	}
+	
 # DIPLOMACY / WAR 36
 	declare_war_on = {
 		target = ETH
 		type = annex_everything
 	}
 	give_guarantee = ALB
+	
+	}
 
 1939.1.1 = {
 
@@ -267,7 +278,7 @@ if = {
 	}
 	
 	set_stability = 0.8
-	GER = { add_to_faction = ITA }
+	#GER = { add_to_faction = ITA }
 }
 
 

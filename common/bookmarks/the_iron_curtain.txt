@@ -6,205 +6,84 @@ bookmarks = {
 		picture = "GFX_select_date_1949"
 		default_country = "USA"
 		default = yes
-		
-		"USA"={
+
+"USA"={
 			history = "USA_IRON_CURTAIN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
 		}
+
 		
-		"SOV"={
+"SOV"={
 			history = "SOV_IRON_CURTAIN_DESC"
 			ideology = communism
 			ideas = {
+			fog_dictatorship_lw
 			}
 			focuses = {
+			
 			}
-		}
-		
-		"ENG"={
-			history = "ENG_IRON_CURTAIN_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"FRA"={
-			history = "FRA_IRON_CURTAIN_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"CHI"={
-			history = "CHI_IRON_CURTAIN_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}			
 		}
 		
 		"PRC"={
 			history = "PRC_IRON_CURTAIN_DESC"
 			ideology = communism
 			ideas = {
+			fog_dictatorship_lw
 			}
 			focuses = {
-			}			
-		}
-		"DPR"={
-			history = "KPA_IRON_CURTAIN_DESC"
-			ideology = communism
-			ideas = {
-			}
-			focuses = {
-			}			
-		}
-
-		"ITA"={
-			minor = yes
-			history = "ITA_IRON_CURTAIN_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
+			}	
 		}
 		
 		"DDR"={
-			minor = yes
 			history = "DDR_IRON_CURTAIN_DESC"
 			ideology = communism
 			ideas = {
+			fog_dictatorship_lw
 			}
 			focuses = {
 			}
 		}
-		
-		"WGR"= {
-			minor = yes
-			history = WGR_IRON_CURTAIN_DESC
+			
+		"GER"={
+			#minor = yes
+			history = "GER_IRON_CURTAIN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
 		}
 		
-		"KOR"={
-		    minor = yes
-			history = "KOR_IRON_CURTAIN_DESC"
+		
+		
+		"FRA"={
+			history = "FRA_IRON_CURTAIN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
 		}
 		
-		"ISR"={
-			minor = yes
-			history = "ISR_IRON_CURTAIN_DESC"
+		
+			"ENG"={
+			history = "ENG_IRON_CURTAIN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
-		}
-		
-		"YUG"={
-			minor = yes
-			history = "YUG_IRON_CURTAIN_DESC"
-			ideology = communism
-			ideas = {
 			}
-			focuses = {
-			}
-		}
-		
-		"EGY"={
-			minor = yes
-			history = "EGY_IRON_CURTAIN_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"VIN"={
-			minor = yes
-			history = "VIN_IRON_CURTAIN_DESC"
-			ideology = communism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"GRE"={
-			minor = yes
-			history = "GRE_IRON_CURTAIN_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"ARG"={
-			minor = yes
-			history = "ARG_IRON_CURTAIN_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"IRQ"={
-			minor = yes
-			history = "IRQ_IRON_CURTAIN_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-        "SPR"={
-			minor = yes
-			history = "SPR_IRON_CURTAIN_DESC"
-			ideology = fascism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-        "PER"={
-		    minor = yes
-			history = "PER_IRON_CURTAIN_DESC"
-			ideology = 
-			ideas = {
-			}
-			focuses = {
-			}
-        }
-		"JAP"={
-		    minor = yes
-			history = "JAP_IRON_CURTAIN_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}			
-		}
+			
+			
 
 		"---"={
 			history = "OTHER_IRON_CURTAIN_DESC"

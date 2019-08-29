@@ -288,6 +288,7 @@ ideas = {
 		
 		modifier = {
 		justify_war_goal_time = -0.25
+		trade_opinion_factor = 0.25
 		nationalism_acceptance = 10
 		socdem_acceptance = 10
 		conservatism_acceptance = 10
@@ -338,7 +339,7 @@ ideas = {
 		}
 		
 		modifier = {
-		justify_war_goal_time = -0.25
+		justify_war_goal_when_in_major_war_time = -0.80
 		nationalism_acceptance = 10
 		monarchism_acceptance = 10
 		fascist_monarchism_acceptance = 10
@@ -387,7 +388,8 @@ ideas = {
 		}
 		
 		modifier = {
-		justify_war_goal_when_in_major_war_time = -0.80
+		justify_war_goal_time = -0.25
+		stability_factor = 0.10
 		nationalism_acceptance = 10
 		fascism_acceptance = 10
 		conservatism_acceptance = 10
@@ -434,7 +436,9 @@ ideas = {
 		}
 		
 		modifier = {
-		justify_war_goal_when_in_major_war_time = -0.80
+		justify_war_goal_time = -0.25
+		war_support_factor = 0.10
+		mobilization_speed = 0.1
 		nationalism_acceptance = 10
 		fascism_acceptance = 10
 		conservatism_acceptance = 10
@@ -484,7 +488,9 @@ ideas = {
 		}
 		
 		modifier = {
-		justify_war_goal_when_in_major_war_time = -0.80
+		justify_war_goal_time = -0.25
+		surrender_limit = 0.10
+		special_forces_cap = 0.10
 		paganism_acceptance = 10
 		nazism_acceptance = 10
 		fascism_acceptance = 10
@@ -527,7 +533,8 @@ ideas = {
 		}
 		
 		modifier = {
-		justify_war_goal_when_in_major_war_time = -0.80
+		justify_war_goal_time = -0.40
+		surrender_limit = 0.10
 		socialism_acceptance = 10
 		neutrality_acceptance = 10
 		nationalism_acceptance = 10
@@ -569,7 +576,8 @@ ideas = {
 		}
 		
 		modifier = {
-		justify_war_goal_when_in_major_war_time = -0.80
+		justify_war_goal_time = -0.40
+		surrender_limit = 0.10
 		conservatism_acceptance = 10
 		neutrality_acceptance = 10
 		nationalism_acceptance = 10

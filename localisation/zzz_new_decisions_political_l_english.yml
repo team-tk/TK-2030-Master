@@ -1,14 +1,5 @@
 ﻿l_english:
 
-generic_nazism_demagogue:0 "Nazi Politician"
-generic_nationalism_demagogue:0 "Nationalist Politician"
-
-generic_conservatism_reformer:0 "Conservative Politician"
-generic_democratic_reformer:0 "Liberal Politician"
-generic_socdem_reformer:0 "Social Democratic Politician"
-
-generic_syndicalism_revolutionary:0 "Syndicalist Politician"
-generic_socialism_revolutionary:0 "Socialist Politician"
 
 rename_states:0 "Rename States"
 

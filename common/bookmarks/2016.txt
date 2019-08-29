@@ -10,6 +10,7 @@ bookmarks = {
 			history = "PRC_MODERN_DAY_DESC"
 			ideology = communism
 			ideas = {
+			fog_dictatorship_lw
 			}
 			focuses = {
 			}			
@@ -18,6 +19,7 @@ bookmarks = {
 			history = "FRA_MODERN_DAY_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -26,6 +28,7 @@ bookmarks = {
 			history = "GER_MODERN_DAY_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -34,6 +37,7 @@ bookmarks = {
 			history = "JAP_MODERN_DAY_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -42,6 +46,7 @@ bookmarks = {
 			history = "RUS_MODERN_DAY_DESC"
 			ideology = neutrality
 			ideas = {
+			fog_dictatorship_re
 			}
 			focuses = {
 			}
@@ -50,6 +55,7 @@ bookmarks = {
 			history = "ENG_MODERN_DAY_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -58,6 +64,7 @@ bookmarks = {
 			history = "USA_MODERN_DAY_DESC"
 			ideology = democratic
 			ideas = {
+			fog_dictatorship_de
 			}
 			focuses = {
 			}

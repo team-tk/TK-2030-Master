@@ -71,70 +71,7 @@ bookmarks = {
 			history = "OTHER_BALKAN_POWDER_KEG_DESC"
 		}
 		
-		"ITA"={
-		minor = yes
-			history = "ITA_BALKAN_POWDER_KEG_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
 
-		"SER"={
-			minor = yes
-			history = "SER_BALKAN_POWDER_KEG_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		"BUL"={
-			minor = yes
-			history = "BUL_BALKAN_POWDER_KEG_DESC"
-			ideology = fascism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		"BEL"={
-			minor = yes
-			history = "BEL_BALKAN_POWDER_KEG_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		"JAP"={
-			minor = yes
-			history = "JAP_BALKAN_POWDER_KEG_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"MEX"={
-			minor = yes
-			history = "MEX_BALKAN_POWDER_KEG_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-
-
-		
-		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

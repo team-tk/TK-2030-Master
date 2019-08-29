@@ -71,66 +71,6 @@ bookmarks = {
 			history = "OTHER_THE_GREAT_WAR_DESC"
 		}
 		
-		"ITA"={
-		minor = yes
-			history = "ITA_THE_GREAT_WAR_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		"SER"={
-			minor = yes
-			history = "SER_THE_GREAT_WAR_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		"BUL"={
-			minor = yes
-			history = "BUL_THE_GREAT_WAR_DESC"
-			ideology = fascism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-		"BEL"={
-			minor = yes
-			history = "BEL_THE_GREAT_WAR_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-
-
-		"JAP"={
-			minor = yes
-			history = "JAP_THE_GREAT_WAR_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"MEX"={
-			minor = yes
-			history = "MEX_THE_GREAT_WAR_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
 
 
 		

@@ -86,8 +86,8 @@
  fascism_idea_focus_desc:0 ""
  ultranationalism_idea_focus:0 "Ultranationalism"
  ultranationalism_idea_focus_desc:0 ""
- militarism_idea_focus:0 "Militarism"
- militarism_idea_focus_desc:0 ""
+ islamism_idea_focus:0 "Islamism"
+ islamism_idea_focus_desc:0 ""
  theocracy_idea_focus:0 "Theocracy"
  theocracy_idea_focus_desc:0 ""
  monarchy_idea_focus:0 "Monarchism"
@@ -132,3 +132,12 @@
  leninism_idea_focus_desc:0 ""
  path_towards_socialism_focus:0 "Socialist Leanings"
  path_towards_socialism_focus_desc:0 ""
+ 
+ strasserism_idea_focus:0 "Strasserism"
+ strasserism_idea_focus_desc:0 ""
+ 
+ paganism_idea_focus:0 "Paganism"
+ paganism_idea_focus_desc:0 ""
+ 
+ authoritarian_socialism_idea_focus:0 "Revolutionary Socialism"
+ authoritarian_socialism_idea_focus_desc:0 ""

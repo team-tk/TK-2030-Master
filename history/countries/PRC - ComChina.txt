@@ -406,3 +406,242 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 4
 }
+
+2000.1.1 = {
+set_politics = {
+	ruling_party = maoism
+	last_election = "1997.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    fascism = 0.2
+    nationalism = 0.2
+    monarchism = 1.1
+    reactionary = 0.5
+    conservatism = 8.95
+    libertarianism = 9.65
+    democratic = 7.1
+    socdem = 12.3
+    progressivism = 2.05
+    demsoc = 9.55
+    maoism = 48.4
+}
+
+create_country_leader = {
+	name = "Jiang Zemin"
+	picture = "Jiang_Zemin.dds"
+	ideology = maoism_ideology
+}
+
+create_country_leader = {
+	name = "Ding Shisun"
+	picture = "Ding_Shisun.dds"
+	ideology = liberalism_ideology
+}
+
+create_country_leader = {
+	name = "Cheng Siwei"
+	picture = "Cheng_Siwei.dds"
+	ideology = libertarianism_ideology
+}
+
+create_country_leader = {
+	name = "Jiang Zhenghua"
+	picture = "Jiang_Zhenghua.dds"
+	ideology = progressivism_ideology
+}
+
+create_country_leader = {
+	name = "He Luli"
+	picture = "He_Luli.dds"
+	ideology = democratic_socialism
+}
+
+create_country_leader = {
+	name = "Jin Youzhi"
+	picture = "Jin_Youzhi.dds"
+	ideology = absolutism
+}
+
+create_country_leader = {
+	name = "Xu Jialu"
+	picture = "Xu_Jialu.dds"
+	ideology = social_democracy
+}
+
+create_field_marshal = {
+	name = "Chen Bingde"
+	picture = "generals/Chen_Bingde.dds"
+	skill = 3
+}
+
+create_field_marshal = {
+	name = "Liu Zuocheng"
+	picture = "generals/Liu_Zuocheng.dds"
+	skill = 2
+}
+
+create_field_marshal = {
+	name = "Guo Boxiong"
+	picture = "generals/Guo_Boxiong.dds"
+	skill = 1
+}
+
+create_field_marshal = {
+	name = "Cao Gangchuan"
+	picture = "generals/Cao_Gangchuan.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Liang Guanglie"
+	picture = "generals/Liang_Guanglie.dds"
+	skill = 3
+}
+
+#Gao Xiaoyan is a former icon of both Chinese women and the Chinese military.
+#She was disgraced in 2012 - possible future event?
+create_corps_commander = {
+	name = "Gao Xiaoyan"
+	picture = "generals/Gao_Xiaoyan.dds"
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Xu Caihou"
+	picture = "generals/Xu_Caihou.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Chang Wanquan"
+	picture = "generals/Chang_Wanquan.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Fang Fenghui"
+	picture = "generals/Fang_Fenghui.dds"
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Li Xianyu"
+	picture = "generals/Li_Xianyu.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Fan Changlong"
+	picture = "generals/Fan_Changlong.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Wei Fenghe"
+	picture = "generals/Wei_Fenghe.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Wang Ning"
+	picture = "generals/Wang_Ning.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Liu Yuejun"
+	picture = "generals/Liu_Yuejun.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Qu Jiangguo"
+	picture = "generals/Qi_Jiangguo.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Wang Jiaocheng"
+	picture = "generals/Wang_Jiaocheng.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Zhang Shibo"
+	picture = "generals/Zhang_Shibo.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Zhao Zongqi"
+	picture = "generals/Zhao_Zongqi.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Sun Jianguo"
+	picture = "admirals/Sun_Jianguo.dds"
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Wu Shengli"
+	picture = "admirals/Wu_Shengli.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Yao Zhilou"
+	picture = "admirals/Yao_Zhilou.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Yuan Yubai"
+	picture = "admirals/Yuan_Yubai.dds"
+	skill = 1
+}
+}
+
+2010.1.1 = {
+	create_country_leader = {
+		name = "Xi Jinping"
+		picture = "Xi_Jinping.dds"
+		ideology = maoism_ideology
+	}
+	create_country_leader = {
+		name = "Zhang Baowen"
+		picture = "Zhang_Baowen.dds"
+		ideology = liberal_moderate
+	}
+	create_country_leader = {
+		name = "Chen Changzhi"
+		picture = "Chen_Changzhi.dds"
+		ideology = libertarianism_ideology
+	}
+	create_country_leader = {
+		name = "Chen Zhu"
+		picture = "Chen_Zhu.dds"
+		ideology = progressivism_ideology
+	}
+	create_country_leader = {
+		name = "Wan Exiang"
+		picture = "Wan_Exiang.dds"
+		ideology = democratic_socialism
+	}
+	create_country_leader = {
+		name = "Yan Junqi"
+		ideology = social_democracy
+	}
+}
+
+2015.4.10 = {
+create_country_leader = {
+	name = "Jin Yuzhang"
+	picture = "Jin_Yuzhang.dds"
+	ideology = absolutism
+}
+}

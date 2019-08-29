@@ -11,11 +11,13 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = FAS
+
 		}
 		
 		modifier = {
 			add = 10
 			original_tag = FAS
+
 		}
 	}
 	

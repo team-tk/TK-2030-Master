@@ -182,6 +182,186 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_fascist_africa.dds"
 	}
 	
+			### Strasserism
+	spriteType = {
+		name = "GFX_idea_generic_strasserism_demagogue_western_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Strasserism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_strasserism_demagogue_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Strasserism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_strasserism_demagogue_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Strasserism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_strasserism_demagogue_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_strasserism_demagogue_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_south_america.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_strasserism_demagogue_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_arab.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_strasserism_demagogue_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_africa.dds"
+	}
+	
+			### Paganism
+	spriteType = {
+		name = "GFX_idea_generic_paganism_demagogue_western_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/SS_Paganism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_paganism_demagogue_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/SS_Paganism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_paganism_demagogue_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/SS_Paganism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_paganism_demagogue_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_paganism_demagogue_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_south_america.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_paganism_demagogue_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_arab.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_paganism_demagogue_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_africa.dds"
+	}
+	
+			### Fascist Monarchy
+	spriteType = {
+		name = "GFX_idea_generic_fascist_monarchism_demagogue_western_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Fascist_Monarchy_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_fascist_monarchism_demagogue_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Fascist_Monarchy_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_fascist_monarchism_demagogue_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Fascist_Monarchy_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_fascist_monarchism_demagogue_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_fascist_monarchism_demagogue_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_south_america.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_fascist_monarchism_demagogue_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_arab.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_fascist_monarchism_demagogue_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_africa.dds"
+	}
+	
+			### Islamism
+	spriteType = {
+		name = "GFX_idea_generic_islamism_demagogue_western_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Islamism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_islamism_demagogue_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Islamism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_islamism_demagogue_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Islamism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_islamism_demagogue_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_islamism_demagogue_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_south_america.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_islamism_demagogue_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_arab.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_islamism_demagogue_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_africa.dds"
+	}
+	
+			### Reactionary
+	spriteType = {
+		name = "GFX_idea_generic_reactionary_demagogue_western_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Reactionary.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_reactionary_demagogue_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Reactionary.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_reactionary_demagogue_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Reactionary.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_reactionary_demagogue_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_reactionary_demagogue_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_south_america.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_reactionary_demagogue_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_arab.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_reactionary_demagogue_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_fascist_africa.dds"
+	}
+	
 			### Nationalism
 	spriteType = {
 		name = "GFX_idea_generic_nationalism_demagogue_western_european_2d"
@@ -290,6 +470,78 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_communist_africa.dds"
 	}
 	
+		### maoism
+	spriteType = {
+		name = "GFX_idea_generic_maoism_revolutionary_western_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Maoism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_maoism_revolutionary_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Maoism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_maoism_revolutionary_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Maoism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_maoism_revolutionary_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_maoism_revolutionary_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_south_america.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_maoism_revolutionary_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_arab.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_maoism_revolutionary_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_africa.dds"
+	}
+	
+		### trotskyism
+	spriteType = {
+		name = "GFX_idea_generic_trotskyism_revolutionary_western_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Trotskyism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_trotskyism_revolutionary_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Trotskyism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_trotskyism_revolutionary_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Trotskyism_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_trotskyism_revolutionary_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_trotskyism_revolutionary_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_south_america.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_trotskyism_revolutionary_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_arab.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_trotskyism_revolutionary_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_africa.dds"
+	}
+	
 		### Socialist
 	spriteType = {
 		name = "GFX_idea_generic_socialism_revolutionary_western_european_2d"
@@ -362,7 +614,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_democratic_africa.dds"
 	}
 	
-				### Conservative
+	### Conservative
 	spriteType = {
 		name = "GFX_idea_generic_conservatism_reformer_western_european_2d"
 		texturefile = "gfx/interface/ideas/tkministers/europe/Conservative_Small.dds"
@@ -416,22 +668,202 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_idea_generic_socdem_reformer_asian_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_socdem_asia.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_asia.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_generic_socdem_reformer_southamerican_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_socdem_south_america.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_south_america.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_generic_socdem_reformer_middle_eastern_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_socdem_arab.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_arab.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_generic_socdem_reformer_african_2d"
-		texturefile = "gfx/interface/ideas/idea_generic_socdem_africa.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_africa.dds"
+	}
+	
+	### Christian Democrat
+	spriteType = {
+		name = "GFX_idea_generic_christian_democratic_reformer_western_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Christian_Democrat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_christian_democratic_reformer_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Christian_Democrat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_christian_democratic_reformer_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Christian_Democrat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_christian_democratic_reformer_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_christian_democratic_reformer_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_south_america.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_christian_democratic_reformer_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_arab.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_christian_democratic_reformer_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_africa.dds"
+	}
+	
+	### Democratic Nationalist
+	spriteType = {
+		name = "GFX_idea_generic_demnat_reformer_western_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Democratic_Nationalist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_demnat_reformer_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Democratic_Nationalist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_demnat_reformer_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Democratic_Nationalist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_demnat_reformer_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_demnat_reformer_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_south_america.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_demnat_reformer_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_arab.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_demnat_reformer_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_africa.dds"
+	}
+	
+	### Democratic Socialist
+	spriteType = {
+		name = "GFX_idea_generic_demsoc_reformer_western_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Democratic_Socialist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_demsoc_reformer_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Democratic_Socialist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_demsoc_reformer_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Democratic_Socialist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_demsoc_reformer_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_demsoc_reformer_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_south_america.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_demsoc_reformer_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_arab.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_demsoc_reformer_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_africa.dds"
+	}
+	
+	### Libertarianism
+	spriteType = {
+		name = "GFX_idea_generic_libertarianism_reformer_western_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Libertarian_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_libertarianism_reformer_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Libertarian_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_libertarianism_reformer_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Libertarian_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_libertarianism_reformer_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_libertarianism_reformer_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_south_america.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_libertarianism_reformer_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_arab.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_libertarianism_reformer_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_africa.dds"
+	}
+	
+	### Progressivism
+	spriteType = {
+		name = "GFX_idea_generic_progressivism_reformer_western_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Progressive_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_progressivism_reformer_commonwealth_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Progressive_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_progressivism_reformer_eastern_european_2d"
+		texturefile = "gfx/interface/ideas/tkministers/europe/Progressive_Small.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_progressivism_reformer_asian_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_asia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_progressivism_reformer_southamerican_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_south_america.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_progressivism_reformer_middle_eastern_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_arab.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_progressivism_reformer_african_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_democratic_africa.dds"
 	}
 	
 	

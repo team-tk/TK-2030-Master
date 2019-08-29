@@ -82,14 +82,14 @@ if = {
 
 
 set_politics = {
-	ruling_party = reactionary
+	ruling_party = neutrality
 	last_election = "1935.9.8"
 	election_frequency = 36
 	elections_allowed = no
 }
 
 set_popularities = {
-	reactionary = 78
+	neutrality = 78
 	fascism = 7
 	communism = 2
 	conservatism = 13

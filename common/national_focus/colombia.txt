@@ -7,10 +7,12 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = COL
+
 		}
 		modifier = {
 			add = 10
 			original_tag = COL
+
 		}				
 	}
 	

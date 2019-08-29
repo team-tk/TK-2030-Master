@@ -16,7 +16,7 @@ focus_tree = {
 	icon = GFX_goal_generic_construct_mil_factory 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =5 
+ x = 9 
  y =2 
  mutually_exclusive = { } 
  prerequisite = { focus = militaryindustriesi } 
@@ -51,7 +51,7 @@ focus_tree = {
 	icon = GFX_goal_generic_construct_mil_factory 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =5 
+ x = 9 
  y =4 
  mutually_exclusive = { } 
  prerequisite = { focus = militaryindustriesiii } 
@@ -85,7 +85,7 @@ focus_tree = {
 	icon = GFX_goal_generic_construct_mil_factory 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =5 
+ x = 9 
  y =3 
  mutually_exclusive = { } 
  prerequisite = { focus = militaryindustriesii } 
@@ -119,7 +119,7 @@ focus_tree = {
 	icon = GFX_goal_generic_construct_civ_factory 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =1 
+ x = 5 
  y =3 
  mutually_exclusive = { } 
  prerequisite = { focus = civilianindustriesii } 
@@ -153,7 +153,7 @@ focus_tree = {
 	icon = GFX_goal_generic_construct_civ_factory 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =1 
+ x = 5 
  y =4 
  		ai_will_do = {
 			factor = 2			
@@ -187,7 +187,7 @@ focus_tree = {
 	icon = GFX_goal_generic_construct_mil_factory 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =5 
+ x = 9 
  y =1 
  		ai_will_do = {
 			factor = 2			
@@ -223,7 +223,7 @@ focus_tree = {
 	icon = GFX_goal_generic_positive_trade_relations 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =9
+ x = 13
  y =3 
  		ai_will_do = {
 			factor = 2			
@@ -260,14 +260,16 @@ focus_tree = {
 	icon = GFX_goal_generic_positive_trade_relations 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =9
+ x = 13
  y =2 
  		ai_will_do = {
 			factor = 2			
 		}
   mutually_exclusive = { focus = liberaleconomics }
  prerequisite = { focus = thequestionofeconomics} 
- available = { has_government = democratic 
+ available = { 
+ 
+ has_center_democratic_government = yes
  
  
  } 
@@ -287,7 +289,7 @@ focus_tree = {
 	icon = GFX_goal_generic_consumer_goods 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =5 
+ x = 9 
  y =0 
  		ai_will_do = {
 			factor = 2			
@@ -308,7 +310,7 @@ focus_tree = {
 	icon = GFX_goal_generic_construct_civ_factory 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =1 
+ x = 5 
  y =2 
  		ai_will_do = {
 			factor = 2			
@@ -343,7 +345,7 @@ focus_tree = {
 	icon = GFX_goal_generic_construct_civ_factory 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =1 
+ x = 5 
  y =1 
  		ai_will_do = {
 			factor = 2			
@@ -378,7 +380,7 @@ focus_tree = {
 	icon = GFX_focus_generic_air_defense 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =7 
+ x = 11
  y =2 
  		ai_will_do = {
 			factor = 2			
@@ -386,9 +388,8 @@ focus_tree = {
   mutually_exclusive = { focus = libertarianeconomics }
  prerequisite = { focus = thequestionofeconomics} 
  available = { 
- has_government = democratic 
  
- 
+ has_center_democratic_government = yes
  
  } 
  cost = 10  
@@ -404,7 +405,7 @@ focus_tree = {
 	icon = GFX_focus_rom_parties_end 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =10 
+ x = 14
  y =4 
  		ai_will_do = {
 			factor = 2			
@@ -424,7 +425,7 @@ focus_tree = {
 	icon = GFX_focus_generic_the_giant_wakes
 	bypass = {} 
  ai_will_do = { factor = } 
- x =7 
+ x = 11
  y =4 
  		ai_will_do = {
 			factor = 2			
@@ -445,19 +446,16 @@ focus_tree = {
 	icon = GFX_goal_generic_wolf_pack 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =14 
+ x = 18 
  y =2 
  		ai_will_do = {
 			factor = 2			
 		}
-  mutually_exclusive = {}
+  mutually_exclusive = { focus = nationalsocialisteconomics focus = fascisteconomics }
  prerequisite = { focus = thequestionofeconomics} 
- available = {  
- OR = { 
- has_government = neutrality
- has_government = nationalism 
- }
-
+ available = { 
+ 
+ has_nationalist_government = yes
  
  }
  cost = 10  
@@ -472,7 +470,7 @@ focus_tree = {
 	icon = GFX_focus_secret_rearmament 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =17
+ x = 21
  y =5
  		ai_will_do = {
 			factor = 2			
@@ -518,17 +516,14 @@ focus_tree = {
 	icon = GFX_goal_continuous_naval_production 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =14 
+ x = 18
  y =3 
  		ai_will_do = {
 			factor = 2			
 		}
  mutually_exclusive = {} 
  prerequisite = { focus = nationalisteconomy} 
- available = {  
- OR = { 
- has_government = nationalism 
- has_government = neutrality  } 
+ available = {   
  }
  cost = 10  
   available_if_capitulated = yes  
@@ -542,7 +537,7 @@ focus_tree = {
 	icon = GFX_goal_continuous_reduce_training_time 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =15
+ x = 19
  y =4 
  		ai_will_do = {
 			factor = 2			
@@ -550,9 +545,8 @@ focus_tree = {
  mutually_exclusive = { } 
  prerequisite = { focus = stateindustries focus = corporatism_focus } 
  available = { 
- OR = { 
- has_government = nationalism 
- has_government = neutrality } }
+ 
+ }
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -565,7 +559,7 @@ focus_tree = {
 	icon = GFX_goal_continuous_def_against_influence 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =11 
+ x = 15 
  y =2 
  		ai_will_do = {
 			factor = 2			
@@ -574,11 +568,8 @@ focus_tree = {
   
  prerequisite = { focus = thequestionofeconomics} 
  available = {
- OR = { 
- has_government = conservatism
- has_government = neutrality 
- has_government = nationalism 
- has_government = monarchism } 
+ 
+has_right_wing_democratic_government = yes
  
  
  }
@@ -594,7 +585,7 @@ focus_tree = {
 	icon = GFX_goal_continuous_increase_nu 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =11
+ x = 15
  y =3 
  		ai_will_do = {
 			factor = 2			
@@ -602,11 +593,7 @@ focus_tree = {
  mutually_exclusive = { } 
  prerequisite = { focus = conservativeeconomy } 
  available = {
- OR = { 
- has_government = neutrality
- has_government = conservatism
- has_government = nationalism 
- has_government = monarchism } } 
+ } 
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -619,17 +606,18 @@ focus_tree = {
 	icon = GFX_goal_generic_war_with_comintern 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =-7
+ x = -3
  y =2 
  		ai_will_do = {
 			factor = 2			
 		}
 		
-  mutually_exclusive = { }
+  mutually_exclusive = { focus = socialisminonecountry focus = leninisteconomics }
+ 
  
  prerequisite = { focus = thequestionofeconomics} 
  available = {
- has_government = syndicalism 
+ has_communist_government = yes
  
  
  } 
@@ -679,14 +667,14 @@ focus_tree = {
 	icon = GFX_goal_generic_dangerous_deal 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =-7
+ x = -3
  y =3 
  		ai_will_do = {
 			factor = 2			
 		}
  mutually_exclusive = { } 
  prerequisite = { focus = anarchisteconomy} 
- available = { 	has_government = syndicalism } 
+ available = { } 
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -715,14 +703,14 @@ focus_tree = {
 	icon = GFX_focus_YUG_pan_slavic_congress
 	bypass = {} 
  ai_will_do = { factor = } 
- x =-7
+ x = -3
  y =4 
  		ai_will_do = {
 			factor = 2			
 		}
  mutually_exclusive = { } 
  prerequisite = { focus = unionstakeover} 
- available = { has_government = syndicalism } 
+ available = { } 
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = {
@@ -751,15 +739,15 @@ focus_tree = {
 	icon = GFX_goal_generic_soviet_construction 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =-3 
+ x = 1 
  y =2 
  		ai_will_do = {
 			factor = 2			
 		}
-  mutually_exclusive = { focus = leninisteconomics }
+  mutually_exclusive = { focus = leninisteconomics focus = anarchisteconomy }
  prerequisite = { focus = thequestionofeconomics} 
  available = {  
- has_government = communism 
+ has_communist_government = yes
  
  
  } 
@@ -778,14 +766,14 @@ focus_tree = {
 	icon = GFX_focus_generic_join_comintern 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =-3
+ x = 1
  y =3 
  		ai_will_do = {
 			factor = 2			
 		}
  mutually_exclusive = { } 
  prerequisite = { focus = socialisminonecountry } 
- available = { 	has_government = communism } 
+ available = { } 
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -828,14 +816,14 @@ focus_tree = {
 	icon = GFX_focus_CZE_german_puppet
 	bypass = {} 
  ai_will_do = { factor = } 
- x =-3
+ x = 1
  y =4 
  		ai_will_do = {
 			factor = 2			
 		}
  mutually_exclusive = { } 
  prerequisite = { focus = fiveyearplans} 
- available = { 	has_government = communism } 
+ available = { } 
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -888,14 +876,14 @@ focus_tree = {
 	icon = GFX_focus_generic_the_giant_wakes 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =3 
+ x = 7 
  y =3 
  		ai_will_do = {
 			factor = 2			
 		}
  mutually_exclusive = { } 
  prerequisite = { focus = welfarestate} 
- available = { has_government = socdem } 
+ available = { } 
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -908,14 +896,14 @@ focus_tree = {
 	icon = GFX_goal_continuous_def_against_influence 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =3 
+ x = 7 
  y =4 
  		ai_will_do = {
 			factor = 2			
 		}
  mutually_exclusive = { } 
  prerequisite = { focus = increasedtaxes} 
- available = { has_government = socdem } 
+ available = { } 
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -928,16 +916,16 @@ focus_tree = {
 	icon = GFX_goal_support_fascism 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =16
+ x = 20
  y =2 
  		ai_will_do = {
 			factor = 2			
 		}
-  mutually_exclusive = { } 
+  mutually_exclusive = { focus = nationalsocialisteconomics focus = nationalisteconomy } 
  prerequisite = { focus = thequestionofeconomics} 
- available = { OR = {
- has_government = fascism 
- has_government = monarchism } 
+ available = { 
+ 
+ has_fascist_government = yes
  
  
  }
@@ -954,7 +942,7 @@ focus_tree = {
 	icon = GFX_focus_generic_self_management 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =16
+ x = 20
  y =3 
  		ai_will_do = {
 			factor = 2			
@@ -962,9 +950,8 @@ focus_tree = {
  mutually_exclusive = { } 
  prerequisite = { focus = fascisteconomics} 
  available = { 		
- OR = { 
- has_government = fascism 
- has_government = monarchism } }
+
+ }
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -977,7 +964,7 @@ focus_tree = {
 	icon = GFX_focus_CZE_german_puppet
 	bypass = {} 
  ai_will_do = { factor = } 
- x =18
+ x = 22
  y =4
  		ai_will_do = {
 			factor = 2			
@@ -1027,14 +1014,14 @@ focus_tree = {
 	icon = GFX_goal_generic_territory_or_war 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =18
+ x = 22
  y =3
  		ai_will_do = {
 			factor = 2			
 		}
  mutually_exclusive = { } 
  prerequisite = { focus = nationalsocialisteconomics } 
- available = { has_government = nazism } 
+ available = { has_nationalist_government = yes } 
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -1059,14 +1046,14 @@ focus_tree = {
 	icon = GFX_goal_tfv_saf_support_ossebrandwag
 	bypass = {} 
  ai_will_do = { factor = } 
- x =18
+ x = 22
  y =2 
  		ai_will_do = {
 			factor = 2			
 		}
-  mutually_exclusive = { }
+  mutually_exclusive = { focus = fascisteconomics focus = nationalisteconomy }
  prerequisite = { focus = thequestionofeconomics} 
- available = { has_government = nazism 
+ available = { has_fascist_government = yes 
  
  
  } 
@@ -1082,7 +1069,7 @@ focus_tree = {
 	icon = GFX_focus_research 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =5 
+ x = 9 
  y =5 
  		ai_will_do = {
 			factor = 2			
@@ -1103,16 +1090,16 @@ focus_tree = {
 	icon = GFX_focus_smiling_buddha
 	bypass = {} 
  ai_will_do = { factor = } 
- x =20
+ x =24
  y =2 
  		ai_will_do = {
 			factor = 2			
 		}
   mutually_exclusive = { }
  prerequisite = { focus = thequestionofeconomics } 
- available = {  OR = { 
- has_government = theocratic 
- has_government = monarchism } 
+ available = {  
+ 
+ has_theocratic_government = yes
  
  
  }
@@ -1129,7 +1116,7 @@ focus_tree = {
 	icon = GFX_focus_generic_concessions 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =20
+ x =24
  y =3 
  		ai_will_do = {
 			factor = 2			
@@ -1137,9 +1124,8 @@ focus_tree = {
  mutually_exclusive = { } 
  prerequisite = { focus = divineeconomics} 
  available = { 
- OR = { 
- has_government = theocratic 
- has_government = monarchism } }
+
+ }
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -1152,7 +1138,7 @@ focus_tree = {
 	icon = GFX_focus_rom_handle_king 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =20
+ x =24
  y =4 
  		ai_will_do = {
 			factor = 2			
@@ -1160,9 +1146,8 @@ focus_tree = {
  mutually_exclusive = { } 
  prerequisite = { focus = godsoilandchurch} 
  available = { 
- OR = {
- has_government = theocratic 
- has_government = monarchism } }
+
+ }
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -1175,16 +1160,16 @@ focus_tree = {
 	icon = GFX_goal_support_communism
 	bypass = {} 
  ai_will_do = { factor = } 
- x =-5 
+ x = -1 
  y =2 
  		ai_will_do = {
 			factor = 2			
 		}
-  mutually_exclusive = { focus = socialisminonecountry }
+  mutually_exclusive = { focus = socialisminonecountry focus = anarchisteconomy }
  prerequisite = { focus = thequestionofeconomics} 
  
  available = {  
- has_government = communism 
+ has_communist_government = yes
 	 	
 					
  } 
@@ -1218,14 +1203,14 @@ focus_tree = {
 	icon = GFX_focus_generic_soviet_politics 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =-5 
+ x = -1 
  y =3 
  		ai_will_do = {
 			factor = 2			
 		}
  mutually_exclusive = { } 
  prerequisite = { focus = leninisteconomics } 
- available = { 	has_government = communism } 
+ available = { } 
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -1259,14 +1244,14 @@ focus_tree = {
 	icon = GFX_focus_generic_soviet_politics 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =-5 
+ x = -1 
  y =4 
  		ai_will_do = {
 			factor = 2			
 		}
  mutually_exclusive = { } 
  prerequisite = { focus = nationalizeindustries} 
- available = { 	has_government = communism } 
+ available = { } 
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -1286,7 +1271,7 @@ focus_tree = {
 	icon = GFX_focus_generic_socialist_science 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =-1 
+ x = 3 
  y =2 
  		ai_will_do = {
 			factor = 2			
@@ -1294,9 +1279,7 @@ focus_tree = {
   mutually_exclusive = {}
  prerequisite = { focus = thequestionofeconomics} 
  available = {
- has_government = socialism
-
- 
+ has_left_wing_democratic_government = yes
   }
  cost = 10  
   available_if_capitulated = yes  
@@ -1311,16 +1294,14 @@ focus_tree = {
 	icon = GFX_goal_generic_soviet_construction 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =-1
+ x = 3
  y =3 
  		ai_will_do = {
 			factor = 2			
 		}
  mutually_exclusive = { } 
  prerequisite = { focus = democraticsocialisteconomy } 
- available = { 
-has_government = socialism 
-  }
+ available = { }
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -1333,16 +1314,14 @@ has_government = socialism
 	icon = GFX_goal_generic_air_production 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =-1 
+ x = 3 
  y =4 
  		ai_will_do = {
 			factor = 2			
 		}
  mutually_exclusive = { } 
  prerequisite = { focus = workplacedemocracy} 
- available = { 	 
- has_government = socialism 
-  }
+ available = { }
  cost = 10  
   available_if_capitulated = yes  
  completion_reward = { 
@@ -1356,7 +1335,7 @@ has_government = socialism
 	icon = GFX_goal_continuous_research 
 	bypass = {} 
  ai_will_do = { factor = } 
- x =3 
+ x = 7 
  y =2 
  		ai_will_do = {
 			factor = 2			
@@ -1364,8 +1343,7 @@ has_government = socialism
   mutually_exclusive = {}
  prerequisite = { focus = thequestionofeconomics} 
  available = {	
-			has_government = socdem
-
+			has_left_wing_democratic_government = yes
 			} 
  cost = 10  
   available_if_capitulated = yes  
@@ -1382,7 +1360,7 @@ has_government = socialism
 	focus = {
 		id = army_effort1
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 24
+		x = 28
 		y = 0
 		cost = 10
 
@@ -1407,7 +1385,7 @@ has_government = socialism
 		id = equipment_effort1
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = army_effort1 }
-		x = 23
+		x = 27
 		y = 1
 		cost = 10
 
@@ -1433,7 +1411,7 @@ has_government = socialism
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = army_effort1 }
 		bypass = { has_tech = motorised_infantry }
-		x = 25
+		x = 29
 		y = 1
 		cost = 10
 
@@ -1456,7 +1434,7 @@ has_government = socialism
 		id = doctrine_effort1
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = army_effort1 }
-		x = 24
+		x = 28
 		y = 2
 		cost = 10
 
@@ -1481,7 +1459,7 @@ has_government = socialism
 		id = equipment_effort_21
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = equipment_effort1 }
-		x = 23
+		x = 27
 		y = 3
 		cost = 10
 
@@ -1502,7 +1480,7 @@ has_government = socialism
 		id = mechanization_effort1
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = motorization_effort1 }
-		x = 25
+		x = 29
 		y = 3
 		cost = 10
 
@@ -1522,7 +1500,7 @@ has_government = socialism
 		id = doctrine_effort_21
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = doctrine_effort1 }
-		x = 24
+		x = 28
 		y = 4
 		cost = 10
 
@@ -1547,7 +1525,7 @@ has_government = socialism
 		id = equipment_effort_31
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = equipment_effort_21 }
-		x = 23
+		x = 27
 		y = 5
 		cost = 10
 
@@ -1568,7 +1546,7 @@ has_government = socialism
 		id = armor_effort1
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = mechanization_effort1 }
-		x = 25
+		x = 29
 		y = 5
 		cost = 10
 
@@ -1590,7 +1568,7 @@ has_government = socialism
 		prerequisite = { focus = equipment_effort_31 }
 		prerequisite = { focus = doctrine_effort_21 }
 		prerequisite = { focus = armor_effort1 }
-		x = 24
+		x = 28
 		y = 6
 		cost = 10
 
@@ -1614,7 +1592,7 @@ has_government = socialism
 	focus = {
 		id = aviation_effort1
 		icon = GFX_goal_generic_build_airforce
-		x = 29
+		x = 33
 		y = 0
 		cost = 10
 
@@ -1703,7 +1681,7 @@ has_government = socialism
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = aviation_effort1 }
 		mutually_exclusive = { focus = bomber_focus1 }
-		x = 28
+		x = 32
 		y = 1
 		cost = 10
 
@@ -1730,7 +1708,7 @@ has_government = socialism
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = aviation_effort1 }
 		mutually_exclusive = { focus = fighter_focus1 }
-		x = 30
+		x = 34
 		y = 1
 		cost = 10
 
@@ -1753,7 +1731,7 @@ has_government = socialism
 		id = aviation_effort_21
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = bomber_focus1 focus = fighter_focus1 }
-		x = 29
+		x = 33
 		y = 2
 		cost = 10
 
@@ -1840,7 +1818,7 @@ has_government = socialism
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = aviation_effort_21 }
 		prerequisite = { focus = motorization_effort1 }
-		x = 28
+		x = 32
 		y = 3
 		cost = 10
 
@@ -1861,7 +1839,7 @@ has_government = socialism
 		id = rocket_effort1
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = aviation_effort_21 }
-		x = 29
+		x = 33
 		y = 4
 		cost = 10
 
@@ -1891,7 +1869,7 @@ has_government = socialism
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = aviation_effort_21 }
 		prerequisite = { focus = flexible_navy1 }
-		x = 30
+		x = 34
 		y = 3
 		cost = 10
 
@@ -1911,7 +1889,7 @@ has_government = socialism
 	focus = {
 		id = naval_effort1
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 34
+		x = 38
 		y = 0
 		cost = 10
 
@@ -2043,7 +2021,7 @@ has_government = socialism
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = naval_effort1 }
 		mutually_exclusive = { focus = large_navy1 }
-		x = 33
+		x = 37
 		y = 1
 		cost = 10
 
@@ -2082,7 +2060,7 @@ has_government = socialism
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = naval_effort1 }
 		mutually_exclusive = { focus = flexible_navy1 }
-		x = 35
+		x = 39
 		y = 1
 		cost = 10
 
@@ -2116,7 +2094,7 @@ has_government = socialism
 		id = submarine_effort1
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = flexible_navy1 focus = large_navy1 }
-		x = 33
+		x = 37
 		y = 2
 		cost = 10
 
@@ -2154,7 +2132,7 @@ has_government = socialism
 		id = cruiser_effort1
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = large_navy1 focus = flexible_navy1 }
-		x = 35
+		x = 39
 		y = 2
 		cost = 10
 
@@ -2192,7 +2170,7 @@ has_government = socialism
 		id = destroyer_effort1
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = submarine_effort1 }
-		x = 33
+		x = 37
 		y = 3
 		cost = 10
 
@@ -2230,7 +2208,7 @@ has_government = socialism
 		id = capital_ships_effort1
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = cruiser_effort1 }
-		x = 35
+		x = 39
 		y = 3
 		cost = 10
 
@@ -2280,7 +2258,7 @@ focus = {
 		id = political_effort
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = {  }
-		x = -36
+		x = -34
 		y = 0
 		cost = 10
 
@@ -2300,7 +2278,7 @@ focus = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = political_effort }
 		mutually_exclusive = { focus = the_path_towards_nationalism focus = the_path_towards_socialism }
-		x = -36
+		x = -34
 		y = 1
 		cost = 10
 		
@@ -2336,7 +2314,7 @@ focus = {
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = the_path_towards_democracy }
 		mutually_exclusive = { focus = leftist_path focus = rightist_path }
-		x = -36
+		x = -34
 		y = 2
 		cost = 10
 
@@ -2352,7 +2330,7 @@ focus = {
 		icon = GFX_goal_ideology_liberalism
 		prerequisite = { focus = centrist_path }
 		mutually_exclusive = { focus = market_liberalism_focus focus = christian_democracy_focus }
-		x = -38
+		x = -36
 		y = 3
 		cost = 10
 
@@ -2367,7 +2345,7 @@ focus = {
 		id = social_liberal_government_focus
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = social_liberalism_focus }
-		x = -38
+		x = -36
 		y = 4
 		cost = 10
 
@@ -2385,7 +2363,7 @@ focus = {
 		icon = GFX_goal_ideology_market_liberal
 		prerequisite = { focus = centrist_path }
 		mutually_exclusive = { focus = social_liberalism_focus focus = christian_democracy_focus }
-		x = -36
+		x = -34
 		y = 3
 		cost = 10
 
@@ -2400,16 +2378,16 @@ focus = {
 		id = market_liberal_government_focus
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = market_liberalism_focus }
-		x = -36
+		x = -34
 		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = democratic elections_allowed = yes }
+			set_politics = { ruling_party = libertarianism elections_allowed = yes }
 			add_ideas = market_liberalism_idea_focus
-			add_popularity = { ideology = democratic popularity = 0.10 }
+			add_popularity = { ideology = libertarianism popularity = 0.10 }
 		}
 	}
 	
@@ -2418,7 +2396,7 @@ focus = {
 		icon = GFX_goal_ideology_christian_democracy
 		prerequisite = { focus = centrist_path }
 		mutually_exclusive = { focus = social_liberalism_focus focus = market_liberalism_focus }
-		x = -34
+		x = -32
 		y = 3
 		cost = 10
 
@@ -2433,16 +2411,16 @@ focus = {
 		id = christian_democracy_government_focus
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = christian_democracy_focus }
-		x = -34
+		x = -32
 		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = conservatism elections_allowed = yes }
+			set_politics = { ruling_party = christian_democratic elections_allowed = yes }
 			add_ideas = christian_democracy_idea_focus
-			add_popularity = { ideology = conservatism popularity = 0.10 }
+			add_popularity = { ideology = christian_democratic popularity = 0.10 }
 		}
 	}
 	
@@ -2451,7 +2429,7 @@ focus = {
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = the_path_towards_democracy }
 		mutually_exclusive = { focus = centrist_path focus = rightist_path  }
-		x = -42
+		x = -40
 		y = 2
 		cost = 10
 
@@ -2467,7 +2445,7 @@ focus = {
 		icon = GFX_goal_ideology_social_democracy
 		prerequisite = { focus = leftist_path }
 		mutually_exclusive = { focus = progressive_focus focus = democratic_socialism_focus }
-		x = -42
+		x = -40
 		y = 3
 		cost = 10
 
@@ -2482,7 +2460,7 @@ focus = {
 		id = social_democracy_government_focus
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = social_democracy_focus }
-		x = -42
+		x = -40
 		y = 4
 		cost = 10
 
@@ -2500,7 +2478,7 @@ focus = {
 		icon = GFX_goal_ideology_progressive
 		prerequisite = { focus = leftist_path }
 		mutually_exclusive = { focus = democratic_socialism_focus focus = social_democracy_focus }
-		x = -40
+		x = -38
 		y = 3
 		cost = 10
 
@@ -2515,16 +2493,16 @@ focus = {
 		id = progressive_government_focus
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = progressive_focus }
-		x = -40
+		x = -38
 		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = democratic elections_allowed = yes }
+			set_politics = { ruling_party = progressivism elections_allowed = yes }
 			add_ideas = progressive_idea_focus
-			add_popularity = { ideology = democratic popularity = 0.10 }
+			add_popularity = { ideology = progressivism popularity = 0.10 }
 		}
 	}
 	
@@ -2533,7 +2511,7 @@ focus = {
 		icon = GFX_goal_ideology_democratic_socialism
 		prerequisite = { focus = leftist_path }
 		mutually_exclusive = { focus = progressive_focus focus = social_democracy_focus }
-		x = -44
+		x = -42
 		y = 3
 		cost = 10
 
@@ -2548,16 +2526,16 @@ focus = {
 		id = democratic_socialist_government_focus
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = democratic_socialism_focus }
-		x = -44
+		x = -42
 		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = socialism elections_allowed = yes }
+			set_politics = { ruling_party = demsoc elections_allowed = yes }
 			add_ideas = democratic_socialism_idea_focus
-			add_popularity = { ideology = socialism popularity = 0.10 }
+			add_popularity = { ideology = demsoc popularity = 0.10 }
 		}
 	}
 	
@@ -2566,7 +2544,7 @@ focus = {
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = the_path_towards_democracy }
 		mutually_exclusive = { focus = centrist_path focus = leftist_path }
-		x = -29
+		x = -28
 		y = 2
 		cost = 10
 
@@ -2581,8 +2559,8 @@ focus = {
 		id = reactionary_focus
 		icon = GFX_goal_ideology_reactionary
 		prerequisite = { focus = rightist_path }
-		mutually_exclusive = { focus = conservative_focus focus = democratic_nationalism_focus focus = authoritarian_democracy_focus }
-		x = -30
+		mutually_exclusive = { focus = conservative_focus focus = democratic_nationalism_focus }
+		x = -28
 		y = 3
 		cost = 10
 
@@ -2597,16 +2575,16 @@ focus = {
 		id = reactionary_government_focus
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = reactionary_focus }
-		x = -30
+		x = -28
 		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = neutrality elections_allowed = yes }
+			set_politics = { ruling_party = reactionary elections_allowed = yes }
 			add_ideas = reactionary_idea_focus
-			add_popularity = { ideology = neutrality popularity = 0.10 }
+			add_popularity = { ideology = reactionary popularity = 0.10 }
 		}
 	}
 	
@@ -2614,8 +2592,8 @@ focus = {
 		id = conservative_focus
 		icon = GFX_goal_ideology_conservative
 		prerequisite = { focus = rightist_path }
-		mutually_exclusive = { focus = reactionary_focus focus = democratic_nationalism_focus focus = authoritarian_democracy_focus }
-		x = -32
+		mutually_exclusive = { focus = reactionary_focus focus = democratic_nationalism_focus }
+		x = -30
 		y = 3
 		cost = 10
 
@@ -2630,7 +2608,7 @@ focus = {
 		id = conservative_government_focus
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = conservative_focus }
-		x = -32
+		x = -30
 		y = 4
 		cost = 10
 
@@ -2647,8 +2625,8 @@ focus = {
 		id = democratic_nationalism_focus
 		icon = GFX_goal_ideology_democratic_nationalism
 		prerequisite = { focus = rightist_path }
-		mutually_exclusive = { focus = reactionary_focus focus = conservative_focus focus = authoritarian_democracy_focus }
-		x = -28
+		mutually_exclusive = { focus = reactionary_focus focus = conservative_focus }
+		x = -26
 		y = 3
 		cost = 10
 
@@ -2663,58 +2641,27 @@ focus = {
 		id = democratic_nationalism_government_focus
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = democratic_nationalism_focus }
-		x = -28
+		x = -26
 		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = nationalism elections_allowed = yes }
+			set_politics = { ruling_party = demnat elections_allowed = yes }
 			add_ideas = democratic_nationalism_idea_focus
-			add_popularity = { ideology = nationalism popularity = 0.10 }
+			add_popularity = { ideology = demnat popularity = 0.10 }
 		}
 	}
 	
-	focus = {
-		id = authoritarian_democracy_focus
-		icon = GFX_goal_ideology_authoritarian_democracy
-		prerequisite = { focus = rightist_path }
-		mutually_exclusive = { focus = reactionary_focus focus = conservative_focus focus = democratic_nationalism_focus }
-		x = -26
-		y = 3
-		cost = 10
 
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = authoritarian_democracy_idea_focus
-		}
-	}
-	
-	focus = {
-		id = authoritarian_democracy_government_focus
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = authoritarian_democracy_focus }
-		x = -26
-		y = 4
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			set_politics = { ruling_party = neutrality elections_allowed = yes }
-			add_ideas = authoritarian_democracy_idea_focus
-			add_popularity = { ideology = neutrality popularity = 0.10 }
-		}
-	}
 	
 	focus = {
 		id = the_path_towards_nationalism
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = political_effort }
 		mutually_exclusive = { focus = the_path_towards_democracy focus = the_path_towards_socialism }
-		x = -17
+		x = -15
 		y = 1
 		cost = 10
 		
@@ -2748,7 +2695,7 @@ focus = {
 		icon = GFX_goal_tfv_saf_support_ossebrandwag
 		prerequisite = { focus = the_path_towards_nationalism }
 		mutually_exclusive = { focus = authoritarianism_focus }
-		x = -13
+		x = -10
 		y = 2
 		cost = 10
 		
@@ -2779,11 +2726,56 @@ focus = {
 	}	
 	
 	focus = {
+		id = paganism_focus
+		icon = GFX_goal_ideology_paganism
+		prerequisite = { focus = authoritarianism_focus }
+		mutually_exclusive = { focus = ultranationalism_focus focus = fascism_focus focus = strasserism_focus focus = national_socialism_focus }
+		x = -6
+		y = 3
+		cost = 10
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = paganism
+				}
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = paganism_idea_focus
+		}
+	}
+	
+	focus = {
+		id = paganism_government_focus
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = paganism_focus }
+		x = -6
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = { ruling_party = paganism elections_allowed = no }
+			add_ideas = paganism_idea_focus
+			remove_ideas = totalitarianism_focus_idea
+			add_popularity = { ideology = paganism popularity = 0.10 }
+		}
+	}
+	
+	focus = {
 		id = national_socialism_focus
 		icon = GFX_goal_ideology_national_socialism
 		prerequisite = { focus = totalitarianism_focus }
-		mutually_exclusive = { focus = ultranationalism_focus focus = fascism_focus focus = fascist_monarchy_focus }
-		x = -10
+		mutually_exclusive = { focus = ultranationalism_focus focus = fascism_focus focus = strasserism_focus focus = paganism_focus }
+		x = -8
 		y = 3
 		cost = 10
 		
@@ -2809,7 +2801,7 @@ focus = {
 		id = national_socialism_government_focus
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = national_socialism_focus }
-		x = -10
+		x = -8
 		y = 4
 		cost = 10
 
@@ -2824,11 +2816,11 @@ focus = {
 	}
 	
 	focus = {
-		id = fascist_monarchy_focus
-		icon = GFX_goal_ideology_fascist_monarchy
+		id = strasserism_focus
+		icon = GFX_goal_ideology_strasserism
 		prerequisite = { focus = totalitarianism_focus }
-		mutually_exclusive = { focus = national_socialism_focus focus = fascism_focus focus = ultranationalism_focus }
-		x = -12
+		mutually_exclusive = { focus = paganism_focus focus = national_socialism_focus focus = fascism_focus focus = ultranationalism_focus }
+		x = -10
 		y = 3
 		cost = 10
 		
@@ -2846,25 +2838,25 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = fascist_monarchy_idea_focus
+			add_ideas = strasserism_idea_focus
 		}
 	}
 	
 	focus = {
-		id = fascist_monarchy_government_focus
+		id = strasserism_government_focus
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = fascist_monarchy_focus }
-		x = -12
+		prerequisite = { focus = strasserism_focus }
+		x = -10
 		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = monarchism elections_allowed = no }
-			add_ideas = fascist_monarchy_idea_focus
+			set_politics = { ruling_party = strasserism elections_allowed = no }
+			add_ideas = strasserism_idea_focus
 			remove_ideas = totalitarianism_focus_idea
-			add_popularity = { ideology = monarchism popularity = 0.10 }
+			add_popularity = { ideology = strasserism popularity = 0.10 }
 		}
 	}
 	
@@ -2872,8 +2864,8 @@ focus = {
 		id = fascism_focus
 		icon = GFX_goal_ideology_fascism
 		prerequisite = { focus = totalitarianism_focus }
-		mutually_exclusive = { focus = national_socialism_focus focus = ultranationalism_focus focus = fascist_monarchy_focus }
-		x = -14
+		mutually_exclusive = { focus = paganism_focus focus = national_socialism_focus focus = ultranationalism_focus focus = strasserism_focus }
+		x = -12
 		y = 3
 		cost = 10
 		
@@ -2899,7 +2891,7 @@ focus = {
 		id = fascism_government_focus
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = fascism_focus }
-		x = -14
+		x = -12
 		y = 4
 		cost = 10
 
@@ -2917,9 +2909,9 @@ focus = {
 		id = ultranationalism_focus
 		icon = GFX_goal_ideology_nationalism
 		prerequisite = { focus = totalitarianism_focus }
-		mutually_exclusive = { focus = national_socialism_focus focus = fascism_focus focus = fascist_monarchy_focus }
+		mutually_exclusive = { focus = paganism_focus focus = national_socialism_focus focus = fascism_focus focus = strasserism_focus }
 		mutually_exclusive = { }
-		x = -16
+		x = -14
 		y = 3
 		cost = 10
 		
@@ -2945,7 +2937,7 @@ focus = {
 		id = ultranationalism_government_focus
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = ultranationalism_focus }
-		x = -16
+		x = -14
 		y = 4
 		cost = 10
 
@@ -2964,7 +2956,7 @@ focus = {
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = the_path_towards_nationalism }
 		mutually_exclusive = { focus = totalitarianism_focus }
-		x = -21
+		x = -20
 		y = 2
 		cost = 10
 		
@@ -2995,36 +2987,36 @@ focus = {
 	}
 	
 	focus = {
-		id = militarism_focus
-		icon = GFX_goal_ideology_militarism
+		id = islamism_focus
+		icon = GFX_goal_ideology_islamism
 		prerequisite = { focus = authoritarianism_focus }
-		mutually_exclusive = { focus = despotism_focus focus = theocracy_focus focus = monarchy_focus }
-		x = -18
+		mutually_exclusive = { focus = despotism_focus focus = theocracy_focus focus = monarchy_focus focus = fascist_monarchy_focus }
+		x = -16
 		y = 3
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = militarism_idea_focus
+			add_ideas = islamism_idea_focus
 		}
 	}
 	
 	focus = {
-		id =  militarism_government_focus
+		id =  islamism_government_focus
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = militarism_focus }
-		x = -18
+		prerequisite = { focus = islamism_focus }
+		x = -16
 		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_politics = { ruling_party = neutrality elections_allowed = no }
-			add_ideas = militarism_idea_focus
+			set_politics = { ruling_party = islamism elections_allowed = no }
+			add_ideas = islamism_idea_focus
 			remove_ideas = authoritarianism_focus_idea
-			add_popularity = { ideology = neutrality popularity = 0.10 }
+			add_popularity = { ideology = islamism popularity = 0.10 }
 		}
 	}
 	
@@ -3032,8 +3024,8 @@ focus = {
 		id = theocracy_focus
 		icon = GFX_goal_ideology_religious
 		prerequisite = { focus = authoritarianism_focus }
-		mutually_exclusive = { focus = despotism_focus focus = monarchy_focus focus = militarism_focus }
-		x = -20
+		mutually_exclusive = { focus = despotism_focus focus = monarchy_focus focus = islamism_focus focus = fascist_monarchy_focus }
+		x = -18
 		y = 3
 		cost = 10
 		
@@ -3066,7 +3058,7 @@ focus = {
 		id = theocracy_government_focus
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = theocracy_focus }
-		x = -20
+		x = -18
 		y = 4
 		cost = 10
 
@@ -3084,7 +3076,7 @@ focus = {
 		id = monarchy_focus
 		icon = GFX_goal_ideology_absolute_monarchy
 		prerequisite = { focus = authoritarianism_focus }
-		mutually_exclusive = { focus = despotism_focus focus = theocracy_focus focus = militarism_focus }
+		mutually_exclusive = { focus = despotism_focus focus = theocracy_focus focus = islamism_focus focus = fascist_monarchy_focus }
 		x = -22
 		y = 3
 		cost = 10
@@ -3133,10 +3125,55 @@ focus = {
 	}
 	
 	focus = {
+		id = fascist_monarchy_focus
+		icon = GFX_goal_ideology_fascist_monarchy
+		prerequisite = { focus = authoritarianism_focus }
+		mutually_exclusive = { focus = despotism_focus focus = theocracy_focus focus = islamism_focus }
+		x = -20
+		y = 3
+		cost = 10
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				any_neighbor_country = {
+					is_major = yes
+					has_government = monarchism
+				}
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = fascist_monarchy_idea_focus
+		}
+	}
+	
+	focus = {
+		id = fascist_monarchy_government_focus
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = fascist_monarchy_focus }
+		x = -20
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = { ruling_party = fascist_monarchism elections_allowed = no }
+			add_ideas = fascist_monarchy_idea_focus
+			remove_ideas = totalitarianism_focus_idea
+			add_popularity = { ideology = fascist_monarchism popularity = 0.10 }
+		}
+	}
+	
+	focus = {
 		id = despotism_focus
 		icon = GFX_goal_ideology_authoritarian
 		prerequisite = { focus = authoritarianism_focus }
-		mutually_exclusive = { focus = monarchy_focus focus = theocracy_focus focus = militarism_focus }
+		mutually_exclusive = { focus = monarchy_focus focus = theocracy_focus focus = islamism_focus focus = fascist_monarchy_focus }
 		x = -24
 		y = 3
 		cost = 10
@@ -3171,7 +3208,7 @@ focus = {
 		icon = GFX_focus_generic_join_comintern
 		prerequisite = { focus = political_effort }
 		mutually_exclusive = { focus = the_path_towards_democracy focus = the_path_towards_nationalism }
-		x = -49
+		x = -48
 		y = 1
 		cost = 10
 		
@@ -3204,7 +3241,7 @@ focus = {
 		id = trotskyism_focus
 		icon = GFX_goal_ideology_trotskyism
 		prerequisite = { focus = the_path_towards_socialism }
-		mutually_exclusive = { focus = maoism_focus focus = leninism_focus focus = anarchism_focus }
+		mutually_exclusive = { focus = authoritarian_socialism_focus focus = maoism_focus focus = leninism_focus focus = anarchism_focus }
 		x = -46
 		y = 3
 		cost = 10
@@ -3238,7 +3275,7 @@ focus = {
 		id = leninism_focus
 		icon = GFX_goal_ideology_leninism
 		prerequisite = { focus = the_path_towards_socialism }
-		mutually_exclusive = { focus = maoism_focus focus = trotskyism_focus focus = anarchism_focus }
+		mutually_exclusive = { focus = authoritarian_socialism_focus focus = maoism_focus focus = trotskyism_focus focus = anarchism_focus }
 		x = -50
 		y = 3
 		cost = 10
@@ -3290,7 +3327,7 @@ focus = {
 		id = maoism_focus
 		icon = GFX_goal_ideology_maoism
 		prerequisite = { focus = the_path_towards_socialism }
-		mutually_exclusive = { focus = trotskyism_focus focus = leninism_focus focus = anarchism_focus }
+		mutually_exclusive = { focus = authoritarian_socialism_focus focus = trotskyism_focus focus = leninism_focus focus = anarchism_focus }
 		x = -48
 		y = 3
 		cost = 10
@@ -3342,7 +3379,7 @@ focus = {
 		id = anarchism_focus
 		icon = GFX_goal_ideology_anarchism
 		prerequisite = { focus = the_path_towards_socialism }
-		mutually_exclusive = { focus = maoism_focus focus = leninism_focus focus = trotskyism_focus }
+		mutually_exclusive = { focus = authoritarian_socialism_focus focus = maoism_focus focus = leninism_focus focus = trotskyism_focus }
 		x = -52
 		y = 3
 		cost = 10
@@ -3372,6 +3409,39 @@ focus = {
 		}
 	}
 	
+		focus = {
+		id = authoritarian_socialism_focus
+		icon = GFX_goal_ideology_radical_revisionism
+		prerequisite = { focus = the_path_towards_socialism }
+		mutually_exclusive = { focus = maoism_focus focus = leninism_focus focus = anarchism_focus }
+		x = -44
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = authoritarian_socialism_idea_focus
+		}
+	}
+	
+	focus = {
+		id = authoritarian_socialism_government_focus
+		icon = GFX_focus_generic_soviet_politics
+		prerequisite = { focus = authoritarian_socialism_focus }
+		x = -44
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = { ruling_party = socialism elections_allowed = yes }
+			add_ideas = authoritarian_socialism_idea_focus
+			add_popularity = { ideology = socialism popularity = 0.10 }
+		}
+	}
+	
 	
 ########################
 #Generic Political Tree
@@ -3392,7 +3462,7 @@ focus = {
 				}
 			}
 		}		
-		x = -36
+		x = -34
 		y = 7
 		cost = 10
 
@@ -3435,8 +3505,8 @@ focus = {
 	focus = {
 		id = foreign_expeditions
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = market_liberal_government_focus focus = social_liberal_government_focus focus = christian_democracy_government_focus focus = progressive_government_focus focus = democratic_socialist_government_focus focus = social_democracy_government_focus focus = despotism_government_focus focus = authoritarian_democracy_government_focus focus = conservative_government_focus focus = reactionary_government_focus focus = democratic_nationalism_government_focus focus = fascism_government_focus focus = national_socialism_government_focus focus = fascist_monarchy_government_focus focus = ultranationalism_government_focus focus = militarism_government_focus focus = theocracy_government_focus focus = monarchy_government_focus focus = anarchism_government_focus focus = maoism_government_focus focus = leninism_government_focus focus = trotskyism_government_focus }
-		x = -34
+		prerequisite = { focus = market_liberal_government_focus focus = social_liberal_government_focus focus = christian_democracy_government_focus focus = progressive_government_focus focus = democratic_socialist_government_focus focus = social_democracy_government_focus focus = despotism_government_focus focus = authoritarian_socialism_government_focus focus = conservative_government_focus focus = reactionary_government_focus focus = democratic_nationalism_government_focus focus = fascism_government_focus focus = national_socialism_government_focus focus = fascist_monarchy_government_focus focus = ultranationalism_government_focus focus = militarism_government_focus focus = theocracy_government_focus focus = monarchy_government_focus focus = anarchism_government_focus focus = maoism_government_focus focus = leninism_government_focus focus = trotskyism_government_focus }
+		x = -32
 		y = 5
 		cost = 10
 
@@ -3450,9 +3520,9 @@ focus = {
 	focus = {
 		id = neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = market_liberal_government_focus focus = social_liberal_government_focus focus = christian_democracy_government_focus focus = progressive_government_focus focus = democratic_socialist_government_focus focus = social_democracy_government_focus focus = despotism_government_focus focus = authoritarian_democracy_government_focus focus = conservative_government_focus focus = reactionary_government_focus focus = democratic_nationalism_government_focus focus = fascism_government_focus focus = national_socialism_government_focus focus = fascist_monarchy_government_focus focus = ultranationalism_government_focus focus = militarism_government_focus focus = theocracy_government_focus focus = monarchy_government_focus focus = anarchism_government_focus focus = maoism_government_focus focus = leninism_government_focus focus = trotskyism_government_focus }
+		prerequisite = { focus = market_liberal_government_focus focus = social_liberal_government_focus focus = christian_democracy_government_focus focus = progressive_government_focus focus = democratic_socialist_government_focus focus = social_democracy_government_focus focus = despotism_government_focus focus = authoritarian_socialism_government_focus focus = conservative_government_focus focus = reactionary_government_focus focus = democratic_nationalism_government_focus focus = fascism_government_focus focus = national_socialism_government_focus focus = fascist_monarchy_government_focus focus = ultranationalism_government_focus focus = militarism_government_focus focus = theocracy_government_focus focus = monarchy_government_focus focus = anarchism_government_focus focus = maoism_government_focus focus = leninism_government_focus focus = trotskyism_government_focus }
 		mutually_exclusive = { focus = foreign_expeditions }
-		x = -38
+		x = -36
 		y = 5
 		cost = 20
 
@@ -3480,7 +3550,7 @@ focus = {
 
 		continue_if_invalid = yes
 		
-		x = -34
+		x = -32
 		y = 6
 		cost = 10
 

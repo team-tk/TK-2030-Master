@@ -12,6 +12,7 @@ bookmarks = {
 			history = "USA_DECADE_CRISIS_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -21,6 +22,7 @@ bookmarks = {
 			history = "SOV_DECADE_CRISIS_DESC"
 			ideology = communism
 			ideas = {
+			fog_dictatorship_lw
 			}
 			focuses = {
 			
@@ -31,6 +33,7 @@ bookmarks = {
 			history = "PRC_DECADE_CRISIS_DESC"
 			ideology = communism
 			ideas = {
+			fog_dictatorship_lw
 			}
 			focuses = {
 			}	
@@ -40,134 +43,49 @@ bookmarks = {
 			history = "DDR_DECADE_CRISIS_DESC"
 			ideology = communism
 			ideas = {
+			fog_dictatorship_lw
 			}
 			focuses = {
 			}
 		}
 			
-		"CUB" = {
-			history = "CUB_DECADE_CRISIS_DESC"
-			ideology = communism
-			minor = yes
+		"GER"={
+			#minor = yes
+			history = "GER_DECADE_CRISIS_DESC"
+			ideology = democratic
 			ideas = {
-			}
-			focuses = {
-			}
-			
-		}
-	
-		"VIN"={
-			history = "VIN_DECADE_CRISIS_DESC"
-			ideology = communism
-			minor = yes
-			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
 		}
-#		"VIE"={
-#			history = "VIE_DECADE_CRISIS_DESC"
-#			ideology = democratic
-#			ideas = {
-#			}
-#			focuses = {
-#			}
-#		}
-
+		
+		
+		
 		"FRA"={
 			history = "FRA_DECADE_CRISIS_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
 		}
-		"ENG"={
+		
+		
+			"ENG"={
 			history = "ENG_DECADE_CRISIS_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
-		}
-		"WGR"={
-			minor = yes
-			history = "WGR_DECADE_CRISIS_DESC"
-			ideology = democratic
-			ideas = {
 			}
-			focuses = {
-			}
-		}
-		
-		"SAF"={
-			minor = yes
-			history = "SAF_DECADE_CRISIS_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"IRQ"={
-			minor = yes
-			history = "IRQ_DECADE_CRISIS_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"BUL"={
-			minor = yes
-			history = "BUL_DECADE_CRISIS_DESC"
-			ideology = communism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"ITA"={
-			minor = yes
-			history = "ITA_DECADE_CRISIS_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"KOR"={
-			minor = yes
-			history = "ITA_DECADE_CRISIS_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		
-		"DPR"={
-			minor = yes
-			history = "KPA_DECADE_CRISIS_DESC"
-			ideology = communism
-			ideas = {
-			}
-			focuses = {
-			}
-		}
-		"ZIM"={
-			minor = yes
-			history = "ZIM_DECADE_CRISIS_DESC"
-			ideology = democratic
-			ideas = {
-			}
-			focuses = {
-			}
-		}
+			
+			
+
+	
 
 		"---"={
 			history = "OTHER_DESC"

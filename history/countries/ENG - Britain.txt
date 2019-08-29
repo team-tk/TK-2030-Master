@@ -838,4 +838,540 @@ create_navy_leader = {
 }
 
 
+2000.1.1 = {
 
+set_politics = {
+	ruling_party = socdem
+	last_election = "1997.5.1"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    socdem = 47.6
+	conservatism = 31
+	democratic = 16.2
+	reactionary = 3.2
+	demsoc = 0.7
+	progressivism = 0.8
+	libertarianism = 0.2
+	fascism = 0.1
+	nationalism = 0.1
+	communism = 0.1
+}
+
+
+create_country_leader = {
+	name = "Nick Griffin"
+	picture = "Nick_Griffin.dds"
+	ideology = fascism_ideology
+}
+
+create_country_leader = {
+	name = "Tom Holmes"
+	picture = "Tom_Holmes.dds"
+	ideology = autocrat
+}
+
+create_country_leader = {
+	name = "Elizabeth II"
+	picture = "Elizabeth.dds"
+	ideology = absolutism
+}
+
+create_country_leader = {
+	name = "Michael Holmes"
+	picture = "Michael_Holmes.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "William Hague"
+	picture = "William_Hague.dds"
+	ideology = fiscal_conservative
+}
+
+create_country_leader = {
+	name = "Tony Blair"
+	picture = "Tony_Blair.dds"
+	ideology = social_democracy
+}
+
+create_country_leader = {
+	name = "Anjem Choudary"
+	picture = "Anjem_Choudary.dds"
+	ideology = islamic_authoritarian
+}
+	
+create_country_leader = {
+	name = "Charles Kennedy"
+	picture = "Charles_Kennedy.dds"
+	ideology = liberal_centrism
+}
+	
+create_country_leader = {
+	name = "Natalie Bennett"
+	picture = "Natalie_Bennett.dds"
+	ideology = green
+}
+	
+create_country_leader = {
+	name = "Peter Taaffe"
+	picture = "Peter_Taaffey.dds"
+	ideology = democratic_socialism
+}
+	
+create_country_leader = {
+	name = "Robert Griffiths"
+	picture = "Robert_Griffiths.dds"
+	ideology = leninism
+}
+
+
+create_field_marshal = {
+	name = "Sir Stuart Peach"
+	picture = "generals/Stuart_Peach.dds"
+	traits = { old_guard defensive_doctrine }
+	skill = 2
+}
+
+create_field_marshal = {
+	name = "Patrick Sanders"
+	picture = "generals/Patrick_Sanders.dds"
+	traits = { offensive_doctrine }
+	skill = 1
+}
+
+create_field_marshal = {
+	name = "Sir Richard Shirreff"
+	picture = "generals/Richard_Shirreff.dds"
+	traits = { inspirational_leader }
+	skill = 2
+}
+
+create_field_marshal = {
+	name = "Sir Christopher Deverell"
+	picture = "generals/Chris_Deverell.dds"
+	traits = { logistics_wizard }
+	skill = 2
+}
+	
+create_corps_commander = {
+	name = "Glenn Haughton"
+	picture = "generals/Glenn_Haughton.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Paul Anthony Edward Nanson"
+	picture = "generals/Edward_Nanson.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Andrew Hughes"
+	picture = "generals/Andrew_Hughes.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Philip Napier"
+	picture = "generals/Philip_Napier.dds"
+	traits = { hill_fighter }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Mike Elviss"
+	picture = "generals/Mike_Elviss.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Tom Beckett"
+	picture = "generals/Tom_Beckett.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Richard William Dennis"
+	picture = "generals/Richard_Dennis.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Bob Bruce"
+	picture = "generals/Bob_Bruce.dds"
+	traits = { trickster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Colin Weir"
+	picture = "generals/Colin_Weir.dds"
+	traits = { commando ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ralph Wooddisse"
+	picture = "generals/Ralph_Wooddisse.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Charlie Herbert"
+	picture = "generals/Charlie_Herbert.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Richard Felton"
+	picture = "generals/Richard_Felton.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Tyrone Urch"
+	picture = "generals/Tyrone_Urch.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Alastair Aitken"
+	picture = "generals/Alastair_Aitken.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "David Neal"
+	picture = "generals/David_Neal.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Benjamin Bathurst"
+	picture = "generals/Ben_Bathurst.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Mike Walliker"
+	picture = "generals/Mike_Walliker.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "James Illingworth"
+	picture = "generals/James_Illingworth.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Russell La Forte"
+	picture = "generals/Russ_La_Forte.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "James Robert Chiswell"
+	picture = "generals/James_Chiswell.dds"
+	traits = { commando }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Oliver Stokes"
+	picture = "generals/Oliver_Stokes.dds"
+	traits = { fortress_buster }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Andy Hadfield"
+	picture = "generals/Andy_Hadfield.dds"
+	traits = { ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "David Middleton"
+	picture = "generals/David_Middleton.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Sir Stephen Hillier"
+	picture = "generals/Stephen_Hillier.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Robert Magowan"
+	picture = "generals/Rob_Magowan.dds"
+	traits = { naval_invader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Matt Pierson"
+	picture = "generals/Matt_Pierson.dds"
+	traits = { commando naval_invader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Richard Cantrill"
+	picture = "generals/Richard_Cantrill.dds"
+	traits = { commando naval_invader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Graeme Fraser"
+	picture = "generals/Graeme_Fraser.dds"
+	traits = { commando naval_invader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Tony Turner"
+	picture = "generals/Tony_Turner.dds"
+	traits = { commando naval_invader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Paul Lynch"
+	picture = "generals/Paul_Lynch.dds"
+	traits = { commando trait_engineer }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Graeme Armour"
+	picture = "generals/Graeme_Armour.dds"
+	traits = { commando naval_invader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Ed Davis"
+	picture = "generals/Ed_Davis.dds"
+	traits = { naval_invader }
+	skill = 1
+}
+	
+create_corps_commander = {
+	name = "Patrick Cordingley"
+	picture = "generals/Patrick_Cordingley.dds"
+	skill = 1
+}
+	
+create_corps_commander = {
+	name = "Michael Rose"
+	picture = "generals/Michael_Rose.dds"
+	skill = 1
+}
+	
+create_corps_commander = {
+	name = "Peter Wall"
+	picture = "generals/Peter_Wall.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Richard Dannatt"
+	picture = "generals/Richard_Dannatt.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Rupert Smith"
+	picture = "generals/Rupert_Smith.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Jock Slater"
+	picture = "admirals/Jock_Slater.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Mark Stanhope"
+	picture = "admirals/Mark_Stanhope.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Michael Boyce"
+	picture = "admirals/Michael_Boyce.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Philip Jones"
+	picture = "admirals/Philip_Jones.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Duncan Potts"
+	picture = "admirals/Duncan_Potts.dds"
+	traits = { superior_tactician }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Alasdair Walker"
+	picture = "generals/Alasdair_Walker.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Ben Key"
+	picture = "generals/Ben_Key.dds"
+	traits = { ironside }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Jonathan Woodcock"
+	picture = "generals/Jonathan_Woodcock.dds"
+	traits = { seawolf }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Tom Karsten"
+	picture = "generals/Tom_Karsten.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Paul Bennett"
+	picture = "generals/Paul_Bennett.dds"
+	traits = { fly_swatter }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Robert Tarrant"
+	picture = "generals/Robert_Tarrant.dds"
+	traits = { spotter }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Alex Burton"
+	picture = "generals/Alex_Burton.dds"
+	traits = { seawolf }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "John Weale"
+	picture = "generals/John_Weale.dds"
+	traits = { air_controller }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Simon Williams"
+	picture = "generals/Simon_Williams.dds"
+	traits = { ironside }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "John Clink"
+	picture = "generals/John_Clink.dds"
+	traits = { spotter }
+	skill = 1
+}
+
+}
+
+2016.6.1 = {
+	set_politics = {
+		ruling_party = conservatism
+		elections_allowed = yes
+		last_election = "2015.5.7"
+}
+
+    set_popularities = {
+			socdem = 35.7
+			conservatism = 35.4
+			reactionary = 15.1
+			democratic = 7.9
+			progressivism = 4.4
+			demsoc = 0.9
+			libertarianism = 0.2
+			nationalism = 0.2
+			communism = 0.1
+			fascism = 0.1
+		}
+	
+	create_country_leader = {
+		name = "David MacDonald"
+		picture = "david_macdonald.dds"
+		ideology = nazism_ideology
+	}
+	
+	create_country_leader = {
+		name = "Adam Walker"
+		picture = "adam_walker.dds"
+		ideology = proto_fascism
+	}
+	
+	create_country_leader = {
+		name = "Nigel Farage"
+		picture = "Nigel_Farage.dds"
+		ideology = counter_progressivism_democrat
+	}
+	
+	create_country_leader = {
+		name = "David Cameron"
+		picture = "David_Cameron.dds"
+		ideology = fiscal_conservative
+	}
+	
+	create_country_leader = {
+		name = "Adam Brown"
+		picture = "Adam_Brown.dds"
+		ideology = libertarianism_ideology
+	}
+	
+	create_country_leader = {
+		name = "Tim Farron"
+		picture = "Tim_Farron.dds"
+		ideology = liberal_centrism
+	}
+	
+	create_country_leader = {
+		name = "Jeremy Corbyn"
+		picture = "Jeremy_Corbyn.dds"
+		ideology = social_democracy
+	}
+}

@@ -35,6 +35,7 @@ has_fascist_government = {
 	custom_trigger_tooltip = {
 	tooltip = TT_fascist_form_of_government
 	OR = {
+		has_government = nationalism
 		has_government = fascism
 		has_government = nazism
 		has_government = strasserism
@@ -61,7 +62,7 @@ has_communist_government = {
 
 has_socialist_government = {
 	custom_trigger_tooltip = {
-	tooltip = TT_communist_form_of_government
+	tooltip = TT_socialist_form_of_government
 	OR = {
 		has_government = communism
 		has_government = syndicalism
@@ -70,6 +71,7 @@ has_socialist_government = {
 		has_government = maoism
 		has_government = trotskyism	
 		has_government = demsoc
+		has_government = progressivism
 	}
 	}
 }
@@ -104,13 +106,29 @@ has_neutral_government = {
 
 has_nationalist_government = {
 	custom_trigger_tooltip = {
-	tooltip = TT_neutral_form_of_government
+	tooltip = TT_nationalist_form_of_government
 	OR = {
 		has_government = monarchism
 		has_government = neutrality
-		has_government = theocratic
+		has_government = conservatism
+		has_government = demnat
 		has_government = nationalism
 		has_government = reactionary
+		has_government = fascism
+		has_government = nazism
+		has_government = strasserism
+		has_government = paganism
+		has_government = fascist_monarchism
+	}
+	}
+}
+
+has_theocratic_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_theocratic_form_of_government
+	OR = {
+		has_government = theocratic
+		has_government = islamism
 	}
 	}
 }
@@ -127,10 +145,39 @@ has_totalitarian_government = {
 	}
 }
 
-is_left_wing_democratic = {
+has_left_wing_democratic_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_left_form_of_government
+	OR = {
 		has_government = socdem
 		has_government = demsoc
+		has_government = progressivism
+	}
+	}
 }
+
+has_center_democratic_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_center_form_of_government
+	OR = {
+		has_government = democratic
+		has_government = christian_democratic
+		has_government = libertarianism
+	}
+	}
+}
+
+has_right_wing_democratic_government = {
+	custom_trigger_tooltip = {
+	tooltip = TT_right_form_of_government
+	OR = {
+		has_government = demnat
+		has_government = conservatism
+		has_government = reactionary
+	}
+	}
+}
+
 
 is_left_wing = {
 	OR = {
@@ -154,7 +201,7 @@ is_centrist_democratic = {
 is_right_wing_democratic = {
 	OR = {
 		has_government = conservatism
-		has_government = neutrality
+		has_government = reactionary
 		has_government = demnat
 	}
 }

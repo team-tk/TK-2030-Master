@@ -422,6 +422,10 @@ ideologies = {
 			}
 			national_liberalism = {
 			}
+			liberal_centrism = {
+			}
+			liberal_moderate = {
+			}
 			
 			
 		}
@@ -557,6 +561,12 @@ ideologies = {
 	conservatism = {
 	
 		types = {
+		
+			right_wing_conservatism = {
+			}
+		
+			constitutionalist = {
+			}
 			
 			moderate = {
 			}
@@ -574,6 +584,9 @@ ideologies = {
 			}
 			
 			classical_liberalism = {
+			}
+			
+			fiscal_conservative = {
 			}
 			
 			
@@ -616,6 +629,9 @@ ideologies = {
 	
 		types = {
 		
+			counter_progressive_democrat = {
+			}
+			
 			reactionary_ideology = {
 			}
 			
@@ -757,6 +773,9 @@ ideologies = {
 			agrarianism = {
 			}
 			
+			independent = {
+			}
+			
 			
 				
 			
@@ -833,6 +852,9 @@ ideologies = {
 			}
 			
 			ultranationalism = {
+			}
+			
+			autocrat = {
 			}
 			
 			

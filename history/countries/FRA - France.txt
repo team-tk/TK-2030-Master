@@ -1407,3 +1407,229 @@ if = {
 		}
 	}
 }
+
+
+2000.1.1 = {
+
+set_politics = {	
+	ruling_party = conservatism
+	last_election = "1997.6.1"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 7
+    conservatism = 23
+    libertarianism = 20
+    democratic = 3
+    socdem = 40
+    progressivism = 3
+    communism = 4
+}
+
+create_country_leader = {
+	name = "Lionel Jospin"
+	picture = "Lionel_Jospin.dds"
+	ideology = social_democracy
+}
+
+create_country_leader = {
+	name = "Jacques Chirac"
+	picture = "Jacques_Chirac.dds"
+	ideology = gaullism
+}
+
+create_country_leader = {
+	name = "Jean Marie Le Pen"
+	picture = "Jean_Marie_Le_Pen.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "Alain Soral"
+	picture = "Alain_Soral.dds"
+	ideology = nazism_ideology  
+}
+
+create_country_leader = {
+	name = "Andre Gandillon"
+	picture = "Andre_Gandillon.dds"
+	ideology = democratic_nationalism
+}
+
+create_country_leader = {
+	name = "Jean-Luc Melenchon"
+	picture = "Jean_Luc_Melenchon.dds"
+	ideology = democratic_socialism
+}
+
+create_country_leader = {
+	name = "Marie Buffet"
+	picture = "Marie_Buffet.dds"
+	ideology = leninism
+}
+
+create_country_leader = {
+	name = "Francois Bayrou"
+	picture = "Francois_Bayrou.dds"
+	ideology = libertarianism_ideology
+}
+
+create_country_leader = {
+	name = "Noel Mamere"
+	picture = "Noel_Mamere.dds"
+	ideology = green
+}
+	
+create_country_leader = {
+	name = "Louis XX"
+	picture = "Louis_XX.dds"
+	ideology = absolutism
+}
+
+create_country_leader = {
+	name = "Christiane Taubira"
+	picture = "Christiane_Taubira.dds"
+	ideology = liberalism_ideology
+}
+
+create_corps_commander = {
+	name = "Jean-Pierre Bosser"
+	picture = "generals/Jean_Pierre_Bosser.dds"
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Pierre Chavancy"
+	picture = "generals/Pierre_Chavancy.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Bertrand Ract-Madoux"
+	picture = "generals/Bertrand_Ract_Madoux.dds"
+	skill = 1
+}
+
+}
+
+
+2002.6.16 = {
+	set_politics = {
+		ruling_party = conservatism
+		last_election = "2002.6.16"
+		election_frequency = 60
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        reactionary = 10
+        conservatism = 37
+        libertarianism = 6
+        democratic = 3
+        socdem = 30
+        progressivism = 6
+        demsoc = 3
+        communism = 5
+    }
+}
+
+2003.1.1 = {
+	create_country_leader = {
+		name = "Segolene Royal"
+		picture = "Segolene_Royal.dds"
+		ideology = social_democracy
+	}
+
+}
+
+2007.6.16 = {
+	
+	set_politics = {	
+	ruling_party = conservatism
+	last_election = "2007.6.16"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 4
+    conservatism = 43
+    libertarianism = 8
+    democratic = 2
+    socdem = 30
+    progressivism = 4
+    demsoc = 4
+    communism = 5
+}
+
+	create_country_leader = {
+		name = "Nicolas Sarkozy"
+		picture = "Nicolas_Sarkozy.dds"
+		ideology = gaullism
+	}
+
+}
+
+
+2010.1.1 = {
+	create_country_leader = {
+		name = "Pierre Laurent"
+		picture = "Pierre_Laurent.dds"
+		ideology = leninism
+	}
+}
+
+2011.1.16 = {
+	create_country_leader = {
+		name = "Francois Hollande"
+		picture = "Francois_Hollande.dds"
+		ideology = social_democracy
+	}
+	create_country_leader = {
+		name = "Marine Le Pen"
+		picture = "Marine_Le_Pen.dds"
+		ideology = counter_progressivism_democrat
+	}
+	create_country_leader = {
+		name = "Eva Joly"
+		picture = "Eva_Joly.dds"
+		ideology = green
+	}
+	create_country_leader = {
+		name = "Jean-Michel Baylet"
+		picture = "Jean_Michel_Baylet.dds"
+		ideology = liberalism_ideology
+	}
+}
+
+2012.5.6 = {
+	set_politics = {
+		ruling_party = socdem
+		last_election = "2012.5.6"
+		election_frequency = 60
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        reactionary = 14
+        conservatism = 32
+        libertarianism = 2
+        democratic = 2
+        socdem = 34
+        progressivism = 5
+        demsoc = 8
+        communism = 3
+    }
+}
+
+
+2016.1.1 = {
+
+	create_country_leader = {
+		name = "Emmanuel Macron"
+		picture = "Emmanuel_Macron.dds"
+		ideology = liberalism_ideology
+	}
+}

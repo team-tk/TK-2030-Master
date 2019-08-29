@@ -42,6 +42,46 @@ syndicalism_revolutionary = {
 		}
 	}
 	
+	maoism_revolutionary = {
+		random = no
+		# Boosts Communism
+		sprite = 13
+		maoism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { factor = 0 EAI_major_country = yes }
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = maoism
+					has_country_flag = EAI_maoism_focus
+				} 
+			}
+		}
+	}
+	
+	trotskyism_revolutionary = {
+		random = no
+		# Boosts Communism
+		sprite = 13
+		trotskyism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { factor = 0 EAI_major_country = yes }
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = trotskyism
+					has_country_flag = EAI_trotskyism_focus
+				} 
+			}
+		}
+	}
+	
 	conservatism_reformer = {
 		random = no
 		# Boosts Democracy
@@ -56,6 +96,101 @@ syndicalism_revolutionary = {
 				NOT = { 
 					has_government = conservatism
 					has_country_flag = EAI_conservatism_focus
+				} 
+			}
+		}
+	}
+	
+	christian_democratic_reformer = {
+		random = no
+		# Boosts Democracy
+		sprite = 13
+		christian_democratic_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = christian_democratic
+					has_country_flag = EAI_christian_democratic_focus
+				} 
+			}
+		}
+	}
+	
+	progressivism_reformer = {
+		random = no
+		# Boosts Democracy
+		sprite = 13
+		progressivism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = progressivism
+					has_country_flag = EAI_progressivism_focus
+				} 
+			}
+		}
+	}
+	
+	libertarianism_reformer = {
+		random = no
+		# Boosts Democracy
+		sprite = 13
+		libertarianism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = libertarianism
+					has_country_flag = EAI_libertarianism_focus
+				} 
+			}
+		}
+	}
+	
+	demnat_reformer = {
+		random = no
+		# Boosts Democracy
+		sprite = 13
+		demnat_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = demnat
+					has_country_flag = EAI_demnat_focus
+				} 
+			}
+		}
+	}
+	
+	demsoc_reformer = {
+		random = no
+		# Boosts Democracy
+		sprite = 13
+		demsoc_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = demsoc
+					has_country_flag = EAI_demsoc_focus
 				} 
 			}
 		}
@@ -98,6 +233,102 @@ syndicalism_revolutionary = {
 			}
 		}
 	}	
+	
+	
+	islamism_demagogue = {
+		random = no
+		# Boosts Fascism
+		sprite = 13
+		islamism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = islamism
+					has_country_flag = EAI_islamism_focus
+				} 
+			}
+		}
+	}
+	
+	fascist_monarchism_demagogue = {
+		random = no
+		# Boosts Fascism
+		sprite = 13
+		fascist_monarchism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = fascist_monarchism
+					has_country_flag = EAI_fascist_monarchism_focus
+				} 
+			}
+		}
+	}
+	
+	strasserism_demagogue = {
+		random = no
+		# Boosts Fascism
+		sprite = 13
+		strasserism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = strasserism
+					has_country_flag = EAI_strasserism_focus
+				} 
+			}
+		}
+	}
+	
+	paganism_demagogue = {
+		random = no
+		# Boosts Fascism
+		sprite = 13
+		paganism_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = paganism
+					has_country_flag = EAI_paganism_focus
+				} 
+			}
+		}
+	}
+	
+	reactionary_demagogue = {
+		random = no
+		# Boosts Fascism
+		sprite = 13
+		reactionary_drift = 0.1
+		
+		ai_will_do = { #EAI
+			factor = 10000
+			modifier = { 
+				factor = 0 
+				is_historical_focus_on = yes
+				NOT = { 
+					has_government = reactionary
+					has_country_flag = EAI_reactionary_focus
+				} 
+			}
+		}
+	}
 	
 	
 		nationalism_demagogue = {

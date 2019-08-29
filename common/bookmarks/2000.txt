@@ -11,6 +11,7 @@ bookmarks = {
 			history = "PRC_MILLENIUM_DAWN_DESC"
 			ideology = communism
 			ideas = {
+			fog_dictatorship_lw
 			}
 			focuses = {
 			}
@@ -19,6 +20,7 @@ bookmarks = {
 			history = "FRA_MILLENIUM_DAWN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -27,6 +29,7 @@ bookmarks = {
 			history = "GER_MILLENIUM_DAWN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -35,6 +38,7 @@ bookmarks = {
 			history = "JAP_MILLENIUM_DAWN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -43,6 +47,7 @@ bookmarks = {
 			history = "RUS_MILLENIUM_DAWN_DESC"
 			ideology = neutrality
 			ideas = {
+			fog_dictatorship_re
 			}
 			focuses = {
 			}
@@ -51,6 +56,7 @@ bookmarks = {
 			history = "ENG_MILLENIUM_DAWN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -59,6 +65,7 @@ bookmarks = {
 			history = "USA_MILLENIUM_DAWN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_dictatorship_de
 			}
 			focuses = {
 			}
@@ -73,6 +80,7 @@ bookmarks = {
 			history = "DEN_MILLENIUM_DAWN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -82,6 +90,7 @@ bookmarks = {
 			history = "ETH_MILLENIUM_DAWN_DESC"
 			ideology = democratic_socialist
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -91,6 +100,7 @@ bookmarks = {
 			history = "FIN_MILLENIUM_DAWN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -100,6 +110,7 @@ bookmarks = {
 			history = "ICE_MILLENIUM_DAWN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -109,6 +120,7 @@ bookmarks = {
 			history = "ITA_MILLENIUM_DAWN_DESC"
 			ideology = democratic_socialist
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -118,6 +130,7 @@ bookmarks = {
 			history = "NOR_MILLENIUM_DAWN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -127,6 +140,7 @@ bookmarks = {
 			history = "SWE_MILLENIUM_DAWN_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
@@ -136,6 +150,7 @@ bookmarks = {
 			history = "SWI_MILLENIUM_DAWN_DESC"
 			ideology = neutrality
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
 			}
