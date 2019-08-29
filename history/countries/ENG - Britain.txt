@@ -837,7 +837,74 @@ create_navy_leader = {
 	coordination_skill = 2
 }
 
+
+
 1941.1.1 = {
+
+set_autonomy = {
+		target = IRE
+		autonomous_state = autonomy_free
+	}
+
+	add_political_power = 1500
+	
+	#adding ministers
+	add_ideas = {
+		ENG_ernest_bevin
+		bernard_montgomery
+		rsaf_enfield
+		archibald_wavell
+		charles_portal
+		english_electric		
+
+		#laws
+		partial_economic_mobilisation
+		limited_conscription
+
+		ENG_george_vi
+	}
+	
+	
+	add_ideas = {
+	war_economy
+	cons_expanded_draft
+    }
+
+    add_to_faction = CAN
+	add_to_faction = AST
+	add_to_faction = SAF
+	add_to_faction = BEL
+	add_to_faction = HOL
+	add_to_faction = INS
+	add_to_faction = FFR
+	add_to_faction = NEP
+	
+	complete_national_focus = uk_colonial_policy
+complete_national_focus = uk_develop_dominions
+complete_national_focus = uk_develop_canada
+complete_national_focus = uk_develop_australia
+complete_national_focus = uk_develop_nz
+complete_national_focus = uk_develop_sa
+complete_national_focus = uk_develop_india
+complete_national_focus = uk_indian_universities
+complete_national_focus = uk_shan_hills
+complete_national_focus = uk_indian_employment
+complete_national_focus = ENG_steady_as_she_goes
+complete_national_focus = uk_troublesome_brother
+complete_national_focus = uk_burma_focus
+complete_national_focus = uk_balkan_strategy
+complete_national_focus = uk_rearmament
+complete_national_focus = uk_mi
+complete_national_focus = uk_research_slot
+complete_national_focus = uk_british_army
+complete_national_focus = uk_mw_1
+complete_national_focus = uk_mw_2
+complete_national_focus = uk_mw_3
+complete_national_focus = uk_mw_4
+complete_national_focus = uk_conscription
+complete_national_focus = uk_shadow_scheme
+complete_national_focus = uk_raf
+	
 
 oob = "ENG_1941"
 
@@ -850,8 +917,13 @@ set_politics = {
 
 create_country_leader = {
 	name = "Winston Churchill"
-	picture = "Winston_Churchill.dds"
+	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+	picture = "Portrait_Britain_Winston_Churchill.dds"
+	expire = "1965.1.1"
 	ideology = conservatism_ideology
+	traits = {
+		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
+	}
 }
 
 set_technology = {

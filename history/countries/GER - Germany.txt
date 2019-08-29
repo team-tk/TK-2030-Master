@@ -182,13 +182,6 @@ add_ideas = {
 	GER_mil_spending2
 }
 	
-
-if = {
-
-	limit = { 
-	has_start_date = 1936.01.01
-	}
-	
 create_faction = Axis
 add_to_faction = GER
 	
@@ -199,7 +192,6 @@ add_ideas = {
 ger_memories_of_a_two_front_war
 }	
 	
-}
 
 
 create_country_leader = {
@@ -2521,10 +2513,26 @@ create_equipment_variant = {
 }
 
 
-if = {
 
-	limit = { 
-	has_start_date = 1941.06.22
+
+1941.1.1 = {
+
+remove_ideas = {
+ger_memories_of_a_two_front_war
+}
+
+	
+	add_ideas = {
+		henschel
+		ig_faben
+		heinrich_himmler
+		ludwig_beck
+		gerd_von_rundstedt
+		GER_autarky_idea
+
+		#laws
+		war_economy
+		extensive_conscription
 	}
 	
 	remove_ideas = rudolf_hess
@@ -2541,8 +2549,8 @@ set_global_flag = end_of_belgium
 set_stability = 0.8
 set_war_support = 0.8
 
-add_political_power = 900
-
+add_political_power = 1500
+add_named_threat = { threat = 100 name = 1941_bookmark_threat }
 
 complete_national_focus = GER_rhineland
 complete_national_focus = GER_begin_depression_recovery
@@ -2703,12 +2711,6 @@ add_ideas = {
 				enemy = SOV
 			}
 		}
-		VIC = {
-			add_to_war = {
-				targeted_alliance = GER
-				enemy = SOV
-			}
-		}
 		SER = {
 			add_to_war = {
 				targeted_alliance = GER
@@ -2769,12 +2771,7 @@ add_ideas = {
 				enemy = ENG
 			}
 		}
-		VIC = {
-			add_to_war = {
-				targeted_alliance = GER
-				enemy = ENG
-			}
-		}
+
 		SER = {
 			add_to_war = {
 				targeted_alliance = GER
@@ -2838,9 +2835,7 @@ add_ideas = {
 			}
 		}
 	
-}
 
-1941.1.1 = {
 
 oob = "GER_1941"
 
