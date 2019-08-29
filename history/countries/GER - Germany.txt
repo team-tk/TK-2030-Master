@@ -2517,6 +2517,12 @@ create_equipment_variant = {
 
 1941.1.1 = {
 
+
+activate_mission = GER_barbarossa_mission
+add_timed_idea = { idea = blitzkrieg_1941 days = 160 }
+add_timed_idea = { idea = luftwaffe_1941 days = 210 }
+add_timed_idea = { idea = ww2_operation days = 180 }
+
 remove_ideas = {
 ger_memories_of_a_two_front_war
 }
