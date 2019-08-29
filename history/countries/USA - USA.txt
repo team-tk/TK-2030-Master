@@ -1972,6 +1972,64 @@ if = {
 	}
 }
 
+1949.1.1 = {
+
+set_politics = {	
+		ruling_party = democratic
+		last_election = "1948.11.2"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 20
+    conservatism = 24
+    libertarianism = 3
+    democratic = 31
+    socdem = 22
+}
+
+
+
+create_country_leader = {
+	name = "Gus Hall"
+	picture = "Gus_Hall.dds"
+	ideology = marxism
+}
+
+create_country_leader = {
+	name = "Charles Riprap"
+	picture = "Portrait_USA_Generic_2.dds"
+	ideology = salafist
+}
+
+create_country_leader = {
+	name = "George Lincoln Rockwell"
+	picture = "George_Lincoln_Rockwell.dds"
+	ideology = neo_nazism
+}
+
+create_country_leader = {
+	name = "Strom Thurmond"
+	picture = "Strom_Thurmond.dds"
+	ideology = reactionary_ideology
+}
+
+create_country_leader = {
+	name = "Ross Perot"
+	picture = "Ross_Perot.dds"
+	ideology = liberal_centrism
+}
+
+create_country_leader = {
+	name = "Harry S. Truman"
+	desc = "POL_TRUMAN"
+	picture = "Harry_S_Truman.dds"
+	ideology = liberalism_ideology
+}
+
+}
+
 
 2000.1.1 = {
 
