@@ -2031,6 +2031,56 @@ create_country_leader = {
 }
 
 
+
+
+1952.11.4 = {
+
+set_politics = {	
+		ruling_party = conservatism
+		last_election = "1952.11.6"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+set_popularities = {
+    conservatism = 55.2
+    democratic = 44.8
+}
+
+create_country_leader = {
+		name = "Dwight D. Eisenhower"
+		picture = "Dwight_D_Eisenhower.dds"
+		ideology = conservatism_ideology
+	}
+
+
+}
+
+
+1960.1.1 = {
+
+set_politics = {	
+		ruling_party = conservatism
+		last_election = "1956.11.4"
+		election_frequency = 48
+		elections_allowed = yes
+}
+
+set_popularities = {
+    conservatism = 56
+    democratic = 44
+}
+
+create_country_leader = {
+		name = "John F. Kennedy"
+		picture = "John_F_Kennedy.dds"
+		ideology = liberalism_ideology
+    }
+
+
+}
+
+
 2000.1.1 = {
 
 set_politics = {	
