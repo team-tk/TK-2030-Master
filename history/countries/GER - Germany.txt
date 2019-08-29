@@ -169,10 +169,10 @@ add_ideas = {
 	infrastructure_budget4
 }
 
+
 add_ideas = {
 	sour_loser
 	general_staff
-	ger_memories_of_a_two_front_war
 	fascist_propaganda_surrender
 	GER_Hitlerjugend
 	persecute_scientists
@@ -180,8 +180,8 @@ add_ideas = {
 	GER_inexperienced_carrier_designers
 	GER_tariffs_2
 	GER_mil_spending2
-	
 }
+	
 
 if = {
 
@@ -193,9 +193,13 @@ create_faction = Axis
 add_to_faction = GER
 	
 add_ideas = GER_mefo_bills_1
-activate_mission = GER_mefo_bills_mission	
+activate_mission = GER_mefo_bills_mission
+
+add_ideas = {
+ger_memories_of_a_two_front_war
+}	
 	
-	}
+}
 
 
 create_country_leader = {
@@ -2514,6 +2518,456 @@ create_equipment_variant = {
 		plane_reliability_upgrade = 5
 	}
 	obsolete = yes
+}
+
+
+if = {
+
+	limit = { 
+	has_start_date = 1941.06.22
+	}
+	
+	remove_ideas = rudolf_hess
+
+set_global_flag = fall_of_france
+set_global_flag = end_of_norway
+set_global_flag = end_of_poland
+set_global_flag = end_of_yugoslavia
+set_global_flag = end_of_greece
+set_global_flag = end_of_denmark
+set_global_flag = end_of_belgium
+set_global_flag = end_of_belgium
+
+set_stability = 0.8
+set_war_support = 0.8
+
+add_political_power = 900
+
+
+complete_national_focus = GER_rhineland
+complete_national_focus = GER_begin_depression_recovery
+complete_national_focus = GER_appoint_economic_positions
+complete_national_focus = GER_two_side_economics
+complete_national_focus = GER_economic_conference
+complete_national_focus = GER_steelworks_issues
+complete_national_focus = GER_autobahn
+complete_national_focus = GER_volksgemeinschaft
+complete_national_focus = GER_deutsche_arbeitsfront
+complete_national_focus = GER_poltical_sphere
+complete_national_focus = GER_legit_hitler
+complete_national_focus = GER_thousand_year_reich
+complete_national_focus = GER_fuhrerprinzip
+complete_national_focus = GER_formalize_SS
+complete_national_focus = GER_new_german_order
+complete_national_focus = GER_peoples_courts
+complete_national_focus = GER_expand_farben
+complete_national_focus = GER_NS_ordensburgen
+complete_national_focus = GER_waffen_SS
+complete_national_focus = GER_anschluss
+complete_national_focus = GER_anti_comitern_pact
+complete_national_focus = GER_prepare_poland_invasion
+complete_national_focus = GER_volkswagen
+complete_national_focus = GER_demand_sudetenland
+complete_national_focus = GER_new_kulturkampf
+complete_national_focus = GER_SS_division_organization
+complete_national_focus = GER_general_SS
+complete_national_focus = GER_hitler_youth
+complete_national_focus = GER_end_of_czechoslovakia
+complete_national_focus = GER_demand_memel
+complete_national_focus = GER_west_wall
+complete_national_focus = GER_volkischer_beobachter
+complete_national_focus = GER_combine_SS_gestapo
+complete_national_focus = GER_mol_rib_pact
+complete_national_focus = GER_danzig_or_war
+complete_national_focus = GER_first_vienna_award
+complete_national_focus = GER_prepare_france_invasion
+complete_national_focus = GER_build_panzer_army
+complete_national_focus = GER_blitzkreig_tactics
+complete_national_focus = GER_weserubung #4/9/40
+complete_national_focus = GER_war_with_france
+complete_national_focus = GER_foreign_volunteers
+complete_national_focus = GER_reichskulturkammer
+complete_national_focus = GER_territorial_policing
+complete_national_focus = GER_security_service
+complete_national_focus = GER_second_vienna_award #8/30/40
+complete_national_focus = GER_restore_german_glory
+complete_national_focus = GER_nation_alignment
+complete_national_focus = GER_align_hungary
+complete_national_focus = GER_align_romania
+complete_national_focus = GER_demand_slovenia
+complete_national_focus = GER_fate_of_yugoslavia
+complete_national_focus = GER_fate_of_greece
+complete_national_focus = GER_italy_ally
+complete_national_focus = GER_soviet_invasion
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = SLO
+		autonomous_state = autonomy_satellite
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = HUN
+		autonomous_state = autonomy_satellite
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = ROM
+		autonomous_state = autonomy_satellite
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = BUL
+		autonomous_state = autonomy_satellite
+	    freedom_level = 0.2
+
+}
+set_autonomy = {
+		target = CRO
+		autonomous_state = autonomy_satellite
+	    freedom_level = 0.2
+
+}
+set_autonomy = {
+		target = SER
+		autonomous_state = autonomy_satellite
+	    freedom_level = 0.2
+
+}
+}
+
+create_faction = Axis
+add_to_faction = GER
+add_to_faction = ITA
+add_to_faction = SLO
+add_to_faction = HUN
+add_to_faction = ROM
+add_to_faction = BUL
+add_to_faction = CRO
+add_to_faction = SER
+add_to_faction = FIN
+
+add_ideas = {
+	limited_exports
+	cons_expanded_draft
+	war_economy
+}
+
+
+        declare_war_on = {
+		target = SOV
+		type = annex_everything
+	}
+      BUL = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		ROM = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		HUN = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		CRO = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		MNT = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		ITA = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		SLO = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		VIC = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		SER = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+
+	declare_war_on = {
+			target = ENG
+			type = annex_everything
+		}
+
+		BUL = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		ROM = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		HUN = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		CRO = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		MNT = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		ITA = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		SLO = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		FIN = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		VIC = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		SER = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+	#
+
+		CAN = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		AST = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		NZL = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		SAF = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		RAJ = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		MAL = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		INS = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		BEL = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		FFR = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+	
+}
+
+1941.1.1 = {
+
+oob = "GER_1941"
+
+
+	set_technology = {
+		improved_light_tank = 1 
+		basic_medium_tank = 1 
+		CAS2 = 1
+		heavy_fighter1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		paratroopers = 1
+		improved_medium_tank = 1
+		improved_heavy_tank = 1
+		improved_infantry_weapons_2 = 1
+		support_weapons3 = 1
+		mechanised_infantry = 1
+		tech_mountaineers2 = 1
+		tech_engineers2 = 1
+		tech_recon2 = 1
+		tech_field_hospital = 1
+		artillery1 = 1
+		artillery2 = 1
+		artillery3 = 1
+		antiair1 = 1
+		antiair2 = 1
+		antitank1 = 1
+		antitank2 = 1
+		antitank3 = 1
+		fighter1 = 1
+		fighter2 = 1
+
+		#doctrines
+		delay = 1
+		elastic_defence = 1
+		armored_spearhead = 1
+		schwerpunk = 1
+		blitzkrieg = 1
+		kampfgruppe = 1 #MOBILE WARFARE
+		convoy_interdiction_ti = 1
+		unrestricted_submarine_warfare = 1
+		raider_patrols = 1
+		#air
+		formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
+		formation_fighting = 1
+		hunt_and_destroy = 1
+		combat_unit_destruction = 1
+
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+		improved_computing_machine = 1
+		improved_decimetric_radar = 1
+		improved_encryption = 1
+		improved_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		assembly_line_production = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		fuel_refining2 = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+		dispersed_industry4 = 1
+		improved_equipment_conversion = 1
+}
+
+if = {
+		limit = {
+			not = { has_dlc = "Man the Guns"}
+		}
+		set_technology = {
+			basic_submarine = 1
+			improved_submarine = 1
+			improved_destroyer = 1
+			basic_light_cruiser = 1
+			improved_light_cruiser = 1
+			basic_battleship = 1
+			basic_carrier = 1
+			improved_carrier = 1
+		}
+		set_naval_oob = "GER_1941_naval_legacy"
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			basic_ship_hull_submarine = 1
+			improved_ship_hull_submarine = 1
+			improved_ship_hull_light = 1
+			improved_ship_hull_cruiser = 1
+			basic_ship_hull_heavy = 1
+			basic_ship_hull_carrier = 1
+			improved_ship_hull_carrier = 1
+			dp_secondary_battery = 1
+			improved_sonar = 1
+		}
+		set_naval_oob = "GER_1941_naval_mtg"
+
+	}
+
+
+
+
 }
 
 
