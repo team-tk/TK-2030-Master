@@ -74,11 +74,11 @@
  fascist_monarchism_drift:0 "Daily Fascist Monarchism Support"
  fascist_monarchism_acceptance:0 "Acceptance of Fascist Monarchist Diplomacy"
  
- paganism:0 "Pagan"
- paganism_noun:0 "Paganism"
+ paganism:0 "Esoteric National Socialist"
+ paganism_noun:0 "Esoteric National Socialism"
  paganism_desc:0 "Totalitarian Dictatorship"
- paganism_drift:0 "Daily Paganism Support"
- paganism_acceptance:0 "Acceptance of Pagan Diplomacy"
+ paganism_drift:0 "Daily Esoteric National Socialism Support"
+ paganism_acceptance:0 "Acceptance of Esoteric National Socialism Diplomacy"
  
  islamism:0 "Islamic"
  islamism_noun:0 "Islamism"
@@ -265,9 +265,9 @@
  taoism_desc:0 "Taoism, is a philosophical or religious tradition of Chinese origin which emphasizes living in harmony with the Tao. The Tao is a fundamental idea in most Chinese philosophical schools; in Taoism, however, it denotes the principle that is the source, pattern and substance of everything that exists."
  
  
- paganism_ideology:0 "Paganism"
- paganism_ideology_noun:0 "Pagan"
- paganism_ideology_desc:0 "Paganism is a collection of religious, spiritual, and magical traditions that are inspired by the pre-Judaic, pre-Christian, and pre-Islamic belief systems of Europe, North Africa, and the Near East."
+ paganism_ideology:0 "Esoteric National Socialism"
+ paganism_ideology_noun:0 "Esoteric National Socialist"
+ paganism_ideology_desc:0 "Esoteric National Socialism is any of a number of mystical interpretations and adaptations of Nazism in the post–World War II period. After 1945, esoteric elements of the Third Reich were adapted into new völkisch religions of white nationalism and neo-Nazism."
  
  hinduism:0 "Hinduism"
  hinduism_noun:0 "Hindu"

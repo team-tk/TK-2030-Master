@@ -602,6 +602,10 @@ AUC = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 163 17 31 }
 }
+VIE = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }

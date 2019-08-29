@@ -3164,7 +3164,7 @@ focus = {
 		completion_reward = {
 			set_politics = { ruling_party = fascist_monarchism elections_allowed = no }
 			add_ideas = fascist_monarchy_idea_focus
-			remove_ideas = totalitarianism_focus_idea
+			remove_ideas = authoritarianism_focus_idea
 			add_popularity = { ideology = fascist_monarchism popularity = 0.10 }
 		}
 	}
@@ -3438,6 +3438,7 @@ focus = {
 		completion_reward = {
 			set_politics = { ruling_party = socialism elections_allowed = yes }
 			add_ideas = authoritarian_socialism_idea_focus
+			remove_ideas = path_towards_socialism_focus
 			add_popularity = { ideology = socialism popularity = 0.10 }
 		}
 	}
