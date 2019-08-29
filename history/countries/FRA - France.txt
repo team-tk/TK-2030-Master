@@ -1408,6 +1408,231 @@ if = {
 	}
 }
 
+1945.1.1 = {
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1945.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+neutrality = 70
+communism = 30
+}
+create_country_leader = {
+	name = "Charles de Gaulle"
+	desc = "POLITICS_DE_GAULLE_DESC"
+	picture = "Charles_de_Gaulle.dds"
+	ideology = independent
+ }
+}
+
+create_country_leader = {
+	name = "Henri Queuille"
+	desc = "POLITICS_HENRIQ_DESC"
+	picture = "Henri_Queuille.dds"
+	ideology = social_liberalism
+}
+
+create_country_leader = {
+	name = "Guy Mollet"
+	picture = "Guy_Mollet.dds"
+	ideology = social_democracy
+}
+
+create_country_leader = {
+	name = "Jacques Soustelle"
+	picture = "Jacques_Soustelle.dds"
+	ideology = conservatism_ideology
+}
+
+create_country_leader = {
+	name = "Jean-Paul David"
+	picture = "Jean_Paul_David.dds"
+	ideology = conservatism_ideology
+}
+
+create_country_leader = {
+	name = "Georges Bidault"
+	picture = "Georges_Bidault.dds"
+	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "Maurice Thorez"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "Maurice_Thorez.dds"
+	ideology = stalinism
+}
+
+create_country_leader = {
+	name = "Georges Fontenis"
+	picture = "Georges_Fontenis.dds"
+	ideology = anarchist_communism
+}
+
+create_country_leader = {
+	name = "Pierre Poujade"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "Portrait_France_Poujade.dds"
+	expire = "1965.1.1"
+	ideology = democratic_nationalism
+}
+
+create_country_leader = {
+	name = "Henri VI"
+	picture = "Henri_VI.dds"
+	expire = "1999.1.1"
+	ideology = absolutism
+}
+
+create_corps_commander = {
+	name = "Jacques Massu"
+	picture = "Portrait_France_Jacques_Massu.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Paul Aussaresses"
+	picture = "Portrait_France_Paul_Aussaresses.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Fernand Gambiez"
+	picture = "Portrait_France_Fernand_Gambiez.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Alphonse Juin"
+	picture = "Portrait_France_Alphonse_Juin.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+1949.1.1 = {
+set_politics = {
+	ruling_party = democratic
+	last_election = "1945.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+conservatism = 33
+democratic = 14
+socdem = 15
+christian_democratic = 12
+communism = 26
+}
+
+create_country_leader = {
+	name = "Raoul Salan"
+	picture = "Portrait_Salan.dds"
+	ideology = military_government
+ }
+}
+
+1954.1.26 = {
+	set_politics = {
+	ruling_party = conservatism
+	last_election = "1954.1.26"
+	election_frequency = 48
+	elections_allowed = yes
+	}
+	
+set_popularities = {
+conservatism = 36
+socialism = 34
+communism = 15
+fascism = 1
+democratic = 14
+}
+
+	create_country_leader = {
+		name = "René Coty"
+		picture = "Portrait_France_Rene_Coty.dds"
+		expire = "1962.11.22"
+		ideology = conservatism_ideology
+	}
+}
+
+1960.1.1 = {
+	set_politics = {
+	
+		parties = {
+        democratic = { popularity = 0 }
+        communism = { popularity = 2 }
+        fascism = { popularity = 5.20 }
+        nationalism = { popularity = 0 }
+        monarchism = { popularity = 0 }
+        reactionary = { popularity = 0 }
+        islamism = { popularity = 0 }
+        islamism = { popularity = 0 }
+        
+        socdem = { popularity = 31.7 }
+        democratic = { popularity = 0 }
+        islamism = { popularity = 0 }        
+        conservatism = { popularity = 0 }
+        
+        conservatism = { popularity = 44.65	 }
+        christian_democratic = { popularity = 15.57 }
+        socialism { popularity = 0 }
+        democratic = { popularity = 0 }
+        democratic = { popularity = 0 }
+        trotskyism = { popularity = 0 }
+        maoism = { popularity = 0 }
+        
+		}
+	
+	ruling_party = conservatism
+	last_election = "1961.12.19"
+	election_frequency = 48
+	elections_allowed = yes
+	}
+	
+set_popularities = {
+conservatism = 45
+communism = 2
+fascism = 5
+christian_democratic = 16
+socdem = 32
+}
+
+	
+	create_country_leader = {
+		name = "Charles de Gaulle"
+		picture = "Charles_de_Gaulle.dds"
+		expire = "1970.11.9"
+		ideology = gaullism
+	}
+	create_country_leader = {
+		name = "Maurice Challe"
+		picture = "Portrait_Challe.dds"
+		ideology = military_government
+	}
+}
 
 2000.1.1 = {
 

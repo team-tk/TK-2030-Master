@@ -407,6 +407,170 @@ create_corps_commander = {
 	logistics_skill = 4
 }
 
+1949.1.1 = {
+
+set_politics = {
+	ruling_party = maoism
+	last_election = "1945.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	maoism = 100
+}
+
+create_country_leader = {
+	name = "Mao Zedong"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "GFX_portrait_prc_mao_zedong"
+ 	ideology = maoism_ideology
+}
+
+create_country_leader = {
+	name = "Li Jishen"
+	picture = "Li_Jishen.dds"
+ 	ideology = democratic_socialism
+}
+
+create_field_marshal = {
+	name = "Mao Zedong"
+	picture = "GFX_portrait_prc_mao_zedong"
+	traits = { defensive_doctrine offensive_doctrine }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Lin Biao"
+	portrait_path = "gfx/leaders/PRC/Army/Lin_Biao.dds"
+	traits = { }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "He Long"
+	portrait_path = "gfx/leaders/PRC/Army/He_Long.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Zhu De"
+	portrait_path = "gfx/leaders/PRC/Army/Zhu_De.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Luo Ronghuan"
+	portrait_path = "gfx/leaders/PRC/Army/Luo_Ronghuan.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Chen Yi"
+	portrait_path = "gfx/leaders/PRC/Army/Chen_Yi.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Peng Dehuai"
+	portrait_path = "gfx/leaders/PRC/Army/Peng_Dehuai.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ye Jianying"
+	portrait_path = "gfx/leaders/PRC/Army/Ye_Jianying.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Nie Rongzhen"
+	portrait_path = "gfx/leaders/PRC/Army/Nie_Rongzhen.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Liu Bocheng"
+	portrait_path = "gfx/leaders/PRC/Army/Liu_Bocheng.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Xu Xiangqian"
+	portrait_path = "gfx/leaders/PRC/Army/Xu_Xiangqian.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+}
+
+1960.1.1 = {
+
+create_country_leader = {
+	name = "Mao Zedong"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "Mao_Zedong.dds"
+ 	ideology = maoism_ideology
+}
+create_country_leader = {
+	     name = "He Xiangning"
+	     picture = "He_Xiangning.dds"
+	     ideology = democratic_socialism
+    }
+}
+
 2000.1.1 = {
 set_politics = {
 	ruling_party = maoism
