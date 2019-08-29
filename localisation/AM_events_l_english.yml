@@ -78,7 +78,7 @@ AM_political.11.desc:0 "Some will say they saw it coming. Both those who warned 
 
 
  AM_political.14.t:0 "Syndicalism on the Rise"
- AM_political.14.d:0 "'While workers rise up against their oppressors around the world, those who claim to have achieved class consciousness in [Root.GetName] sit idly by and wait for change to come from within a political system so thoroughly corrupt, only revolution could save us from it!'\n\nSo speak new voices in the [Root.GetAdjective] syndicalist movement. Referring to the rule of [Root.GetRulingParty] as a dictatorship of the bourgeois, they have begun calling for it to be brought out of power by any means necessary. Whether those means will come from within or without remains to be seen."
+ AM_political.14.d:0 "While workers rise up against their oppressors around the world, those who claim to have achieved class consciousness in [Root.GetName] sit idly by and wait for change to come from within a political system so thoroughly corrupt, only revolution could save us from it!'\n\nSo speak new voices in the [Root.GetAdjective] syndicalist movement. Referring to the rule of [Root.GetRulingParty] as a dictatorship of the bourgeois, they have begun calling for it to be brought out of power by any means necessary. Whether those means will come from within or without remains to be seen."
  AM_political.14.a:0 "There may be those in the government itself who support such ideas."
  AM_political.14.a.tt:0 "Increases the chance of internal support for a syndicalist coup."
  AM_political.14.b:0 "A movement for the people must seek support from the people."

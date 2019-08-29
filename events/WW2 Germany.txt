@@ -350,6 +350,14 @@ create_country_leader = {
 		set_cosmetic_tag = sar_protectorate
 		}
 		
+		FFR = {	
+			transfer_navy = { target = FRA }	
+		}
+		
+		VIC = {	
+			transfer_navy = { target = FRA }	
+		}
+		
 		FRA = {
 
 			#transfer_state = 797 ### SAARLAND
@@ -401,6 +409,10 @@ create_country_leader = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.2
 		}
+		
+		
+		annex_country = { target = FFR transfer_troops = yes }
+		annex_country = { target = VIC transfer_troops = yes }
 					
 		}
 		
@@ -610,12 +622,12 @@ create_country_leader = {
 		
 		
 		
-				#every_state = {
-				#limit = { NOT = { is_core_of = WGR } }
-				#remove_core_of = GER
-				#}
+				every_state = {
+				limit = { NOT = { is_core_of = WGR } }
+				remove_core_of = GER
+				}
 			
-			WGR = {
+			GER = {
 			transfer_state = 56
 			transfer_state = 57
 			transfer_state = 58
@@ -652,7 +664,7 @@ create_country_leader = {
 			
 			add_ideas = fog_democratic
 			
-			change_tag_from = GER
+			#change_tag_from = GER
 			
 			set_cosmetic_tag = WGR_OCCUPIED
 			
