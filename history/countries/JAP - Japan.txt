@@ -1526,7 +1526,7 @@ if = {
 			basic_carrier = 1
 			improved_carrier = 1
 		}
-		set_naval_oob = "JAP_1941_naval_legacy"
+		set_naval_oob = "JAP_1939_naval_legacy"
 	}
 	if = {
 		limit = {
@@ -1543,7 +1543,7 @@ if = {
 			dp_secondary_battery = 1
 			improved_sonar = 1
 		}
-		set_naval_oob = "JAP_1941_naval_mtg"
+		set_naval_oob = "JAP_1939_naval_mtg"
 
 	}
 	
