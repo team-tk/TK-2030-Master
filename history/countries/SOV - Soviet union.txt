@@ -1625,6 +1625,348 @@ if = {
 	}
 }
 
+
+
+
+1949.1.1 = {
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1945.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+reactionary = 23
+communism = 77
+}
+
+create_country_leader = {
+	name = "Joseph Stalin"
+	desc = "pol_desc_stalin"
+	picture = "Joseph_Stalin.dds"
+	ideology = stalinism
+	traits = {
+		dictator
+		prince_of_terror
+	}
+}
+
+create_country_leader = {
+	name = "Vladimir I"
+	picture = "Vladimir_I.dds"
+	ideology = absolutism
+}
+
+create_country_leader = {
+	name = "Boris Yeltsin"
+	picture = "Boris_Yeltsin.dds"
+	ideology = independent
+}
+
+create_country_leader = {
+	name = "Grigory Yavlinsky"
+	picture = "Grigory_Yavlinsky.dds"
+	ideology = progressivism_ideology
+}
+
+create_country_leader = {
+	name = "Vladimir Zhirinovsky"
+	picture = "Vladimir_Zhirinovsky.dds"
+	ideology = democratic_nationalism
+}
+
+create_country_leader = {
+	name = "Eduard Limonov"
+	picture = "Eduard_Limonov.dds"
+	ideology = national_bolshevik
+}
+
+create_field_marshal = {
+	name = "Georgy Zhukov"
+	id = 19601
+	portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Georgy_Zhukov.dds"
+	traits = { winter_specialist panzer_leader brilliant_strategist offensive_doctrine defensive_doctrine   }
+	skill = 6
+	attack_skill = 6
+	defense_skill = 6
+	planning_skill = 6
+	logistics_skill = 6
+}
+
+create_field_marshal = {
+	name = "Ivan Konev"
+	id = 19732
+	portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Ivan_Konev.dds"
+	traits = { panzer_leader winter_specialist brilliant_strategist offensive_doctrine ambusher }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+
+}
+
+create_field_marshal = {
+	name = "Aleksandr Vasilevsky"
+	id = 19602
+	portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Aleksandr_Vasilevsky.dds"
+	traits = { infantry_expert winter_specialist unyielding_defender  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Semyon Timoshenko"
+	id = 19603
+	portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Semyon_Timoshenko.dds"
+	traits = {  panzer_leader winter_specialist unyielding_defender }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4	
+}
+
+create_field_marshal = {
+	name = "Kliment Voroshilov"
+	id = 19561
+	portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Kliment_Voroshilov.dds"
+	traits = { old_guard inflexible_strategist}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2	
+}
+
+create_field_marshal = {
+	name = "Semyon Budyonny"
+	id = 19562
+	portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Semyon_Budyonny.dds"
+	traits = { old_guard cavalry_leader offensive_doctrine cavalry_expert }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4	
+}
+
+create_field_marshal = {
+	name = "Vasily Danilovich Sokolovsky"
+	id = 19604
+	portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Vasily_Danilovich_Sokolovsky.dds"
+	traits = { aggressive_assaulter ambusher  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+
+
+create_field_marshal = {
+	name = "Leonid Govorov"
+	id = 19563
+	portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Leonid_Govorov.dds"
+	traits = { aggressive_assaulter bearer_of_artillery }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3	
+}
+
+create_field_marshal = {
+	name = "Kirill Meretskov"
+	id = 19671
+	portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Kirill_Meretskov.dds"
+	traits = { defensive_doctrine winter_specialist infantry_leader }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3	
+}
+
+create_field_marshal = {
+	name = "Andrey Yeryomenko"
+	id = 19605
+	portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Andrey_Yeryomenko.dds"
+	traits = { cavalry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2 
+}
+
+create_field_marshal = {
+	name = "Lavrentiy Beria"
+	id = 19564
+	portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Lavrentiy_Beria.dds"
+	traits = { old_guard }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1 
+}
+
+create_field_marshal = {
+	name = "Filipp Golikov"
+	id = 19801
+	portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Filipp_Golikov.dds"
+	traits = { old_guard }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1 
+}
+
+#Generals
+
+create_corps_commander = {
+	name = "Alexander Gorbatov"
+	id = 19606
+	portrait_path = "gfx/leaders/SOV/GENERALS/Alexander_Gorbatov.dds"
+	traits = { commando trait_reckless skirmisher paratrooper }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2 
+}
+
+create_corps_commander = {
+	name = "Issa Alexandrovich Pliyev"
+	id = 19733
+	portrait_path = "gfx/leaders/SOV/GENERALS/Issa_Pliyev.dds"
+	traits = { cavalry_leader cavalry_expert combined_arms_expert }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kuzma Nikitovich Galitsky"
+	id = 19672
+	portrait_path = "gfx/leaders/SOV/GENERALS/Kuzma_Galitsky.dds"
+	traits = { infantry_expert infantry_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Markian Mikhailovich Popov"
+	id = 19734
+	portrait_path = "gfx/leaders/SOV/GENERALS/Markian_Popov.dds"
+	traits = { infantry_expert ambusher }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Nikandr Chibisov"
+	id = 19565
+	portrait_path = "gfx/leaders/SOV/GENERALS/Nikandr_Chibisov.dds"
+	traits = { infantry_expert }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Vasily Kuznetsov"
+	id = 19607
+	portrait_path = "gfx/leaders/SOV/GENERALS/Vasily_Kuznetsov.dds"
+	traits = { infantry_expert infantry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+#Admirals
+create_navy_leader = {
+	name = "Sergey Gorshkov"
+	id = 19901
+	portrait_path = "gfx/leaders/SOV/ADMIRALS/Sergey_Gorshkov.dds"
+	traits = { blockade_runner }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Nikolay Kuznetsov"
+	id = 19566
+	portrait_path = "gfx/leaders/SOV/ADMIRALS/Nikolay_Kuznetsov.dds"
+	traits = { old_guard_navy }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_navy_leader = {
+	name = "Ivan Isakov"
+	id = 703
+	portrait_path = "gfx/leaders/SOV/ADMIRALS/Ivan_Isakov.dds"
+	traits = { spotter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+}
+
+
+1955.1.1 = {
+	create_country_leader = {
+		name = "Nikita Khrushchev"
+		picture = "Nikita_Khrushchev.dds"
+		ideology = leninism
+	}
+}
+
+1956.1.1 = {
+	create_field_marshal = {
+		name = "Konstantin Rokossovsky"
+		id = 19731
+		portrait_path = "gfx/leaders/SOV/FIELD_MARSHALS/Konstantin_Rokossovsky.dds"
+		traits = { winter_specialist cavalry_leader brilliant_strategist offensive_doctrine  }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+}
+
 2000.1.1 = {
 
 set_politics = {	

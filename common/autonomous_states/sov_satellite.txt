@@ -29,7 +29,7 @@ autonomy_state = {
 		always = no
 	}
 	allowed = {
-		has_government = communism
+		has_communist_government = yes
 	}
 	can_lose_level = {
 		if = {

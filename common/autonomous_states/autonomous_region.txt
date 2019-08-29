@@ -35,7 +35,7 @@ autonomy_state = {
 	}
 
 	allowed = {
-		has_government = communism
+		has_communist_government = yes
 		OR = {
 		OVERLORD = { original_tag = CHI }
 		OVERLORD = { original_tag = PRC }

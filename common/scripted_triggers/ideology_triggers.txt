@@ -35,13 +35,11 @@ has_fascist_government = {
 	custom_trigger_tooltip = {
 	tooltip = TT_fascist_form_of_government
 	OR = {
-		has_government = nationalism
 		has_government = fascism
 		has_government = nazism
 		has_government = strasserism
 		has_government = paganism
-		has_government = fascist_monarchism
-		
+		has_government = fascist_monarchism	
 	}
 	}
 }
@@ -98,6 +96,7 @@ has_neutral_government = {
 		has_government = neutrality
 		has_government = monarchism
 		has_government = theocratic
+		has_government = islamism
 		has_government = nationalism
 		has_government = reactionary
 	}
