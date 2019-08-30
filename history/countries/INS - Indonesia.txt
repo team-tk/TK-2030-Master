@@ -35,6 +35,13 @@ communism = 30
 neutrality = 50
 }
 
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}	
+
 create_country_leader = {
 	name = "Sukarno"
 	desc = ""
@@ -147,6 +154,24 @@ create_country_leader = {
 	traits = {
 		
 	}
+}
+
+create_country_leader = {
+	name = "A. T. van Starkenborgh Stachouwer"
+	desc = ""
+	picture = "GFX_portrait_indonesia_at_van_starkenborgh"
+	expire = "1953.3.1"
+	ideology = oligarchism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "A. T. van Starkenborgh Stachouwer"
+	desc = ""
+	picture = "GFX_portrait_indonesia_at_van_starkenborgh"
+	expire = "1953.3.1"
+	ideology = centrism
+	traits = { }
 }
 
 if = {
