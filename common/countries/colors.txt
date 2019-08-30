@@ -606,6 +606,14 @@ VIE = {
 	color = rgb { 255 0 0 }
 	color_ui = rgb { 255 0 0 }
 }
+UAR = {
+	color = rgb { 230 230 70 }
+	color_ui = rgb { 230 230 70 }
+}
+THA = {
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }
