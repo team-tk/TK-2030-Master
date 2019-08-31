@@ -19,6 +19,15 @@ ideas = {
 					has_government = syndicalism
 					has_government = monarchism
 					has_government = theocratic
+
+					has_government = islamism
+					has_government = fascist_monarchism
+					has_government = paganism
+					has_government = strasserism
+					has_government = reactionary
+					has_government = trotskyism
+					has_government = maoism
+					
 					has_idea = security_police_state
 					has_idea = security_major_restrictions
 				}
@@ -42,10 +51,7 @@ ideas = {
 				factor = 1
 				modifier = {
 					factor = 10
-					OR = {
-					has_government = conservatism
-					has_government = democratic
-					}
+					has_democratic_government = yes
 					has_war = no
 				}
 			}
@@ -63,6 +69,12 @@ ideas = {
 				has_government = syndicalism
 				has_government = fascism
 				has_government = nazism
+				
+					has_government = islamism
+					has_government = paganism
+					has_government = strasserism
+					has_government = trotskyism
+					has_government = maoism
 				}
 			}
 			
@@ -98,6 +110,13 @@ ideas = {
 							has_government = theocratic
 							has_government = neutrality
 							has_government = nationalism
+							has_government = islamism
+					has_government = fascist_monarchism
+					has_government = paganism
+					has_government = strasserism
+					has_government = reactionary
+					has_government = trotskyism
+					has_government = maoism
 							has_war = yes
 							}
 						}
@@ -112,6 +131,12 @@ ideas = {
 						has_government = communism
 						has_government = socialism
 						has_government = syndicalism
+						
+					has_government = islamism
+					has_government = paganism
+					has_government = strasserism
+					has_government = trotskyism
+					has_government = maoism
 					}
 				}
 				modifier = {
@@ -128,7 +153,7 @@ ideas = {
 			available = {
 				OR = {
 					AND = {
-						has_government = democratic
+						has_democratic_government = yes
 						has_war = yes
 					}
 					has_government = fascism
@@ -140,6 +165,13 @@ ideas = {
 					has_government = theocratic
 					has_government = neutrality
 					has_government = nationalism
+					has_government = islamism
+					has_government = fascist_monarchism
+					has_government = paganism
+					has_government = strasserism
+					has_government = reactionary
+					has_government = trotskyism
+					has_government = maoism
 				}
 			}
 			
@@ -163,12 +195,8 @@ ideas = {
 					factor = 100
 					has_war = yes
 					OR = {
-						has_government = neutrality
-						has_government = nationalism
-						has_government = democratic
-						has_government = socialism
-						has_government = socdem
-						has_government = conservatism
+						has_democratic_government = yes
+						has_neutral_government = yes
 					}
 				}
 				modifier = {
@@ -180,7 +208,7 @@ ideas = {
 					OR = {
 						AND = {
 						OR = {
-							has_government = fascism
+							has_fascist_government = yes
 							has_government = nazism
 							}
 							OR = {
@@ -190,7 +218,7 @@ ideas = {
 							}
 						}
 						AND = {
-							has_government = communism
+							has_communist_government = yes
 							tag = SOV
 						}
 					}
@@ -213,6 +241,13 @@ ideas = {
 					has_government = theocratic
 					has_government = neutrality
 					has_government = nationalism
+					has_government = islamism
+					has_government = fascist_monarchism
+					has_government = paganism
+					has_government = strasserism
+					has_government = reactionary
+					has_government = trotskyism
+					has_government = maoism
 				}
 				NOT = {
 					has_idea = security_liberty_first
@@ -246,6 +281,11 @@ ideas = {
 						has_government = syndicalism
 						has_government = neutrality
 						has_government = nationalism
+					has_government = paganism
+					has_government = strasserism
+					has_government = reactionary
+					has_government = trotskyism
+					has_government = maoism
 					}
 				}
    			}

@@ -179,3 +179,231 @@ country_event = {
 		add_stability = -0.05
 	}
 }
+
+country_event = {
+	id = newpolitical.10
+	title = newpolitical.10.t
+	desc = newpolitical.10.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.10.c
+		set_politics = {
+			ruling_party = maoism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.11
+	title = newpolitical.11.t
+	desc = newpolitical.11.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.11.c
+		set_politics = {
+			ruling_party = trotskyism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.12
+	title = newpolitical.12.t
+	desc = newpolitical.12.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.12.c
+		set_politics = {
+			ruling_party = paganism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.13
+	title = newpolitical.13.t
+	desc = newpolitical.13.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.13.c
+		set_politics = {
+			ruling_party = strasserism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.14
+	title = newpolitical.14.t
+	desc = newpolitical.14.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.14.c
+		set_politics = {
+			ruling_party = fascist_monarchism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.15
+	title = newpolitical.15.t
+	desc = newpolitical.15.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.15.c
+		set_politics = {
+			ruling_party = reactionary
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.16
+	title = newpolitical.16.t
+	desc = newpolitical.16.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.16.c
+		set_politics = {
+			ruling_party = libertarianism
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.17
+	title = newpolitical.17.t
+	desc = newpolitical.17.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.17.c
+		set_politics = {
+			ruling_party = progressivism
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.18
+	title = newpolitical.18.t
+	desc = newpolitical.18.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.18.c
+		set_politics = {
+			ruling_party = christian_democratic
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.19
+	title = newpolitical.19.t
+	desc = newpolitical.19.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.19.c
+		set_politics = {
+			ruling_party = demsoc
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.20
+	title = newpolitical.20.t
+	desc = newpolitical.20.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.20.c
+		set_politics = {
+			ruling_party = demnat
+			elections_allowed = yes
+		}
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = newpolitical.21
+	title = newpolitical.21.t
+	desc = newpolitical.21.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = newpolitical.21.c
+		set_politics = {
+			ruling_party = islamism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}

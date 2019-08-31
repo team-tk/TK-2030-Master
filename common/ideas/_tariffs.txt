@@ -18,6 +18,13 @@ ideas = {
 					has_government = nationalism
 					has_government = monarchism
 					has_government = theocratic
+					has_government = islamism
+					has_government = fascist_monarchism
+					has_government = paganism
+					has_government = strasserism
+					has_government = reactionary
+					has_government = trotskyism
+					has_government = maoism
 					has_idea = closed_economy
 					has_idea = limited_exports
 				}
@@ -66,6 +73,11 @@ ideas = {
 					has_government = syndicalism
 					has_government = fascism
 					has_government = nazism
+					has_government = islamism
+					has_government = paganism
+					has_government = strasserism
+					has_government = trotskyism
+					has_government = maoism
 					has_idea = closed_economy
 				}
 			}
@@ -103,6 +115,11 @@ ideas = {
 						has_government = syndicalism
 						has_government = fascism
 						has_government = nazism
+						has_government = islamism
+					has_government = paganism
+					has_government = strasserism
+					has_government = trotskyism
+					has_government = maoism
 					}
 				}
 			}
@@ -155,7 +172,7 @@ ideas = {
 					}
 					AND = {
 						NOT = { 
-							has_government = democratic
+							has_democratic_government = yes
 						}
 						OR = {
 							has_idea = partial_economic_mobilisation
@@ -193,6 +210,12 @@ ideas = {
 						has_government = communism
 						has_government = socialism
 						has_government = syndicalism
+						
+						has_government = islamism
+					has_government = paganism
+					has_government = strasserism
+					has_government = trotskyism
+					has_government = maoism
 					}
 				}
    				modifier = {
@@ -221,6 +244,13 @@ ideas = {
 					has_government = theocratic
 					has_government = neutrality
 					has_government = nationalism
+					has_government = islamism
+					has_government = fascist_monarchism
+					has_government = paganism
+					has_government = strasserism
+					has_government = reactionary
+					has_government = trotskyism
+					has_government = maoism
 				}
 				NOT = {
 					has_idea = free_trade
@@ -228,7 +258,7 @@ ideas = {
 				}
 				AND = {
 					NOT = { 
-						has_government = democratic
+						has_democratic_government = yes
 					}
 					OR = {
 						has_idea = partial_economic_mobilisation

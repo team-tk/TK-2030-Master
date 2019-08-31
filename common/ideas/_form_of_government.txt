@@ -14,6 +14,7 @@ ideas = {
 			has_government = nazism
 			has_government = strasserism
 			has_government = paganism
+			has_government = fascist_monarchism
 			has_government = communism
 			has_government = syndicalism
 			has_government = maoism
@@ -43,6 +44,9 @@ ideas = {
 			democratic_acceptance = 10
 			libertarianism_acceptance = 10
 			progressivism_acceptance = 10
+			demsoc_acceptance = 10
+			demnat_acceptance = 10
+			christian_democratic_acceptance = 10
 			}
 			
 			rule = {
@@ -260,6 +264,9 @@ ideas = {
 					AND = {	
 						OR = {
 						has_government = socdem
+						has_government = demsoc
+						has_government = demnat
+						has_government = christian_democratic
 						has_government = conservatism
 						has_government = democratic
 						has_government = progressivism
@@ -295,9 +302,13 @@ ideas = {
 		democratic_acceptance = 10
 		libertarianism_acceptance = 10
 		progressivism_acceptance = 10
+		demsoc_acceptance = 10
+		demnat_acceptance = 10
+		christian_democratic_acceptance = 10
 		nationalism_acceptance = 10
 		monarchism_acceptance = 10
 		neutrality_acceptance = 10
+		reactionary_acceptance = 10
 		socialism_acceptance = 10
 		}
 			
@@ -376,6 +387,7 @@ ideas = {
 					has_government = fascism
 					has_government = neutrality
 					has_government = nationalism
+					has_government = reactionary
 					}
 			}
 			
@@ -424,6 +436,7 @@ ideas = {
 					has_government = fascism
 					has_government = neutrality
 					has_government = nationalism
+					has_government = reactionary
 					}
 			}
 			

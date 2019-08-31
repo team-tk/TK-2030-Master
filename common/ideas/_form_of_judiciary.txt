@@ -166,6 +166,11 @@ ideas = {
 					has_government = theocratic
 					has_government = islamism
 					has_government = fascist_monarchism
+					has_government = communism
+					has_government = syndicalism
+					has_government = maoism
+					has_government = trotskyism
+					has_government = socialism
 					}
 			}
 			

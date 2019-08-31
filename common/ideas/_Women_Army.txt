@@ -9,9 +9,13 @@
 			level = 6
 			
 			available = {
-			NOT = { has_government = communism }
-			NOT = { has_government = socialism }
-			NOT = { has_government = syndicalism }
+			NOT = { 
+			has_government = communism 
+			has_government = socialism 
+			has_government = syndicalism
+			has_government = maoism
+			has_government = trotskyism
+			}
 			}
 
 			modifier = {
@@ -26,6 +30,10 @@
 					has_government = theocratic
 				}
 				modifier = {
+					factor = 100000
+					has_government = islamism
+				}
+				modifier = {
 					factor = 0
 					has_war = yes
 				}
@@ -36,6 +44,10 @@
 				modifier = {
 					factor = 0
 					NOT = { has_government = theocratic }
+				}
+				modifier = {
+					factor = 0
+					NOT = { has_government = islamism }
 				}
 			}
 			
@@ -82,7 +94,10 @@
 			level = 4
 			
 			available = {
-			NOT = { has_government = theocratic }
+			NOT = { 
+			has_government = theocratic 
+			has_government = islamism
+			}
 			}
 
 			modifier = {
@@ -120,7 +135,12 @@
 			NOT = { has_government = nationalism }
 			NOT = { has_government = fascism }
 			NOT = { has_government = nazism }
+			NOT = { has_government = strasserism }
+			NOT = { has_government = paganism }
+			NOT = { has_government = fascist_monarchism }
+			NOT = { has_government = reactionary }
 			NOT = { has_government = theocratic }
+			NOT = { has_government = islamism }
 			}
 
 			modifier = {
@@ -162,7 +182,12 @@
 			NOT = { has_government = nationalism }
 			NOT = { has_government = fascism }
 			NOT = { has_government = nazism }
+			NOT = { has_government = strasserism }
+			NOT = { has_government = paganism }
+			NOT = { has_government = fascist_monarchism }
+			NOT = { has_government = reactionary }
 			NOT = { has_government = theocratic }
+			NOT = { has_government = islamism }
 			}
 
 			modifier = {
@@ -193,6 +218,8 @@
 					NOT = { has_government = communism }
 					NOT = { has_government = socialism }
 					NOT = { has_government = syndicalism }
+					NOT = { has_government = trotskyism }
+					NOT = { has_government = maoism }
 				}
 			}
 			
@@ -208,7 +235,12 @@
 			NOT = { has_government = nationalism }
 			NOT = { has_government = fascism }
 			NOT = { has_government = nazism }
+			NOT = { has_government = strasserism }
+			NOT = { has_government = paganism }
+			NOT = { has_government = fascist_monarchism }
+			NOT = { has_government = reactionary }
 			NOT = { has_government = theocratic }
+			NOT = { has_government = islamism }
 			}
 
 			modifier = {
@@ -236,6 +268,8 @@
 					NOT = { has_government = communism }
 					NOT = { has_government = socialism }
 					NOT = { has_government = syndicalism }
+					NOT = { has_government = trotskyism }
+					NOT = { has_government = maoism }
 				}
 			}
 			
