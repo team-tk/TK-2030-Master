@@ -22,6 +22,10 @@ state={
 
 		add_core_of = KOR
 		add_core_of = DPR
+		1960.1.1 = {
+			owner = DPR
+			controller = DPR
+			}
 	}
 
 	provinces={

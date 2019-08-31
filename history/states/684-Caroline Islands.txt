@@ -45,6 +45,10 @@ state={
 		1918.11.11 = {
 			owner = JAP
 			}
+		1960.1.1 = {
+			owner = USA
+			controller = USA
+			}
 		}
 		
 

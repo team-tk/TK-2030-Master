@@ -35,6 +35,10 @@ state={
 			}
 
 		}
+		1960.1.1 = {
+			owner =PRC
+			controller = PRC
+			}
 
 	}
 
