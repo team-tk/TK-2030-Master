@@ -25,6 +25,10 @@ state={
 			owner = FRA
 			controller = FRA
 			}
+		1960.1.1 = {
+			owner = LAO
+			controller = LAO
+			}
 
 	}
 

@@ -24,6 +24,10 @@ state=
 			owner = JAP
 			controller = JAP
 			}
+		1960.1.1 = {
+			owner = USA
+			controller = USA
+			}
 		
 	}
 	provinces={
