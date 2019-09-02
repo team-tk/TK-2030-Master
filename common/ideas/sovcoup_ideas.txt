@@ -1,0 +1,135 @@
+ideas = {
+	country = {
+		
+		sovcoup_fixcountry = {
+			allowed = { original_tag = SOV }
+			picture = generic_production_bonus
+			removal_cost = 1000
+			modifier = {
+				 	industry_repair_factor = 0.5
+				}
+		}
+		
+		sovcoup_welfare = {
+			allowed = { original_tag = SOV }
+			picture = generic_goods_red_bonus
+			removal_cost = 1000
+			modifier = {
+				 	consumer_goods_factor = 0.03
+					MONTHLY_POPULATION = 0.3
+				}
+		}
+		
+		sovcoup_trotally = {
+			allowed = { original_tag = SOV }
+			picture = generic_communism_drift_bonus
+			removal_cost = 1000
+			modifier = {
+					 army_org_factor = 0.05 
+					 army_core_attack_factor = 0.15
+					 army_core_defence_factor = 0.15
+				}
+		}
+		
+		sovcoup_gulag = {
+			allowed = { original_tag = SOV }
+			picture = FRA_factory_strikes
+			removal_cost = 1000
+			modifier = {
+					 	industrial_capacity_factory = 0.15
+				}
+		}
+		
+		sovcoup_privprop = {
+			allowed = { original_tag = SOV }
+			picture = generic_foreign_capital
+			removal_cost = 1000
+			modifier = {
+					consumer_goods_factor = -0.05
+					 production_speed_buildings_factor = 0.2
+				}
+		}
+		
+		sovcoup_fashorg = {
+			allowed = { original_tag = SOV }
+			picture = generic_fascism_drift_bonus
+			removal_cost = 1000
+			modifier = {
+					fascism_drift = 0.05
+					conscription = 0.02
+				}
+		}
+		
+		sovcoup_aristocracy = {
+			allowed = { original_tag = SOV }
+			picture = rom_carol_ii_hedonist
+			removal_cost = 1000
+			modifier = {
+					monarchism_drift = 0.05
+					research_speed_factor = 0.05
+				}
+		}
+		
+		sovcoup_milschool = {
+			allowed = { original_tag = SOV }
+			picture = generic_army_war_college
+			removal_cost = 1000
+			modifier = {
+					authoritarianism_drift = 0.05
+					conscription = 0.02
+				}
+		}
+		
+		sovcoup_natzeal = {
+			allowed = { original_tag = SOV }
+			picture = generic_intel_bonus
+			removal_cost = 1000
+			modifier = {
+					 	army_attack_factor = 0.1 
+						no_supply_grace = 48
+						land_reinforce_rate = 0.3 
+						army_morale_factor = 0.1 
+						army_org_factor = 0.1
+				}
+		}
+		
+		sovcoup_okb = {
+			allowed = { original_tag = SOV }
+			picture = generic_research_bonus
+			removal_cost = 1000
+			modifier = {
+					research_speed_factor = 0.2
+				}
+		}
+		
+		sovcoup_popo = {
+			allowed = { original_tag = SOV }
+			picture = generic_spy_intel
+			removal_cost = 1000
+			modifier = {
+					stability_weekly = 0.01 
+					foreign_subversive_activites = -0.50
+				}
+		}
+		
+		sovcoup_familyvalues = {
+			allowed = { original_tag = SOV }
+			picture = generic_reserve_divisions
+			removal_cost = 1000
+			modifier = {
+					conscription_factor = 0.2
+				}
+		}
+		
+		sovcoup_aggdiplo = {
+			allowed = { original_tag = SOV }
+			picture = FRA_scw_intervention_nationalists_focus
+			removal_cost = 1000
+			modifier = {
+					justify_war_goal_time = -0.25 
+				}
+		}
+	}
+}
+					
+			

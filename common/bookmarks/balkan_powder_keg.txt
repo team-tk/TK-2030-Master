@@ -9,8 +9,9 @@ bookmarks = {
 		
 		"GER"={
 			history = "GER_BALKAN_POWDER_KEG_DESC"
-			ideology = neutrality
+			ideology = monarchism
 			ideas = {
+			fog_dictatorship_mo
 			}
 			focuses = {
 			}
@@ -18,24 +19,27 @@ bookmarks = {
 		
 		"AUS"={
 			history = "AUS_BALKAN_POWDER_KEG_DESC"
-			ideology = neutrality
+			ideology = monarchism
 			ideas = {
+			fog_dictatorship_mo
 			}
 			focuses = {
 			}
 		}
 		"TUR"={
 			history = "TUR_BALKAN_POWDER_KEG_DESC"
-			ideology = neutrality
+			ideology = monarchism
 			ideas = {
+			fog_dictatorship_mo
 			}
 			focuses = {
 			}
 		}
-		"SOV"={
+		"RUS"={
 			history = "SOV_BALKAN_POWDER_KEG_DESC"
-			ideology = communism
+			ideology = monarchism
 			ideas = {
+			fog_dictatorship_mo
 			}
 			focuses = {
 			}
@@ -44,8 +48,10 @@ bookmarks = {
 			history = "ENG_BALKAN_POWDER_KEG_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}
 			focuses = {
+			fog_democratic
 			}
 		}
 		
@@ -53,6 +59,7 @@ bookmarks = {
 			history = "FRA_BALKAN_POWDER_KEG_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}	
 			focuses = {
 			}		
@@ -61,6 +68,7 @@ bookmarks = {
 			history = "USA_BALKAN_POWDER_KEG_DESC"
 			ideology = democratic
 			ideas = {
+			fog_democratic
 			}	
 			focuses = {
 			}			

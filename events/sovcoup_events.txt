@@ -1,0 +1,423 @@
+﻿add_namespace = sovcoup
+
+##Vlasov's Coup
+country_event = {
+ id = sovcoup.1
+ title = sovcoup.1.title
+ desc = sovcoup.1.desc
+ picture = GFX_report_event_soviet_tanks
+ fire_only_once = yes
+ is_triggered_only = yes
+	option = {
+		name = sovcoup.1.a
+		load_focus_tree = { tree = sov_couptree keep_completed = yes }
+		complete_national_focus = SOV_secondcivilwar
+		end_puppet = MON
+		remove_ideas = idea_socialism_in_one_country
+		remove_ideas = home_of_revolution2
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.30
+		}
+		add_stability = -0.35
+		create_country_leader = {
+		name = "Andrey Vlasov"
+		picture = "Portrait_Soviet_Andrey_Vlasov.dds"
+		expire = "1970.10.12"
+		ideology = oligarchism
+		traits = {
+		
+				}
+			}
+		}
+	}
+
+##New Government
+country_event = {
+ id = sovcoup.2
+ title = sovcoup.2.title
+ desc = sovcoup.2.desc
+ fire_only_once = yes
+ is_triggered_only = yes
+	option = {
+		name = sovcoup.2.a ##stratocracy
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.50
+		}
+		complete_national_focus = SOV_militarygovernment
+	}
+	option = {
+		name = sovcoup.2.b ##konstantin from manchuria
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.50
+		}
+		complete_national_focus = SOV_russianfascistparty
+	}
+	option = {
+		name = sovcoup.2.c ##something tux said shouldn't happen aka romanovs
+		set_politics = {
+			ruling_party = monarchism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = monarchism
+			popularity = 0.50
+		}
+		complete_national_focus = SOV_romanovrestoration
+	}
+}
+
+##memepath was here
+
+####################
+####################Russian Baltic Chain
+####################
+
+##Russian demands (LIT)
+country_event = {
+ id = sovcoup.4
+ title = sovcoup.4.title
+ desc = sovcoup.4.desc
+ fire_only_once = yes
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.4.a ##agree
+	ai_chance = { factor = 100 }
+	SOV = {
+	country_event = { days = 3 id = sovcoup.7}
+	}
+	}
+	option = {
+	name = sovcoup.4.b ##refuse
+	ai_chance = { factor = 0 }
+	add_war_support = 1
+	add_political_power = 500
+	add_stability = 1
+	SOV = {
+	country_event = { days = 3 id = sovcoup.10}
+	}
+	}
+}
+
+##Russian demands (LAT)
+country_event = {
+ id = sovcoup.5
+ title = sovcoup.5.title
+ desc = sovcoup.5.desc
+ fire_only_once = yes
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.5.a ##agree
+	ai_chance = { factor = 100 }
+	SOV = {
+	country_event = { days = 3 id = sovcoup.8}
+	}
+	}
+	option = {
+	name = sovcoup.5.b ##refuse
+	ai_chance = { factor = 0 }
+	add_war_support = 1
+	add_political_power = 500
+	add_stability = 1
+	SOV = {
+	country_event = { days = 3 id = sovcoup.11}
+	}
+	}
+}
+
+##Russian demands (EST)
+country_event = {
+ id = sovcoup.6
+ title = sovcoup.6.title
+ desc = sovcoup.6.desc
+ fire_only_once = yes
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.6.a ##agree
+	ai_chance = { factor = 100 }
+	SOV = {
+	country_event = { days = 3 id = sovcoup.9}
+	}
+	}
+	option = {
+	name = sovcoup.6.b ##refuse
+	ai_chance = { factor = 0 }
+	add_war_support = 1
+	add_political_power = 500
+	add_stability = 1
+	SOV = {
+	country_event = { days = 3 id = sovcoup.12}
+	}
+	}
+}
+
+####################Accept Events
+
+##Lithuania folds
+country_event = {
+ id = sovcoup.7
+ title = sovcoup.7.title
+ desc = sovcoup.7.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.7.a
+	annex_country = {
+    target = LIT
+    transfer_troops = no
+	}
+	}
+}
+
+##Latvia folds
+country_event = {
+ id = sovcoup.8
+ title = sovcoup.8.title
+ desc = sovcoup.8.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.8.a
+	annex_country = {
+    target = LAT
+    transfer_troops = no
+	}
+	}
+}
+
+##Estonia folds
+country_event = {
+ id = sovcoup.9
+ title = sovcoup.9.title
+ desc = sovcoup.9.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.9.a
+	annex_country = {
+    target = EST
+    transfer_troops = no
+	}
+	}
+}
+
+####################Refusal
+
+##Lithuania resists
+country_event = {
+ id = sovcoup.10
+ title = sovcoup.10.title
+ desc = sovcoup.10.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.10.a
+	create_wargoal = {
+    type = annex_everything
+    target = LIT
+	}
+	}
+}
+
+##Latvia resists
+country_event = {
+ id = sovcoup.11
+ title = sovcoup.11.title
+ desc = sovcoup.11.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.11.a
+	create_wargoal = {
+    type = annex_everything
+    target = LAT
+	}
+	}
+}
+
+##Estonia resists
+country_event = {
+ id = sovcoup.12
+ title = sovcoup.12.title
+ desc = sovcoup.12.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.12.a
+	create_wargoal = {
+    type = annex_everything
+    target = EST
+	}
+	}
+}
+
+##Demanding Bessarabia - Romanian Event
+country_event = {
+ id = sovcoup.13
+ title = sovcoup.13.title
+ desc = sovcoup.13.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.13.a
+	SOV = {
+	country_event = { days = 3 id = sovcoup.14}
+	}
+	}
+	option = {
+	name = sovcoup.13.b
+	SOV = {
+	country_event = { days = 3 id = sovcoup.15}
+	}
+	}
+}
+
+##Bessarabia is ours
+country_event = {
+ id = sovcoup.14
+ title = sovcoup.14.title
+ desc = sovcoup.14.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.14.a
+	transfer_state = 78
+	transfer_state = 760
+	}
+}
+
+##Romania Refuses
+country_event = {
+ id = sovcoup.15
+ title = sovcoup.15.title
+ desc = sovcoup.15.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.15.a
+	create_wargoal = {
+    type = annex_everything
+    target = ROM
+	}
+	}
+}
+
+##Eastern Poland UNUSED
+country_event = {
+ id = sovcoup.16
+ title = sovcoup.16.title
+ desc = sovcoup.16.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.16.a
+	SOV = {
+	country_event = { days = 3 id = sovcoup.17}
+	}
+	}
+	option = {
+	name = sovcoup.16.b
+	SOV = {
+	country_event = { days = 3 id = sovcoup.18}
+	}
+	}
+}
+	
+##Poland Accepts UNUSED
+country_event = {
+ id = sovcoup.17
+ title = sovcoup.17.title
+ desc = sovcoup.17.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.17.a
+	transfer_state = 96
+	transfer_state = 95
+	transfer_state = 94
+	transfer_state = 93
+	transfer_state = 91
+	transfer_state = 97
+	transfer_state = 89
+	transfer_state = 784
+	add_state_core  = 96
+	add_state_core  = 95
+	add_state_core  = 94
+	add_state_core  = 93
+	add_state_core  = 91
+	add_state_core  = 97
+	add_state_core  = 89
+	add_state_core  = 784
+}
+}
+
+##Poland Refuses UNUSED
+country_event = {
+ id = sovcoup.18
+ title = sovcoup.18.title
+ desc = sovcoup.18.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.18.a
+	add_state_core  = 96
+	add_state_core  = 95
+	add_state_core  = 94
+	add_state_core  = 93
+	add_state_core  = 91
+	add_state_core  = 97
+	add_state_core  = 89
+	add_state_core  = 784
+	create_wargoal = {
+    type = annex_everything
+    target = POL
+	}	
+	}
+}
+
+##Tsargrad aka Istanbul - Turkish Event
+country_event = {
+ id = sovcoup.19
+ title = sovcoup.19.title
+ desc = sovcoup.19.desc
+ is_triggered_only = yes
+	option = { ##accept
+	name = sovcoup.19.a
+	SOV = {
+	country_event = { days = 3 id = sovcoup.20 }
+	}
+	}
+	option = {
+	name = sovcoup.19.b
+	SOV = {
+	country_event = { days = 3 id = sovcoup.21 }
+	}
+	}
+}
+
+##Turkey agrees
+country_event = {
+ id = sovcoup.20
+ title = sovcoup.20.title
+ desc = sovcoup.20.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.20.a
+	transfer_state = 341
+	transfer_state = 820
+	}
+}
+
+##Turkey refuses
+country_event = {
+ id = sovcoup.21
+ title = sovcoup.21.title
+ desc = sovcoup.21.desc
+ is_triggered_only = yes
+	option = {
+	name = sovcoup.21.a
+	create_wargoal = {
+    type = annex_everything
+    target = TUR
+	}
+	}
+}
+
