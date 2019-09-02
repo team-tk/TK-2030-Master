@@ -2611,6 +2611,7 @@ focus = {
 			ITA = {
 				add_opinion_modifier = { target = GER modifier = ger_ita_alliance_focus }
 			}
+			GER = { add_to_faction = ITA }
 		}
 	}
 	
