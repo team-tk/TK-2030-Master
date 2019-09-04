@@ -106,8 +106,6 @@ technology_categories = {
 	space_research
 	helicopter
 	mechanized_tech
-	desert_infantry_tech
-	jungle_infantry_tech
 }
 
 technology_folders = {
