@@ -332,7 +332,7 @@ create_country_leader = {
 		interwar_antitank = 1
 		motorised_infantry = 1
 		infantry_weapons2 = 1
-		support_weapons = 1
+		modern_support_weapons = 1
 		support_weapons2 = 1
 
 		#doctrines

@@ -7,6 +7,7 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = SOV
+
 		}
 	}
 	
@@ -1532,10 +1533,19 @@ focus_tree = {
 				desc = "POLITICS_LEON_TROTSKY_DESC"
 				picture = "Portrait_Leon_Trotsky.dds"
 				expire = "1951.1.1"
-				ideology = trotskyism
+				ideology = trotskyism_ideology
 				traits = {
 					bolshevik_militarist
 				}
+			}
+			
+			set_politics = {
+				ruling_party = trotskyism
+			}
+			
+			add_popularity = {
+				ideology = trotskyism
+				popularity = 0.8
 			}
 			
 		}
@@ -8953,7 +8963,6 @@ focus_tree = {
 		}
 	}
 	
-		
 	#New Event Assassinate Stalin
 	focus = {
 		id = SOV_vlasovscoup
@@ -8971,10 +8980,10 @@ focus_tree = {
 	}
 	}
 	
-	
-	
-	
+
 }
+
+
 #bb stalin
 
 focus_tree = { 
@@ -10202,4 +10211,3 @@ ai_will_do = {
 } 
 }
 	
-

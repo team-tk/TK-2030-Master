@@ -39,9 +39,14 @@ autonomy_state = {
  		has_dlc = "Together for Victory" 		
  		OVERLORD = {
  			NOT = { original_tag = GER }
- 			has_fascist_government = yes
+			OR = {
+ 			has_government = nazism
+			has_government = paganism
+			has_government = strasserism
+			has_government = fascism
+			}
  		}
- 		if = {
+		if = {
 			limit = { has_dlc = "Waking the Tiger" }
 			NOT = { OVERLORD = { original_tag = JAP } }
 			NOT = { OVERLORD = { original_tag = MAN } }

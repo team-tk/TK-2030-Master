@@ -416,7 +416,7 @@ if = {
 		interwar_antitank = 1
 		interwar_antiair = 1
 		infantry_weapons2 = 1
-		support_weapons = 1
+		modern_support_weapons = 1
 		support_weapons2 = 1
 
 		force_rotation = 1

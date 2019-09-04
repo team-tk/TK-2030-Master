@@ -37,8 +37,13 @@ autonomy_state = {
 
 		if = {
 			limit = { has_dlc = "Death or Dishonor" }
-			NOT = { has_fascist_government = yes }
-			NOT = { has_communist_government = yes }
+			NOT = { has_government = fascism }
+			NOT = { has_government = nazism }
+			NOT = { has_government = paganism }
+			NOT = { has_government = strasserism }
+			NOT = { has_government = fascist_monarchism }
+			NOT = { has_government = communism }
+			NOT = { has_government = trotskyism }
 		}
 		
 		OVERLORD = {
