@@ -35,7 +35,17 @@ autonomy_state = {
 	}
 
 	allowed = {
-		has_government = maoism
+		has_government = communism
+		OR = {
+		OVERLORD = { original_tag = CHI }
+		OVERLORD = { original_tag = PRC }
+		OVERLORD = { original_tag = SIK }
+		OVERLORD = { original_tag = MAN }
+		OVERLORD = { original_tag = GXC }
+		OVERLORD = { original_tag = SHX }
+		OVERLORD = { original_tag = XSM }
+		OVERLORD = { original_tag = YUN }
+		}
 	}
 	
 	can_take_level = {

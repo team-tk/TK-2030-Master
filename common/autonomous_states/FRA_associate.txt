@@ -31,7 +31,7 @@ autonomy_state = {
 	}
 	
 	allowed = {
-	OVERLORD = { original_tag = FRA }		
+		OVERLORD = { original_tag = FRA }		
 	}
 
 	can_lose_level = {

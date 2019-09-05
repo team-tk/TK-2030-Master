@@ -36,16 +36,11 @@ autonomy_state = {
 	}
 
 	allowed = {
- 		has_dlc = "Together for Victory" 		
- 		OVERLORD = {
- 			original_tag = GER
-			OR = {
- 			has_government = nazism
-			has_government = paganism
-			has_government = strasserism
+		has_dlc = "Death or Dishonor"
+		OVERLORD = { 
+			original_tag = GER
 			has_government = fascism
-			}
- 		}
+		}
 		if = {
 			limit = { has_dlc = "Waking the Tiger" }
 			NOT = { OVERLORD = { original_tag = JAP } }
