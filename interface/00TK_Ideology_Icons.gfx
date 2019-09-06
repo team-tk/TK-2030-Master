@@ -952,6 +952,12 @@ spriteType = {
 	
 	#### AUTONOMY ICONS
 	
+	spriteType = {
+		name = "GFX_autonomy_sov_satellite_icon"
+		texturefile = "gfx/interface/autonomy/satellite.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
+	}
+	
 	
 	spriteType = {
 		name = "GFX_autonomy_socialist_republik_icon"
@@ -960,8 +966,8 @@ spriteType = {
 	}
 
 	spriteType = {
-		name = "GFX_autonomy_sov_satellite_icon"
-		texturefile = "gfx/interface/autonomy/satellite.dds"
+		name = "GFX_autonomy_autonomous_oblast_icon"
+		texturefile = "gfx/interface/autonomy/autonomous_oblast.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
 	}
 	
@@ -972,11 +978,7 @@ spriteType = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
 	}
 	
-	spriteType = {
-		name = "GFX_autonomy_autonomous_oblast_icon"
-		texturefile = "gfx/interface/autonomy/autonomous_oblast.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
-	}
+	
 	
 	
 	

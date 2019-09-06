@@ -40,15 +40,11 @@ autonomy_state = {
 		has_dlc = "Waking the Tiger"
 		OR = {
 			AND = {
-				OR = {
-				has_government = fascism
 				has_government = fascist_monarchism
-				}
 				OVERLORD = { original_tag = JAP }
 			}
 			AND = {
 				OR = {
-					has_government = fascism
 					has_government = fascist_monarchism
 					has_government = neutrality
 				}

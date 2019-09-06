@@ -254,27 +254,27 @@ add_to_tech_sharing_group = french_research
 # DIPLOMACY
 set_autonomy = {
 	target = MOR
-	autonomous_state = autonomy_protectorate
+	autonomous_state = autonomy_colony
 	freedom_level = 0.3
 }
 set_autonomy = {
 	target = TUN
-	autonomous_state = autonomy_protectorate
+	autonomous_state = autonomy_colony
 	freedom_level = 0.3
 }
 set_autonomy = {
 	target = FRI
-	autonomous_state = autonomy_protectorate
+	autonomous_state = autonomy_colony
 	freedom_level = 0.3
 }
 set_autonomy = {
 	target = SYR
-	autonomous_state = autonomy_associate
+	autonomous_state = autonomy_colony
 	freedom_level = 0.35
 }
 set_autonomy = {
 	target = LEB
-	autonomous_state = autonomy_associate
+	autonomous_state = autonomy_colony
 	freedom_level = 0.35
 }
 

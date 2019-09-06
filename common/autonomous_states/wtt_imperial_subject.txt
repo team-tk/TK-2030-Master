@@ -46,9 +46,8 @@ autonomy_state = {
 			
 		
 		OR = {
-			has_government = fascism
-			has_government = neutrality
 			has_government = fascist_monarchism
+			has_government = neutrality
 		}
 		OVERLORD = { original_tag = JAP }
 	}

@@ -2728,7 +2728,7 @@ focus = {
 	focus = {
 		id = paganism_focus
 		icon = GFX_goal_ideology_paganism
-		prerequisite = { focus = authoritarianism_focus }
+		prerequisite = { focus = totalitarianism_focus }
 		mutually_exclusive = { focus = ultranationalism_focus focus = fascism_focus focus = strasserism_focus focus = national_socialism_focus }
 		x = -6
 		y = 3
