@@ -38,17 +38,39 @@ technologies = {
 @1956 = 61
 @1958 = 63
 @1960 = 65
+@1970 = 67
 @1975 = 69
 @1984 = 73
 @1990 = 77
 @1994 = 81
 @1995 = 85
 @2000 = 89
+@2002 = 90
+@2004 = 91
 @2006 = 93
 @2008 = 97
+@2010 = 98
+@2012 = 99
+@2014 = 100
 @2016 = 101
+@2018 = 103
 @2020 = 105
+@2025 = 107
 @2030 = 109
+
+	### MD STUFF
+	@infantry_weapons_line = 0
+	@infantry_weapons_bonus_line_top = 3
+	@infantry_weapons_bonus_line_center = 4
+	@infantry_weapons_bonus_line_bottom = 5
+	@support_weapons_line_top = 7
+	@support_weapons_line_center = 8
+	@support_weapons_line_bottom = 9
+	@night_vision_line = 11
+	@special_forces_line = 13
+	@body_armor_line = 15
+	@camouflage_line = 17
+	@motorised_line = 19
 
 	early_infantry_weapons = {
 
@@ -2321,6 +2343,38 @@ technologies = {
 			leads_to_tech = advanced_infantry_weapons_f
 			research_cost_coeff = 1
 		}
+		
+		### MD STUFF
+		
+				path = {
+			leads_to_tech = CW_support_weapons
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = MD_night_vision
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = body_armor
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = camouflage
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = MD_special_forces
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = MD_motorised_infantry
+			research_cost_coeff = 1
+		}
 
 		ai_will_do = { #EAI
 			factor = 50
@@ -2395,6 +2449,14 @@ technologies = {
 			leads_to_tech = advanced_infantry_weapons_h
 			research_cost_coeff = 1
 		}
+		
+		
+		#### MD STUFF
+		
+		path = {
+			leads_to_tech = rail_integration_system
+			research_cost_coeff = 1
+		}
 
 		ai_will_do = { #EAI
 			factor = 50
@@ -2429,7 +2491,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = advanced_infantry_weapons_j
+			leads_to_tech = MD_infantry_weapons2
 			research_cost_coeff = 1
 		}
 
@@ -2445,6 +2507,45 @@ technologies = {
 			#RESTRICTIONS
 			modifier = { factor = 0 EAI_prioritise_air_doctrine = yes EAI_air_doctrine_tech_focus = yes }
 			modifier = { factor = 0 EAI_prioritise_naval_doctrine = yes EAI_naval_doctrine_tech_focus = yes }
+		}
+	}
+	
+	MD_infantry_weapons2 = {
+
+		category_light_infantry = {
+			soft_attack = 0.05
+		}
+		cavalry = {
+			soft_attack = 0.05
+		}
+		motorized = {
+			soft_attack = 0.05
+		}
+		light_mechanized = {
+			soft_attack = 0.05
+		}
+		mechanized = {
+			soft_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = advanced_infantry_weapons_j
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1995
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @1995 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
 		}
 	}
 	
@@ -2503,7 +2604,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = advanced_infantry_weapons_l
+			leads_to_tech = MD_improved_infantry_weapons_2
 			research_cost_coeff = 1
 		}
 
@@ -2519,6 +2620,49 @@ technologies = {
 			#RESTRICTIONS
 			modifier = { factor = 0 EAI_prioritise_air_doctrine = yes EAI_air_doctrine_tech_focus = yes }
 			modifier = { factor = 0 EAI_prioritise_naval_doctrine = yes EAI_naval_doctrine_tech_focus = yes }
+		}
+	}
+	
+			MD_improved_infantry_weapons_2 = {
+
+		category_light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		cavalry = {
+			soft_attack = 0.05
+		}
+		
+		motorized = {
+			soft_attack = 0.05
+		}
+		
+		light_mechanized = {
+			soft_attack = 0.05
+		}
+		
+		mechanized = {
+			soft_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = advanced_infantry_weapons_l
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2010
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @2012 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
 		}
 	}
 	
@@ -2539,8 +2683,14 @@ technologies = {
 			infantry_weapons
 		}
 		
+		
 		path = {
-			leads_to_tech = advanced_infantry_weapons_m
+			leads_to_tech = MD_advanced_infantry_weapons2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = MD_lightweight_small_arms
 			research_cost_coeff = 1
 		}
 
@@ -2556,6 +2706,130 @@ technologies = {
 			#RESTRICTIONS
 			modifier = { factor = 0 EAI_prioritise_air_doctrine = yes EAI_air_doctrine_tech_focus = yes }
 			modifier = { factor = 0 EAI_prioritise_naval_doctrine = yes EAI_naval_doctrine_tech_focus = yes }
+		}
+	}
+	
+	MD_advanced_infantry_weapons2 = {
+
+		category_light_infantry = {
+			soft_attack = 0.025
+		}
+		
+		cavalry = {
+			soft_attack = 0.025
+		}		
+
+		motorized = {
+			soft_attack = 0.025
+		}
+		
+		light_mechanized = {
+			soft_attack = 0.025
+		}
+		
+		mechanized = {
+			soft_attack = 0.025
+		}
+			
+		path = {
+			leads_to_tech = advanced_infantry_weapons_m
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2018
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @2018 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_lightweight_small_arms = {
+
+		category_light_infantry = {
+			soft_attack = 0.025
+		}
+		
+		cavalry = {
+			soft_attack = 0.025
+		}		
+
+		motorized = {
+			soft_attack = 0.025
+		}
+		
+		light_mechanized = {
+			soft_attack = 0.025
+		}
+		
+		mechanized = {
+			soft_attack = 0.025
+		}
+		
+		path = {
+			leads_to_tech = MD_cased_telescoped_small_arms
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2018
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2018 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_cased_telescoped_small_arms = {
+
+		category_light_infantry = {
+			soft_attack = 0.025
+		}
+		
+		cavalry = {
+			soft_attack = 0.025
+		}		
+
+		motorized = {
+			soft_attack = 0.025
+		}
+		
+		light_mechanized = {
+			soft_attack = 0.025
+		}
+		
+		mechanized = {
+			soft_attack = 0.025
+		}
+
+		research_cost = 1.5
+		start_year = 2020
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2020 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
 		}
 	}
 	
@@ -2899,10 +3173,6 @@ technologies = {
 
 	support_weapons_c = {
 	
-	path = {
-			leads_to_tech = night_vision_b
-			research_cost_coeff = 1
-		}
 
 		infantry = {
 			defense = 0.05
@@ -2962,106 +3232,6 @@ technologies = {
 		}
 	}
 	
-	night_vision_b = {
-
-		land_night_attack = 0.15
-
-		path = {
-			leads_to_tech = night_vision_c
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		start_year = 1975
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1975 }
-		}
-
-		categories = {
-			night_vision
-		}
-
-		ai_will_do = { #EAI
-			factor = 100
-
-			#DATE
-			modifier = { factor = 0 date < 1975.1.1 }
-
-			#WEIGHT
-			modifier = { factor = 2 EAI_infantry_tech_focus = yes }
-			
-			#RESTRICTIONS
-			modifier = { factor = 0 EAI_prioritise_air_doctrine = yes EAI_air_doctrine_tech_focus = yes }
-			modifier = { factor = 0 EAI_prioritise_naval_doctrine = yes EAI_naval_doctrine_tech_focus = yes }
-		}
-	}
-	
-	night_vision_c = {
-
-		land_night_attack = 0.15
-
-		path = {
-			leads_to_tech = night_vision_d
-			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		start_year = 1990
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1990 }
-		}
-
-		categories = {
-			night_vision
-		}
-
-		ai_will_do = { #EAI
-			factor = 100
-
-			#DATE
-			modifier = { factor = 0 date < 1990.1.1 }
-
-			#WEIGHT
-			modifier = { factor = 2 EAI_infantry_tech_focus = yes }
-			
-			#RESTRICTIONS
-			modifier = { factor = 0 EAI_prioritise_air_doctrine = yes EAI_air_doctrine_tech_focus = yes }
-			modifier = { factor = 0 EAI_prioritise_naval_doctrine = yes EAI_naval_doctrine_tech_focus = yes }
-		}
-	}
-	
-	night_vision_d = {
-
-		land_night_attack = 0.15
-
-
-		research_cost = 2
-		start_year = 2016
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @2016 }
-		}
-
-		categories = {
-			night_vision
-		}
-
-		ai_will_do = { #EAI
-			factor = 100
-
-			#DATE
-			modifier = { factor = 0 date < 2016.1.1 }
-
-			#WEIGHT
-			modifier = { factor = 2 EAI_infantry_tech_focus = yes }
-			
-			#RESTRICTIONS
-			modifier = { factor = 0 EAI_prioritise_air_doctrine = yes EAI_air_doctrine_tech_focus = yes }
-			modifier = { factor = 0 EAI_prioritise_naval_doctrine = yes EAI_naval_doctrine_tech_focus = yes }
-		}
-	}
 	
 	
 	############## WW1 TECHS
@@ -4307,5 +4477,2108 @@ jaegers = {
 	}
 	
 ###------> X <><> <><> <><> <><> <><>
+
+
+
+#### MD STUFF
+
+
+	rail_integration_system = {
+
+		category_light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = red_dot_sight
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_rail_integration_system
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = red_laser_sight
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1995
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_center y = @1995 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+
+	red_dot_sight = {
+	
+		category_light_infantry = {
+			soft_attack = 0.025
+		}
+		
+		path = {
+			leads_to_tech = holographic_sight
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2000
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_top y = @2000 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	red_laser_sight = {
+	
+		land_night_attack = 0.05
+
+		category_light_infantry = {
+			soft_attack = 0.025
+		}
+		
+		path = {
+			leads_to_tech = weapon_mounted_light
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2002
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_bottom y = @2002 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	holographic_sight = {
+	
+		category_light_infantry = {
+			soft_attack = 0.025
+		}
+		
+		path = {
+			leads_to_tech = thermal_weapon_sight
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2002
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_top y = @2002 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	thermal_weapon_sight = {
+	
+		category_light_infantry = {
+			soft_attack = 0.025
+		}
+		
+		path = {
+			leads_to_tech = integrated_ballistics_computer
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2004
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_top y = @2004 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	weapon_mounted_light = {
+	
+		land_night_attack = 0.05
+		
+		path = {
+			leads_to_tech = green_laser_sight
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2004
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_bottom y = @2004 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	green_laser_sight = {
+	
+		land_night_attack = 0.05
+
+		category_light_infantry = {
+			soft_attack = 0.025
+		}
+		
+		path = {
+			leads_to_tech = green_laser_interdiction_system
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2006
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_bottom y = @2006 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	
+
+	
+	improved_rail_integration_system = {
+
+		category_light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = future_rail_integration_system
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2010
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_center y = @2010 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	green_laser_interdiction_system = {
+	
+		land_night_attack = 0.05
+
+		category_light_infantry = {
+			soft_attack = 0.025
+		}
+
+		path = {
+			leads_to_tech = laser_guided_small_arms
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2012
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_bottom y = @2012 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	integrated_ballistics_computer = {
+	
+		category_light_infantry = {
+			soft_attack = 0.025
+		}
+		
+		path = {
+			leads_to_tech = precision_guided_firearms
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2014
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_top y = @2014 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	
+	precision_guided_firearms = {
+	
+		category_light_infantry = {
+			soft_attack = 0.025
+		}
+
+		path = {
+			leads_to_tech = smart_ammunition
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2016
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_top y = @2016 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	future_rail_integration_system = {
+
+		category_light_infantry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		start_year = 2025
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_center y = @2025 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	laser_guided_small_arms = {
+	
+		land_night_attack = 0.05
+
+		category_light_infantry = {
+			soft_attack = 0.025
+		}
+
+		path = {
+			leads_to_tech = smart_ammunition
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_bottom y = @2025 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	smart_ammunition = {
+	
+		category_light_infantry = {
+			soft_attack = 0.025
+		}	
+
+		research_cost = 1.5
+		start_year = 2030
+		folder = {
+			name = infantry_folder
+			position = { x = @infantry_weapons_bonus_line_top y = @2030 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	
+	CW_support_weapons = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = squad_automatic_weapon
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tandem_charge_warheads
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1970
+		folder = {
+			name = infantry_folder
+			position = { x = @support_weapons_line_center y = @1970 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	squad_automatic_weapon = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = MD_support_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1990
+		folder = {
+			name = infantry_folder
+			position = { x = @support_weapons_line_top y = @1990 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	tandem_charge_warheads = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = MD_support_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1990
+		folder = {
+			name = infantry_folder
+			position = { x = @support_weapons_line_bottom y = @1990 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_support_weapons2 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = MD_support_weapons3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1995
+		folder = {
+			name = infantry_folder
+			position = { x = @support_weapons_line_center y = @1995 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_support_weapons3 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = MD_support_weapons4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2002
+		folder = {
+			name = infantry_folder
+			position = { x = @support_weapons_line_center y = @2002 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_support_weapons4 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = MD_support_weapons5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2010
+		folder = {
+			name = infantry_folder
+			position = { x = @support_weapons_line_center y = @2010 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_support_weapons5 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = MD_support_weapons6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2014
+		folder = {
+			name = infantry_folder
+			position = { x = @support_weapons_line_center y = @2014 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	support_weapons6 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = MD_support_weapons7
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 2018
+		folder = {
+			name = infantry_folder
+			position = { x = @support_weapons_line_center y = @2018 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_support_weapons7 = {
+
+		infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		paratrooper = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		marine = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		motorized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		research_cost = 1.5
+		start_year = 2030
+		folder = {
+			name = infantry_folder
+			position = { x = @support_weapons_line_center y = @2030 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_night_vision = {
+
+		land_night_attack = 0.1
+		
+		path = {
+			leads_to_tech = MD_night_vision2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1970
+		folder = {
+			name = infantry_folder
+			position = { x = @night_vision_line y = @1970 }
+		}
+		
+		categories = {
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_night_vision2 = {
+
+		land_night_attack = 0.15	
+		
+		path = {
+			leads_to_tech = MD_night_vision3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1990
+		folder = {
+			name = infantry_folder
+			position = { x = @night_vision_line y = @1990 }
+		}
+		
+		categories = {
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_night_vision3 = {
+
+		land_night_attack = 0.15	
+		
+		path = {
+			leads_to_tech = MD_night_vision4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2000
+		folder = {
+			name = infantry_folder
+			position = { x = @night_vision_line y = @2000 }
+		}
+		
+		categories = {
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_night_vision4 = {
+
+		land_night_attack = 0.05	
+		
+		path = {
+			leads_to_tech = MD_night_vision5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2008
+		folder = {
+			name = infantry_folder
+			position = { x = @night_vision_line y = @2008 }
+		}
+		
+		categories = {
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_night_vision5 = {
+
+		land_night_attack = 0.05	
+		
+		path = {
+			leads_to_tech = MD_night_vision6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 2018
+		folder = {
+			name = infantry_folder
+			position = { x = @night_vision_line y = @2018 }
+		}
+		
+		categories = {
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_night_vision6 = {
+
+		land_night_attack = 0.1	
+		
+		research_cost = 2
+		start_year = 2025
+		folder = {
+			name = infantry_folder
+			position = { x = @night_vision_line y = @2025 }
+		}
+		
+		categories = {
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	body_armor = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = body_armor2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1970
+		folder = {
+			name = infantry_folder
+			position = { x = @body_armor_line y = @1970 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	body_armor2 = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = body_armor3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1990
+		folder = {
+			name = infantry_folder
+			position = { x = @body_armor_line y = @1990 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	body_armor3 = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = body_armor4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2000
+		folder = {
+			name = infantry_folder
+			position = { x = @body_armor_line y = @2000 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	body_armor4 = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = body_armor5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2008
+		folder = {
+			name = infantry_folder
+			position = { x = @body_armor_line y = @2008 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	body_armor5 = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = body_armor6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2012
+		folder = {
+			name = infantry_folder
+			position = { x = @body_armor_line y = @2012 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	body_armor6 = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = body_armor7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2016
+		folder = {
+			name = infantry_folder
+			position = { x = @body_armor_line y = @2016 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	body_armor7 = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = body_armor8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2018
+		folder = {
+			name = infantry_folder
+			position = { x = @body_armor_line y = @2018 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	body_armor8 = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = body_armor9
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = infantry_folder
+			position = { x = @body_armor_line y = @2025 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	body_armor9 = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+
+		research_cost = 1.5
+		start_year = 2030
+		folder = {
+			name = infantry_folder
+			position = { x = @body_armor_line y = @2030 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	camouflage = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = camouflage2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1970
+		folder = {
+			name = infantry_folder
+			position = { x = @camouflage_line y = @1970 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	camouflage2 = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = camouflage3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2002
+		folder = {
+			name = infantry_folder
+			position = { x = @camouflage_line y = @2002 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	camouflage3 = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = camouflage4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2006
+		folder = {
+			name = infantry_folder
+			position = { x = @camouflage_line y = @2006 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	camouflage4 = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = camouflage5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2014
+		folder = {
+			name = infantry_folder
+			position = { x = @camouflage_line y = @2014 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	camouflage5 = {
+
+		infantry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		mountaineers = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		paratrooper = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		marine = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		motorized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		light_mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		mechanized = {
+			defense = 0.02
+			breakthrough = 0.02
+		}
+		
+		path = {
+			leads_to_tech = camouflage6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2020
+		folder = {
+			name = infantry_folder
+			position = { x = @camouflage_line y = @2020 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	camouflage6 = {
+
+		infantry = {
+			defense = 0.1
+			breakthrough = 0.1
+		}
+		cavalry = {
+			defense = 0.1
+			breakthrough = 0.1
+		}		
+		mountaineers = {
+			defense = 0.1
+			breakthrough = 0.1
+		}
+		paratrooper = {
+			defense = 0.1
+			breakthrough = 0.1
+		}
+		marine = {
+			defense = 0.1
+			breakthrough = 0.1
+		}
+		motorized = {
+			defense = 0.1
+			breakthrough = 0.1
+		}
+		light_mechanized = {
+			defense = 0.1
+			breakthrough = 0.1
+		}
+		mechanized = {
+			defense = 0.1
+			breakthrough = 0.1
+		}
+
+		research_cost = 3
+		start_year = 2030
+		folder = {
+			name = infantry_folder
+			position = { x = @camouflage_line y = @2030 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_special_forces = {
+
+		enable_subunits = {
+			marine
+			paratrooper
+			mountaineers
+		}
+
+		path = {
+			leads_to_tech = MD_special_forces2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1970
+		folder = {
+			name = infantry_folder
+			position = { x = @special_forces_line y = @1970 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	MD_special_forces2 = {
+
+		marine = {
+			soft_attack = 0.1
+		}
+		paratrooper = {
+			soft_attack = 0.1
+		}
+		mountaineers = {
+			soft_attack = 0.1
+		}
+		path = {
+			leads_to_tech = MD_special_forces3
+			research_cost_coeff = 1
+		}
+		
+
+		research_cost = 1.5
+		start_year = 1990
+		folder = {
+			name = infantry_folder
+			position = { x = @special_forces_line y = @1990 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+	}
+	
+	MD_special_forces3 = {
+
+		marine = {
+			max_organisation = 5
+		}
+		mountaineers = {
+			max_organisation = 5
+		}
+		paratrooper = {
+			max_organisation = 5
+		}
+		
+		path = {
+			leads_to_tech = MD_special_forces4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 2004
+		folder = {
+			name = infantry_folder
+			position = { x = @special_forces_line y = @2004 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+	}
+
+	MD_special_forces4 = {
+
+		marine = {
+			soft_attack = 0.1
+		}
+		paratrooper = {
+			soft_attack = 0.1
+		}
+		mountaineers = {
+			soft_attack = 0.1
+		}
+		
+		path = {
+			leads_to_tech = MD_special_forces5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2010
+		folder = {
+			name = infantry_folder
+			position = { x = @special_forces_line y = @2010 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+	}
+	
+	MD_special_forces5 = {
+
+		marine = {
+			max_organisation = 5
+		}
+		mountaineers = {
+			max_organisation = 5
+		}
+		paratrooper = {
+			max_organisation = 5
+		}
+		
+		path = {
+			leads_to_tech = MD_special_forces6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+		start_year = 2020
+		folder = {
+			name = infantry_folder
+			position = { x = @special_forces_line y = @2020 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+	}
+	
+	MD_special_forces6 = {
+
+		marine = {
+			soft_attack = 0.1
+		}
+		paratrooper = {
+			soft_attack = 0.1
+		}
+		mountaineers = {
+			soft_attack = 0.1
+		}
+
+		research_cost = 1.5
+		start_year = 2030
+		folder = {
+			name = infantry_folder
+			position = { x = @special_forces_line y = @2030 }
+		}
+		
+		categories = {
+			marine_tech
+		}
+	}
+
+	MD_motorised_infantry = {
+
+		enable_subunits = {
+			motorized
+		}
+
+		enable_equipments = {
+			MD_motorized_equipment_1
+		}
+
+		on_research_complete = {
+			limit = {
+				NOT = {
+					has_template_containing_unit = motorized
+				}
+			}
+			hidden_effect = {
+				load_oob = "unlock_motorized"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		research_cost = 2
+		start_year = 1990
+		folder = {
+			name = infantry_folder
+			position = { x = @motorised_line y = @1990 }
+		}
+		
+		sub_technologies = {
+			MD_motorized_rocket_unit
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	MD_motorized_rocket_unit = {
+
+		enable_subunits = {
+			motorized_rocket_brigade
+		}
+		enable_equipments = {
+			motorized_rocket_equipment_1
+		}
+	
+		research_cost = 1.5
+		start_year = 1970
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			mot_rockets
+		}
+	}
 
 }

@@ -1240,7 +1240,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = { 
-					width = 2800 height = 1000
+					width = 2400 height = 1000
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -1257,10 +1257,59 @@ guiTypes = {
 					allwaystransparent = yes
 				}
 				
-				instantTextBoxType = {
-					name = "support_year2"
+					instantTextBoxType = {
+					name = "ww1support_year2"
 					position = { x = 90 y = 50 }
 					textureFile = ""
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1910"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "ww1support_year3"
+					position = { x = 243 y = 50 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1910"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "ww1support_year5"
+					position = { x = 384 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1914"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "ww1support_year6"
+					position = { x = 523 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "1916"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "ww1support_year7"
+					position = { x = 660 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1918"
@@ -1271,9 +1320,8 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "support_year3"
-					position = { x = 243 y = 50 }
-					textureFile = ""
+					name = "ww1support_year8"
+					position = { x = 800 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1936"
@@ -1285,7 +1333,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_year6"
-					position = { x = 523 y = 50 }
+					position = { x = 940 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1939"
@@ -1297,7 +1345,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_year9"
-					position = { x = 943 y = 50 }
+					position = { x = 1080 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1942"
@@ -1309,7 +1357,7 @@ guiTypes = {
 						
 				instantTextBoxType = {
 					name = "support_year12"
-					position = { x = 1363 y = 50 }
+					position = { x = 1220 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1945"
@@ -1323,7 +1371,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_year13"
-					position = { x = 1783 y = 50 }
+					position = { x = 1360 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1960"
@@ -1335,7 +1383,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_year14"
-					position = { x = 2203 y = 50 }
+					position = { x = 1500 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1975"
@@ -1347,10 +1395,46 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_year15"
-					position = { x = 2623 y = 50 }
+					position = { x = 1640 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
 					text = "1990"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}	
+				
+				instantTextBoxType = {
+					name = "support_year16"
+					position = { x = 1780 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "2003"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}	
+				
+				instantTextBoxType = {
+					name = "support_year17"
+					position = { x = 1920 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "2008"
+					maxWidth = 170
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}	
+				
+				instantTextBoxType = {
+					name = "support_year18"
+					position = { x = 2060 y = 50 }
+					font = "hoi_36header"
+					borderSize = { x = 0 y = 0}
+					text = "2014"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -1391,18 +1475,7 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-			gridboxtype = {
-				name = "electronic_mechanical_engineering_tree"
-				position = { x= 100 y=160 }
-				slotsize = { width=70 height= 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "motorised_infantry_tree"
-				position = { x = 100 y = 160 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
+			
 
 
 		}
