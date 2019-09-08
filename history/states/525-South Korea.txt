@@ -24,6 +24,10 @@ state=
 		}
 
 		add_core_of = KOR
+		1949.1.1 = {
+			owner = KOR
+			controller = KOR
+			}
 		1960.1.1 = {
 			owner = KOR
 			controller = KOR

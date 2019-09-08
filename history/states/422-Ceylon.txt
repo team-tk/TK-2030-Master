@@ -28,6 +28,10 @@ state=
 				coastal_bunker = 3
 			}
 		}
+		1949.1.1 = {
+			owner = SRL
+			controller = SRL
+			}
 		1960.1.1 = {
 			owner = SRL
 			controller = SRL

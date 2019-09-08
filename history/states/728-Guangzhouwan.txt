@@ -22,7 +22,7 @@ state={
 			owner = FRA
 			controller = FRA
 			}
-		1960.1.1 = {
+		1949.1.1 = {
 			owner =PRC
 			controller = PRC
 			}

@@ -24,7 +24,7 @@ state=
 		victory_points = {
 			12068 1 
 		}
-		1960.1.1 = {
+		1949.1.1 = {
 			owner = CHI
 			controller = CHI
 			}

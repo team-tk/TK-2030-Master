@@ -15,6 +15,10 @@ state={
 		}
 		add_core_of = PAK
 		add_core_of = RAJ
+		1949.1.1 = {
+			owner = ENG
+			controller = ENG
+			}
 		1960.1.1 = {
 			owner = PAK
 			controller = PAK
