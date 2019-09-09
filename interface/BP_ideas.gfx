@@ -1,6 +1,61 @@
 spriteTypes = {	
 
 spriteType = {
+		name = "GFX_idea_nodefcon"
+		texturefile = "gfx/interface/ideas/government/defcon/nodefcon.dds"
+	}
+
+spriteType = {
+		name = "GFX_idea_defcon1"
+		texturefile = "gfx/interface/ideas/government/defcon/defcon1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_defcon2"
+		texturefile = "gfx/interface/ideas/government/defcon/defcon2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_defcon3"
+		texturefile = "gfx/interface/ideas/government/defcon/defcon3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_defcon4"
+		texturefile = "gfx/interface/ideas/government/defcon/defcon4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_defcon5"
+		texturefile = "gfx/interface/ideas/government/defcon/defcon5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_vs_electionsfree"
+		texturefile = "gfx/interface/ideas/government/voting/electionsfree.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_vs_fakeelections"
+		texturefile = "gfx/interface/ideas/government/voting/fakeelections.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_vs_suspendedelections"
+		texturefile = "gfx/interface/ideas/government/voting/suspendedelections.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_vs_noelections"
+		texturefile = "gfx/interface/ideas/government/voting/noelections.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_vs_electionstwoparty"
+		texturefile = "gfx/interface/ideas/government/voting/electionstwoparty.dds"
+	}
+
+spriteType = {
 		name = "GFX_idea_fog_democratic"
 		texturefile = "gfx/interface/ideas/government/form_of_government/democratic.dds"
 	}
@@ -72,7 +127,7 @@ spriteType = {
 	
 	spriteType = {
 		name = "GFX_idea_foc_congress_closed"
-		texturefile = "gfx/interface/ideas/government/congress/closed_congress.dds"
+		texturefile = "gfx/interface/ideas/government/congress/closedcongress.dds"
 	}
 	
 	spriteType = {
@@ -87,7 +142,7 @@ spriteType = {
 	
 	spriteType = {
 		name = "GFX_idea_foc_congress_rubber"
-		texturefile = "gfx/interface/ideas/government/congress/rubber_stamp.dds"
+		texturefile = "gfx/interface/ideas/government/congress/rubberstamp.dds"
 	}
 	
 	spriteType = {
@@ -107,12 +162,12 @@ spriteType = {
 	
 	spriteType = {
 		name = "GFX_idea_foj_islamic_law"
-		texturefile = "gfx/interface/ideas/government/judiciary/islamic_law.dds"
+		texturefile = "gfx/interface/ideas/government/judiciary/islamiclaw.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_idea_foj_kangaroo"
-		texturefile = "gfx/interface/ideas/government/judiciary/kangaroo_courts.dds"
+		texturefile = "gfx/interface/ideas/government/judiciary/kangaroocourts.dds"
 	}
 
 

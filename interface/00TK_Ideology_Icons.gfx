@@ -682,12 +682,12 @@ spriteType = {
 	
 	spriteType = {
 		name = "GFX_ideology_FRA_fascist_monarchism_group"
-		texturefile = "gfx/interface/ideologies/monarchism/FRA_monarchism.dds"
+		texturefile = "gfx/interface/ideologies/monarchism/FRA_fascist_monarchism.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_ideology_VIC_fascist_monarchism_group"
-		texturefile = "gfx/interface/ideologies/monarchism/FRA_monarchism.dds"
+		texturefile = "gfx/interface/ideologies/monarchism/FRA_fascist_monarchism.dds"
 	}
 	
 	spriteType = {

@@ -476,12 +476,12 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Napoleón V"
-	picture = "Portrait_France_Louis_Napoleon.dds"
-	expire = "1997.5.3"
-	ideology = absolutism
-	traits = { }
-}
+			name = "Jean d'Orléans"
+			desc = "POLITICS_JEAN_DORLEANS_DESC"
+			picture = "Portrait_France_Jean_dOrleans.tga"
+			expire = "1965.1.1"
+			ideology = absolutism
+		}
 
 create_country_leader = {
 	name = "Napoleón V"

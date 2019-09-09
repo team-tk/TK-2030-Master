@@ -1,0 +1,151 @@
+ideas = {
+	## Voting System
+	voting_system = { 
+		law = yes
+		
+			vs_electionsfree = {
+			
+			#cost = 150
+			removal_cost = -1
+			
+			available = {
+
+			}
+			
+			level = 4
+			
+			modifier = {
+
+			}
+			
+			rule = {
+
+			}
+			
+
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+
+			}
+		}
+		
+		vs_electionstwoparty = {
+			
+			#cost = 150
+			removal_cost = -1
+			
+			available = {
+
+			}
+			
+			level = 4
+			
+			modifier = {
+
+			}
+			
+			rule = {
+
+			}
+			
+
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+
+			}
+		}
+		
+
+		
+			vs_suspendedelections = {
+			default = yes
+			#cost = 150
+			removal_cost = -1
+			
+			available = {
+
+			}
+			
+			level = 3
+			
+		rule = {
+		}
+		
+		modifier = {
+	
+		}
+			
+
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+
+			}
+		}
+		
+		
+			vs_fakeelections = {
+			
+			#cost = 150
+			removal_cost = -1
+			
+			available = {
+			
+			}
+			
+			level = 2
+			
+		rule = {
+
+		}
+		
+		modifier = {
+
+		}
+			
+
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+
+			}
+		}
+		
+		vs_noelections = {
+			
+			#cost = 150
+			removal_cost = -1
+			
+			available = {
+			
+			}
+			
+			level = 1
+			
+		rule = {
+
+		}
+		
+		modifier = {
+
+		}
+			
+
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+
+			}
+		}
+		
+		
+
+}
+### EOF ###

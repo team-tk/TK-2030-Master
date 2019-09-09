@@ -35,6 +35,28 @@
  foj_islamic_law:0 "Islamic Law"
  foj_kangaroo:0 "Show Trials"
  
+ voting_system:0 "Elections"
+ vs_electionsfree:0 "Free and Fair Elections"
+ vs_fakeelections:0 "Rigged Elections"
+ vs_suspendedelections:0 "Suspended Elections"
+ vs_noelections:0 "No Elections"
+ vs_electionstwoparty:0 "Two-Party System"
+ 
+ defcon:0 "DEFCON"
+ defcon_desc:0 "The defense readiness condition (DEFCON) is an alert state used by the United States Armed Forces. The DEFCON system was developed by the Joint Chiefs of Staff (JCS) and unified and specified combatant commands. It prescribes five graduated levels of readiness (or states of alert) for the U.S. military. It increases in severity from DEFCON 5 (least severe) to DEFCON 1 (most severe) to match varying military situations."
+ defcon1:0 "DEFCON 1"
+ defcon1_desc:0 "Nuclear war is imminent. Maximum readiness."
+ defcon2:0 "DEFCON 2"
+ defcon2_desc:0 "Next step to nuclear war. Armed forces ready to deploy and engage in less than 6 hours."
+ defcon3:0 "DEFCON 3"
+ defcon3_desc:0 "Increase in force readiness above that required for normal readiness. Air Force ready to mobilize in 15 minutes."
+ defcon4:0 "DEFCON 4"
+ defcon4_desc:0 "Increased intelligence watch and strengthened security measures. Above normal readiness."
+ defcon5:0 "DEFCON 5"
+ defcon5_desc:0 "Lowest state of readiness. Normal readiness."
+ nodefcon:0 "Unavailable"
+ nodefcon_desc:0 "This feature is intended for use in the Cold War and Modern Day eras."
+ 
  JAP_military_purges1:0 "Military Purges"
 
 ### New Advisor Traits
