@@ -24,6 +24,10 @@ state={
 			10760 3 
 		}
 		add_core_of = OMA
+		1949.1.1 = {
+			owner = ENG
+			controller = ENG
+			}
 		1960.1.1 = {
 			owner = ENG
 			controller = ENG

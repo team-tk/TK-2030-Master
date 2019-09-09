@@ -16,6 +16,10 @@ state=
 		}
 
 		add_core_of = EGY
+		1949.1.1 = {
+			owner = EGY
+			controller = EGY
+			}
 		1960.1.1 = {
 			owner = UAR
 			controller = UAR

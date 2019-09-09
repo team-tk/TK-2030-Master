@@ -24,7 +24,7 @@ state={
 				naval_base = 4
 			}
 		}
-		1960.1.1 = {
+		1949.1.1 = {
 			owner = BRM
 			controller = BRM
 			}

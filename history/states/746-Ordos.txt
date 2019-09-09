@@ -30,7 +30,7 @@ state={
 			controller = MEN
 
 		}
-		1960.1.1 = {
+		1949.1.1 = {
 			owner = PRC
 			controller = PRC
 			}

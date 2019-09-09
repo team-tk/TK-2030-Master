@@ -26,10 +26,11 @@ state={
 		1918.11.11 = {
 			owner = ENG
 			}
-		1960.1.1 = {
+		1949.1.1 = {
 			owner = ISR
 			controller = ISR
 			}
+		
 	}
 
 	provinces={

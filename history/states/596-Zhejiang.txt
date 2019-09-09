@@ -43,7 +43,7 @@ state=
 				set_province_controller = 11991
 			} 			
 		}
-		1960.1.1 = {
+		1949.1.1 = {
 			owner =PRC
 			controller = PRC
 			PRC = {
