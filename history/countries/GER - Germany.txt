@@ -2553,6 +2553,13 @@ create_equipment_variant = {
 
 1941.1.1 = {
 
+if = {
+		limit = {
+		AND = {
+			has_start_date > 1941.01.01
+			has_start_date < 1942.01.01
+		}
+		}
 
 activate_mission = GER_barbarossa_mission
 add_timed_idea = { idea = blitzkrieg_1941 days = 160 }
@@ -2877,7 +2884,7 @@ add_ideas = {
 			}
 		}
 	
-
+}
 
 oob = "GER_1941"
 
@@ -3063,6 +3070,16 @@ if = {
 	}
 	set_autonomy = {
 		target = RKA
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = MTA
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = DMA
 		autonomous_state = autonomy_reichskommissariat
 	    freedom_level = 0.2
 	}

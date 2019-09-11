@@ -847,6 +847,14 @@ set_autonomy = {
 		target = IRE
 		autonomous_state = autonomy_free
 	}
+	
+	if = {
+		limit = {
+		AND = {
+			has_start_date > 1941.01.01
+			has_start_date < 1942.01.01
+		}
+		}
 
 	add_political_power = 1500
 	
@@ -927,7 +935,7 @@ create_country_leader = {
 		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
 	}
 }
-
+}
 set_technology = {
 		improved_light_tank = 1 
 		basic_medium_tank = 1 
