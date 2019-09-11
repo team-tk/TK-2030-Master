@@ -22,6 +22,14 @@ state={
 			8245 1 
 		}
 		add_core_of = MZB
+		1946.1.1 = {
+			owner = MTA
+			controller = MTA
+			}
+			1949.1.1 = {
+			owner = POR
+			controller = POR
+			}
 	}
 
 	provinces={

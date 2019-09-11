@@ -25,7 +25,16 @@ state={
 		victory_points = {
 			10966 1
 		}
+		
 		add_core_of = ANG
+		1946.1.1 = {
+			owner = MTA
+			controller = MTA
+			}
+			1949.1.1 = {
+			owner = POR
+			controller = POR
+			}
 	}
 
 	provinces={

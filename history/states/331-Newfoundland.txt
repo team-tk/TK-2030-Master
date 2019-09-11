@@ -16,6 +16,14 @@ state={
 			}
 		}
 		add_core_of = CAN
+		1946.1.1 = {
+			owner = CAN
+			controller = CAN
+			}
+		1949.1.1 = {
+			owner = ENG
+			controller = ENG
+			}
 	}
 
 	provinces={

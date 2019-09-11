@@ -100,3 +100,10 @@ add_namespace = {
 	name = "ger_unit_leader"
 	type = unit_leader
 }
+
+
+1946.1.1 = {
+
+set_cosmetic_tag = RK_greater_germanic_reich
+
+}
