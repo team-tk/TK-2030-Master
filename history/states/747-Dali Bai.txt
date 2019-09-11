@@ -10,7 +10,8 @@ state={
 	history={
 		owner = CHI
 		add_core_of = YUN
-		add_core_of = CHI
+		add_core_of = CHI 
+		add_core_of = RCH 
 		add_core_of = PRC
 		victory_points = {
 			7965 3 
@@ -39,8 +40,12 @@ state={
 			}
 
 		}
+		1946.1.1 = {
+			owner = JAP
+			controller = JAP
+			}
 		1949.1.1 = {
-			owner =PRC
+			owner = PRC
 			controller = PRC
 			}
 

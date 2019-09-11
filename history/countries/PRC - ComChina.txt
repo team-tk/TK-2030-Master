@@ -407,6 +407,10 @@ create_corps_commander = {
 	logistics_skill = 4
 }
 
+1946.1.1 = {
+oob = "PRC_1946"
+}
+
 1949.1.1 = {
 
 set_politics = {

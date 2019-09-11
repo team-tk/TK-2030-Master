@@ -1669,6 +1669,7 @@ if = {
 	}
 	
 	add_ideas = {
+	age_18 age_35
 	limited_exports
 	cons_expanded_draft
 	war_economy
@@ -1684,3 +1685,18 @@ set_stability = 0.8
 set_war_support = 0.8
 	
 	}
+	
+	
+1946.1.1 = {
+oob = "ITA_1946"
+set_cosmetic_tag = SPQR_UNIFIED
+
+create_faction = Impero_Romano
+add_to_faction = ITA
+add_to_faction = CRO
+add_to_faction = SER
+add_to_faction = BUL
+add_to_faction = TUR
+add_to_faction = IRQ
+
+}

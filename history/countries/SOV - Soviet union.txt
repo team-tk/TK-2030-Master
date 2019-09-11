@@ -1791,7 +1791,22 @@ if = {
 	}
 	
 	}
+	
+	
+1946.1.1 = {
 
+oob = "SOV_1946"
+
+create_country_leader = {
+			name = "Lavrentiy Beria"
+			desc = ""
+			picture = "Portrait_SOV_Lavrentiy_P_Beria.dds"		
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = { prince_of_terror }
+		}
+
+}
 
 1949.1.1 = {
 

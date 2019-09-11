@@ -623,9 +623,7 @@ country_event = {
 			picture = "Portrait_USA_Harry_Truman.dds"
 			expire = "1965.1.1"
 			ideology = liberalism_ideology
-			traits = {
-				
-			}
+			traits = { }
 		}
 	}
 }

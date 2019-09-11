@@ -19,6 +19,11 @@ state={
 			infrastructure = 4
 		}
 		
+		1936.1.1 = {
+			owner = YEM
+			controller = YEM
+			}
+		
 		
 	}
 

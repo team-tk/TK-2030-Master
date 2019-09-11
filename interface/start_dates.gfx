@@ -11,11 +11,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_select_date_2016"
-		texturefile = "gfx/interface/select_date_2016.dds"
-	}
-	
-	spriteType = {
 		name = "GFX_select_date_1918"
 		texturefile = "gfx/interface/select_date_1918.dds"
 	}
@@ -24,12 +19,22 @@ spriteTypes = {
 		name = "GFX_select_date_1936"
 		texturefile = "gfx/interface/select_date_1936.dds"
 	}
-
 	
+	spriteType = {
+		name = "GFX_select_date_1941"
+		texturefile = "gfx/interface/select_date_1941.dds"
+	}
+
 	spriteType = {
 		name = "GFX_select_date_1945"
 		texturefile = "gfx/interface/select_date_1945.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_select_date_1946"
+		texturefile = "gfx/interface/select_date_1946.dds"
+	}
+	
 	
 	spriteType = {
 		name = "GFX_select_date_1949"
@@ -42,13 +47,13 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_select_date_1941"
-		texturefile = "gfx/interface/select_date_1941.dds"
+		name = "GFX_select_date_1962"
+		texturefile = "gfx/interface/select_date_1962.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_select_date_1962"
-		texturefile = "gfx/interface/select_date_1962.dds"
+		name = "GFX_select_date_1970"
+		texturefile = "gfx/interface/select_date_1970.dds"
 	}
 	
 	spriteType = {
@@ -56,30 +61,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/select_date_1979.dds"
 	}
 	
-
+	spriteType = {
+		name = "GFX_select_date_1991"
+		texturefile = "gfx/interface/select_date_1991.dds"
+	}
+	
 	spriteType = {
 		name = "GFX_select_date_2000"
 		texturefile = "gfx/interface/select_date_2000.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_select_date_2017"
-		texturefile = "gfx/interface/select_date_2017.dds"
+		name = "GFX_select_date_2016"
+		texturefile = "gfx/interface/select_date_2016.dds"
 	}
 	
-		spriteType = {
-		name = "GFX_select_date_1939"
-		texturefile = "gfx/interface/select_date_1939.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_select_date_1950"
-		texturefile = "gfx/interface/select_date_1950.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_select_date_1991"
-		texturefile = "gfx/interface/select_date_1991.dds"
-	}
 
 }

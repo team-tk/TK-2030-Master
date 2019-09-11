@@ -20,7 +20,16 @@ state={
 
 		1918.11.11 = {
 			owner = ENG
-			add_core_of = ENG
+			}
+			
+			1946.1.1 = {
+			owner = IRQ
+			controller = IRQ
+			}
+			
+			1949.1.1 = {
+			owner = ENG
+			controller = ENG
 			}
 	}
 	provinces={

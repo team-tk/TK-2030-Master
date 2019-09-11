@@ -6,6 +6,7 @@ state={
 		owner = CHI
 		add_core_of = SIK
 		add_core_of = CHI
+		add_core_of = RCH 
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 3
@@ -18,7 +19,12 @@ state={
 
 		1936.1.1 = {
 				owner = SIK
+				controller = SIK
 		}
+		1946.1.1 = {
+			owner = CHI
+			controller = CHI
+			}
 		1949.1.1 = {
 			owner =PRC
 			controller = PRC

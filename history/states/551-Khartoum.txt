@@ -22,6 +22,14 @@ state={
 		}
 
 		add_core_of = SUD
+		1946.1.1 = {
+			owner = ITA
+			controller = ITA
+			}
+			1949.1.1 = {
+			owner = ENG
+			controller = ENG
+			}
 		1960.1.1 = {
 			owner = SUD
 			controller = SUD

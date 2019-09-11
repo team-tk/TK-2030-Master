@@ -1,0 +1,41 @@
+state={
+	id=846
+	name="STATE_846"
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 1
+			13204 ={
+				naval_base = 1
+			}
+		}
+		add_core_of = SOV
+		add_core_of = RUS
+		1918.1.1 = {
+			owner = SOV
+			}
+			
+			1946.1.1 = {
+			owner = JAP
+			controller = JAP
+			}
+			1949.1.1 = {
+			owner = SOV
+			controller = SOV
+			}
+			
+			1991.12.26 = {
+			owner = RUS
+			controller = RUS
+			}
+
+	}
+
+	provinces={
+		4744 13063 13204
+	}
+	manpower=8364
+	buildings_max_level_factor=1
+	state_category="wasteland"
+}

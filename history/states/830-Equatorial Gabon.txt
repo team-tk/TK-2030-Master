@@ -26,6 +26,10 @@ state={
 		1941.6.22 = {
 			owner = FFR
 			}
+			1946.1.1 = {
+			owner = MTA
+			controller = MTA
+			}
 			1949.1.1 = {
 			owner = FRA
 			controller = FRA

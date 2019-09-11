@@ -17,6 +17,14 @@ state=
 		}
 		add_core_of = DEN
 		add_core_of = GRL
+		1946.1.1 = {
+			owner = GRL
+			controller = GRL
+			}
+			1949.1.1 = {
+			owner = DEN
+			controller = DEN
+			}
 	}
 	provinces=
 	{

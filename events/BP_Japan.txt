@@ -14,7 +14,7 @@ country_event = {
 	fire_only_once = yes	
 	
 	trigger = {
-		tag = GER
+		tag = JAP
 		has_fascist_government = yes
 		date > 1940.11.10
 		date < 1940.12.29

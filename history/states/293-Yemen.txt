@@ -26,7 +26,12 @@ state={
 
 		1918.11.11 = {
 			owner = ENG
+			controller = ENG
 		}
+		1936.1.1 = {
+			owner = YEM
+			controller = YEM
+			}
 		1960.1.1 = {
 			owner = YEM
 			controller = YEM

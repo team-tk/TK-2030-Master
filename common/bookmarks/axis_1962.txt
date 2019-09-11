@@ -1,0 +1,89 @@
+
+bookmarks = {
+	bookmark = {
+		name = "Vaterland"
+		desc = "VATERLAND_DESC"
+		date = 1962.1.1.12
+		picture = "GFX_select_date_1962"
+		default_country = "GER"
+		default = yes
+		
+		VIC = {
+			history = VIC_VATERLAND_DESC
+			ideology = neutrality
+			ideas = {
+			fog_dictatorship_re
+			}
+			focuses = {
+			}
+		}
+		USA = {
+			history = USA_VATERLAND_DESC
+			ideology = democratic
+			ideas = {
+			fog_democratic
+			}
+			focuses = {
+			}
+		}
+		ENG = {
+			history = ENG_VATERLAND_DESC
+			ideology = conservatism
+			ideas = {
+			fog_democratic
+			}
+			focuses = {
+			}
+
+		}
+		GER = {
+			history = GER_VATERLAND_DESC
+			ideology = nazism
+			ideas = {
+			fog_dictatorship
+			}
+			focuses = {
+			}
+		}
+		ITA = {
+			history = ITA_VATERLAND_DESC
+			ideology = fascism
+			ideas = {
+			fog_dictatorship
+			}
+			focuses = {
+			}
+		}
+		JAP = {
+			history = JAP_VATERLAND_DESC
+			ideology = fascism
+			ideas = {
+			fog_dictatorship_mo
+			}
+			focuses = {
+			}			
+		}
+		SOV = {
+			history = SOV_VATERLAND_DESC
+			ideology = communism
+			ideas = {
+			fog_dictatorship_lw
+			}
+			focuses = {
+			}
+		}
+			
+			
+
+	
+
+		"---"={
+			history = "OTHER_DESC"
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
