@@ -16,6 +16,15 @@ state={
 			}
 
 		}
+		
+		1946.1.1 = {
+			owner = VIC
+			controller = VIC
+			}
+			1949.1.1 = {
+			owner = ENG
+			controller = ENG
+			}
 
 	}
 

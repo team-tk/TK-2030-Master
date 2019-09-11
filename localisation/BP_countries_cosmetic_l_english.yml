@@ -1,7 +1,13 @@
 ﻿l_english:
 
-Impero_Romano:0 "Impero Romano"
+Impero_Romano:0 "Roman Empire"
 European_Confederation:0 "European Confederation"
+European_Community:0 "European Community"
+
+ITA_italian_empire_fascism:0 "Italian Empire"
+ITA_italian_empire_nazism:0 "Italian Empire"
+ITA_italian_empire_monarchism:0 "Italian Empire"
+ITA_italian_empire_fascist_monarchism:0 "Italian Empire"
 
 GER_grossdeutsches_reich_fascism:0 "Großdeutsches Reich"
 GER_deutscher_staat_fascism:0 "Germanischer Staat Deutscher Nation"

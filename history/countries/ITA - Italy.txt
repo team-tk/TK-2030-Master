@@ -1689,7 +1689,7 @@ set_war_support = 0.8
 	
 1946.1.1 = {
 oob = "ITA_1946"
-set_cosmetic_tag = SPQR_UNIFIED
+set_cosmetic_tag = ITA_italian_empire
 
 create_faction = Impero_Romano
 add_to_faction = ITA
