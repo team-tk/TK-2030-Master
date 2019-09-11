@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Hohei Shidan" 		#Infantry Division - Represents both frontline and garrison divisions
 	division_names_group = JAP_INF_01
 	# Note: In 1940 the IJA reorganized infantry divisions into triangular formations

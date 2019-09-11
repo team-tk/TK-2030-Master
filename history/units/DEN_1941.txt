@@ -1,4 +1,4 @@
-﻿start_equipment_factor = 0.2
+start_equipment_factor = 0.2
 division_template = {
 	name = "Infanteri Division"	# represents first part of enlarged divisions
 
