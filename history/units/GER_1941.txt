@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Infanterie-Division"					# Represents Infanterie Welles 1-4
 	division_names_group = GER_Inf_01
 
