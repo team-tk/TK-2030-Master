@@ -16,6 +16,14 @@ state={
 				naval_base = 1
 			}
 		}
+		1941.1.1 = {
+			owner = FFR
+			controller = FFR
+			}
+		1946.1.1 = {
+			owner = VIC
+			controller = VIC
+			}
 		1949.1.1 = {
 			owner = FRA
 			controller = FRA

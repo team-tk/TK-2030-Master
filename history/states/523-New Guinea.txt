@@ -13,11 +13,20 @@ state={
 				naval_base = 3
 
 			}
-
+			
 		}
 		victory_points = {
 			4329 3 
 		}
+		
+		1946.1.1 = {
+			owner = JAP
+			controller = JAP
+			}
+			1949.1.1 = {
+			owner = AST
+			controller = AST
+			}
 
 	}
 

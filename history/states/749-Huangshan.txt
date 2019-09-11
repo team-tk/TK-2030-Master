@@ -9,7 +9,8 @@ state={
 	state_category=town
 	history={
 		owner = CHI
-		add_core_of = CHI
+		add_core_of = CHI 
+		add_core_of = RCH 
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 4
@@ -35,6 +36,10 @@ state={
 		1941.6.22 = {
 				owner = JAP
 		}
+		1946.1.1 = {
+			owner = RCH
+			controller = RCH
+			}
 		1949.1.1 = {
 			owner =PRC
 			controller = PRC

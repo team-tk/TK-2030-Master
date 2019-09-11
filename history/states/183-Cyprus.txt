@@ -25,6 +25,15 @@ state= {
 				naval_base = 2
 			}
 		}
+		
+			1946.1.1 = {
+			owner = ITA
+			controller = ITA
+			}
+			1949.1.1 = {
+			owner = ENG
+			controller = ENG
+			}
 
 	}
 	provinces= { 7193 11984 }

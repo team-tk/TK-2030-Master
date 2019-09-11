@@ -40,3 +40,11 @@ conservatism = 96
 fascism = 2
 communism = 2
 }
+
+create_country_leader = {
+	name = "John Christmas Moller"
+	picture = "gfx/leaders/DEN/John_Christmas_Moller_-Denmark_Conservative.dds"
+	expire = "1965.1.1"
+	ideology = conservatism_ideology
+	traits = { }
+}

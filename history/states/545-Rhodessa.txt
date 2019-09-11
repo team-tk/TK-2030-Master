@@ -16,6 +16,16 @@ state={
 		}
 		add_core_of = ZIM
 		add_core_of = RHO
+		
+		1946.1.1 = {
+			owner = SAF
+			controller = SAF
+			}
+			
+			1949.1.1 = {
+			owner = ENG
+			controller = ENG
+			}
 	}
 
 	provinces={

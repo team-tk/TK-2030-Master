@@ -41,6 +41,16 @@ state={
 			owner = SOV
 			}
 			
+			1946.1.1 = {
+			owner = PGG
+			controller = PGG
+			}
+			
+			1949.1.1 = {
+			owner = SOV
+			controller = SOV
+			}
+			
 			1991.12.26 = {
 			owner = UKR
 			controller = UKR

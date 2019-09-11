@@ -1,0 +1,89 @@
+
+bookmarks = {
+	bookmark = {
+		name = "Endsieg"
+		desc = "ENDSIEG_DESC"
+		date = 1946.1.1.12
+		picture = "GFX_select_date_1946"
+		default_country = "GER"
+		default = yes
+		
+		VIC = {
+			history = VIC_ENDSIEG_DESC
+			ideology = neutrality
+			ideas = {
+			fog_dictatorship_re
+			}
+			focuses = {
+			}
+		}
+		USA = {
+			history = USA_ENDSIEG_DESC
+			ideology = democratic
+			ideas = {
+			fog_democratic
+			}
+			focuses = {
+			}
+		}
+		ENG = {
+			history = ENG_ENDSIEG_DESC
+			ideology = conservatism
+			ideas = {
+			fog_democratic
+			}
+			focuses = {
+			}
+
+		}
+		GER = {
+			history = GER_ENDSIEG_DESC
+			ideology = nazism
+			ideas = {
+			fog_dictatorship
+			}
+			focuses = {
+			}
+		}
+		ITA = {
+			history = ITA_ENDSIEG_DESC
+			ideology = fascism
+			ideas = {
+			fog_dictatorship
+			}
+			focuses = {
+			}
+		}
+		JAP = {
+			history = JAP_ENDSIEG_DESC
+			ideology = fascism
+			ideas = {
+			fog_dictatorship_mo
+			}
+			focuses = {
+			}			
+		}
+		SOV = {
+			history = SOV_ENDSIEG_DESC
+			ideology = communism
+			ideas = {
+			fog_dictatorship_lw
+			}
+			focuses = {
+			}
+		}
+			
+			
+
+	
+
+		"---"={
+			history = "OTHER_DESC"
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

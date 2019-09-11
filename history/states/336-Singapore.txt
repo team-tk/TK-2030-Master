@@ -40,6 +40,15 @@ state={
 			}
 		}
 		add_core_of = MAL
+		1946.1.1 = {
+			owner = JAP
+			controller = JAP
+			}
+			
+			1949.1.1 = {
+			owner = MAL
+			controller = MAL
+			}
 		1960.1.1 = {
 			owner = MAL
 			controller = MAL

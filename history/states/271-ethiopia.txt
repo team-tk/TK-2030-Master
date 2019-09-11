@@ -36,6 +36,10 @@ state=
 		1941.6.22 = {
 			owner = ENG
 		}
+		1946.1.1 = {
+			owner = ITA
+			controller = ITA
+			}
 		1949.1.1 = {
 			owner = ETH
 			controller = ETH

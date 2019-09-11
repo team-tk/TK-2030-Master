@@ -32,6 +32,21 @@ state={
 			add_core_of = ROM
 		}
 		
+		1941.1.1 = {
+			owner = SOV
+			controller = SOV
+			}
+			
+			1946.1.1 = {
+			owner = ROM
+			controller = ROM
+			}
+			
+			1949.1.1 = {
+			owner = SOV
+			controller = SOV
+			}
+		
 		
 	}
 	provinces={

@@ -25,6 +25,16 @@ state={
 			}
 		}
 		
+1946.1.1 = {
+owner = RKU
+controller = RKU
+}
+
+1949.1.1 = {
+owner = SOV
+controller = SOV
+}		
+		
 		1991.12.26 = {
 			owner = RUS
 			controller = RUS

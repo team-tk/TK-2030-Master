@@ -1043,6 +1043,39 @@ if = {
 	}
 }
 
+1946.1.1 = {
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1946.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    neutrality = 46
+	conservatism = 43
+	democratic = 9
+	communism = 2
+}
+
+create_country_leader = {
+	name = "Oswald Mosley"
+	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+	picture = "Portrait_Britain_Oswald_Mosley.dds"
+	expire = "1965.1.1"
+	ideology = pseudo_fascism
+	traits = {
+		champion_of_peace_1
+		economic_reformer
+	}
+}
+
+
+oob = "ENG_1946"
+
+}
+
 
 1949.1.1 = {
 
