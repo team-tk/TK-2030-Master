@@ -574,6 +574,10 @@ RPB = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
 }
+RPD = {
+	color = HSV { 0.1 0.15 0.4 }
+	color_ui = rgb { 138 155 116 }
+}
 DNS = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
@@ -617,6 +621,10 @@ THA = {
 RCH = {
 	color = rgb { 255 115 0 }
 	color_ui = rgb { 255 115 0 }
+}
+FBR = {
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 255 73 121 }
 }
 D01 = {
 	color = rgb { 200 100 31 }

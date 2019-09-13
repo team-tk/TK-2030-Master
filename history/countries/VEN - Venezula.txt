@@ -101,7 +101,7 @@ create_country_leader = {
 	desc = "POLITICS_ELEAZAR_LOPEZ_CONTRERAS_DESC"
 	picture = "Portrait_Venezuela_Elezar_Lopez_Contreras.dds"
 	expire = "1965.1.1"
-	ideology = ultranationalism_ideology
+	ideology = ultranationalism
 	traits = { }
 }
 

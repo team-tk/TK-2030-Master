@@ -30,7 +30,7 @@ bookmarks = {
 			history = ENG_ENDSIEG_DESC
 			ideology = conservatism
 			ideas = {
-			fog_democratic
+			fog_dictatorship
 			}
 			focuses = {
 			}

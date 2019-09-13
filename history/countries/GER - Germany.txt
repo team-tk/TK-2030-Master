@@ -3083,6 +3083,26 @@ if = {
 		autonomous_state = autonomy_reichskommissariat
 	    freedom_level = 0.2
 	}
+	set_autonomy = {
+		target = RPD
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKB
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKN
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKH
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
 }
 
 create_faction = European_Community
@@ -3091,10 +3111,10 @@ add_to_faction = SLO
 add_to_faction = HUN
 add_to_faction = ROM
 add_to_faction = FIN
-add_to_faction = BEL
-add_to_faction = HOL
-add_to_faction = DEN
-add_to_faction = NOR
+add_to_faction = RKB
+add_to_faction = RKH
+add_to_faction = RPD
+add_to_faction = RKN
 add_to_faction = RPB
 add_to_faction = PGG
 add_to_faction = RKO

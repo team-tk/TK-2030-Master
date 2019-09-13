@@ -30,8 +30,8 @@ state={
 			owner = GER
 			}
 			1946.1.1 = {
-			owner = DEN
-			controller = DEN
+			owner = RPD
+			controller = RPD
 			}
 			1949.1.1 = {
 			owner = DEN

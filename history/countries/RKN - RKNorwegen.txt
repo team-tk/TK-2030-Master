@@ -83,11 +83,19 @@ set_politics = {
 	elections_allowed = no
 }
 
+set_politics = {
+	ruling_party = nazism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
 set_popularities = {
-		nazism = 40
-		communism = 25
-		democratic = 25
-	}
+democratic = 25
+nazism = 50
+communism = 25
+}
 
 create_country_leader = {
 	name = "Josef Terboven"
@@ -98,4 +106,10 @@ create_country_leader = {
 	traits = {
 		reichskommissar
 	}
+}
+
+1946.1.1 = {
+
+set_cosmetic_tag = RK_greater_germanic_reich
+
 }

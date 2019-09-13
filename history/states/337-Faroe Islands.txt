@@ -16,6 +16,13 @@ state=
 			}
 		}
 		add_core_of = DEN
+		
+		1946.1.1 = {
+			owner = GER
+			}
+			1949.1.1 = {
+			owner = DEN
+			}
 
 	}
 	provinces= { 13003 }
