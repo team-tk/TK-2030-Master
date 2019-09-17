@@ -13,6 +13,7 @@ state={
 		}
 		1941.6.22 = {
 			owner = VIC
+			controller = VIC
 		}
 		1946.1.1 = {
 			owner = ITA
@@ -21,6 +22,10 @@ state={
 		1949.1.1 = {
 			owner = FRA
 			controller = FRA
+			}
+		2000.1.1 = {
+			owner = CHA
+			controller = CHA
 			}
 	}
 

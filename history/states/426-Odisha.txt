@@ -19,7 +19,10 @@ state={
 			infrastructure = 4
 			arms_factory = 1
 		}
-
+		2000.1.1 = {
+			owner = IND
+			controller = IND
+			}
 	}
 
 	provinces={

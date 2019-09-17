@@ -23,20 +23,26 @@ state={
 
 		1918.11.11 = {
 			owner = FRA
+			controller = FRA
 			}
 		1941.6.22 = {
+			owner = FFR
 			owner = FFR
 			add_core_of = FFR
 			}
 			
-			1946.1.1 = {
+		1946.1.1 = {
 			owner = MTA
 			controller = MTA
 			}
 			
-			1949.1.1 = {
+		1949.1.1 = {
 			owner = FRA
 			controller = FRA
+			}
+		2000.1.1 = {
+			owner = CMR
+			controller = CMR
 			}
 
 	}

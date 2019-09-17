@@ -24,6 +24,10 @@ state={
 			owner = BEL
 			controller = BEL
 			}
+		2000.1.1 = {
+			owner = COG
+			controller = COG
+			}
 	}
 
 	provinces={

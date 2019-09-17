@@ -23,6 +23,10 @@ state={
 		victory_points = {
 			4245 5 
 		}
+		2000.1.1 = {
+			owner = IND
+			controller = IND
+			}
 
 	}
 

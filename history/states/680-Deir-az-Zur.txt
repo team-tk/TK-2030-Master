@@ -17,9 +17,11 @@ state={
 
 		1918.11.11 = {
 			owner = SYR
+			controller = SYR
 			add_core_of = SYR
 			}
 		1941.6.22 = {
+			owner = VIC
 			owner = VIC
 			}
 			1946.1.1 = {
@@ -33,6 +35,10 @@ state={
 		1960.1.1 = {
 			owner = UAR
 			controller = UAR
+			}
+		2000.1.1 = {
+			owner = SYR
+			controller = SYR
 			}
 
 	}

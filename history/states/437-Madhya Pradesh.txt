@@ -13,6 +13,10 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 		}
+		2000.1.1 = {
+			owner = IND
+			controller = IND
+			}
 
 	}
 

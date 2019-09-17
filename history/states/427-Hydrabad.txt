@@ -20,6 +20,10 @@ state={
 			industrial_complex = 1
 			air_base = 3
 		}
+		2000.1.1 = {
+			owner = IND
+			controller = IND
+			}
 
 	}
 

@@ -31,6 +31,10 @@ state=
 			owner = ETH
 			controller = ETH
 			}
+		2000.1.1 = {
+			owner = ERI
+			controller = ERI
+			}
 	}
 	provinces={
 		5017 5047 5091 8043 12723 12766

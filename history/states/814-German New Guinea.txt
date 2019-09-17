@@ -32,14 +32,18 @@ state={
 			controller = AST
 			}
 			
-			1946.1.1 = {
+		1946.1.1 = {
 			owner = JAP
 			controller = JAP
 			}
 			
-			1949.1.1 = {
+		1949.1.1 = {
 			owner = AST
 			controller = AST
+			}
+		2000.1.1 = {
+			owner = PNG
+			controller = PNG
 			}
 			
 
