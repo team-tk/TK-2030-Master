@@ -25,12 +25,17 @@ state=
 		
 		1913.10.10 = {
 				owner = ITA
+				controler = ITA
 		}
 		
 		1936.1.1 = {
 				owner = ITA
+				controler = ITA
 		}
-		
+		2000.1.1 = {
+				owner = GRE
+				controler = GRE
+		}		
 	}
 	provinces=
 	{

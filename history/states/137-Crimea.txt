@@ -56,6 +56,10 @@ state={
 			owner = UKR
 			controller = UKR
 			}
+		2016.1.1 = {
+			owner = RUS
+			controller = RUS
+			}
 		
 	}
 
