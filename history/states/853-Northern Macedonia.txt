@@ -1,0 +1,44 @@
+state=
+{
+	id=853
+	name="Northern Macedonia"
+	manpower = 9847
+	
+	state_category = town
+
+	history=
+	{
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			
+		}
+		
+		
+
+		add_core_of = TUR
+		add_claim_by = SER
+
+		1913.10.10 = {
+			owner = SER
+			add_core_of = SER
+		}
+		1918.11.11 = {
+				owner = YUG
+				}
+		1941.6.22 = {
+			owner = ITA
+			}
+		1949.1.1 = {
+			owner = YUG
+			}
+		2000.1.1 = {
+			owner = MAC
+			controller = MAC
+			}
+	}
+
+	provinces={
+		 833 867
+	}
+}

@@ -1,0 +1,49 @@
+state=
+{
+	id=818
+	name="Kosovo"
+	manpower = 984791
+	
+	state_category = town
+
+	history=
+	{
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			
+		}
+		
+		
+
+		add_core_of = TUR
+		add_claim_by = SER
+
+		1913.10.10 = {
+			owner = SER
+			add_core_of = SER
+		}
+		1918.11.11 = {
+				owner = YUG
+				}
+		1941.6.22 = {
+			owner = ITA
+			}
+		1949.1.1 = {
+			owner = YUG
+			}
+			
+		2006.6.3 = {
+			owner = SER
+			controller = SER
+			}
+		2016.1.1 = {
+			owner = KOS
+			controller = KOS
+			}
+	}
+
+	provinces={
+		 6940 9849 9874
+	}
+}

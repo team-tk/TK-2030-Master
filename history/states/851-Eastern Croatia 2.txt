@@ -1,0 +1,50 @@
+
+state={
+	id=851
+	name="Eastern Croatia"
+	manpower = 2224
+	
+	state_category = plains
+
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+		}
+		
+		add_core_of = YUG
+		add_core_of = CRO
+		
+		1910.1.1 = {
+				owner = AUS
+		}
+		
+		1936.1.1 = {
+				owner = YUG
+		}
+		1941.6.22 = {
+			owner = CRO
+			}
+		1949.1.1 = {
+			owner = YUG
+			}
+			
+		1991.6.25 = {
+			owner = CRO
+			controller = CRO
+			}
+		2000.1.1 = {
+			owner = YUG
+			controller = YUG
+			}
+		2006.6.3 = {
+			owner = SER
+			controller = SER
+			}
+		
+	}
+
+	provinces={
+		11577 11580
+	}
+}

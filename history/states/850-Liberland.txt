@@ -1,0 +1,36 @@
+state={
+	id=850
+	name="Liberland"
+
+	history={
+		owner = YUG
+		
+		add_core_of = YUG
+		add_core_of = SER
+		
+		1910.1.1 = {
+				owner = AUS
+		}
+		
+		1936.1.1 = {
+				owner = YUG
+		}
+		1941.6.22 = {
+			owner = HUN
+			}
+		1949.1.1 = {
+			owner = YUG
+			}
+		2000.1.1 = {
+			owner = CRO
+			controller = CRO
+			}
+	}
+
+	provinces={
+		9608
+	}
+	manpower=838621
+	buildings_max_level_factor=1.000
+	state_category=town
+}

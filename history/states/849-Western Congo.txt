@@ -1,0 +1,42 @@
+
+state={
+	id=849
+	name="Western Congo"
+	manpower = 746415
+	
+	state_category = pastoral
+	resources={
+		rubber=1 # was: 1
+	}
+	history={
+		owner = FRA
+		add_core_of = RCG
+		
+		buildings = {
+			infrastructure = 3
+			
+		}
+		1941.6.22 = {
+			owner = FFR
+			controller = FFR
+			add_core_of = FFR
+			}
+		1946.1.1 = {
+			owner = MTA
+			controller = MTA
+			}
+		1949.1.1 = {
+			owner = FRA
+			controller = FRA
+			}
+		2000.1.1 = {
+			owner = RCG
+			controller = RCG
+			}
+
+	}
+
+	provinces={
+		13230
+	}
+}

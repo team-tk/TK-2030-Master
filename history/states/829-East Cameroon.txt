@@ -13,7 +13,7 @@ state={
 	history={
 		
 		owner = FRA
-		add_core_of = CMR
+		add_core_of = CAR
 		buildings = {
 			infrastructure = 4
 		}
@@ -37,10 +37,14 @@ state={
 			owner = FRA
 			controller = FRA
 			}
+		2000.1.1 = {
+			owner = CAR
+			controller = CAR
+			}
 		
 	}
 
 	provinces={
-		1993 11012
+		11012
 	}
 }

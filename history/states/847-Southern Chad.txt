@@ -1,0 +1,49 @@
+state={
+	id=847
+	name="Southern Chad"
+	manpower = 382500
+	
+	state_category = rural
+	
+	resources={
+		chromium=11 # was: 16
+	}
+
+	history={
+		owner = FRA
+		add_core_of = CMR
+		buildings = {
+			infrastructure = 4
+		}
+		
+		1911.11.4 = {
+			owner = GER
+			}	
+		1918.11.11 = {
+			owner = FRA
+			}
+		1941.6.22 = {
+			owner = FFR
+			controller = FFR
+			add_core_of = FFR
+		}
+		1946.1.1 = {
+			owner = MTA
+			controller = MTA
+			}
+		1949.1.1 = {
+			owner = FRA
+			controller = FRA
+			}
+		2000.1.1 = {
+			owner = CHA
+			controller = CHA
+			}
+
+	}
+
+	provinces={
+		1993
+	}
+	
+}

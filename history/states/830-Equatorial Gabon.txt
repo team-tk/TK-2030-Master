@@ -26,18 +26,22 @@ state={
 		1941.6.22 = {
 			owner = FFR
 			}
-			1946.1.1 = {
+		1946.1.1 = {
 			owner = MTA
 			controller = MTA
 			}
-			1949.1.1 = {
+		1949.1.1 = {
 			owner = FRA
 			controller = FRA
+			}
+		2000.1.1 = {
+			owner = GAB
+			controller = GAB
 			}
 			
 	}
 
 	provinces={
-		3109 13225
+		13231
 	}
 }
