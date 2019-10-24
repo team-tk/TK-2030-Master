@@ -1,4 +1,4 @@
-capital = 691 
+﻿capital = 691 
 
 oob = "CAB_1936"
 

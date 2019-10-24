@@ -1,4 +1,4 @@
-capital = 303
+﻿capital = 303
 
 set_convoys = 5
 
@@ -109,40 +109,12 @@ create_country_leader = {
 	traits = { }
 }
 
-### PLACEHOLDER
-create_country_leader = {
-	name = "Jose Quesada Larrea"
-	desc = "POLITICS_JOSE_QUESADA_LARREA_DESC"
-	picture = "Jose_Quesada_Larrea.dds"
-	expire = "1965.1.1"
-	ideology = strasserism_ideology
-	traits = { }
-}
-
 create_country_leader = {
 	name = "Manuel del Pardo"
 	desc = "POLITICS_MANUEL_DEL_PARDO_DESC"
 	picture = "Manuel_del_Pardo.dds"
 	expire = "1965.1.1"
 	ideology = marxism
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Manuel del Pardo"
-	desc = "POLITICS_MANUEL_DEL_PARDO_DESC"
-	picture = "Manuel_del_Pardo.dds"
-	expire = "1965.1.1"
-	ideology = maoism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Manuel del Pardo"
-	desc = "POLITICS_MANUEL_DEL_PARDO_DESC"
-	picture = "Manuel_del_Pardo.dds"
-	expire = "1965.1.1"
-	ideology = trotskyism_ideology
 	traits = { }
 }
 
@@ -185,7 +157,7 @@ create_country_leader = {
 	desc = "POLITICS_MANUEL_PRADO_UGARTECHE_DESC"
 	picture = "Manuel_Prado_Ugarteche.dds"
 	expire = "1965.1.1"
-	ideology = center_right
+	ideology = conservatism_ideology
 	traits = { }
 }
 

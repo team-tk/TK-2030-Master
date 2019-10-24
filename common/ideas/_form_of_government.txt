@@ -12,15 +12,9 @@ ideas = {
 			NOT = { 
 			has_government = fascism
 			has_government = nazism
-			has_government = strasserism
-			has_government = paganism
-			has_government = fascist_monarchism
 			has_government = communism
 			has_government = syndicalism
-			has_government = maoism
-			has_government = trotskyism
 			has_government = theocratic
-			has_government = islamism
 			has_idea = security_police_state
 			has_idea = security_major_restrictions
 			has_idea = press_censored
@@ -42,11 +36,6 @@ ideas = {
 			socdem_acceptance = 10
 			conservatism_acceptance = 10
 			democratic_acceptance = 10
-			libertarianism_acceptance = 10
-			progressivism_acceptance = 10
-			demsoc_acceptance = 10
-			demnat_acceptance = 10
-			christian_democratic_acceptance = 10
 			}
 			
 			rule = {
@@ -85,18 +74,15 @@ ideas = {
 						has_war = yes
 					}
 					
-			has_government = fascism
-			has_government = nazism
-			has_government = strasserism
-			has_government = paganism
-			has_government = communism
-			has_government = syndicalism
-			has_government = maoism
-			has_government = trotskyism
-			has_government = theocratic
-			has_government = islamism
-			has_government = fascist_monarchism
-			has_government = monarchism
+					has_government = fascism
+					has_government = nazism
+					has_government = communism
+					has_government = socialism
+					has_government = syndicalism
+					has_government = neutrality
+					has_government = nationalism
+					has_government = monarchism
+					has_government = theocratic
 				}
 			}
 			
@@ -153,13 +139,9 @@ ideas = {
 					OR = {
 					has_government = fascism
 					has_government = nazism
-					has_government = strasserism
-					has_government = paganism
 					has_government = neutrality
 					has_government = nationalism
 					has_government = theocratic
-					has_government = islamism
-					has_government = fascist_monarchism
 					}
 			}
 			
@@ -176,9 +158,6 @@ ideas = {
 		nationalism_acceptance = 10
 		nazism_acceptance = 10
 		fascism_acceptance = 10
-		paganism_acceptance = 10
-		strasserism_acceptance = 10
-		fascist_monarchism_acceptance = 10
 		}
 			
 
@@ -209,10 +188,6 @@ ideas = {
 					has_government = communism
 					has_government = socialism
 					has_government = syndicalism
-					has_government = maoism
-					has_government = trotskyism
-					has_government = islamism
-					has_government = neutrality
 					}
 					}
 			
@@ -228,9 +203,7 @@ ideas = {
 		puppet_cost_factor = -0.3
 		communism_acceptance = 10
 		syndicalism_acceptance = 10
-		socialism_acceptance = 10
-		maoism_acceptance = 10
-		trotskyism_acceptance = 10		
+		socialism_acceptance = 10		
 		}
 			
 
@@ -241,7 +214,6 @@ ideas = {
 
 			}
 		}
-		
 		
 			fog_dictatorship_de = {
 			
@@ -264,13 +236,8 @@ ideas = {
 					AND = {	
 						OR = {
 						has_government = socdem
-						has_government = demsoc
-						has_government = demnat
-						has_government = christian_democratic
 						has_government = conservatism
 						has_government = democratic
-						has_government = progressivism
-						has_government = libertarianism
 						has_government = socialism
 						has_government = neutrality
 						has_government = nationalism
@@ -287,7 +254,6 @@ ideas = {
 			level = 1
 			
 		rule = {
-		can_declare_war_on_same_ideology = yes
 		can_force_government = no
 		can_send_volunteers = yes
 		can_puppet = yes
@@ -295,20 +261,13 @@ ideas = {
 		
 		modifier = {
 		justify_war_goal_time = -0.25
-		trade_opinion_factor = 0.25
 		nationalism_acceptance = 10
 		socdem_acceptance = 10
 		conservatism_acceptance = 10
 		democratic_acceptance = 10
-		libertarianism_acceptance = 10
-		progressivism_acceptance = 10
-		demsoc_acceptance = 10
-		demnat_acceptance = 10
-		christian_democratic_acceptance = 10
 		nationalism_acceptance = 10
 		monarchism_acceptance = 10
 		neutrality_acceptance = 10
-		reactionary_acceptance = 10
 		socialism_acceptance = 10
 		}
 			
@@ -335,10 +294,8 @@ ideas = {
 			has_idea = press_regulated
 			has_idea = security_minor_restrictions
 			}
-			OR = { 	
+					
 			has_government = monarchism
-			has_government = fascist_monarchism
-			}
 			}
 			
 			level = 1
@@ -350,250 +307,12 @@ ideas = {
 		}
 		
 		modifier = {
-		justify_war_goal_when_in_major_war_time = -0.80
+		justify_war_goal_time = -0.25
 		nationalism_acceptance = 10
 		monarchism_acceptance = 10
-		fascist_monarchism_acceptance = 10
 		neutrality_acceptance = 10
 		socialism_acceptance = 10		
 		
-		}
-			
-
-			
-			cancel_if_invalid = no
-			
-			ai_will_do = {
-
-			}
-		}
-		
-		fog_dictatorship_re = {
-			
-			#cost = 150
-			removal_cost = -1
-			
-			available = {
-			
-					
-			NOT = { 
-			has_idea = security_liberty_first
-			has_idea = press_free
-			has_idea = press_regulated
-			has_idea = security_minor_restrictions
-			}
-					
-					OR = {
-					has_government = fascism
-					has_government = neutrality
-					has_government = nationalism
-					has_government = reactionary
-					}
-			}
-			
-			level = 1
-			
-		rule = {
-		can_force_government = no
-		can_send_volunteers = yes
-		can_puppet = yes
-		}
-		
-		modifier = {
-		justify_war_goal_time = -0.25
-		stability_factor = 0.10
-		nationalism_acceptance = 10
-		fascism_acceptance = 10
-		conservatism_acceptance = 10
-		neutrality_acceptance = 10
-		}
-			
-
-			
-			cancel_if_invalid = no
-			
-			ai_will_do = {
-
-			}
-		}
-		
-		fog_dictatorship_mi = {
-			
-			#cost = 150
-			removal_cost = -1
-			
-			available = {
-			
-					
-			NOT = { 
-			has_idea = security_liberty_first
-			has_idea = press_free
-			has_idea = press_regulated
-			has_idea = security_minor_restrictions
-			}
-					
-					OR = {
-					has_government = fascism
-					has_government = neutrality
-					has_government = nationalism
-					has_government = reactionary
-					}
-			}
-			
-			level = 1
-			
-		rule = {
-		can_force_government = no
-		can_send_volunteers = yes
-		can_puppet = yes
-		}
-		
-		modifier = {
-		justify_war_goal_time = -0.25
-		war_support_factor = 0.10
-		mobilization_speed = 0.1
-		nationalism_acceptance = 10
-		fascism_acceptance = 10
-		conservatism_acceptance = 10
-		neutrality_acceptance = 10
-		}
-			
-
-			
-			cancel_if_invalid = no
-			
-			ai_will_do = {
-
-			}
-		}
-		
-		fog_dictatorship_ss = {
-			
-			#cost = 150
-			removal_cost = -1
-			
-			available = {
-			
-					
-			NOT = { 
-			has_idea = security_liberty_first
-			has_idea = press_free
-			has_idea = press_regulated
-			has_idea = security_minor_restrictions
-			}
-					
-			OR = {	
-			AND = {
-			original_tag = GER
-			has_government = nazism
-			}
-					
-			has_government = paganism
-			}
-			}
-			
-			level = 1
-			
-		rule = {
-		can_force_government = no
-		can_send_volunteers = yes
-		can_puppet = yes
-		}
-		
-		modifier = {
-		justify_war_goal_time = -0.25
-		surrender_limit = 0.10
-		special_forces_cap = 0.10
-		paganism_acceptance = 10
-		nazism_acceptance = 10
-		fascism_acceptance = 10
-		nationalism_acceptance = 10
-		}
-			
-
-			
-			cancel_if_invalid = no
-			
-			ai_will_do = {
-
-			}
-		}
-		
-		fog_dictatorship_is = {
-			
-			#cost = 150
-			removal_cost = -1
-			
-			available = {
-			
-					
-			NOT = { 
-			has_idea = security_liberty_first
-			has_idea = press_free
-			has_idea = press_regulated
-			has_idea = security_minor_restrictions
-			}
-						
-			has_government = islamism
-			}
-			
-			level = 1
-			
-		rule = {
-		can_force_government = no
-		can_send_volunteers = yes
-		can_puppet = yes
-		}
-		
-		modifier = {
-		justify_war_goal_time = -0.40
-		surrender_limit = 0.10
-		socialism_acceptance = 10
-		neutrality_acceptance = 10
-		nationalism_acceptance = 10
-		}
-			
-
-			
-			cancel_if_invalid = no
-			
-			ai_will_do = {
-
-			}
-		}
-		
-		fog_dictatorship_th = {
-			
-			#cost = 150
-			removal_cost = -1
-			
-			available = {
-			
-					
-			NOT = { 
-			has_idea = security_liberty_first
-			has_idea = press_free
-			has_idea = press_regulated
-			has_idea = security_minor_restrictions
-			}
-						
-			has_government = theocratic
-			}
-			
-			level = 1
-			
-		rule = {
-		can_force_government = no
-		can_send_volunteers = yes
-		can_puppet = yes
-		}
-		
-		modifier = {
-		justify_war_goal_time = -0.40
-		surrender_limit = 0.10
-		conservatism_acceptance = 10
-		neutrality_acceptance = 10
-		nationalism_acceptance = 10
 		}
 			
 

@@ -1,4 +1,4 @@
-capital = 121
+﻿capital = 121
 
 oob = "SCO_1936"
 

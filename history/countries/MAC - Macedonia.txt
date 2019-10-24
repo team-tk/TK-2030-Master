@@ -1,4 +1,4 @@
-capital = 106
+﻿capital = 106
 
 set_research_slots = 3
 
@@ -47,28 +47,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ivan Mihalov"
-	desc = "POLITICS_IVAN_MIHALOV_DESC"
-	picture = "gfx/leaders/MAC/IvanMihalov.dds"
-	expire = "1965.1.1"
-	ideology = nazism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ivan Mihalov"
-	desc = "POLITICS_IVAN_MIHALOV_DESC"
-	picture = "gfx/leaders/MAC/IvanMihalov.dds"
-	expire = "1965.1.1"
-	ideology = strasserism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
 	name = "Peter Lesev"
 	desc = "POLITICS_PETER_LESEV_DESC"
 	picture = "gfx/leaders/MAC/PeterLesev.dds"
@@ -90,45 +68,12 @@ create_country_leader = {
 	}
 }
 
-#### PLACEHOLDER
-
-create_country_leader = {
-	name = "Hristo Tatarchev"
-	desc = "POLITICS_HRISTO_TATARCHEV_DESC"
-	picture = "gfx/leaders/MAC/HristoTatarchev.dds"
-	expire = "1965.1.1"
-	ideology = democratic_socialism
-	traits = {
-		#
-	}
-}
-
 create_country_leader = {
 	name = "Metodija Andonov-Čento"
 	desc = "POLITICS_METODIJA_CENTO_DESC"
 	picture = "gfx/leaders/MAC/Cento.dds"
 	expire = "1965.1.1"
 	ideology = leninism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Metodija Andonov-Čento"
-	desc = "POLITICS_METODIJA_CENTO_DESC"
-	picture = "gfx/leaders/MAC/Cento.dds"
-	expire = "1965.1.1"
-	ideology = maoism_ideology
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Metodija Andonov-Čento"
-	desc = "POLITICS_METODIJA_CENTO_DESC"
-	picture = "gfx/leaders/MAC/Cento.dds"
-	expire = "1965.1.1"
-	ideology = trotskyism_ideology
 	traits = {
 		#
 	}

@@ -12,13 +12,6 @@ ideas = {
 					OR = {
 						has_government = fascism
 						has_government = nazism
-						has_government = strasserism
-						has_government = paganism
-						has_government = fascist_monarchism
-						has_government = islamism
-						has_government = reactionary
-						has_government = maoism
-						has_government = trotskyism
 						has_government = communism
 						has_government = socialism
 						has_government = syndicalism
@@ -27,6 +20,7 @@ ideas = {
 						has_government = neutrality
 						has_government = nationalism
 						has_government = socialism
+						has_government = socdem
 						has_country_flag = taxes_extreme
 						has_country_flag = press_state
 					}
@@ -68,7 +62,13 @@ ideas = {
 			level = 3
 			available = {
 				NOT = {
-					has_communist_government = yes
+					has_government = communism
+				}
+				NOT = {
+					has_government = socialism
+				}
+				NOT = {
+					has_government = syndicalism
 				}
 			}
 			
@@ -96,12 +96,16 @@ ideas = {
 				factor = 10
 				modifier = {
 					factor = 10
-					has_democratic_government = yes
+					has_government = democratic
 					has_war = yes
 				}
 				modifier = {
 					factor = 5
 					has_government = socialism
+				}
+				modifier = {
+					factor = 5
+					has_government = socdem
 				}
 			}
 		}
@@ -113,7 +117,11 @@ ideas = {
 			available = {
 				OR = {
 					AND = {
-						has_democratic_government = yes
+						OR = {
+							has_government = democratic
+							has_government = socialism
+							has_government = socdem
+						}
 						has_war = yes
 						any_enemy_country = {
 							ic_ratio = { 
@@ -131,13 +139,6 @@ ideas = {
 					has_government = theocratic
 					has_government = neutrality
 					has_government = nationalism
-					has_government = strasserism
-						has_government = paganism
-						has_government = fascist_monarchism
-						has_government = islamism
-						has_government = reactionary
-						has_government = maoism
-						has_government = trotskyism
 				}
 			}
 			
@@ -190,12 +191,6 @@ ideas = {
 					has_government = syndicalism
 					has_government = neutrality
 					has_government = nationalism
-					has_government = strasserism
-						has_government = paganism
-						has_government = islamism
-						has_government = reactionary
-						has_government = maoism
-						has_government = trotskyism
 				}
 				NOT = {
 					has_idea = tax_minimal
@@ -224,7 +219,7 @@ ideas = {
    				factor = 5
 				modifier = {
 					factor = 1000
-					has_communist_government = yes
+					has_government = communism
 				}
 				modifier = {
 					factor = 1000

@@ -1,4 +1,4 @@
-capital = 105 # Montenegro
+﻿capital = 105 # Montenegro
 
 oob = "MON_1936"
 
@@ -42,34 +42,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Sekula Drljević"
-	desc = ""
-	picture = "gfx/leaders/MNT/monf.dds"
-	expire = "1953.3.1"
-	ideology = nazism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Sekula Drljević"
-	desc = ""
-	picture = "gfx/leaders/MNT/monf.dds"
-	expire = "1953.3.1"
-	ideology = strasserism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
 	name = "Andrija Radović"
 	desc = ""
 	picture = "gfx/leaders/MNT/mond.dds"
 	expire = "1953.3.1"
 	ideology = conservatism_ideology
-	traits = { }
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -78,7 +58,9 @@ create_country_leader = {
 	picture = "gfx/leaders/MNT/monn.dds"
 	expire = "1953.3.1"
 	ideology = despotism
-	traits = { }
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -90,63 +72,4 @@ create_country_leader = {
 	traits = { }
 }
 
-create_country_leader = {
-	name = "Blažo Jovanović"
-	desc = ""
-	picture = "gfx/leaders/MNT/monc.dds"
-	expire = "1953.3.1"
-	ideology = maoism_ideology
-	traits = { }
-}
 
-create_country_leader = {
-	name = "Blažo Jovanović"
-	desc = ""
-	picture = "gfx/leaders/MNT/monc.dds"
-	expire = "1953.3.1"
-	ideology = trotskyism_ideology
-	traits = { }
-}
-
-1941.1.1 ={
-
-oob "MNT_1941"
-
-set_technology = {
-		fighter1 = 1
-		early_bomber = 1
-		tactical_bomber1 = 1
-		CAS1 = 1
-		naval_bomber1 = 1
-		gw_artillery = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		interwar_antiair = 1
-		infantry_weapons2 = 1
-		modern_support_weapons = 1
-		basic_destroyer = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		construction1 = 1
-		concentrated_industry = 1
-	}
-}

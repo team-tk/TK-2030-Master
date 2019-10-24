@@ -1,4 +1,4 @@
-capital = 295 # Leopoldville
+﻿capital = 295 # Leopoldville
 
 oob = "empty"
 
@@ -11,7 +11,7 @@ set_technology = {
 	interwar_antitank = 1
 	infantry_weapons2 = 1
 	improved_infantry_weapons = 1
-	modern_support_weapons = 1
+	support_weapons = 1
 	support_weapons2 = 1
 	paratroopers = 1
 
@@ -99,11 +99,4 @@ traits = { reichskommissar }
 add_namespace = {
 	name = "ger_unit_leader"
 	type = unit_leader
-}
-
-
-1946.1.1 = {
-
-set_cosmetic_tag = RK_greater_germanic_reich
-
 }

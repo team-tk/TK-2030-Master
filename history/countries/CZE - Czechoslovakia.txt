@@ -1,4 +1,4 @@
-capital = 9
+﻿capital = 9
 
 oob = "CZE_1936"
 
@@ -86,25 +86,10 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Zdenek Fierlinger"
-	picture = "Zdenek_Fierlinger_Socdem.dds"
-	expire = "1965.1.1"
-	ideology = progressivism_ideology
-	traits = { }
-}
-create_country_leader = {
 	name = "Jozef Kozdon"
 	picture = "Jozef_Kozdon_liberal.dds"
 	expire = "1965.1.1"
 	ideology = liberalism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Jozef Kozdon"
-	picture = "Jozef_Kozdon_liberal.dds"
-	expire = "1965.1.1"
-	ideology = libertarianism_ideology
 	traits = { }
 }
 
@@ -117,37 +102,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Emanuel Moravec"
-	picture = "Emanuel_Moravec_Nazism.dds"
-	expire = "1965.1.1"
-	ideology = strasserism_ideology
-	traits = { }
-}
-
-create_country_leader = {
 	name = "Klement Gottwald"
 	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
 	picture = "Portrait_Czech_Klement_Gottwald.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Klement Gottwald"
-	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
-	picture = "Portrait_Czech_Klement_Gottwald.dds"
-	expire = "1965.1.1"
-	ideology = trotskyism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Klement Gottwald"
-	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
-	picture = "Portrait_Czech_Klement_Gottwald.dds"
-	expire = "1965.1.1"
-	ideology = maoism_ideology
 	traits = { }
 }
 
@@ -202,17 +161,6 @@ create_country_leader = {
 					picture = "gfx/leaders/HUN/Portrait_otto_von_hapsburg.dds"
 					expire = "1965.1.1"
 					ideology = absolutism
-					traits = { }
-					
-					id = 21010
-				}
-				
-				create_country_leader = {
-					name = "Otto von Habsburg"
-					desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
-					picture = "gfx/leaders/HUN/Portrait_otto_von_hapsburg.dds"
-					expire = "1965.1.1"
-					ideology = fascist_monarchy
 					traits = { }
 					
 					id = 21010

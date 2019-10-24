@@ -6,7 +6,6 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = LUX
-
 		}
 	}
 	default = no

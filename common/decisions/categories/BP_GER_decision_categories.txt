@@ -24,12 +24,12 @@ GER_greater_german_reich = {
 	picture = GFX_decision_cat_greater_german_reich
 	
 	allowed = {
-		tag = GER
-		#OR = { tag = GER tag = AUS tag = SWI tag = LIE tag = WGR tag = DDR }
+		#tag = GER
+		OR = { tag = GER tag = AUS tag = SWI tag = LIE tag = WGR tag = DDR }
 	}
 
 	visible = {
-		has_fascist_government = yes	
+		#has_fascist_government = yes	
 	}
 }
 

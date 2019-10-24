@@ -1,4 +1,4 @@
-capital = 553
+﻿capital = 553
 
 oob = "LEB_1936"
 
@@ -30,7 +30,7 @@ set_cosmetic_tag = LEB_FRA
 	set_technology = {
 		tech_support = 1
 		tech_recon = 1
-		modern_support_weapons = 1
+		support_weapons = 1
 		gw_artillery = 1
 
 		#doctrines
@@ -94,34 +94,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Pierre Gemayel"
-	desc = ""
-	picture = "gfx/leaders/LEB/Portrait_Lebanon_Sheick_Pierre_Gemayel.dds"
-	ideology = nazism_ideology
-}
-
-create_country_leader = {
-	name = "Pierre Gemayel"
-	desc = ""
-	picture = "gfx/leaders/LEB/Portrait_Lebanon_Sheick_Pierre_Gemayel.dds"
-	ideology = strasserism_ideology
-}
-
-create_country_leader = {
 	name = "Farajallah el-Helou"
 	desc = ""
 	picture = "gfx/leaders/LEB/Portrait_Lebanon_Farajallah_el-Helou.dds"
 	ideology = leninism
-}
-create_country_leader = {
-	name = "Farajallah el-Helou"
-	desc = ""
-	picture = "gfx/leaders/LEB/Portrait_Lebanon_Farajallah_el-Helou.dds"
-	ideology = maoism_ideology
-}
-create_country_leader = {
-	name = "Farajallah el-Helou"
-	desc = ""
-	picture = "gfx/leaders/LEB/Portrait_Lebanon_Farajallah_el-Helou.dds"
-	ideology = trotskyism_ideology
 }

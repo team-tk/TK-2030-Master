@@ -1,4 +1,4 @@
-capital = 101
+﻿capital = 101
 
 oob = "GRL_1936"
 
@@ -42,9 +42,45 @@ communism = 2
 }
 
 create_country_leader = {
-	name = "John Christmas Moller"
-	picture = "gfx/leaders/DEN/John_Christmas_Moller_-Denmark_Conservative.dds"
+	name = "Massak (Soft Snow)"
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
 	expire = "1965.1.1"
 	ideology = conservatism_ideology
-	traits = { }
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Amaqjuaq (Strong One)"
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Noahtakmiut (Little River)"
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Aujaq (Summer)"
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
 }

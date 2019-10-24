@@ -1,4 +1,4 @@
-capital = 214
+﻿capital = 214
 
 set_research_slots = 3
 
@@ -76,17 +76,10 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 
-set_politics = {
-	ruling_party = nazism
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-
 
 set_popularities = {
 democratic = 25
-nazism = 50
+nazism = 40
 communism = 25
 }
 
@@ -99,10 +92,4 @@ create_country_leader = {
 	traits = {
 		reichskommissar
 	}	
-}
-
-1946.1.1 = {
-
-set_cosmetic_tag = RK_greater_germanic_reich
-
 }

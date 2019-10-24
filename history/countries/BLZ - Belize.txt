@@ -1,4 +1,4 @@
-capital = 311
+﻿capital = 311
 
 oob = "BLZ_1936"
 

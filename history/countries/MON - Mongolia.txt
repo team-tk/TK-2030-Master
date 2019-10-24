@@ -1,4 +1,4 @@
-capital = 330
+﻿capital = 330
 
 oob = "MON_1936"
 
@@ -40,66 +40,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Anandyn Amar"
-	desc = "POLITICS_ANANDYN_AMAR_DESC"
-	picture = GFX_portrait_mon_anandyn_amar
-	expire = "1965.1.1"
-	ideology = trotskyism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Anandyn Amar"
-	desc = "POLITICS_ANANDYN_AMAR_DESC"
-	picture = GFX_portrait_mon_anandyn_amar
-	expire = "1965.1.1"
-	ideology = maoism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Anandyn Amar"
-	desc = "POLITICS_ANANDYN_AMAR_DESC"
-	picture = GFX_portrait_mon_anandyn_amar
-	expire = "1965.1.1"
-	ideology = syndicalism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Anandyn Amar"
-	desc = "POLITICS_ANANDYN_AMAR_DESC"
-	picture = GFX_portrait_mon_anandyn_amar
-	expire = "1965.1.1"
-	ideology = revolutionary_socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
 	name = "Prince Demchugdongrub"
 	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
 	picture = "gfx/leaders/MEN/portrait_men_demchugdongrub.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
-	traits = {
-		spirit_of_genghis
-	}
-}
-
-create_country_leader = {
-	name = "Prince Demchugdongrub"
-	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-	picture = "gfx/leaders/MEN/portrait_men_demchugdongrub.dds"
-	expire = "1965.1.1"
-	ideology = fascist_monarchy
 	traits = {
 		spirit_of_genghis
 	}

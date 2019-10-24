@@ -1,4 +1,4 @@
-capital = 6
+﻿capital = 6
 
 oob = "BEL_1936"
 
@@ -101,23 +101,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Xavier Relecom"
-	desc = "Xavier Relecom"
-	picture = "portrait_xavier_relecom.dds"
-	expire = "1965.1.1"
-	ideology = maoism_ideology
-	traits = { }
-}
-create_country_leader = {
-	name = "Julien Lahaut"
-	desc = "Julien Lahaut"
-	picture = "LAHAUT_Julien.dds"
-	expire = "1965.1.1"
-	ideology = trotskyism_ideology
-	traits = { }
-}
-
-create_country_leader = {
 	name = "Léon Degrelle"
 	desc = "POLITICS_LEON_DEGRELLE_DESC"
 	picture = "Portrait_Belgium_LEON_DEGRELLE.dds"
@@ -126,31 +109,13 @@ create_country_leader = {
 	traits = { }
 }
 
+### PLACEHOLDER
 create_country_leader = {
 	name = "Léon Degrelle"
 	desc = "POLITICS_LEON_DEGRELLE_DESC"
 	picture = "Portrait_Belgium_LEON_DEGRELLE.dds"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
-	traits = { }
-}
-
-### PLACEHOLDER
-create_country_leader = {
-	name = "Léon Degrelle"
-	desc = "POLITICS_LEON_DEGRELLE_DESC"
-	picture = "Belgium_Germany_Puppet_National Socialist_Leon_Degrelle.dds"
-	expire = "1965.1.1"
-	ideology = paganism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Léon Degrelle"
-	desc = "POLITICS_LEON_DEGRELLE_DESC"
-	picture = "Portrait_Belgium_LEON_DEGRELLE.dds"
-	expire = "1965.1.1"
-	ideology = strasserism_ideology
 	traits = { }
 }
 
@@ -175,30 +140,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Achille van Acker"
-	desc = "Achille van Acker"
-	picture = "Portrait_van_acker.dds"
-	expire = "1939.1.1"
-    ideology = progressivism_ideology
-	traits = { }
-}
-
-create_country_leader = {
 	name = "Paul-Emile Janson"
 	desc = "Paul-Emile Janson"
 	picture = "portrait_Janson.dds"
 	expire = "1939.1.1"
     ideology = liberalism_ideology
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Paul-Emile Janson"
-	desc = "Paul-Emile Janson"
-	picture = "portrait_Janson.dds"
-	expire = "1939.1.1"
-    ideology = libertarianism_ideology
 	traits = {
 	}
 }
@@ -280,18 +226,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Leopold III"
-	picture = "Portrait_Belgium_Leopold_III.dds"
-	expire = "1983.9.15"
-	ideology = fascist_monarchy
-	traits = { stout_defender
-	}
-}
-
-create_country_leader = {
 	name = "Staf De Clercq"
 	desc = ""
-	picture = "Belgium_Nationalism_Staf_de_Clercq.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = nationalism_ideology
 	traits = { }
@@ -394,105 +331,4 @@ create_navy_leader = {
 	portrait_path = "gfx/leaders/BEL/Portrait_Belgium_Lambert_Robins.dds"
 	traits = { walloon spotter }
 	skill = 1
-}
-
-
-1941.1.1 = {
-
-oob = "BEL_1941"
-
-set_politics = {
-	ruling_party = conservatism
-	last_election = "1940.1.1"
-	election_frequency = 48
-	elections_allowed = yes
-}
-
-	set_technology = {
-		improved_light_tank = 1 
-		basic_medium_tank = 1 
-		CAS2 = 1
-		heavy_fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		modern_support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-		improved_medium_tank = 1
-		improved_heavy_tank = 1
-		improved_infantry_weapons_2 = 1
-		support_weapons3 = 1
-		mechanised_infantry = 1
-		tech_mountaineers2 = 1
-		tech_engineers2 = 1
-		tech_recon2 = 1
-		tech_field_hospital = 1
-		artillery1 = 1
-		artillery2 = 1
-		artillery3 = 1
-		antiair1 = 1
-		antiair2 = 1
-		antitank1 = 1
-		antitank2 = 1
-		antitank3 = 1
-		fighter1 = 1
-		fighter2 = 1
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		kampfgruppe = 1 #MOBILE WARFARE
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-		formation_fighting = 1
-		hunt_and_destroy = 1
-		combat_unit_destruction = 1
-
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-		improved_computing_machine = 1
-		improved_decimetric_radar = 1
-		improved_encryption = 1
-		improved_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		assembly_line_production = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		fuel_refining2 = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-		improved_equipment_conversion = 1
-}
-
-
-
 }

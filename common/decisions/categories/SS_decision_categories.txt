@@ -4,7 +4,7 @@ SS_demands = {
 	}
 
 	visible = {
-		OR = { has_government = nazism has_government = paganism }
+		OR = { has_government = nazism has_government = theocratic }
 	}
 }
 SS_recruitment = { 
@@ -13,11 +13,11 @@ SS_recruitment = {
 	}
 
 	available = {
-		OR = { has_government = nazism has_government = paganism }
+		OR = { has_government = nazism has_government = theocratic }
 	}
 
 	visible = {
-		OR = { has_government = nazism has_government = paganism }
+		OR = { has_government = nazism has_government = theocratic }
 	}
 }
 wehrmacht_demands = {

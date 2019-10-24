@@ -1,4 +1,4 @@
-capital = 336 #Kuala Lumpur
+﻿capital = 336 #Kuala Lumpur
 
 oob = "MAL_1936"
 
@@ -97,15 +97,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Onn Jaafar"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
-	expire = "1953.3.1"
-	ideology = center_right
-	traits = { }
-}
-
-create_country_leader = {
 	name = "Shenton Thomas"
 	desc = ""
 	picture = "GFX_portrait_malaya_shenton_thomas"
@@ -122,16 +113,9 @@ create_country_leader = {
 	picture = "GFX_portrait_malaya_shenton_thomas"
 	expire = "1953.3.1"
 	ideology = constitutional
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Governor General Shenton Thomas"
-	desc = ""
-	picture = "GFX_portrait_malaya_shenton_thomas"
-	expire = "1953.3.1"
-	ideology = fascist_monarchy
-	traits = { }
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -140,43 +124,9 @@ create_country_leader = {
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
 	expire = "1953.3.1"
 	ideology = marxism
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Lai Teck"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
-	expire = "1953.3.1"
-	ideology = maoism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Lai Teck"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
-	expire = "1953.3.1"
-	ideology = trotskyism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Lai Teck"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
-	expire = "1953.3.1"
-	ideology = syndicalism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Lai Teck"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
-	expire = "1953.3.1"
-	ideology = revolutionary_socialism
-	traits = { }
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -185,7 +135,9 @@ create_country_leader = {
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
 	expire = "1953.3.1"
 	ideology = moderatism
-	traits = { }
+	traits = {
+		
+	}
 }
 
 set_cosmetic_tag = MAL_UK # British Malaya

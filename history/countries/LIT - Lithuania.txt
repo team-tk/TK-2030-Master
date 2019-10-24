@@ -1,4 +1,4 @@
-capital = 11
+﻿capital = 11
 
 oob = "LIT_1936"
 
@@ -75,7 +75,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Antanas Smetona"
 	desc = "POLITICS_ANTANAS_SMETONA_DESC"
-	picture = "Lithuania_Nationalism_Antanas_Smetona.dds"
+	picture = "GFX_Portrait_lithuania_antanas_smetona"
 	expire = "1965.1.1"
 	ideology = nationalism_ideology
 	traits = {
@@ -89,28 +89,6 @@ create_country_leader = {
 	picture = "gfx/leaders/LIT/portrait_LIT_antanas_snieckus.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
-	traits = {
-		stalins_puppet
-	}
-}
-
-create_country_leader = {
-	name = "Antanas Snieckus"
-	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
-	picture = "gfx/leaders/LIT/portrait_LIT_antanas_snieckus.dds"
-	expire = "1965.1.1"
-	ideology = trotskyism_ideology
-	traits = {
-		stalins_puppet
-	}
-}
-
-create_country_leader = {
-	name = "Antanas Snieckus"
-	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
-	picture = "gfx/leaders/LIT/portrait_LIT_antanas_snieckus.dds"
-	expire = "1965.1.1"
-	ideology = maoism_ideology
 	traits = {
 		stalins_puppet
 	}
@@ -172,16 +150,6 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "Petras Kubiliunas"
-	picture = "gfx/leaders/LIT/Petras_Kubiliunas_Nazi.dds"
-	expire = "1965.1.1"
-	ideology = strasserism_ideology
-	traits = {
-		dictator
-	}
-}
-
 
 create_country_leader = {
 	name = "Kazys Grinius"
@@ -200,15 +168,6 @@ create_country_leader = {
 			picture = "Portrait_Lithuania_Mindaugas_III.tga"
 			expire = "1965.1.1"
 			ideology = absolutism
-			traits = { staunch_monarchist }
-		}
-		
-		create_country_leader = {
-			name = "Mindaugas III"
-			desc = "POLITICS_WILHELM_VON_URACH_DESC"
-			picture = "Portrait_Lithuania_Mindaugas_III.tga"
-			expire = "1965.1.1"
-			ideology = fascist_monarchy
 			traits = { staunch_monarchist }
 		}
 

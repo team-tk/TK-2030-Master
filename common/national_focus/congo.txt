@@ -12,7 +12,6 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = COG
-
 		}
     }	
 	default = no

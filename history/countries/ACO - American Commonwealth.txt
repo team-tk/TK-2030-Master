@@ -1,4 +1,4 @@
-capital = 781
+﻿capital = 781
 
 oob = "ACO_1936"
 
@@ -10,7 +10,7 @@ add_research_slot = -2
 set_technology = {
 	infantry_weapons = 1
 	#infantry_weapons1 = 0.9
-	modern_support_weapons = 1
+	support_weapons = 1
 	support_weapons2 = 1
 	marines = 1
 	tech_recon = 1

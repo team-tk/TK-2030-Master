@@ -1,4 +1,4 @@
-capital = 320 #Pondicherry
+﻿capital = 320 #Pondicherry
 
 oob = "PON"
 

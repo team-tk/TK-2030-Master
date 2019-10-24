@@ -1,4 +1,4 @@
-capital = 461
+﻿capital = 461
 
 oob = "MOR_1936"
 
@@ -83,31 +83,9 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_1.dds"
 	ideology = fascism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Hazem Nahri"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_1.dds"
-	ideology = nazism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Hazem Nahri"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_1.dds"
-	ideology = strasserism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Hazem Nahri"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_1.dds"
-	ideology = ultranationalism
-	traits = { }
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
@@ -115,39 +93,9 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
 	ideology = leninism
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Osama Danid"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
-	ideology = syndicalism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Osama Danid"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
-	ideology = maoism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Osama Danid"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
-	ideology = trotskyism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Osama Danid"
-	desc = ""
-	picture = "gfx/leaders/PAL/Portrait_Arabia_Generic_2.dds"
-	ideology = revolutionary_socialism
-	traits = { }
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
@@ -164,21 +112,6 @@ create_country_leader = {
 	picture = "gfx/leaders/MOR/Portrait_Morocco_Mohammed_V.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
-}
-
-create_country_leader = {
-	name = "Mohammed V"
-	desc = "POLITICS_MOR_DESC"
-	picture = "gfx/leaders/MOR/Portrait_Morocco_Mohammed_V.dds"
-	expire = "1965.1.1"
-	ideology = fascist_monarchy
-}
-
-create_country_leader = {
-	name = "Charles Nogues"
-	picture = "Portrait_France_Charles_Nogues.dds"
-	expire = "1965.1.1"
-	ideology = military_dictatorship
 }
 
 create_field_marshal = {

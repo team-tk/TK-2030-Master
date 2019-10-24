@@ -11,9 +11,7 @@ state=
 		owner = TUR
 		buildings = {
 			infrastructure = 4
-			12049 = {
-				naval_base = 2
-			}
+
 		}
 		
 		

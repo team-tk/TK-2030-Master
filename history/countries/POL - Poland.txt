@@ -1,4 +1,4 @@
-capital = 10
+﻿capital = 10
 
 oob = "POL_1936"
 
@@ -95,15 +95,6 @@ set_popularities = {
 	conservatism = 13
 }
 
-create_country_leader = {
-	name = "Władysław Sikorski"
-	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
-	picture = "Portrait_Poland_Wladyslaw_Sikorski.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = { }
-}
-
 
 create_country_leader = {
 	name = "Władysław Sikorski"
@@ -132,48 +123,25 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ignacy Mościcki"
-	desc = "POLITICS_IGNACY_MOSCICKI_DESC"
-	picture = "Portrait_Poland_Ignacy_Moscicki.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = { }
-}
-
-create_country_leader = {
 	name = "Władysław Gomułka"
 	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
 	expire = "1965.1.1"
 	ideology = leninism
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Władysław Gomułka"
-	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
-	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
-	expire = "1965.1.1"
-	ideology = trotskyism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Władysław Gomułka"
-	desc = "POLITICS_WLADYSLAW_GOMULKA_DESC"
-	picture = "Portrait_Poland_Wladyslaw_Gomulka.dds"
-	expire = "1965.1.1"
-	ideology = maoism_ideology
-	traits = { }
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
 	name = "Wincenty Witos"
 	desc = "POLITICS_WINCENTY_WITOS_DESC"
-	picture = "Poland_Conservative_Wincenty_Witos.dds"
+	picture = "GFX_POL_wincenty_witos"
 	expire = "1965.1.1"
 	ideology = conservatism_ideology
-	traits = { }
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
@@ -182,16 +150,9 @@ create_country_leader = {
 	picture = "Portrait_POL_Mieczyslaw_Michalowicz.dds"
 	expire = "1965.1.1"
 	ideology = liberalism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Mieczyslaw Michalowicz"
-	desc = ""
-	picture = "Portrait_POL_Mieczyslaw_Michalowicz.dds"
-	expire = "1965.1.1"
-	ideology = libertarianism_ideology
-	traits = { }
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
@@ -219,22 +180,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Edward Osobka Morawski"
-	picture = "Edward_Osobka_Morawski_socdem.dds"
-	expire = "1965.1.1"
-	ideology = social_democracy
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Edward Osobka Morawski"
-	picture = "Edward_Osobka_Morawski_socdem.dds"
-	expire = "1965.1.1"
-	ideology = progressivism_ideology
-	traits = { }
-}
-
-create_country_leader = {
 	name = "Roman Dmowski"
 	desc = ""
 	picture = "Portrait_POL_Roman_Dmowski.dds"
@@ -244,18 +189,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Roman Dmowski"
-	desc = ""
-	picture = "Portrait_POL_Roman_Dmowski.dds"
-	expire = "1965.1.1"
-	ideology = strasserism_ideology
-	traits = { }
-}
-
-create_country_leader = {
 	name = "Bolesław Piasecki"
 	desc = "POLITICS_BOLESLAW_PIASECKI_DESC"
-	picture = "Poland_Fascist_Boleslaw Piasecki.dds"
+	picture = "GFX_POL_boleslaw_piasecki"
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = { }
@@ -276,17 +212,6 @@ create_country_leader = {
 				picture = "gfx/leaders/EYE/Portrait_EYE_Olbracht_von_Habsburg.dds"
 				expire = "1965.1.1"
 				ideology = absolutism
-				traits = { EYE_pole_lover }
-				
-				id = 21014
-			}
-			
-			create_country_leader = {
-				name = "Karol Olbracht Habsburg"
-				desc = "POLITICS_KAROL_OLBRACHT_HABSBURG_DESC"
-				picture = "gfx/leaders/EYE/Portrait_EYE_Olbracht_von_Habsburg.dds"
-				expire = "1965.1.1"
-				ideology = fascist_monarchy
 				traits = { EYE_pole_lover }
 				
 				id = 21014

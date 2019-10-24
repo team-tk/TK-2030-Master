@@ -14,19 +14,10 @@ idea_categories = {
 		removal_cost = -1
 	}
 	
-	government_policy = {
-		slot = form_of_government
-		slot = form_of_congress
-		slot = form_of_judiciary
-		slot = voting_system
-		slot = defcon
 
-		cost = 150
-		removal_cost = 0
-	}
 	
-
-		government_policy2 = {
+		government_policy = {
+		slot = form_of_government
 		slot = foreign_policy
 		slot = bonds
 		slot = security
@@ -38,7 +29,7 @@ idea_categories = {
 		slot = taxes
 		slot = tariffs
 		slot = immigration_policy
-
+		
 		
 		cost = 150
 		removal_cost = 0
@@ -118,24 +109,25 @@ idea_categories = {
 		removal_cost = 0
 		
 		}
-		
+	
 		nation_traits = {
 		slot = superstate_size_traits
 		slot = gdp_size_traits
 		slot = army_size_traits
 		slot = airforce_size_traits
 		slot = navy_size_traits
+		slot = food_traits
+		slot = electricity_traits
 		slot = corruption_traits
 		slot = crime_traits
 		slot = terrorism_traits
 		slot = unity_traits
 		slot = religion_traits
+
 		
 		cost = 150
 		removal_cost = 0
 	}
-	
-		
 	
 	
 }

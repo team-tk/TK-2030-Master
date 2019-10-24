@@ -1,4 +1,4 @@
-capital = 539
+﻿capital = 539
 
 oob = "NFQ"
 

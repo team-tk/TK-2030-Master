@@ -451,11 +451,11 @@ ideas = {
 			}
 		
 			modifier = {
-			 communism_drift = -0.05
-			 maoism_drift = -0.05
-			 trotskyism_drift = -0.05
-			 syndicalism_drift = -0.05
-			 socialism_drift = -0.05
+			 stalinism_drift = -0.05
+			 anarchism_drift = -0.05
+			 leninism_drift = -0.05
+			 revisionism_drift = -0.05
+			 democratic_socialism_drift = -0.05
 			 production_speed_buildings_factor = 0.1
 			 production_factory_start_efficiency_factor = -0.05
 			 conscription_factor = -0.15
@@ -711,30 +711,21 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 	
 			modifier = {
+			socialism_drift = 0.05
+			nationalism_drift = 0.05
 			socdem_drift = 0.05
-				libertarianism_drift = 0.05
-				progressivism_drift = 0.05
-				democratic_drift = 0.05
-				conservatism_drift = 0.05
-				christian_democratic_drift = 0.05
-				demsoc_drift = 0.05
-				demnat_drift = 0.05
-				reactionary_drift = 0.05
-				socialism_drift = -0.1
+			conservatism_drift = 0.05
+			democratic_drift = 0.05
+			
+				#socialism_drift = -0.1
 				communism_drift = -0.1
 				syndicalism_drift = -0.1
-				maoism_drift = -0.1
-				trotskyism_drift = -0.1
-				neutrality_drift = -0.1
-				nationalism_drift = -0.1
 				nazism_drift = -0.1
 				fascism_drift = -0.1
-				strasserism_drift = -0.1
-				monarchism_drift = -0.1
-				fascist_monarchism_drift = -0.1
+				#nationalism_drift = -0.1
 				theocratic_drift = -0.1
-				islamism_drift = -0.1
-				paganism_drift = -0.1
+				#neutrality_drift = -0.1
+				monarchism_drift = -0.1
 			}
 		}
 		
@@ -754,30 +745,24 @@ ideas = {
 			picture = generic_fascism_drift_bonus
 	
 			modifier = {
-				nationalism_drift = 0.05
-				nazism_drift = 0.05
-				fascism_drift = 0.05
-				strasserism_drift = 0.05
-				paganism_drift = 0.05
 				socialism_drift = -0.1
 				communism_drift = -0.1
 				syndicalism_drift = -0.1
-				maoism_drift = -0.1
-				trotskyism_drift = -0.1
-				socdem_drift = -0.1
-				libertarianism_drift = -0.1
-				progressivism_drift = -0.1
+				
 				democratic_drift = -0.1
 				conservatism_drift = -0.1
-				christian_democratic_drift = -0.1
-				demsoc_drift = -0.1
-				demnat_drift = -0.1
-				neutrality_drift = -0.1
-				reactionary_drift = -0.1
-				monarchism_drift = -0.1
-				fascist_monarchism_drift = -0.1
-				theocratic_drift = -0.1
-				islamism_drift = -0.1
+				socdem_drift = -0.1
+				
+				nationalism_drift = 0.05
+				neutrality_drift = 0.05
+				theocratic_drift = 0.05
+				monarchism_drift = 0.05
+				fascism_drift = 0.05
+				nazism_drift = 0.05
+
+				#theocratic_drift = -0.1
+				#neutrality_drift = -0.1
+				#monarchism_drift = -0.1
 			}
 		}
 		
@@ -800,8 +785,7 @@ ideas = {
 				nationalism_drift = 0.05
 				fascism_drift = 0.05
 				nazism_drift = 0.05
-				strasserism_drift = 0.05
-				paganism_drift = 0.05
+				monarchism_drift = 0.05
 			}
 		}
 		
@@ -823,9 +807,7 @@ ideas = {
 			modifier = {
 				neutrality_drift = 0.05
 				monarchism_drift = 0.05
-				fascist_monarchism_drift = 0.05
 				theocratic_drift = 0.05
-				islamism_drift = 0.05
 			}
 		}
 		
@@ -865,7 +847,7 @@ ideas = {
 			picture = generic_fascism_drift_bonus
 	
 			modifier = {
-				fascist_monarchism_drift = 0.1
+				monarchism_drift = 0.1
 			}
 		}
 		
@@ -909,7 +891,7 @@ ideas = {
 			}
 		}
 		
-		islamism_idea_focus = {
+		militarism_idea_focus = {
 			
 			
 			allowed = {
@@ -925,47 +907,7 @@ ideas = {
 			picture = generic_fascism_drift_bonus
 	
 			modifier = {
-				islamism_drift = 0.1
-			}
-		}
-		
-		strasserism_idea_focus = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-	
-			modifier = {
-				strasserism_drift = 0.1
-			}
-		}
-		
-		paganism_idea_focus = {
-			
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-	
-			modifier = {
-				paganism_drift = 0.1
+				neutrality_drift = 0.1
 			}
 		}
 		
@@ -1046,8 +988,7 @@ ideas = {
 	
 			modifier = {
 				democratic_drift = 0.05
-				libertarianism_drift = 0.05
-				christian_democratic_drift = 0.05
+				conservatism_drift = 0.05
 			}
 		}
 		
@@ -1087,7 +1028,7 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 	
 			modifier = {
-				libertarianism_drift = 0.1
+				democratic_drift = 0.1
 			}
 		}
 		
@@ -1107,7 +1048,7 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 	
 			modifier = {
-				christian_democratic_drift = 0.1
+				conservatism_drift = 0.1
 			}
 		}
 		
@@ -1127,9 +1068,9 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 	
 			modifier = {
-				progressivism_drift = 0.05
+				democratic_drift = 0.05
 				socdem_drift = 0.05
-				demsoc_drift = 0.05
+				socialism_drift = 0.05
 			}
 		}
 		
@@ -1169,7 +1110,7 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 	
 			modifier = {
-				progressivism_drift = 0.1
+				democratic_drift = 0.1
 			}
 		}
 		
@@ -1189,7 +1130,8 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 	
 			modifier = {
-				demsoc_drift = 0.1
+				socdem_drift = 0.1
+				socialism_drift = 0.1
 			}
 		}
 		
@@ -1210,8 +1152,8 @@ ideas = {
 	
 			modifier = {
 				conservatism_drift = 0.05
-				reactionary_drift = 0.05
-				demnat_drift = 0.05
+				neutrality_drift = 0.05
+				nationalism_drift = 0.05
 			}
 		}
 		
@@ -1231,7 +1173,7 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 	
 			modifier = {
-				reactionary_drift = 0.1
+				neutrality_drift = 0.1
 			}
 		}
 		
@@ -1271,11 +1213,11 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 	
 			modifier = {
-				demnat_drift = 0.1
+				nationalism_drift = 0.1
 			}
 		}
 		
-		authoritarian_socialism_idea_focus = {
+		authoritarian_democracy_idea_focus = {
 			
 			
 			allowed = {
@@ -1291,11 +1233,11 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 	
 			modifier = {
-				socialism_drift = 0.1
+				neutrality_drift = 0.1
 			}
 		}
 		
-		trotskyism_idea_focus = {
+		revisionism_idea_focus = {
 			
 			
 			allowed = {
@@ -1311,7 +1253,7 @@ ideas = {
 			picture = generic_communism_drift_bonus
 	
 			modifier = {
-				trotskyism_drift = 0.1
+				socialism_drift = 0.1
 			}
 		}
 		
@@ -1335,7 +1277,7 @@ ideas = {
 			}
 		}
 		
-		maoism_idea_focus = {
+		stalinism_idea_focus = {
 			
 			
 			allowed = {
@@ -1351,7 +1293,7 @@ ideas = {
 			picture = generic_communism_drift_bonus
 	
 			modifier = {
-				maoism_drift = 0.1
+				communism_drift = 0.1
 			}
 		}
 		
@@ -1394,27 +1336,15 @@ ideas = {
 				socialism_drift = 0.05
 				communism_drift = 0.05
 				syndicalism_drift = 0.05
-				maoism_drift = 0.05
-				trotskyism_drift = 0.05
 				socdem_drift = -0.1
-				libertarianism_drift = -0.1
-				progressivism_drift = -0.1
 				democratic_drift = -0.1
 				conservatism_drift = -0.1
-				christian_democratic_drift = -0.1
-				demsoc_drift = -0.1
-				demnat_drift = -0.1
 				neutrality_drift = -0.1
-				reactionary_drift = -0.1
 				nationalism_drift = -0.1
 				nazism_drift = -0.1
 				fascism_drift = -0.1
-				strasserism_drift = -0.1
 				monarchism_drift = -0.1
-				fascist_monarchism_drift = -0.1
 				theocratic_drift = -0.1
-				islamism_drift = -0.1
-				paganism_drift = -0.1
 			}
 		}
 	                  

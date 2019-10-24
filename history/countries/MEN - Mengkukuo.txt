@@ -1,4 +1,4 @@
-capital = 611
+﻿capital = 611
 
 oob = "MEN_1936"
 
@@ -14,7 +14,7 @@ religion_buddhism
 }
 
 set_politics = {
-	ruling_party = fascist_monarchism
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -22,7 +22,7 @@ set_politics = {
 
 set_popularities = {
 fascism = 20
-fascist_monarchism = 80	
+monarchism = 80	
 }
 
 create_country_leader = {
@@ -41,29 +41,7 @@ create_country_leader = {
 	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
 	picture = "GFX_portrait_men_demchugdongrub"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		spirit_of_genghis
-	}
-}
-
-create_country_leader = {
-	name = "Prince Demchugdongrub"
-	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-	picture = "GFX_portrait_men_demchugdongrub"
-	expire = "1965.1.1"
 	ideology = absolutism
-	traits = {
-		spirit_of_genghis
-	}
-}
-
-create_country_leader = {
-	name = "Prince Demchugdongrub"
-	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-	picture = "GFX_portrait_men_demchugdongrub"
-	expire = "1965.1.1"
-	ideology = despotism
 	traits = {
 		spirit_of_genghis
 	}

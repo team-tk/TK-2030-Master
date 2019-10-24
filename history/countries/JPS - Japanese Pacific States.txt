@@ -1,4 +1,4 @@
-capital = 378 # California
+﻿capital = 378 # California
 
 oob = "empty"
 
@@ -15,7 +15,7 @@ set_technology = {
 	interwar_antitank = 1
 	infantry_weapons2 = 1
 	improved_infantry_weapons = 1
-	modern_support_weapons = 1
+	support_weapons = 1
 	support_weapons2 = 1
 	paratroopers = 1
 
@@ -100,15 +100,6 @@ add_ideas = {
 	key_industries
 	age_18 age_35
 	unity5
-}
-
-create_country_leader = {
-	name = "Admiral Isoroku Yamamoto"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Japan_Isoroku_Yamamoto.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = { warrior_code }
 }
 
 create_country_leader = {

@@ -1,4 +1,4 @@
-capital = 361
+﻿capital = 361
 
 oob = "USA_1936"
 if = {
@@ -3119,13 +3119,13 @@ set_politics = {
         democratic = 46
         conservatism = 44
         market_liberal = 6
-        progressive = 3
+        progressivism = 3
         reactionary = 1
     }
 	create_country_leader = {
 		name = "Gary Johnson"
 		picture = "Gary_Johnson.dds"
-		ideology = libertarianinism_ideology
+		ideology = libertarianism_ideology
 	}
 	create_country_leader = {
 		name = "Jill Stein"

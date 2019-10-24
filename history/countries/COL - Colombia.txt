@@ -1,4 +1,4 @@
-capital = 306
+﻿capital = 306
 
 add_ideas = {
 fog_democratic
@@ -102,7 +102,7 @@ set_convoys = 10
 		interwar_artillery = 1
 		infantry_weapons1 = 1
 		infantry_weapons2 = 1
-		modern_support_weapons = 1
+		support_weapons = 1
 
 		#doctrines
 		air_superiority = 1
@@ -158,15 +158,6 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Alfonso López Pumarejo"
-	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
-	picture = "GFX_Portrait_columbia_alfonso_lopez"
-	expire = "1965.1.1"
-	ideology = libertarianism_ideology
-	traits = { }
-}
-
-create_country_leader = {
 	name = "Mariano Ospina Pérez"
 	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
@@ -209,24 +200,6 @@ create_country_leader = {
 	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
 	picture = "gfx/leaders/COL/Portrait_Colombia_Jorge_Eliecer_Gaitan.dds"
 	expire = "1965.1.1"
-	ideology = maoism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Jorge Eliecer Gaitán Ayala"
-	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
-	picture = "gfx/leaders/COL/Portrait_Colombia_Jorge_Eliecer_Gaitan.dds"
-	expire = "1965.1.1"
-	ideology = trotskyism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Jorge Eliecer Gaitán Ayala"
-	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
-	picture = "gfx/leaders/COL/Portrait_Colombia_Jorge_Eliecer_Gaitan.dds"
-	expire = "1965.1.1"
 	ideology = revolutionary_socialism
 	traits = { }
 }
@@ -237,15 +210,6 @@ create_country_leader = {
 	picture = "gfx/leaders/COL/Portrait_Colombia_Mariano.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Mariano Ospina Pérez"
-	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
-	picture = "gfx/leaders/COL/Portrait_Colombia_Mariano.dds"
-	expire = "1965.1.1"
-	ideology = progressivism_ideology
 	traits = { }
 }
 

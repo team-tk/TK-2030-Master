@@ -1,4 +1,4 @@
-capital = 305
+﻿capital = 305
 
 oob = "ECU_1936"
 
@@ -62,35 +62,11 @@ create_country_leader = {
 	traits = { }
 }
 create_country_leader = {
-	name = "Federico Páez"
-	desc = "POLITICS_FEDERICO_PAEZ_DESC"
-	picture = "Chiriboga.dds"
-	expire = "1965.1.1"
-	ideology = progressivism_ideology
-	traits = { }
-}
-create_country_leader = {
 	name = "Ricardo Paredes Romero"
 	desc = "POLITICS_FEDERICO_PAEZ_DESC"
 	picture = "Romero.dds"
 	expire = "1965.1.1"
 	ideology = marxism
-	traits = { }
-}
-create_country_leader = {
-	name = "Ricardo Paredes Romero"
-	desc = "POLITICS_FEDERICO_PAEZ_DESC"
-	picture = "Romero.dds"
-	expire = "1965.1.1"
-	ideology = maoism_ideology
-	traits = { }
-}
-create_country_leader = {
-	name = "Ricardo Paredes Romero"
-	desc = "POLITICS_FEDERICO_PAEZ_DESC"
-	picture = "Romero.dds"
-	expire = "1965.1.1"
-	ideology = trotskyism_ideology
 	traits = { }
 }
 create_country_leader = {
@@ -107,16 +83,6 @@ create_country_leader = {
 	picture = "luna.dds"
 	expire = "1965.1.1"
 	ideology = falangism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Jorge Luna"
-	desc = "POLITICS_FEDERICO_PAEZ_DESC"
-	picture = "luna.dds"
-	expire = "1965.1.1"
-	ideology = strasserism_ideology
 	traits = {
 		#
 	}
@@ -149,9 +115,6 @@ create_country_leader = {
 	ideology = socialism_ideology
 	traits = { }
 }
-
-
-
 
 
 

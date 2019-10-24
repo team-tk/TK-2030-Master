@@ -35,12 +35,12 @@ state={
 			13036 = {
 				naval_base = 1
 			}
+		}
 		victory_points = {
 			2489 5 
 		}
 		victory_points = {
 			13028 1 
-		}
 		}
 		1918.11.11 = {
 			owner = JAP

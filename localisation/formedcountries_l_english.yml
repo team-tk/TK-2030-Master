@@ -274,7 +274,7 @@
  IRE_formable_socialism:0 "Iberian Federation"
  IRE_formable_socialism_DEF:0 "The Iberian Federation"
  IRE_formable_socdem:0 "Iberian Federation"
- IRE_formable_socdem_DEF:0 "The Iberian Federation"
+ IRE_formable_socdem_DEF:0 "The Iberian Federation
  IBE_formable_neutrality:0 "Iberian Union"
  IBE_formable_neutrality_DEF:0 "The Iberian Union"
  IBE_formable_communism:0 "Iberian People's Republic"
@@ -307,7 +307,7 @@
  SCA_formable_conservatism:0 "Scandinavian Republic"
  SCA_formable_conservatism_DEF:0 "The Scandinavian Republic"
  SCA_formable_socialism:0 "Scandinavian Republic"
- SCA_formable_socialism_DEF:0 "The Scandinavian Republic"
+ SCA_formable_socialism_DEF:0 "The Scandinavian Republic
  SCA_formable_socdem:0 "Scandinavian Republic"
  SCA_formable_socdem_DEF:0 "The Scandinavian Republic"
  SCA_formable_communism:0 "Scandinavian Socialist Republic"
@@ -468,7 +468,7 @@
  CEN_formable_communism_DEF:0 "The Central American Socialist State"
  CEN_formable_theocratic:0 "Central American Empire"
  CEN_formable_theocratic_DEF:0 "The Central American Empire"
- CEN_formable_theocratic_ADJ:0 "Central America"
+ CEN_formable_theocratic_ADJ:0 "Central America
  CEN_formable_fascism_ADJ:0 "Central American"
  CEN_formable_nazism_ADJ:0 "Central American"
  CEN_formable_nationalism_ADJ:0 "Central American"
@@ -704,7 +704,7 @@
  EUR_formable_monarchism_ADJ:0 "European"
  #####
  BYZ_formable_neutrality:0 "Byzantine Empire"
- BYZ_formable_fascism:0 "Byzantine Empire"
+ BYZ_formable_fascism:0 "Byzantine Empire
  BYZ_formable_nazism:0 "Byzantine Empire"
  BYZ_formable_nazism_DEF:0 "The Byzantine Empire"
  BYZ_formable_nationalism:0 "Byzantine Empire"
@@ -898,7 +898,7 @@
  BAK_formable_democratic_DEF:0 "The Balkan Federation"
  BAK_formable_conservatism:0 "Balkan Federation"
  BAK_formable_conservatism_DEF:0 "The Balkan Federation"
- BAK_formable_socialism:0 "Balkan Federation"
+ BAK_formable_socialism:0 "Balkan Federation
  BAK_formable_socialism_DEF:0 "The Balkan Federation"
  BAK_formable_socdem:0 "Balkan Federation"
  BAK_formable_socdem_DEF:0 "The Balkan Federation"
@@ -1275,7 +1275,7 @@
  MUG_formable_neutrality:0 "Mughal Caliphate"
  MUG_formable_neutrality_DEF:0 "The Mughal Caliphate"
  MUG_formable_communism:0 "Mughal Union"
- MUG_formable_communism_DEF:0 "The Mughal"
+ MUG_formable_communism_DEF:0 "The Mughal Union
  MUG_formable_syndicalism:0 "Mughal Union"
  MUG_formable_syndicalism_DEF:0 "The Mughal Union"
  MUG_formable_monarchism:0 "Mughal Empire"
@@ -1381,7 +1381,7 @@
  SL1_formable_conservatism_DEF:0 "The Slovak-Galician State"
  SL1_formable_socialism:0 "Slovak-Galician State"
  SL1_formable_socialism_DEF:0 "the Slovak-Galician State"
- SL1_formable_socdem:0 "Slovak-Galician State"
+ SL1_formable_socdem:0 "Slovak-Galician State
  SL1_formable_socdem_DEF:0 "The Slovak-Galician State"
  SL1_formable_neutrality:0 "Kingdom of Slovakia-Galicia"
  SL1_formable_neutrality_DEF:0 "The Kingdom of Slovakia-Galicia"
@@ -1562,7 +1562,7 @@
  GFI_formable_nationalism_DEF:0 "The State of Finland"
  GFI_formable_democratic:0 "Republic of Finland"
  GFI_formable_democratic_DEF:0 "The Republic of Finland"
- GFI_formable_conservatism:0 "Republic of Finland"
+ GFI_formable_conservatism:0 "Republic of Finland
  GFI_formable_conservatism_DEF:0 "The Republic of Finland"
  GFI_formable_socialism:0 "Republic of Finland"
  GFI_formable_socialism_DEF:0 "The Republic of Finland"
@@ -1786,7 +1786,7 @@
  NOA_formable_democratic_DEF:0 "The North American Federation"
  NOA_formable_conservatism:0 "North American Federation"
  NOA_formable_conservatism_DEF:0 "The North American Federation"
- NOA_formable_socialism:0 "North American Federation"
+ NOA_formable_socialism:0 "North American Federation
  NOA_formable_socialism_DEF:0 "The North American Federation"
  NOA_formable_socdem:0 "North American Federation"
  NOA_formable_socdem_DEF:0 "The North American Federation"
@@ -1895,7 +1895,7 @@
  PRB_formable_nationalism_DEF:0 "The Peru-Bolivian Confederation"
  PRB_formable_democratic:0 "Peru-Bolivian Confederation"
  PRB_formable_democratic_DEF:0 "The Peru-Bolivian Confederation"
- PRB_formable_conservatism:0 "Peru-Bolivian Confederation"
+ PRB_formable_conservatism:0 "Peru-Bolivian ConfederationL
  PRB_formable_conservatism_DEF:0 "The Peru-Bolivian Confederation"
  PRB_formable_socialism:0 "Peru-Bolivian Confederation"
  PRB_formable_socialism_DEF:0 "The Peru-Bolivian Confederation"

@@ -142,8 +142,8 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = rgb { 255 192 104 }
-	color_ui = rgb { 255 192 104 }
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
 }
 CHL = {
 	color = rgb { 155 101 107 }
@@ -574,10 +574,6 @@ RPB = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
 }
-RPD = {
-	color = HSV { 0.1 0.15 0.4 }
-	color_ui = rgb { 138 155 116 }
-}
 DNS = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
@@ -605,26 +601,6 @@ IND = {
 AUC = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 163 17 31 }
-}
-VIE = {
-	color = rgb { 255 0 0 }
-	color_ui = rgb { 255 0 0 }
-}
-UAR = {
-	color = rgb { 230 230 70 }
-	color_ui = rgb { 230 230 70 }
-}
-THA = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
-}
-RCH = {
-	color = rgb { 255 115 0 }
-	color_ui = rgb { 255 115 0 }
-}
-FBR = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 255 73 121 }
 }
 D01 = {
 	color = rgb { 200 100 31 }

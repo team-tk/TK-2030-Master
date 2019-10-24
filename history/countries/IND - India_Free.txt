@@ -1,4 +1,4 @@
-capital = 439
+﻿capital = 439
 
 oob = "empty"
 
@@ -75,64 +75,15 @@ create_country_leader = {
 	}
 }
 
-# REVISIT Unclear if appropriate for this ideology
-create_country_leader = {
-	name = "V. D. Savarkar"
-	desc = "POLITICS_VD_SAVARKAR_DESC"
-	picture = "GFX_RAJ_veer_savarkar"
-	expire = "1965.1.1"
-	ideology = nazism_ideology
-	traits = {
-		
-	}
-}
-
-# REVISIT Unclear if appropriate for this ideology
-create_country_leader = {
-	name = "V. D. Savarkar"
-	desc = "POLITICS_VD_SAVARKAR_DESC"
-	picture = "GFX_RAJ_veer_savarkar"
-	expire = "1965.1.1"
-	ideology = strasserism_ideology
-	traits = {
-		
-	}
-}
-
 create_country_leader = {
 	name = "P. Krishna Pillai"
 	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
 	picture = "GFX_RAJ_krishna_pillai"
 	expire = "1965.1.1"
 	ideology = marxism
-	traits = { }
-}
-
-create_country_leader = {
-	name = "P. Krishna Pillai"
-	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
-	picture = "GFX_RAJ_krishna_pillai"
-	expire = "1965.1.1"
-	ideology = maoism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "P. Krishna Pillai"
-	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
-	picture = "GFX_RAJ_krishna_pillai"
-	expire = "1965.1.1"
-	ideology = trotskyism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "P. Krishna Pillai"
-	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
-	picture = "GFX_RAJ_krishna_pillai"
-	expire = "1965.1.1"
-	ideology = syndicalism_ideology
-	traits = { }
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -141,17 +92,11 @@ create_country_leader = {
 	picture = "GFX_RAJ_pattabhi_sitaramayya"
 	expire = "1965.1.1"
 	ideology = social_democracy
-	traits = { }
+	traits = {
+		
+	}
 }
 
-create_country_leader = {
-	name = "B. P. Sitaramayya"
-	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
-	picture = "GFX_RAJ_pattabhi_sitaramayya"
-	expire = "1965.1.1"
-	ideology = democratic_socialism
-	traits = { }
-}
 
 create_corps_commander = {
 	name = "Noel Beresford-Peirse"

@@ -1,4 +1,4 @@
-capital = 78
+﻿capital = 78
 
 #oob = ""
 
@@ -33,25 +33,9 @@ create_country_leader = {
 	picture = "gfx/leaders/MOL/Tihon.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Tihon Konstantinov"
-	desc = "POLITICS_TIHON_KONSTANTINOV_DESC"
-	picture = "gfx/leaders/MOL/Tihon.dds"
-	expire = "1965.1.1"
-	ideology = maoism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Tihon Konstantinov"
-	desc = "POLITICS_TIHON_KONSTANTINOV_DESC"
-	picture = "gfx/leaders/MOL/Tihon.dds"
-	expire = "1965.1.1"
-	ideology = trotskyism_ideology
-	traits = { }
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
@@ -60,7 +44,9 @@ create_country_leader = {
 	picture = "gfx/leaders/MOL/Ion.dds"
 	expire = "1965.1.1"
 	ideology = conservatism_ideology
-	traits = { }
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
@@ -69,7 +55,9 @@ create_country_leader = {
 	picture = "gfx/leaders/MOL/Nicolae.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
-	traits = { }
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
@@ -78,25 +66,9 @@ create_country_leader = {
 	picture = "gfx/leaders/MOL/Nicolae.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Nicolae"
-	desc = "POLITICS_PRINCE_NICOLAE_DESC"
-	picture = "gfx/leaders/MOL/Nicolae.dds"
-	expire = "1965.1.1"
-	ideology = nazism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Nicolae"
-	desc = "POLITICS_PRINCE_NICOLAE_DESC"
-	picture = "gfx/leaders/MOL/Nicolae.dds"
-	expire = "1965.1.1"
-	ideology = strasserism_ideology
-	traits = { }
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {

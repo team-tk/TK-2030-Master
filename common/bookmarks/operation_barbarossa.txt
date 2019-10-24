@@ -10,7 +10,6 @@ bookmarks = {
 			history = VIC_OPERATION_BARBAROSSA_DESC
 			ideology = neutrality
 			ideas = {
-			fog_dictatorship_re
 			}
 			focuses = {
 			}
@@ -19,7 +18,6 @@ bookmarks = {
 			history = USA_OPERATION_BARBAROSSA_DESC
 			ideology = democratic
 			ideas = {
-			fog_democratic
 			}
 			focuses = {
 			}
@@ -28,7 +26,6 @@ bookmarks = {
 			history = ENG_OPERATION_BARBAROSSA_DESC
 			ideology = conservatism
 			ideas = {
-			fog_democratic
 			}
 			focuses = {
 			}
@@ -38,7 +35,6 @@ bookmarks = {
 			history = GER_OPERATION_BARBAROSSA_DESC
 			ideology = nazism
 			ideas = {
-			fog_dictatorship
 			}
 			focuses = {
 			}
@@ -47,7 +43,6 @@ bookmarks = {
 			history = ITA_OPERATION_BARBAROSSA_DESC
 			ideology = fascism
 			ideas = {
-			fog_dictatorship
 			}
 			focuses = {
 			}
@@ -56,7 +51,6 @@ bookmarks = {
 			history = JAP_OPERATION_BARBAROSSA_DESC
 			ideology = fascism
 			ideas = {
-			fog_dictatorship_mo
 			}
 			focuses = {
 			}			
@@ -65,7 +59,6 @@ bookmarks = {
 			history = SOV_OPERATION_BARBAROSSA_DESC
 			ideology = communism
 			ideas = {
-			fog_dictatorship_lw
 			}
 			focuses = {
 			}

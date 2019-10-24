@@ -1,4 +1,4 @@
-capital = 294
+﻿capital = 294
 
 oob = "OMA_1936"
 
@@ -34,16 +34,9 @@ create_country_leader = {
 	picture = "GFX_portrait_oman_said_bin_taimur"
 	expire = "1965.1.1"
 	ideology = emiratism
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Said bin Taimur"
-	desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
-	picture = "GFX_portrait_oman_said_bin_taimur"
-	expire = "1965.1.1"
-	ideology = fascist_monarchy
-	traits = { }
+	traits = {
+		#
+	}
 }
 
 1939.1.1 = {
@@ -63,12 +56,12 @@ create_country_leader = {
 				#banned = no #default is no
 			}
 
-			monarchism = { 
+			neutrality = { 
 				popularity = 100
 			}
 		}
 	
-		ruling_party = monarchism
+		ruling_party = neutrality
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no

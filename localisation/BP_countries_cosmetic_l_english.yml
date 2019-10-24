@@ -1,14 +1,5 @@
 ﻿l_english:
 
-Impero_Romano:0 "Roman Empire"
-European_Confederation:0 "European Confederation"
-European_Community:0 "European Community"
-
-ITA_italian_empire_fascism:0 "Italian Empire"
-ITA_italian_empire_nazism:0 "Italian Empire"
-ITA_italian_empire_monarchism:0 "Italian Empire"
-ITA_italian_empire_fascist_monarchism:0 "Italian Empire"
-
 GER_grossdeutsches_reich_fascism:0 "Großdeutsches Reich"
 GER_deutscher_staat_fascism:0 "Germanischer Staat Deutscher Nation"
 
@@ -154,6 +145,12 @@ DEN_GER_autonomy_reichsprotectorate_DEF:0 "the Reichsprotektorat Dänemark"
 DEN_GER_autonomy_reichskommissariat:0 "Reichskommissariat Dänemark"
 DEN_GER_autonomy_reichskommissariat_DEF:0 "the Reichskommissariat Dänemark"
  
+SER_GER_autonomy_satellite:0 "Nedić's regime"
+SER_GER_autonomy_satellite_DEF:0 "the Nedić's regime"
+SER_GER_autonomy_reichsprotectorate:0 "Reichsprotektorat Serbia"
+SER_GER_autonomy_reichsprotectorate_DEF:0 "the Reichsprotektorat Serbia"
+SER_GER_autonomy_reichskommissariat:0 "Reichskommissariat Serbien"
+SER_GER_autonomy_reichskommissariat_DEF:0 "the Reichskommissariat Serbien"
 SER_GER_autonomy_military_administration_ger:0 "Territory of the Military Commander in Serbia"
 SER_GER_autonomy_military_administration_ger_DEF:0 "the Territory of the Military Commander in Serbia"
  

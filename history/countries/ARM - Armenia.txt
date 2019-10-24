@@ -1,4 +1,4 @@
-capital = 354
+﻿capital = 354
 
 oob = "BHU_1936"
 
@@ -31,7 +31,7 @@ set_national_unity = 0.8
 	set_technology = {
 		tech_support = 1
 		tech_recon = 1
-		modern_support_weapons = 1
+		support_weapons = 1
 		gw_artillery = 1
 
 		#doctrines

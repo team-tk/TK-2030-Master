@@ -241,11 +241,6 @@ GER_greater_germanic_reich = {
     color_ui = rgb { 0  0  0 }	
 }
 
-RK_greater_germanic_reich = {
-	color = rgb { 0  0  0 }
-    color_ui = rgb { 0  0  0 }	
-}
-
 SWI_alamannia = {
 	color = rgb { 0 153 0 }
 	color_ui = rgb { 0 197 146 }

@@ -395,15 +395,11 @@ focus_tree = {
 			factor = 20
 		}	
 		completion_reward = {
-		
-		
-		
 			hidden_effect = {
-			
-			add_ideas = {
-			fog_dictatorship_de
-			}
-
+				set_rule = {
+					can_declare_war_on_same_ideology = yes
+					can_puppet = yes
+				}
 			}
 			custom_effect_tooltip = World_Wide_Defense_of_Freedom_tt
 		}

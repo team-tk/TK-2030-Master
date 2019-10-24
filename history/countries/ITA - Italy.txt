@@ -30,8 +30,6 @@ add_ideas = {
 
 add_ideas = {
 fog_dictatorship
-foc_congress_rubber
-foj_kangaroo
 religion_catholicism
 }
 
@@ -146,8 +144,6 @@ if = {
 		type = annex_everything
 	}
 	give_guarantee = ALB
-	
-
 
 1939.1.1 = {
 
@@ -195,7 +191,7 @@ if = {
 		interwar_artillery = 1
 		interwar_antitank = 1
 		infantry_weapons2 = 1
-		modern_support_weapons = 1
+		support_weapons = 1
 		support_weapons2 = 1
 		basic_submarine = 1
 		basic_destroyer = 1
@@ -269,7 +265,7 @@ if = {
 	}
 	
 	set_stability = 0.8
-	#GER = { add_to_faction = ITA }
+	GER = { add_to_faction = ITA }
 }
 
 
@@ -296,16 +292,9 @@ create_country_leader = {
 	picture = "Portrait_Italy_Benito_Mussolini.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Benito Mussolini"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "Portrait_Italy_Benito_Mussolini.dds"
-	expire = "1965.1.1"
-	ideology = strasserism_ideology
-	traits = { }
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -321,7 +310,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ferruccio Parri"
 	desc = "POLITICS_FERRUCCIO_PARRI_DESC"
-	picture = "Italy_Social Democratic_Ferruccio_Parri.dds"
+	picture = "GFX_portrait_italy_ferruccio_parri"
 	expire = "1965.1.1"
 	ideology = social_democracy
 	traits = {
@@ -330,41 +319,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ferruccio Parri"
-	desc = "POLITICS_FERRUCCIO_PARRI_DESC"
-	picture = "Italy_Social Democratic_Ferruccio_Parri.dds"
+	name = "Palmiro Togliatti"
+	desc = "POLITICS_PALMIRO_TOGLIATTI_DESC"
+	picture = "GFX_portrait_ita_palmiro_togliatti"
 	expire = "1965.1.1"
-	ideology = progressivism_ideology
+	ideology = marxism
 	traits = {
 		
 	}
-}
-
-create_country_leader = {
-	name = "Palmiro Togliatti"
-	desc = "POLITICS_PALMIRO_TOGLIATTI_DESC"
-	picture = "Italy_Communist_Palmiro_Togliatti.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Palmiro Togliatti"
-	desc = "POLITICS_PALMIRO_TOGLIATTI_DESC"
-	picture = "Italy_Communist_Palmiro_Togliatti.dds"
-	expire = "1965.1.1"
-	ideology = maoism_ideology
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Palmiro Togliatti"
-	desc = "POLITICS_PALMIRO_TOGLIATTI_DESC"
-	picture = "Italy_Communist_Palmiro_Togliatti.dds"
-	expire = "1965.1.1"
-	ideology = trotskyism_ideology
-	traits = { }
 }
 
 create_country_leader = {
@@ -372,15 +334,9 @@ create_country_leader = {
 	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
-	traits = { }
-}
-
-create_country_leader = {
-	name = "Victor Emmanuel III"
-	picture = "Portrait_Italy_Victor_Emmanuel_III.dds"
-	expire = "1965.1.1"
-	ideology = fascist_monarchy
-	traits = { }
+	traits = {
+		
+	}
 }
 
 create_country_leader = {
@@ -405,14 +361,6 @@ create_country_leader = {# Luigi Einaudi
 	picture = "Portrait_ITA_Luigi_Einaudi.tga"
 	expire = "1965.1.1"
 	ideology = liberalism_ideology
-	traits = { }
-}
-
-create_country_leader = {# Luigi Einaudi
-	name = "Luigi Einaudi"
-	picture = "Portrait_ITA_Luigi_Einaudi.tga"
-	expire = "1965.1.1"
-	ideology = libertarianism_ideology
 	traits = { }
 }
 
@@ -1509,194 +1457,4 @@ if = {
 			}
 		}
 	}
-}
-
-1941.1.1 = {
-    #puppet = MNT
-    GER = { add_to_faction = ITA }
-
-    oob = "ITA_1941"
-	
-	add_political_power = 1500
-	
-	white_peace = ETH
-	
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		remove_ideas = MTG_naval_treaty_adherent
-	}
-
-complete_national_focus = ITA_extra_tech_slot
-complete_national_focus = ITA_industrial_effort_2
-complete_national_focus = ITA_industrial_effort
-complete_national_focus = ITA_ethiopian_war_logistics
-complete_national_focus = ITA_italian_highways
-complete_national_focus = ITA_army_primacy
-complete_national_focus = ITA_mare_nostrum
-complete_national_focus = ITA_modernized_army
-complete_national_focus = ITA_german_millitary_cooperation
-complete_national_focus = ITA_german_rd_treaty
-complete_national_focus = ITA_pact_of_steel
-complete_national_focus = ITA_bulgaria_friend
-complete_national_focus = ITA_slovenia_dalmatia_claims
-complete_national_focus = ITA_victoryinETH
-complete_national_focus = ITA_air_innovation_2
-complete_national_focus = ITA_air_innovation
-complete_national_focus = ITA_albania_war_goal
-complete_national_focus = ITA_romania_friend
-complete_national_focus = ITA_modernized_artillery
-complete_national_focus = ITA_bomber_effort
-complete_national_focus = ITA_light_ship_effort
-complete_national_focus = ITA_escort_effort
-complete_national_focus = ITA_secret_weapons
-complete_national_focus = ITA_greece_war_goal
-
-	set_technology = {
-		improved_light_tank = 1 
-		basic_medium_tank = 1 
-		CAS2 = 1
-		heavy_fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		modern_support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-		improved_medium_tank = 1
-		improved_heavy_tank = 1
-		improved_infantry_weapons_2 = 1
-		support_weapons3 = 1
-		mechanised_infantry = 1
-		tech_mountaineers2 = 1
-		tech_engineers2 = 1
-		tech_recon2 = 1
-		tech_field_hospital = 1
-		artillery1 = 1
-		artillery2 = 1
-		artillery3 = 1
-		antiair1 = 1
-		antiair2 = 1
-		antitank1 = 1
-		antitank2 = 1
-		antitank3 = 1
-
-		#doctrines 
-		prepared_defense = 1
-		grand_assault = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-		subsidiary_carrier_role = 1
-		#air
-		force_rotation = 1
-		fighter_baiting = 1
-		low_echelon_support = 1
-		dispersed_fighting = 1
-		operational_destruction = 1
-		fighter_veteran_initiative = 1
-		naval_strike_torpedo_tactics = 1
-
-
-     	#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-		improved_computing_machine = 1
-		improved_decimetric_radar = 1
-		improved_encryption = 1
-		improved_decryption = 1
-
-		#industry
-	    basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		assembly_line_production = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		fuel_refining2 = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-		improved_equipment_conversion = 1
-}
-if = {
-		limit = {
-			not = { has_dlc = "Man the Guns"}
-		}
-		set_technology = {
-			basic_submarine = 1
-			improved_submarine = 1
-			improved_destroyer = 1
-			basic_light_cruiser = 1
-			improved_light_cruiser = 1
-			basic_battleship = 1
-			basic_carrier = 1
-			improved_carrier = 1
-		}
-		set_naval_oob = "ITA_1941_naval_legacy"
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-			basic_ship_hull_submarine = 1
-			improved_ship_hull_submarine = 1
-			improved_ship_hull_light = 1
-			improved_ship_hull_cruiser = 1
-			basic_ship_hull_heavy = 1
-			basic_ship_hull_carrier = 1
-			improved_ship_hull_carrier = 1
-			dp_secondary_battery = 1
-			improved_sonar = 1
-		}
-		set_naval_oob = "ITA_1941_naval_mtg"
-
-	}
-	
-	add_ideas = {
-	age_18 age_35
-	limited_exports
-	cons_expanded_draft
-	war_economy
-	ITA_giovanni_marinelli
-	ITA_giacomo_acerbo
-	emilio_de_bono
-	vittorio_ambrosio
-	fiat
-	beretta
-}
-
-set_stability = 0.8
-set_war_support = 0.8
-	
-	}
-	
-	
-1946.1.1 = {
-oob = "ITA_1946"
-set_cosmetic_tag = ITA_italian_empire
-
-create_faction = Impero_Romano
-add_to_faction = ITA
-add_to_faction = CRO
-add_to_faction = SER
-add_to_faction = BUL
-add_to_faction = TUR
-add_to_faction = IRQ
-
 }

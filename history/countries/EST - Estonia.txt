@@ -1,4 +1,4 @@
-capital = 13
+﻿capital = 13
 
 oob = "EST_1936"
 
@@ -80,34 +80,10 @@ neutrality = 50
 }
 
 
-
-
 create_country_leader = {
 	name = "Konstantin Päts"
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
-	picture = "Estonia_Authoritarian_Konstantin_Pats.dds"
-	expire = "1965.1.1"
-	ideology = oligarchism
-	traits = {
-		exiled
-	}
-}
-
-create_country_leader = {
-	name = "Konstantin Päts"
-	desc = "POLITICS_KONSTANTIN_PATS_DESC"
-	picture = "Estonia_Authoritarian_Konstantin_Pats.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		exiled
-	}
-}
-
-create_country_leader = {
-	name = "Konstantin Päts"
-	desc = "POLITICS_KONSTANTIN_PATS_DESC"
-	picture = "Estonia_Authoritarian_Konstantin_Pats.dds"
+	picture = "GFX_Portrait_estonia_konstantin_pats"
 	expire = "1965.1.1"
 	ideology = agrarianism
 	traits = {
@@ -118,7 +94,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Konstantin Päts"
 	desc = "POLITICS_KONSTANTIN_PATS_DESC"
-	picture = "Estonia_Authoritarian_Konstantin_Pats.dds"
+	picture = "GFX_Portrait_estonia_konstantin_pats"
 	expire = "1965.1.1"
 	ideology = liberalism_ideology
 	traits = { }
@@ -210,17 +186,6 @@ create_country_leader = {
 			picture = "gfx/leaders/EST/frederik_karl.dds"
 			expire = "1965.1.1"
 			ideology = absolutism
-			traits = {
-			    political_dancer
-			}
-		}
-		
-		create_country_leader = {
-			name = "Friedrich Karl I"
-			desc = "KARL_DESC"
-			picture = "gfx/leaders/EST/frederik_karl.dds"
-			expire = "1965.1.1"
-			ideology = fascist_monarchy
 			traits = {
 			    political_dancer
 			}

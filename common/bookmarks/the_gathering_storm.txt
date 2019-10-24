@@ -11,28 +11,28 @@ bookmarks = {
 			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				fog_democratic
 				FRA_victors_of_wwi
+				FRA_disjointed_government
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-				FRA_go_with_britain
-				FRA_colonial_investments
-				FRA_action_francaise
+				FRA_initiate_government_reform
+				FRA_support_status_quo
+				FRA_revise_versailles
 			}
 		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-			fog_democratic
-			usa_american_constitution
-			usa_nation_on_wheels
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
 			}
 			focuses = {
-			USA_Take_Advantage_of_US_Industrial_Superiority
-			USA_World_Wide_Defense_of_Freedom
-			USA_Embargo_Japan
+				USA_war_plan_black
+				USA_limited_intervention
+				USA_reestablish_the_gold_standard
 			}
 		}
 		"ENG"={
@@ -40,9 +40,9 @@ bookmarks = {
 			ideology = democratic
 			available = { has_dlc = "Man the Guns" }
 			ideas = {
-			fog_democratic
-			ENG_the_war_to_end_all_wars
-			george_v
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
 			}
 			focuses = {
 				ENG_imperial_federation
@@ -55,9 +55,9 @@ bookmarks = {
 			ideology = democratic
 			available = { NOT = { has_dlc = "Man the Guns" } }
 			ideas = {
-			fog_democratic
-			ENG_the_war_to_end_all_wars
-			george_v
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
 			}
 			focuses = {
 				tizard_mission_focus
@@ -70,9 +70,9 @@ bookmarks = {
 			ideology = fascism
 			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
-			fog_dictatorship
-			general_staff
-			GER_allgemeine_SS1
+				sour_loser
+				general_staff
+				GER_mefo_bills_1
 			}
 			focuses = {
 				GER_thousand_year_reich
@@ -85,10 +85,9 @@ bookmarks = {
 			ideology = fascism
 			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
-			fog_dictatorship
 				sour_loser
 				general_staff
-				#GER_mefo_bills_1
+				GER_mefo_bills_1
 			}
 			focuses = {
 				GER_anschluss
@@ -100,7 +99,6 @@ bookmarks = {
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-			fog_dictatorship
 				vittoria_mutilata
 				victor_emmanuel
 			}	
@@ -114,9 +112,9 @@ bookmarks = {
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
-			fog_dictatorship_mo
-			JAP_militarism
-			JAP_hirohito
+				state_shintoism
+				JAP_zaibatsus
+				JAP_militarism
 			}	
 			focuses = {
 				JAP_the_zero
@@ -128,9 +126,8 @@ bookmarks = {
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
-			fog_dictatorship_lw
-			home_of_revolution2
-			sov_red_army
+				trotskyite_plot
+				home_of_revolution
 			}
 			focuses = {
 				SOV_Escalate_the_Purge
