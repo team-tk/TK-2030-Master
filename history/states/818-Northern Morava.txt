@@ -39,6 +39,10 @@ state=
 			owner = SER
 			controller = SER
 			}
+		2016.1.1 = {
+			owner = KOS
+			controller = KOS
+			}
 	}
 
 	provinces={

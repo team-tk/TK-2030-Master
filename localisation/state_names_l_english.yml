@@ -581,7 +581,7 @@
  STATE_580:0 "Tobolsk"
  STATE_581:0 "Northern Urals"
  STATE_582:0 "Southern Urals"
- STATE_583:0 "Kustanay"
+ STATE_583:0 "Kostanay"
  STATE_584:0 "Ashkhabad"
  STATE_585:0 "Urgench"
  STATE_586:0 "Alma-Ata"
@@ -813,3 +813,4 @@
  STATE_812:0 "West Bank"
  STATE_813:0 "West Berlin"
  STATE_814:0 "New Guinea"
+ STATE_846:0 "Siberian Coast"

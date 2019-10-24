@@ -1,4 +1,4 @@
-﻿capital = 584
+capital = 584
 
 #oob = ""
 

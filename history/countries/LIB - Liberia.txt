@@ -1,4 +1,4 @@
-﻿capital = 298
+capital = 298
 
 oob = "LIB_1936"
 
@@ -71,6 +71,14 @@ create_country_leader = {
 	traits = { resurgent_politician }
 }
 create_country_leader = {
+	name = "Charles King"
+	desc = "POLITICS_CHARLES_KING_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = center_right
+	traits = { resurgent_politician }
+}
+create_country_leader = {
 	name = "Edwin Barclay"
 	desc = "POLITICS_EDWIN_BARCLAY_DESC"
 	picture = "gfx/leaders/DARK/Portrait_DARK_Edwin_Barclay.dds"
@@ -83,10 +91,24 @@ create_country_leader = {
 	desc = "POLITICS_CHARLES_KING_DESC"
 	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = anti_revisionism
-	traits = {
-		#
-	}
+	ideology = marxism
+	traits = { }
+}
+create_country_leader = {
+	name = "Didwho Welleh Twe"
+	desc = "POLITICS_CHARLES_KING_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+create_country_leader = {
+	name = "Didwho Welleh Twe"
+	desc = "POLITICS_CHARLES_KING_DESC"
+	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
 }
 create_country_leader = {
 	name = "Jeh"
@@ -94,10 +116,27 @@ create_country_leader = {
 	picture = "gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
 	expire = "1965.1.1"
 	ideology = rexism
-	traits = {
-		#
-	}
+	traits = { }
 }
+
+create_country_leader = {
+	name = "Jeh"
+	desc = "POLITICS_JEH_DESC"
+	picture = "gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Jeh"
+	desc = "POLITICS_JEH_DESC"
+	picture = "gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
 
 create_field_marshal = {
 	name = "Alford Russ"

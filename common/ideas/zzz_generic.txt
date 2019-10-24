@@ -141,8 +141,6 @@ ideas = {
 
 			
 			modifier = {
-				fascism_drift = 0.1
-				nazism_drift = 0.1
 				nationalism_drift = 0.1
 			}
 		}
@@ -181,8 +179,6 @@ ideas = {
 			modifier = {
 				#justify_war_goal_time = -0.25
 				communism_drift = 0.1
-				syndicalism_drift = 0.1
-				socialism_drift = 0.1
 			}
 		}
 
@@ -203,8 +199,11 @@ ideas = {
 			modifier = {
 				fascism_drift = 0.1
 				fascism_acceptance = 85
+				strasserism_acceptance = 85
 				nazism_acceptance = 85
+				paganism_acceptance = 85
 				nationalism_acceptance = 85
+				fascist_monarchism_acceptance = 85
 			}
 		}
 		
@@ -228,6 +227,8 @@ ideas = {
 				communism_acceptance = 85
 				syndicalism_acceptance = 85
 				socialism_acceptance = 85
+				maoism_acceptance = 85
+				trotskyism_acceptance = 85
 			}
 		}
 		democratic_influence = {
@@ -250,6 +251,11 @@ ideas = {
 				democratic_acceptance = 85
 				conservatism_acceptance = 85
 				socdem_acceptance = 85
+				demsoc_acceptance = 85
+				demnat_acceptance = 85
+				progressivism_acceptance = 85
+				libertarianism_acceptance = 85
+				christian_democratic_acceptance = 85
 			}
 		}
 		neutrality_influence = {
@@ -268,8 +274,9 @@ ideas = {
 			modifier = {
 				neutrality_drift = 0.1
 				neutrality_acceptance = 85
-				theocratic_acceptance = 85
-				monarchism_acceptance = 85
+				reactionary_acceptance = 85
+				nationalism_acceptance = 85
+				conservatism_acceptance = 85
 			}
 		}
 		
@@ -289,9 +296,13 @@ ideas = {
 			
 			modifier = {
 				nationalism_drift = 0.1
+				neutrality_acceptance = 85
+				reactionary_acceptance = 85
 				nationalism_acceptance = 85
+				conservatism_acceptance = 85
 				nazism_acceptance = 85
 				fascism_acceptance = 85
+				strasserism_acceptance = 85
 			}
 		}
 		
@@ -314,6 +325,8 @@ ideas = {
 				nazism_acceptance = 85
 				nationalism_acceptance = 85
 				fascism_acceptance = 85
+				strasserism_acceptance = 85
+				paganism_acceptance = 85
 			}
 		}
 		
@@ -337,6 +350,8 @@ ideas = {
 				communism_acceptance = 85
 				syndicalism_acceptance = 85
 				socialism_acceptance = 85
+				maoism_acceptance = 85
+				trotskyism_acceptance = 85
 			}
 		}
 		
@@ -360,6 +375,8 @@ ideas = {
 				communism_acceptance = 85
 				syndicalism_acceptance = 85
 				socialism_acceptance = 85
+				maoism_acceptance = 85
+				trotskyism_acceptance = 85
 			}
 		}
 		
@@ -378,9 +395,9 @@ ideas = {
 			
 			modifier = {
 				monarchism_drift = 0.1
-				neutrality_acceptance = 85
 				theocratic_acceptance = 85
 				monarchism_acceptance = 85
+				fascist_monarchism_acceptance = 85
 			}
 		}
 		
@@ -399,13 +416,13 @@ ideas = {
 			
 			modifier = {
 				theocratic_drift = 0.1
-				neutrality_acceptance = 85
 				theocratic_acceptance = 85
 				monarchism_acceptance = 85
+				fascist_monarchism_acceptance = 85
 			}
 		}
 		
-				conservatism_influence = {
+			conservatism_influence = {
 			
 			
 			allowed = {
@@ -425,6 +442,11 @@ ideas = {
 				democratic_acceptance = 85
 				conservatism_acceptance = 85
 				socdem_acceptance = 85
+				demsoc_acceptance = 85
+				demnat_acceptance = 85
+				progressivism_acceptance = 85
+				libertarianism_acceptance = 85
+				christian_democratic_acceptance = 85
 			}
 		}
 		
@@ -448,6 +470,319 @@ ideas = {
 				democratic_acceptance = 85
 				conservatism_acceptance = 85
 				socdem_acceptance = 85
+				demsoc_acceptance = 85
+				demnat_acceptance = 85
+				progressivism_acceptance = 85
+				libertarianism_acceptance = 85
+				christian_democratic_acceptance = 85
+			}
+		}
+		
+		progressivism_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = progressivism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				progressivism_drift = 0.1
+				democratic_acceptance = 85
+				conservatism_acceptance = 85
+				socdem_acceptance = 85
+				demsoc_acceptance = 85
+				demnat_acceptance = 85
+				progressivism_acceptance = 85
+				libertarianism_acceptance = 85
+				christian_democratic_acceptance = 85
+			}
+		}
+		
+		libertarianism_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = libertarianism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				libertarianism_drift = 0.1
+				democratic_acceptance = 85
+				conservatism_acceptance = 85
+				socdem_acceptance = 85
+				demsoc_acceptance = 85
+				demnat_acceptance = 85
+				progressivism_acceptance = 85
+				libertarianism_acceptance = 85
+				christian_democratic_acceptance = 85
+			}
+		}
+		
+		
+		christian_democratic_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = christian_democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				christian_democratic_drift = 0.1
+				democratic_acceptance = 85
+				conservatism_acceptance = 85
+				socdem_acceptance = 85
+				demsoc_acceptance = 85
+				demnat_acceptance = 85
+				progressivism_acceptance = 85
+				libertarianism_acceptance = 85
+				christian_democratic_acceptance = 85
+			}
+		}
+		
+		demnat_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = demnat
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				demnat_drift = 0.1
+				democratic_acceptance = 85
+				conservatism_acceptance = 85
+				socdem_acceptance = 85
+				demsoc_acceptance = 85
+				demnat_acceptance = 85
+				progressivism_acceptance = 85
+				libertarianism_acceptance = 85
+				christian_democratic_acceptance = 85
+			}
+		}
+		
+		demsoc_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = demsoc
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				demsoc_drift = 0.1
+				democratic_acceptance = 85
+				conservatism_acceptance = 85
+				socdem_acceptance = 85
+				demsoc_acceptance = 85
+				demnat_acceptance = 85
+				progressivism_acceptance = 85
+				libertarianism_acceptance = 85
+				christian_democratic_acceptance = 85
+			}
+		}
+		
+		reactionary_influence = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = reactionary
+			}
+
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				reactionary_drift = 0.1
+				neutrality_acceptance = 85
+				reactionary_acceptance = 85
+				nationalism_acceptance = 85
+				conservatism_acceptance = 85
+			}
+		}
+		
+		maoism_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = maoism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				maoism_drift = 0.1
+				communism_acceptance = 85
+				syndicalism_acceptance = 85
+				socialism_acceptance = 85
+				maoism_acceptance = 85
+				trotskyism_acceptance = 85
+			}
+		}
+		
+		trotskyism_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = trotskyism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				trotskyism_drift = 0.1
+				communism_acceptance = 85
+				syndicalism_acceptance = 85
+				socialism_acceptance = 85
+				maoism_acceptance = 85
+				trotskyism_acceptance = 85
+			}
+		}
+		
+		paganism_influence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = paganism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				paganism_drift = 0.1
+				nazism_acceptance = 85
+				nationalism_acceptance = 85
+				fascism_acceptance = 85
+				strasserism_acceptance = 85
+				paganism_acceptance = 85
+			}
+		}
+		
+		strasserism_influence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = strasserism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				strasserism_drift = 0.1
+				nazism_acceptance = 85
+				nationalism_acceptance = 85
+				fascism_acceptance = 85
+				strasserism_acceptance = 85
+				paganism_acceptance = 85
+			}
+		}
+		
+		fascist_monarchism_influence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascist_monarchism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascist_monarchism_drift = 0.1
+				fascist_monarchism_acceptance = 85
+				monarchism_acceptance = 85
+				theocratic_acceptance = 85
+				nazism_acceptance = 85
+				nationalism_acceptance = 85
+				fascism_acceptance = 85
+				strasserism_acceptance = 85
+				paganism_acceptance = 85
+			}
+		}
+		
+		islamism_influence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = islamism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				islamism_drift = 0.1
+				islamism_acceptance = 85
 			}
 		}
 		

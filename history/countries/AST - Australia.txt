@@ -1,4 +1,4 @@
-﻿capital = 285
+capital = 285
 
 add_ideas = {
 fog_democratic
@@ -123,9 +123,25 @@ create_country_leader = {
 	picture = "Portrait_Australia_John_Curtin.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "John Curtin"
+	desc = "POLITICS_JOHN_CURTIN_DESC"
+	picture = "Portrait_Australia_John_Curtin.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "John Curtin"
+	desc = "POLITICS_JOHN_CURTIN_DESC"
+	picture = "Portrait_Australia_John_Curtin.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
 }
 
 create_country_leader = {
@@ -134,9 +150,7 @@ create_country_leader = {
 	picture = "GFX_AST_eric_campbell"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
+	traits = { }
 }
 
 create_country_leader = {
@@ -145,9 +159,25 @@ create_country_leader = {
 	picture = "GFX_AST_richard_dixon"
 	expire = "1965.1.1"
 	ideology = stalinism
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Richard Dixon"
+	desc = "POLITICS_RICHARD_DIXON_DESC"
+	picture = "GFX_AST_richard_dixon"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Richard Dixon"
+	desc = "POLITICS_RICHARD_DIXON_DESC"
+	picture = "GFX_AST_richard_dixon"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
 }
 
 ### PLACEHOLDER
@@ -157,6 +187,24 @@ create_country_leader = {
 	picture = "GFX_AST_eric_campbell"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Eric Campbell"
+	desc = "POLITICS_ERIC_CAMPBELL_DESC"
+	picture = "GFX_AST_eric_campbell"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Eric Campbell"
+	desc = "POLITICS_ERIC_CAMPBELL_DESC"
+	picture = "GFX_AST_eric_campbell"
+	expire = "1965.1.1"
+	ideology = ultranationalism
 	traits = { }
 }
 
@@ -184,7 +232,7 @@ create_country_leader = {
 	desc = "POLITICS_EARLE_PAGE_DESC"
 	picture = "GFX_AST_earle_page"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = agrarianism
 	traits = { }
 }
 
@@ -196,6 +244,7 @@ create_country_leader = {
 	ideology = classical_liberalism
 	traits = { }
 	}
+	
 create_country_leader = {
 	name = "Joseph Lyons"
 	desc = "POLITICS_JOSEPH_LYONS_DESC"
@@ -213,6 +262,14 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Julius Streeter"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
 
 
 create_country_leader = {
@@ -220,6 +277,14 @@ create_country_leader = {
 	picture = "Portrait_Australia_GG_John_Curtin.dds"
 	expire = "1965.1.1"
 	ideology = constitutional
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Governor General John Curtin"
+	picture = "Portrait_Australia_GG_John_Curtin.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
 	traits = { }
 }
 

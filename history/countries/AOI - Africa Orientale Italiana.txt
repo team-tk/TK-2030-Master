@@ -1,4 +1,4 @@
-﻿capital = 271
+capital = 271
 
 OOB = "AOI_colonial_infantry"
 

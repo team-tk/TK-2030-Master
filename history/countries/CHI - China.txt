@@ -1,4 +1,4 @@
-﻿capital = 613 # Nanjing
+capital = 613 # Nanjing
 
 oob = "CHI_1936"
 if = {
@@ -129,6 +129,61 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Chiang Kai-Shek"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = reactionary_ideology
+	traits = {
+		generallissimo
+	}
+}
+
+create_country_leader = {
+	name = "Chiang Kai-Shek"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = nationalism_ideology
+	traits = {
+		generallissimo
+	}
+}
+
+create_country_leader = {
+	name = "Chiang Kai-Shek"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = national_conservatism
+	traits = {
+		generallissimo
+	}
+}
+
+create_country_leader = {
+	name = "Chiang Kai-Shek"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = center_right
+	traits = {
+		generallissimo
+	}
+}
+
+create_country_leader = {
+	name = "Mao Zedong"
+	desc = "POLITICS_MAO_ZEDONG_DESC"
+	picture = "GFX_portrait_prc_mao_zedong"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
 	name = "Zhang Guotao"
 	desc = "POLITICS_ZHANG_GUOTAO_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
@@ -140,14 +195,52 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Zhang Guotao"
+	desc = "POLITICS_ZHANG_GUOTAO_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "Zhang Guotao"
+	desc = "POLITICS_ZHANG_GUOTAO_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
 	name = "Wang Jingwei"
 	desc = "POLITICS_WANG_JINGWEI_DESC"
 	picture = "GFX_portrait_chi_wang_jingwei"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Wang Jingwei"
+	desc = "POLITICS_WANG_JINGWEI_DESC"
+	picture = "GFX_portrait_chi_wang_jingwei"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Wang Jingwei"
+	desc = "POLITICS_WANG_JINGWEI_DESC"
+	picture = "GFX_portrait_chi_wang_jingwei"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = { }
 }
 
 create_country_leader = {
@@ -156,9 +249,25 @@ create_country_leader = {
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy
-	traits = {
-		#
-	}
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Weng Wenhao" 
+	desc = "POLITICS_ZHANG_LAN_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Weng Wenhao" 
+	desc = "POLITICS_ZHANG_LAN_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
 }
 
 create_country_leader = {
@@ -172,13 +281,12 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Aisin Gioro Puyi"
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
-	expire = "1960.1.1"
-	ideology = taoism
-	traits = {
-		warrior_code
-	}
+	name = "Wang Jingwei"
+	desc = "POLITICS_WANG_JINGWEI_DESC"
+	picture = "GFX_portrait_chi_wang_jingwei"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
+	traits = { }
 }
 
 add_opinion_modifier = { target = PRC modifier = hostile_status }
@@ -383,4 +491,107 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
+}
+
+1941.1.1 = {
+	
+add_political_power = 900
+
+oob = "CHI_1941"
+
+set_technology = {
+		improved_light_tank = 1 
+		basic_light_tank = 1
+		basic_medium_tank = 1 
+		CAS1 = 1
+		CAS2 = 1
+		heavy_fighter1 = 1
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		infantry_weapons1 = 1
+		improved_infantry_weapons = 1
+		modern_support_weapons = 1
+		support_weapons2 = 1
+		paratroopers = 1
+		basic_heavy_cruiser = 1
+		improved_heavy_cruiser = 1
+		improved_battleship = 1
+		early_carrier = 1
+		basic_carrier = 1
+		improved_carrier = 1
+		improved_medium_tank = 1
+		tech_engineers2 = 1
+		tech_recon2 = 1
+		tech_field_hospital = 1
+		artillery1 = 1
+		artillery2 = 1
+		artillery3 = 1
+		antitank1 = 1
+		antitank2 = 1
+		antitank3 = 1
+		basic_destroyer = 1
+		improved_destroyer = 1
+		improved_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_battlecruiser = 1
+		early_battleship = 1
+		early_submarine = 1
+		basic_battlecruiser = 1
+		landing_craft = 1
+
+		#doctrines 
+		pocket_defence = 1
+		defence_in_depth = 1
+		large_front_operations = 1
+		deep_operations = 1
+		#fleet
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+		subsidiary_carrier_role = 1
+		#air 
+        formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
+		fighter_ace_initiative = 1
+
+     	#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+		improved_computing_machine = 1
+		improved_decimetric_radar = 1
+		improved_encryption = 1
+		improved_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		assembly_line_production = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
+		concentrated_industry4 = 1
+}
+}
+
+
+1946.1.1 = {
+oob = "CHI_1946"
 }

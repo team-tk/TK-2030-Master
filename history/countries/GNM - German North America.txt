@@ -1,4 +1,4 @@
-﻿capital = 358
+capital = 358
 
 oob = "empty"
 
@@ -15,7 +15,7 @@ set_technology = {
 	interwar_antitank = 1
 	infantry_weapons2 = 1
 	improved_infantry_weapons = 1
-	support_weapons = 1
+	modern_support_weapons = 1
 	support_weapons2 = 1
 	paratroopers = 1
 
@@ -94,14 +94,6 @@ limited_exports
 	unity5
 }
 
-create_country_leader = {
-	name = "Heinrich Himmler"
-	desc = ""
-	picture = "gfx/leaders/GER/Portrait_Germany_Heinrich_Himmler.dds"
-	expire = "1965.1.1"
-	ideology = nazism_ideology
-	traits = { dictator }
-}
 
 create_country_leader = {
 	name = "George Lincoln Rockwell"
@@ -120,6 +112,7 @@ create_country_leader = {
 	ideology = nazism_ideology
 	traits = { }
 }
+
 
 create_country_leader = {
 	name = "John Smith"

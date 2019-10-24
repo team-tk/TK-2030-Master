@@ -1,4 +1,4 @@
-﻿capital = 12
+capital = 12
 
 oob = "LAT_1936"
 if = {
@@ -97,6 +97,14 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Janis Stelmahers"
+	picture = "gfx/leaders/LAT/Portrait_Janis_Stelmahers.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
 
 create_country_leader = {
 	name = "Gustavs Celmiņš"
@@ -113,6 +121,24 @@ create_country_leader = {
 	picture = "gfx/leaders/LAT/Portrait_Janis_Kalnberzins.dds"
 	expire = "1965.1.1"
 	ideology = marxism
+	traits = { General Secretary }
+}
+
+create_country_leader = {
+	name = "Jānis Kalnbērziņš"
+	desc = "POLITICS_JANIS_KALNBERZINS_DESC"
+	picture = "gfx/leaders/LAT/Portrait_Janis_Kalnberzins.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { General Secretary }
+}
+
+create_country_leader = {
+	name = "Jānis Kalnbērziņš"
+	desc = "POLITICS_JANIS_KALNBERZINS_DESC"
+	picture = "gfx/leaders/LAT/Portrait_Janis_Kalnberzins.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
 	traits = { General Secretary }
 }
 
@@ -160,11 +186,20 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Duke Adolf Friedrich of Mecklenburg"
+	name = "Adolf Friedrich of Mecklenburg"
 	desc = "POLITICS_ADOLF_FRIEDRICH_DESC"
 	picture = "Portrait_Baltic_Adolf_Friedrich.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Adolf Friedrich of Mecklenburg"
+	desc = "POLITICS_ADOLF_FRIEDRICH_DESC"
+	picture = "Portrait_Baltic_Adolf_Friedrich.tga"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
 	traits = { }
 }
 
@@ -174,6 +209,15 @@ create_country_leader = {
 	picture = "gfx/leaders/LAT/Portrait_Karlis_Lobe.dds"
 	expire = "1965.1.1"
 	ideology = military_dictatorship
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Kārlis Lobe"
+	desc = ""
+	picture = "gfx/leaders/LAT/Portrait_Karlis_Lobe.dds"
+	expire = "1965.1.1"
+	ideology = paganism_ideology
 	traits = { }
 }
 

@@ -1,4 +1,4 @@
-﻿capital = 111
+capital = 111
 
 oob = "FIN_1936"
 if = {
@@ -104,6 +104,18 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Väinö Tanner"
+	desc = ""
+	picture = "Väinö_Tanner_-socdem.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = {
+		socialist
+		organizer
+	}
+}
+
+create_country_leader = {
 	name = "Niilo Wallari"
 	desc = ""
 	picture = "Niilo_Wallari_Socialist.dds"
@@ -134,6 +146,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Kyösti Kallio"
+	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
+	picture = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Risto Heikki Ryti"
 	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
 	picture = "Portrait_Finland_Risto_Heikki_Ryti.dds"
@@ -148,6 +169,24 @@ create_country_leader = {
 	picture = "gfx/leaders/FIN/Portrait_FIN_Aimo_Aaltonen.dds"
 	expire = "1965.1.1"
 	ideology = marxism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Aimo Aaltonen"
+	desc = "POLITICS_AIMO_AALTONEN_DESC"
+	picture = "gfx/leaders/FIN/Portrait_FIN_Aimo_Aaltonen.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Aimo Aaltonen"
+	desc = "POLITICS_AIMO_AALTONEN_DESC"
+	picture = "gfx/leaders/FIN/Portrait_FIN_Aimo_Aaltonen.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
 	traits = { }
 }
 
@@ -177,6 +216,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Hans Kalm"
+	picture = "Hans_Kalm_Nazism.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Kurt Martti"
 	picture = "Kurt_Martti_Fascist.dds"
 	expire = "1965.1.1"
@@ -192,6 +239,15 @@ create_country_leader = {
 	picture = "Portrait_Finland_Frederik_Kaarle_I.tga"
 	expire = "1965.1.1"
 	ideology = absolutism
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Frederik Kaarle I"
+	desc = "POLITICS_FREDERIK_KAARLE_DESC"
+	picture = "Portrait_Finland_Frederik_Kaarle_I.tga"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
 	traits = {}
 }
 
@@ -332,4 +388,68 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
+}
+
+1941.1.1 = {
+
+	add_political_power = 1000
+
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+
+	set_stability = 0.9
+	set_war_support = 0.9
+
+	oob = "FIN_1941"
+	set_technology = {
+		early_fighter = 1
+		early_bomber = 1
+		CAS1 = 1		
+		interwar_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		infantry_weapons2 = 1
+		modern_support_weapons = 1
+		support_weapons2 = 1
+
+		force_rotation = 1
+		fighter_baiting = 1
+
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+	
+
+	set_convoys = 10
 }

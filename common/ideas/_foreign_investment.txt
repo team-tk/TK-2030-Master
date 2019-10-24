@@ -20,6 +20,13 @@ ideas = {
 						has_government = nationalism
 						has_government = monarchism
 						has_government = theocratic
+						has_government = islamism
+					has_government = fascist_monarchism
+					has_government = paganism
+					has_government = strasserism
+					has_government = reactionary
+					has_government = trotskyism
+					has_government = maoism
 						has_idea = tariffs_high
 						has_idea = closed_economy
 					}
@@ -58,6 +65,12 @@ ideas = {
 						has_government = syndicalism
 						has_government = neutrality
 						has_government = nationalism
+						has_government = islamism
+					has_government = paganism
+					has_government = strasserism
+					has_government = reactionary
+					has_government = trotskyism
+					has_government = maoism
 					}
 				}
 				modifier = {
@@ -75,6 +88,8 @@ ideas = {
 				NOT = { has_government = communism }
 				NOT = { has_government = socialism }
 				NOT = { has_government = syndicalism }
+				NOT = { has_government = maoism }
+				NOT = { has_government = trotskyism }
 			}
 			
 			modifier = {
@@ -98,11 +113,11 @@ ideas = {
 				factor = 5
 				modifier = {
 					factor = 10
-					has_government = democratic
+					has_democratic_government = yes
 				}
 				modifier = {
 					factor = 0
-					has_government = communism
+					has_communist_government = yes
 				}
 				modifier = {
 					factor = 0
@@ -115,7 +130,7 @@ ideas = {
 				modifier = {
 					factor = 10
 					has_war = yes
-					has_government = democratic
+					has_democratic_government = yes
 					NOT = { has_idea = fdi_regulated }
 				}
 			}
@@ -158,6 +173,10 @@ ideas = {
 						has_government = nationalism
 						has_government = socialism
 						has_government = socdem
+						has_government = islamism
+					has_government = paganism
+					has_government = strasserism
+					has_government = reactionary
 					}
 				}
 			
@@ -179,6 +198,13 @@ ideas = {
 					has_government = theocratic
 					has_government = neutrality
 					has_government = nationalism
+					has_government = islamism
+					has_government = fascist_monarchism
+					has_government = paganism
+					has_government = strasserism
+					has_government = reactionary
+					has_government = trotskyism
+					has_government = maoism
 				}
 				NOT = {
 					has_idea = tariffs_none
@@ -205,7 +231,7 @@ ideas = {
    				factor = 1
 				modifier = {
 					factor = 100
-					has_government = communism
+					has_communis_government = yes
 				}
 				modifier = {
 					factor = 100

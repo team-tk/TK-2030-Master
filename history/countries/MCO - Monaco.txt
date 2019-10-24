@@ -1,4 +1,4 @@
-﻿capital = 799
+capital = 799
 
 oob = "MCO_1936"
 
@@ -48,5 +48,14 @@ create_country_leader = {
 	picture = "Portrait_Monaco_Loius.dds"
 	expire = "1960.1.1"
 	ideology = absolutism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Prince Louis II"
+	desc = ""
+	picture = "Portrait_Monaco_Loius.dds"
+	expire = "1960.1.1"
+	ideology = fascist_monarchy
 	traits = { }
 }

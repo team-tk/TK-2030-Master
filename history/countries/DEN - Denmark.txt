@@ -1,4 +1,4 @@
-﻿capital = 37
+capital = 37
 
 oob = "DEN_1936"
 if = {
@@ -115,6 +115,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Thorvald Stauning"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Mogens Fog"
 	picture = "Mogens_Fog_Socialist.dds"
 	expire = "1965.1.1"
@@ -151,11 +160,38 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Frits Clausen"
+	desc = "POLITICS_FRITS_CLAUSEN_DESC"
+	picture = "gfx/leaders/DEN/Portrait_Denmark_Frits_Clausen.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Aksel Larsen"
 	desc = "POLITICS_AKSEL_LARSEN_DESC"
 	picture = "Aksel_Larsen_communism.dds"
 	expire = "1965.1.1"
 	ideology = leninism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Aksel Larsen"
+	desc = "POLITICS_AKSEL_LARSEN_DESC"
+	picture = "Aksel_Larsen_communism.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Aksel Larsen"
+	desc = "POLITICS_AKSEL_LARSEN_DESC"
+	picture = "Aksel_Larsen_communism.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
 	traits = { }
 }
 
@@ -178,10 +214,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Peter Rochegune Munch"
+	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
+	picture = "Peter_Rochegune-_Denmark_Liberal.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Christian X"
 	picture = "Portrait_Denmark_Christian_X.dds"
 	expire = "1947.4.20"
 	ideology = constitutional
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Christian X"
+	picture = "Portrait_Denmark_Christian_X.dds"
+	expire = "1947.4.20"
+	ideology = fascist_monarchy
 	traits = { }
 }
 
@@ -296,4 +349,97 @@ if = {
 			rear_1_custom_slot = ship_light_medium_battery_1
 		}
 	}
+}
+
+1941.1.1 = {
+
+oob = "DEN_1941"
+
+	set_technology = {
+		improved_light_tank = 1 
+		basic_medium_tank = 1 
+		CAS2 = 1
+		heavy_fighter1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		modern_support_weapons = 1
+		support_weapons2 = 1
+		paratroopers = 1
+		improved_medium_tank = 1
+		improved_heavy_tank = 1
+		improved_infantry_weapons_2 = 1
+		support_weapons3 = 1
+		mechanised_infantry = 1
+		tech_mountaineers2 = 1
+		tech_engineers2 = 1
+		tech_recon2 = 1
+		tech_field_hospital = 1
+		artillery1 = 1
+		artillery2 = 1
+		artillery3 = 1
+		antiair1 = 1
+		antiair2 = 1
+		antitank1 = 1
+		antitank2 = 1
+		antitank3 = 1
+		fighter1 = 1
+		fighter2 = 1
+
+		#doctrines
+		delay = 1
+		elastic_defence = 1
+		armored_spearhead = 1
+		schwerpunk = 1
+		blitzkrieg = 1
+		kampfgruppe = 1 #MOBILE WARFARE
+		convoy_interdiction_ti = 1
+		unrestricted_submarine_warfare = 1
+		raider_patrols = 1
+		#air
+		formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
+		formation_fighting = 1
+		hunt_and_destroy = 1
+		combat_unit_destruction = 1
+
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+		improved_computing_machine = 1
+		improved_decimetric_radar = 1
+		improved_encryption = 1
+		improved_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		assembly_line_production = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		fuel_refining2 = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+		dispersed_industry4 = 1
+		improved_equipment_conversion = 1
+}
+
+
+
 }

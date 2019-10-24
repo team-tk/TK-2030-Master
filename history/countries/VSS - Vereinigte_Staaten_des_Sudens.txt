@@ -1,4 +1,4 @@
-﻿capital = 278 # Patagonia
+capital = 278 # Patagonia
 
 oob = "empty"
 

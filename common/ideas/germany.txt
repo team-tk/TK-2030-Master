@@ -3374,7 +3374,7 @@ ideas = {
 			available = {
 				OR = {
 			has_fascist_government = yes
-			has_government = theocratic
+			has_government = paganism
 			}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
@@ -3388,7 +3388,7 @@ ideas = {
 				NOT = {
 					OR = {
 			has_fascist_government = yes
-			has_government = theocratic
+			has_government = paganism
 			}
 				}
 			}
@@ -3408,7 +3408,7 @@ ideas = {
 				NOT = { has_country_flag = flight_of_hess }
 				OR = {
 					has_fascist_government = yes
-					has_government = theocratic
+					has_government = paganism
 					has_country_flag = GER_reinstated_nazi_leadership
 				}
 			}
@@ -3430,7 +3430,7 @@ ideas = {
 			available = {
 				OR = {
 					has_fascist_government = yes
-					has_government = theocratic
+					has_government = paganism
 					has_country_flag = GER_reinstated_nazi_leadership
 				}
 			}
@@ -3459,7 +3459,7 @@ ideas = {
 			available = {
 				OR = {
 					has_fascist_government = yes
-					has_government = theocratic
+					has_government = paganism
 					has_country_flag = GER_reinstated_nazi_leadership
 				}
 			}
@@ -3481,7 +3481,7 @@ ideas = {
 			available = {
 				OR = {
 					has_fascist_government = yes
-					has_government = theocratic
+					has_government = paganism
 					has_country_flag = GER_reinstated_nazi_leadership
 				}
 			}
@@ -3534,7 +3534,7 @@ ideas = {
 			available = {
 				OR = {
 				has_fascist_government = yes
-				has_government = theocratic
+				has_government = paganism
 				has_country_flag = GER_reinstated_nazi_leadership
 				}
 				#has_completed_focus = GER_four_year_plan
@@ -3693,7 +3693,7 @@ ideas = {
 				has_completed_focus = GER_oppose_hitler
 			}
 			
-			traits = { thule_society }
+			traits = { paganism_demagogue }
 
 			ai_will_do = {
 				factor = 0
@@ -4309,7 +4309,7 @@ ideas = {
 			available = {
 				OR = {
 				has_fascist_government = yes
-				has_government = theocratic
+				has_government = paganism
 				has_country_flag = GER_reinstated_nazi_leadership
 				}
 				#has_completed_focus = GER_hermann_goring_werke
@@ -5004,7 +5004,7 @@ ideas = {
 			available = {
 			OR = {
 				has_fascist_government = yes
-				has_government = theocratic
+				has_government = paganism
 			}
 			}
 						
@@ -5126,7 +5126,7 @@ ideas = {
 			available = {
 				OR = {
 					has_fascist_government = yes
-					has_government = theocratic
+					has_government = paganism
 					has_country_flag = GER_reinstated_nazi_leadership
 				}
 			}

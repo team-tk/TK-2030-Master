@@ -1,4 +1,4 @@
-﻿capital = 597
+capital = 597
 
 # oob = "SHN_1936"
 

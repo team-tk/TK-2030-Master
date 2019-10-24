@@ -8,6 +8,7 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = GER
+
 		}
 	}
 	
@@ -4853,7 +4854,7 @@ focus = {
 		icon = GFX_goal_nazi_germany_flag_goal
 		available = {
 			has_completed_focus = GER_legit_hitler
-			OR = { has_fascist_government = yes has_government = theocratic }
+			OR = { has_fascist_government = yes has_government = paganism }
 		}
 		x = 12
 		y = 9
@@ -4943,7 +4944,7 @@ focus = {
 		has_country_leader = { name = "Heinrich Himmler" }
 		}
 		
-		OR = { has_government = nazism has_government = theocratic }
+		OR = { has_government = nazism has_government = paganism }
 		
 		}
 		
@@ -7941,7 +7942,7 @@ focus = {
 		tooltip = nazi_government_tt
 		OR = {
 			GER = {has_government = nazism}
-			GER = {has_government = theocratic}
+			GER = {has_government = paganism}
 		}
 		}
 		

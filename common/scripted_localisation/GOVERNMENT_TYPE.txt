@@ -33,16 +33,3 @@ defined_text = { # Country
 		localization_key = FOG_AUTHORITARIAN_NAME
 	}
 }
-
-defined_text = { # Country
-	name = GetFogDictatorshipName
-	text = {
-		trigger = {
-			has_government = neutrality
-		}
-		localization_key = FOG_DICTATORSHIP_NAME_NEUTRAL
-	}	
-	text = {
-		localization_key = FOG_DICTATORSHIP_NAME
-	}
-}

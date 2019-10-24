@@ -1,4 +1,4 @@
-﻿capital = 272
+capital = 272
 
 oob = "FWE"
 

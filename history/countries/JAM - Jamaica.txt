@@ -1,4 +1,4 @@
-﻿capital = 689
+capital = 689
 
 oob = "JAM_1936"
 
@@ -98,11 +98,66 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Paulo Neves dos Reis"
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = nazism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Paulo Neves dos Reis"
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "Milton Guerra Corrêa"
 	desc = ""
 	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
 	expire = "1965.1.1"
 	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Milton Guerra Corrêa"
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Milton Guerra Corrêa"
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Milton Guerra Corrêa"
+	desc = ""
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
 	traits = {
 		#
 	}

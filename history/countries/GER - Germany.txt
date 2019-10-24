@@ -1,16 +1,54 @@
-﻿capital = 64
+capital = 64
 
 oob = "GER_1936"
 
 add_ideas = {
 religion_lutheranism
 fog_dictatorship
+foc_congress_rubber
+foj_kangaroo
 }
 
 set_fuel_ratio = 0.8
 
 # Starting tech
 set_technology = {
+
+		### WW1 TECHS
+		early_infantry_weapons = 1
+		early_infantry_weapons2 = 1
+		early_infantry_equip = 1
+		early_infantry_weapons3 = 1
+		early_infantry_equip2 = 1
+		early_infantry_weapons4 = 1
+		early_infantry_weapons5 = 1
+		early_infantry_equip3 = 1
+		interwars_infantry_equip = 1
+		interwars_infantry_equip2 = 1
+		early_support_weapons = 1
+		early_support_weapons2 = 1
+		early_support_weapons3 = 1
+		early_support_weapons4 = 1
+		early_support_weapons5 = 1
+		interwar_support_weapons = 1
+		interwar_support_weapons2 = 1
+		interwar_support_weapons3 = 1
+		interwar_support_weapons4 = 1
+		horses = 1
+		hand_grenade = 1
+		frag_grenade = 1
+		gas_mask = 1
+		gas_mask2 = 1
+		gas_mask3 = 1
+		machine_gun = 1
+		machine_gun2 = 1
+		machine_gun3 = 1
+		machine_gun4 = 1
+		interwar_machine_gun = 1
+		modern_machine_gun = 1
+		### END WW1 TECHS
+
+
 	gw_armoured_car = 1
 	early_armoured_car = 1
 	basic_armoured_car = 1
@@ -133,8 +171,7 @@ nazism = 83
 communism = 3
 }
 
-create_faction = Axis
-add_to_faction = GER
+
 
 add_ideas = {
 	limited_exports
@@ -168,10 +205,10 @@ add_ideas = {
 	infrastructure_budget4
 }
 
+
 add_ideas = {
 	sour_loser
 	general_staff
-	ger_memories_of_a_two_front_war
 	fascist_propaganda_surrender
 	GER_Hitlerjugend
 	persecute_scientists
@@ -179,12 +216,19 @@ add_ideas = {
 	GER_inexperienced_carrier_designers
 	GER_tariffs_2
 	GER_mil_spending2
-	
 }
-
+	
+create_faction = Axis
+add_to_faction = GER
+	
 add_ideas = GER_mefo_bills_1
-
 activate_mission = GER_mefo_bills_mission
+
+add_ideas = {
+ger_memories_of_a_two_front_war
+}	
+	
+
 
 create_country_leader = {
 	name = "Adolf Hitler"
@@ -203,7 +247,7 @@ create_country_leader = {
 	desc = "POLITICS_HEINRICH_HIMMLER_DESC"
 	picture = "Portrait_Germany_Heinrich_Himmler.dds"
 	expire = "1965.1.1"
-	ideology = paganism
+	ideology = paganism_ideology
 	traits = { dictator }
 }
 
@@ -217,11 +261,29 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Eduard Dingeldey"
+	desc = "POLITICS_EDUARD_DINGELDEY_DESC"
+	picture = "Portrait_Germany_Eduard_Dingeldey.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Hans Vogel"
 	desc = "POLITICS_HANS_VOGEL_DESC"
 	picture = "Portrait_Germany_Hans_Vogel.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Hans Vogel"
+	desc = "POLITICS_HANS_VOGEL_DESC"
+	picture = "Portrait_Germany_Hans_Vogel.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
 	traits = { }
 }
 
@@ -253,11 +315,30 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Otto Strasser"
+	picture = "Germany_Strasserism_Otto_Strasser.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { dictator }
+}
+
+create_country_leader = {
 	name = "Konrad Adenauer"
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "Portrait_Germany_Konrad_Adenauer.dds"
 	expire = "1965.1.1"
 	ideology = conservatism_ideology
+	traits = { internationalist
+		the_elder
+	}
+}
+
+create_country_leader = {
+	name = "Konrad Adenauer"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "Portrait_Germany_Konrad_Adenauer.dds"
+	expire = "1965.1.1"
+	ideology = christian_democrat
 	traits = { internationalist
 		the_elder
 	}
@@ -291,6 +372,24 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Wilhelm III"
+	desc = ""
+	picture = "Portrait_Germany_Prince_Wilhelm.dds"
+	expire = 1965.1.1
+	ideology = fascist_monarchy
+	traits = { new_monarchist }
+}
+
+create_country_leader = {
+	name = "Wilhelm II"
+	desc = ""
+	picture = "Portrait_Germany_King_Wilhelm.dds"
+	expire = 1941.6.4
+	ideology = fascist_monarchy
+	traits = { restoring_monarchist }
+}
+
+create_country_leader = {
 	name = "Ludwig Beck"
 	desc = ""
 	picture = "Portrait_Germany_Ludwig_August_Theodor_Beck.dds"
@@ -301,11 +400,11 @@ create_country_leader = {
 
 
 create_country_leader = {
-	name = "Ernst Thälmann"
-	desc = "POLITICS_ERNST_THALMANN_DESC"
-	picture = "Portrait_Germany_Ernst_Thalmann_I.tga"
-	expire = "1956.1.1"
-	ideology = stalinism
+	name = "Otto Wels"
+	desc = "POLITICS_OTTO_WELS_DESC"
+	picture = "Ottowelsportait.dds"
+	expire = "1939.1.16"
+	ideology = trotskyism_ideology
 	traits = { }
 }
 
@@ -2447,4 +2546,1443 @@ create_equipment_variant = {
 		plane_reliability_upgrade = 5
 	}
 	obsolete = yes
+}
+
+
+
+
+1941.1.1 = {
+
+if = {
+		limit = {
+		AND = {
+			has_start_date > 1941.01.01
+			has_start_date < 1942.01.01
+		}
+		}
+
+activate_mission = GER_barbarossa_mission
+add_timed_idea = { idea = blitzkrieg_1941 days = 160 }
+add_timed_idea = { idea = luftwaffe_1941 days = 210 }
+add_timed_idea = { idea = ww2_operation days = 180 }
+
+remove_ideas = {
+ger_memories_of_a_two_front_war
+}
+
+	
+	add_ideas = {
+		henschel
+		ig_faben
+		heinrich_himmler
+		ludwig_beck
+		gerd_von_rundstedt
+		GER_autarky_idea
+
+		#laws
+		war_economy
+		extensive_conscription
+	}
+	
+	remove_ideas = rudolf_hess
+
+set_global_flag = fall_of_france
+set_global_flag = end_of_norway
+set_global_flag = end_of_poland
+set_global_flag = end_of_yugoslavia
+set_global_flag = end_of_greece
+set_global_flag = end_of_denmark
+set_global_flag = end_of_belgium
+set_global_flag = end_of_belgium
+
+set_stability = 0.8
+set_war_support = 0.8
+
+add_political_power = 1500
+add_named_threat = { threat = 100 name = 1941_bookmark_threat }
+
+complete_national_focus = GER_rhineland
+complete_national_focus = GER_begin_depression_recovery
+complete_national_focus = GER_appoint_economic_positions
+complete_national_focus = GER_two_side_economics
+complete_national_focus = GER_economic_conference
+complete_national_focus = GER_steelworks_issues
+complete_national_focus = GER_autobahn
+complete_national_focus = GER_volksgemeinschaft
+complete_national_focus = GER_deutsche_arbeitsfront
+complete_national_focus = GER_poltical_sphere
+complete_national_focus = GER_legit_hitler
+complete_national_focus = GER_thousand_year_reich
+complete_national_focus = GER_fuhrerprinzip
+complete_national_focus = GER_formalize_SS
+complete_national_focus = GER_new_german_order
+complete_national_focus = GER_peoples_courts
+complete_national_focus = GER_expand_farben
+complete_national_focus = GER_NS_ordensburgen
+complete_national_focus = GER_waffen_SS
+complete_national_focus = GER_anschluss
+complete_national_focus = GER_anti_comitern_pact
+complete_national_focus = GER_prepare_poland_invasion
+complete_national_focus = GER_volkswagen
+complete_national_focus = GER_demand_sudetenland
+complete_national_focus = GER_new_kulturkampf
+complete_national_focus = GER_SS_division_organization
+complete_national_focus = GER_general_SS
+complete_national_focus = GER_hitler_youth
+complete_national_focus = GER_end_of_czechoslovakia
+complete_national_focus = GER_demand_memel
+complete_national_focus = GER_west_wall
+complete_national_focus = GER_volkischer_beobachter
+complete_national_focus = GER_combine_SS_gestapo
+complete_national_focus = GER_mol_rib_pact
+complete_national_focus = GER_danzig_or_war
+complete_national_focus = GER_first_vienna_award
+complete_national_focus = GER_prepare_france_invasion
+complete_national_focus = GER_build_panzer_army
+complete_national_focus = GER_blitzkreig_tactics
+complete_national_focus = GER_weserubung #4/9/40
+complete_national_focus = GER_war_with_france
+complete_national_focus = GER_foreign_volunteers
+complete_national_focus = GER_reichskulturkammer
+complete_national_focus = GER_territorial_policing
+complete_national_focus = GER_security_service
+complete_national_focus = GER_second_vienna_award #8/30/40
+complete_national_focus = GER_restore_german_glory
+complete_national_focus = GER_nation_alignment
+complete_national_focus = GER_align_hungary
+complete_national_focus = GER_align_romania
+complete_national_focus = GER_demand_slovenia
+complete_national_focus = GER_fate_of_yugoslavia
+complete_national_focus = GER_fate_of_greece
+complete_national_focus = GER_italy_ally
+complete_national_focus = GER_soviet_invasion
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = SLO
+		autonomous_state = autonomy_satellite
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = HUN
+		autonomous_state = autonomy_satellite
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = ROM
+		autonomous_state = autonomy_satellite
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = BUL
+		autonomous_state = autonomy_satellite
+	    freedom_level = 0.2
+
+}
+set_autonomy = {
+		target = CRO
+		autonomous_state = autonomy_satellite
+	    freedom_level = 0.2
+
+}
+set_autonomy = {
+		target = SER
+		autonomous_state = autonomy_satellite
+	    freedom_level = 0.2
+
+}
+}
+
+create_faction = Axis
+add_to_faction = GER
+add_to_faction = ITA
+add_to_faction = SLO
+add_to_faction = HUN
+add_to_faction = ROM
+add_to_faction = BUL
+add_to_faction = CRO
+add_to_faction = SER
+add_to_faction = FIN
+
+add_ideas = {
+	limited_exports
+	cons_expanded_draft
+	war_economy
+}
+
+
+        declare_war_on = {
+		target = SOV
+		type = annex_everything
+	}
+      BUL = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		ROM = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		HUN = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		CRO = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		MNT = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		ITA = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		SLO = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+		SER = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = SOV
+			}
+		}
+
+	declare_war_on = {
+			target = ENG
+			type = annex_everything
+		}
+
+		BUL = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		ROM = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		HUN = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		CRO = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		MNT = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		ITA = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		SLO = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+		FIN = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+
+		SER = {
+			add_to_war = {
+				targeted_alliance = GER
+				enemy = ENG
+			}
+		}
+	#
+
+		CAN = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		AST = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		NZL = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		SAF = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		RAJ = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		MAL = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		INS = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		BEL = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+		FFR = {
+			add_to_war = {
+				targeted_alliance = ENG
+				enemy = GER
+			}
+		}
+	
+}
+
+oob = "GER_1941"
+
+
+	set_technology = {
+		improved_light_tank = 1 
+		basic_medium_tank = 1 
+		CAS2 = 1
+		heavy_fighter1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		modern_support_weapons = 1
+		support_weapons2 = 1
+		paratroopers = 1
+		improved_medium_tank = 1
+		improved_heavy_tank = 1
+		improved_infantry_weapons_2 = 1
+		support_weapons3 = 1
+		mechanised_infantry = 1
+		tech_mountaineers2 = 1
+		tech_engineers2 = 1
+		tech_recon2 = 1
+		tech_field_hospital = 1
+		artillery1 = 1
+		artillery2 = 1
+		artillery3 = 1
+		antiair1 = 1
+		antiair2 = 1
+		antitank1 = 1
+		antitank2 = 1
+		antitank3 = 1
+		fighter1 = 1
+		fighter2 = 1
+
+		#doctrines
+		delay = 1
+		elastic_defence = 1
+		armored_spearhead = 1
+		schwerpunk = 1
+		blitzkrieg = 1
+		kampfgruppe = 1 #MOBILE WARFARE
+		convoy_interdiction_ti = 1
+		unrestricted_submarine_warfare = 1
+		raider_patrols = 1
+		#air
+		formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
+		formation_fighting = 1
+		hunt_and_destroy = 1
+		combat_unit_destruction = 1
+
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+		improved_computing_machine = 1
+		improved_decimetric_radar = 1
+		improved_encryption = 1
+		improved_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		assembly_line_production = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		fuel_refining2 = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+		dispersed_industry4 = 1
+		improved_equipment_conversion = 1
+}
+
+if = {
+		limit = {
+			not = { has_dlc = "Man the Guns"}
+		}
+		set_technology = {
+			basic_submarine = 1
+			improved_submarine = 1
+			improved_destroyer = 1
+			basic_light_cruiser = 1
+			improved_light_cruiser = 1
+			basic_battleship = 1
+			basic_carrier = 1
+			improved_carrier = 1
+		}
+		set_naval_oob = "GER_1941_naval_legacy"
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			basic_ship_hull_submarine = 1
+			improved_ship_hull_submarine = 1
+			improved_ship_hull_light = 1
+			improved_ship_hull_cruiser = 1
+			basic_ship_hull_heavy = 1
+			basic_ship_hull_carrier = 1
+			improved_ship_hull_carrier = 1
+			dp_secondary_battery = 1
+			improved_sonar = 1
+		}
+		set_naval_oob = "GER_1941_naval_mtg"
+
+	}
+
+
+
+
+}
+
+1946.1.1 = {
+
+set_cosmetic_tag = GER_greater_germanic_reich
+oob = "GER_1946"
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = RPB
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = PGG
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKO
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKU
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKM
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKD
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKT
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKT
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKW
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKA
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = MTA
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = DMA
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RPD
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKB
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKN
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+	set_autonomy = {
+		target = RKH
+		autonomous_state = autonomy_reichskommissariat
+	    freedom_level = 0.2
+	}
+}
+
+create_faction = European_Community
+add_to_faction = GER
+add_to_faction = SLO
+add_to_faction = HUN
+add_to_faction = ROM
+add_to_faction = FIN
+add_to_faction = RKB
+add_to_faction = RKH
+add_to_faction = RPD
+add_to_faction = RKN
+add_to_faction = RPB
+add_to_faction = PGG
+add_to_faction = RKO
+add_to_faction = RKU
+add_to_faction = RKM
+add_to_faction = RKD
+add_to_faction = RKK
+add_to_faction = RKT
+add_to_faction = RKW
+add_to_faction = RKA
+add_to_faction = MTA
+add_to_faction = DMA
+}
+
+
+1949.1.1 = {
+
+load_focus_tree = { tree = generic_focus }
+
+remove_ideas = {
+	sour_loser
+	general_staff
+	ger_memories_of_a_two_front_war
+	fascist_propaganda_surrender
+	GER_Hitlerjugend
+	persecute_scientists
+	ger_heavy_aircraft_inexperience
+	GER_inexperienced_carrier_designers
+	GER_tariffs_2
+	GER_mil_spending2
+	}
+	
+add_ideas = {
+fog_democratic
+foc_congress_unicameral
+foj_civil_law
+}
+
+capital = 42
+
+	set_politics = {
+		last_election = "1945.8.14"
+		elections_allowed = yes
+		ruling_party = christian_democratic
+	}
+	set_popularities = {
+		christian_democratic = 37
+		conservatism = 7
+		socdem = 31
+		monarchism = 3
+		communism = 6
+		fascism = 2
+		democratic = 14
+	}
+	
+	create_country_leader = {
+	name = "Bundestag"
+	picture = "Bundestag.dds"
+	expire = "1949.8.1"
+	ideology = Independent
+}
+
+create_country_leader = {
+	name = "Konrad Adenauer"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "Portrait_Germany_Konrad_Adenauer.dds"
+	expire = "1965.1.1"
+	ideology = christian_democrat
+	traits = { internationalist
+		the_elder
+	}
+}
+
+create_country_leader = {
+	name = "Kurt Schumacher"
+	picture = "Kurt_Schumacher.dds"
+	ideology = social_democracy
+}
+
+create_country_leader = {
+	name = "Franz Blücher"
+	picture = "Franz_Blucher.dds"
+	ideology = social_liberalism
+}
+
+create_country_leader = {
+	name = "Heinrich Hellwege"
+	picture = "Heinrich_Hellwege.dds"
+	ideology = conservatism_ideology
+}
+
+create_country_leader = {
+	name = "Otto Ernst Remer"
+	picture = "gfx/leaders/WGR/NAZI/Otto_Remer.dds"
+	ideology = neo_nazism
+}
+
+create_country_leader = {
+	name = "Wilhelm III"
+	picture = "Wilhelm.dds"
+	ideology = absolutism
+}
+
+create_country_leader = {
+	name = "Max Reimann"
+	picture = "Max_Reimann.dds"
+	ideology = marxism
+}	
+
+create_country_leader = {
+	name = "Andreas Baader"
+	picture = "Anders_Baader.dds"
+	ideology = maoism_ideology
+}	
+	
+	
+}
+
+
+1956.1.1 = {
+create_corps_commander = {
+	name = "Adolf Heusinger"
+	picture = "Adolf_Heusinger.dds"
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Max Josef Pemsel"
+	picture = "Max_Pemsel.dds"
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Hans Speidel"
+	picture = "Hans_Speidel.dds"
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Johann von Kielmansegg"
+	picture = "Johann_von_Kielmansegg.dds"
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+ }
+}
+
+1960.1.1 = {
+
+	set_politics = {
+		last_election = "1953.9.15"
+		elections_allowed = yes
+		ruling_party = christian_democratic
+	}
+	set_popularities = {
+		christian_democratic = 54
+		conservatism = 4
+		socdem = 30
+		monarchism = 3
+		fascism = 1
+		democratic = 8
+	}
+	
+	create_country_leader = {
+	name = "Erich Ollenhauer"
+	picture = "Erich_Ollenhauer.dds"
+	ideology = social_democracy
+}
+
+create_country_leader = {
+	name = "Reinhold Maier"
+	picture = "Reinhold_Maier.dds"
+	ideology = social_liberalism
+}
+
+create_country_leader = {
+	name = "Adolf von Thadden"
+	picture = "Adolf_von_Thadden.dds"
+	ideology = neo_nazism
+}
+
+create_country_leader = {
+	name = "Louis I"
+	picture = "Louis.dds"
+	ideology = absolutism
+ }
+ 
+ create_country_leader = {
+	name = "Willy Brandt"
+	picture = "Willy_Brandt.dds"
+	ideology = social_democracy
+}
+
+create_country_leader = {
+	name = "Erich Mende"
+	picture = "Erich_Mende.dds"
+	ideology = social_liberalism
+}
+	
+	
+}
+
+2000.1.1 = {
+
+capital = 64
+
+set_politics = {
+	ruling_party = socdem
+	last_election = "1998.9.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	socdem = 40.9
+	christian_democratic = 35.8
+	progressivism = 6.7
+	libertarianism = 6.2
+	demsoc = 5.1
+	reactionary = 2.8
+	nationalism = 1.4
+	democratic = 0.3
+	communism = 0.7
+	fascism = 0.1
+}
+
+create_country_leader = {
+	name = "Pierre Vogel"
+	picture = "Pierre_Vogel.dds"
+	ideology = islamic_authoritarian
+}
+create_country_leader = {
+	name = "Klaus Armstroff"
+	picture = "Klaus_Armstroff.dds"
+	ideology = nazism_ideology
+}
+create_country_leader = {
+	name = "Udo Pastörs"
+	picture = "Udo_Pastors.dds"
+	ideology = national_democrat
+}
+create_country_leader = {
+	name = "Georg Friedrich I"
+	picture = "Georg_Friedrich.dds"
+	ideology = absolutism
+}
+create_country_leader = {
+	name = "Ronald Schill"
+	picture = "Ronald_Schill.dds"
+	ideology = counter_progressive_democrat
+}
+create_country_leader = {
+	name = "Angela Merkel"
+	picture = "Angela_Merkel.dds"
+	ideology = christian_democrat
+}
+create_country_leader = {
+	name = "Wolfgang Gerhardt"
+	picture = "Wolfgang_Gerhardt.dds"
+	ideology = libertarianism_ideology
+}
+create_country_leader = {
+	name = "Patrick Schiffer"
+	picture = "Patrick_Schiffer.dds"
+	ideology = liberalism_ideology
+}
+create_country_leader = {
+	name = "Gerhard Schröder"
+	picture = "Gerhard_Schroeder.dds"
+	ideology = social_democracy
+}
+create_country_leader = {
+	name = "Joschka Fischer"
+	picture = "Joschka_Fischer.dds"
+	ideology = green
+}
+create_country_leader = {
+	name = "Gregor Gysi"
+	picture = "Gregor_Gysi.dds"
+	ideology = democratic_socialism
+}
+create_country_leader = {
+	name = "Patrik Köbele"
+	picture = "Patrik_Koebele.dds"
+	ideology = marxism
+}
+
+
+create_field_marshal = {
+	name = "Volker Wieker"
+	picture = "generals/Volker_Wieker.dds"
+	traits = { defensive_doctrine }
+	skill = 4
+}
+create_field_marshal = {
+	name = "Wolfgang Schneiderhan"
+	picture = "generals/Wolfgang_Schneiderhan.dds"
+	traits = { old_guard }
+	skill = 2
+}
+create_field_marshal = {
+	name = "Hans-Peter von Kirchbach"
+	picture = "generals/Hans_Peter_von_Kirchbach.dds"
+	traits = { organisational_leader }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Bruno Kasdorf"
+	picture = "generals/Bruno_Kasdorf.dds"
+	traits = { old_guard organisational_leader }
+	skill = 1
+}
+
+create_field_marshal = {
+	name = "Jörg Vollmer"
+	picture = "generals/Joerg_Vollmer.dds"
+	traits = { old_guard thorough_planner }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Martin Schelleis"
+	picture = "generals/Martin_Schelleis.dds"
+	traits = { inspirational_leader }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Richard Roßmanith"
+	picture = "generals/Richard_Rossmanith.dds"
+	traits = { offensive_doctrine }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Hans-Erich Antoni"
+	picture = "generals/Hans_Ehrich_Antoni.dds"
+	traits = { logistics_wizard }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Joachim Wundrak"
+	picture = "generals/Joachim_Wundrak.dds"
+	traits = { fast_planner }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Peter Bohrer"
+	picture = "generals/Peter_Bohrer.dds"
+	traits = { inspirational_leader }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Helmut Schütz"
+	picture = "generals/Helmut_Schuetz.dds"
+	traits = { logistics_wizard }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Eberhard Zorn"
+	picture = "generals/Eberhard_Zorn.dds"
+	traits = { defensive_doctrine }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Ansgar Rieks"
+	picture = "generals/Ansgar_Rieks.dds"
+	traits = { thorough_planner }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Dieter Warnecke"
+	picture = "generals/Dieter_Warnecke.dds"
+	traits = { fast_planner }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Josef Blotz"
+	picture = "generals/Josef_Blotz.dds"
+	traits = { thorough_planner }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Dieter Naskrent"
+	picture = "generals/Dieter_Naskrent.dds"
+	traits = { inspirational_leader }
+	skill = 1
+}
+create_field_marshal = {
+	name = "Karl Müllner"
+	picture = "generals/Karl_Muellner.dds"
+	traits = { organisational_leader }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Klaus Reinhardt"
+	picture = "generals/Klaus_Reinhardt.dds"
+	traits = { panzer_leader }
+	skill = 4
+}
+create_corps_commander = {
+	name = "Karl-Heinz Lather"
+	picture = "generals/Karl_Heinz_Lather.dds"
+	traits = { trait_engineer }
+	skill = 3
+}
+create_corps_commander = {
+	name = "Joachim Spiering"
+	picture = "generals/Joachim_Spiering.dds"
+	skill = 3
+}
+create_corps_commander = {
+	name = "Rainer Schuwirth"
+	picture = "generals/Rainer_Schuwirth.dds"
+	skill = 2
+}
+create_corps_commander = {
+	name = "Dieter Stöckmann"
+	picture = "generals/Dieter_Stockmann.dds"
+	skill = 2
+}
+create_corps_commander = {
+	name = "Hans-Lothar Domröse"
+	picture = "generals/Hans_Lothar_Domrose.dds"
+	skill = 2
+}
+create_corps_commander = {
+	name = "Werner Freers"
+	picture = "generals/Werner_Freers.dds"
+	skill = 2
+}
+create_corps_commander = {
+	name = "Egon Ramms"
+	picture = "generals/Egon_Ramms.dds"
+	skill = 2
+}
+create_corps_commander = {
+	name = "Wolf-Dieter Langheld"
+	picture = "generals/Wolf_Dieter_Langheld.dds"
+	skill = 2
+}
+create_corps_commander = {
+	name = "Ludwig Leinhos"
+	picture = "generals/Ludwig_Leinhos.dds"
+	traits = { trickster }
+	skill = 2
+}
+create_corps_commander = {
+	name = "Hans-Werner Wiermann"
+	picture = "generals/Hans_Werner_Wiermann.dds"
+	traits = { trickster }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Franz Xaver Pfrengle"
+	picture = "generals/Franz_Xaver_Pfrengle.dds"
+	traits = { panzer_leader trait_engineer }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Stephan Thomas"
+	picture = "generals/Stephan_Thomas.dds"
+	traits = { panzer_leader ranger }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Walter Huhn"
+	picture = "generals/Walter_Huhn.dds"
+	traits = { trickster }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Gert Gawellek"
+	picture = "generals/Gert_Gawellek.dds"
+	traits = { commando trait_engineer ranger }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Carsten Jahnel"
+	picture = "generals/Carsten_Jahnel.dds"
+	traits = { commando trickster urban_assault_specialist }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Volker Thomas"
+	picture = "generals/Volker_Thomas.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Christof Munzlinger"
+	picture = "generals/Christof_Munzlinger.dds"
+	traits = { panzer_leader bearer_of_artillery }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Bernd Schuett"
+	picture = "generals/Bernd_Schuett.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Jürgen Weigt"
+	picture = "generals/Juergen_Weigt.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Dirk Backen"
+	picture = "generals/Dirk_Backen.dds"
+	traits = { desert_fox }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Andreas Marlow"
+	picture = "generals/Andreas_Marlow.dds"
+	traits = { trait_engineer commando }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Jürgen Setzer"
+	picture = "generals/Juergen_Setzer.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Thorsten Poschwatta"
+	picture = "generals/Thorsten_Poschwatta.dds"
+	traits = { commando }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Udo Schnittker"
+	picture = "generals/Udo_Schnittker.dds"
+	traits = { urban_assault_specialist }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Alexander Sollfrank"
+	picture = "generals/Alexander_Sollfrank.dds"
+	traits = { trait_mountaineer }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Dirk Faust"
+	picture = "generals/Dirk_Faust.dds"
+	traits = { commando trickster }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Markus Laubenthal"
+	picture = "generals/Markus_Laubenthal.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Ruprecht von Butler"
+	picture = "generals/Ruprecht_von_Butler.dds"
+	traits = { trickster }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Heico Hübner"
+	picture = "generals/Heico_Huebner.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Frank Leidenberger"
+	picture = "generals/Frank_Leidenberger.dds"
+	traits = { trait_engineer }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Gert Hagemann"
+	picture = "generals/Gert_Hagemann.dds"
+	traits = { ranger }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Walter Spindler"
+	picture = "generals/Walter_Spindler.dds"
+	skill = 1
+}
+create_corps_commander = {
+	name = "Manfred Hofmann"
+	picture = "generals/Manfred_Hofmann.dds"
+	skill = 1
+}
+create_corps_commander = {
+	name = "Dag Baehr"
+	picture = "generals/Dag_Baehr.dds"
+	traits = { commando urban_assault_specialist }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Carsten Jacobson"
+	picture = "generals/Carsten_Jacobson.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Erich Pfeffer"
+	picture = "generals/Erich_Pfeffer.dds"
+	traits = { trait_mountaineer winter_specialist }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Erhard Bühler"
+	picture = "generals/Erhard_Buehler.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Gunter Schneider"
+	picture = "generals/Gunter_Schneider.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Jörg See"
+	picture = "generals/Joerg_See.dds"
+	traits = { panzer_leader }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Markus Kneip"
+	picture = "generals/Markus_Kneip.dds"
+	skill = 1
+}
+create_corps_commander = {
+	name = "Werner Albl"
+	picture = "generals/Werner_Albl.dds"
+	traits = { ranger  bearer_of_artillery }
+	skill = 1
+}
+create_corps_commander = {
+	name = "Oliver Kohl"
+	picture = "generals/Oliver_Kohl.dds"
+	skill = 1
+}
+create_corps_commander = {
+	name = "Kai Rohrschneider"
+	picture = "generals/Kai_Ronald_Rohrschneider.dds"
+	skill = 1
+}
+create_corps_commander = {
+	name = "Wilhelm Grün"
+	picture = "generals/Wilhelm_Gruen.dds"
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Manfred Nielson"
+	picture = "admirals/Manfred_Nielson.dds"
+	skill = 3
+}
+create_navy_leader = {
+	name = "Rainer Feist"
+	picture = "admirals/Rainer_Feist.dds"
+	skill = 1
+}
+create_navy_leader = {
+	name = "Axel Meissel"
+	picture = "admirals/Axel_Meissel.dds"
+	skill = 1
+}
+create_navy_leader = {
+	name = "Henrik Riechert"
+	picture = "admirals/Henrik_Riechert.dds"
+	skill = 1
+}
+create_navy_leader = {
+	name = "Axel Schimpf"
+	picture = "admirals/Axel_Schimpf.dds"
+	traits = { seawolf }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Andreas Krause"
+	picture = "admirals/Andreas_Krause.dds"
+	traits = { spotter }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Joachim Rühle"
+	picture = "admirals/Joachim_Ruehle.dds"
+	traits = { old_guard_navy }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Rainer Brinkmann"
+	picture = "admirals/Rainer_Brinkmann.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Carsten Stawitzki"
+	picture = "admirals/Carsten_Stawitzki.dds"
+	traits = { air_controller }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Thomas Jugel"
+	picture = "admirals/Thomas_Jugel.dds"
+	traits = { fly_swatter }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Jan Christian Kaack"
+	picture = "admirals/Jan_Christian_Kaack.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Christoph Müller-Meinhard"
+	picture = "admirals/Christoph_Mueller_Meinhard.dds"
+	traits = { ironside }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Jean Martens"
+	picture = "admirals/Jean_Martens.dds"
+	traits = { spotter }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Axel Deertz"
+	picture = "admirals/Axel_Deertz.dds"
+	traits = { spotter }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Jens Nemeyer"
+	picture = "admirals/Jens_Nemeyer.dds"
+	traits = {  }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Kay-Achim Schönbach"
+	picture = "admirals/Kay_Achim_Schoenbach.dds"
+	traits = { spotter }
+	skill = 1
+}
+create_navy_leader = {
+	name = "Rainer Endres"
+	picture = "admirals/Rainer_Endres.dds"
+	traits = { blockade_runner }
+	skill = 1
+}
+
+}
+
+2005.9.18 = {
+	set_politics = {
+		ruling_party = christian_democratic
+		elections_allowed = yes
+	}
+}
+
+
+2009.1.1 = {
+	create_country_leader = {
+		name = "Frank-Walter Steinmeier"
+		picture = "Frank_Walter_Steinmeier.dds"
+		ideology = social_democracy
+	}
+}
+
+2009.2.1 = {
+	create_country_leader = {
+		name = "Bernd Lucke"
+		picture = "Bernd_Lucke.dds"
+		ideology = oligarchism
+	}
+}
+
+2009.11.13 = {
+	create_country_leader = {
+		name = "Sigmar Gabriel"
+		picture = "Sigmar_Gabriel.dds"
+		ideology = social_democracy
+	}
+}
+
+2010.11.22 = {
+	add_ideas = {
+		cons_volunteer
+	}
+}
+
+2011.1.1 = {
+	create_country_leader = {
+		name = "Christian Lindner"
+		picture = "Christian_Lindner.dds"
+		ideology = libertarianism_ideology
+	}
+}
+
+2013.1.1 = {
+	create_country_leader = {
+		name = "Peer Steinbrück"
+		picture = "Peer_Steinbruck.dds"
+		ideology = social_democracy
+	}
+}
+
+2013.9.23 = {
+	create_country_leader = {
+		name = "Frauke Petry"
+		picture = "Frauke_Petry.dds"
+		ideology = counter_progressive_democrat
+	}
+	set_politics = {
+		last_election = "2013.9.22"
+		elections_allowed = yes
+		ruling_party = christian_democratic
+	}
+	set_popularities = {
+		christian_democratic = 42.6
+		socdem = 26.4
+		demsoc = 8.6
+		progressivism = 8.4
+		libertarianism = 4.8
+		reactionary = 4.8
+		democratic = 2.8
+		nationalism = 1.3
+		fascism = 0.2
+		communism = 0.1
+	}
+}
+
+2014.1.1 = { 
+	add_popularity = { ideology = reactionary popularity = 0.01 }
+}
+
+2015.1.1 = { 
+	add_popularity = { ideology = reactionary popularity = 0.02 }
+}
+
+2016.1.1 = { 
+	add_popularity = { ideology = reactionary popularity = 0.03 }
+}
+
+2016.6.1 = {
+	create_country_leader = {
+		name = "Alexander Gauland"
+		picture = "Alexander_Gauland.dds"
+		ideology = counter_progressive_democrat
+	}
+}
+
+2017.1.26 = {
+	create_country_leader = {
+		name = "Martin Schulz"
+		picture = "Martin_Schulz.dds"
+		ideology = social_democracy
+	}
 }

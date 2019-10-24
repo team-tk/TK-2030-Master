@@ -34,7 +34,7 @@ ideas = {
 				factor = 1
 				modifier = {
 					factor = 10
-					has_government = democratic
+					has_democratic_government = yes
 					threat < 0.05
 					is_major = no
 				}
@@ -140,7 +140,7 @@ ideas = {
 				factor = 1
 				modifier = {
 					factor = 10
-					has_government = democratic
+					has_democratic_government = yes
 					threat > 0.75
 				}
 				modifier = {
@@ -155,6 +155,8 @@ ideas = {
 						tag = SOV
 						has_government = fascism
 						has_government = nazism
+						has_government = strasserism
+						has_government = paganism
 					}
 				}
 				modifier = {
@@ -205,6 +207,8 @@ ideas = {
 						tag = SOV
 						has_government = fascism
 						has_government = nazism
+						has_government = strasserism
+						has_government = paganism
 					}
 				}
 				modifier = {
@@ -234,7 +238,14 @@ ideas = {
 				OR = { 
 					has_government = fascism
 					has_government = nazism
+					has_government = strasserism
+					has_government = paganism
+					has_government = fascist_monarchism
+					has_government = reactionary
+					has_government = islamism
 					has_government = communism
+					has_government = maoism
+					has_government = trotskyism
 					has_government = socialism
 					has_government = syndicalism
 					has_government = monarchism
@@ -267,6 +278,14 @@ ideas = {
 					has_government = nazism
 				}
 				modifier = {
+					factor = 40
+					has_government = strasserism
+				}
+				modifier = {
+					factor = 40
+					has_government = paganism
+				}
+				modifier = {
 					factor = 0
 					tag = ITA
 					date < 1940.5.1
@@ -287,7 +306,7 @@ ideas = {
    				modifier = {
 					factor = 0
 					OR = {
-						has_government = democratic
+						has_democratic_government = yes
 						has_manpower < 300000
 					}
 				}

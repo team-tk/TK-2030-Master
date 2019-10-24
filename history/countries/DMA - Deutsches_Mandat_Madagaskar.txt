@@ -1,4 +1,4 @@
-﻿capital = 543 # Madagascar
+capital = 543 # Madagascar
 
 oob = "empty"
 
@@ -11,7 +11,7 @@ set_technology = {
 	interwar_antitank = 1
 	infantry_weapons2 = 1
 	improved_infantry_weapons = 1
-	support_weapons = 1
+	modern_support_weapons = 1
 	support_weapons2 = 1
 	paratroopers = 1
 
@@ -58,7 +58,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = nazism
+	ruling_party = paganism
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -66,7 +66,7 @@ set_politics = {
 set_popularities = {
 	democratic = 20
 	nazism = 40
-	theocratic = 40
+	paganism = 40
 }
 
 create_country_leader = {
@@ -83,7 +83,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/GER/Portrait_GER_Walter_Schellenberg.dds"
 	expire = "1965.1.1"
-	ideology = paganism
+	ideology = paganism_ideology
 	traits = { reichskommissar }
 }
 

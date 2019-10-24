@@ -1,4 +1,4 @@
-﻿capital = 800
+capital = 800
 
 oob = "LIE_1936"
 
@@ -45,6 +45,17 @@ create_country_leader = {
 	picture = "Portrait_Liechtenstein_franz.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Franz Joseph II"
+	desc = ""
+	picture = "Portrait_Liechtenstein_franz.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
 	traits = {
 		#
 	}

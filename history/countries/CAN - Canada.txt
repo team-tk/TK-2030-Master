@@ -1,4 +1,4 @@
-﻿capital = 276
+capital = 276
 
 oob = "CAN_1936"
 if = {
@@ -124,11 +124,29 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Mackenzie King"
+	desc = "POLITICS_MACKENZIE_KING_DESC"
+	picture = "Portrait_Canada_Mackenzie_King.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Adrien Arcand"
 	desc = "POLITICS_ADRIEN_ARCAND_DESC"
-	picture = "GFX_CAN_adrien_arcand"
+	picture = "Canada_National Socialist_Adrien_Arcand.dds"
 	expire = "1965.1.1"
 	ideology = nazism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Adrien Arcand"
+	desc = "POLITICS_ADRIEN_ARCAND_DESC"
+	picture = "Canada_National Socialist_Adrien_Arcand.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
 	traits = { }
 }
 
@@ -141,13 +159,31 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Tim Buck"
+	desc = "POLITICS_TIM_BUCK_DESC"
+	picture = "Portrait_Tim_Buck.dds"
+	expire = "1965.1.1"
+	ideology = syndicalism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Tim Buck"
+	desc = "POLITICS_TIM_BUCK_DESC"
+	picture = "Portrait_Tim_Buck.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
 ###PLACEHOLDER
 create_country_leader = {
 	name = "Adrien Arcand"
 	desc = "POLITICS_ADRIEN_ARCAND_DESC"
-	picture = "GFX_CAN_adrien_arcand"
+	picture = "Canada_National Socialist_Adrien_Arcand.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = third_position
 	traits = { }
 }
 
@@ -171,10 +207,36 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "J. S. Woodsworth"
+	desc = "POLITICS_JS_WOODSWORTH_DESC"
+	picture = "Portrait_JS_Woodsworth.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "J. S. Woodsworth"
+	desc = "POLITICS_JS_WOODSWORTH_DESC"
+	picture = "Portrait_JS_Woodsworth.dds"
+	expire = "1965.1.1"
+	ideology = democratic_socialism
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Governor General Mackenzie King"
 	picture = "Portrait_Canada_GG_Mackenzie_King.dds"
 	expire = "1950.7.22"
 	ideology = constitutional
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Governor General Mackenzie King"
+	picture = "Portrait_Canada_GG_Mackenzie_King.dds"
+	expire = "1950.7.22"
+	ideology = fascist_monarchy
 	traits = { }
 }
 

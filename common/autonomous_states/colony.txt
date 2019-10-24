@@ -5,6 +5,8 @@ autonomy_state = {
 	
 	min_freedom_level = 0.50
 	
+	manpower_influence = 0.7
+	
 	rule = {
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
@@ -37,14 +39,8 @@ autonomy_state = {
 
 		if = {
 			limit = { has_dlc = "Death or Dishonor" }
-			NOT = { has_government = fascism }
-			NOT = { has_government = communism }
-		}
-		
-		OVERLORD = {
-			NOT = { 
-				tag = FRA
-			}
+			NOT = { has_government = nazism }
+			NOT = { has_government = fascist_monarchism }
 		}
 	}
 	

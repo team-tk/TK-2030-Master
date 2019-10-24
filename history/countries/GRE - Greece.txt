@@ -1,4 +1,4 @@
-﻿capital = 837
+capital = 837
 
 oob = "GRE_1910"
 if = {
@@ -126,6 +126,24 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Markos Vafiadis"
+	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
+	picture = "Portrait_Greece_Markos_Vafiadis.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Markos Vafiadis"
+	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
+	picture = "Portrait_Greece_Markos_Vafiadis.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Nikos Kazantzakis"
 	picture = "Nikos_Kazantzakis_Syndicalist.dds"
 	expire = "1965.1.1"
@@ -160,10 +178,26 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Georgios Kondylis"
+	picture = "Georgios_Kondylis_-Liberal_Greece.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+	traits = { }
+}
+
+create_country_leader = {
 	name = "Georgios Papandreou"
 	picture = "Georgios_Papandreou-_socdem_greece.dds"
 	expire = "1965.1.1"
 	ideology = social_democracy
+	traits = { }
+}
+
+create_country_leader = {
+	name = "Georgios Papandreou"
+	picture = "Georgios_Papandreou-_socdem_greece.dds"
+	expire = "1965.1.1"
+	ideology = progressivism_ideology
 	traits = { }
 }
 
@@ -188,6 +222,28 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Markos Vafiadis"
+	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
+	picture = "Portrait_Greece_Markos_Vafiadis.dds"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+	traits = {
+		stalins_puppet
+	}
+}
+
+create_country_leader = {
+	name = "Markos Vafiadis"
+	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
+	picture = "Portrait_Greece_Markos_Vafiadis.dds"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
+	traits = {
+		stalins_puppet
+	}
+}
+
+create_country_leader = {
 	name = "Ioannis Rallis"
 	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
@@ -206,6 +262,14 @@ create_country_leader = {
 	traits = { }
 }
 
+create_country_leader = {
+	name = "Konstantinos Logothetopoulos"
+	picture = "Konstantinos_Logothetopoulos_Nazism.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+	traits = { }
+}
+
 
 create_country_leader = {
 	name = "George II"
@@ -213,6 +277,15 @@ create_country_leader = {
 	picture = "gre_george_ii.dds"
 	expire = "1965.1.1"
 	ideology = absolutism
+	traits = { }
+}
+
+create_country_leader = {
+	name = "George II"
+	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
+	picture = "gre_george_ii.dds"
+	expire = "1965.1.1"
+	ideology = fascist_monarchy
 	traits = { }
 }
 

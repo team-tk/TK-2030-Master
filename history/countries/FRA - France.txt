@@ -1,4 +1,4 @@
-﻿capital = 16
+capital = 16
 
 oob = "FRA_1936"
 if = {
@@ -11,6 +11,8 @@ if = {
 
 add_ideas = {
 fog_democratic
+foj_civil_law
+foc_congress_bicameral
 religion_catholicism
 }
 
@@ -151,7 +153,7 @@ if = {
 		interwar_artillery = 1
 		interwar_antitank = 1
 		infantry_weapons2 = 1
-		support_weapons = 1
+		modern_support_weapons = 1
 		support_weapons2 = 1
 		basic_battleship = 1
 		basic_battlecruiser = 1
@@ -252,40 +254,33 @@ add_to_tech_sharing_group = french_research
 # DIPLOMACY
 set_autonomy = {
 	target = MOR
-	autonomous_state = autonomy_protectorate
+	autonomous_state = autonomy_colony
 	freedom_level = 0.3
 }
 set_autonomy = {
 	target = TUN
-	autonomous_state = autonomy_protectorate
+	autonomous_state = autonomy_colony
 	freedom_level = 0.3
 }
 set_autonomy = {
 	target = FRI
-	autonomous_state = autonomy_protectorate
+	autonomous_state = autonomy_colony
 	freedom_level = 0.3
 }
 set_autonomy = {
 	target = SYR
-	autonomous_state = autonomy_associate
+	autonomous_state = autonomy_colony
 	freedom_level = 0.35
 }
 set_autonomy = {
 	target = LEB
-	autonomous_state = autonomy_associate
+	autonomous_state = autonomy_colony
 	freedom_level = 0.35
 }
 
 
 #Order matters here Laval will start as leaders because added last
 
-create_country_leader = {
-	name = "Charles Huntziger"
-	desc = "POLITICS_CHARLES_HUNTZIGER_DESC"
-	picture = "portrait_france_charles_huntziger.dds"
-	expire = "1965.1.1"
-	ideology = nationalism_ideology
-}
 
 create_country_leader = {
 	name = "Charles de Gaulle"
@@ -312,6 +307,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Paul Reynaud"
+	desc = "POLITICS_PAUL_REYNAUD_DESC"
+	picture = "Portrait_France_Paul_Reynaud.dds"
+	expire = "1965.1.1"
+	ideology = libertarianism_ideology
+}
+
+create_country_leader = {
 	name = "Édouard Daladier"
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 	picture = "Portrait_France_Edouard_Daladier.dds"
@@ -333,11 +336,27 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Jacques Doriot"
+	desc = "POLITICS_JACQUES_DORIOT_DESC"
+	picture = "Portrait_France_Jacques_Doriot.dds"
+	expire = "1965.1.1"
+	ideology = strasserism_ideology
+}
+
+create_country_leader = {
 	name = "Albert Sarraut"
 	desc = "POLITICS_ALBERT_SARRAUT_DESC"
 	picture = "Portrait_France_Albert_Sarraut.dds"
 	expire = "1965.1.1"
         ideology = social_democracy
+}
+
+create_country_leader = {
+	name = "Albert Sarraut"
+	desc = "POLITICS_ALBERT_SARRAUT_DESC"
+	picture = "Portrait_France_Albert_Sarraut.dds"
+	expire = "1965.1.1"
+        ideology = progressivism_ideology
 }
 
 create_country_leader = {
@@ -362,6 +381,22 @@ create_country_leader = {
 	picture = "Portrait_France_Benoit_Frachon.tga"
 	expire = "1965.1.1"
 	ideology = marxism
+}
+
+create_country_leader = {
+	name = "Benoît Frachon"
+	desc = "POLITICS_BENOIT_FRACHON_DESC"
+	picture = "Portrait_France_Benoit_Frachon.tga"
+	expire = "1965.1.1"
+	ideology = maoism_ideology
+}
+
+create_country_leader = {
+	name = "Benoît Frachon"
+	desc = "POLITICS_BENOIT_FRACHON_DESC"
+	picture = "Portrait_France_Benoit_Frachon.tga"
+	expire = "1965.1.1"
+	ideology = trotskyism_ideology
 }
 
 
@@ -441,10 +476,18 @@ create_country_leader = {
 }
 
 create_country_leader = {
+			name = "Jean d'Orléans"
+			desc = "POLITICS_JEAN_DORLEANS_DESC"
+			picture = "Portrait_France_Jean_dOrleans.tga"
+			expire = "1965.1.1"
+			ideology = absolutism
+		}
+
+create_country_leader = {
 	name = "Napoleón V"
 	picture = "Portrait_France_Louis_Napoleon.dds"
 	expire = "1997.5.3"
-	ideology = absolutism
+	ideology = fascist_monarchy
 	traits = { }
 }
 
@@ -1362,5 +1405,527 @@ if = {
 				rear_1_custom_slot = ship_airplane_launcher_1
 			}
 		}
+	}
+}
+
+1945.1.1 = {
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1945.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+neutrality = 70
+communism = 30
+}
+create_country_leader = {
+	name = "Charles de Gaulle"
+	desc = "POLITICS_DE_GAULLE_DESC"
+	picture = "Charles_de_Gaulle.dds"
+	ideology = independent
+ }
+
+
+create_country_leader = {
+	name = "Henri Queuille"
+	desc = "POLITICS_HENRIQ_DESC"
+	picture = "Henri_Queuille.dds"
+	ideology = social_liberalism
+}
+
+create_country_leader = {
+	name = "Guy Mollet"
+	picture = "Guy_Mollet.dds"
+	ideology = social_democracy
+}
+
+create_country_leader = {
+	name = "Jacques Soustelle"
+	picture = "Jacques_Soustelle.dds"
+	ideology = conservatism_ideology
+}
+
+create_country_leader = {
+	name = "Jean-Paul David"
+	picture = "Jean_Paul_David.dds"
+	ideology = conservatism_ideology
+}
+
+create_country_leader = {
+	name = "Georges Bidault"
+	picture = "Georges_Bidault.dds"
+	ideology = christian_democrat
+}
+
+create_country_leader = {
+	name = "Maurice Thorez"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "Maurice_Thorez.dds"
+	ideology = stalinism
+}
+
+create_country_leader = {
+	name = "Georges Fontenis"
+	picture = "Georges_Fontenis.dds"
+	ideology = anarchist_communism
+}
+
+create_country_leader = {
+	name = "Pierre Poujade"
+	desc = "POLITICS_MAURICE_THOREZ_DESC"
+	picture = "Portrait_France_Poujade.dds"
+	expire = "1965.1.1"
+	ideology = democratic_nationalism
+}
+
+create_country_leader = {
+	name = "Henri VI"
+	picture = "Henri_VI.dds"
+	expire = "1999.1.1"
+	ideology = absolutism
+}
+
+create_corps_commander = {
+	name = "Jacques Massu"
+	picture = "Portrait_France_Jacques_Massu.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Paul Aussaresses"
+	picture = "Portrait_France_Paul_Aussaresses.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Fernand Gambiez"
+	picture = "Portrait_France_Fernand_Gambiez.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Alphonse Juin"
+	picture = "Portrait_France_Alphonse_Juin.dds"
+	traits = {  }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+}
+
+1941.1.1 = {
+
+remove_ideas = MTG_naval_treaty_adherent
+
+oob = "FRA_1941"
+
+add_political_power = 1500
+
+	set_technology = {
+		improved_light_tank = 1 
+		basic_medium_tank = 1 
+		CAS2 = 1
+		heavy_fighter1 = 1
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		modern_support_weapons = 1
+		support_weapons2 = 1
+		paratroopers = 1
+		improved_medium_tank = 1
+		improved_heavy_tank = 1
+		improved_infantry_weapons_2 = 1
+		support_weapons3 = 1
+		mechanised_infantry = 1
+		tech_mountaineers2 = 1
+		tech_engineers2 = 1
+		tech_recon2 = 1
+		tech_field_hospital = 1
+		artillery1 = 1
+		artillery2 = 1
+		artillery3 = 1
+		antiair1 = 1
+		antiair2 = 1
+		antitank1 = 1
+		antitank2 = 1
+		antitank3 = 1
+		fighter1 = 1
+		fighter2 = 1
+
+		#doctrines
+		delay = 1
+		elastic_defence = 1
+		armored_spearhead = 1
+		schwerpunk = 1
+		blitzkrieg = 1
+		kampfgruppe = 1 #MOBILE WARFARE
+		convoy_interdiction_ti = 1
+		unrestricted_submarine_warfare = 1
+		raider_patrols = 1
+		#air
+		formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
+		formation_fighting = 1
+		hunt_and_destroy = 1
+		combat_unit_destruction = 1
+
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_encryption = 1
+		basic_decryption = 1
+		improved_computing_machine = 1
+		improved_decimetric_radar = 1
+		improved_encryption = 1
+		improved_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		assembly_line_production = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		fuel_refining2 = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+		dispersed_industry4 = 1
+		improved_equipment_conversion = 1
+}
+
+}
+
+1949.1.1 = {
+set_politics = {
+	ruling_party = democratic
+	last_election = "1945.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+conservatism = 33
+democratic = 14
+socdem = 15
+christian_democratic = 12
+communism = 26
+}
+
+create_country_leader = {
+	name = "Raoul Salan"
+	picture = "Portrait_Salan.dds"
+	ideology = military_government
+ }
+}
+
+1954.1.26 = {
+	set_politics = {
+	ruling_party = conservatism
+	last_election = "1954.1.26"
+	election_frequency = 48
+	elections_allowed = yes
+	}
+	
+set_popularities = {
+conservatism = 36
+socialism = 34
+communism = 15
+fascism = 1
+democratic = 14
+}
+
+	create_country_leader = {
+		name = "René Coty"
+		picture = "Portrait_France_Rene_Coty.dds"
+		expire = "1962.11.22"
+		ideology = conservatism_ideology
+	}
+}
+
+1960.1.1 = {
+	set_politics = {
+	ruling_party = conservatism
+	last_election = "1961.12.19"
+	election_frequency = 48
+	elections_allowed = yes
+	}
+	
+set_popularities = {
+conservatism = 45
+communism = 2
+fascism = 5
+christian_democratic = 16
+socdem = 32
+}
+
+	
+	create_country_leader = {
+		name = "Charles de Gaulle"
+		picture = "Charles_de_Gaulle.dds"
+		expire = "1970.11.9"
+		ideology = gaullism
+	}
+	create_country_leader = {
+		name = "Maurice Challe"
+		picture = "Portrait_Challe.dds"
+		ideology = military_government
+	}
+}
+
+2000.1.1 = {
+
+set_politics = {	
+	ruling_party = conservatism
+	last_election = "1997.6.1"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 7
+    conservatism = 23
+    libertarianism = 20
+    democratic = 3
+    socdem = 40
+    progressivism = 3
+    communism = 4
+}
+
+create_country_leader = {
+	name = "Lionel Jospin"
+	picture = "Lionel_Jospin.dds"
+	ideology = social_democracy
+}
+
+create_country_leader = {
+	name = "Jacques Chirac"
+	picture = "Jacques_Chirac.dds"
+	ideology = gaullism
+}
+
+create_country_leader = {
+	name = "Jean Marie Le Pen"
+	picture = "Jean_Marie_Le_Pen.dds"
+	ideology = counter_progressive_democrat
+}
+
+create_country_leader = {
+	name = "Alain Soral"
+	picture = "Alain_Soral.dds"
+	ideology = nazism_ideology  
+}
+
+create_country_leader = {
+	name = "Andre Gandillon"
+	picture = "Andre_Gandillon.dds"
+	ideology = democratic_nationalism
+}
+
+create_country_leader = {
+	name = "Jean-Luc Melenchon"
+	picture = "Jean_Luc_Melenchon.dds"
+	ideology = democratic_socialism
+}
+
+create_country_leader = {
+	name = "Marie Buffet"
+	picture = "Marie_Buffet.dds"
+	ideology = leninism
+}
+
+create_country_leader = {
+	name = "Francois Bayrou"
+	picture = "Francois_Bayrou.dds"
+	ideology = libertarianism_ideology
+}
+
+create_country_leader = {
+	name = "Noel Mamere"
+	picture = "Noel_Mamere.dds"
+	ideology = green
+}
+	
+create_country_leader = {
+	name = "Louis XX"
+	picture = "Louis_XX.dds"
+	ideology = absolutism
+}
+
+create_country_leader = {
+	name = "Christiane Taubira"
+	picture = "Christiane_Taubira.dds"
+	ideology = liberalism_ideology
+}
+
+create_corps_commander = {
+	name = "Jean-Pierre Bosser"
+	picture = "generals/Jean_Pierre_Bosser.dds"
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Pierre Chavancy"
+	picture = "generals/Pierre_Chavancy.dds"
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Bertrand Ract-Madoux"
+	picture = "generals/Bertrand_Ract_Madoux.dds"
+	skill = 1
+}
+
+}
+
+
+2002.6.16 = {
+	set_politics = {
+		ruling_party = conservatism
+		last_election = "2002.6.16"
+		election_frequency = 60
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        reactionary = 10
+        conservatism = 37
+        libertarianism = 6
+        democratic = 3
+        socdem = 30
+        progressivism = 6
+        demsoc = 3
+        communism = 5
+    }
+}
+
+2003.1.1 = {
+	create_country_leader = {
+		name = "Segolene Royal"
+		picture = "Segolene_Royal.dds"
+		ideology = social_democracy
+	}
+
+}
+
+2007.6.16 = {
+	
+	set_politics = {	
+	ruling_party = conservatism
+	last_election = "2007.6.16"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+    reactionary = 4
+    conservatism = 43
+    libertarianism = 8
+    democratic = 2
+    socdem = 30
+    progressivism = 4
+    demsoc = 4
+    communism = 5
+}
+
+	create_country_leader = {
+		name = "Nicolas Sarkozy"
+		picture = "Nicolas_Sarkozy.dds"
+		ideology = gaullism
+	}
+
+}
+
+
+2010.1.1 = {
+	create_country_leader = {
+		name = "Pierre Laurent"
+		picture = "Pierre_Laurent.dds"
+		ideology = leninism
+	}
+}
+
+2011.1.16 = {
+	create_country_leader = {
+		name = "Francois Hollande"
+		picture = "Francois_Hollande.dds"
+		ideology = social_democracy
+	}
+	create_country_leader = {
+		name = "Marine Le Pen"
+		picture = "Marine_Le_Pen.dds"
+		ideology = counter_progressivism_democrat
+	}
+	create_country_leader = {
+		name = "Eva Joly"
+		picture = "Eva_Joly.dds"
+		ideology = green
+	}
+	create_country_leader = {
+		name = "Jean-Michel Baylet"
+		picture = "Jean_Michel_Baylet.dds"
+		ideology = liberalism_ideology
+	}
+}
+
+2012.5.6 = {
+	set_politics = {
+		ruling_party = socdem
+		last_election = "2012.5.6"
+		election_frequency = 60
+		elections_allowed = yes
+}
+
+    set_popularities = {
+        reactionary = 14
+        conservatism = 32
+        libertarianism = 2
+        democratic = 2
+        socdem = 34
+        progressivism = 5
+        demsoc = 8
+        communism = 3
+    }
+}
+
+
+2016.1.1 = {
+
+	create_country_leader = {
+		name = "Emmanuel Macron"
+		picture = "Emmanuel_Macron.dds"
+		ideology = liberalism_ideology
 	}
 }

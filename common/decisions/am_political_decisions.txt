@@ -18,6 +18,19 @@ monarchism_on_the_rise = {
 			nazism < 0.9 
 			nationalism < 0.9
 			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+			
 		}
 
 		visible = {
@@ -96,6 +109,18 @@ monarchism_on_the_rise = {
 			fascism < 0.8 
 			nazism < 0.8 
 			nationalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
 			has_idea_with_trait = staunch_monarchist
 		}
 
@@ -214,6 +239,125 @@ monarchism_on_the_rise = {
 					popularity = -0.1
 				}
 			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -279,6 +423,19 @@ neutrality_on_the_rise = {
 			fascism < 0.9 
 			nazism < 0.9 
 			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
 		}
 
 		visible = {
@@ -356,6 +513,18 @@ neutrality_on_the_rise = {
 			fascism < 0.8 
 			nazism < 0.8 
 			nationalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
 			has_idea_with_trait = authoritarian_supporter
 		}
 
@@ -474,6 +643,125 @@ neutrality_on_the_rise = {
 					popularity = -0.1
 				}
 			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -539,6 +827,19 @@ theocratic_on_the_rise = {
 			fascism < 0.9 
 			nazism < 0.9 
 			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
 		}
 
 		visible = {
@@ -624,6 +925,18 @@ theocratic_on_the_rise = {
 			fascism < 0.8 
 			nazism < 0.8 
 			nationalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
 			OR = {
 			has_idea_with_trait = theocratic_supporter
 			has_idea_with_trait = thule_society
@@ -745,6 +1058,125 @@ theocratic_on_the_rise = {
 					popularity = -0.1
 				}
 			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -813,6 +1245,19 @@ conservatism_on_the_rise = {
 			fascism < 0.9 
 			nazism < 0.9 
 			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
 		}
 
 		visible = {
@@ -892,6 +1337,18 @@ conservatism_on_the_rise = {
 			fascism < 0.8 
 			nazism < 0.8 
 			nationalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
 			has_idea_with_trait = conservatism_reformer
 		}
 
@@ -1010,6 +1467,125 @@ conservatism_on_the_rise = {
 					popularity = -0.1
 				}
 			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -1058,6 +1634,2037 @@ conservatism_on_the_rise = {
 	}
 	
 	
+	christian_democratic_on_the_rise = {
+	open_up_political_discourse_christian_democratic = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.9
+			neutrality < 0.9			
+			conservatism < 0.9
+			democratic < 0.9
+			theocratic < 0.9
+			socdem < 0.9
+			communism < 0.9
+			syndicalism < 0.9
+			socialism < 0.9
+			fascism < 0.9 
+			nazism < 0.9 
+			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+		}
+
+		visible = {
+			has_idea_with_trait = christian_democratic_reformer
+			
+			NOT = { has_country_flag = open_up_political_discourse_christian_democratic }
+			#check_has_focus_tree_to_switch_to_christian_democratic = yes
+			NOT = { has_government = christian_democratic }
+		}
+		
+		remove_trigger = {
+			has_government = christian_democratic
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		complete_effect = {
+			set_country_flag = open_up_political_discourse_christian_democratic
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		expand_civil_christian_democratic_support = {
+
+		icon = generic_civil_support
+
+		visible = {
+			has_country_flag = open_up_political_discourse_christian_democratic
+			has_idea_with_trait = christian_democratic_reformer
+			#check_has_focus_tree_to_switch_to_fascism = yes
+			NOT = { has_government = christian_democratic }
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_civil_war = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			christian_democratic_drift = 0.02
+			stability_weekly = -0.03
+ 			political_power_gain = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	discredit_government_christian_democratic = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.8
+			neutrality < 0.8			
+			christian_democratic < 0.8
+			democratic < 0.8
+			theocratic < 0.8
+			socdem < 0.8
+			communism < 0.8
+			syndicalism < 0.8
+			socialism < 0.8
+			fascism < 0.8 
+			nazism < 0.8 
+			nationalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
+			has_idea_with_trait = christian_democratic_reformer
+		}
+
+		visible = {
+			has_country_flag = open_up_political_discourse_christian_democratic
+			#check_has_focus_tree_to_switch_to_christian_democratic = yes
+			NOT = { has_government = christian_democratic }
+		}
+		
+		remove_trigger = {
+			has_government = christian_democratic
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.010
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = theocratic
+				}
+				add_popularity = {
+					ideology = theocratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socdem
+				}
+				add_popularity = {
+					ideology = socdem
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nationalism
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socialism
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalism
+				}
+				add_popularity = {
+					ideology = syndicalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nazism
+				}
+				add_popularity = {
+					ideology = nazism
+					popularity = -0.1
+				}
+			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = conservatism
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hold_the_christian_democratic_national_referendum = {
+
+		icon = generic_political_discourse
+
+		available = {
+			christian_democratic > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = christian_democratic }
+			#check_has_focus_tree_to_switch_to_christian_democratic = yes
+			OR = {
+				christian_democratic > 0.5
+				has_country_flag = open_up_political_discourse_christian_democratic
+			}
+		}
+		
+		remove_trigger = {
+			has_government = christian_democratic
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = { id = newpolitical.18 }
+		}
+		
+		ai_will_do = {
+			factor = 210
+			modifier = {
+				christian_democratic > 0.6
+				factor = 10
+			}
+		}
+	}
+	
+	}
+	
+	libertarianism_on_the_rise = {
+	open_up_political_discourse_libertarianism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.9
+			neutrality < 0.9			
+			conservatism < 0.9
+			democratic < 0.9
+			theocratic < 0.9
+			socdem < 0.9
+			communism < 0.9
+			syndicalism < 0.9
+			socialism < 0.9
+			fascism < 0.9 
+			nazism < 0.9 
+			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+		}
+
+		visible = {
+			has_idea_with_trait = libertarianism_reformer
+			
+			NOT = { has_country_flag = open_up_political_discourse_libertarianism }
+			#check_has_focus_tree_to_switch_to_libertarianism = yes
+			NOT = { has_government = libertarianism }
+		}
+		
+		remove_trigger = {
+			has_government = libertarianism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		complete_effect = {
+			set_country_flag = open_up_political_discourse_libertarianism
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		expand_civil_libertarianism_support = {
+
+		icon = generic_civil_support
+
+		visible = {
+			has_country_flag = open_up_political_discourse_libertarianism
+			has_idea_with_trait = libertarianism_reformer
+			#check_has_focus_tree_to_switch_to_fascism = yes
+			NOT = { has_government = libertarianism }
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_civil_war = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			libertarianism_drift = 0.02
+			stability_weekly = -0.03
+ 			political_power_gain = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	discredit_government_libertarianism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.8
+			neutrality < 0.8			
+			libertarianism < 0.8
+			democratic < 0.8
+			theocratic < 0.8
+			socdem < 0.8
+			communism < 0.8
+			syndicalism < 0.8
+			socialism < 0.8
+			fascism < 0.8 
+			nazism < 0.8 
+			nationalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
+			has_idea_with_trait = libertarianism_reformer
+		}
+
+		visible = {
+			has_country_flag = open_up_political_discourse_libertarianism
+			#check_has_focus_tree_to_switch_to_libertarianism = yes
+			NOT = { has_government = libertarianism }
+		}
+		
+		remove_trigger = {
+			has_government = libertarianism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.010
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = theocratic
+				}
+				add_popularity = {
+					ideology = theocratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socdem
+				}
+				add_popularity = {
+					ideology = socdem
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nationalism
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socialism
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalism
+				}
+				add_popularity = {
+					ideology = syndicalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nazism
+				}
+				add_popularity = {
+					ideology = nazism
+					popularity = -0.1
+				}
+			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = conservatism
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hold_the_libertarianism_national_referendum = {
+
+		icon = generic_political_discourse
+
+		available = {
+			libertarianism > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = libertarianism }
+			#check_has_focus_tree_to_switch_to_libertarianism = yes
+			OR = {
+				libertarianism > 0.5
+				has_country_flag = open_up_political_discourse_libertarianism
+			}
+		}
+		
+		remove_trigger = {
+			has_government = libertarianism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = { id = newpolitical.16 }
+		}
+		
+		ai_will_do = {
+			factor = 210
+			modifier = {
+				libertarianism > 0.6
+				factor = 10
+			}
+		}
+	}
+	
+	}
+	
+	progressivism_on_the_rise = {
+	open_up_political_discourse_progressivism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.9
+			neutrality < 0.9			
+			conservatism < 0.9
+			democratic < 0.9
+			theocratic < 0.9
+			socdem < 0.9
+			communism < 0.9
+			syndicalism < 0.9
+			socialism < 0.9
+			fascism < 0.9 
+			nazism < 0.9 
+			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+		}
+
+		visible = {
+			has_idea_with_trait = progressivism_reformer
+			
+			NOT = { has_country_flag = open_up_political_discourse_progressivism }
+			#check_has_focus_tree_to_switch_to_progressivism = yes
+			NOT = { has_government = progressivism }
+		}
+		
+		remove_trigger = {
+			has_government = progressivism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		complete_effect = {
+			set_country_flag = open_up_political_discourse_progressivism
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		expand_civil_progressivism_support = {
+
+		icon = generic_civil_support
+
+		visible = {
+			has_country_flag = open_up_political_discourse_progressivism
+			has_idea_with_trait = progressivism_reformer
+			#check_has_focus_tree_to_switch_to_fascism = yes
+			NOT = { has_government = progressivism }
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_civil_war = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			progressivism_drift = 0.02
+			stability_weekly = -0.03
+ 			political_power_gain = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	discredit_government_progressivism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.8
+			neutrality < 0.8			
+			progressivism < 0.8
+			democratic < 0.8
+			theocratic < 0.8
+			socdem < 0.8
+			communism < 0.8
+			syndicalism < 0.8
+			socialism < 0.8
+			fascism < 0.8 
+			nazism < 0.8 
+			nationalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
+			has_idea_with_trait = progressivism_reformer
+		}
+
+		visible = {
+			has_country_flag = open_up_political_discourse_progressivism
+			#check_has_focus_tree_to_switch_to_progressivism = yes
+			NOT = { has_government = progressivism }
+		}
+		
+		remove_trigger = {
+			has_government = progressivism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.010
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = theocratic
+				}
+				add_popularity = {
+					ideology = theocratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socdem
+				}
+				add_popularity = {
+					ideology = socdem
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nationalism
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socialism
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalism
+				}
+				add_popularity = {
+					ideology = syndicalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nazism
+				}
+				add_popularity = {
+					ideology = nazism
+					popularity = -0.1
+				}
+			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = conservatism
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hold_the_progressivism_national_referendum = {
+
+		icon = generic_political_discourse
+
+		available = {
+			progressivism > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = progressivism }
+			#check_has_focus_tree_to_switch_to_progressivism = yes
+			OR = {
+				progressivism > 0.5
+				has_country_flag = open_up_political_discourse_progressivism
+			}
+		}
+		
+		remove_trigger = {
+			has_government = progressivism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = { id = newpolitical.17 }
+		}
+		
+		ai_will_do = {
+			factor = 210
+			modifier = {
+				progressivism > 0.6
+				factor = 10
+			}
+		}
+	}
+	
+	}
+	
+	demsoc_on_the_rise = {
+	open_up_political_discourse_demsoc = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.9
+			neutrality < 0.9			
+			conservatism < 0.9
+			democratic < 0.9
+			theocratic < 0.9
+			socdem < 0.9
+			communism < 0.9
+			syndicalism < 0.9
+			socialism < 0.9
+			fascism < 0.9 
+			nazism < 0.9 
+			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+		}
+
+		visible = {
+			has_idea_with_trait = demsoc_reformer
+			
+			NOT = { has_country_flag = open_up_political_discourse_demsoc }
+			#check_has_focus_tree_to_switch_to_demsoc = yes
+			NOT = { has_government = demsoc }
+		}
+		
+		remove_trigger = {
+			has_government = demsoc
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		complete_effect = {
+			set_country_flag = open_up_political_discourse_demsoc
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		expand_civil_demsoc_support = {
+
+		icon = generic_civil_support
+
+		visible = {
+			has_country_flag = open_up_political_discourse_demsoc
+			has_idea_with_trait = demsoc_reformer
+			#check_has_focus_tree_to_switch_to_fascism = yes
+			NOT = { has_government = demsoc }
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_civil_war = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			demsoc_drift = 0.02
+			stability_weekly = -0.03
+ 			political_power_gain = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	discredit_government_demsoc = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.8
+			neutrality < 0.8			
+			demsoc < 0.8
+			democratic < 0.8
+			theocratic < 0.8
+			socdem < 0.8
+			communism < 0.8
+			syndicalism < 0.8
+			socialism < 0.8
+			fascism < 0.8 
+			nazism < 0.8 
+			nationalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
+			has_idea_with_trait = demsoc_reformer
+		}
+
+		visible = {
+			has_country_flag = open_up_political_discourse_demsoc
+			#check_has_focus_tree_to_switch_to_demsoc = yes
+			NOT = { has_government = demsoc }
+		}
+		
+		remove_trigger = {
+			has_government = demsoc
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.010
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = theocratic
+				}
+				add_popularity = {
+					ideology = theocratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socdem
+				}
+				add_popularity = {
+					ideology = socdem
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nationalism
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socialism
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalism
+				}
+				add_popularity = {
+					ideology = syndicalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nazism
+				}
+				add_popularity = {
+					ideology = nazism
+					popularity = -0.1
+				}
+			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = conservatism
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hold_the_demsoc_national_referendum = {
+
+		icon = generic_political_discourse
+
+		available = {
+			demsoc > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = demsoc }
+			#check_has_focus_tree_to_switch_to_demsoc = yes
+			OR = {
+				demsoc > 0.5
+				has_country_flag = open_up_political_discourse_demsoc
+			}
+		}
+		
+		remove_trigger = {
+			has_government = demsoc
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = { id = newpolitical.20 }
+		}
+		
+		ai_will_do = {
+			factor = 210
+			modifier = {
+				demsoc > 0.6
+				factor = 10
+			}
+		}
+	}
+	
+	}
+	
+	demnat_on_the_rise = {
+	open_up_political_discourse_demnat = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.9
+			neutrality < 0.9			
+			conservatism < 0.9
+			democratic < 0.9
+			theocratic < 0.9
+			socdem < 0.9
+			communism < 0.9
+			syndicalism < 0.9
+			socialism < 0.9
+			fascism < 0.9 
+			nazism < 0.9 
+			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+		}
+
+		visible = {
+			has_idea_with_trait = demnat_reformer
+			
+			NOT = { has_country_flag = open_up_political_discourse_demnat }
+			#check_has_focus_tree_to_switch_to_demnat = yes
+			NOT = { has_government = demnat }
+		}
+		
+		remove_trigger = {
+			has_government = demnat
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		complete_effect = {
+			set_country_flag = open_up_political_discourse_demnat
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		expand_civil_demnat_support = {
+
+		icon = generic_civil_support
+
+		visible = {
+			has_country_flag = open_up_political_discourse_demnat
+			has_idea_with_trait = demnat_reformer
+			#check_has_focus_tree_to_switch_to_fascism = yes
+			NOT = { has_government = demnat }
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_civil_war = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			demnat_drift = 0.02
+			stability_weekly = -0.03
+ 			political_power_gain = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	discredit_government_demnat = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.8
+			neutrality < 0.8			
+			demnat < 0.8
+			democratic < 0.8
+			theocratic < 0.8
+			socdem < 0.8
+			communism < 0.8
+			syndicalism < 0.8
+			socialism < 0.8
+			fascism < 0.8 
+			nazism < 0.8 
+			nationalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
+			has_idea_with_trait = demnat_reformer
+		}
+
+		visible = {
+			has_country_flag = open_up_political_discourse_demnat
+			#check_has_focus_tree_to_switch_to_demnat = yes
+			NOT = { has_government = demnat }
+		}
+		
+		remove_trigger = {
+			has_government = demnat
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.010
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = theocratic
+				}
+				add_popularity = {
+					ideology = theocratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socdem
+				}
+				add_popularity = {
+					ideology = socdem
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nationalism
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socialism
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalism
+				}
+				add_popularity = {
+					ideology = syndicalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nazism
+				}
+				add_popularity = {
+					ideology = nazism
+					popularity = -0.1
+				}
+			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = conservatism
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hold_the_demnat_national_referendum = {
+
+		icon = generic_political_discourse
+
+		available = {
+			demnat > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = demnat }
+			#check_has_focus_tree_to_switch_to_demnat = yes
+			OR = {
+				demnat > 0.5
+				has_country_flag = open_up_political_discourse_demnat
+			}
+		}
+		
+		remove_trigger = {
+			has_government = demnat
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = { id = newpolitical.19 }
+		}
+		
+		ai_will_do = {
+			factor = 210
+			modifier = {
+				demnat > 0.6
+				factor = 10
+			}
+		}
+	}
+	
+	}
+	
+	
 	### SOCDEM
 
 socdem_on_the_rise = {
@@ -1078,6 +3685,19 @@ socdem_on_the_rise = {
 			fascism < 0.9 
 			nazism < 0.9 
 			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
 		}
 
 		visible = {
@@ -1157,6 +3777,18 @@ socdem_on_the_rise = {
 			fascism < 0.8 
 			nazism < 0.8 
 			nationalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
 			has_idea_with_trait = socdem_reformer
 		}
 
@@ -1275,6 +3907,125 @@ socdem_on_the_rise = {
 					popularity = -0.1
 				}
 			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -1345,6 +4096,19 @@ nazism_on_the_rise = {
 			fascism < 0.9 
 			nazism < 0.9 
 			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
 		}
 
 		visible = {
@@ -1424,6 +4188,18 @@ nazism_on_the_rise = {
 			fascism < 0.8 
 			nazism < 0.8 
 			nationalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
 			has_idea_with_trait = nazism_demagogue
 		}
 
@@ -1542,6 +4318,125 @@ nazism_on_the_rise = {
 					popularity = -0.1
 				}
 			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -1611,8 +4506,21 @@ nationalism_on_the_rise = {
 			syndicalism < 0.9
 			socialism < 0.9
 			fascism < 0.9 
-			nazim < 0.9 
+			nazism < 0.9 
 			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
 		}
 
 		visible = {
@@ -1692,6 +4600,18 @@ nationalism_on_the_rise = {
 			fascism < 0.8 
 			nazism < 0.8 
 			nationalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
 			has_idea_with_trait = nationalism_demagogue
 		}
 
@@ -1810,6 +4730,125 @@ nationalism_on_the_rise = {
 					popularity = -0.1
 				}
 			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -1878,8 +4917,21 @@ syndicalism_on_the_rise = {
 			nationalism < 0.9
 			socialism < 0.9
 			fascism < 0.9 
-			nazim < 0.9 
+			nazism < 0.9 
 			syndicalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
 		}
 
 		visible = {
@@ -1959,6 +5011,18 @@ syndicalism_on_the_rise = {
 			fascism < 0.8 
 			nazism < 0.8 
 			syndicalism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
 			has_idea_with_trait = syndicalism_revolutionary
 		}
 
@@ -2077,6 +5141,125 @@ syndicalism_on_the_rise = {
 					popularity = -0.1
 				}
 			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -2125,6 +5308,2032 @@ syndicalism_on_the_rise = {
 
 
 
+fascist_monarchism_on_the_rise = {
+	open_up_political_discourse_fascist_monarchism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.9
+			neutrality < 0.9			
+			conservatism < 0.9
+			democratic < 0.9
+			theocratic < 0.9
+			socdem < 0.9
+			communism < 0.9
+			syndicalism < 0.9
+			socialism < 0.9
+			fascism < 0.9 
+			nazism < 0.9 
+			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+		}
+
+		visible = {
+			has_idea_with_trait = fascist_monarchism_demagogue
+			
+			NOT = { has_country_flag = open_up_political_discourse_fascist_monarchism }
+			#check_has_focus_tree_to_switch_to_fascist_monarchism = yes
+			NOT = { has_government = fascist_monarchism }
+		}
+		
+		remove_trigger = {
+			has_government = fascist_monarchism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		complete_effect = {
+			set_country_flag = open_up_political_discourse_fascist_monarchism
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		expand_civil_fascist_monarchism_support = {
+
+		icon = generic_civil_support
+
+		visible = {
+			has_country_flag = open_up_political_discourse_fascist_monarchism
+			has_idea_with_trait = fascist_monarchism_demagogue
+			#check_has_focus_tree_to_switch_to_fascism = yes
+			NOT = { has_government = fascist_monarchism }
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_civil_war = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			fascist_monarchism_drift = 0.02
+			stability_weekly = -0.03
+ 			political_power_gain = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	discredit_government_fascist_monarchism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.8
+			neutrality < 0.8			
+			conservatism < 0.8
+			democratic < 0.8
+			theocratic < 0.8
+			socdem < 0.8
+			communism < 0.8
+			syndicalism < 0.8
+			socialism < 0.8
+			fascism < 0.8 
+			nazism < 0.8 
+			fascist_monarchism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
+			has_idea_with_trait = fascist_monarchism_demagogue
+		}
+
+		visible = {
+			has_country_flag = open_up_political_discourse_fascist_monarchism
+			#check_has_focus_tree_to_switch_to_fascist_monarchism = yes
+			NOT = { has_government = fascist_monarchism }
+		}
+		
+		remove_trigger = {
+			has_government = fascist_monarchism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.010
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = theocratic
+				}
+				add_popularity = {
+					ideology = theocratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = conservatism
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nazism
+				}
+				add_popularity = {
+					ideology = nazism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socialism
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalism
+				}
+				add_popularity = {
+					ideology = syndicalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socdem
+				}
+				add_popularity = {
+					ideology = socdem
+					popularity = -0.1
+				}
+			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = nationalism
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hold_the_fascist_monarchism_national_referendum = {
+
+		icon = generic_political_discourse
+
+		available = {
+			fascist_monarchism > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = fascist_monarchism }
+			#check_has_focus_tree_to_switch_to_fascist_monarchism = yes
+			OR = {
+				fascist_monarchism > 0.5
+				has_country_flag = open_up_political_discourse_fascist_monarchism
+			}
+		}
+		
+		remove_trigger = {
+			has_government = fascist_monarchism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = { id = newpolitical.14 }
+		}
+		
+		ai_will_do = {
+			factor = 210
+			modifier = {
+				fascist_monarchism > 0.6
+				factor = 10
+			}
+		}
+	}
+}
+
+paganism_on_the_rise = {
+	open_up_political_discourse_paganism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.9
+			neutrality < 0.9			
+			conservatism < 0.9
+			democratic < 0.9
+			theocratic < 0.9
+			socdem < 0.9
+			communism < 0.9
+			syndicalism < 0.9
+			socialism < 0.9
+			fascism < 0.9 
+			nazism < 0.9 
+			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+		}
+
+		visible = {
+			has_idea_with_trait = paganism_demagogue
+			
+			NOT = { has_country_flag = open_up_political_discourse_paganism }
+			#check_has_focus_tree_to_switch_to_paganism = yes
+			NOT = { has_government = paganism }
+		}
+		
+		remove_trigger = {
+			has_government = paganism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		complete_effect = {
+			set_country_flag = open_up_political_discourse_paganism
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		expand_civil_paganism_support = {
+
+		icon = generic_civil_support
+
+		visible = {
+			has_country_flag = open_up_political_discourse_paganism
+			has_idea_with_trait = paganism_demagogue
+			#check_has_focus_tree_to_switch_to_fascism = yes
+			NOT = { has_government = paganism }
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_civil_war = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			paganism_drift = 0.02
+			stability_weekly = -0.03
+ 			political_power_gain = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	discredit_government_paganism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.8
+			neutrality < 0.8			
+			conservatism < 0.8
+			democratic < 0.8
+			theocratic < 0.8
+			socdem < 0.8
+			communism < 0.8
+			syndicalism < 0.8
+			socialism < 0.8
+			fascism < 0.8 
+			nazism < 0.8 
+			paganism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
+			has_idea_with_trait = paganism_demagogue
+		}
+
+		visible = {
+			has_country_flag = open_up_political_discourse_paganism
+			#check_has_focus_tree_to_switch_to_paganism = yes
+			NOT = { has_government = paganism }
+		}
+		
+		remove_trigger = {
+			has_government = paganism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.010
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = theocratic
+				}
+				add_popularity = {
+					ideology = theocratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = conservatism
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nazism
+				}
+				add_popularity = {
+					ideology = nazism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socialism
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalism
+				}
+				add_popularity = {
+					ideology = syndicalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socdem
+				}
+				add_popularity = {
+					ideology = socdem
+					popularity = -0.1
+				}
+			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = nationalism
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hold_the_paganism_national_referendum = {
+
+		icon = generic_political_discourse
+
+		available = {
+			paganism > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = paganism }
+			#check_has_focus_tree_to_switch_to_paganism = yes
+			OR = {
+				paganism > 0.5
+				has_country_flag = open_up_political_discourse_paganism
+			}
+		}
+		
+		remove_trigger = {
+			has_government = paganism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = { id = newpolitical.12 }
+		}
+		
+		ai_will_do = {
+			factor = 210
+			modifier = {
+				paganism > 0.6
+				factor = 10
+			}
+		}
+	}
+}
+
+islamism_on_the_rise = {
+	open_up_political_discourse_islamism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.9
+			neutrality < 0.9			
+			conservatism < 0.9
+			democratic < 0.9
+			theocratic < 0.9
+			socdem < 0.9
+			communism < 0.9
+			syndicalism < 0.9
+			socialism < 0.9
+			fascism < 0.9 
+			nazism < 0.9 
+			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+		}
+
+		visible = {
+			has_idea_with_trait = islamism_demagogue
+			
+			NOT = { has_country_flag = open_up_political_discourse_islamism }
+			#check_has_focus_tree_to_switch_to_islamism = yes
+			NOT = { has_government = islamism }
+		}
+		
+		remove_trigger = {
+			has_government = islamism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		complete_effect = {
+			set_country_flag = open_up_political_discourse_islamism
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		expand_civil_islamism_support = {
+
+		icon = generic_civil_support
+
+		visible = {
+			has_country_flag = open_up_political_discourse_islamism
+			has_idea_with_trait = islamism_demagogue
+			#check_has_focus_tree_to_switch_to_fascism = yes
+			NOT = { has_government = islamism }
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_civil_war = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			islamism_drift = 0.02
+			stability_weekly = -0.03
+ 			political_power_gain = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	discredit_government_islamism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.8
+			neutrality < 0.8			
+			conservatism < 0.8
+			democratic < 0.8
+			theocratic < 0.8
+			socdem < 0.8
+			communism < 0.8
+			syndicalism < 0.8
+			socialism < 0.8
+			fascism < 0.8 
+			nazism < 0.8 
+			islamism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
+			has_idea_with_trait = islamism_demagogue
+		}
+
+		visible = {
+			has_country_flag = open_up_political_discourse_islamism
+			#check_has_focus_tree_to_switch_to_islamism = yes
+			NOT = { has_government = islamism }
+		}
+		
+		remove_trigger = {
+			has_government = islamism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.010
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = theocratic
+				}
+				add_popularity = {
+					ideology = theocratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = conservatism
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nazism
+				}
+				add_popularity = {
+					ideology = nazism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socialism
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalism
+				}
+				add_popularity = {
+					ideology = syndicalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socdem
+				}
+				add_popularity = {
+					ideology = socdem
+					popularity = -0.1
+				}
+			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = nationalism
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hold_the_islamism_national_referendum = {
+
+		icon = generic_political_discourse
+
+		available = {
+			islamism > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = islamism }
+			#check_has_focus_tree_to_switch_to_islamism = yes
+			OR = {
+				islamism > 0.5
+				has_country_flag = open_up_political_discourse_islamism
+			}
+		}
+		
+		remove_trigger = {
+			has_government = islamism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = { id = newpolitical.21 }
+		}
+		
+		ai_will_do = {
+			factor = 210
+			modifier = {
+				islamism > 0.6
+				factor = 10
+			}
+		}
+	}
+}
+
+strasserism_on_the_rise = {
+	open_up_political_discourse_strasserism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.9
+			neutrality < 0.9			
+			conservatism < 0.9
+			democratic < 0.9
+			theocratic < 0.9
+			socdem < 0.9
+			communism < 0.9
+			syndicalism < 0.9
+			socialism < 0.9
+			fascism < 0.9 
+			nazism < 0.9 
+			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+		}
+
+		visible = {
+			has_idea_with_trait = strasserism_demagogue
+			
+			NOT = { has_country_flag = open_up_political_discourse_strasserism }
+			#check_has_focus_tree_to_switch_to_strasserism = yes
+			NOT = { has_government = strasserism }
+		}
+		
+		remove_trigger = {
+			has_government = strasserism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		complete_effect = {
+			set_country_flag = open_up_political_discourse_strasserism
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		expand_civil_strasserism_support = {
+
+		icon = generic_civil_support
+
+		visible = {
+			has_country_flag = open_up_political_discourse_strasserism
+			has_idea_with_trait = strasserism_demagogue
+			#check_has_focus_tree_to_switch_to_fascism = yes
+			NOT = { has_government = strasserism }
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_civil_war = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			strasserism_drift = 0.02
+			stability_weekly = -0.03
+ 			political_power_gain = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	discredit_government_strasserism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.8
+			neutrality < 0.8			
+			conservatism < 0.8
+			democratic < 0.8
+			theocratic < 0.8
+			socdem < 0.8
+			communism < 0.8
+			syndicalism < 0.8
+			socialism < 0.8
+			fascism < 0.8 
+			nazism < 0.8 
+			strasserism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
+			has_idea_with_trait = strasserism_demagogue
+		}
+
+		visible = {
+			has_country_flag = open_up_political_discourse_strasserism
+			#check_has_focus_tree_to_switch_to_strasserism = yes
+			NOT = { has_government = strasserism }
+		}
+		
+		remove_trigger = {
+			has_government = strasserism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.010
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = theocratic
+				}
+				add_popularity = {
+					ideology = theocratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = conservatism
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nazism
+				}
+				add_popularity = {
+					ideology = nazism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socialism
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalism
+				}
+				add_popularity = {
+					ideology = syndicalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socdem
+				}
+				add_popularity = {
+					ideology = socdem
+					popularity = -0.1
+				}
+			}
+						if = {
+				limit = {
+					has_government = nationalism
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hold_the_strasserism_national_referendum = {
+
+		icon = generic_political_discourse
+
+		available = {
+			strasserism > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = strasserism }
+			#check_has_focus_tree_to_switch_to_strasserism = yes
+			OR = {
+				strasserism > 0.5
+				has_country_flag = open_up_political_discourse_strasserism
+			}
+		}
+		
+		remove_trigger = {
+			has_government = strasserism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = { id = newpolitical.13 }
+		}
+		
+		ai_will_do = {
+			factor = 210
+			modifier = {
+				strasserism > 0.6
+				factor = 10
+			}
+		}
+	}
+}
+
+
+reactionary_on_the_rise = {
+	open_up_political_discourse_reactionary = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.9
+			neutrality < 0.9			
+			conservatism < 0.9
+			democratic < 0.9
+			theocratic < 0.9
+			socdem < 0.9
+			communism < 0.9
+			syndicalism < 0.9
+			socialism < 0.9
+			fascism < 0.9 
+			nazism < 0.9 
+			nationalism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+		}
+
+		visible = {
+			has_idea_with_trait = reactionary_demagogue
+			
+			NOT = { has_country_flag = open_up_political_discourse_reactionary }
+			#check_has_focus_tree_to_switch_to_reactionary = yes
+			NOT = { has_government = reactionary }
+		}
+		
+		remove_trigger = {
+			has_government = reactionary
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		complete_effect = {
+			set_country_flag = open_up_political_discourse_reactionary
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		expand_civil_reactionary_support = {
+
+		icon = generic_civil_support
+
+		visible = {
+			has_country_flag = open_up_political_discourse_reactionary
+			has_idea_with_trait = reactionary_demagogue
+			#check_has_focus_tree_to_switch_to_fascism = yes
+			NOT = { has_government = reactionary }
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_civil_war = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			reactionary_drift = 0.02
+			stability_weekly = -0.03
+ 			political_power_gain = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	discredit_government_reactionary = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.8
+			neutrality < 0.8			
+			conservatism < 0.8
+			democratic < 0.8
+			theocratic < 0.8
+			socdem < 0.8
+			communism < 0.8
+			syndicalism < 0.8
+			socialism < 0.8
+			fascism < 0.8 
+			nazism < 0.8 
+			reactionary < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
+			has_idea_with_trait = reactionary_demagogue
+		}
+
+		visible = {
+			has_country_flag = open_up_political_discourse_reactionary
+			#check_has_focus_tree_to_switch_to_reactionary = yes
+			NOT = { has_government = reactionary }
+		}
+		
+		remove_trigger = {
+			has_government = reactionary
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.010
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = theocratic
+				}
+				add_popularity = {
+					ideology = theocratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = conservatism
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nazism
+				}
+				add_popularity = {
+					ideology = nazism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socialism
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalism
+				}
+				add_popularity = {
+					ideology = syndicalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socdem
+				}
+				add_popularity = {
+					ideology = socdem
+					popularity = -0.1
+				}
+			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = nationalism
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hold_the_reactionary_national_referendum = {
+
+		icon = generic_political_discourse
+
+		available = {
+			reactionary > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = reactionary }
+			#check_has_focus_tree_to_switch_to_reactionary = yes
+			OR = {
+				reactionary > 0.5
+				has_country_flag = open_up_political_discourse_reactionary
+			}
+		}
+		
+		remove_trigger = {
+			has_government = reactionary
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = { id = newpolitical.15 }
+		}
+		
+		ai_will_do = {
+			factor = 210
+			modifier = {
+				reactionary > 0.6
+				factor = 10
+			}
+		}
+	}
+}
+
 
 ### Socialism
 
@@ -2145,8 +7354,21 @@ socialism_on_the_rise = {
 			nationalism < 0.9
 			syndicalism < 0.9
 			fascism < 0.9 
-			nazim < 0.9 
+			nazism < 0.9 
 			socialism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
 		}
 
 		visible = {
@@ -2226,6 +7448,18 @@ socialism_on_the_rise = {
 			fascism < 0.8 
 			nazism < 0.8 
 			socialism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
 			has_idea_with_trait = socialism_revolutionary
 		}
 
@@ -2344,6 +7578,125 @@ socialism_on_the_rise = {
 					popularity = -0.1
 				}
 			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -2384,6 +7737,817 @@ socialism_on_the_rise = {
 			factor = 210
 			modifier = {
 				socialism > 0.6
+				factor = 10
+			}
+		}
+	}
+}
+
+
+maoism_on_the_rise = {
+	open_up_political_discourse_maoism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.9
+			neutrality < 0.9			
+			conservatism < 0.9
+			democratic < 0.9
+			theocratic < 0.9
+			socdem < 0.9
+			communism < 0.9
+			nationalism < 0.9
+			syndicalism < 0.9
+			fascism < 0.9 
+			nazism < 0.9 
+			socialism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+		}
+
+		visible = {
+			has_idea_with_trait = maoism_revolutionary
+			
+			NOT = { has_country_flag = open_up_political_discourse_maoism }
+			#check_has_focus_tree_to_switch_to_maoism = yes
+			NOT = { has_government = maoism }
+		}
+		
+		remove_trigger = {
+			has_government = maoism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		complete_effect = {
+			set_country_flag = open_up_political_discourse_maoism
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		expand_civil_maoism_support = {
+
+		icon = generic_civil_support
+
+		visible = {
+			has_country_flag = open_up_political_discourse_maoism
+			has_idea_with_trait = maoism_revolutionary
+			#check_has_focus_tree_to_switch_to_fascism = yes
+			NOT = { has_government = maoism }
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_civil_war = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			maoism_drift = 0.02
+			stability_weekly = -0.03
+ 			political_power_gain = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	discredit_government_maoism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.8
+			neutrality < 0.8			
+			conservatism < 0.8
+			democratic < 0.8
+			theocratic < 0.8
+			socdem < 0.8
+			communism < 0.8
+			nationalism < 0.8
+			syndicalism < 0.8
+			fascism < 0.8 
+			nazism < 0.8 
+			maoism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
+			has_idea_with_trait = maoism_revolutionary
+		}
+
+		visible = {
+			has_country_flag = open_up_political_discourse_maoism
+			#check_has_focus_tree_to_switch_to_maoism = yes
+			NOT = { has_government = maoism }
+		}
+		
+		remove_trigger = {
+			has_government = maoism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.010
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = theocratic
+				}
+				add_popularity = {
+					ideology = theocratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = conservatism
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nazism
+				}
+				add_popularity = {
+					ideology = nazism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalism
+				}
+				add_popularity = {
+					ideology = syndicalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nationalism
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socdem
+				}
+				add_popularity = {
+					ideology = socdem
+					popularity = -0.1
+				}
+			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = trotskyism
+				}
+				add_popularity = {
+					ideology = trotskyism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = socialism
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -0.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hold_the_maoism_national_referendum = {
+
+		icon = generic_political_discourse
+
+		available = {
+			maoism > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = maoism }
+			#check_has_focus_tree_to_switch_to_maoism = yes
+			OR = {
+				maoism > 0.5
+				has_country_flag = open_up_political_discourse_maoism
+			}
+		}
+		
+		remove_trigger = {
+			has_government = maoism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = { id = newpolitical.10 }
+		}
+		
+		ai_will_do = {
+			factor = 210
+			modifier = {
+				maoism > 0.6
+				factor = 10
+			}
+		}
+	}
+}
+
+trotskyism_on_the_rise = {
+	open_up_political_discourse_trotskyism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.9
+			neutrality < 0.9			
+			conservatism < 0.9
+			democratic < 0.9
+			theocratic < 0.9
+			socdem < 0.9
+			communism < 0.9
+			nationalism < 0.9
+			syndicalism < 0.9
+			fascism < 0.9 
+			nazism < 0.9 
+			socialism < 0.9
+			
+			strasserism < 0.9
+			islamism < 0.9
+			fascist_monarchism < 0.9
+			paganism < 0.9
+			reactionary < 0.9
+			progressivism < 0.9
+			libertarianism < 0.9
+			demsoc < 0.9
+			demnat < 0.9
+			christian_democratic < 0.9
+			maoism < 0.9
+			trotskyism < 0.9
+		}
+
+		visible = {
+			has_idea_with_trait = trotskyism_revolutionary
+			
+			NOT = { has_country_flag = open_up_political_discourse_trotskyism }
+			#check_has_focus_tree_to_switch_to_trotskyism = yes
+			NOT = { has_government = trotskyism }
+		}
+		
+		remove_trigger = {
+			has_government = trotskyism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 75
+		
+		complete_effect = {
+			set_country_flag = open_up_political_discourse_trotskyism
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+		expand_civil_trotskyism_support = {
+
+		icon = generic_civil_support
+
+		visible = {
+			has_country_flag = open_up_political_discourse_trotskyism
+			has_idea_with_trait = trotskyism_revolutionary
+			#check_has_focus_tree_to_switch_to_fascism = yes
+			NOT = { has_government = trotskyism }
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+				has_civil_war = yes
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 25
+
+		days_remove = 30
+
+		modifier = {
+			trotskyism_drift = 0.02
+			stability_weekly = -0.03
+ 			political_power_gain = -0.2
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	discredit_government_trotskyism = {
+
+		icon = generic_political_discourse
+
+		available = {
+			monarchism < 0.8
+			neutrality < 0.8			
+			conservatism < 0.8
+			democratic < 0.8
+			theocratic < 0.8
+			socdem < 0.8
+			communism < 0.8
+			nationalism < 0.8
+			syndicalism < 0.8
+			fascism < 0.8 
+			nazism < 0.8 
+			trotskyism < 0.8
+			strasserism < 0.8
+			islamism < 0.8
+			fascist_monarchism < 0.8
+			paganism < 0.8
+			reactionary < 0.8
+			progressivism < 0.8
+			libertarianism < 0.8
+			demsoc < 0.8
+			demnat < 0.8
+			christian_democratic < 0.8
+			maoism < 0.8
+			trotskyism < 0.8
+			has_idea_with_trait = trotskyism_revolutionary
+		}
+
+		visible = {
+			has_country_flag = open_up_political_discourse_trotskyism
+			#check_has_focus_tree_to_switch_to_trotskyism = yes
+			NOT = { has_government = trotskyism }
+		}
+		
+		remove_trigger = {
+			has_government = trotskyism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 50
+		
+		complete_effect = {
+			add_stability = -0.010
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = neutrality
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = monarchism
+				}
+				add_popularity = {
+					ideology = monarchism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = theocratic
+				}
+				add_popularity = {
+					ideology = theocratic
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = conservatism
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nazism
+				}
+				add_popularity = {
+					ideology = nazism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = syndicalism
+				}
+				add_popularity = {
+					ideology = syndicalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = nationalism
+				}
+				add_popularity = {
+					ideology = nationalism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = socdem
+				}
+				add_popularity = {
+					ideology = socdem
+					popularity = -0.1
+				}
+			}
+						if = {
+				limit = {
+					has_government = strasserism
+				}
+				add_popularity = {
+					ideology = strasserism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = fascist_monarchism
+				}
+				add_popularity = {
+					ideology = fascist_monarchism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = paganism
+				}
+				add_popularity = {
+					ideology = paganism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = islamism
+				}
+				add_popularity = {
+					ideology = islamism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = reactionary
+				}
+				add_popularity = {
+					ideology = reactionary
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = progressivism
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = libertarianism
+				}
+				add_popularity = {
+					ideology = libertarianism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = christian_democratic
+				}
+				add_popularity = {
+					ideology = christian_democratic
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demsoc
+				}
+				add_popularity = {
+					ideology = demsoc
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = demnat
+				}
+				add_popularity = {
+					ideology = demnat
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = socialism
+				}
+				add_popularity = {
+					ideology = socialism
+					popularity = -0.1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_government = maoism
+				}
+				add_popularity = {
+					ideology = maoism
+					popularity = -0.1
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hold_the_trotskyism_national_referendum = {
+
+		icon = generic_political_discourse
+
+		available = {
+			trotskyism > 0.5
+		}
+
+		visible = {
+			NOT = { has_government = trotskyism }
+			#check_has_focus_tree_to_switch_to_trotskyism = yes
+			OR = {
+				trotskyism > 0.5
+				has_country_flag = open_up_political_discourse_trotskyism
+			}
+		}
+		
+		remove_trigger = {
+			has_government = trotskyism
+		}
+		
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = { id = newpolitical.11 }
+		}
+		
+		ai_will_do = {
+			factor = 210
+			modifier = {
+				trotskyism > 0.6
 				factor = 10
 			}
 		}

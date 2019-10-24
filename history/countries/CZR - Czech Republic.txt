@@ -1,4 +1,4 @@
-﻿capital = 9
+capital = 9
 
 oob = "CZR_1936"
 

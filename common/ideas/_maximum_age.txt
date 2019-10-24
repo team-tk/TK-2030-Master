@@ -114,7 +114,7 @@ ideas = {
 			NOT = { has_idea = cons_one }
 			OR = {
 					AND = {
-						NOT = { has_government = democratic }
+						NOT = { has_democratic_government = yes }
 						threat > 0.50
 					}
 					AND = {
@@ -158,7 +158,7 @@ ideas = {
 				NOT = { has_idea = cons_three }
 				OR = {
 					has_war = yes
-					has_government = fascism
+					has_fascist_government = yes
 				}
 			}
 			

@@ -14,12 +14,17 @@ focus_tree = {
 		cost = 1.00
 		x = 10
 		y = 0
-
+		ai_will_do = {
+			factor = 100
+		}	
+		completion_reward = {
+			add_political_power = 50
+		}
 	}
 	focus = {
 		id = USA_relations_with_Germany
 		icon = GFX_goal_tripartite_pact
-		cost = 0.00
+		cost = 10.00
 		x = 10
 		y = 3
 
@@ -30,20 +35,36 @@ focus_tree = {
 		cost = 0.00
 		x = 4
 		y = 0
-
+		ai_will_do = {
+			factor = 0
+		}	
+ 		bypass = {
+			has_stability < 0.2
+    	}
 	}
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_military_sphere
-		cost = 0.00
+		cost = 5.00
 		x = 27
 		y = 0
-
+		available = {
+			has_capitulated = no
+			surrender_progress < 0.2
+			OR = {
+				has_completed_focus = USA_victory_in_elections
+				has_completed_focus = USA_republican_america
+				has_completed_focus = USA_a_christian_america
+			}
+		}
+		completion_reward = {
+			add_ideas = usa_expanded_war_department
+		}
 	}
 	focus = {
 		id = USA_continue_the_new_deal
 		icon = GFX_goal_unknown
-		cost = 1.00
+		cost = 5.00
 		prerequisite = {
 			focus = USA_state_of_affairs
 		}
@@ -52,7 +73,9 @@ focus_tree = {
 		}
 		x = 8
 		y = 1
-
+		completion_reward = {
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = USA_victory_in_elections
@@ -63,7 +86,10 @@ focus_tree = {
 		}
 		x = 1
 		y = 2
-
+		completion_reward = {
+			add_political_power = 100
+			date > 1936.11.20
+		}
 	}
 	focus = {
 		id = USA_democratic_gerrymandering
@@ -77,7 +103,13 @@ focus_tree = {
 		}
 		x = 2
 		y = 3
-
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_stability = -0.05
+		}
 	}
 	focus = {
 		id = USA_remove_the_threat_of_longism
@@ -88,7 +120,17 @@ focus_tree = {
 		}
 		x = 2
 		y = 4
-
+		completion_reward = {
+			add_stability = -0.15
+			add_popularity = {
+				ideology = socdem
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.02
+			}			
+		}
 	}
 	focus = {
 		id = USA_support_puerto_rican_farm_cooperatives
@@ -102,7 +144,12 @@ focus_tree = {
 		}
 		x = 4
 		y = 2
-
+		available = {
+			controls = 685
+		}
+		completion_reward = {
+			add_ideas = usa_puerto_rican_farm_cooperatives
+		}
 	}
 	focus = {
 		id = USA_puerto_rico_isnt_worth_time
