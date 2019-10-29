@@ -1,4 +1,4 @@
-add_namespace = iraq
+﻿add_namespace = iraq
 
 country_event = {
 	id = iraq.1

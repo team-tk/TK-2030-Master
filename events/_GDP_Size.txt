@@ -1,4 +1,4 @@
-add_namespace = gdp_size
+﻿add_namespace = gdp_size
 
 ########Universal Event############
 

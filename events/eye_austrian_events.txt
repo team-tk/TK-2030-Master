@@ -1,4 +1,4 @@
-add_namespace = EYE_aus
+﻿add_namespace = EYE_aus
 
 country_event = { #Remove Semperit bonus when no longer had
 	id = EYE_aus.1

@@ -1487,7 +1487,7 @@
  GER_provisional_gvt_theocratic:0 "Order State of Germany"
  GER_provisional_gvt_theocratic_DEF:0 "The Order State of Germany"
  GER_provisional_gvt_monarchism:0 "German Empire"
- GER_provisional_gvt_monarchism_DEF::0 "The German Empire"
+ GER_provisional_gvt_monarchism_DEF:0 "The German Empire"
  GER_provisional_gvt_fascism_ADJ:0 "German"
  GER_provisional_gvt_nazism_ADJ:0 "German"
  GER_provisional_gvt_nationalism_ADJ:0 "German"

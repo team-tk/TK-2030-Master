@@ -1,4 +1,4 @@
-add_namespace = wtt_japan
+﻿add_namespace = wtt_japan
 
 #Jakob ID 1-100
 #Drikus ID 101-200

@@ -1,4 +1,4 @@
-add_namespace = umc_ger
+﻿add_namespace = umc_ger
 
 ### GER oppose Mussolini's Ambitions
 country_event = {

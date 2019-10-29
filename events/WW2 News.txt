@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # WW2 News
 ###########################
 
@@ -237,7 +237,7 @@ news_event = {
 	}
 }
 
- Mussolini Dead
+# Mussolini Dead
 news_event = {
 	id = ww2news.12
 	title = ww2news.12.t

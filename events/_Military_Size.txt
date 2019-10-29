@@ -1,4 +1,4 @@
-add_namespace = military_size
+﻿add_namespace = military_size
 
 ########Universal Event############
 

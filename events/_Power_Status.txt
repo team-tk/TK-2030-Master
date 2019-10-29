@@ -1,4 +1,4 @@
-add_namespace = power_status
+﻿add_namespace = power_status
 
 ########Universal Event############
 

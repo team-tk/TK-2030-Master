@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # USA Events
 ###########################
 
@@ -2184,7 +2184,7 @@ country_event = {
 	
 	option = { # Packing the Court Fight
 		name = usa.105.a
-		available = {
+		limit = {
 			date < 1936.07.04
 		}
 		add_political_power = -200

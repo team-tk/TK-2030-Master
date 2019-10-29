@@ -1,4 +1,4 @@
-add_namespace = LIT_event
+﻿add_namespace = LIT_event
 
 ########	MONARCHY		############
 

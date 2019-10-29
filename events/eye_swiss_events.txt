@@ -1,4 +1,4 @@
-add_namespace = EYE_swiss
+﻿add_namespace = EYE_swiss
 
 news_event = { #Assassination of Wilhelm Gustloff
 	id = EYE_swiss.1

@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # Germany WW2 Events
 ###########################
 
@@ -1001,7 +1001,7 @@ every_country = { limit = { is_in_faction_with = USA has_war_with = ITA } white_
 	transfer_state = 808
 	}
 	
-	GER {
+	GER = {
 	 annex_country = { target = USA transfer_troops = no }
 	 }
 	
@@ -1151,7 +1151,7 @@ every_country = { limit = { is_in_faction_with = USA has_war_with = ITA } white_
 	transfer_state = 808
 	}
 	
-	GER {
+	GER = {
 	 annex_country = { target = USA transfer_troops = no }
 	 }
 	

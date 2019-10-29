@@ -1,4 +1,4 @@
-add_namespace = bnm
+﻿add_namespace = bnm
 
 country_event = {
 	

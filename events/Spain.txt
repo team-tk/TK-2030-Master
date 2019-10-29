@@ -1,4 +1,4 @@
-###########################
+﻿###########################
 # Spanish Events
 ###########################
 
@@ -1944,7 +1944,7 @@ country_event = {
 			add_opinion_modifier = { target = SPR modifier = large_decrease } 
 		}
 		
-	#}
+	}
 }
 
 # Alcala-Zamora

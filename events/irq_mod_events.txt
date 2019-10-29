@@ -1,4 +1,4 @@
-add_namescape = irq_ds
+﻿add_namescape = irq_ds
 country_event = {
 	id = irq_ds.1
 	title = irq_ds.1.t

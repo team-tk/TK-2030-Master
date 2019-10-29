@@ -1,4 +1,4 @@
-add_namespace = gre_papagos
+﻿add_namespace = gre_papagos
 country_event = {
 	id = gre_papagos.0
 	title = gre_papagos.0.t

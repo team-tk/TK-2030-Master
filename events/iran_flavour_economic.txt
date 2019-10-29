@@ -1,4 +1,4 @@
-add_namespace = PER_flavour_economic
+﻿add_namespace = PER_flavour_economic
 
 ##############################
 ##### variable for money #####
