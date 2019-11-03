@@ -1,4 +1,4 @@
-capital = 802
+﻿capital = 802
 
 oob = "VCT_1936"
 

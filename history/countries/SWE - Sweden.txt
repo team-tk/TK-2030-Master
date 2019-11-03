@@ -1,4 +1,4 @@
-capital = 141	
+﻿capital = 141	
 
 oob = "SWE_1936"
 if = {
