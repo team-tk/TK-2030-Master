@@ -29,7 +29,7 @@ state={
 			}
 		1960.1.1 = {
 			owner = TUN
-			controler = TUN
+			controller = TUN
 			}
 
 	}

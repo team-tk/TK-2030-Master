@@ -26,7 +26,7 @@ state={
 			}
 		1960.1.1 = {
 			owner = GNA
-			controler = GNA
+			controller = GNA
 			}
 	}
 

@@ -37,7 +37,7 @@ state={
 			}
 		1960.1.1 = {
 			owner = MOR
-			controler = MOR
+			controller = MOR
 			}
 
 	}

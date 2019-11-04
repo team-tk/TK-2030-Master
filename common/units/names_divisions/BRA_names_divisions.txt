@@ -418,5 +418,3 @@ BRA_LINF_01 =
 		19 = { "%dº Batalhão de Infantaria Leve" }
 		20 = { "%dº Batalhão de Infantaria Leve" }		
 }
-
-

@@ -4,7 +4,7 @@ state={
 	name="Eastern Croatia"
 	manpower = 2224
 	
-	state_category = plains
+	state_category = rural
 
 	history={
 		owner = YUG
